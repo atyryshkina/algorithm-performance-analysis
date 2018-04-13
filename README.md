@@ -6,7 +6,7 @@ This tool estimates the relative impact of parameters on the runtime of tools. I
 
 ## How to use
 
-The tool accepts a .tsv or .csv file. [Here is a sample csv file].
+The tool accepts a .tsv or .csv file. [Here is a sample csv file](bwa_mem_0.7.15.1_example.csv).
 The file should have one column labeled "runtime", which the Random Forest will treat as the dependent variable to predict.
 
 The tool will warn you if you have a parameter with more than 30 categories, or if you have a parameter that is monotonic (such as an id or a constant number)
