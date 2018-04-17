@@ -19,7 +19,7 @@ This is a collection of tools to analyze the performance of complex algorithms. 
 
 use get_tool_run_info.py to collect data from your [galaxy](https://galaxyproject.org/) database. The output file format supported are csv and json. 
 
-The repo includes example data in bwa_mem_0.7.15.1_example.csv
+There is also an example data file: [bwa_mem_0.7.15.1_example.csv](bwa_mem_0.7.15.1_example.csv)
 
 |options|default|description|
 |--- | --- |---|
@@ -30,7 +30,7 @@ The repo includes example data in bwa_mem_0.7.15.1_example.csv
 
 ## Manipulate Data
 
-use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. You might want to inspect parameters, delete parameters, combine parameters, etc.
+use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. You might want to inspect parameters, delete parameters, combine parameters, or do some other preprocessing before moving on to analysis
 
 ## Feature Importances with Random Forests
 
@@ -63,6 +63,39 @@ The tool should take less than a minute to finish. It will save the important fe
 
 You might want to inspect the effect of a single parameter on you tool while holding all of the other parameters constant. single_feature_analysis.py does this.
 
+The tool accepts a tsv or csv file, and it requires a feature_of_interest and a runtime column to be named. It sorts the dataset into sets of jobs that all have similar parameters. Then it saves the parameters of the largest set of jobs in a file named parameters_i.tsv file and it makes a plot of feature_of_interest vs runtime. 
+
+For example, say you put in a csv file like this:
+
+|runtime|feature_of_interest|category|number|
+|---|---|---|---|
+|5|1|True|0|
+|10|5|False|0|
+|2|3|True|7|
+|3|2|True|6|
+|4|1|False|25|
+
+First, the continuous columns will be placed into bins like so
+
+|runtime|feature_of_interest|category|number|
+|---|---|---|---|
+|5|1|True|0|
+|10|5|False|0|
+|2|3|True|(5, 7.5]|
+|3|2|True|(5, 7.5]|
+|4|1|False|(23.5, 25]|
+
+The largest set with equivelent parameters is chosen:
+
+|runtime|feature_of_interest|category|number|
+|---|---|---|---|
+|2|3|True|(5, 7.5]|
+|3|2|True|(5, 7.5]|
+
+And the values of the equivelent parameters is saved to parameters_i.tsv and the plot of runtime vs. feature_of_interest is saved to plot_i.png.
+
+You can choose to inspect the n largest sets with the option --num_to_plot.
+
 
 |options|default|description|
 |--- | --- |---|
@@ -71,4 +104,4 @@ You might want to inspect the effect of a single parameter on you tool while hol
 |--feature_of_interest| requireds | name parameter to inspect|
 |--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
 |--delete_monotonic|default=False| whether to use monotonic features. Set to True if you don't want to use montonic features.
-|--num_of_category_groups_to_plot|default=1| number of parameter sets to examine
+|--num_to_plot|default=1| number of parameter sets to examine
