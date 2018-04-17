@@ -217,7 +217,7 @@ def main():
     parser.add_argument("--runtime_label", dest='runtime_label', action='store', default="runtime")
     parser.add_argument("--delete_monotonic", dest='del_monotonic', action='store', default=False)
     parser.add_argument('--outdir', dest='outdir', action='store', default='single_feature', help='output folder to place plots.')
-    parser.add_argument('--num_of_category_groups_to_plot', dest='num_to_plot', action='store', default=1, help='how many plots')
+    parser.add_argument('--num_to_plot', dest='num_to_plot', action='store', default=1, help='how many plots')
     args = parser.parse_args()
     return AnalyzeSingleFeature(args)
 
