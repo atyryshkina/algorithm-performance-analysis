@@ -30,7 +30,7 @@ There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](bwa
 
 ## Manipulate Data
 
-use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. Before moving on to analysis, you might want to inspect the data, delete data, combine combine, or do some other preprocessing.
+Use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. It has examples to inspect the data, delete data, transform data, and combine data.
 
 ## Feature Importances with Random Forests
 
@@ -61,7 +61,7 @@ The tool should take less than a minute to finish. It will save the important fe
 
 ## Inspect single feature
 
-You might want to inspect the effect of a single parameter on you tool while holding all of the other parameters constant. single_feature_analysis.py does this.
+Inspect the effect of a single parameter on runtime while holding all of the other parameters constant. (single_feature_analysis.py)
 
 The tool accepts a tsv or csv file, and it requires a feature_of_interest and a runtime column to be named. It sorts the dataset into sets of jobs that all have similar parameters. Then it saves the parameters of the largest set of jobs in a file named parameters_i.tsv file and it makes a plot of feature_of_interest vs runtime. 
 
