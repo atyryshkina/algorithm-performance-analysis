@@ -92,9 +92,7 @@ The largest set with equivelent parameters is chosen:
 |2|3|True|(5, 7.5]|
 |3|2|True|(5, 7.5]|
 
-And the values of the equivelent parameters is saved to parameters_i.tsv and the plot of runtime vs. feature_of_interest is saved to plot_i.png.
-
-You can choose to inspect the n largest sets with the option --num_to_plot.
+And the values of the equivelent parameters is saved to parameters_i.tsv and the plot of runtime vs. feature_of_interest is saved to plot_i.png. You can choose to inspect the n largest sets with the option --num_to_plot.
 
 
 |options|default|description|
