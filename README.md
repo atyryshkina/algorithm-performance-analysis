@@ -17,9 +17,9 @@ This is a collection of tools to analyze the performance of complex algorithms. 
 
 ## Collect Data From Galaxy Database
 
-use get_tool_run_info.py to collect data from your [galaxy](https://galaxyproject.org/) database. The output file format supported are csv and json. 
+use get_tool_run_info.py to collect data from your [galaxy](https://galaxyproject.org/) database. The output file formats supported are csv and json. 
 
-There is also an example data file: [bwa_mem_0.7.15.1_example.csv](bwa_mem_0.7.15.1_example.csv)
+There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](bwa_mem_0.7.15.1_example.csv)
 
 |options|default|description|
 |--- | --- |---|
