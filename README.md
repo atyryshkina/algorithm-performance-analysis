@@ -63,7 +63,7 @@ The tool should take less than a minute to finish. It will save the important fe
 
 Inspect the effect of a single parameter on runtime while holding all of the other parameters constant. (single_feature_analysis.py)
 
-The tool accepts a tsv or csv file, and it requires a feature_of_interest and a runtime column to be named. It sorts the dataset into sets of jobs that all have similar parameters. Then it saves the parameters of the largest set of jobs in a file named parameters_i.tsv file and it makes a plot of feature_of_interest vs runtime. 
+The tool accepts a tsv or csv file, and it requires a feature_of_interest and a runtime column to be named. It sorts the dataset into sets of jobs that all have similar parameters. Then it saves the parameters of the largest sets of jobs in files named parameters_i.tsv and saves plots of feature_of_interest vs runtime to plot_i.png. 
 
 For example, say you put in a csv file like this:
 
