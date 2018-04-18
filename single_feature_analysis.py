@@ -78,7 +78,7 @@ class AnalyzeSingleFeature(object):
             params=pd.DataFrame(params.rename("value"))
             params.index.name="parameter"
             params.to_csv(str(dirr)+'/parameters_'+str(i), sep="\t")
-            print("saved parameters to '%s/parameters_%s.png'" % (dirr,str(i)))
+            print("saved parameters to '%s/parameters_%s.tsv'" % (dirr,str(i)))
 
     def categorize_parameters(self,df, ignore=None):
         categorized=[] # list of dataframes with similar features
