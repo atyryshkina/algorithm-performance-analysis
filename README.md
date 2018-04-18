@@ -30,7 +30,7 @@ There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](bwa
 
 ## Manipulate Data
 
-use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. You might want to inspect parameters, delete parameters, combine parameters, or do some other preprocessing before moving on to analysis
+use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. Before moving on to analysis, you might want to inspect the data, delete data, combine combine, or do some other preprocessing.
 
 ## Feature Importances with Random Forests
 
