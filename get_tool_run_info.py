@@ -335,7 +335,7 @@ if __name__ == '__main__':
                         '--outfile',
                         dest='outfile',
                         action='store',
-                        default='job_data.json',
+                        default='job_data.csv',
                         help='Output file, extension determines format.')
     args = parser.parse_args()
     result = wrapper(main, args)
