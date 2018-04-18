@@ -1,6 +1,6 @@
 # Algorithm Performance Analysis 
 
-This is a collection of tools to analyze the performance of complex algorithms. The tools use machine learning and statistics to look at real data and determine performance bottlenecks and the relationships between parameters and runtime. In the future we want to help fine tune the algorithm parameters for efficient memory and processor use. It is made with [Galaxy Project](https://galaxyproject.org/) admins in mind.
+This is a collection of tools to analyze the performance of complex algorithms. The tools use machine learning and statistics to look at real data to determine performance bottlenecks and the relationships between parameters and runtime. In the future we want to help determine appropriate hardware constraints for algorithm (e.g. memory) for efficient use of resources. It is made with [Galaxy Project](https://galaxyproject.org/) admins in mind.
 
 
 ### What this can do:
