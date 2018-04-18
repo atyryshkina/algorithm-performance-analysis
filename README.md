@@ -7,7 +7,7 @@ This is a collection of tools to analyze the performance of complex algorithms. 
 * collect historical data from your galaxy database
 * manipulate the data
 * determine which parameters affect the runtime of the algorithm
-* inspect the impact of a single parameter 
+* inspect the impact of a single parameter on runtime
 
 ### Future plans:
 * determine an appropriate run walltime for tools
