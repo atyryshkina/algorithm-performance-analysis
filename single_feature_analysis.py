@@ -50,12 +50,13 @@ class AnalyzeSingleFeature(object):
 
             # save plot
             # if self.df[feature_of_interest].dtype == float:
+            print(categorized[i].shape)
             plt.figure(figsize=(10,10))
             plt.scatter(categorized[i][feature_of_interest], categorized[i][runtime_label])
             plt.xlabel(feature_of_interest)
             plt.ylabel(runtime_label)
             plt.title("%s vs %s" % (feature_of_interest,runtime_label))
-            plt.annotate("number of points = %s" % (categorized[0].shape[0]),xy=(0.4, 0.95), xycoords='axes fraction',
+            plt.annotate("number of points = %s" % (categorized[i].shape[0]),xy=(0.4, 0.95), xycoords='axes fraction',
                         size=14, ha='right', va='top',
                         bbox=dict(boxstyle='round', fc='w'))
             plt.savefig(str(dirr)+'/plot_'+str(i))
@@ -77,7 +78,7 @@ class AnalyzeSingleFeature(object):
 
             params=pd.DataFrame(params.rename("value"))
             params.index.name="parameter"
-            params.to_csv(str(dirr)+'/parameters_'+str(i), sep="\t")
+            params.to_csv(str(dirr)+'/parameters_'+str(i)+".tsv", sep="\t")
             print("saved parameters to '%s/parameters_%s.tsv'" % (dirr,str(i)))
 
     def categorize_parameters(self,df, ignore=None):
