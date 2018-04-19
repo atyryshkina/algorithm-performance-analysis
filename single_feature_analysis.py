@@ -115,7 +115,8 @@ class AnalyzeSingleFeature(object):
         print("")
 
         ########################## 
-
+        print("sorting...")
+        
         i=0
         checked=[]
         categorized=[] # list of dataframes with similar features
