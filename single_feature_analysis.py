@@ -50,7 +50,6 @@ class AnalyzeSingleFeature(object):
 
             # save plot
             # if self.df[feature_of_interest].dtype == float:
-            print(categorized[i].shape)
             plt.figure(figsize=(10,10))
             plt.scatter(categorized[i][feature_of_interest], categorized[i][runtime_label])
             plt.xlabel(feature_of_interest)
@@ -149,6 +148,8 @@ class AnalyzeSingleFeature(object):
             checked+=list(sdf.index)
 
         categorized.sort(key=lambda x: x.shape[0], reverse=True)
+
+        print("number of sets created %d" % len(categorized))
 
         return categorized, buckets
 
