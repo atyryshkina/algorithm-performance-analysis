@@ -27,6 +27,9 @@ There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](bwa
 |--toolid| required | tool id (e.g. "toolshed.g2.bx.psu.edu/repos/devteam/tophat2/tophat2/0.9")|
 |--outfile|default="job_data.csv"|Output file, extension determines format.|
 
+### Best input format for current and future analysis
+
+The best input format to use is a comma-separated values (CSV).
 
 ## Manipulate Data
 
