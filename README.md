@@ -19,7 +19,7 @@ This is a collection of tools to analyze the performance of complex algorithms. 
 
 use get_tool_run_info.py to collect data from your [galaxy](https://galaxyproject.org/) database. The output file formats supported are csv and json. 
 
-There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](bwa_mem_0.7.15.1_example.csv)
+There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](examples/bwa_mem_0.7.15.1_example.csv)
 
 |options|default|description|
 |--- | --- |---|
@@ -40,7 +40,7 @@ Use csv_file_manipulation.ipynb for suggestions on how to view and manipulate cs
 This tool (feature_importances_with_random_forests.py) estimates the relative impact of parameters on the runtime of tools. It does so by fitting a Random Forest Regressor to a historical dataset (of parameters and runtimes) and determining the [Mean Decrease Impurity](http://papers.nips.cc/paper/4928-understanding-variable-importances-in-forests-of-randomized-trees.pdf) of each parameter. The Mean Decrease Impurity is an estimate of how much the Random Forest uses the parameter in it's decisions.
 
 
-The tool accepts a .tsv or .csv file. [Here is a sample csv file](bwa_mem_0.7.15.1_example.csv).
+The tool accepts a .tsv or .csv file. [Here is a sample csv file](examples/bwa_mem_0.7.15.1_example.csv).
 The file should have one column labeled "runtime", which the Random Forest will treat as the dependent variable to predict.
 
 The tool will warn you if you have a parameter with more than 30 categories, or if you have a parameter that is monotonic (such as an id or a constant number)
