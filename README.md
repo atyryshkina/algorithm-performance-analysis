@@ -58,8 +58,6 @@ The tool should take less than a minute to finish. It will save the important fe
 |--plot_outfile|default=None|If you want a plot, use this to name the .png file you want it saved to. Otherwise, leave as default.
 |--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
 |--unite_categorical_features|default=True|whether to give the importances of categorical features with one number, or to give the importance of each seperate category (e.g. give importance of "color" vs. give importance of "color_blue", "color_green", "color_yellow")
-|--delete_monotonic|default=False| whether to use monotonic features. Set to True if you don't want to use montonic features.
-|--split_train_test|default=False| if you are making a plot, do you want to split the dataset into a training and testing set, or do you want to use the whole dataset for both training and testing
 
 
 ## Inspect single feature
@@ -101,11 +99,10 @@ And the values of the equivelent parameters is saved to parameters_i.tsv and the
 |options|default|description|
 |--- | --- |---|
 |--filename| required | the name of the .csv or .tsv file with the data|
-|--outdir| default='single_feature' | the name of the directory the output file should go|
 |--feature_of_interest| requireds | name parameter to inspect|
 |--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
-|--delete_monotonic|default=False| whether to use monotonic features. Set to True if you don't want to use montonic features.
 |--num_to_plot|default=1| number of parameter sets to examine
+|--outdir| default='single_feature' | the name of the directory the output file should go|
 
 
 # Predicting
