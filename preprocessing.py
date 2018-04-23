@@ -10,11 +10,13 @@ class ChooseFeatureColumns():
         self.cat_cols=[]
         
     def fit(self,X,y=None):
+        print("sorting features")
         for col in X:
             if X[col].dtype == float:
                 self.num_cols.append(col)
             else:
                 self.cat_cols.append(col)
+        print("features sorted")
         return self
     
     def transform(self,X, y=None):
@@ -52,6 +54,7 @@ class MyMapper():
         self.scols = []
         
     def fit(self,X,y=None):
+        print("mapping features")
         for col in X:
             if X[col].dtype == float:
                 print("numerical col: %s" % col)
@@ -69,6 +72,7 @@ class MyMapper():
         )
         self.mapper = DataFrameMapper(nfeats+sfeats,df_out=True)
         self.mapper.fit(X)
+        print("features mapped")
         return self
     
     def transform(self,X, y=None):
