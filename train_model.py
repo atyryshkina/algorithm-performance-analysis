@@ -103,7 +103,7 @@ def main():
                                      epilog='Accepts tsv and csv files')
     parser.add_argument('--filename', dest='filename', action='store', required=True)
     parser.add_argument("--runtime_label", dest='runtime_label', action='store', default="runtime")
-    parser.add_argument("--split_train_test", dest='split_train_test', action='store', default=True)
+    parser.add_argument("--split_train_test", dest='split_train_test', action='store', default=False)
     parser.add_argument("--split_randomly", dest='split_randomly', action='store', default=False)
     parser.add_argument('--plot_outfile', dest='plot_outfile', action='store', default="plot.png", help='png output file.')
     parser.add_argument('--model_outfile', dest='model_outfile', action='store', default='model.pkl', help='pkl output file.')
