@@ -106,3 +106,30 @@ And the values of the equivelent parameters is saved to parameters_i.tsv and the
 |--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
 |--delete_monotonic|default=False| whether to use monotonic features. Set to True if you don't want to use montonic features.
 |--num_to_plot|default=1| number of parameter sets to examine
+
+
+# Predicting
+
+Once you are ready to build a random forest predictor, train_model.py will train a random forest and save the model in a pickle file. 
+
+|options|default|description|
+|--- | --- |---|
+|--filename| required | the name of the .csv or .tsv file with the data|
+|--model_outfile| default='model.pkl'| name of a .tsv file where you want the output|
+|--plot_outfile|default='plot.png'|If you want a plot, use this to name the .png file you want it saved to. Otherwise, leave as default.
+|--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
+|--split_train_test|default=False| if you are making a plot, do you want to split the dataset into a training and testing set, or do you want to use the whole dataset for both training and testing
+|--split_randomly|default=False| if split_train_test == True, this specifies whether to split the data randomly
+
+
+Then use the model.pkl to predict the runtime of new instances using predict_runtime_with_model.py
+
+|options|default|description|
+|--- | --- |---|
+|--filename| required | the name of the .csv or .tsv file with the data|
+|--model_filename| required | the name of the .pkl of the model|
+|--plot_outfile|default='plot.png'|To get a plot you must also provide a runtime_label
+|--runtime_label|default=None| this specifies the label of the variable to predict in your dataset. may be left empty if you don't want prediction metrics
+|--single_prediction|default=False| if you want a single prediction, setting this to True will return the prediction and nothing else
+
+
