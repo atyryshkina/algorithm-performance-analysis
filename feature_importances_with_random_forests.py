@@ -166,6 +166,10 @@ class GetFeatureImportances(object):
                 df[column] = df[column].astype(str)
                 if len(df[column].unique())>threshold_num_of_categories:
                         print('"%s" has %d categories' % (column,len(df[column].unique()))) 
+                        if self.args.delete_large_categories:
+                            print('throwing "%s" away' % column)
+                            del df[column]
+                            continue
             
             if df[column].is_monotonic:
                 print('"%s" is monotonic' % column) # you might not want to use features that are monotonic
@@ -187,6 +191,7 @@ def main():
     parser.add_argument('--filename', dest='filename', action='store', required=True)
     parser.add_argument("--runtime_label", dest='runtime_label', action='store', default="runtime")
     parser.add_argument("--delete_monotonic", dest='del_monotonic', action='store', default=False)
+    parser.add_argument("--delete_large_categories", dest='delete_large_categories', action='store', default=False)
     parser.add_argument("--split_train_test", dest='split_train_test', action='store', default=False)
     parser.add_argument("--treat_categorical_features_as_one", dest='treat_categorical_features_as_one', action='store', default=True)
     parser.add_argument('--plot_outfile', dest='plot_outfile', action='store', default=None, help='png output file.')
