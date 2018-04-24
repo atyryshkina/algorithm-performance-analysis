@@ -12,7 +12,7 @@ class ChooseFeatureColumns():
     def fit(self,X,y=None):
         print("sorting features")
         for col in X:
-            if X[col].dtype == float:
+            if X[col].dtype == float or X[col].dtype == int:
                 self.num_cols.append(col)
             else:
                 self.cat_cols.append(col)
