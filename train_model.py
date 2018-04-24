@@ -46,7 +46,8 @@ class TrainModel(object):
         ])
         
         test_size = 0.2
-        train_size=int(len(df_labels)*test_size)
+        test_start=len(df_labels)-int(len(df_labels)*test_size)
+        print(test_start, len(df_labels))
 
         # print("self.args.split_randomly ", self.args.split_randomly)
 
@@ -54,7 +55,7 @@ class TrainModel(object):
             tr_features, ev_features, tr_labels, ev_labels = sklearn.model_selection.train_test_split(df_features, df_labels, test_size=test_size)
             print("splitting randomly")
         elif ast.literal_eval(self.args.split_train_test):
-            tr_features, tr_labels, ev_features, ev_labels = df_features[:train_size], df_labels[:train_size], df_features[train_size:], df_labels[train_size:]
+            tr_features, tr_labels, ev_features, ev_labels = df_features[:test_start], df_labels[:test_start], df_features[test_start:], df_labels[test_start:]
             print("splitting non-randomly")
         else:
             tr_features, tr_labels, ev_features, ev_labels = df_features,df_labels,df_features,df_labels
