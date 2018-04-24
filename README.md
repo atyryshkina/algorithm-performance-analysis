@@ -35,6 +35,8 @@ The best input format to use is a comma-separated values (CSV).
 
 Use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. It has examples to inspect the data, delete data, transform data, and combine data.
 
+A full example of data manipulation can be found finding_outliers.csv
+
 ## Feature Importances with Random Forests
 
 This tool (feature_importances_with_random_forests.py) estimates the relative impact of parameters on the runtime of tools. It does so by fitting a Random Forest Regressor to a historical dataset (of parameters and runtimes) and determining the [Mean Decrease Impurity](http://papers.nips.cc/paper/4928-understanding-variable-importances-in-forests-of-randomized-trees.pdf) of each parameter. The Mean Decrease Impurity is an estimate of how much the Random Forest uses the parameter in it's decisions.
