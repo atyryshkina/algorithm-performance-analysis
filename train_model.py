@@ -14,6 +14,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from preprocessing import ChooseFeatureColumns
 from preprocessing import MyMapper
+import ast
 
 class TrainModel(object):
 
@@ -47,12 +48,17 @@ class TrainModel(object):
         test_size = 0.2
         train_size=int(len(df_labels)*test_size)
 
-        if self.args.split_randomly and self.args.split_randomly:
+        # print("self.args.split_randomly ", self.args.split_randomly)
+
+        if ast.literal_eval(self.args.split_train_test) and (ast.literal_eval(self.args.split_randomly)):
             tr_features, ev_features, tr_labels, ev_labels = sklearn.model_selection.train_test_split(df_features, df_labels, test_size=test_size)
-        elif self.args.split_train_test:
+            print("splitting randomly")
+        elif ast.literal_eval(self.args.split_train_test):
             tr_features, tr_labels, ev_features, ev_labels = df_features[:train_size], df_labels[:train_size], df_features[train_size:], df_labels[train_size:]
+            print("splitting non-randomly")
         else:
             tr_features, tr_labels, ev_features, ev_labels = df_features,df_labels,df_features,df_labels
+            print("not splitting")
     
 
         print("fitting the model...")
@@ -103,8 +109,8 @@ def main():
                                      epilog='Accepts tsv and csv files')
     parser.add_argument('--filename', dest='filename', action='store', required=True)
     parser.add_argument("--runtime_label", dest='runtime_label', action='store', default="runtime")
-    parser.add_argument("--split_train_test", dest='split_train_test', action='store', default=False)
-    parser.add_argument("--split_randomly", dest='split_randomly', action='store', default=False)
+    parser.add_argument("--split_train_test", dest='split_train_test', action='store', default="False")
+    parser.add_argument("--split_randomly", dest='split_randomly', action='store', default="True")
     parser.add_argument('--plot_outfile', dest='plot_outfile', action='store', default="plot.png", help='png output file.')
     parser.add_argument('--model_outfile', dest='model_outfile', action='store', default='model.pkl', help='pkl output file.')
     args = parser.parse_args()
