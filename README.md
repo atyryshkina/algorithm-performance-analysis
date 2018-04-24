@@ -33,9 +33,9 @@ The best input format to use is a comma-separated values (CSV).
 
 ## Manipulate Data
 
-Use csv_file_manipulation.ipynb for suggestions on how to view and manipulate csv data with python. It has examples to inspect the data, delete data, transform data, and combine data.
+Use (csv_file_manipulation.ipynb)[csv_file_manipulation.ipynb] for suggestions on how to view and manipulate csv data with python. It has examples to inspect the data, delete data, transform data, and combine data.
 
-A full example of data manipulation can be found finding_outliers.csv
+A full example of data manipulation can be found at (finding_outliers.ipynb)[finding_outliers.ipynb]
 
 ## Feature Importances with Random Forests
 
