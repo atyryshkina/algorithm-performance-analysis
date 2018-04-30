@@ -35,12 +35,14 @@ class TrainModel(object):
         self.df=self.remove_bad_columns(self.df)
 
         df_features, df_labels = self.df, self.df.pop("runtime")
-        df_labels = np.log1p(df_labels)
-        original_num_of_cols=df_features.shape[1]
-        ################################################
         num_instances=len(df_labels)
         runtime_avg=float(df_labels.mean())
         runtime_std=float(df_labels.std())
+
+        df_labels = np.log1p(df_labels)
+        original_num_of_cols=df_features.shape[1]
+        ################################################
+        
         if math.isnan(runtime_std):
             runtime_std=0.
         ################################################
@@ -175,7 +177,7 @@ class TrainModel(object):
         
         accuracy=self.get_accuracy(cq)
         
-        self.plot(cq, filename, timesplit=False)
+        self.plot(cq, filename, timesplit=timesplit)
         r2score=float(sklearn.metrics.r2_score(cq["labels"], cq["pred"]))
         pearson=float(scipy.stats.pearsonr(cq["labels"], cq["pred"])[0])
         if math.isnan(pearson):
@@ -194,9 +196,8 @@ class TrainModel(object):
         return (correct/cq.shape[0])
 
     def plot(self, cq, filename, timesplit=False):
-    
-        plot=False
-        plot_w_error=False
+        plot=True
+        plot_w_error=True
         if plot:
             plt.figure(figsize=(10,10))
             plt.scatter(cq["labels"],cq["pred"])
@@ -205,9 +206,10 @@ class TrainModel(object):
             plt.title("Mean predictions")
             if timesplit:
                 plt.savefig("plots_dump/timesplit/%s.png"%filename)
+                print("saved a plot to plots_dump/timesplit/%s.png"%filename)
             else:
                 plt.savefig("plots_dump/%s.png"%filename)
-            print("saved a plot")
+                print("saved a plot to plots_dump/%s.png"%filename)
             plt.close()
         if plot_w_error:
             plt.figure(figsize=(10,10))
@@ -218,9 +220,11 @@ class TrainModel(object):
             plt.title("Mean predictions")
             if timesplit:
                 plt.savefig("plots_w_error_dump/timesplit/%s.png"%filename)
+                print("saved a plot to plots_w_error_dump/timesplit/%s.png"%filename)
             else:
                 plt.savefig("plots_w_error_dump/%s.png"%filename)
-            print("saved a plot w error")
+                print("saved a plot to plots_w_error_dump/%s.png"%filename)
+            
             plt.close()
 
 
@@ -231,8 +235,19 @@ def getfiles(dirpath):
     a.sort(key=lambda s: os.path.getmtime(os.path.join(dirpath, s)), reverse=True)
     return a
 
+finished=getfiles("plots_dump")
 filenames=getfiles("csv_dump")
 filenames.remove(".DS_Store")
+
+print("length", len(filenames))
+for file in finished:
+    # print(file[:-4])
+    try:
+        filenames.remove(file[:-4]+".csv")
+    except:
+        pass
+print("length", len(filenames))
+        
 
 for i in range(len(filenames)):
     if i % 100 == 0:
