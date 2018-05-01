@@ -33,6 +33,7 @@ class TrainModel(object):
 
         self.df=pd.read_csv("csv_dump/%s.csv"%filename)
         self.df=self.remove_bad_columns(self.df)
+        self.df=self.remove_bad_columns(self.df)
 
         df_features, df_labels = self.df, self.df.pop("runtime")
         num_instances=len(df_labels)
@@ -133,15 +134,18 @@ class TrainModel(object):
         bad_parameters=["parameters.__workflow_invocation_uuid__","parameters.chromInfo"]
         for parameter in parameters:
             series=df[parameter].dropna()
-            if len(df[parameter].unique())>=0.5*df.shape[0]:
-                bad_parameters.append(parameter)
-            elif all(type(item)==str and item.startswith("[{'src'") for item in series):#  and item.startswith("[{'src'")
-                bad_parameters.append(parameter)
             if all(type(item)==str and item.startswith('"') for item in series): 
                 try:
                     df[parameter]=df[parameter].str[1:-1].astype(float)
                 except:
                     pass
+            if len(df[parameter].unique())>=0.5*df.shape[0]:
+                bad_parameters.append(parameter)
+            if df[parameter].dtype == object and len(df[parameter].unique())>=10*df.shape[1]:
+                bad_parameters.append(parameter)
+            if all(type(item)==str and item.startswith("[") and item.endswith("]") for item in series):#  and item.startswith("[{'src'")
+                if all(type(ast.literal_eval(item))==list for item in series):
+                    bad_parameters.append(parameter)
         for file in files:
             bad_parameters.append("parameters."+file)
             bad_parameters.append("parameters."+file+".values")
@@ -239,15 +243,19 @@ finished=getfiles("plots_dump")
 filenames=getfiles("csv_dump")
 filenames.remove(".DS_Store")
 
+only_new=False
+
 print("length", len(filenames))
-for file in finished:
-    # print(file[:-4])
-    try:
-        filenames.remove(file[:-4]+".csv")
-    except:
-        pass
+
+if only_new:
+    for file in finished:
+        # print(file[:-4])
+        try:
+            filenames.remove(file[:-4]+".csv")
+        except:
+            pass
 print("length", len(filenames))
-        
+
 
 for i in range(len(filenames)):
     if i % 100 == 0:
