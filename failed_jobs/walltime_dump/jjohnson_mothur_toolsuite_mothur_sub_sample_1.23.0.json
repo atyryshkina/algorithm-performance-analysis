@@ -1,0 +1,57 @@
+[
+    {
+        "create_time": "2017-04-05 03:39:38.441074",
+        "datasets": [
+            {
+                "dataset_id": "19467082",
+                "extension": "tabular",
+                "file_size": 182031,
+                "name": "hu_otu_table.txt",
+                "param_name": "otu_in"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@_uv_",
+                "exact": false,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.33"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3059872,
+        "id": 15490954,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9618858.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "count": "null",
+            "dbkey": "\"?\"",
+            "input": "{\"otu_in\": {\"values\": [{\"src\": \"hda\", \"id\": 29075351}]}, \"label\": null, \"use_group\": {\"to_filter\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"format\": \"list\"}",
+            "size": "\"10000\"",
+            "taxonomy": "null"
+        },
+        "runner_name": null,
+        "session_id": 37117180,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/mothur_toolsuite/mothur_sub_sample/1.23.0",
+        "tool_version": "1.23.0",
+        "traceback": null,
+        "update_time": "2017-04-06 15:40:07.151801",
+        "user_id": null
+    }
+]

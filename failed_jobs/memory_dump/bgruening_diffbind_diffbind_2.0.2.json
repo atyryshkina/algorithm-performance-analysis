@@ -1,0 +1,1507 @@
+[
+    {
+        "create_time": "2016-06-07 00:19:44.463438",
+        "datasets": [
+            {
+                "dataset_id": "16102997",
+                "extension": "bam",
+                "file_size": 7998215982,
+                "name": "siCon repl1.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "16103329",
+                "extension": "bam",
+                "file_size": 10146198032,
+                "name": "input siCon repl1.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "16122610",
+                "extension": "bed",
+                "file_size": 1342373695,
+                "name": "MACS2 callpeak on data 22 and data 5 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "16102998",
+                "extension": "bam",
+                "file_size": 7228135437,
+                "name": "siCon repl2.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "16103660",
+                "extension": "bam",
+                "file_size": 8693579393,
+                "name": "inut siCon repl2.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "16122611",
+                "extension": "bed",
+                "file_size": 2181335654,
+                "name": "MACS2 callpeak on data 27 and data 6 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "16102999",
+                "extension": "bam",
+                "file_size": 6671977872,
+                "name": "siP3 repl1.bam",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "16103330",
+                "extension": "bam",
+                "file_size": 8962586624,
+                "name": "input siP3 repl1.bam",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "16122612",
+                "extension": "bed",
+                "file_size": 1589205068,
+                "name": "MACS2 callpeak on data 7 (Bedgraph Treatment)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "16103000",
+                "extension": "bam",
+                "file_size": 7333611016,
+                "name": "siP3 repl2.bam",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "16103659",
+                "extension": "bam",
+                "file_size": 9596732205,
+                "name": "input siP3 repl2.bam",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "16122613",
+                "extension": "bed",
+                "file_size": 1616085031,
+                "name": "MACS2 callpeak on data 26 and data 8 (Bedgraph Treatment)",
+                "param_name": "samples_3|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2728365,
+        "id": 13090695,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7274876.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50ea2f9c9a893c4b6\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bccedd729cefb2ef\"}]}, \"sample_id\": \"siCon1\", \"tissue\": \"ECs\", \"replicate\": \"1\", \"factor\": \"Notch1\", \"__index__\": 0, \"condition\": \"siControl\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dc77ab4be79cc045\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57c80853bbee73102\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b562e3fdb01ec22bfc\"}]}, \"sample_id\": \"siCon2\", \"tissue\": \"ECs\", \"replicate\": \"1\", \"factor\": \"Notch1\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f13a02c4e8862db3\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51fb1157a18001d91\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bc37f0ffcbba33c1\"}]}, \"sample_id\": \"siP3-1\", \"tissue\": \"ECs\", \"replicate\": \"1\", \"factor\": \"Notch1\", \"__index__\": 2, \"condition\": \"siPFKFB3\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54055a7bdd2028703\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5308058dfdd428ea6\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb9a221471f38403\"}]}, \"sample_id\": \"siP3-2\", \"tissue\": \"ECs\", \"replicate\": \"1\", \"factor\": \"Notch1\", \"__index__\": 3, \"condition\": \"siPFKFB3\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c2611f3a15de8de3\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 30647447,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-06-07 01:31:14.757221",
+        "user_id": 85504
+    },
+    {
+        "create_time": "2017-03-06 21:08:25.616269",
+        "datasets": [
+            {
+                "dataset_id": "19043238",
+                "extension": "bam",
+                "file_size": 2489147246,
+                "name": "Bowtie2 on data 1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "19045167",
+                "extension": "bam",
+                "file_size": 4545480669,
+                "name": "ENCFF790TAN_K562_InputControl_Replicate1.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "19102997",
+                "extension": "bed",
+                "file_size": 3067402928,
+                "name": "MACS2 callpeak on data 10 and data 5 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "19043240",
+                "extension": "bam",
+                "file_size": 2581583387,
+                "name": "Bowtie2 on data 2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "19045166",
+                "extension": "bam",
+                "file_size": 4629688293,
+                "name": "ENCFF712WXB_K562_InputControl_Replicate2.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "19102998",
+                "extension": "bed",
+                "file_size": 3213415744,
+                "name": "DRBP76_K562_Rep2(Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/3.0.3/bgruening/diffbind/9e9f85c20d99",
+                "script": "/galaxy/main/deps/R/3.0.3/bgruening/diffbind/9e9f85c20d99/env.sh",
+                "version": "3.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "deseq2",
+                "path": "/galaxy/main/deps/deseq2/1.2.10/bgruening/diffbind/9e9f85c20d99",
+                "script": "/galaxy/main/deps/deseq2/1.2.10/bgruening/diffbind/9e9f85c20d99/env.sh",
+                "version": "1.2.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "diffbind",
+                "path": "/galaxy/main/deps/diffbind/1.8.3/bgruening/diffbind/9e9f85c20d99",
+                "script": "/galaxy/main/deps/diffbind/1.8.3/bgruening/diffbind/9e9f85c20d99/env.sh",
+                "version": "1.8.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3015872,
+        "id": 15223846,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9372702.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 28582216}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 28644956}]}, \"sample_id\": \"612155\", \"tissue\": \"K562\", \"replicate\": \"1\", \"factor\": \"NF90\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 28579853}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 28582214}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 28644957}]}, \"sample_id\": \"612155\", \"tissue\": \"K562\", \"replicate\": \"2\", \"factor\": \"NF90\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 28579855}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 36379461,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2017-03-06 22:01:33.463413",
+        "user_id": 101168
+    },
+    {
+        "create_time": "2016-06-07 02:22:16.494953",
+        "datasets": [
+            {
+                "dataset_id": "16102997",
+                "extension": "bam",
+                "file_size": 7998215982,
+                "name": "siCon repl1.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "16103329",
+                "extension": "bam",
+                "file_size": 10146198032,
+                "name": "input siCon repl1.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "16122610",
+                "extension": "bed",
+                "file_size": 1342373695,
+                "name": "MACS2 callpeak on data 22 and data 5 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "16102998",
+                "extension": "bam",
+                "file_size": 7228135437,
+                "name": "siCon repl2.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "16103660",
+                "extension": "bam",
+                "file_size": 8693579393,
+                "name": "inut siCon repl2.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "16122611",
+                "extension": "bed",
+                "file_size": 2181335654,
+                "name": "MACS2 callpeak on data 27 and data 6 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "16102999",
+                "extension": "bam",
+                "file_size": 6671977872,
+                "name": "siP3 repl1.bam",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "16103330",
+                "extension": "bam",
+                "file_size": 8962586624,
+                "name": "input siP3 repl1.bam",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "16122612",
+                "extension": "bed",
+                "file_size": 1589205068,
+                "name": "MACS2 callpeak on data 7 (Bedgraph Treatment)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "16103000",
+                "extension": "bam",
+                "file_size": 7333611016,
+                "name": "siP3 repl2.bam",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "16103659",
+                "extension": "bam",
+                "file_size": 9596732205,
+                "name": "input siP3 repl2.bam",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "16122613",
+                "extension": "bed",
+                "file_size": 1616085031,
+                "name": "MACS2 callpeak on data 26 and data 8 (Bedgraph Treatment)",
+                "param_name": "samples_3|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2728365,
+        "id": 13091163,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7275287.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50ea2f9c9a893c4b6\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bccedd729cefb2ef\"}]}, \"sample_id\": \"siCon1\", \"tissue\": \"ECs\", \"replicate\": \"1\", \"factor\": \"Notch1\", \"__index__\": 0, \"condition\": \"siControl\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dc77ab4be79cc045\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57c80853bbee73102\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b562e3fdb01ec22bfc\"}]}, \"sample_id\": \"siCon2\", \"tissue\": \"ECs\", \"replicate\": \"2\", \"factor\": \"Notch1\", \"__index__\": 1, \"condition\": \"siControl\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f13a02c4e8862db3\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51fb1157a18001d91\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bc37f0ffcbba33c1\"}]}, \"sample_id\": \"siP-1\", \"tissue\": \"ECs\", \"replicate\": \"1\", \"factor\": \"Notch1\", \"__index__\": 2, \"condition\": \"siPFKFB3\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54055a7bdd2028703\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5308058dfdd428ea6\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb9a221471f38403\"}]}, \"sample_id\": \"siP-2\", \"tissue\": \"ECs\", \"replicate\": \"2\", \"factor\": \"Notch1\", \"__index__\": 3, \"condition\": \"siPFKFB3\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c2611f3a15de8de3\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 30690280,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-06-07 03:07:32.297586",
+        "user_id": 85504
+    },
+    {
+        "create_time": "2016-03-08 00:36:34.605775",
+        "datasets": [
+            {
+                "dataset_id": "14687451",
+                "extension": "bam",
+                "file_size": 2124193180,
+                "name": "Bowtie2 on data 43: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "14688435",
+                "extension": "bam",
+                "file_size": 164569698,
+                "name": "Bowtie2 on data 83: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14716808",
+                "extension": "bed",
+                "file_size": 2659513979,
+                "name": "MACS2 callpeak on data 85 and data 47 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "14687458",
+                "extension": "bam",
+                "file_size": 1905317088,
+                "name": "Bowtie2 on data 45: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "14688435",
+                "extension": "bam",
+                "file_size": 164569698,
+                "name": "Bowtie2 on data 83: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14716809",
+                "extension": "bed",
+                "file_size": 4357860711,
+                "name": "MACS2 callpeak on data 84 and data 49 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2617088,
+        "id": 12062871,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6285878.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 23698456, \"peaks\": 23729306, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": 23697369}, {\"bamcontrol\": 23698456, \"peaks\": 23729307, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": 23697378}]"
+        },
+        "runner_name": null,
+        "session_id": 28719198,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-03-08 02:01:58.237893",
+        "user_id": 19259
+    },
+    {
+        "create_time": "2016-06-12 21:52:05.193251",
+        "datasets": [
+            {
+                "dataset_id": "16193610",
+                "extension": "bam",
+                "file_size": 4441061657,
+                "name": "SAM-to-BAM on IP2: converted BAM",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "16193610",
+                "extension": "bam",
+                "file_size": 4441061657,
+                "name": "SAM-to-BAM on IP2: converted BAM",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "16200258",
+                "extension": "bed",
+                "file_size": 1710646456,
+                "name": "bigwigCompare on data 58 and data 57",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "16078136",
+                "extension": "bam",
+                "file_size": 1825143734,
+                "name": "SAM-to-BAM TCF1: converted BAM",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "16193553",
+                "extension": "bam",
+                "file_size": 3226681047,
+                "name": "SAM-to-BAM h3k1: converted BAM",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "16196156",
+                "extension": "bed",
+                "file_size": 49968,
+                "name": "tcf1 on ip1 (peaks: bed)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2735444,
+        "id": 13143277,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7328071.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51df6239ad85fed06\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b594b4a3c9bbcd0aaa\"}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51df6239ad85fed06\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cdc722229f8bea36\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59636d976fa81ac5f\"}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d95796a035449c67\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 30592499,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-06-12 22:27:49.440091",
+        "user_id": 62141
+    },
+    {
+        "create_time": "2016-02-11 20:34:08.777011",
+        "datasets": [
+            {
+                "dataset_id": "14036019",
+                "extension": "bam",
+                "file_size": 1020297721,
+                "name": "790merged.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "14036475",
+                "extension": "bam",
+                "file_size": 1331413154,
+                "name": "794merged.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14305112",
+                "extension": "bed",
+                "file_size": 1455392102,
+                "name": "790macs2_treat_pileup.bd",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "14037365",
+                "extension": "bam",
+                "file_size": 904047447,
+                "name": "792merged.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "14037378",
+                "extension": "bam",
+                "file_size": 1188220765,
+                "name": "796merged.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14305116",
+                "extension": "bed",
+                "file_size": 1265524218,
+                "name": "792macs2_treat_pileup.bd",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2529237,
+        "id": 11795176,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6048920.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "format": "\"bed\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 22993145, \"peaks\": 23284952, \"sample_id\": \"790\", \"tissue\": \"t cell\", \"replicate\": \"1\", \"factor\": \"CTCF\", \"__index__\": 0, \"condition\": \"LowIL2\", \"bamreads\": 22992683}, {\"bamcontrol\": 22994096, \"peaks\": 23284956, \"sample_id\": \"792\", \"tissue\": \"t cell\", \"replicate\": \"1\", \"factor\": \"CTCF\", \"__index__\": 1, \"condition\": \"LowIL2+KG\", \"bamreads\": 22994081}]"
+        },
+        "runner_name": null,
+        "session_id": 28264722,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-02-11 20:55:43.341897",
+        "user_id": 74818
+    },
+    {
+        "create_time": "2016-03-07 12:33:21.422181",
+        "datasets": [
+            {
+                "dataset_id": "14694452",
+                "extension": "bam",
+                "file_size": 1684338247,
+                "name": "SAM-to-BAM on data 93: converted BAM",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "14694456",
+                "extension": "bam",
+                "file_size": 162607564,
+                "name": "SAM-to-BAM on data 96: converted BAM",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14702774",
+                "extension": "bed",
+                "file_size": 3633180862,
+                "name": "MACS2 callpeak on data 107 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "14694454",
+                "extension": "bam",
+                "file_size": 162607564,
+                "name": "SAM-to-BAM on data 96: converted BAM",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "14694455",
+                "extension": "bam",
+                "file_size": 1673791361,
+                "name": "SAM-to-BAM on data 95: converted BAM",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14702775",
+                "extension": "bed",
+                "file_size": 358386558,
+                "name": "MACS2 callpeak on data 108 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2617088,
+        "id": 12051349,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6277775.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 23705612, \"peaks\": 23714620, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": 23705608}, {\"bamcontrol\": 23705611, \"peaks\": 23714621, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": 23705610}]"
+        },
+        "runner_name": null,
+        "session_id": 28719198,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-03-07 13:34:42.805341",
+        "user_id": 19259
+    },
+    {
+        "create_time": "2016-02-10 19:37:32.640545",
+        "datasets": [
+            {
+                "dataset_id": "14036019",
+                "extension": "bam",
+                "file_size": 1020297721,
+                "name": "790merged.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "14036475",
+                "extension": "bam",
+                "file_size": 1331413154,
+                "name": "794merged.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14305112",
+                "extension": "bed",
+                "file_size": 1455392102,
+                "name": "790macs2_treat_pileup.bd",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "14086536",
+                "extension": "bam",
+                "file_size": 1865554349,
+                "name": "333merged.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "14086857",
+                "extension": "bam",
+                "file_size": 2568824386,
+                "name": "336merged.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14305114",
+                "extension": "bed",
+                "file_size": 2913432034,
+                "name": "333macs2.1_treat_pileup.bd",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "14037365",
+                "extension": "bam",
+                "file_size": 904047447,
+                "name": "792merged.bam",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "14037378",
+                "extension": "bam",
+                "file_size": 1188220765,
+                "name": "796merged.bam",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "14305116",
+                "extension": "bed",
+                "file_size": 1265524218,
+                "name": "792macs2_treat_pileup.bd",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "14086971",
+                "extension": "bam",
+                "file_size": 1893155662,
+                "name": "332merged.bam",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "14086977",
+                "extension": "bam",
+                "file_size": 2529054534,
+                "name": "335merged.bam",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "14305117",
+                "extension": "bed",
+                "file_size": 2833627537,
+                "name": "332macs2.1_treat_pileup.bd",
+                "param_name": "samples_3|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2529237,
+        "id": 11781064,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6034854.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "format": "\"bed\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 22993145, \"peaks\": 23284952, \"sample_id\": \"790\", \"tissue\": \"leukocyte\", \"replicate\": \"1\", \"factor\": \"CTCF\", \"__index__\": 0, \"condition\": \"LowIL-2\", \"bamreads\": 22992683}, {\"bamcontrol\": 23049281, \"peaks\": 23284954, \"sample_id\": \"333\", \"tissue\": \"leukocyte\", \"replicate\": \"2\", \"factor\": \"CTCF\", \"__index__\": 1, \"condition\": \"LowIL-2\", \"bamreads\": 23048945}, {\"bamcontrol\": 22994096, \"peaks\": 23284956, \"sample_id\": \"792\", \"tissue\": \"leukocyte\", \"replicate\": \"1\", \"factor\": \"CTCF\", \"__index__\": 2, \"condition\": \"LowIL-2alphaKG\", \"bamreads\": 22994081}, {\"bamcontrol\": 23049401, \"peaks\": 23284957, \"sample_id\": \"332\", \"tissue\": \"leukocyte\", \"replicate\": \"2\", \"factor\": \"CTCF\", \"__index__\": 3, \"condition\": \"LowIL-2alphaKG\", \"bamreads\": 23049395}]"
+        },
+        "runner_name": null,
+        "session_id": 28264722,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-02-10 20:40:05.868338",
+        "user_id": 74818
+    },
+    {
+        "create_time": "2016-03-08 15:59:14.649280",
+        "datasets": [
+            {
+                "dataset_id": "14687451",
+                "extension": "bam",
+                "file_size": 2124193180,
+                "name": "Bowtie2 on data 43: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "14726902",
+                "extension": "bam",
+                "file_size": 1469409049,
+                "name": "Bowtie2 on data 253: H1-input",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14727409",
+                "extension": "bed",
+                "file_size": 1701344741,
+                "name": "MACS2 callpeak on data 47 (Bedgraph Control)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "14722439",
+                "extension": "bam",
+                "file_size": 1905317144,
+                "name": "Bowtie2 on data 218: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "14727326",
+                "extension": "bam",
+                "file_size": 1439725803,
+                "name": "Bowtie2 on data 259: H9-Input",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14724083",
+                "extension": "bed",
+                "file_size": 6847560,
+                "name": "MACS2 callpeak on data 220 (summits in BED)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2617088,
+        "id": 12070888,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6295058.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 23740514, \"peaks\": 23741047, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": 23697369}, {\"bamcontrol\": 23740964, \"peaks\": 23737058, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": 23735229}]"
+        },
+        "runner_name": null,
+        "session_id": 28719198,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-03-08 16:43:24.703801",
+        "user_id": 19259
+    },
+    {
+        "create_time": "2016-09-22 19:49:52.486467",
+        "datasets": [
+            {
+                "dataset_id": "16975218",
+                "extension": "bam",
+                "file_size": 274128204,
+                "name": "SAM-to-BAM C3",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "16975042",
+                "extension": "bam",
+                "file_size": 237896261,
+                "name": "SAM-to-BAM A3",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "17262229",
+                "extension": "bed",
+                "file_size": 177263655,
+                "name": "SAM-to-BAM A1 (as BED)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "16974982",
+                "extension": "bam",
+                "file_size": 246117010,
+                "name": "SAM-to-BAM A2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "16975217",
+                "extension": "bam",
+                "file_size": 225287726,
+                "name": "SAM-to-BAM C2",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "17262230",
+                "extension": "bed",
+                "file_size": 230432663,
+                "name": "SAM-to-BAM A2 (as BED)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2799370,
+        "id": 13920172,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8142282.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/rn6.len\"",
+            "dbkey": "\"rn6\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dee00e89f361da78\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58aae683044fb9ce6\"}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5badde5406d5099c7\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52dda1de5a0acae01\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b552fea9f1c0f95090\"}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5462acb6f0c224d8d\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 31486278,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-09-22 20:08:10.066237",
+        "user_id": 17286
+    },
+    {
+        "create_time": "2016-09-07 18:32:43.691221",
+        "datasets": [
+            {
+                "dataset_id": "17101962",
+                "extension": "bam",
+                "file_size": 995478544,
+                "name": "Sort on data 113",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "17101961",
+                "extension": "bam",
+                "file_size": 1564257761,
+                "name": "Sort on data 112",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "17102539",
+                "extension": "bed",
+                "file_size": 1819024477,
+                "name": "MACS2 callpeak on data 114 and data 115 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "17096821",
+                "extension": "bam",
+                "file_size": 1161247002,
+                "name": "Sort on data 93",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "17098730",
+                "extension": "bam",
+                "file_size": 1542109690,
+                "name": "Sort on data 98",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "17102540",
+                "extension": "bed",
+                "file_size": 2322610747,
+                "name": "MACS2 callpeak on data 100 and data 99 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2812161,
+        "id": 13800478,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8021049.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cb64d3ca4976ed7a\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dc7e7903c77255f0\"}]}, \"sample_id\": \"mitotic\", \"tissue\": \"ES cells\", \"replicate\": \"1\", \"factor\": \"Parp1\", \"__index__\": 0, \"condition\": \"\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f0fbaf372a8849db\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d00b8ae8de411ab0\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52439d463eb968f90\"}]}, \"sample_id\": \"interphase\", \"tissue\": \"ES cells\", \"replicate\": \"1\", \"factor\": \"Parp1\", \"__index__\": 1, \"condition\": \"\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d004624387ca5267\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 32799351,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-09-07 19:20:07.659496",
+        "user_id": 89409
+    },
+    {
+        "create_time": "2016-02-19 10:46:03.592427",
+        "datasets": [
+            {
+                "dataset_id": "14314434",
+                "extension": "bam",
+                "file_size": 2559533473,
+                "name": "AU_NT_R1_R2_Chip_RmDup.BAM ",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "14312229",
+                "extension": "bam",
+                "file_size": 3171979788,
+                "name": "AU_In_R1_R2_Chip_RmDup.BAM",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14429891",
+                "extension": "bed",
+                "file_size": 1774542063,
+                "name": "MACS2 callpeak on data 37 and data 38 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "14317595",
+                "extension": "bam",
+                "file_size": 3436970713,
+                "name": "AU_MC_R1_R2_Chip_RmDup.BAM",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "14312229",
+                "extension": "bam",
+                "file_size": 3171979788,
+                "name": "AU_In_R1_R2_Chip_RmDup.BAM",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14429893",
+                "extension": "bed",
+                "file_size": 2339724111,
+                "name": "MACS2 callpeak on data 37 and data 44 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2526101,
+        "id": 11876193,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6116690.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 23292730, \"peaks\": 23418324, \"sample_id\": \"SKBR3.1\", \"tissue\": \"SKBR3\", \"replicate\": \"1\", \"factor\": \"ER\", \"__index__\": 0, \"condition\": \"NT\", \"bamreads\": 23294960}, {\"bamcontrol\": 23292730, \"peaks\": 23418326, \"sample_id\": \"SKBR3.2\", \"tissue\": \"SKBR3\", \"replicate\": \"1\", \"factor\": \"ER\", \"__index__\": 1, \"condition\": \"MC\", \"bamreads\": 23298177}]"
+        },
+        "runner_name": null,
+        "session_id": 28493264,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-02-19 11:36:27.875655",
+        "user_id": 74595
+    },
+    {
+        "create_time": "2016-05-31 15:27:04.906730",
+        "datasets": [
+            {
+                "dataset_id": "15726990",
+                "extension": "bam",
+                "file_size": 1884092361,
+                "name": "M1_nodup.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "15728441",
+                "extension": "bam",
+                "file_size": 3015614533,
+                "name": "I1_nodup.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "16029458",
+                "extension": "bed",
+                "file_size": 12847435,
+                "name": "MACS2 call peak M1 (broad Peaks)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "15726991",
+                "extension": "bam",
+                "file_size": 1722852657,
+                "name": "M2_nodup.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "15728442",
+                "extension": "bam",
+                "file_size": 3595011476,
+                "name": "I2_nodup.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "16029473",
+                "extension": "bed",
+                "file_size": 15520559,
+                "name": "MACS2 call peak M2 (broad Peaks)",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "15726992",
+                "extension": "bam",
+                "file_size": 2692355202,
+                "name": "M3_nodup.bam",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "15728443",
+                "extension": "bam",
+                "file_size": 2700569673,
+                "name": "I3_nodup.bam",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "16029481",
+                "extension": "bed",
+                "file_size": 19331486,
+                "name": "MACS2 call peak M3 (broad Peaks)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "15726993",
+                "extension": "bam",
+                "file_size": 2517269361,
+                "name": "M4_nodup.bam",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "15728447",
+                "extension": "bam",
+                "file_size": 4312692448,
+                "name": "I4_nodup.bam",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "16029489",
+                "extension": "bed",
+                "file_size": 21272544,
+                "name": "MACS2 call peak M4 (broad Peaks)",
+                "param_name": "samples_3|peaks"
+            },
+            {
+                "dataset_id": "15727308",
+                "extension": "bam",
+                "file_size": 2571318035,
+                "name": "M5_nodup.bam",
+                "param_name": "samples_4|bamreads"
+            },
+            {
+                "dataset_id": "15728448",
+                "extension": "bam",
+                "file_size": 4444971868,
+                "name": "I5_nodup.bam",
+                "param_name": "samples_4|bamcontrol"
+            },
+            {
+                "dataset_id": "16029497",
+                "extension": "bed",
+                "file_size": 20881959,
+                "name": "MACS2 call peak M5 (broad Peaks)",
+                "param_name": "samples_4|peaks"
+            },
+            {
+                "dataset_id": "15727309",
+                "extension": "bam",
+                "file_size": 2709304095,
+                "name": "M6_nodup.bam",
+                "param_name": "samples_5|bamreads"
+            },
+            {
+                "dataset_id": "15728450",
+                "extension": "bam",
+                "file_size": 2919374442,
+                "name": "I6_nodup.bam",
+                "param_name": "samples_5|bamcontrol"
+            },
+            {
+                "dataset_id": "16029508",
+                "extension": "bed",
+                "file_size": 18259697,
+                "name": "MACS2 call peak M6 (broad Peaks)",
+                "param_name": "samples_5|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2698345,
+        "id": 13031060,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7210467.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a83616ec85e1a22d\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5609f1a65d9db6b3f\"}]}, \"sample_id\": \"#1\", \"tissue\": \"Loucy\", \"replicate\": \"1\", \"factor\": \"5mC\", \"__index__\": 0, \"condition\": \"DMSO\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e35821d63b2a018a\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56c71848bad8b8de0\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51dd743fccdd1471b\"}]}, \"sample_id\": \"2\", \"tissue\": \"Loucy\", \"replicate\": \"1\", \"factor\": \"5mC\", \"__index__\": 1, \"condition\": \"Decitabine\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b552ff213d0db1d36c\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b185771124259748\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b561a7fea269dec205\"}]}, \"sample_id\": \"3\", \"tissue\": \"Loucy\", \"replicate\": \"2\", \"factor\": \"5mC\", \"__index__\": 2, \"condition\": \"DMSO\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5261ecb1952fda780\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ba6ea99ffc4cd40a\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5561c1f8b1f75b965\"}]}, \"sample_id\": \"4\", \"tissue\": \"Loucy\", \"replicate\": \"2\", \"factor\": \"5mC\", \"__index__\": 3, \"condition\": \"Decitabine\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58fed4f57af59856e\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b532547d2252cb7c5f\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b531a212fc34bd3f01\"}]}, \"sample_id\": \"5\", \"tissue\": \"Loucy\", \"replicate\": \"3\", \"factor\": \"5mc\", \"__index__\": 4, \"condition\": \"DMSO\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5200490ce794fb2e7\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57cefc7a3a11f4b90\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51c15b9722f384ac7\"}]}, \"sample_id\": \"6\", \"tissue\": \"Loucy\", \"replicate\": \"3\", \"factor\": \"5mC\", \"__index__\": 5, \"condition\": \"Decitabine\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51520ffa7ce84b471\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 30091793,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-05-31 16:22:10.939271",
+        "user_id": 70838
+    },
+    {
+        "create_time": "2016-09-09 16:12:52.387068",
+        "datasets": [
+            {
+                "dataset_id": "17028654",
+                "extension": "bam",
+                "file_size": 637746545,
+                "name": "GenomeSpace import on UW_K562_H3K4me3.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "17028668",
+                "extension": "bam",
+                "file_size": 688367491,
+                "name": "GenomeSpace import on UW_K562_H3K4me3_Control.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "17123519",
+                "extension": "bed",
+                "file_size": 653674525,
+                "name": "MACS2 callpeak on data 147 and data 146 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "17028668",
+                "extension": "bam",
+                "file_size": 688367491,
+                "name": "GenomeSpace import on UW_K562_H3K4me3_Control.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "17028668",
+                "extension": "bam",
+                "file_size": 688367491,
+                "name": "GenomeSpace import on UW_K562_H3K4me3_Control.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "17123518",
+                "extension": "bed",
+                "file_size": 1118349107,
+                "name": "MACS2 callpeak on data 147 and data 146 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2799332,
+        "id": 13816631,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8037990.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d0122e7205bdf574\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5aacdcd386167ce18\"}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"K562\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54ef2a3986864a443\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d0122e7205bdf574\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ab4f2c70c6de036a\"}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"K562\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d0122e7205bdf574\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 32746960,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-09-09 17:04:21.195761",
+        "user_id": 88883
+    },
+    {
+        "create_time": "2016-02-04 22:50:38.073649",
+        "datasets": [
+            {
+                "dataset_id": "13902145",
+                "extension": "bam",
+                "file_size": 1296367780,
+                "name": "e93delta1_48apf_faire.markdup.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "13902071",
+                "extension": "bam",
+                "file_size": 1238365363,
+                "name": "e93delta1_48apf_ref.markdup.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "14218687",
+                "extension": "bed",
+                "file_size": 823148886,
+                "name": "MACS2 callpeak on data E93delta1 48apf (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "13902343",
+                "extension": "bam",
+                "file_size": 2006392697,
+                "name": "IsoA_48apf_faire.markdup.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "13901808",
+                "extension": "bam",
+                "file_size": 1703604191,
+                "name": "iso_a_48apf_reference.markdup.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "14218688",
+                "extension": "bed",
+                "file_size": 1013943269,
+                "name": "MACS2_callpeak_on_IsoA_48apf_(Bedgraph_Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2589142,
+        "id": 11714095,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5971915.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/013/967/dataset_13967963.dat\"",
+            "dbkey": "\"dm6\"",
+            "format": "\"wig\"",
+            "pdf": "\"True\"",
+            "samples": "[{\"bamcontrol\": 23191455, \"peaks\": 23191473, \"sample_id\": \"E93delta148APF\", \"tissue\": \"wing\", \"replicate\": \"1\", \"factor\": \"E93\", \"__index__\": 0, \"condition\": \"mutant\", \"bamreads\": 23191457}, {\"bamcontrol\": 23191447, \"peaks\": 23191474, \"sample_id\": \"IsoA48APF\", \"tissue\": \"wing\", \"replicate\": \"1\", \"factor\": \"E93\", \"__index__\": 1, \"condition\": \"wildtype\", \"bamreads\": 23191449}]"
+        },
+        "runner_name": null,
+        "session_id": 27907924,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-02-04 23:46:17.186203",
+        "user_id": 59928
+    },
+    {
+        "create_time": "2016-06-21 18:24:52.066401",
+        "datasets": [
+            {
+                "dataset_id": "16260527",
+                "extension": "bam",
+                "file_size": 989587291,
+                "name": "WTweak BAM on data 44: converted BAM",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "16260534",
+                "extension": "bam",
+                "file_size": 1054887062,
+                "name": "Ctrl weak BAM on data 48: converted BAM",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "16312832",
+                "extension": "bed",
+                "file_size": 750351336,
+                "name": "MACS2 WTweak callpeak on data 54 and data 50 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "16260532",
+                "extension": "bam",
+                "file_size": 929703855,
+                "name": "3YF weak BAM on data 46: converted BAM",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "16260534",
+                "extension": "bam",
+                "file_size": 1054887062,
+                "name": "Ctrl weak BAM on data 48: converted BAM",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "16312833",
+                "extension": "bed",
+                "file_size": 703613435,
+                "name": "MACS2 3YFweak callpeak on data 54 and data 52 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2740275,
+        "id": 13227587,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7412471.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b557a20a41bd64079f\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bfb16b982103ed39\"}]}, \"sample_id\": \"Sample WTweak\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b516c3a993087dc227\"}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b557a20a41bd64079f\"}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dfba7b6737ad47ac\"}]}, \"sample_id\": \"3YFweak\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5de39bde7b7c0ffe6\"}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 30891635,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.0.2",
+        "tool_version": "2.0.2",
+        "traceback": null,
+        "update_time": "2016-06-21 19:18:47.415231",
+        "user_id": 30354
+    }
+]

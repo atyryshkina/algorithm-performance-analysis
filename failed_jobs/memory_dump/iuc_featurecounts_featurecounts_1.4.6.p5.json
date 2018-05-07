@@ -1,0 +1,66 @@
+[
+    {
+        "create_time": "2018-01-17 22:15:37.925698",
+        "datasets": [
+            {
+                "dataset_id": "23056841",
+                "extension": "bam",
+                "file_size": 14212299629,
+                "name": "HISAT2 on data 55, data 44, and data 45",
+                "param_name": "alignment"
+            },
+            {
+                "dataset_id": "23138928",
+                "extension": "gtf",
+                "file_size": 20214183064,
+                "name": "Paste on data 85 and data 86",
+                "param_name": "reference_gene_sets"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__subread@1.4.6p5",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "subread",
+                "version": "1.4.6p5"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3390542,
+        "id": 18066396,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12144531",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "alignment": "{\"values\": [{\"src\": \"hda\", \"id\": 33287105}]}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "extended_parameters": "{\"gff_feature_attribute\": \"gene_id\", \"read_extension_3p\": \"0\", \"strand_specificity\": \"0\", \"mapping_quality\": \"12\", \"primary\": \"false\", \"count_split_alignments_only\": \"false\", \"read_extension_5p\": \"0\", \"min_overlap\": \"1\", \"contribute_to_multiple_features\": \"false\", \"summarization_level\": \"false\", \"largest_overlap\": \"false\", \"read_reduction\": \"\", \"multimapping_enabled\": {\"multimapping_counts\": \"\", \"__current_case__\": 1}, \"ignore_dup\": \"false\", \"gff_feature_type\": \"exon\"}",
+            "format": "\"tabdel_short\"",
+            "gtf_source": "{\"ref_source\": \"history\", \"reference_gene_sets\": {\"values\": [{\"src\": \"hda\", \"id\": 33358420}]}, \"__current_case__\": 1}",
+            "include_feature_length_file": "\"false\"",
+            "pe_parameters": "{\"only_both_ends\": \"false\", \"exclude_chimerics\": \"true\", \"orientation\": \"fr\", \"fragment_counting_enabled\": {\"fragment_counting\": \"\", \"__current_case__\": 1}}"
+        },
+        "runner_name": null,
+        "session_id": 43254938,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.4.6.p5",
+        "tool_version": "1.4.6.p5",
+        "traceback": null,
+        "update_time": "2018-01-17 22:26:30.536241",
+        "user_id": 119815
+    }
+]

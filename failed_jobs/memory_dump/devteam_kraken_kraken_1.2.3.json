@@ -1,0 +1,2350 @@
+[
+    {
+        "create_time": "2017-12-03 21:10:54.151567",
+        "datasets": [
+            {
+                "dataset_id": "22562139",
+                "extension": "fastqsanger",
+                "file_size": 246066957,
+                "name": "IvanaC_S2_L001_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22562143",
+                "extension": "fastqsanger",
+                "file_size": 246636763,
+                "name": "IvanaC_S2_L001_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3349511,
+        "id": 17684400,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11748847",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32686230}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32686226}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"true\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42400251,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-04 00:44:52.442521",
+        "user_id": 117813
+    },
+    {
+        "create_time": "2018-01-10 20:58:58.233897",
+        "datasets": [
+            {
+                "dataset_id": "20619106",
+                "extension": "txt",
+                "file_size": 2068956430,
+                "name": "FASTQ joiner on Sample 1",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3189308,
+        "id": 17996733,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12073536",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 30484382}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43121579,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-01-11 10:13:36.751015",
+        "user_id": 108846
+    },
+    {
+        "create_time": "2017-12-08 03:15:07.524322",
+        "datasets": [
+            {
+                "dataset_id": "22663988",
+                "extension": "fastqsanger",
+                "file_size": 832387627,
+                "name": "TillesR1.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22664019",
+                "extension": "fastqsanger",
+                "file_size": 832429643,
+                "name": "TillesR2.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3284781,
+        "id": 17743300,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11809718",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32809810}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32809777}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41243504,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-09 07:52:55.145765",
+        "user_id": 113508
+    },
+    {
+        "create_time": "2017-12-23 12:40:46.565171",
+        "datasets": [
+            {
+                "dataset_id": "22877226",
+                "extension": "fasta",
+                "file_size": 737150224,
+                "name": "VSearch masking on data 136",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3373716,
+        "id": 17885002,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11961180",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"45cd34eae7de11e78bc5005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"HG02697.unmapped.ILLUMINA.bwa.PJL.low_coverage.20121211.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061646}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-24 00:17:52.735417",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-28 08:18:33.760919",
+        "datasets": [
+            {
+                "dataset_id": "22877220",
+                "extension": "fasta",
+                "file_size": 757977665,
+                "name": "VSearch masking on data 130",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17907926,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11982787",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061640}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42859339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-28 10:01:52.888147",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-28 08:18:42.331738",
+        "datasets": [
+            {
+                "dataset_id": "22877222",
+                "extension": "fasta",
+                "file_size": 1157404406,
+                "name": "VSearch masking on data 132",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17907928,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11982788",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061642}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42859339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-28 10:06:02.351805",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-28 08:19:16.756558",
+        "datasets": [
+            {
+                "dataset_id": "22877227",
+                "extension": "fasta",
+                "file_size": 716842515,
+                "name": "VSearch masking on data 137",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17907933,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11983176",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061647}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42859339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-28 11:22:30.673527",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2018-02-25 23:06:00.752050",
+        "datasets": [
+            {
+                "dataset_id": "23775215",
+                "extension": "fasta",
+                "file_size": 988964085,
+                "name": "Bacillus_simplex_r1.fa",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23775230",
+                "extension": "fasta",
+                "file_size": 988964085,
+                "name": "Bacillus_simplex_r2.fa",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3313518,
+        "id": 18516141,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12612223",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 34058778}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 34058762}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 44152500,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-26 10:10:41.971626",
+        "user_id": 115424
+    },
+    {
+        "create_time": "2017-12-23 12:40:46.958664",
+        "datasets": [
+            {
+                "dataset_id": "22877227",
+                "extension": "fasta",
+                "file_size": 716842515,
+                "name": "VSearch masking on data 137",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3373716,
+        "id": 17885003,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11961527",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"45cd34eae7de11e78bc5005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"HG02601.unmapped.ILLUMINA.bwa.PJL.low_coverage.20121211.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061647}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-24 04:00:45.173572",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2018-02-12 02:35:06.134203",
+        "datasets": [
+            {
+                "dataset_id": "23527475",
+                "extension": "fastqsanger",
+                "file_size": 9029792189,
+                "name": "CT42-C_S2_L001_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23527477",
+                "extension": "fastqsanger",
+                "file_size": 9078802933,
+                "name": "CT42-C_S2_L001_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3412542,
+        "id": 18345549,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12429969",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33786949}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33786947}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43849678,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:02:18.207322",
+        "user_id": 121057
+    },
+    {
+        "create_time": "2017-12-07 14:02:49.315424",
+        "datasets": [
+            {
+                "dataset_id": "22653332",
+                "extension": "fastq",
+                "file_size": 8688547294,
+                "name": "SRR1720758 (fastq-dump)",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3080356,
+        "id": 17735959,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11802605",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 32798346}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41168800,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-08 04:11:56.848344",
+        "user_id": 80368
+    },
+    {
+        "create_time": "2017-11-29 10:27:13.041273",
+        "datasets": [
+            {
+                "dataset_id": "22498014",
+                "extension": "fastqsanger",
+                "file_size": 2582309788,
+                "name": "1-A_23306_ATCACG.fastq",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3344659,
+        "id": 17632783,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11693129",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 32608864}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42322768,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-11-30 05:54:51.772797",
+        "user_id": 100847
+    },
+    {
+        "create_time": "2017-12-23 23:54:46.862642",
+        "datasets": [
+            {
+                "dataset_id": "22877223",
+                "extension": "fasta",
+                "file_size": 1116844386,
+                "name": "VSearch masking on data 133",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17887830,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11969801",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061643}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42833120,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-26 05:54:37.173549",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-09-29 14:58:47.070457",
+        "datasets": [
+            {
+                "dataset_id": "21484704",
+                "extension": "fasta",
+                "file_size": 2146562804,
+                "name": "FASTQ to FASTA on data 27",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "21484706",
+                "extension": "fasta",
+                "file_size": 2142961950,
+                "name": "FASTQ to FASTA on data 28",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3266195,
+        "id": 16973369,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11041125.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 31466747}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 31466745}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40918844,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-09-30 02:30:27.128072",
+        "user_id": 73936
+    },
+    {
+        "create_time": "2017-09-09 17:38:47.703217",
+        "datasets": [
+            {
+                "dataset_id": "21186516",
+                "extension": "fasta",
+                "file_size": 169125646,
+                "name": "contigs.fasta",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2913197,
+        "id": 16779348,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10847571",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 31126591}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40309007,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-09-09 19:36:21.965659",
+        "user_id": 89783
+    },
+    {
+        "create_time": "2017-12-23 12:40:45.074065",
+        "datasets": [
+            {
+                "dataset_id": "22877223",
+                "extension": "fasta",
+                "file_size": 1116844386,
+                "name": "VSearch masking on data 133",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3373716,
+        "id": 17884999,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11960506",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"45cd34eae7de11e78bc5005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"HG03727.unmapped.ILLUMINA.bwa.ITU.low_coverage.20130415.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061643}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-23 22:30:29.379721",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-28 08:18:59.456624",
+        "datasets": [
+            {
+                "dataset_id": "22877224",
+                "extension": "fasta",
+                "file_size": 752428893,
+                "name": "VSearch masking on data 134",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17907931,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11983089",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061644}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42859339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-28 10:36:11.082612",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-28 08:19:07.070030",
+        "datasets": [
+            {
+                "dataset_id": "22877226",
+                "extension": "fasta",
+                "file_size": 737150224,
+                "name": "VSearch masking on data 136",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17907932,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11983160",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061646}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42859339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-28 11:30:07.747796",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2018-02-04 15:50:23.414741",
+        "datasets": [
+            {
+                "dataset_id": "23400275",
+                "extension": "fastqsanger",
+                "file_size": 5033736819,
+                "name": "PHA2_R1_trimmomatic.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23400276",
+                "extension": "fastqsanger",
+                "file_size": 5033736819,
+                "name": "PHA2_R2_trimmomatic.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2750890,
+        "id": 18251176,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12333073",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33647193}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33647192}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"true\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 43358388,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-04 18:21:30.421342",
+        "user_id": 68223
+    },
+    {
+        "create_time": "2017-08-23 09:31:16.110569",
+        "datasets": [
+            {
+                "dataset_id": "21036689",
+                "extension": "fastq",
+                "file_size": 6737707014,
+                "name": "ftp://ftp.sra.ebi.ac.uk/vol1/ERA388/ERA388258/fastq/31300_SZAXPI022049-109.clean.pair.rmhost.1.fq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "21036690",
+                "extension": "fastq",
+                "file_size": 6612855434,
+                "name": "ftp://ftp.sra.ebi.ac.uk/vol1/ERA388/ERA388258/fastq/31300_SZAXPI022049-109.clean.pair.rmhost.2.fq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2831352,
+        "id": 16638899,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10711261",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 30961169}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 30961168}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40017165,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-08-24 07:14:05.908842",
+        "user_id": 91037
+    },
+    {
+        "create_time": "2018-02-06 11:18:02.483081",
+        "datasets": [
+            {
+                "dataset_id": "23404975",
+                "extension": "fasta",
+                "file_size": 1330394759,
+                "name": "HB.fasta",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3415632,
+        "id": 18269069,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12362557",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33653162}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41984401,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-07 00:21:43.783675",
+        "user_id": 116237
+    },
+    {
+        "create_time": "2017-11-30 21:28:16.506204",
+        "datasets": [
+            {
+                "dataset_id": "22538030",
+                "extension": "fastqsanger",
+                "file_size": 3653315872,
+                "name": "Severe_IMSA_037_EPI_Unmapped_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22538029",
+                "extension": "fastqsanger",
+                "file_size": 4337922605,
+                "name": "Severe-IMSA_037_EPI_S2_R2_Unmapped.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3346731,
+        "id": 17654014,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11714034",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32656550}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32656551}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42363418,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-01 06:06:52.167186",
+        "user_id": 113740
+    },
+    {
+        "create_time": "2017-09-01 13:29:32.421249",
+        "datasets": [
+            {
+                "dataset_id": "21135815",
+                "extension": "fasta",
+                "file_size": 286497013,
+                "name": "Filter sequences by length on data 38",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3231694,
+        "id": 16711177,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10783740",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 31072231}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40047820,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-09-01 18:14:15.065276",
+        "user_id": 110498
+    },
+    {
+        "create_time": "2017-12-03 01:53:57.456020",
+        "datasets": [
+            {
+                "dataset_id": "22562139",
+                "extension": "fastqsanger",
+                "file_size": 246066957,
+                "name": "IvanaC_S2_L001_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22562143",
+                "extension": "fastqsanger",
+                "file_size": 246636763,
+                "name": "IvanaC_S2_L001_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3349511,
+        "id": 17678689,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11741526",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32686230}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32686226}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"true\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42400251,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-03 05:08:08.913575",
+        "user_id": 117813
+    },
+    {
+        "create_time": "2018-02-12 02:35:07.177921",
+        "datasets": [
+            {
+                "dataset_id": "23527480",
+                "extension": "fastqsanger",
+                "file_size": 9269095630,
+                "name": "CT42-C_S2_L003_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23527481",
+                "extension": "fastqsanger",
+                "file_size": 9325817948,
+                "name": "CT42-C_S2_L003_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3412542,
+        "id": 18345551,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12431807",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33786953}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33786952}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43849678,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-12 15:51:29.870432",
+        "user_id": 121057
+    },
+    {
+        "create_time": "2018-03-07 02:35:31.190370",
+        "datasets": [
+            {
+                "dataset_id": "23945606",
+                "extension": "fasta",
+                "file_size": 584924380,
+                "name": "lib19475.genes.fa",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2646908,
+        "id": 18633473,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12748183",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 34252031}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42855583,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-03-08 20:22:03.923612",
+        "user_id": 81421
+    },
+    {
+        "create_time": "2017-09-19 22:59:53.802475",
+        "datasets": [
+            {
+                "dataset_id": "21350116",
+                "extension": "fasta",
+                "file_size": 171381763,
+                "name": "NIST_MVP.fasta",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 1988849,
+        "id": 16870365,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10935617",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 31313591}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40650170,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-09-20 02:18:31.663217",
+        "user_id": 38662
+    },
+    {
+        "create_time": "2017-12-23 12:40:45.704205",
+        "datasets": [
+            {
+                "dataset_id": "22877224",
+                "extension": "fasta",
+                "file_size": 752428893,
+                "name": "VSearch masking on data 134",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3373716,
+        "id": 17885000,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11960761",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"45cd34eae7de11e78bc5005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"HG03722.unmapped.ILLUMINA.bwa.ITU.low_coverage.20130415.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061644}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-23 22:38:47.531559",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2018-02-11 23:10:50.985831",
+        "datasets": [
+            {
+                "dataset_id": "23537844",
+                "extension": "fastqsanger",
+                "file_size": 30957081395,
+                "name": "Concatenate datasets on data 279, data 277, and others",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23537845",
+                "extension": "fastqsanger",
+                "file_size": 31149435123,
+                "name": "Concatenate datasets on data 280, data 278, and others",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3412542,
+        "id": 18344811,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12429593",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33798460}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33798459}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43848623,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-12 02:32:26.675174",
+        "user_id": 121057
+    },
+    {
+        "create_time": "2017-12-23 12:40:44.672357",
+        "datasets": [
+            {
+                "dataset_id": "22877222",
+                "extension": "fasta",
+                "file_size": 1157404406,
+                "name": "VSearch masking on data 132",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17884998,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11967453",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"45cd34eae7de11e78bc5005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"HG03731.unmapped.ILLUMINA.bwa.ITU.low_coverage.20130415.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061642}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-25 12:50:47.455728",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-23 23:54:58.094741",
+        "datasets": [
+            {
+                "dataset_id": "22877224",
+                "extension": "fasta",
+                "file_size": 752428893,
+                "name": "VSearch masking on data 134",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17887832,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11973741",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061644}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42833120,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-26 18:25:30.218480",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2017-12-23 12:40:43.778717",
+        "datasets": [
+            {
+                "dataset_id": "22877220",
+                "extension": "fasta",
+                "file_size": 757977665,
+                "name": "VSearch masking on data 130",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3373716,
+        "id": 17884996,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11961526",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"45cd34eae7de11e78bc5005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"HG03754.unmapped.ILLUMINA.bwa.STU.low_coverage.20130415.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 33061640}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-24 02:48:45.587549",
+        "user_id": 111518
+    },
+    {
+        "create_time": "2018-03-07 02:35:31.885455",
+        "datasets": [
+            {
+                "dataset_id": "23945635",
+                "extension": "fasta",
+                "file_size": 406754791,
+                "name": "lib19529.genes.fa",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2646908,
+        "id": 18633474,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12759001",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 34252063}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42855583,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-03-10 02:53:47.736815",
+        "user_id": 81421
+    },
+    {
+        "create_time": "2017-08-29 20:59:43.404426",
+        "datasets": [
+            {
+                "dataset_id": "21079717",
+                "extension": "fastq",
+                "file_size": 358965136,
+                "name": "234aaae965c263d20ea1569669f99093_unmapped.bam (as FASTQ)",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3234355,
+        "id": 16687812,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10773818",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences|__identifier__": "\"234aaae965c263d20ea1569669f99093_unmapped.bam\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 31010133}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 39849050,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-08-31 11:32:58.940893",
+        "user_id": 79386
+    },
+    {
+        "create_time": "2018-01-26 17:45:57.138531",
+        "datasets": [
+            {
+                "dataset_id": "23271310",
+                "extension": "fastqsanger",
+                "file_size": 35764703897,
+                "name": "SRR1159396_1.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23284337",
+                "extension": "fastqsanger",
+                "file_size": 35764703897,
+                "name": "SRR1159396_2.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3405514,
+        "id": 18168513,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12250068",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33520385}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33503850}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43442071,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-01-27 02:24:01.212894",
+        "user_id": 66482
+    },
+    {
+        "create_time": "2017-12-01 19:00:03.186854",
+        "datasets": [
+            {
+                "dataset_id": "22538029",
+                "extension": "fastqsanger",
+                "file_size": 4337922605,
+                "name": "Severe-IMSA_037_EPI_S2_R2_Unmapped.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22538030",
+                "extension": "fastqsanger",
+                "file_size": 3653315872,
+                "name": "Severe_IMSA_037_EPI_Unmapped_R1_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3346731,
+        "id": 17666941,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11727499",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32656551}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32656550}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42363418,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-02 02:16:45.498110",
+        "user_id": 113740
+    },
+    {
+        "create_time": "2017-12-08 03:07:04.022020",
+        "datasets": [
+            {
+                "dataset_id": "22663824",
+                "extension": "fastqsanger",
+                "file_size": 1589567508,
+                "name": "WebsterR1.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22663917",
+                "extension": "fastqsanger",
+                "file_size": 1589548252,
+                "name": "WebsterR2.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3284781,
+        "id": 17743266,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11809659",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32809698}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32809603}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"true\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41243504,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-09 07:52:26.585502",
+        "user_id": 113508
+    },
+    {
+        "create_time": "2018-02-12 03:27:33.004020",
+        "datasets": [
+            {
+                "dataset_id": "23531867",
+                "extension": "fastqsanger",
+                "file_size": 27722882864,
+                "name": "Concatenate datasets on data 159, data 155, and others",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23531866",
+                "extension": "fasta",
+                "file_size": 29865553022,
+                "name": "Concatenate datasets on data 158, data 154, and others",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3412506,
+        "id": 18345837,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12430271",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33791490}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33791491}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43850182,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:14:14.676794",
+        "user_id": 121053
+    },
+    {
+        "create_time": "2017-12-01 17:31:59.351157",
+        "datasets": [
+            {
+                "dataset_id": "22555367",
+                "extension": "fastqsanger",
+                "file_size": 3807568708,
+                "name": "Severe_IMSA_037_BAL_S1_R1_Unmapped.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22555279",
+                "extension": "fastqsanger",
+                "file_size": 3769947676,
+                "name": "Severe_IMSA_037_BAL_S1_R2_Unmapped.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3346731,
+        "id": 17665726,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11725969",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32678863}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32678960}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42363418,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-02 02:29:01.671691",
+        "user_id": 113740
+    }
+]

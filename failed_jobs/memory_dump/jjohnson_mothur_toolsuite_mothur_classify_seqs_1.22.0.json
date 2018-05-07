@@ -1,0 +1,144 @@
+[
+    {
+        "create_time": "2017-04-10 23:53:30.823317",
+        "datasets": [
+            {
+                "dataset_id": "19541740",
+                "extension": "fasta",
+                "file_size": 120303713,
+                "name": "stability.trim.contigs.good.unique.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "19541756",
+                "extension": "fasta",
+                "file_size": 44065409,
+                "name": "UNITE_public_mothur_full_22.08.2016.pcr.fasta",
+                "param_name": "template"
+            },
+            {
+                "dataset_id": "19541743",
+                "extension": "mothur.ref.taxonomy",
+                "file_size": 23754478,
+                "name": "UNITE_public_mothur_full_22.08.2016_taxonomy.pcr.txt",
+                "param_name": "taxonomy"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@_uv_",
+                "exact": false,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.33"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3040566,
+        "id": 15548110,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9672731.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "alignment": "{\"source\": \"hist\", \"template\": {\"values\": [{\"src\": \"hda\", \"id\": 29160003}]}, \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "classify": "{\"cutoff\": \"60\", \"iters\": \"100\", \"method\": \"wang\", \"ksize\": \"8\", \"__current_case__\": 0, \"probs\": \"true\"}",
+            "count": "null",
+            "dbkey": "\"?\"",
+            "fasta": "{\"values\": [{\"src\": \"hda\", \"id\": 29159987}]}",
+            "relabund": "\"false\"",
+            "tax": "{\"source\": \"hist\", \"__current_case__\": 1, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 29159990}]}}"
+        },
+        "runner_name": null,
+        "session_id": 36216920,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/mothur_toolsuite/mothur_classify_seqs/1.22.0",
+        "tool_version": "1.22.0",
+        "traceback": null,
+        "update_time": "2017-04-10 23:59:53.187765",
+        "user_id": 100667
+    },
+    {
+        "create_time": "2017-03-29 19:17:52.971257",
+        "datasets": [
+            {
+                "dataset_id": "19371951",
+                "extension": "fasta",
+                "file_size": 25480779,
+                "name": "FASTQ to FASTA on data 150",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "19357658",
+                "extension": "fasta",
+                "file_size": 293189424,
+                "name": "gg_13_8_99.fasta",
+                "param_name": "template"
+            },
+            {
+                "dataset_id": "19356302",
+                "extension": "taxonomy",
+                "file_size": 18989553,
+                "name": "gg_13_8_99.gg.tax",
+                "param_name": "taxonomy"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@_uv_",
+                "exact": false,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.33"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3042010,
+        "id": 15427294,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9559403.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "alignment": "{\"source\": \"hist\", \"template\": {\"values\": [{\"src\": \"hda\", \"id\": 28946380}]}, \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "classify": "{\"cutoff\": \"60\", \"iters\": \"100\", \"method\": \"wang\", \"ksize\": \"8\", \"__current_case__\": 0, \"probs\": \"true\"}",
+            "count": "null",
+            "dbkey": "\"?\"",
+            "fasta": "{\"values\": [{\"src\": \"hda\", \"id\": 28962821}]}",
+            "relabund": "\"false\"",
+            "tax": "{\"source\": \"hist\", \"__current_case__\": 1, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 28944715}]}}"
+        },
+        "runner_name": null,
+        "session_id": 36762747,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/mothur_toolsuite/mothur_classify_seqs/1.22.0",
+        "tool_version": "1.22.0",
+        "traceback": null,
+        "update_time": "2017-03-29 19:52:03.283538",
+        "user_id": 82349
+    }
+]

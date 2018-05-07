@@ -1,0 +1,153 @@
+[
+    {
+        "create_time": "2018-02-21 03:58:25.545073",
+        "datasets": [
+            {
+                "dataset_id": "23696024",
+                "extension": "tabular",
+                "file_size": 45680915368,
+                "name": "Du Novo: Make families on data 2 and data 1",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-b7caf2c381afc0e1286e0fb52fe19fefc3e854ba02aa179d1113939d557b6d60",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bowtie",
+                "version": "1.1.2"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-b7caf2c381afc0e1286e0fb52fe19fefc3e854ba02aa179d1113939d557b6d60",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "networkx",
+                "version": "1.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-b7caf2c381afc0e1286e0fb52fe19fefc3e854ba02aa179d1113939d557b6d60",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "2.0.12"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3436738,
+        "id": 18455841,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12551438",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"755045f216bb11e88512005056ba2773\"",
+            "advanced": "{\"chunkmbs\": \"512\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "dist": "\"10\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33972645}]}",
+            "mapq": "\"20\"",
+            "phone": "\"false\"",
+            "pos": "\"2\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/correct_barcodes/2.0.12",
+        "tool_version": "2.0.12",
+        "traceback": null,
+        "update_time": "2018-02-21 06:44:22.827164",
+        "user_id": 73233
+    },
+    {
+        "create_time": "2018-01-25 17:34:25.197963",
+        "datasets": [
+            {
+                "dataset_id": "23266782",
+                "extension": "tabular",
+                "file_size": 1995719992,
+                "name": "Du Novo: Make families on data 8 and data 9",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b7caf2c381afc0e1286e0fb52fe19fefc3e854ba02aa179d1113939d557b6d60",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bowtie",
+                "version": "1.1.2"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b7caf2c381afc0e1286e0fb52fe19fefc3e854ba02aa179d1113939d557b6d60",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "networkx",
+                "version": "1.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b7caf2c381afc0e1286e0fb52fe19fefc3e854ba02aa179d1113939d557b6d60",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "2.0.12"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3404136,
+        "id": 18156394,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12237665",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced": "{\"chunkmbs\": \"512\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "dist": "\"3\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33498844}]}",
+            "mapq": "\"20\"",
+            "phone": "\"false\"",
+            "pos": "\"2\""
+        },
+        "runner_name": null,
+        "session_id": 43418575,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/correct_barcodes/2.0.12",
+        "tool_version": "2.0.12",
+        "traceback": null,
+        "update_time": "2018-01-25 18:00:39.404813",
+        "user_id": 30012
+    }
+]

@@ -1,0 +1,404 @@
+[
+    {
+        "create_time": "2017-10-04 15:17:31.020662",
+        "datasets": [
+            {
+                "dataset_id": "21570634",
+                "extension": "bed",
+                "file_size": 1773607700,
+                "name": "ap.p.sd.markdup.bam (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21570633",
+                "extension": "bed",
+                "file_size": 1666891823,
+                "name": "ap._ha.s.markdup.bam (as BED)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3234674,
+        "id": 17024448,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11079852.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "addition": "{\"addition_select\": \"window\", \"w\": \"1000\", \"__current_case__\": 0}",
+            "bed": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 31558704}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31558703}]}",
+            "nooverlaps": "\"false\"",
+            "number": "\"false\"",
+            "original": "\"false\"",
+            "strandB": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40111512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-10-04 15:27:15.387807",
+        "user_id": 110618
+    },
+    {
+        "create_time": "2017-09-26 19:41:55.534122",
+        "datasets": [
+            {
+                "dataset_id": "20592584",
+                "extension": "bed",
+                "file_size": 290389,
+                "name": "ss-dox bed cpg.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21447203",
+                "extension": "bed",
+                "file_size": 3167403322,
+                "name": "SAM-to-BAM on data 715: converted BAM (as BED)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2996992,
+        "id": 16939586,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11009068.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "addition": "{\"addition_select\": \"window\", \"w\": \"0\", \"__current_case__\": 0}",
+            "bed": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/galGal4.len\"",
+            "dbkey": "\"galGal4\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 30455833}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31426457}]}",
+            "nooverlaps": "\"true\"",
+            "number": "\"false\"",
+            "original": "\"false\"",
+            "strandB": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40818609,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 19:43:46.993156",
+        "user_id": 75600
+    },
+    {
+        "create_time": "2017-09-26 00:24:24.490610",
+        "datasets": [
+            {
+                "dataset_id": "20553855",
+                "extension": "bed",
+                "file_size": 274548,
+                "name": "ss+dox bed cpg.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21434940",
+                "extension": "bed",
+                "file_size": 1680052921,
+                "name": "SAM-to-BAM on data 716: converted BAM (as BED)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2996992,
+        "id": 16929945,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10999447.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "addition": "{\"addition_select\": \"window\", \"w\": \"10\", \"__current_case__\": 0}",
+            "bed": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/galGal4.len\"",
+            "dbkey": "\"galGal4\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 30360966}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31411600}]}",
+            "nooverlaps": "\"false\"",
+            "number": "\"false\"",
+            "original": "\"false\"",
+            "strandB": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40818609,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 00:25:33.272838",
+        "user_id": 75600
+    },
+    {
+        "create_time": "2017-09-26 00:22:37.103384",
+        "datasets": [
+            {
+                "dataset_id": "20592584",
+                "extension": "bed",
+                "file_size": 290389,
+                "name": "ss-dox bed cpg.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21434940",
+                "extension": "bed",
+                "file_size": 1680052921,
+                "name": "SAM-to-BAM on data 716: converted BAM (as BED)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2996992,
+        "id": 16929939,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10999440.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "addition": "{\"addition_select\": \"window\", \"w\": \"10\", \"__current_case__\": 0}",
+            "bed": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/galGal4.len\"",
+            "dbkey": "\"galGal4\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 30455833}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31411600}]}",
+            "nooverlaps": "\"false\"",
+            "number": "\"false\"",
+            "original": "\"true\"",
+            "strandB": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40818609,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 00:23:34.048908",
+        "user_id": 75600
+    },
+    {
+        "create_time": "2017-09-26 00:22:36.598074",
+        "datasets": [
+            {
+                "dataset_id": "20553855",
+                "extension": "bed",
+                "file_size": 274548,
+                "name": "ss+dox bed cpg.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21434940",
+                "extension": "bed",
+                "file_size": 1680052921,
+                "name": "SAM-to-BAM on data 716: converted BAM (as BED)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2996992,
+        "id": 16929938,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10999442.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "addition": "{\"addition_select\": \"window\", \"w\": \"10\", \"__current_case__\": 0}",
+            "bed": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/galGal4.len\"",
+            "dbkey": "\"galGal4\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 30360966}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31411600}]}",
+            "nooverlaps": "\"false\"",
+            "number": "\"false\"",
+            "original": "\"true\"",
+            "strandB": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40818609,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 00:23:49.625701",
+        "user_id": 75600
+    },
+    {
+        "create_time": "2017-09-26 00:24:24.801115",
+        "datasets": [
+            {
+                "dataset_id": "20592584",
+                "extension": "bed",
+                "file_size": 290389,
+                "name": "ss-dox bed cpg.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21434940",
+                "extension": "bed",
+                "file_size": 1680052921,
+                "name": "SAM-to-BAM on data 716: converted BAM (as BED)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2996992,
+        "id": 16929946,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10999448.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "addition": "{\"addition_select\": \"window\", \"w\": \"10\", \"__current_case__\": 0}",
+            "bed": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/galGal4.len\"",
+            "dbkey": "\"galGal4\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 30455833}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31411600}]}",
+            "nooverlaps": "\"false\"",
+            "number": "\"false\"",
+            "original": "\"false\"",
+            "strandB": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40818609,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_windowbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 00:25:36.385486",
+        "user_id": 75600
+    }
+]

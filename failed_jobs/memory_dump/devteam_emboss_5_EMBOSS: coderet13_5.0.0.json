@@ -1,0 +1,97 @@
+[
+    {
+        "create_time": "2015-04-16 20:14:47.536147",
+        "datasets": [
+            {
+                "dataset_id": "11041017",
+                "extension": "gff",
+                "file_size": 2456256611,
+                "name": "BED-to-GFF on data 137",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2100231,
+        "id": 9249546,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9639.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/178.len\"",
+            "dbkey": "\"178\"",
+            "input1": "19315078"
+        },
+        "runner_name": null,
+        "session_id": 22537822,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: coderet13/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2015-04-16 20:15:47.945549",
+        "user_id": 30192
+    },
+    {
+        "create_time": "2017-08-12 13:21:00.708426",
+        "datasets": [
+            {
+                "dataset_id": "20936364",
+                "extension": "fasta",
+                "file_size": 158643135,
+                "name": "RNA_AND_TAXONOMY9606 from RNACentral_2017Aug4.fasta",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3219828,
+        "id": 16565560,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10636727.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 30850459}]}"
+        },
+        "runner_name": null,
+        "session_id": 39839248,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: coderet13/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2017-08-12 13:21:27.469963",
+        "user_id": 110063
+    }
+]

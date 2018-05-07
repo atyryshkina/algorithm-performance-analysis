@@ -1,0 +1,564 @@
+[
+    {
+        "create_time": "2017-06-03 21:27:17.627528",
+        "datasets": [
+            {
+                "dataset_id": "19911453",
+                "extension": "fastqsanger",
+                "file_size": 120631856461,
+                "name": "FASTQ Groomer on data 44",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19928521",
+                "extension": "fastqsanger",
+                "file_size": 120631856461,
+                "name": "FASTQ Groomer on data 49",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2939468,
+        "id": 16006414,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10099984.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29594653}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29574705}]}}",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37858615,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2017-06-03 21:58:47.297383",
+        "user_id": 97403
+    },
+    {
+        "create_time": "2017-06-07 14:51:00.716304",
+        "datasets": [
+            {
+                "dataset_id": "19911453",
+                "extension": "fastqsanger",
+                "file_size": 120631856461,
+                "name": "FASTQ Groomer on data 44",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19928521",
+                "extension": "fastqsanger",
+                "file_size": 120631856461,
+                "name": "FASTQ Groomer on data 49",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2939468,
+        "id": 16041203,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10131414",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29594653}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29574705}]}}",
+            "reference_source": "{\"ref_file\": \"mm9\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37858615,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2017-06-09 03:00:14.446697",
+        "user_id": 97403
+    },
+    {
+        "create_time": "2017-07-24 13:55:02.233535",
+        "datasets": [
+            {
+                "dataset_id": "20706424",
+                "extension": "fastqsanger",
+                "file_size": 1425129533,
+                "name": "G186053K.trim.fastq",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3201071,
+        "id": 16405083,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10469579",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"__current_case__\": 1, \"fastq_input_selector\": \"single\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 30588145}]}}",
+            "reference_source": "{\"ref_file\": \"hg38canon\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37775768,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2017-07-26 01:55:22.768002",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2017-08-07 12:37:26.079173",
+        "datasets": [
+            {
+                "dataset_id": "20874163",
+                "extension": "fastqsanger",
+                "file_size": 48036434019,
+                "name": "Concatenate datasets on data 1, data 2, and others",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3214932,
+        "id": 16520076,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10589588",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"ont2d\", \"__current_case__\": 2}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"__current_case__\": 1, \"fastq_input_selector\": \"single\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 30782170}]}}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 39064906,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2017-08-09 00:38:12.107501",
+        "user_id": 60534
+    },
+    {
+        "create_time": "2017-08-13 19:13:28.955043",
+        "datasets": [
+            {
+                "dataset_id": "19911453",
+                "extension": "fastqsanger",
+                "file_size": 120631856461,
+                "name": "FASTQ Groomer on data 44",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19928521",
+                "extension": "fastqsanger",
+                "file_size": 120631856461,
+                "name": "FASTQ Groomer on data 49",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2939468,
+        "id": 16570436,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10641371",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"528\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29594653}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29574705}]}}",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 38419173,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2017-08-15 07:13:59.393550",
+        "user_id": 97403
+    },
+    {
+        "create_time": "2018-02-03 16:30:03.695494",
+        "datasets": [
+            {
+                "dataset_id": "23291985",
+                "extension": "fastqsanger.gz",
+                "file_size": 73001558546,
+                "name": "ERR1395557_1.fastq.gz",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23291989",
+                "extension": "fastqsanger.gz",
+                "file_size": 72884000505,
+                "name": "ERR1395557_2.fastq.gz",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3407071,
+        "id": 18247063,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12328334",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"algorithmic_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"io_options\": {\"a\": \"true\", \"C\": \"false\", \"io_options_selector\": \"set\", \"h\": \"5\", \"M\": \"true\", \"T\": \"30\", \"__current_case__\": 0, \"V\": \"false\", \"Y\": \"true\"}, \"__current_case__\": 4, \"scoring_options\": {\"scoring_options_selector\": \"do_not_set\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"350\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33528632}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33528628}]}}",
+            "reference_source": "{\"ref_file\": \"hg38canon\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 43477971,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-02-05 04:30:34.814561",
+        "user_id": 120767
+    },
+    {
+        "create_time": "2018-02-08 05:16:18.301072",
+        "datasets": [
+            {
+                "dataset_id": "23260747",
+                "extension": "fastqsanger.gz",
+                "file_size": 73001558546,
+                "name": "EBI SRA: ERR1395557 File: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR139/007/ERR1395557/ERR1395557_1.fastq.gz",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23471611",
+                "extension": "fastqsanger.gz",
+                "file_size": 72884000505,
+                "name": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR139/007/ERR1395557/ERR1395557_2.fastq.gz",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3404642,
+        "id": 18306926,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12390673",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"c\": \"300\", \"e\": \"false\", \"__current_case__\": 0, \"algorithmic_options_selector\": \"set\", \"k\": \"19\", \"m\": \"50\", \"D\": \"0.5\", \"W\": \"0\", \"P\": \"false\", \"S\": \"false\", \"r\": \"1.5\", \"w\": \"100\", \"y\": \"20\", \"d\": \"100\"}, \"io_options\": {\"a\": \"true\", \"C\": \"false\", \"io_options_selector\": \"set\", \"h\": \"5\", \"M\": \"false\", \"T\": \"30\", \"__current_case__\": 0, \"V\": \"false\", \"Y\": \"false\"}, \"__current_case__\": 4, \"scoring_options\": {\"A\": \"1\", \"B\": \"4\", \"E\": \"1,1\", \"L\": \"5,5\", \"O\": \"6,6\", \"U\": \"17\", \"__current_case__\": 0, \"scoring_options_selector\": \"set\"}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"450\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33727030}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33492390}]}}",
+            "reference_source": "{\"ref_file\": \"hg38canon\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 43753603,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-02-09 17:16:57.195578",
+        "user_id": 1645
+    },
+    {
+        "create_time": "2018-02-12 10:40:55.918741",
+        "datasets": [
+            {
+                "dataset_id": "23291985",
+                "extension": "fastqsanger.gz",
+                "file_size": 73001558546,
+                "name": "ERR1395557_1.fastq.gz",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23291989",
+                "extension": "fastqsanger.gz",
+                "file_size": 72884000505,
+                "name": "ERR1395557_2.fastq.gz",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3407071,
+        "id": 18348161,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12432668",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"c\": \"250\", \"e\": \"false\", \"__current_case__\": 0, \"algorithmic_options_selector\": \"set\", \"k\": \"19\", \"m\": \"50\", \"D\": \"0.5\", \"W\": \"0\", \"P\": \"false\", \"S\": \"false\", \"r\": \"1.5\", \"w\": \"100\", \"y\": \"20\", \"d\": \"100\"}, \"io_options\": {\"a\": \"true\", \"C\": \"false\", \"io_options_selector\": \"set\", \"h\": \"5\", \"M\": \"false\", \"T\": \"30\", \"__current_case__\": 0, \"V\": \"false\", \"Y\": \"false\"}, \"__current_case__\": 4, \"scoring_options\": {\"A\": \"1\", \"B\": \"4\", \"E\": \"1,1\", \"L\": \"5,5\", \"O\": \"6,6\", \"U\": \"17\", \"__current_case__\": 0, \"scoring_options_selector\": \"set\"}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"400\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33528632}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33528628}]}}",
+            "reference_source": "{\"ref_file\": \"hg38canon\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 43477971,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-02-13 22:41:26.613909",
+        "user_id": 120767
+    }
+]

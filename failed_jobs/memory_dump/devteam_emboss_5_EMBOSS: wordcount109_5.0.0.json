@@ -1,0 +1,336 @@
+[
+    {
+        "create_time": "2015-03-31 06:52:03.547898",
+        "datasets": [
+            {
+                "dataset_id": "10841871",
+                "extension": "fasta",
+                "file_size": 198330198,
+                "name": "Extract Genomic DNA on data 13",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2227946,
+        "id": 9098531,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3384835.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "19057570",
+            "wordsize": "\"4\""
+        },
+        "runner_name": null,
+        "session_id": 22113391,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2015-03-31 06:53:00.663401",
+        "user_id": 522
+    },
+    {
+        "create_time": "2016-06-03 17:55:00.349841",
+        "datasets": [
+            {
+                "dataset_id": "16085550",
+                "extension": "fasta",
+                "file_size": 1505989252,
+                "name": "Extract Genomic DNA on data 42",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2720241,
+        "id": 13062766,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7248759.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f2741a9fe81f443d\"}]}",
+            "wordsize": "\"4\""
+        },
+        "runner_name": null,
+        "session_id": 30459099,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2016-06-03 17:56:39.522462",
+        "user_id": 495
+    },
+    {
+        "create_time": "2014-12-19 23:14:42.084761",
+        "datasets": [
+            {
+                "dataset_id": "10050231",
+                "extension": "fasta",
+                "file_size": 460344709,
+                "name": "Hetero_Paired_Unaligned_L.fa",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2078015,
+        "id": 8447415,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "607006.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/009/609/dataset_9609209.dat\"",
+            "dbkey": "\"AgamP3__New\"",
+            "input1": "18034653",
+            "wordsize": "\"10\""
+        },
+        "runner_name": null,
+        "session_id": 17445940,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2014-12-20 14:32:38.680732",
+        "user_id": 53939
+    },
+    {
+        "create_time": "2018-02-15 19:10:48.304669",
+        "datasets": [
+            {
+                "dataset_id": "23616699",
+                "extension": "fasta",
+                "file_size": 265445410,
+                "name": "UCSC Main on Human: knownGene (chr6:1-171115067)",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3430673,
+        "id": 18401596,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12487482",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33883309}]}",
+            "wordsize": "\"4\""
+        },
+        "runner_name": null,
+        "session_id": 43555922,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-15 19:11:44.501817",
+        "user_id": 120685
+    },
+    {
+        "create_time": "2017-09-02 03:25:08.467602",
+        "datasets": [
+            {
+                "dataset_id": "21142215",
+                "extension": "fasta",
+                "file_size": 1267813542,
+                "name": "FASTQ to FASTA on data 48",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3090014,
+        "id": 16715306,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10787848.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 31079031}]}",
+            "wordsize": "\"4\""
+        },
+        "runner_name": null,
+        "session_id": 38562435,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-02 03:26:17.896423",
+        "user_id": 101854
+    },
+    {
+        "create_time": "2018-02-15 19:14:31.757020",
+        "datasets": [
+            {
+                "dataset_id": "23616717",
+                "extension": "fasta",
+                "file_size": 4446596416,
+                "name": "UCSC Main on Human: knownGene (genome)",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3430673,
+        "id": 18401638,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12487536",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33883327}]}",
+            "wordsize": "\"4\""
+        },
+        "runner_name": null,
+        "session_id": 43555922,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-15 19:15:36.927537",
+        "user_id": 120685
+    },
+    {
+        "create_time": "2016-06-03 18:35:48.383813",
+        "datasets": [
+            {
+                "dataset_id": "16086189",
+                "extension": "fasta",
+                "file_size": 340995871,
+                "name": "Extract Genomic DNA on data 48",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2720241,
+        "id": 13063268,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7249277.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57ab4d723d7bbd09c\"}]}",
+            "wordsize": "\"4\""
+        },
+        "runner_name": null,
+        "session_id": 30459099,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: wordcount109/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2016-06-03 18:37:13.879935",
+        "user_id": 495
+    }
+]

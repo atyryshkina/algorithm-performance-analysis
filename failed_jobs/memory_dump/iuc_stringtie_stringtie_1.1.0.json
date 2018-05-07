@@ -1,0 +1,106 @@
+[
+    {
+        "create_time": "2016-10-27 11:52:30.996360",
+        "datasets": [
+            {
+                "dataset_id": "17615372",
+                "extension": "bam",
+                "file_size": 4609224463,
+                "name": "HISAT on data 49 and data 48",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17179288",
+                "extension": "gff3",
+                "file_size": 65781959,
+                "name": "Dmel.BDGP6.85.chr.gff3.alt.txt",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2817529,
+        "id": 14189988,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8406625",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/dm6.len\"",
+            "dbkey": "\"dm6\"",
+            "guide": "{\"output_ballgown\": \"true\", \"input_estimation\": \"false\", \"use_guide\": \"yes\", \"__current_case__\": 1, \"guide_gff\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54f03670a1a15519b\"}]}}",
+            "input_bam": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57a7e63364b7d6fb3\"}]}",
+            "option_set": "{\"options\": \"default\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 32860873,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-10-27 20:51:57.056830",
+        "user_id": 89710
+    },
+    {
+        "create_time": "2016-09-27 15:30:56.189930",
+        "datasets": [
+            {
+                "dataset_id": "17318102",
+                "extension": "bam",
+                "file_size": 239031806,
+                "name": "pacbio_august_onyx_all_3genomes_SAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "9416411",
+                "extension": "gtf",
+                "file_size": 1034362396,
+                "name": "Homo_sapiens.GRCh38.77.gtf",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2813018,
+        "id": 13958357,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8177528",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "guide": "{\"output_ballgown\": \"false\", \"input_estimation\": \"false\", \"use_guide\": \"yes\", \"__current_case__\": 1, \"guide_gff\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b00d7c23ce135c45\"}]}}",
+            "input_bam": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b524d794bd85e77257\"}]}",
+            "option_set": "{\"A\": \"false\", \"min_bundle_cov\": \"2\", \"__current_case__\": 1, \"min_tlen\": \"200\", \"bdist\": \"50\", \"min_anchor_len\": \"10\", \"sensitive\": \"true\", \"fraction\": \"0.0\", \"disable_trimming\": \"false\", \"x\": \"\", \"name_prefix\": \"STRG\", \"options\": \"advanced\", \"bundle_fraction\": \"0.95\", \"min_anchor_cov\": \"1\"}"
+        },
+        "runner_name": null,
+        "session_id": 33099108,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-09-27 15:37:13.683170",
+        "user_id": 7115
+    }
+]

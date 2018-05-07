@@ -1,0 +1,59 @@
+[
+    {
+        "create_time": "2018-02-14 07:55:17.574404",
+        "datasets": [
+            {
+                "dataset_id": "23585331",
+                "extension": "mothur.shared",
+                "file_size": 6891,
+                "name": "Make.shared on data 52 and data 54: shared",
+                "param_name": "otu"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3427433,
+        "id": 18380192,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12465055",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abund": "\"10\"",
+            "calc": "[\"bootstrap\", \"chao\", \"sobs\", \"simpsoneven\", \"shannoneven\", \"smithwilson\", \"coverage\", \"simpson\", \"invsimpson\", \"shannon\", \"nseqs\"]",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "freq": "\"100.0\"",
+            "iters": "\"1000\"",
+            "label": "null",
+            "otu": "{\"values\": [{\"src\": \"hda\", \"id\": 33849072}]}"
+        },
+        "runner_name": null,
+        "session_id": 43902830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_rarefaction_single/mothur_rarefaction_single/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2018-02-15 19:55:39.828305",
+        "user_id": 113456
+    }
+]

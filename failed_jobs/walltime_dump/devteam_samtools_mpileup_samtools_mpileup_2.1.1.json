@@ -1,0 +1,71 @@
+[
+    {
+        "create_time": "2017-03-03 14:01:18.958613",
+        "datasets": [
+            {
+                "dataset_id": "19006008",
+                "extension": "bam",
+                "file_size": 16399721027,
+                "name": "Cmac_L_S_A_baseline_slow_mapping.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "19006008",
+                "extension": "bam",
+                "file_size": 16399721027,
+                "name": "Cmac_L_S_A_baseline_slow_mapping.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "18195699",
+                "extension": "fasta",
+                "file_size": 564162806,
+                "name": "Reference(slow,base) Slow_Cmac-32w.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2808995,
+        "id": 15200022,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9350180.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27635199}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28537086}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35868024,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-05 02:01:38.998314",
+        "user_id": 89389
+    }
+]

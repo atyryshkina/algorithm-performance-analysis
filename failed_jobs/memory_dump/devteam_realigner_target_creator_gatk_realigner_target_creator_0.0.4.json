@@ -1,0 +1,1200 @@
+[
+    {
+        "create_time": "2016-07-20 09:54:04.935504",
+        "datasets": [
+            {
+                "dataset_id": "16632979",
+                "extension": "bam",
+                "file_size": 19292498,
+                "name": "ReorderSam on data 14 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2770959,
+        "id": 13451136,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7664829.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53fe6e546902494f5\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5955a55ca8ce00c2b\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1a4608e49aadc7f\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31582030,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-20 10:01:06.333587",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-07-26 13:35:05.517471",
+        "datasets": [
+            {
+                "dataset_id": "16696871",
+                "extension": "bam",
+                "file_size": 108318498,
+                "name": "ReorderSam on data 19 and data 6: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2776280,
+        "id": 13497966,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7713292.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59247ce73b1f03109\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b560f3013ed2d0ab17\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b512596b942dd4576a\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31727209,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-26 13:56:13.003254",
+        "user_id": 83620
+    },
+    {
+        "create_time": "2016-10-05 08:46:31.162318",
+        "datasets": [
+            {
+                "dataset_id": "17382458",
+                "extension": "bam",
+                "file_size": 36974319,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2842324,
+        "id": 14010890,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8229474.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52f8163f7886e2f74\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b1b71211b4268819\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5430044acae89b7a6\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33472507,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-05 09:21:27.646831",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-10-04 10:40:19.845246",
+        "datasets": [
+            {
+                "dataset_id": "17382202",
+                "extension": "bam",
+                "file_size": 29918035,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2842313,
+        "id": 14003433,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8222389.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"ed1487228a1e11e6b10a005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e89a2420582fb724\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f3380a684f94e507\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d27500c3999383bd\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33445158,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-04 11:24:01.953172",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-10-05 08:47:32.586110",
+        "datasets": [
+            {
+                "dataset_id": "17382458",
+                "extension": "bam",
+                "file_size": 36974319,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2842324,
+        "id": 14010910,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8229359.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52f8163f7886e2f74\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b1b71211b4268819\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5430044acae89b7a6\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33472507,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-05 14:42:06.252627",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-07-15 08:46:47.054722",
+        "datasets": [
+            {
+                "dataset_id": "16587574",
+                "extension": "bam",
+                "file_size": 31345972,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2767000,
+        "id": 13418346,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7630923.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"a12393804a6811e6a27f005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c8e40ec099017406\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50cedf05092ec80ab\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b565ec4dc1eac48b9d\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31495510,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-15 09:31:39.475630",
+        "user_id": 56382
+    },
+    {
+        "create_time": "2016-10-06 06:45:09.237340",
+        "datasets": [
+            {
+                "dataset_id": "17402808",
+                "extension": "bam",
+                "file_size": 15077942,
+                "name": "ReorderSam on data 49 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2772157,
+        "id": 14017616,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8235930.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"670c19f68b9011e6b524005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5be9cc293620afd16\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b527f7f1f3f9431983\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58abb43a086a39b88\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33475275,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-06 07:03:41.128261",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-10-04 08:26:33.688750",
+        "datasets": [
+            {
+                "dataset_id": "17381279",
+                "extension": "bam",
+                "file_size": 21173963,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2842089,
+        "id": 14002793,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8221718.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"38ce74928a0c11e6aed7005056a52a46\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54a66756d9bd27fab\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd1a2e4e72bb0692\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5aec217ed7ab4291a\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33097728,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-05 03:35:25.935998",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-10-04 10:47:32.433278",
+        "datasets": [
+            {
+                "dataset_id": "17382302",
+                "extension": "bam",
+                "file_size": 42394361,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2842320,
+        "id": 14003501,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8222549.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"e6544a708a1f11e68704005056a52a46\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ffc332f74d77230b\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b519a71cf461aa391c\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c4050cb5ab9ba204\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33445158,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-04 11:42:57.087661",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-07-22 10:00:41.179009",
+        "datasets": [
+            {
+                "dataset_id": "16657146",
+                "extension": "bam",
+                "file_size": 78758270,
+                "name": "ReorderSam on data 15 and data 4: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2689504,
+        "id": 13468624,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7683584.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"2320673e4ff311e6af7d005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a0afee67f9b3c428\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b598b44d52c278850e\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ce883eb6c28e6691\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31637085,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-22 10:19:48.200884",
+        "user_id": 83620
+    },
+    {
+        "create_time": "2016-10-05 08:44:10.932350",
+        "datasets": [
+            {
+                "dataset_id": "17381279",
+                "extension": "bam",
+                "file_size": 21173963,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2842089,
+        "id": 14010884,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8229342.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54a66756d9bd27fab\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd1a2e4e72bb0692\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5aec217ed7ab4291a\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33472507,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-05 09:10:01.066168",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-07-20 09:45:48.935679",
+        "datasets": [
+            {
+                "dataset_id": "16632979",
+                "extension": "bam",
+                "file_size": 19292498,
+                "name": "ReorderSam on data 14 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2770959,
+        "id": 13451103,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7664781.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53fe6e546902494f5\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5955a55ca8ce00c2b\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1a4608e49aadc7f\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31582030,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-21 04:27:22.251947",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-10-05 08:47:03.928608",
+        "datasets": [
+            {
+                "dataset_id": "17382458",
+                "extension": "bam",
+                "file_size": 36974319,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2842324,
+        "id": 14010906,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8229520.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52f8163f7886e2f74\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b1b71211b4268819\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5430044acae89b7a6\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33472507,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-05 09:46:25.017888",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-07-20 09:30:36.422575",
+        "datasets": [
+            {
+                "dataset_id": "16632979",
+                "extension": "bam",
+                "file_size": 19292498,
+                "name": "ReorderSam on data 14 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2770959,
+        "id": 13450964,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7664692.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"993635fe4e5c11e6aa74005056a52a46\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53fe6e546902494f5\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5955a55ca8ce00c2b\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1a4608e49aadc7f\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31582030,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-20 09:51:23.376646",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-10-04 11:04:14.624966",
+        "datasets": [
+            {
+                "dataset_id": "17382458",
+                "extension": "bam",
+                "file_size": 36974319,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2842324,
+        "id": 14003608,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8222619.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"3ff0ba768a2211e6a048005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52f8163f7886e2f74\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b1b71211b4268819\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5430044acae89b7a6\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33445158,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-10-04 12:09:37.258214",
+        "user_id": 87422
+    },
+    {
+        "create_time": "2016-07-26 16:49:12.977585",
+        "datasets": [
+            {
+                "dataset_id": "16699893",
+                "extension": "bam",
+                "file_size": 105336708,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2776386,
+        "id": 13499797,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7716047.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"dcaa8fda535011e6b050005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59267e8387f3c3827\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57e34200155ffa0b3\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b588aace7710e746ac\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31727209,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-27 02:16:50.449018",
+        "user_id": 83620
+    },
+    {
+        "create_time": "2016-07-15 09:38:41.548202",
+        "datasets": [
+            {
+                "dataset_id": "16587574",
+                "extension": "bam",
+                "file_size": 31345972,
+                "name": "ReorderSam on data 18 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2767000,
+        "id": 13418603,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7631138.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c8e40ec099017406\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50cedf05092ec80ab\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b565ec4dc1eac48b9d\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31495510,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-15 10:05:50.613636",
+        "user_id": 56382
+    },
+    {
+        "create_time": "2015-08-27 00:26:17.509716",
+        "datasets": [
+            {
+                "dataset_id": "12294309",
+                "extension": "bam",
+                "file_size": 1424760988,
+                "name": "MarkDups_Dupes Marked.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988903",
+                "extension": "vcf",
+                "file_size": 7420545566,
+                "name": "dbsnp_135.b37.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "3988895",
+                "extension": "vcf",
+                "file_size": 86369975,
+                "name": "Mills_and_1000G_gold_standard.indels.b37.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            },
+            {
+                "dataset_id": "3988903",
+                "extension": "vcf",
+                "file_size": 7420545566,
+                "name": "dbsnp_135.b37.vcf",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2186621,
+        "id": 10207666,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4478887.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 20603601, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": 20920619, \"__current_case__\": 0}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"__current_case__\": 0, \"input_rod\": 20603601}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"indels\", \"__current_case__\": 2, \"input_rod\": 20603607}}]"
+        },
+        "runner_name": null,
+        "session_id": 24862671,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-08-27 09:19:49.159903",
+        "user_id": 58857
+    },
+    {
+        "create_time": "2016-07-26 13:04:11.574785",
+        "datasets": [
+            {
+                "dataset_id": "16696871",
+                "extension": "bam",
+                "file_size": 108318498,
+                "name": "ReorderSam on data 19 and data 6: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2776280,
+        "id": 13497756,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7713174.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"6fd0cc90533111e6a070005056a52a46\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59247ce73b1f03109\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b560f3013ed2d0ab17\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b512596b942dd4576a\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31727209,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-26 13:31:45.295796",
+        "user_id": 83620
+    },
+    {
+        "create_time": "2016-07-20 10:30:48.527003",
+        "datasets": [
+            {
+                "dataset_id": "16633396",
+                "extension": "bam",
+                "file_size": 37569153,
+                "name": "ReorderSam on data 16 and data 5: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2771002,
+        "id": 13451259,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7665137.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"ff967e8c4e6411e69864005056a52a46\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cf522cdf5d72a280\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54d908f4a112e977b\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50bbfac8b93121a4f\"}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31583659,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-20 13:00:10.344774",
+        "user_id": 87422
+    }
+]

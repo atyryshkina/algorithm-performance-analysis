@@ -1,0 +1,62 @@
+[
+    {
+        "create_time": "2017-11-30 04:39:15.776962",
+        "datasets": [
+            {
+                "dataset_id": "21978259",
+                "extension": "mothur.align",
+                "file_size": 1236208860,
+                "name": "Screen.seqs on data 691 and data 693: good.fasta",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3307905,
+        "id": 17645340,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11704516",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "expblen": "\"false\"",
+            "expdist": "\"false\"",
+            "input": "{\"source\": \"dna\", \"infile\": {\"values\": [{\"src\": \"hda\", \"id\": 32017934}]}, \"__current_case__\": 0}",
+            "matrixout": "\"false\"",
+            "neighbor": "\"true\"",
+            "norandom": "\"false\"",
+            "ntrees": "\"1\"",
+            "seed": "\"\"",
+            "shuffle": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42030428,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_clearcut/mothur_clearcut/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-30 12:51:14.142077",
+        "user_id": 36706
+    }
+]

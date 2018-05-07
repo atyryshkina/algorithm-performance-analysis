@@ -1,0 +1,684 @@
+[
+    {
+        "create_time": "2015-02-27 10:55:55.846435",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10527468",
+                "extension": "fastqsanger",
+                "file_size": 15100163,
+                "name": "Filter FASTQ on data 10",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2221691,
+        "id": 8827609,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2943515.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"2f79e274be6f11e489f3005056a51846\"",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"algorithmic_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"io_options\": {\"io_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"__current_case__\": 2, \"scoring_options\": {\"A\": \"1\", \"B\": \"4\", \"E\": \"1,1\", \"L\": \"5,5\", \"O\": \"6,6\", \"U\": \"17\", \"__current_case__\": 0, \"scoring_options_selector\": \"set\"}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"fastq_input_selector\": \"single\", \"__current_case__\": 1, \"fastq_input1\": 18667878}",
+            "reference_source": "{\"ref_file\": 18667014, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"set\", \"ID\": \"readgroup1\", \"__current_case__\": 0, \"SM\": \"blood\"}"
+        },
+        "runner_name": null,
+        "session_id": 21418968,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-02-27 11:00:55.133452",
+        "user_id": 45153
+    },
+    {
+        "create_time": "2015-03-25 08:45:48.718170",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10781994",
+                "extension": "fastqsanger",
+                "file_size": 9315784947,
+                "name": "Clip on data 17",
+                "param_name": "fastq_input2"
+            },
+            {
+                "dataset_id": "10781993",
+                "extension": "fastqsanger",
+                "file_size": 9341760356,
+                "name": "Clip on data 16",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2247122,
+        "id": 9031263,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3316678.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/010/523/dataset_10523596.dat\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": 18987351, \"fastq_input_selector\": \"paired\", \"__current_case__\": 0, \"fastq_input1\": 18987350}",
+            "reference_source": "{\"ref_file\": 18988052, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"set\", \"ID\": \"KGED129\", \"__current_case__\": 0, \"SM\": \"KGED129\"}"
+        },
+        "runner_name": null,
+        "session_id": 22009856,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-25 09:04:55.562193",
+        "user_id": 58799
+    },
+    {
+        "create_time": "2015-03-09 06:29:57.786502",
+        "datasets": [
+            {
+                "dataset_id": "10559414",
+                "extension": "fasta",
+                "file_size": 835714844,
+                "name": "Tom.2.50.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10610830",
+                "extension": "fastqsanger",
+                "file_size": 7670506,
+                "name": "FASTQ Groomer on data 59",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2215219,
+        "id": 8893888,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3065224.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"pacbio\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"fastq_input_selector\": \"single\", \"__current_case__\": 1, \"fastq_input1\": 18779165}",
+            "reference_source": "{\"ref_file\": 18709983, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21556595,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-09 06:31:51.733651",
+        "user_id": 60032
+    },
+    {
+        "create_time": "2015-03-08 11:00:06.276369",
+        "datasets": [
+            {
+                "dataset_id": "10559414",
+                "extension": "fasta",
+                "file_size": 835714844,
+                "name": "Tom.2.50.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10610363",
+                "extension": "fastqsanger",
+                "file_size": 8737286,
+                "name": "Combine FASTA and QUAL on data 45",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2215219,
+        "id": 8891181,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3060613.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"algorithmic_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"io_options\": {\"io_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"__current_case__\": 2, \"scoring_options\": {\"scoring_options_selector\": \"do_not_set\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"fastq_input_selector\": \"single\", \"__current_case__\": 1, \"fastq_input1\": 18778645}",
+            "reference_source": "{\"ref_file\": 18709983, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21556595,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-08 11:02:33.686511",
+        "user_id": 60032
+    },
+    {
+        "create_time": "2015-03-26 16:05:14.072141",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10791597",
+                "extension": "len",
+                "file_size": 376,
+                "name": "Convert FASTA to len file on data 223",
+                "param_name": "chromInfo"
+            },
+            {
+                "dataset_id": "10782613",
+                "extension": "fastqsanger",
+                "file_size": 35142316,
+                "name": "FASTQ Groomer on data 4",
+                "param_name": "fastq_input2"
+            },
+            {
+                "dataset_id": "10782597",
+                "extension": "fastqsanger",
+                "file_size": 35131186,
+                "name": "FASTQ Groomer on data 3",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2239868,
+        "id": 9050339,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3335489.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/010/791/dataset_10791597.dat\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": 18988318, \"fastq_input_selector\": \"paired\", \"__current_case__\": 0, \"fastq_input1\": 18988297}",
+            "reference_source": "{\"ref_file\": 19004275, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 22014266,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-26 16:11:00.833166",
+        "user_id": 60400
+    },
+    {
+        "create_time": "2015-03-08 03:51:16.447647",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10608124",
+                "extension": "fastqsanger",
+                "file_size": 9239481231,
+                "name": "FASTQ Groomer on data 3",
+                "param_name": "fastq_input2"
+            },
+            {
+                "dataset_id": "10608085",
+                "extension": "fastqsanger",
+                "file_size": 9239083317,
+                "name": "FASTQ Groomer on data 2",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2230135,
+        "id": 8890297,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3059311.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/010/523/dataset_10523596.dat\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": 18774919, \"fastq_input_selector\": \"paired\", \"__current_case__\": 0, \"fastq_input1\": 18774880}",
+            "reference_source": "{\"ref_file\": 18774963, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21644708,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-08 03:53:26.891730",
+        "user_id": 58799
+    },
+    {
+        "create_time": "2015-03-08 11:30:28.548934",
+        "datasets": [
+            {
+                "dataset_id": "10559414",
+                "extension": "fasta",
+                "file_size": 835714844,
+                "name": "Tom.2.50.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10610830",
+                "extension": "fastqsanger",
+                "file_size": 7670506,
+                "name": "FASTQ Groomer on data 59",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2215219,
+        "id": 8891499,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3060795.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"pacbio\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"fastq_input_selector\": \"single\", \"__current_case__\": 1, \"fastq_input1\": 18779165}",
+            "reference_source": "{\"ref_file\": 18709983, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21556595,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-08 11:33:09.601804",
+        "user_id": 60032
+    },
+    {
+        "create_time": "2015-03-08 11:13:50.097213",
+        "datasets": [
+            {
+                "dataset_id": "10559414",
+                "extension": "fasta",
+                "file_size": 835714844,
+                "name": "Tom.2.50.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10610474",
+                "extension": "fastqsanger",
+                "file_size": 8737286,
+                "name": "FASTQ Groomer on data 46",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2215219,
+        "id": 8891292,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3060673.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"pacbio\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"fastq_input_selector\": \"single\", \"__current_case__\": 1, \"fastq_input1\": 18778776}",
+            "reference_source": "{\"ref_file\": 18709983, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21556595,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-08 11:15:12.818772",
+        "user_id": 60032
+    },
+    {
+        "create_time": "2015-03-25 09:14:18.831850",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10781994",
+                "extension": "fastqsanger",
+                "file_size": 9315784947,
+                "name": "Clip on data 17",
+                "param_name": "fastq_input2"
+            },
+            {
+                "dataset_id": "10781993",
+                "extension": "fastqsanger",
+                "file_size": 9341760356,
+                "name": "Clip on data 16",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2247122,
+        "id": 9031431,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3316833.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/010/523/dataset_10523596.dat\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": 18987351, \"fastq_input_selector\": \"paired\", \"__current_case__\": 0, \"fastq_input1\": 18987350}",
+            "reference_source": "{\"ref_file\": 18988052, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"set\", \"ID\": \"KGED129\", \"__current_case__\": 0, \"SM\": \"KGED129\"}"
+        },
+        "runner_name": null,
+        "session_id": 22009856,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-25 09:19:47.422773",
+        "user_id": 58799
+    },
+    {
+        "create_time": "2015-03-26 15:22:49.657338",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10782613",
+                "extension": "fastqsanger",
+                "file_size": 35142316,
+                "name": "FASTQ Groomer on data 4",
+                "param_name": "fastq_input2"
+            },
+            {
+                "dataset_id": "10782597",
+                "extension": "fastqsanger",
+                "file_size": 35131186,
+                "name": "FASTQ Groomer on data 3",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2239868,
+        "id": 9049504,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3334324.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": 18988318, \"fastq_input_selector\": \"paired\", \"__current_case__\": 0, \"fastq_input1\": 18988297}",
+            "reference_source": "{\"ref_file\": 19004275, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 22014266,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-26 15:30:57.226800",
+        "user_id": 60400
+    },
+    {
+        "create_time": "2015-02-27 11:16:18.995125",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10527566",
+                "extension": "fastqsanger",
+                "file_size": 15100163,
+                "name": "Filter FASTQ on data 4",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2221712,
+        "id": 8827684,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2943656.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"0c1ad15abe7211e4a8fc005056a51846\"",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"algorithmic_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"io_options\": {\"io_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"__current_case__\": 2, \"scoring_options\": {\"A\": \"1\", \"B\": \"4\", \"E\": \"1,1\", \"L\": \"5,5\", \"O\": \"6,6\", \"U\": \"17\", \"__current_case__\": 0, \"scoring_options_selector\": \"set\"}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "fastq_input": "{\"fastq_input_selector\": \"single\", \"__current_case__\": 1, \"fastq_input1\": 18667991}",
+            "reference_source": "{\"ref_file\": 18667943, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"set\", \"ID\": \"readgroup1\", \"__current_case__\": 0, \"SM\": \"blood\"}"
+        },
+        "runner_name": null,
+        "session_id": 21418968,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-02-27 11:18:55.683810",
+        "user_id": 45153
+    },
+    {
+        "create_time": "2015-03-26 15:12:28.761202",
+        "datasets": [
+            {
+                "dataset_id": "10785448",
+                "extension": "fasta",
+                "file_size": 3147289058,
+                "name": "ucsc.hg19.ChrOrder.chrM.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10791597",
+                "extension": "len",
+                "file_size": 376,
+                "name": "Convert FASTA to len file on data 223",
+                "param_name": "chromInfo"
+            },
+            {
+                "dataset_id": "10782613",
+                "extension": "fastqsanger",
+                "file_size": 35142316,
+                "name": "FASTQ Groomer on data 4",
+                "param_name": "fastq_input2"
+            },
+            {
+                "dataset_id": "10782597",
+                "extension": "fastqsanger",
+                "file_size": 35131186,
+                "name": "FASTQ Groomer on data 3",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2239868,
+        "id": 9049319,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3334196.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/010/791/dataset_10791597.dat\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": 18988318, \"fastq_input_selector\": \"paired\", \"__current_case__\": 0, \"fastq_input1\": 18988297}",
+            "reference_source": "{\"ref_file\": 18991534, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 22014266,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-26 15:21:46.481850",
+        "user_id": 60400
+    }
+]

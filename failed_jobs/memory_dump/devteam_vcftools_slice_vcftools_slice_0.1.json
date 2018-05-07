@@ -1,0 +1,2473 @@
+[
+    {
+        "create_time": "2017-10-04 15:11:16.261489",
+        "datasets": [
+            {
+                "dataset_id": "21204986",
+                "extension": "vcf",
+                "file_size": 2589054185,
+                "name": "CR1.filter.snp.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "21570622",
+                "extension": "bed",
+                "file_size": 571238785,
+                "name": "UCSC Main on Mouse: all_est (genome)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2916175,
+        "id": 17024419,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11079834.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31145982}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 31558692}]}"
+        },
+        "runner_name": null,
+        "session_id": 40474016,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-10-04 19:59:38.945770",
+        "user_id": 96205
+    },
+    {
+        "create_time": "2016-09-21 07:29:36.779398",
+        "datasets": [
+            {
+                "dataset_id": "17204841",
+                "extension": "vcf",
+                "file_size": 27090740684,
+                "name": "SnpEff on data 55",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "17241457",
+                "extension": "bed",
+                "file_size": 733936,
+                "name": "Convert Genomic Intervals To BED on data 101",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2818638,
+        "id": 13903075,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8125903.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56d40ced0585ccb27\"}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e5c50e7a96b0f014\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33066042,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-09-21 08:00:09.166989",
+        "user_id": 42102
+    },
+    {
+        "create_time": "2015-10-15 02:32:01.426923",
+        "datasets": [
+            {
+                "dataset_id": "12724448",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "NA12878-Plat-Gen-hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11341947",
+                "extension": "bed",
+                "file_size": 201018,
+                "name": "MovM-V1-Mod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2285263,
+        "id": 10577003,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847953.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21524615",
+            "regions": "19733270"
+        },
+        "runner_name": null,
+        "session_id": 25521060,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-15 02:34:04.647649",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2016-01-20 15:15:24.085456",
+        "datasets": [
+            {
+                "dataset_id": "14022819",
+                "extension": "vcf",
+                "file_size": 43039676,
+                "name": "VCFannotate: on data 4 and data 1",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "13900714",
+                "extension": "bed",
+                "file_size": 522,
+                "name": "UCSC Main on Dog: ensGene (chr14:53310987-53866523)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2572221,
+        "id": 11562324,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5827437.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/canFam3.len\"",
+            "dbkey": "\"canFam3\"",
+            "input": "22978788",
+            "regions": "22978671"
+        },
+        "runner_name": null,
+        "session_id": 27433187,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-20 15:18:58.994868",
+        "user_id": 71467
+    },
+    {
+        "create_time": "2016-01-28 16:43:07.552310",
+        "datasets": [
+            {
+                "dataset_id": "14106298",
+                "extension": "vcf",
+                "file_size": 1697140699,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14106173",
+                "extension": "bed",
+                "file_size": 3352991,
+                "name": "TruSight_One_v1.1.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2578781,
+        "id": 11624331,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5888398.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "23070204",
+            "regions": "23070079"
+        },
+        "runner_name": null,
+        "session_id": 27765908,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-28 16:45:06.571957",
+        "user_id": null
+    },
+    {
+        "create_time": "2015-07-13 18:53:28.885882",
+        "datasets": [
+            {
+                "dataset_id": "11816985",
+                "extension": "vcf",
+                "file_size": 1473241706,
+                "name": "WGS_S1.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11817651",
+                "extension": "bed",
+                "file_size": 24,
+                "name": "Chr4-40_46.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2374621,
+        "id": 9853824,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4148693.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/rn5.len\"",
+            "dbkey": "\"rn5\"",
+            "input": "20335584",
+            "regions": "20336318"
+        },
+        "runner_name": null,
+        "session_id": 24125249,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-07-13 18:56:47.554446",
+        "user_id": 66084
+    },
+    {
+        "create_time": "2017-04-19 15:19:23.843351",
+        "datasets": [
+            {
+                "dataset_id": "19648771",
+                "extension": "vcf",
+                "file_size": 2179,
+                "name": ": Varscan variants",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19648748",
+                "extension": "bed",
+                "file_size": 4560,
+                "name": "UCSC Main on Human: knownGene (userRegions)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3079047,
+        "id": 15626496,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9748200.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"89eb3660251311e7ad20005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29279328}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 29279305}]}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-04-19 22:51:24.893484",
+        "user_id": 97752
+    },
+    {
+        "create_time": "2015-10-15 23:58:14.824097",
+        "datasets": [
+            {
+                "dataset_id": "12724448",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "NA12878-Plat-Gen-hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11341947",
+                "extension": "bed",
+                "file_size": 201018,
+                "name": "MovM-V1-Mod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2285263,
+        "id": 10589920,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4859826.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21524615",
+            "regions": "19733270"
+        },
+        "runner_name": null,
+        "session_id": 25693830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-16 00:01:30.588450",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2016-02-15 14:19:17.737643",
+        "datasets": [
+            {
+                "dataset_id": "14369787",
+                "extension": "vcf",
+                "file_size": 47684,
+                "name": "L1507932_S1.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14344684",
+                "extension": "bed",
+                "file_size": 51823355,
+                "name": "Agilent_QXT__AllTracks.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2597925,
+        "id": 11834493,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6077572.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "23354103",
+            "regions": "23327016"
+        },
+        "runner_name": null,
+        "session_id": 28391525,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-02-15 14:23:49.400587",
+        "user_id": 72096
+    },
+    {
+        "create_time": "2015-02-05 22:35:56.456167",
+        "datasets": [
+            {
+                "dataset_id": "10335721",
+                "extension": "bed",
+                "file_size": 415,
+                "name": "enhancer_experiment_regions.bed",
+                "param_name": "regions"
+            },
+            {
+                "dataset_id": "10335786",
+                "extension": "vcf",
+                "file_size": 392771,
+                "name": "Varscan on data 115",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2187783,
+        "id": 8673162,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2660820.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "18422822",
+            "regions": "18422717"
+        },
+        "runner_name": null,
+        "session_id": 20364837,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-02-05 22:38:44.323156",
+        "user_id": 50685
+    },
+    {
+        "create_time": "2015-10-27 09:47:07.575294",
+        "datasets": [
+            {
+                "dataset_id": "12990259",
+                "extension": "vcf",
+                "file_size": 31631557,
+                "name": "isrl82al2.N.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12990594",
+                "extension": "bed",
+                "file_size": 10592,
+                "name": "biomart_505_genes_bed.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2445033,
+        "id": 10742369,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5002184.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "21763568",
+            "regions": "21763947"
+        },
+        "runner_name": null,
+        "session_id": 25287510,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-27 09:50:36.721642",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-01-28 16:15:05.485860",
+        "datasets": [
+            {
+                "dataset_id": "14106298",
+                "extension": "vcf",
+                "file_size": 1697140699,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14106173",
+                "extension": "bed",
+                "file_size": 3352991,
+                "name": "TruSight_One_v1.1.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2578781,
+        "id": 11624057,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5888139.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "23070204",
+            "regions": "23070079"
+        },
+        "runner_name": null,
+        "session_id": 27765908,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-28 16:19:13.894128",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-04-19 20:03:56.501432",
+        "datasets": [
+            {
+                "dataset_id": "19652309",
+                "extension": "vcf",
+                "file_size": 29812118,
+                "name": "PANCcancer: Varscan variants",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19648748",
+                "extension": "bed",
+                "file_size": 4560,
+                "name": "UCSC Main on Human: knownGene (userRegions)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3079529,
+        "id": 15628841,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9750851.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"4beaa170253b11e78e97005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29283302}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 29279305}]}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-04-20 07:44:12.371106",
+        "user_id": 97752
+    },
+    {
+        "create_time": "2015-10-15 00:31:40.398254",
+        "datasets": [
+            {
+                "dataset_id": "12724448",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "NA12878-Plat-Gen-hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12162283",
+                "extension": "bed",
+                "file_size": 155365,
+                "name": "2015-05-11_Ear_eye_v1.1_Targets.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2407151,
+        "id": 10576522,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847301.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21451476",
+            "regions": "20763963"
+        },
+        "runner_name": null,
+        "session_id": 25693830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-15 00:33:51.478784",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2016-02-04 22:37:54.117009",
+        "datasets": [
+            {
+                "dataset_id": "14207445",
+                "extension": "vcf",
+                "file_size": 1172435898,
+                "name": "50 Lines",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14206329",
+                "extension": "bed",
+                "file_size": 23,
+                "name": "regions.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2419718,
+        "id": 11714026,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5971751.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/dm3.len\"",
+            "dbkey": "\"dm3\"",
+            "input": "23179521",
+            "regions": "23178402"
+        },
+        "runner_name": null,
+        "session_id": 28045571,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-02-04 22:40:10.279430",
+        "user_id": 62983
+    },
+    {
+        "create_time": "2017-06-26 22:28:25.287952",
+        "datasets": [
+            {
+                "dataset_id": "20079598",
+                "extension": "vcf",
+                "file_size": 10918542,
+                "name": "LN-INC-EMT1_S1.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20423651",
+                "extension": "bed",
+                "file_size": 15,
+                "name": "bed.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3127780,
+        "id": 16193386,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10269687.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29778407}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 30168794}]}"
+        },
+        "runner_name": null,
+        "session_id": 38224464,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-06-26 22:31:27.203940",
+        "user_id": 91298
+    },
+    {
+        "create_time": "2016-06-24 11:28:41.720897",
+        "datasets": [
+            {
+                "dataset_id": "16340953",
+                "extension": "vcf",
+                "file_size": 44864146681,
+                "name": "2Q7U9.dbsnp.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "16350508",
+                "extension": "bed",
+                "file_size": 51387890,
+                "name": "Text transformation on data 2",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2747266,
+        "id": 13253812,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7440789.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bbab472b7ecca4a1\"}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54be88dbb5bb640cb\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31058670,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-06-24 12:15:54.960479",
+        "user_id": 86484
+    },
+    {
+        "create_time": "2015-12-02 19:09:05.229053",
+        "datasets": [
+            {
+                "dataset_id": "13414928",
+                "extension": "vcf",
+                "file_size": 1753046662,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.19_2mindatasets_5minYesNoRatio_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "13415236",
+                "extension": "bed",
+                "file_size": 1312,
+                "name": "panel.list.bed.txt",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2526260,
+        "id": 11068545,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5320949.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "22266245",
+            "regions": "22266553"
+        },
+        "runner_name": null,
+        "session_id": 26539515,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-12-02 19:14:22.574634",
+        "user_id": 2722
+    },
+    {
+        "create_time": "2016-03-09 12:41:57.834965",
+        "datasets": [
+            {
+                "dataset_id": "14341434",
+                "extension": "vcf",
+                "file_size": 1753046662,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.19_2mindatasets_5minYesNoRatio_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14741763",
+                "extension": "bed",
+                "file_size": 9937,
+                "name": "Dystonia_vs1_manifest.txt",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2597925,
+        "id": 12082451,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6307558.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "23323685",
+            "regions": "23757752"
+        },
+        "runner_name": null,
+        "session_id": 28391525,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-03-09 12:44:15.584786",
+        "user_id": 72096
+    },
+    {
+        "create_time": "2015-12-02 18:55:55.566151",
+        "datasets": [
+            {
+                "dataset_id": "13414928",
+                "extension": "vcf",
+                "file_size": 1753046662,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.19_2mindatasets_5minYesNoRatio_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "13415236",
+                "extension": "bed",
+                "file_size": 1312,
+                "name": "panel.list.bed.txt",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2526260,
+        "id": 11068485,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5320867.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "22266245",
+            "regions": "22266553"
+        },
+        "runner_name": null,
+        "session_id": 26539515,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-12-02 19:03:17.269500",
+        "user_id": 2722
+    },
+    {
+        "create_time": "2015-10-15 00:19:58.895119",
+        "datasets": [
+            {
+                "dataset_id": "12784982",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "VCFsort: on data 139",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11341947",
+                "extension": "bed",
+                "file_size": 201018,
+                "name": "MovM-V1-Mod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2285263,
+        "id": 10576279,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847240.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21524818",
+            "regions": "19733270"
+        },
+        "runner_name": null,
+        "session_id": 25693830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-15 00:23:53.801629",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2016-03-09 12:20:50.794480",
+        "datasets": [
+            {
+                "dataset_id": "14414325",
+                "extension": "vcf",
+                "file_size": 6975540,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs_filteredAgilent.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14741664",
+                "extension": "bed",
+                "file_size": 25927,
+                "name": "Galaxy195-[Dystonia_vs1_manifest.txt].bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2597925,
+        "id": 12082345,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6307449.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "23401380",
+            "regions": "23757649"
+        },
+        "runner_name": null,
+        "session_id": 28391525,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-03-09 12:24:34.853047",
+        "user_id": 72096
+    },
+    {
+        "create_time": "2016-02-29 12:53:38.436406",
+        "datasets": [
+            {
+                "dataset_id": "14551749",
+                "extension": "vcf",
+                "file_size": 593503,
+                "name": "LF59_TSVC_variants.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14551833",
+                "extension": "bed",
+                "file_size": 23256,
+                "name": "IDP.20131001.designedmod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2616097,
+        "id": 11966776,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6199574.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "23553000",
+            "regions": "23553103"
+        },
+        "runner_name": null,
+        "session_id": 28695749,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-02-29 13:02:56.275760",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-11-30 10:11:58.311410",
+        "datasets": [
+            {
+                "dataset_id": "14933928",
+                "extension": "vcf",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18011197",
+                "extension": "bed",
+                "file_size": 253986,
+                "name": "CNE_human_goldensetfromGreg_hg19.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2910832,
+        "id": 14452477,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8648052.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 27431421}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 27429705}]}"
+        },
+        "runner_name": null,
+        "session_id": 34536811,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-11-30 11:32:43.913873",
+        "user_id": 49150
+    },
+    {
+        "create_time": "2016-01-20 15:11:11.063615",
+        "datasets": [
+            {
+                "dataset_id": "14022819",
+                "extension": "vcf",
+                "file_size": 43039676,
+                "name": "VCFannotate: on data 4 and data 1",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "13900714",
+                "extension": "bed",
+                "file_size": 522,
+                "name": "UCSC Main on Dog: ensGene (chr14:53310987-53866523)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2572221,
+        "id": 11562261,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5827350.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/canFam3.len\"",
+            "dbkey": "\"canFam3\"",
+            "input": "22978788",
+            "regions": "22978671"
+        },
+        "runner_name": null,
+        "session_id": 27433187,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-20 15:14:44.958670",
+        "user_id": 71467
+    },
+    {
+        "create_time": "2016-01-28 17:08:04.799119",
+        "datasets": [
+            {
+                "dataset_id": "14106298",
+                "extension": "vcf",
+                "file_size": 1697140699,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14107014",
+                "extension": "bed",
+                "file_size": 25984272,
+                "name": "S07084713_Covered.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2578781,
+        "id": 11624646,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5888630.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "23070204",
+            "regions": "23070934"
+        },
+        "runner_name": null,
+        "session_id": 27765908,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-28 17:14:09.209950",
+        "user_id": null
+    },
+    {
+        "create_time": "2015-02-05 22:52:45.987093",
+        "datasets": [
+            {
+                "dataset_id": "10338021",
+                "extension": "bed",
+                "file_size": 420,
+                "name": "enhancer_experiment_regions.bed",
+                "param_name": "regions"
+            },
+            {
+                "dataset_id": "10335786",
+                "extension": "vcf",
+                "file_size": 392771,
+                "name": "Varscan on data 115",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2187783,
+        "id": 8673319,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2661130.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "18422822",
+            "regions": "18425438"
+        },
+        "runner_name": null,
+        "session_id": 20364837,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-02-05 22:55:54.067644",
+        "user_id": 50685
+    },
+    {
+        "create_time": "2015-10-09 14:52:20.006642",
+        "datasets": [
+            {
+                "dataset_id": "12727992",
+                "extension": "vcf",
+                "file_size": 1414147377,
+                "name": "CHB CGP18558",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12728142",
+                "extension": "bed",
+                "file_size": 8376727,
+                "name": "UCSC Main on Human: snp142 (chrY:1-57227415)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2465882,
+        "id": 10536170,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4810311.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "input": "21455345",
+            "regions": "21455494"
+        },
+        "runner_name": null,
+        "session_id": 25591563,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-09 14:55:15.624337",
+        "user_id": 70851
+    },
+    {
+        "create_time": "2017-11-10 08:23:02.798576",
+        "datasets": [
+            {
+                "dataset_id": "22098724",
+                "extension": "vcf",
+                "file_size": 14354936075,
+                "name": "chr4_mq25_mapab100.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "22157344",
+                "extension": "bed",
+                "file_size": 35,
+                "name": "ENAM.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3314630,
+        "id": 17408029,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11469748",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 32152838}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 32216036}]}"
+        },
+        "runner_name": null,
+        "session_id": 41847709,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-11-10 09:12:26.487636",
+        "user_id": 115668
+    },
+    {
+        "create_time": "2015-10-09 13:46:52.916455",
+        "datasets": [
+            {
+                "dataset_id": "12727992",
+                "extension": "vcf",
+                "file_size": 1414147377,
+                "name": "CHB CGP18558",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12728818",
+                "extension": "bed",
+                "file_size": 13002,
+                "name": "UCSC Main on Human: gold (chrY:1-57227415)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2465882,
+        "id": 10535628,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4809788.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "input": "21455345",
+            "regions": "21456547"
+        },
+        "runner_name": null,
+        "session_id": 25591563,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-09 13:49:17.545806",
+        "user_id": 70851
+    },
+    {
+        "create_time": "2015-05-30 21:39:47.546851",
+        "datasets": [
+            {
+                "dataset_id": "11436994",
+                "extension": "vcf",
+                "file_size": 1348087320,
+                "name": "SGtest.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11437226",
+                "extension": "bed",
+                "file_size": 14038725,
+                "name": "UCSC Main on Human: knownGene (genome)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2323155,
+        "id": 9567705,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3880832.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input": "19849841",
+            "regions": "19850076"
+        },
+        "runner_name": null,
+        "session_id": 23326093,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-05-30 21:43:19.592085",
+        "user_id": 64232
+    },
+    {
+        "create_time": "2016-09-20 07:11:45.360943",
+        "datasets": [
+            {
+                "dataset_id": "17226873",
+                "extension": "vcf",
+                "file_size": 10108358,
+                "name": "VCFfilter: on data 29",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "17220336",
+                "extension": "bed",
+                "file_size": 3555751,
+                "name": "trusight_one.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2824697,
+        "id": 13890272,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8114021.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5170e9df58e2b13ae\"}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52d0deb8d0d5297bb\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33026880,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-09-20 07:14:30.531455",
+        "user_id": 42091
+    },
+    {
+        "create_time": "2015-10-15 00:10:44.325637",
+        "datasets": [
+            {
+                "dataset_id": "12724448",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "NA12878-Plat-Gen-hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11341947",
+                "extension": "bed",
+                "file_size": 201018,
+                "name": "MovM-V1-Mod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2285263,
+        "id": 10576187,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847182.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21524615",
+            "regions": "19733270"
+        },
+        "runner_name": null,
+        "session_id": 25693830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-15 00:13:56.869602",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2015-03-12 15:34:26.222780",
+        "datasets": [
+            {
+                "dataset_id": "8500033",
+                "extension": "bed",
+                "file_size": 90355,
+                "name": "MACS on TB_plus_440_AID (peaks: bed)",
+                "param_name": "regions"
+            },
+            {
+                "dataset_id": "10660937",
+                "extension": "vcf",
+                "file_size": 4404609,
+                "name": "FreeBayes on data 24 (variants)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 1959733,
+        "id": 8932870,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3141195.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "18836745",
+            "regions": "15958056"
+        },
+        "runner_name": null,
+        "session_id": 20931169,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-03-12 16:14:58.318410",
+        "user_id": 48464
+    },
+    {
+        "create_time": "2016-11-29 15:00:38.501625",
+        "datasets": [
+            {
+                "dataset_id": "14933928",
+                "extension": "vcf",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18011197",
+                "extension": "bed",
+                "file_size": 253986,
+                "name": "CNE_human_goldensetfromGreg_hg19.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910832,
+        "id": 14445743,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8642470.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 27431421}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 27429705}]}"
+        },
+        "runner_name": null,
+        "session_id": 34507634,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-11-29 19:15:05.056057",
+        "user_id": 49150
+    },
+    {
+        "create_time": "2015-10-09 13:51:20.860474",
+        "datasets": [
+            {
+                "dataset_id": "12727992",
+                "extension": "vcf",
+                "file_size": 1414147377,
+                "name": "CHB CGP18558",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12728142",
+                "extension": "bed",
+                "file_size": 8376727,
+                "name": "UCSC Main on Human: snp142 (chrY:1-57227415)",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2465882,
+        "id": 10535668,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4809828.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "input": "21455345",
+            "regions": "21455494"
+        },
+        "runner_name": null,
+        "session_id": 25591563,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-09 13:53:43.300887",
+        "user_id": 70851
+    },
+    {
+        "create_time": "2016-03-29 20:29:26.123434",
+        "datasets": [
+            {
+                "dataset_id": "14998019",
+                "extension": "vcf",
+                "file_size": 13086,
+                "name": "Varscan on data 99",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14993025",
+                "extension": "bed",
+                "file_size": 785,
+                "name": "IAD87456_151_Designed.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2062107,
+        "id": 12277619,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6485441.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "24050769",
+            "regions": "24045451"
+        },
+        "runner_name": null,
+        "session_id": 28597995,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-03-29 20:32:51.568045",
+        "user_id": 47259
+    },
+    {
+        "create_time": "2016-01-26 14:30:15.965566",
+        "datasets": [
+            {
+                "dataset_id": "14083461",
+                "extension": "vcf",
+                "file_size": 1697140699,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14083466",
+                "extension": "bed",
+                "file_size": 1488681,
+                "name": "TruSightOne_TargetedRegions_v1.0Used.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2578446,
+        "id": 11607314,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5872124.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "23045706",
+            "regions": "23045711"
+        },
+        "runner_name": null,
+        "session_id": 27765908,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-26 14:34:31.339941",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-07-05 19:58:16.148245",
+        "datasets": [
+            {
+                "dataset_id": "20518600",
+                "extension": "vcf",
+                "file_size": 203091107,
+                "name": "qual60.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20518630",
+                "extension": "bed",
+                "file_size": 18012487817,
+                "name": "Select on data 1",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3183018,
+        "id": 16266055,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10337214.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30312558}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 30312601}]}"
+        },
+        "runner_name": null,
+        "session_id": 39118869,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-07-05 20:02:46.761429",
+        "user_id": 108593
+    },
+    {
+        "create_time": "2015-08-15 23:50:49.898948",
+        "datasets": [
+            {
+                "dataset_id": "12183083",
+                "extension": "vcf",
+                "file_size": 165358,
+                "name": "VCFfilter: on data 8",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12183023",
+                "extension": "bed",
+                "file_size": 210,
+                "name": "Tophat on data 2: splice junctions",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2409628,
+        "id": 10127109,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4399185.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "20788433",
+            "regions": "20788340"
+        },
+        "runner_name": null,
+        "session_id": 24525295,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-08-15 23:53:56.741993",
+        "user_id": 67444
+    },
+    {
+        "create_time": "2018-02-05 08:53:06.540090",
+        "datasets": [
+            {
+                "dataset_id": "23367982",
+                "extension": "vcf",
+                "file_size": 52129,
+                "name": "Varscan on data 36",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "23366468",
+                "extension": "bed",
+                "file_size": 10431,
+                "name": "HLA_Set",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3406019,
+        "id": 18255826,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12337487",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33609570}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 33607978}]}"
+        },
+        "runner_name": null,
+        "session_id": 43680697,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2018-02-05 08:55:46.579599",
+        "user_id": 64295
+    },
+    {
+        "create_time": "2017-07-07 10:59:27.705332",
+        "datasets": [
+            {
+                "dataset_id": "20497545",
+                "extension": "vcf",
+                "file_size": 65775517827,
+                "name": "ALL.chr1.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20525015",
+                "extension": "bed",
+                "file_size": 7006036,
+                "name": "1bd.txt",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2232551,
+        "id": 16282560,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10352934.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30277196}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 30329857}]}"
+        },
+        "runner_name": null,
+        "session_id": 39066197,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-07-07 11:21:49.442462",
+        "user_id": 60720
+    },
+    {
+        "create_time": "2016-01-28 16:20:01.497263",
+        "datasets": [
+            {
+                "dataset_id": "14106298",
+                "extension": "vcf",
+                "file_size": 1697140699,
+                "name": "NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14106301",
+                "extension": "bed",
+                "file_size": 51823355,
+                "name": "S07084713_AllTracks.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2578781,
+        "id": 11624096,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5888176.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "23070204",
+            "regions": "23070207"
+        },
+        "runner_name": null,
+        "session_id": 27765908,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-01-28 16:24:36.449052",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-06-24 12:21:38.475566",
+        "datasets": [
+            {
+                "dataset_id": "16340953",
+                "extension": "vcf",
+                "file_size": 44864146681,
+                "name": "2Q7U9.dbsnp.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "16350508",
+                "extension": "bed",
+                "file_size": 51387890,
+                "name": "Text transformation on data 2",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2747266,
+        "id": 13254022,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7441008.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bbab472b7ecca4a1\"}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54be88dbb5bb640cb\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31027627,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2016-06-24 13:08:24.006025",
+        "user_id": 86484
+    },
+    {
+        "create_time": "2015-10-15 00:05:12.380184",
+        "datasets": [
+            {
+                "dataset_id": "12724448",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "NA12878-Plat-Gen-hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11341947",
+                "extension": "bed",
+                "file_size": 201018,
+                "name": "MovM-V1-Mod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2285263,
+        "id": 10576150,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847143.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21524615",
+            "regions": "19733270"
+        },
+        "runner_name": null,
+        "session_id": 25693830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-15 00:07:11.139701",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2015-10-15 22:49:02.869605",
+        "datasets": [
+            {
+                "dataset_id": "12724448",
+                "extension": "vcf",
+                "file_size": 845819583,
+                "name": "NA12878-Plat-Gen-hg19.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11341947",
+                "extension": "bed",
+                "file_size": 201018,
+                "name": "MovM-V1-Mod.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2285263,
+        "id": 10589384,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4859328.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "21524615",
+            "regions": "19733270"
+        },
+        "runner_name": null,
+        "session_id": 25693830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-10-15 22:50:59.240032",
+        "user_id": 37542
+    },
+    {
+        "create_time": "2018-02-16 00:20:05.257367",
+        "datasets": [
+            {
+                "dataset_id": "23620228",
+                "extension": "vcf",
+                "file_size": 394705,
+                "name": "VCFfilter: on data 1",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "23620199",
+                "extension": "bed",
+                "file_size": 779930,
+                "name": "MasterGeneList_20bp_overlap_1_AllTracks.bed",
+                "param_name": "regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vcftools",
+                "path": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8",
+                "script": "/galaxy/main/deps/vcftools/0.1.11/devteam/vcftools_slice/1363e5d4a8b8/env.sh",
+                "version": "0.1.11"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3431088,
+        "id": 18404249,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12490003",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33887307}]}",
+            "regions": "{\"values\": [{\"src\": \"hda\", \"id\": 33887278}]}"
+        },
+        "runner_name": null,
+        "session_id": 43856137,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcftools_slice/vcftools_slice/0.1",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2018-02-16 00:23:03.555174",
+        "user_id": 79386
+    }
+]

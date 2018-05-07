@@ -1,0 +1,1878 @@
+[
+    {
+        "create_time": "2017-12-03 19:32:15.097426",
+        "datasets": [
+            {
+                "dataset_id": "22575870",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 219566715,
+                "name": "multiBigwigSummary on data 418, data 417, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2936266,
+        "id": 17683991,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11748418",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 32700692}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"whatToPlot\": \"scatterplot\", \"plotTitle\": \"\", \"__current_case__\": 1}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42423686,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-12-03 19:33:10.877454",
+        "user_id": 68782
+    },
+    {
+        "create_time": "2017-09-14 08:29:28.234733",
+        "datasets": [
+            {
+                "dataset_id": "21276235",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 52913311,
+                "name": "multiBamSummary on data 14, data 13, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3252519,
+        "id": 16815509,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10885065.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31227639}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"?\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40322423,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-14 08:33:24.281471",
+        "user_id": 45008
+    },
+    {
+        "create_time": "2017-07-15 20:29:20.082615",
+        "datasets": [
+            {
+                "dataset_id": "20633709",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 127829630,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2643013,
+        "id": 16352352,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417319.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30500083}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 20:30:58.045492",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-05-23 15:03:30.919893",
+        "datasets": [
+            {
+                "dataset_id": "20037121",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 474135816,
+                "name": "multiBigwigSummary on data 51, data 50, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3122176,
+        "id": 15918216,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10015891.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29725491}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37857452,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-23 15:06:32.775030",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2017-12-03 19:28:30.276630",
+        "datasets": [
+            {
+                "dataset_id": "22575870",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 219566715,
+                "name": "multiBigwigSummary on data 418, data 417, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2936266,
+        "id": 17683979,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11748378",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 32700692}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"whatToPlot\": \"scatterplot\", \"plotTitle\": \"\", \"__current_case__\": 1}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42423686,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-12-03 19:30:11.943832",
+        "user_id": 68782
+    },
+    {
+        "create_time": "2017-05-04 14:22:18.419758",
+        "datasets": [
+            {
+                "dataset_id": "19804117",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 12150669,
+                "name": "multiBamSummary on data 49, data 48, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3096722,
+        "id": 15749276,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9858068.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29455090}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"whatToPlot\": \"scatterplot\", \"plotTitle\": \"Sameer's Oligo Project\", \"__current_case__\": 1}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36729607,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-04 14:25:00.625607",
+        "user_id": 12159
+    },
+    {
+        "create_time": "2017-05-24 15:11:10.057211",
+        "datasets": [
+            {
+                "dataset_id": "20048293",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 474131722,
+                "name": "multiBigwigSummary on data 51, data 50, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3122176,
+        "id": 15928985,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10026657.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29738233}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 38190669,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-24 15:12:59.337721",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2017-09-26 15:24:23.179207",
+        "datasets": [
+            {
+                "dataset_id": "21448783",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 1760753,
+                "name": "multiBamSummary on data 16 and data 15: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3100738,
+        "id": 16937178,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11006562.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31428168}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"12hpi1 vs 12hpi2 correlation (50bp bins)\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40862360,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 15:25:54.065489",
+        "user_id": 105375
+    },
+    {
+        "create_time": "2017-09-18 15:58:38.365558",
+        "datasets": [
+            {
+                "dataset_id": "21320203",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 260926324,
+                "name": "multiBamSummary on data 34, data 32, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3251344,
+        "id": 16856356,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10923242.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31280086}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"true\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40459743,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-18 16:00:50.977983",
+        "user_id": 111397
+    },
+    {
+        "create_time": "2017-10-13 21:42:54.536385",
+        "datasets": [
+            {
+                "dataset_id": "21680449",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 88267244,
+                "name": "multiBamSummary on data 14, data 13, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3284489,
+        "id": 17098992,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11155816.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31685183}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"?\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40050553,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-13 21:44:37.756614",
+        "user_id": 106491
+    },
+    {
+        "create_time": "2017-07-15 23:13:49.372312",
+        "datasets": [
+            {
+                "dataset_id": "20637574",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 85130812,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2643013,
+        "id": 16352670,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417586.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30504258}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 23:15:26.173681",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-12-03 19:30:57.954592",
+        "datasets": [
+            {
+                "dataset_id": "22575870",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 219566715,
+                "name": "multiBigwigSummary on data 418, data 417, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2936266,
+        "id": 17683986,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11748406",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 32700692}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42423686,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-12-03 19:32:11.045594",
+        "user_id": 68782
+    },
+    {
+        "create_time": "2017-09-11 07:49:18.175620",
+        "datasets": [
+            {
+                "dataset_id": "21235681",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 201059971,
+                "name": "multiBigwigSummary on data 10, data 9, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3248730,
+        "id": 16784916,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10855539.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31179890}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"?\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40322423,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-11 13:44:22.693925",
+        "user_id": 45008
+    },
+    {
+        "create_time": "2017-09-17 18:25:22.001761",
+        "datasets": [
+            {
+                "dataset_id": "21320203",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 260926324,
+                "name": "multiBamSummary on data 34, data 32, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3251344,
+        "id": 16848684,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10915536.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31280086}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"Heatman_speraman_allsamples\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40576453,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-17 18:26:16.616478",
+        "user_id": 111397
+    },
+    {
+        "create_time": "2017-07-15 01:17:10.439903",
+        "datasets": [
+            {
+                "dataset_id": "20633709",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 127829630,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2643013,
+        "id": 16349843,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10415393.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30500083}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 01:58:21.625197",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2018-01-23 07:19:07.237990",
+        "datasets": [
+            {
+                "dataset_id": "23229512",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 93599758,
+                "name": "multiBamSummary on data 14, data 13, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3257313,
+        "id": 18129170,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12209528",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 33456326}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"?\"",
+            "outFileCorMatrix": "\"true\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"Spearman Correlation of Read Counts\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 43368043,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-01-23 08:51:24.070213",
+        "user_id": 45008
+    },
+    {
+        "create_time": "2017-07-15 21:51:38.250383",
+        "datasets": [
+            {
+                "dataset_id": "20637574",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 85130812,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2643013,
+        "id": 16352524,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417510.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30504258}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 22:25:42.189828",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-09-26 15:22:17.610934",
+        "datasets": [
+            {
+                "dataset_id": "21448783",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 1760753,
+                "name": "multiBamSummary on data 16 and data 15: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3100738,
+        "id": 16937102,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11006525.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31428168}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"12hpi1 vs 12hpi2 correlation (50bp bins)\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40862360,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-26 15:23:27.452487",
+        "user_id": 105375
+    },
+    {
+        "create_time": "2017-05-23 16:08:06.221267",
+        "datasets": [
+            {
+                "dataset_id": "20037121",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 474135816,
+                "name": "multiBigwigSummary on data 51, data 50, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3122176,
+        "id": 15918720,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10016366.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29725491}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37857452,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-23 16:10:10.189336",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2017-12-03 12:44:08.805480",
+        "datasets": [
+            {
+                "dataset_id": "22575870",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 219566715,
+                "name": "multiBigwigSummary on data 418, data 417, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2936266,
+        "id": 17680585,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11747290",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 32700692}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"whatToPlot\": \"scatterplot\", \"plotTitle\": \"\", \"__current_case__\": 1}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42423686,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-12-03 18:34:57.710824",
+        "user_id": 68782
+    },
+    {
+        "create_time": "2017-07-15 20:28:03.986861",
+        "datasets": [
+            {
+                "dataset_id": "20633709",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 127829630,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2643013,
+        "id": 16352350,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417318.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30500083}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 20:29:08.900764",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-05-04 17:07:05.636075",
+        "datasets": [
+            {
+                "dataset_id": "19816733",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 1075716674,
+                "name": "multiBigwigSummary on data 10, data 9, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3096002,
+        "id": 15750959,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9859623.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29471033}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"?\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37752077,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-04 17:08:28.185591",
+        "user_id": 43553
+    },
+    {
+        "create_time": "2017-07-15 21:51:28.732521",
+        "datasets": [
+            {
+                "dataset_id": "20637574",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 85130812,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2643013,
+        "id": 16352522,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417509.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30504258}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 22:25:24.793749",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-05-24 17:07:49.035691",
+        "datasets": [
+            {
+                "dataset_id": "20048293",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 474131722,
+                "name": "multiBigwigSummary on data 51, data 50, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3122176,
+        "id": 15929944,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10027731.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29738233}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 38190669,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-24 17:10:32.215585",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2017-07-15 20:30:29.650543",
+        "datasets": [
+            {
+                "dataset_id": "20633709",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 127829630,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2643013,
+        "id": 16352356,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417322.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30500083}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 20:31:21.158345",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-10-13 21:40:28.851888",
+        "datasets": [
+            {
+                "dataset_id": "21680449",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 88267244,
+                "name": "multiBamSummary on data 14, data 13, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3284489,
+        "id": 17098981,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11155798.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 31685183}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"?\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"true\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40050553,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-13 21:41:38.230015",
+        "user_id": 106491
+    },
+    {
+        "create_time": "2017-07-15 23:13:33.896972",
+        "datasets": [
+            {
+                "dataset_id": "20637574",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 85130812,
+                "name": "multiBamSummary on data 148, data 147, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2643013,
+        "id": 16352669,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10417585.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 30504258}]}",
+            "corMethod": "\"pearson\"",
+            "dbkey": "\"mm10\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"true\"",
+            "skipZeros": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 37615983,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-15 23:14:25.339958",
+        "user_id": 37946
+    },
+    {
+        "create_time": "2017-05-04 14:23:20.458835",
+        "datasets": [
+            {
+                "dataset_id": "19804117",
+                "extension": "deeptools_coverage_matrix",
+                "file_size": 12150669,
+                "name": "multiBamSummary on data 49, data 48, and others: correlation matrix",
+                "param_name": "corData"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3096722,
+        "id": 15749290,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9858085.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "corData": "{\"values\": [{\"src\": \"hda\", \"id\": 29455090}]}",
+            "corMethod": "\"spearman\"",
+            "dbkey": "\"hg19\"",
+            "outFileCorMatrix": "\"false\"",
+            "outFileFormat": "\"png\"",
+            "plotting_type": "{\"plotTitle\": \"Sameer's Oligo Project\", \"colorMap\": [\"RdYlBu\"], \"plotNumbers\": \"false\", \"zMin\": \"\", \"whatToPlot\": \"heatmap\", \"__current_case__\": 0, \"zMax\": \"\"}",
+            "removeOutliers": "\"false\"",
+            "skipZeros": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36729607,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_correlation/deeptools_plot_correlation/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-04 14:26:41.802363",
+        "user_id": 12159
+    }
+]

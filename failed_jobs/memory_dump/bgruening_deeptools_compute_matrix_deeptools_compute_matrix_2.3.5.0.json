@@ -1,0 +1,1042 @@
+[
+    {
+        "create_time": "2017-04-26 17:24:03.435887",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "18090964",
+                "extension": "bigwig",
+                "file_size": 74418,
+                "name": "bamCoverage-Activator_only",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/683/15683507/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/683/15683507/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "deepTools",
+                "version": "2.3.5"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2694982,
+        "id": 15683507,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9805170",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"afterRegionStartLength\": \"10000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"10000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 26886509}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 26951941}, {\"src\": \"hda\", \"id\": 26966573}, {\"src\": \"hda\", \"id\": 27520146}]}"
+        },
+        "runner_name": null,
+        "session_id": 36226787,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2017-04-28 12:21:55.320180",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2016-10-13 21:03:42.845311",
+        "datasets": [
+            {
+                "dataset_id": "17490456",
+                "extension": "bed",
+                "file_size": 72815099,
+                "name": "FL_me2_treat_pileup.bdg",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17489645",
+                "extension": "bigwig",
+                "file_size": 2879234,
+                "name": "bamCoverage on data 22",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17489645",
+                "extension": "bigwig",
+                "file_size": 2879234,
+                "name": "bamCoverage on data 22",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17489649",
+                "extension": "bigwig",
+                "file_size": 3730800,
+                "name": "bamCoverage on data 23",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2853708,
+        "id": 14077016,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8294456",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"max\", \"skipZeros\": \"false\", \"binSize\": \"5\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"false\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Saccharomyces_cerevisiae_S288C_SGD2010.len\"",
+            "dbkey": "\"Saccharomyces_cerevisiae_S288C_SGD2010\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56770235005c4ea77\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bd7d95852c462d65\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5006c061aa47d2e5e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33660833,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-14 06:24:56.287599",
+        "user_id": 92169
+    },
+    {
+        "create_time": "2016-10-14 18:30:29.758311",
+        "datasets": [
+            {
+                "dataset_id": "17500409",
+                "extension": "bed",
+                "file_size": 762333662,
+                "name": "MACS2 callpeak on data 46 (Bedgraph Treatment)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17500376",
+                "extension": "bigwig",
+                "file_size": 211268994,
+                "name": "Map with BWA for Illumina on data 95: mapped reads",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17500376",
+                "extension": "bigwig",
+                "file_size": 211268994,
+                "name": "Map with BWA for Illumina on data 95: mapped reads",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2836119,
+        "id": 14084400,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8301638",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b583ce1ba80c7940eb\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d5fd685672e0c0c4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33294469,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-14 19:59:39.605652",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2016-10-20 13:08:40.936980",
+        "datasets": [
+            {
+                "dataset_id": "17565361",
+                "extension": "bed",
+                "file_size": 5439886329,
+                "name": "MACS2 callpeak on data 30 and data 29 (Bedgraph Control)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17565344",
+                "extension": "bigwig",
+                "file_size": 215310263,
+                "name": "bamCoverage on data 28",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17565344",
+                "extension": "bigwig",
+                "file_size": 215310263,
+                "name": "bamCoverage on data 28",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17565345",
+                "extension": "bigwig",
+                "file_size": 210884265,
+                "name": "bamCoverage on data 29",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "17565346",
+                "extension": "bigwig",
+                "file_size": 226045657,
+                "name": "bamCoverage on data 30",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2861396,
+        "id": 14130272,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8345340",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55589db4b9800c92e\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ac8888cbd9eb88ef\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55b84f336f5d02798\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5657938261b409bf5\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33819286,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-20 14:40:30.002365",
+        "user_id": 92580
+    },
+    {
+        "create_time": "2016-10-14 02:41:00.343573",
+        "datasets": [
+            {
+                "dataset_id": "17492591",
+                "extension": "bed",
+                "file_size": 86655161,
+                "name": "FL_me3_treat_pileup.bdg",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17492456",
+                "extension": "bigwig",
+                "file_size": 2577504,
+                "name": "D200me3_150ext_Galaxy44-[bamCoverage_on_data_16].bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17492456",
+                "extension": "bigwig",
+                "file_size": 2577504,
+                "name": "D200me3_150ext_Galaxy44-[bamCoverage_on_data_16].bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17492459",
+                "extension": "bigwig",
+                "file_size": 6789372,
+                "name": "FLme3_150ext_Galaxy27-[bamCoverage_on_data_15].bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "17492463",
+                "extension": "bigwig",
+                "file_size": 1885145,
+                "name": "N200me3_150ext_Galaxy45-[bamCoverage_on_data_20].bigwig",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2853708,
+        "id": 14078587,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8296222",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"max\", \"skipZeros\": \"false\", \"binSize\": \"5\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"false\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Saccharomyces_cerevisiae_S288C_SGD2010.len\"",
+            "dbkey": "\"Saccharomyces_cerevisiae_S288C_SGD2010\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c30d07e722d26ca\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b528df7eda58b2ceaa\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ea9e5f145ee4f60c\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57d3861e3007ee1b9\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33660833,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-14 10:04:28.731112",
+        "user_id": 92169
+    },
+    {
+        "create_time": "2017-05-03 15:15:27.189695",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "18090964",
+                "extension": "bigwig",
+                "file_size": 74418,
+                "name": "bamCoverage-Activator_only",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/736/15736467/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/736/15736467/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "deepTools",
+                "version": "2.3.5"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2694982,
+        "id": 15736467,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9846587",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"regionBodyLength\": \"1000\", \"regionStartLength\": {\"afterRegionStartLength\": \"5000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"5000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 26886509}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 26951941}, {\"src\": \"hda\", \"id\": 26966573}, {\"src\": \"hda\", \"id\": 27520146}]}"
+        },
+        "runner_name": null,
+        "session_id": 36226787,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2017-05-04 10:53:14.142801",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2016-10-30 02:38:52.994526",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2694982,
+        "id": 14207831,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8419198",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"afterRegionStartLength\": \"20000\", \"beforeRegionStartLength\": \"20000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5703f5557c2d8ba6f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b18ccec6e078a92d\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5209e9caff052fb50\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33486407,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-31 01:22:48.748679",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2016-10-28 03:02:10.363389",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2694982,
+        "id": 14196807,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8408690",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"afterRegionStartLength\": \"20000\", \"beforeRegionStartLength\": \"20000\", \"nanAfterEnd\": \"true\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5703f5557c2d8ba6f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b18ccec6e078a92d\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5209e9caff052fb50\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33486407,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-28 23:20:49.720730",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2017-04-26 17:18:18.691083",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "18090964",
+                "extension": "bigwig",
+                "file_size": 74418,
+                "name": "bamCoverage-Activator_only",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/683/15683493/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/683/15683493/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "deepTools",
+                "version": "2.3.5"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2694982,
+        "id": 15683493,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9797565",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"afterRegionStartLength\": \"10000\", \"beforeRegionStartLength\": \"10000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 26886509}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 26951941}, {\"src\": \"hda\", \"id\": 26966573}, {\"src\": \"hda\", \"id\": 27520146}]}"
+        },
+        "runner_name": null,
+        "session_id": 36226787,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2017-04-27 14:45:31.048955",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2016-12-17 03:47:34.010486",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "18090964",
+                "extension": "bigwig",
+                "file_size": 74418,
+                "name": "bamCoverage-Activator_only",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/014/597/14597853/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/014/597/14597853/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "deepTools",
+                "version": "2.3.5"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2694982,
+        "id": 14597853,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8776264",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"afterRegionStartLength\": \"20000\", \"beforeRegionStartLength\": \"20000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 26886509}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 26951941}, {\"src\": \"hda\", \"id\": 26966573}, {\"src\": \"hda\", \"id\": 27520146}]}"
+        },
+        "runner_name": null,
+        "session_id": 33486407,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-12-18 03:30:32.045089",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2016-12-22 16:50:57.932853",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "18090964",
+                "extension": "bigwig",
+                "file_size": 74418,
+                "name": "bamCoverage-Activator_only",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/014/633/14633123/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/014/633/14633123/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "deepTools",
+                "version": "2.3.5"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2694982,
+        "id": 14633123,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8808837",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"afterRegionStartLength\": \"10000\", \"beforeRegionStartLength\": \"10000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 26886509}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 26951941}, {\"src\": \"hda\", \"id\": 26966573}, {\"src\": \"hda\", \"id\": 27520146}]}"
+        },
+        "runner_name": null,
+        "session_id": 33486407,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-12-23 14:43:27.241972",
+        "user_id": 84133
+    },
+    {
+        "create_time": "2016-10-14 18:29:14.899795",
+        "datasets": [
+            {
+                "dataset_id": "17500374",
+                "extension": "bed",
+                "file_size": 846581757,
+                "name": "MACS2 callpeak on data 47 (Bedgraph Control)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17500376",
+                "extension": "bigwig",
+                "file_size": 211268994,
+                "name": "Map with BWA for Illumina on data 95: mapped reads",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17500376",
+                "extension": "bigwig",
+                "file_size": 211268994,
+                "name": "Map with BWA for Illumina on data 95: mapped reads",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2836119,
+        "id": 14084382,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8301498",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b574d18834683f0ffc\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d5fd685672e0c0c4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33294469,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-14 19:45:04.957131",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-05-07 03:05:53.899019",
+        "datasets": [
+            {
+                "dataset_id": "17539499",
+                "extension": "bed",
+                "file_size": 30145368,
+                "name": "GFF-to-BED_ZmB73_5b_FGS.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "17597996",
+                "extension": "bigwig",
+                "file_size": 29814,
+                "name": "bamCoverage_uniqPeaks_REP_ARFs_v2_5column._sorted(as BAM)",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "17611475",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoveragesharedPeaks_ACTandREP_v2_sorted",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "18090964",
+                "extension": "bigwig",
+                "file_size": 74418,
+                "name": "bamCoverage-Activator_only",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/769/15769582/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/015/769/15769582/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "deepTools",
+                "version": "2.3.5"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2694982,
+        "id": 15769582,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9876902",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Zea_mays_B73_RefGen_v2.len\"",
+            "dbkey": "\"Zea_mays_B73_RefGen_v2\"",
+            "mode": "{\"afterRegionStartLength\": \"10000\", \"beforeRegionStartLength\": \"10000\", \"nanAfterEnd\": \"true\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 26886509}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 26951941}, {\"src\": \"hda\", \"id\": 26966573}, {\"src\": \"hda\", \"id\": 27520146}]}"
+        },
+        "runner_name": null,
+        "session_id": 36226787,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2017-05-07 22:22:06.588231",
+        "user_id": 84133
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "create_time": "2017-03-31 16:44:24.041798",
+        "datasets": [
+            {
+                "dataset_id": "19412829",
+                "extension": "fastqsanger",
+                "file_size": 899699026,
+                "name": "STR detection on data 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19412829",
+                "extension": "fastqsanger",
+                "file_size": 899699026,
+                "name": "STR detection on data 1",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3052935,
+        "id": 15449722,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9580609",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29008823}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29008823}]}}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 36312818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-03-31 18:12:31.604689",
+        "user_id": 64939
+    }
+]

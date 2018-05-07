@@ -1,0 +1,60 @@
+[
+    {
+        "create_time": "2015-04-29 04:35:20.461710",
+        "datasets": [
+            {
+                "dataset_id": "11152358",
+                "extension": "gd_snp",
+                "file_size": 3169477725,
+                "name": "ALL SNPS",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "11153415",
+                "extension": "gd_indivs",
+                "file_size": 20,
+                "name": "Male Bonded",
+                "param_name": "indivs_input"
+            },
+            {
+                "dataset_id": "11152358",
+                "extension": "gd_snp",
+                "file_size": 3169477725,
+                "name": "ALL SNPS",
+                "param_name": "coverage_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2246143,
+        "id": 9357682,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3694514.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/papAnu2.len\"",
+            "dbkey": "\"papAnu2\"",
+            "indivs_input": "19478471",
+            "input": "19477258",
+            "input_type": "{\"coverage_input\": 19477258, \"coverage_threshold\": \"1\", \"indivs_threshold\": \"0.5\", \"__current_case__\": 0, \"choice\": \"0\"}"
+        },
+        "runner_name": null,
+        "session_id": 22015150,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/miller-lab/genome_diversity/gd_make_phylip/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2015-04-29 04:38:43.216878",
+        "user_id": 61434
+    }
+]

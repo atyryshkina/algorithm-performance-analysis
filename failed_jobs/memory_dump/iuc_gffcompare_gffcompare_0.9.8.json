@@ -1,0 +1,74 @@
+[
+    {
+        "create_time": "2017-11-02 17:49:07.799447",
+        "datasets": [
+            {
+                "dataset_id": "21989518",
+                "extension": "gtf",
+                "file_size": 544842279,
+                "name": "hg19_Repeatmasker_sorted_gtf",
+                "param_name": "inputs"
+            },
+            {
+                "dataset_id": "21989518",
+                "extension": "gtf",
+                "file_size": 544842279,
+                "name": "hg19_Repeatmasker_sorted_gtf",
+                "param_name": "inputs1"
+            },
+            {
+                "dataset_id": "21992698",
+                "extension": "gtf",
+                "file_size": 261232632,
+                "name": "hg19_ENSEMBL_to_UCSC_gtf",
+                "param_name": "inputs2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__gffcompare@0.9.8",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gffcompare",
+                "version": "0.9.8"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3299818,
+        "id": 17306496,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11365651",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotation": "{\"use_ref_annotation\": \"No\", \"__current_case__\": 1}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "discard_intron_redundant_transfrags": "\"false\"",
+            "discard_single_exon": "\"\"",
+            "inputs": "{\"values\": [{\"src\": \"hda\", \"id\": 32029712}, {\"src\": \"hda\", \"id\": 32032959}]}",
+            "max_dist_exon": "\"100\"",
+            "max_dist_group": "\"100\"",
+            "seq_data": "{\"use_seq_data\": \"No\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 41698900,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gffcompare/gffcompare/0.9.8",
+        "tool_version": "0.9.8",
+        "traceback": null,
+        "update_time": "2017-11-02 19:46:17.330514",
+        "user_id": 111987
+    }
+]

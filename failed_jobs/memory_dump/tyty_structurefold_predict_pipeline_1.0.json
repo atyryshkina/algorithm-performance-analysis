@@ -1,0 +1,242 @@
+[
+    {
+        "create_time": "2017-06-22 02:51:52.561451",
+        "datasets": [
+            {
+                "dataset_id": "20379578",
+                "extension": "txt",
+                "file_size": 260,
+                "name": "idlist.txt",
+                "param_name": "rna_list"
+            },
+            {
+                "dataset_id": "20379577",
+                "extension": "fasta",
+                "file_size": 326082357,
+                "name": "genome_reference.fasta",
+                "param_name": "reference_file"
+            },
+            {
+                "dataset_id": "20379590",
+                "extension": "txt",
+                "file_size": 801022389,
+                "name": "reactivity.txt",
+                "param_name": "program|reactivity_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rnastructure",
+                "path": "/galaxy/main/deps/rnastructure/5.7/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/rnastructure/5.7/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "5.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "imaging",
+                "path": "/galaxy/main/deps/imaging/1.1.7/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/imaging/1.1.7/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.1.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "matplotlib",
+                "path": "/galaxy/main/deps/matplotlib/1.2.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/matplotlib/1.2.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.2.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vienna_rna",
+                "path": "/galaxy/main/deps/vienna_rna/2.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/vienna_rna/2.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "2.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2918295,
+        "id": 16159999,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10237908.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "program": "{\"vp_reactivity\": {\"threshold_high\": \"0.6\", \"type\": \"restraint\", \"reactivity_file\": {\"values\": [{\"src\": \"hda\", \"id\": 30120512}]}, \"__current_case__\": 1, \"threshold_low\": \"0.3\"}, \"gqs\": \"true\", \"__current_case__\": 1, \"wh\": \"vp\"}",
+            "reference_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30120499}]}",
+            "rna_list": "{\"values\": [{\"src\": \"hda\", \"id\": 30120500}]}",
+            "temperature": "\"310.15\""
+        },
+        "runner_name": null,
+        "session_id": 38854064,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/predict_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-06-22 02:53:14.119875",
+        "user_id": 96301
+    },
+    {
+        "create_time": "2017-04-26 02:49:47.084635",
+        "datasets": [
+            {
+                "dataset_id": "19722910",
+                "extension": "txt",
+                "file_size": 6,
+                "name": "list_id.txt",
+                "param_name": "rna_list"
+            },
+            {
+                "dataset_id": "19722728",
+                "extension": "fasta",
+                "file_size": 62309168,
+                "name": "chr19.fasta",
+                "param_name": "reference_file"
+            },
+            {
+                "dataset_id": "19722811",
+                "extension": "tabular",
+                "file_size": 185719448,
+                "name": "chr19.txt",
+                "param_name": "program|reactivity_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rnastructure",
+                "path": "/galaxy/main/deps/rnastructure/5.7/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/rnastructure/5.7/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "5.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "imaging",
+                "path": "/galaxy/main/deps/imaging/1.1.7/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/imaging/1.1.7/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.1.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "matplotlib",
+                "path": "/galaxy/main/deps/matplotlib/1.2.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/matplotlib/1.2.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.2.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vienna_rna",
+                "path": "/galaxy/main/deps/vienna_rna/2.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/vienna_rna/2.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "2.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2918295,
+        "id": 15677829,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9792867.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "program": "{\"rs_reactivity\": {\"slope\": \"1.8\", \"intercept\": \"-0.6\", \"type\": \"restraint\", \"reactivity_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29360982}]}, \"__current_case__\": 1}, \"__current_case__\": 0, \"wh\": \"rs\"}",
+            "reference_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29360899}]}",
+            "rna_list": "{\"values\": [{\"src\": \"hda\", \"id\": 29361094}]}",
+            "temperature": "\"310.15\""
+        },
+        "runner_name": null,
+        "session_id": 36473220,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/predict_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-04-26 02:52:27.752577",
+        "user_id": 96301
+    }
+]

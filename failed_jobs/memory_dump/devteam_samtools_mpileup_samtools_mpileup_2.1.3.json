@@ -1,0 +1,820 @@
+[
+    {
+        "create_time": "2017-07-03 13:07:22.942167",
+        "datasets": [
+            {
+                "dataset_id": "20496554",
+                "extension": "bam",
+                "file_size": 382771028,
+                "name": "n-HOLV.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20496554",
+                "extension": "bam",
+                "file_size": 382771028,
+                "name": "n-HOLV.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20427630",
+                "extension": "fasta",
+                "file_size": 87261,
+                "name": "Sacer-mito.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3172982,
+        "id": 16248912,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10323099.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 30173879}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30276187}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 38938968,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-07-03 13:13:37.530032",
+        "user_id": 65414
+    },
+    {
+        "create_time": "2017-11-01 23:15:19.531235",
+        "datasets": [
+            {
+                "dataset_id": "21954986",
+                "extension": "bam",
+                "file_size": 10139385,
+                "name": "out.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "21954986",
+                "extension": "bam",
+                "file_size": 10139385,
+                "name": "out.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "21970521",
+                "extension": "fasta",
+                "file_size": 3273481150,
+                "name": "ref.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3295840,
+        "id": 17291914,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11353988",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 32009942}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 31993511}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 41680037,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-11-01 23:17:30.000856",
+        "user_id": 114903
+    },
+    {
+        "create_time": "2017-06-27 08:45:39.050113",
+        "datasets": [
+            {
+                "dataset_id": "20427632",
+                "extension": "bam",
+                "file_size": 70360356,
+                "name": "Galaxy10-[MarkDuplicates_on_data_8__MarkDuplicates_BAM_output].bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20427632",
+                "extension": "bam",
+                "file_size": 70360356,
+                "name": "Galaxy10-[MarkDuplicates_on_data_8__MarkDuplicates_BAM_output].bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20427630",
+                "extension": "fasta",
+                "file_size": 87261,
+                "name": "Sacer-mito.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3172982,
+        "id": 16196669,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10272820.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 30173879}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30173881}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 38938517,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-06-27 08:50:35.666130",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-08-10 13:12:03.152931",
+        "datasets": [
+            {
+                "dataset_id": "20914668",
+                "extension": "bam",
+                "file_size": 41466356,
+                "name": "1.bam.sorted.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20914668",
+                "extension": "bam",
+                "file_size": 41466356,
+                "name": "1.bam.sorted.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20914669",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "1.bam.sorted.bam.bai",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "20914671",
+                "extension": "bam",
+                "file_size": 13430485,
+                "name": "2.bam.sorted.bam",
+                "param_name": "input_bam3"
+            },
+            {
+                "dataset_id": "20914673",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "2.bam.sorted.bam.bai",
+                "param_name": "input_bam4"
+            },
+            {
+                "dataset_id": "20914676",
+                "extension": "bam",
+                "file_size": 25083183,
+                "name": "3.bam.sorted.bam",
+                "param_name": "input_bam5"
+            },
+            {
+                "dataset_id": "20914677",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "3.bam.sorted.bam.bai",
+                "param_name": "input_bam6"
+            },
+            {
+                "dataset_id": "20914682",
+                "extension": "bam",
+                "file_size": 41044271,
+                "name": "4.bam.sorted.bam",
+                "param_name": "input_bam7"
+            },
+            {
+                "dataset_id": "20914683",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "4.bam.sorted.bam.bai",
+                "param_name": "input_bam8"
+            },
+            {
+                "dataset_id": "20914695",
+                "extension": "bam",
+                "file_size": 57011214,
+                "name": "5.bam.sorted.bam",
+                "param_name": "input_bam9"
+            },
+            {
+                "dataset_id": "20914696",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "5.bam.sorted.bam.bai",
+                "param_name": "input_bam10"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3218576,
+        "id": 16549856,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10620814.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"Homo_sapiens_nuHg19_mtrCRS\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30826400}, {\"src\": \"hda\", \"id\": 30826401}, {\"src\": \"hda\", \"id\": 30826404}, {\"src\": \"hda\", \"id\": 30826405}, {\"src\": \"hda\", \"id\": 30826408}, {\"src\": \"hda\", \"id\": 30826409}, {\"src\": \"hda\", \"id\": 30826414}, {\"src\": \"hda\", \"id\": 30826415}, {\"src\": \"hda\", \"id\": 30826429}, {\"src\": \"hda\", \"id\": 30826430}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39806907,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-08-10 13:19:40.456163",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-12-01 08:10:56.276245",
+        "datasets": [
+            {
+                "dataset_id": "22544101",
+                "extension": "bam",
+                "file_size": 986581523,
+                "name": "SRR6059706_genome.cram.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "22544101",
+                "extension": "bam",
+                "file_size": 986581523,
+                "name": "SRR6059706_genome.cram.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "22543102",
+                "extension": "fasta",
+                "file_size": 12180280,
+                "name": "genome.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3347902,
+        "id": 17658065,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11718559",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"max_reads_per_bam\": \"1024\", \"advanced_options_selector\": \"advanced\", \"extended_BAQ_computation\": \"false\", \"region_string\": \"\", \"limit_by_region\": {\"limit_by_regions\": \"no_limit\", \"__current_case__\": 2}, \"disable_probabilistic_realignment\": \"false\", \"skip_anomalous_read_pairs\": \"false\", \"minimum_mapping_quality\": \"0\", \"filter_by_flags\": {\"__current_case__\": 1, \"filter_flags\": \"nofilter\"}, \"__current_case__\": 1, \"coefficient_for_downgrading\": \"0\", \"minimum_base_quality\": \"13\", \"ignore_overlaps\": \"false\", \"exclude_read_group\": {\"__current_case__\": 2, \"exclude_read_groups\": \"no_limit\"}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"output_mapping_quality\": \"false\", \"__current_case__\": 1, \"genotype_likelihood_computation_type_selector\": \"do_not_perform_genotype_likelihood_computation\", \"base_position_on_reads\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 32662002}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 32663008}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 42378757,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-12-01 08:26:52.889089",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-07-21 11:46:36.615924",
+        "datasets": [
+            {
+                "dataset_id": "20678444",
+                "extension": "bam",
+                "file_size": 421944104,
+                "name": "BamLeftAlign on Lambda 1D trim",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20678444",
+                "extension": "bam",
+                "file_size": 421944104,
+                "name": "BamLeftAlign on Lambda 1D trim",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "19396525",
+                "extension": "fasta",
+                "file_size": 49251,
+                "name": "Lambda Reference.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3048905,
+        "id": 16383226,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10448435.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28988742}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30551161}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37775768,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-07-21 11:48:59.166138",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2017-06-27 09:10:22.885644",
+        "datasets": [
+            {
+                "dataset_id": "20427632",
+                "extension": "bam",
+                "file_size": 70360356,
+                "name": "Galaxy10-[MarkDuplicates_on_data_8__MarkDuplicates_BAM_output].bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20427632",
+                "extension": "bam",
+                "file_size": 70360356,
+                "name": "Galaxy10-[MarkDuplicates_on_data_8__MarkDuplicates_BAM_output].bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20427630",
+                "extension": "fasta",
+                "file_size": 87261,
+                "name": "Sacer-mito.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3172982,
+        "id": 16196876,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10273042.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 30173879}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30173881}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 38938968,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-06-27 09:14:07.324981",
+        "user_id": 65414
+    },
+    {
+        "create_time": "2017-06-25 15:52:42.703466",
+        "datasets": [
+            {
+                "dataset_id": "20408372",
+                "extension": "bam",
+                "file_size": 75172475,
+                "name": "bc02.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20408372",
+                "extension": "bam",
+                "file_size": 75172475,
+                "name": "bc02.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20408371",
+                "extension": "fasta",
+                "file_size": 87261,
+                "name": "Sacer-mito.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3096715,
+        "id": 16182082,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10257489.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 30151411}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30151412}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 36978912,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-06-25 16:01:23.220779",
+        "user_id": 65414
+    },
+    {
+        "create_time": "2017-08-15 15:54:13.496947",
+        "datasets": [
+            {
+                "dataset_id": "20963804",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 61 and data 60: mapped.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20963804",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 61 and data 60: mapped.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20963808",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 63 and data 62: mapped.bam",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "20963812",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 65 and data 64: mapped.bam",
+                "param_name": "input_bam3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3209584,
+        "id": 16586617,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10658019.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": [\"DP\", \"DPR\", \"DV\", \"DP4\", \"INFO/DPR\", \"SP\"]}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30880454}, {\"src\": \"hda\", \"id\": 30880458}, {\"src\": \"hda\", \"id\": 30880462}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39637585,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-08-15 15:57:14.385673",
+        "user_id": 109657
+    },
+    {
+        "create_time": "2017-07-03 22:16:07.065156",
+        "datasets": [
+            {
+                "dataset_id": "20496554",
+                "extension": "bam",
+                "file_size": 382771028,
+                "name": "n-HOLV.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20496554",
+                "extension": "bam",
+                "file_size": 382771028,
+                "name": "n-HOLV.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20427630",
+                "extension": "fasta",
+                "file_size": 87261,
+                "name": "Sacer-mito.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3172982,
+        "id": 16253100,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10326729.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 30173879}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30276187}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 39079521,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-07-03 22:25:20.598966",
+        "user_id": 65414
+    },
+    {
+        "create_time": "2017-08-15 16:03:33.270738",
+        "datasets": [
+            {
+                "dataset_id": "20963804",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 61 and data 60: mapped.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20963804",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 61 and data 60: mapped.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "20963808",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 63 and data 62: mapped.bam",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "20963812",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "RNA STAR on data 65 and data 64: mapped.bam",
+                "param_name": "input_bam3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__samtools@1.3.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3209584,
+        "id": 16586678,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10658069.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30880454}, {\"src\": \"hda\", \"id\": 30880458}, {\"src\": \"hda\", \"id\": 30880462}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39637585,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3",
+        "tool_version": "2.1.3",
+        "traceback": null,
+        "update_time": "2017-08-15 16:06:00.420305",
+        "user_id": 109657
+    }
+]

@@ -1,0 +1,176 @@
+[
+    {
+        "create_time": "2018-01-15 02:16:18.940608",
+        "datasets": [
+            {
+                "dataset_id": "23062145",
+                "extension": "bigwig",
+                "file_size": 236345509,
+                "name": "NPAS4.bw",
+                "param_name": "bigwigfiles"
+            },
+            {
+                "dataset_id": "23062145",
+                "extension": "bigwig",
+                "file_size": 236345509,
+                "name": "NPAS4.bw",
+                "param_name": "bigwigfiles1"
+            },
+            {
+                "dataset_id": "23095445",
+                "extension": "bigwig",
+                "file_size": 186288990,
+                "name": "GSM1467425_11_B3_KCl_CFOS_sc52_E250_track.bw",
+                "param_name": "bigwigfiles2"
+            },
+            {
+                "dataset_id": "23095448",
+                "extension": "bigwig",
+                "file_size": 131930129,
+                "name": "GSM530190_SRF_H300_KCl_B1_E120.bw",
+                "param_name": "bigwigfiles3"
+            },
+            {
+                "dataset_id": "23095450",
+                "extension": "bigwig",
+                "file_size": 106837469,
+                "name": "GSM530186_CREB_SC_KCl_B1_E120.bw",
+                "param_name": "bigwigfiles4"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 1971744,
+        "id": 18034559,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12111656",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"binSize\": \"10000\", \"distanceBetweenBins\": \"0\", \"__current_case__\": 0, \"modeOpt\": \"bins\"}",
+            "multibigwig_conditional": "{\"orderMatters\": \"No\", \"bigwigfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 33276305}, {\"src\": \"hda\", \"id\": 33311804}, {\"src\": \"hda\", \"id\": 33311807}, {\"src\": \"hda\", \"id\": 33311809}]}, \"__current_case__\": 0}",
+            "outRawCounts": "\"false\"",
+            "region": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 43151957,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_multi_bigwig_summary/deeptools_multi_bigwig_summary/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-01-16 14:16:31.855499",
+        "user_id": 51003
+    },
+    {
+        "create_time": "2018-01-16 04:27:46.846257",
+        "datasets": [
+            {
+                "dataset_id": "23056820",
+                "extension": "bigwig",
+                "file_size": 183357759,
+                "name": "GSM1467427_13_B3_KCl_FOSB_sc48_E250_track.bw",
+                "param_name": "bigwigfiles"
+            },
+            {
+                "dataset_id": "23056820",
+                "extension": "bigwig",
+                "file_size": 183357759,
+                "name": "GSM1467427_13_B3_KCl_FOSB_sc48_E250_track.bw",
+                "param_name": "bigwigfiles1"
+            },
+            {
+                "dataset_id": "23056831",
+                "extension": "bigwig",
+                "file_size": 236345509,
+                "name": "GSM530183_Npas4_Npas4_KCl_B1_E120.bw",
+                "param_name": "bigwigfiles2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3388240,
+        "id": 18044263,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12121679",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"binSize\": \"10000\", \"distanceBetweenBins\": \"0\", \"__current_case__\": 0, \"modeOpt\": \"bins\"}",
+            "multibigwig_conditional": "{\"orderMatters\": \"No\", \"bigwigfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 33270895}, {\"src\": \"hda\", \"id\": 33270906}]}, \"__current_case__\": 0}",
+            "outRawCounts": "\"true\"",
+            "region": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 43212435,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_multi_bigwig_summary/deeptools_multi_bigwig_summary/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-01-17 16:28:08.440885",
+        "user_id": 9133
+    }
+]

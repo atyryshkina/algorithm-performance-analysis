@@ -1,0 +1,1149 @@
+[
+    {
+        "create_time": "2014-11-17 09:09:57.384455",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990468",
+                "extension": "vcf",
+                "file_size": 90199019,
+                "name": "Mills_and_1000G_gold_standard.indels.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9690753",
+                "extension": "vcf",
+                "file_size": 11925,
+                "name": "Select Variants on indel 1267 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2113310,
+        "id": 8182628,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2031041.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 2, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"5\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"INDEL\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17570213}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"custom_rod_name\": \"MILLS\", \"__current_case__\": 8, \"input_rod\": 17509138}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-17 09:12:12.705620",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 11:13:41.390405",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2113310,
+        "id": 8166814,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011805.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 11:17:18.630120",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 11:26:18.246414",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2113310,
+        "id": 8166844,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011857.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 11:29:47.216548",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 09:56:40.796907",
+        "datasets": [
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_3|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207568",
+                "extension": "vcf",
+                "file_size": 208735365,
+                "name": "1000G_omni2.5.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2113310,
+        "id": 8166561,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011450.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"omni\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 6, \"input_rod\": 17509135}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 3, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18543717,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 09:59:51.831106",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 13:48:05.084342",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2113310,
+        "id": 8167276,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2013145.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 15:25:42.373008",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 11:55:18.042787",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2113310,
+        "id": 8166904,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011947.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 11:57:41.249533",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-17 09:29:13.751477",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990468",
+                "extension": "vcf",
+                "file_size": 90199019,
+                "name": "Mills_and_1000G_gold_standard.indels.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9690753",
+                "extension": "vcf",
+                "file_size": 11925,
+                "name": "Select Variants on indel 1267 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2113310,
+        "id": 8182687,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2031113.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"5\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"INDEL\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17570213}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"custom_rod_name\": \"MILLS\", \"__current_case__\": 8, \"input_rod\": 17509138}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-17 09:30:56.366479",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 16:00:22.090468",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2113310,
+        "id": 8167809,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2013717.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 16:03:50.418169",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-17 09:52:03.861501",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990468",
+                "extension": "vcf",
+                "file_size": 90199019,
+                "name": "Mills_and_1000G_gold_standard.indels.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9690751",
+                "extension": "vcf",
+                "file_size": 14001,
+                "name": "Select Variants on indel 1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2113310,
+        "id": 8182804,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2031258.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"5\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"INDEL\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17570211}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"custom_rod_name\": \"MILLS\", \"__current_case__\": 8, \"input_rod\": 17509138}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-17 09:54:15.062730",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 11:18:08.998075",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2113310,
+        "id": 8166822,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011819.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 11:21:38.944663",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 11:58:02.659269",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2113310,
+        "id": 8166914,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011967.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 12:00:19.256060",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 09:06:15.681836",
+        "datasets": [
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_3|input_rod"
+            },
+            {
+                "dataset_id": "9660728",
+                "extension": "vcf",
+                "file_size": 5050107,
+                "name": "SNP1268 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207568",
+                "extension": "vcf",
+                "file_size": 208735365,
+                "name": "1000G_omni2.5.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2113310,
+        "id": 8166427,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011275.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527168}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"omni\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 6, \"input_rod\": 17509135}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 3, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18542947,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 09:12:06.088993",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 09:06:12.698786",
+        "datasets": [
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_3|input_rod"
+            },
+            {
+                "dataset_id": "9660726",
+                "extension": "vcf",
+                "file_size": 5714582,
+                "name": "SNP1267 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207568",
+                "extension": "vcf",
+                "file_size": 208735365,
+                "name": "1000G_omni2.5.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2113310,
+        "id": 8166426,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011273.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527166}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"omni\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 6, \"input_rod\": 17509135}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 3, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18542947,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 09:12:41.177728",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 15:49:17.114965",
+        "datasets": [
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2113310,
+        "id": 8167734,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2013542.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18494411,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 15:51:36.613171",
+        "user_id": 51868
+    },
+    {
+        "create_time": "2014-11-14 09:50:50.651275",
+        "datasets": [
+            {
+                "dataset_id": "9638002",
+                "extension": "vcf",
+                "file_size": 10796220779,
+                "name": "dbsnp_138.hg19.vcf",
+                "param_name": "rod_bind_3|input_rod"
+            },
+            {
+                "dataset_id": "9660724",
+                "extension": "vcf",
+                "file_size": 5775775,
+                "name": "SNP1266 (Variant File)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9207435",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            },
+            {
+                "dataset_id": "9207568",
+                "extension": "vcf",
+                "file_size": 208735365,
+                "name": "1000G_omni2.5.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            },
+            {
+                "dataset_id": "9207569",
+                "extension": "vcf",
+                "file_size": 238391040,
+                "name": "hapmap_3.3.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2113310,
+        "id": 8166542,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011427.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional_annotations": "[{\"__index__\": 0, \"additional_annotation_name\": \"FS\"}, {\"__index__\": 1, \"additional_annotation_name\": \"HRun\"}, {\"__index__\": 2, \"additional_annotation_name\": \"MQRankSum\"}, {\"__index__\": 3, \"additional_annotation_name\": \"QD\"}, {\"__index__\": 4, \"additional_annotation_name\": \"ReadPosRankSum\"}]",
+            "analysis_param_type": "{\"target_titv\": \"2.15\", \"std_threshold\": \"8.0\", \"dirichlet\": \"0.001\", \"ts_filter_level\": \"99.0\", \"shrinkage\": \"1.0\", \"num_k_means\": \"30\", \"bad_variant_selector\": {\"min_num_bad_variants\": \"50\", \"bad_variant_selector_type\": \"min_num\", \"__current_case__\": 1}, \"analysis_param_type_selector\": \"advanced\", \"prior_counts\": \"20.0\", \"__current_case__\": 1, \"max_gaussians\": \"1\", \"qual_threshold\": \"80.0\", \"ignore_filters\": [], \"ts_tranche\": \"100.0, 99.9, 99.0, 90.0\", \"max_iterations\": \"100\"}",
+            "annotations": "null",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 17509139, \"reference_source_selector\": \"history\", \"variants\": [{\"__index__\": 0, \"input_variants\": 17527164}], \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"hapmap\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"15.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 5, \"input_rod\": 17509136}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"omni\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"12.0\", \"bad\": \"False\", \"truth\": \"True\", \"known\": \"False\"}, \"__current_case__\": 6, \"input_rod\": 17509135}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"custom\", \"rod_training_type\": {\"training\": \"True\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"10.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"False\"}, \"custom_rod_name\": \"1000G\", \"__current_case__\": 8, \"input_rod\": 17509134}}, {\"__index__\": 3, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"rod_training_type\": {\"training\": \"False\", \"__current_case__\": 1, \"rod_training_type_selector\": \"is_training_truth_known\", \"prior\": \"2.0\", \"bad\": \"False\", \"truth\": \"False\", \"known\": \"True\"}, \"__current_case__\": 3, \"input_rod\": 17509140}}]"
+        },
+        "runner_name": null,
+        "session_id": 18543717,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_recalibrator/gatk_variant_recalibrator/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2014-11-14 09:54:02.120237",
+        "user_id": 51868
+    }
+]

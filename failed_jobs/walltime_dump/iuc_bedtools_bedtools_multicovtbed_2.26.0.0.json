@@ -1,0 +1,391 @@
+[
+    {
+        "create_time": "2017-04-24 13:39:12.777390",
+        "datasets": [
+            {
+                "dataset_id": "19700628",
+                "extension": "bed",
+                "file_size": 1200983284,
+                "name": "BZ7dpi_50bpbins_cov.bedgraph",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18723806",
+                "extension": "bam",
+                "file_size": 10780502668,
+                "name": "Map with BWA for Illumina on data 27: mapped reads",
+                "param_name": "bams"
+            },
+            {
+                "dataset_id": "18723806",
+                "extension": "bam",
+                "file_size": 10780502668,
+                "name": "Map with BWA for Illumina on data 27: mapped reads",
+                "param_name": "bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2982886,
+        "id": 15662455,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9778414.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bams": "{\"values\": [{\"src\": \"hda\", \"id\": 28218943}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "duplicate": "\"false\"",
+            "failed": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29336444}]}",
+            "overlap": "\"1e-09\"",
+            "proper": "\"false\"",
+            "q": "\"0\"",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 37524951,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multicovtbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-04-26 01:52:09.481710",
+        "user_id": 68293
+    },
+    {
+        "create_time": "2017-09-14 10:08:22.990496",
+        "datasets": [
+            {
+                "dataset_id": "21278164",
+                "extension": "bed",
+                "file_size": 68961832,
+                "name": "MakeWindowsBed on data 3",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "21246621",
+                "extension": "bam",
+                "file_size": 365094248,
+                "name": "Black-1_S26_L005_R1_001_trimmed_Reads.bam",
+                "param_name": "bams"
+            },
+            {
+                "dataset_id": "21246621",
+                "extension": "bam",
+                "file_size": 365094248,
+                "name": "Black-1_S26_L005_R1_001_trimmed_Reads.bam",
+                "param_name": "bams1"
+            },
+            {
+                "dataset_id": "21246631",
+                "extension": "bam",
+                "file_size": 500374012,
+                "name": "Black-2_S27_L005_R1_001_trimmed_Reads.bam",
+                "param_name": "bams2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3249999,
+        "id": 16816302,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10885883.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31191839}, {\"src\": \"hda\", \"id\": 31191849}]}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "duplicate": "\"true\"",
+            "failed": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31229692}]}",
+            "overlap": "\"1e-09\"",
+            "proper": "\"false\"",
+            "q": "\"0\"",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40425069,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multicovtbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-09-15 22:08:43.923969",
+        "user_id": 111321
+    },
+    {
+        "create_time": "2017-11-28 17:29:44.430240",
+        "datasets": [
+            {
+                "dataset_id": "22485344",
+                "extension": "bed",
+                "file_size": 84249774,
+                "name": "Homo_sapiens.GRCh38.77.gtf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "22471693",
+                "extension": "bam",
+                "file_size": 33162106018,
+                "name": "pbmc4k_possorted_genome_bam.bam",
+                "param_name": "bams"
+            },
+            {
+                "dataset_id": "22471693",
+                "extension": "bam",
+                "file_size": 33162106018,
+                "name": "pbmc4k_possorted_genome_bam.bam",
+                "param_name": "bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2494165,
+        "id": 17623241,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11683836",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bams": "{\"values\": [{\"src\": \"hda\", \"id\": 32576369}]}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "duplicate": "\"false\"",
+            "failed": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 32594229}]}",
+            "overlap": "\"1e-09\"",
+            "proper": "\"false\"",
+            "q": "\"0\"",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 42006042,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multicovtbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-11-30 05:31:23.714793",
+        "user_id": 72583
+    },
+    {
+        "create_time": "2017-11-29 13:14:10.097851",
+        "datasets": [
+            {
+                "dataset_id": "22504997",
+                "extension": "bed",
+                "file_size": 70648121,
+                "name": "Bowtie2 on data 184 and data 180: aligned reads (sorted BAM) (as BED)",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "22500740",
+                "extension": "bam",
+                "file_size": 31463995,
+                "name": "Bowtie2 on data 184 and data 180: aligned reads (sorted BAM)",
+                "param_name": "bams"
+            },
+            {
+                "dataset_id": "22500740",
+                "extension": "bam",
+                "file_size": 31463995,
+                "name": "Bowtie2 on data 184 and data 180: aligned reads (sorted BAM)",
+                "param_name": "bams1"
+            },
+            {
+                "dataset_id": "19263879",
+                "extension": "len",
+                "file_size": 32,
+                "name": "sequence.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2865661,
+        "id": 17635146,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11695321",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bams": "{\"values\": [{\"src\": \"hda\", \"id\": 32611762}]}",
+            "chromInfo": "\"/galaxy-repl/main/files/019/263/dataset_19263879.dat\"",
+            "dbkey": "\"?\"",
+            "duplicate": "\"false\"",
+            "failed": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 32616115}]}",
+            "overlap": "\"1e-09\"",
+            "proper": "\"false\"",
+            "q": "\"0\"",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 40832952,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multicovtbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-12-01 01:14:45.516303",
+        "user_id": 39242
+    },
+    {
+        "create_time": "2018-01-29 21:46:06.699030",
+        "datasets": [
+            {
+                "dataset_id": "23322210",
+                "extension": "bed",
+                "file_size": 4482492194,
+                "name": "GFF-to-BED on data 14",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "23320191",
+                "extension": "bam",
+                "file_size": 6507770943,
+                "name": "WES-GEJ-024A.sorted.dedup.realign.recal.bam",
+                "param_name": "bams"
+            },
+            {
+                "dataset_id": "23320191",
+                "extension": "bam",
+                "file_size": 6507770943,
+                "name": "WES-GEJ-024A.sorted.dedup.realign.recal.bam",
+                "param_name": "bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3388314,
+        "id": 18193924,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12274628",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bams": "{\"values\": [{\"src\": \"hda\", \"id\": 33558167}]}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19Patch10.len\"",
+            "dbkey": "\"hg19Patch10\"",
+            "duplicate": "\"false\"",
+            "failed": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33560453}]}",
+            "overlap": "\"1e-09\"",
+            "proper": "\"false\"",
+            "q": "\"0\"",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 43517312,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multicovtbed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2018-01-31 09:46:22.789435",
+        "user_id": 97958
+    }
+]

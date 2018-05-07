@@ -1,0 +1,344 @@
+[
+    {
+        "create_time": "2016-10-05 08:43:31.375915",
+        "datasets": [
+            {
+                "dataset_id": "17372480",
+                "extension": "vcf",
+                "file_size": 2130215,
+                "name": "dbSNP_138.hg19.vcf",
+                "param_name": "input_variant"
+            },
+            {
+                "dataset_id": "17372613",
+                "extension": "fasta",
+                "file_size": 45517599660,
+                "name": "Homo_sapiens.GRCh38.dna.alt.fa (1)",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "17372480",
+                "extension": "vcf",
+                "file_size": 2130215,
+                "name": "dbSNP_138.hg19.vcf",
+                "param_name": "input_concordance"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2834793,
+        "id": 14010881,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8229335.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "exclude_filtered": "\"false\"",
+            "exclude_sample_name_repeat": "[]",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_concordance": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b520fe0a2ce439e4fe\"}]}",
+            "input_discordance": "null",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b586a4a466d481249d\"}]}, \"reference_source_selector\": \"history\", \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b520fe0a2ce439e4fe\"}]}, \"__current_case__\": 1}",
+            "sample_name_repeat": "[]",
+            "select_expressions_repeat": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33471756,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_select/gatk_variant_select/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-10-05 09:18:40.292268",
+        "user_id": 90340
+    },
+    {
+        "create_time": "2016-10-07 02:49:49.779643",
+        "datasets": [
+            {
+                "dataset_id": "17287106",
+                "extension": "vcf",
+                "file_size": 578691365,
+                "name": "Unified Genotyper on data 393 (VCF)",
+                "param_name": "input_variant"
+            },
+            {
+                "dataset_id": "17357538",
+                "extension": "vcf",
+                "file_size": 392148741,
+                "name": "GenomeSpace importer on SingleChrsSNPs",
+                "param_name": "input_concordance"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2210340,
+        "id": 14025782,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8243813.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "exclude_filtered": "\"false\"",
+            "exclude_sample_name_repeat": "[]",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_concordance": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d8bae49b14b05ce9\"}]}",
+            "input_discordance": "null",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51b902f2056f12599\"}]}, \"__current_case__\": 0}",
+            "sample_name_repeat": "[]",
+            "select_expressions_repeat": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33512572,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_select/gatk_variant_select/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-10-07 02:52:46.061611",
+        "user_id": 59804
+    },
+    {
+        "create_time": "2016-07-11 13:50:47.074527",
+        "datasets": [
+            {
+                "dataset_id": "16527779",
+                "extension": "vcf",
+                "file_size": 493776414,
+                "name": "Unified Genotyper on data 4 and data 14 (VCF)",
+                "param_name": "input_variant"
+            },
+            {
+                "dataset_id": "16506000",
+                "extension": "fasta",
+                "file_size": 4756517,
+                "name": "yptbYP111_NC_010465dot1.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2761090,
+        "id": 13374927,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7586281.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"remove_fraction_genotypes\": \"0.0\", \"keep_original_AC\": \"false\", \"restrict_alleles_to\": \"ALL\", \"select_type_to_include\": [\"INDEL\", \"MIXED\", \"MNP\", \"SYMBOLIC\", \"NO_VARIATION\"], \"mendelian_violation_qual_threshold\": \"0.0\", \"exclude_sample_file_repeat\": [], \"sample_file_repeat\": [], \"analysis_param_type_selector\": \"advanced\", \"exclude_non_variants\": \"false\", \"__current_case__\": 1, \"select_random_type\": {\"select_random_type_selector\": \"select_all\", \"__current_case__\": 0}, \"input_keep_ids\": null, \"mendelian_violation\": \"false\", \"sample_expressions_repeat\": []}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "exclude_filtered": "\"false\"",
+            "exclude_sample_name_repeat": "[]",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_concordance": "null",
+            "input_discordance": "null",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5be3fa72b12458f77\"}]}, \"reference_source_selector\": \"history\", \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5408439f5149a45a1\"}]}, \"__current_case__\": 1}",
+            "sample_name_repeat": "[]",
+            "select_expressions_repeat": "[]"
+        },
+        "runner_name": null,
+        "session_id": 31174401,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_select/gatk_variant_select/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-07-11 14:58:15.298714",
+        "user_id": 62186
+    },
+    {
+        "create_time": "2016-10-05 13:16:15.490853",
+        "datasets": [
+            {
+                "dataset_id": "17394288",
+                "extension": "vcf",
+                "file_size": 4427660,
+                "name": "SnpEff on data 7",
+                "param_name": "input_variant"
+            },
+            {
+                "dataset_id": "17393472",
+                "extension": "fasta",
+                "file_size": 45517599660,
+                "name": "Homo_sapiens.GRCh38.dna.alt.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2843579,
+        "id": 14012231,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8230617.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "exclude_filtered": "\"false\"",
+            "exclude_sample_name_repeat": "[]",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_concordance": "null",
+            "input_discordance": "null",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a5aa382f4066174b\"}]}, \"reference_source_selector\": \"history\", \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54549d817825f8183\"}]}, \"__current_case__\": 1}",
+            "sample_name_repeat": "[]",
+            "select_expressions_repeat": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33471756,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_select/gatk_variant_select/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-10-05 13:32:09.786861",
+        "user_id": 90340
+    },
+    {
+        "create_time": "2016-10-10 10:10:49.085400",
+        "datasets": [
+            {
+                "dataset_id": "17403733",
+                "extension": "vcf",
+                "file_size": 913142268,
+                "name": "1478.final.vcf",
+                "param_name": "input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2724092,
+        "id": 14043747,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8261097.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "exclude_filtered": "\"false\"",
+            "exclude_sample_name_repeat": "[]",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_concordance": "null",
+            "input_discordance": "null",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b508a12c056513762d\"}]}, \"__current_case__\": 0}",
+            "sample_name_repeat": "[]",
+            "select_expressions_repeat": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33493559,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_select/gatk_variant_select/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-10-10 10:15:00.652790",
+        "user_id": 85338
+    },
+    {
+        "create_time": "2016-10-05 10:24:26.065048",
+        "datasets": [
+            {
+                "dataset_id": "17393389",
+                "extension": "vcf",
+                "file_size": 8451511932,
+                "name": "VCFsort: on data 28",
+                "param_name": "input_variant"
+            },
+            {
+                "dataset_id": "17372613",
+                "extension": "fasta",
+                "file_size": 45517599660,
+                "name": "Homo_sapiens.GRCh38.dna.alt.fa (1)",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2834793,
+        "id": 14011360,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8229779.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"remove_fraction_genotypes\": \"0.0\", \"keep_original_AC\": \"false\", \"restrict_alleles_to\": \"ALL\", \"select_type_to_include\": null, \"mendelian_violation_qual_threshold\": \"0.0\", \"exclude_sample_file_repeat\": [], \"sample_file_repeat\": [], \"analysis_param_type_selector\": \"advanced\", \"exclude_non_variants\": \"false\", \"__current_case__\": 1, \"select_random_type\": {\"select_random_type_selector\": \"select_all\", \"__current_case__\": 0}, \"input_keep_ids\": null, \"mendelian_violation\": \"false\", \"sample_expressions_repeat\": []}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "exclude_filtered": "\"false\"",
+            "exclude_sample_name_repeat": "[]",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_concordance": "null",
+            "input_discordance": "null",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b586a4a466d481249d\"}]}, \"reference_source_selector\": \"history\", \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b525903437ffc46bf8\"}]}, \"__current_case__\": 1}",
+            "sample_name_repeat": "[]",
+            "select_expressions_repeat": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33471756,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_select/gatk_variant_select/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-10-05 11:04:31.137467",
+        "user_id": 90340
+    }
+]

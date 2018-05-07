@@ -1,0 +1,665 @@
+[
+    {
+        "create_time": "2017-09-06 09:20:30.479173",
+        "datasets": [
+            {
+                "dataset_id": "21181351",
+                "extension": "bam",
+                "file_size": 6725498031,
+                "name": "1_Ctrl_Filtered_noMapQ",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3243917,
+        "id": 16744663,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10823205.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"4914513c92e411e78e70005056ba2773\"",
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "comments": "[]",
+            "dbkey": "\"mm9\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 31120783}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"true\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-09-07 02:28:03.378398",
+        "user_id": 81721
+    },
+    {
+        "create_time": "2017-12-08 08:39:06.785943",
+        "datasets": [
+            {
+                "dataset_id": "22666131",
+                "extension": "bam",
+                "file_size": 1554278324,
+                "name": "S849_Naive.bam",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3342568,
+        "id": 17744484,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11810919",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "comments": "[]",
+            "dbkey": "\"mm9\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 32813040}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"true\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 42534041,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-12-08 08:44:45.738308",
+        "user_id": 93619
+    },
+    {
+        "create_time": "2017-06-05 12:10:36.836964",
+        "datasets": [
+            {
+                "dataset_id": "20171194",
+                "extension": "bam",
+                "file_size": 29636631631,
+                "name": "Map with BWA-MEM on data 2, data 1, and data 3 (mapped reads in BAM format)",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3139156,
+        "id": 16015442,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10108046.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "comments": "[]",
+            "dbkey": "\"?\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 29882354}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"false\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 38175230,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-06-05 13:32:12.206494",
+        "user_id": 104814
+    },
+    {
+        "create_time": "2017-08-31 17:38:27.807838",
+        "datasets": [
+            {
+                "dataset_id": "21128816",
+                "extension": "bam",
+                "file_size": 3274605042,
+                "name": "Bowtie2 on data 1, data 68, and data 69: aligned reads (sorted BAM)",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3237123,
+        "id": 16705393,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10780040.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "comments": "[]",
+            "dbkey": "\"?\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 31063500}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"false\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 40124901,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-08-31 22:12:09.416958",
+        "user_id": 64743
+    },
+    {
+        "create_time": "2017-08-31 19:20:18.545883",
+        "datasets": [
+            {
+                "dataset_id": "21130028",
+                "extension": "bam",
+                "file_size": 1702088255,
+                "name": "Sort on data 10",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3239195,
+        "id": 16706293,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10780825.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"6647d3d08e8111e7a4a0005056ba2773\"",
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "comments": "[]",
+            "dbkey": "\"mm10\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 31065476}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"true\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-09-01 00:07:15.627048",
+        "user_id": 31580
+    },
+    {
+        "create_time": "2017-09-08 11:08:31.801533",
+        "datasets": [
+            {
+                "dataset_id": "21213550",
+                "extension": "bam",
+                "file_size": 6767468406,
+                "name": "SortSam on data 10: BAM sorted in coordinate order",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3243917,
+        "id": 16770445,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10837884.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "comments": "[]",
+            "dbkey": "\"mm9\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 31155948}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"true\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 40297082,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-09-08 11:21:30.315754",
+        "user_id": 81721
+    },
+    {
+        "create_time": "2018-02-15 18:50:27.030311",
+        "datasets": [
+            {
+                "dataset_id": "23616363",
+                "extension": "bam",
+                "file_size": 8618115726,
+                "name": "Filter SAM or BAM, output SAM or BAM on data 467: bam_PAKMSV",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3417543,
+        "id": 18401345,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12490371",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "comments": "[]",
+            "dbkey": "\"hg19\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 33882972}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"true\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 43728543,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2018-02-16 01:33:08.835191",
+        "user_id": 93750
+    },
+    {
+        "create_time": "2017-06-05 02:29:27.480364",
+        "datasets": [
+            {
+                "dataset_id": "20171194",
+                "extension": "bam",
+                "file_size": 29636631631,
+                "name": "Map with BWA-MEM on data 2, data 1, and data 3 (mapped reads in BAM format)",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3139156,
+        "id": 16011957,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10104846.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "comments": "[]",
+            "dbkey": "\"?\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 29882354}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"false\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 38175230,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-06-05 02:57:16.587502",
+        "user_id": 104814
+    },
+    {
+        "create_time": "2017-08-29 20:26:18.801292",
+        "datasets": [
+            {
+                "dataset_id": "21090859",
+                "extension": "bam",
+                "file_size": 3718142396,
+                "name": "Bowtie2 on data 48 and data 47: aligned reads (sorted BAM)",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3235791,
+        "id": 16687270,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10759866.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "comments": "[]",
+            "dbkey": "\"hg38\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 31022423}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"false\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 40124901,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-08-29 21:11:10.666450",
+        "user_id": 64743
+    },
+    {
+        "create_time": "2017-08-31 17:38:27.992899",
+        "datasets": [
+            {
+                "dataset_id": "21128817",
+                "extension": "bam",
+                "file_size": 3699061671,
+                "name": "Bowtie2 on data 1, data 70, and data 71: aligned reads (sorted BAM)",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3237123,
+        "id": 16705394,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10780123.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "comments": "[]",
+            "dbkey": "\"?\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 31063501}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"false\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 40124901,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2017-08-31 22:42:26.432234",
+        "user_id": 64743
+    },
+    {
+        "create_time": "2018-02-14 15:27:54.626825",
+        "datasets": [
+            {
+                "dataset_id": "23590922",
+                "extension": "bam",
+                "file_size": 6713146829,
+                "name": "SortSam on data 10: Alignment sorted in coordinate order",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3426488,
+        "id": 18383604,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12473042",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"9c3a52f4119b11e88cf7005056ba2773\"",
+            "assume_sorted": "\"true\"",
+            "barcode_tag": "\"\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "comments": "[]",
+            "dbkey": "\"?\"",
+            "duplicate_scoring_strategy": "\"SUM_OF_BASE_QUALITIES\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 33855265}]}",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "remove_duplicates": "\"false\"",
+            "validation_stringency": "\"STRICT\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.7.1.1",
+        "tool_version": "2.7.1.1",
+        "traceback": null,
+        "update_time": "2018-02-14 21:15:00.900474",
+        "user_id": 112681
+    }
+]

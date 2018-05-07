@@ -1,0 +1,59 @@
+[
+    {
+        "create_time": "2016-10-08 06:13:14.771072",
+        "datasets": [
+            {
+                "dataset_id": "17427657",
+                "extension": "bam",
+                "file_size": 13829862,
+                "name": " Mother",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "17427656",
+                "extension": "bam",
+                "file_size": 13837580,
+                "name": "Daughter",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2835402,
+        "id": 14034621,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8254296",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cecc084b4ef3c999\"}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5282c4bdb06bdaf25\"}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/vicPac1.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"log2\", \"__current_case__\": 0}",
+            "dbkey": "\"vicPac1\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 33276386,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-10 08:13:09.370408",
+        "user_id": 91078
+    }
+]

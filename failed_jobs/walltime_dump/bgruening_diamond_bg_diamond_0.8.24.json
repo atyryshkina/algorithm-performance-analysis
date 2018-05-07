@@ -1,0 +1,150 @@
+[
+    {
+        "create_time": "2018-02-10 06:22:21.749353",
+        "datasets": [
+            {
+                "dataset_id": "23521894",
+                "extension": "fastqsanger",
+                "file_size": 3995140096,
+                "name": "Trimmomatic_on_GDS1_1_nodup.fq",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23506627",
+                "extension": "dmnd",
+                "file_size": 90333132000,
+                "name": "Diamond nr database",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3422641,
+        "id": 18335918,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12420247",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"0.4\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"10\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 33780789}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33764596}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43773018,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-11 18:22:32.875561",
+        "user_id": 121564
+    },
+    {
+        "create_time": "2018-02-12 22:22:16.501293",
+        "datasets": [
+            {
+                "dataset_id": "23553936",
+                "extension": "fastqsanger",
+                "file_size": 3810002604,
+                "name": "GDS1_1_trimmed_nodup.fastq",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23506627",
+                "extension": "dmnd",
+                "file_size": 90333132000,
+                "name": "Diamond nr database",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3426811,
+        "id": 18356579,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12441382",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"0.5\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"10\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"80\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 33815505}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33814582}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43814370,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-14 10:22:30.063690",
+        "user_id": 121564
+    }
+]

@@ -1,0 +1,807 @@
+[
+    {
+        "create_time": "2017-09-29 14:16:09.001667",
+        "datasets": [
+            {
+                "dataset_id": "21397329",
+                "extension": "bam",
+                "file_size": 698620730,
+                "name": "n15m1 1 hisat",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "21397329",
+                "extension": "bam",
+                "file_size": 698620730,
+                "name": "n15m1 1 hisat",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "21397331",
+                "extension": "bam",
+                "file_size": 698633621,
+                "name": "n15m1 2 hisat",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "21397333",
+                "extension": "bam",
+                "file_size": 698631675,
+                "name": "n15m1 3 hisat",
+                "param_name": "bamfiles3"
+            },
+            {
+                "dataset_id": "21397335",
+                "extension": "bam",
+                "file_size": 698682269,
+                "name": "n15m3 1 hisat",
+                "param_name": "bamfiles4"
+            },
+            {
+                "dataset_id": "21397338",
+                "extension": "bam",
+                "file_size": 943044053,
+                "name": "n15m3 2 hisat",
+                "param_name": "bamfiles5"
+            },
+            {
+                "dataset_id": "21397340",
+                "extension": "bam",
+                "file_size": 798691687,
+                "name": "n15m3 3 hisat",
+                "param_name": "bamfiles6"
+            },
+            {
+                "dataset_id": "21397342",
+                "extension": "bam",
+                "file_size": 645543378,
+                "name": "wt 1 hisat",
+                "param_name": "bamfiles7"
+            },
+            {
+                "dataset_id": "21397344",
+                "extension": "bam",
+                "file_size": 646200563,
+                "name": "wt 2 hisat",
+                "param_name": "bamfiles8"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3261990,
+        "id": 16972949,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11040705.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 31368707}, {\"src\": \"hda\", \"id\": 31368709}, {\"src\": \"hda\", \"id\": 31368711}, {\"src\": \"hda\", \"id\": 31368713}, {\"src\": \"hda\", \"id\": 31368716}, {\"src\": \"hda\", \"id\": 31368718}, {\"src\": \"hda\", \"id\": 31368720}, {\"src\": \"hda\", \"id\": 31368722}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40761669,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-01 02:16:43.187989",
+        "user_id": 81383
+    },
+    {
+        "create_time": "2017-09-14 17:10:25.917701",
+        "datasets": [
+            {
+                "dataset_id": "21272552",
+                "extension": "bam",
+                "file_size": 2337662786,
+                "name": "MarkDuplicates on data 276: MarkDuplicates BAM output",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "21272552",
+                "extension": "bam",
+                "file_size": 2337662786,
+                "name": "MarkDuplicates on data 276: MarkDuplicates BAM output",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "21272554",
+                "extension": "bam",
+                "file_size": 3585161364,
+                "name": "MarkDuplicates on data 277: MarkDuplicates BAM output",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "21272556",
+                "extension": "bam",
+                "file_size": 2115059122,
+                "name": "MarkDuplicates on data 278: MarkDuplicates BAM output",
+                "param_name": "bamfiles3"
+            },
+            {
+                "dataset_id": "21272558",
+                "extension": "bam",
+                "file_size": 2666147944,
+                "name": "MarkDuplicates on data 279: MarkDuplicates BAM output",
+                "param_name": "bamfiles4"
+            },
+            {
+                "dataset_id": "21272560",
+                "extension": "bam",
+                "file_size": 2853982848,
+                "name": "MarkDuplicates on data 280: MarkDuplicates BAM output",
+                "param_name": "bamfiles5"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3199008,
+        "id": 16822422,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10891290",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hdca\", \"id\": 70884}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40280878,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-16 05:49:53.833187",
+        "user_id": 110240
+    },
+    {
+        "create_time": "2017-09-22 21:13:46.477377",
+        "datasets": [
+            {
+                "dataset_id": "21286518",
+                "extension": "bam",
+                "file_size": 2337662598,
+                "name": "AddOrReplaceReadGroups on data 359: BAM with replaced/modified readgroups",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "21286518",
+                "extension": "bam",
+                "file_size": 2337662598,
+                "name": "AddOrReplaceReadGroups on data 359: BAM with replaced/modified readgroups",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "21286525",
+                "extension": "bam",
+                "file_size": 3585159906,
+                "name": "AddOrReplaceReadGroups on data 361: BAM with replaced/modified readgroups",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "21286566",
+                "extension": "bam",
+                "file_size": 2115059204,
+                "name": "AddOrReplaceReadGroups on data 363: BAM with replaced/modified readgroups",
+                "param_name": "bamfiles3"
+            },
+            {
+                "dataset_id": "21286605",
+                "extension": "bam",
+                "file_size": 2666148143,
+                "name": "AddOrReplaceReadGroups on data 365: BAM with replaced/modified readgroups",
+                "param_name": "bamfiles4"
+            },
+            {
+                "dataset_id": "21286618",
+                "extension": "bam",
+                "file_size": 2853982916,
+                "name": "AddOrReplaceReadGroups on data 367: BAM with replaced/modified readgroups",
+                "param_name": "bamfiles5"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3199008,
+        "id": 16904399,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10973352.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 31239506}, {\"src\": \"hda\", \"id\": 31239513}, {\"src\": \"hda\", \"id\": 31239554}, {\"src\": \"hda\", \"id\": 31239593}, {\"src\": \"hda\", \"id\": 31239606}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40280878,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-24 09:14:31.877355",
+        "user_id": 110240
+    },
+    {
+        "create_time": "2017-12-24 20:03:22.283900",
+        "datasets": [
+            {
+                "dataset_id": "22882772",
+                "extension": "bam",
+                "file_size": 1353481613,
+                "name": "WT control 1",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "22882772",
+                "extension": "bam",
+                "file_size": 1353481613,
+                "name": "WT control 1",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "22882773",
+                "extension": "bam",
+                "file_size": 1593594379,
+                "name": "WT control 2",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "22882774",
+                "extension": "bam",
+                "file_size": 1449462387,
+                "name": "WT drought 1",
+                "param_name": "bamfiles3"
+            },
+            {
+                "dataset_id": "22882775",
+                "extension": "bam",
+                "file_size": 1700026741,
+                "name": "WT drought 2",
+                "param_name": "bamfiles4"
+            },
+            {
+                "dataset_id": "22882776",
+                "extension": "bam",
+                "file_size": 1537466087,
+                "name": "BSMV control 1",
+                "param_name": "bamfiles5"
+            },
+            {
+                "dataset_id": "22882777",
+                "extension": "bam",
+                "file_size": 1814559576,
+                "name": "BSMV control 2",
+                "param_name": "bamfiles6"
+            },
+            {
+                "dataset_id": "22882778",
+                "extension": "bam",
+                "file_size": 1465933750,
+                "name": "BSMV drought 1",
+                "param_name": "bamfiles7"
+            },
+            {
+                "dataset_id": "22882779",
+                "extension": "bam",
+                "file_size": 1660133003,
+                "name": "BSMV drought 2",
+                "param_name": "bamfiles8"
+            },
+            {
+                "dataset_id": "22882780",
+                "extension": "bam",
+                "file_size": 1346219401,
+                "name": "1BOEX control 1",
+                "param_name": "bamfiles9"
+            },
+            {
+                "dataset_id": "22882781",
+                "extension": "bam",
+                "file_size": 1604576603,
+                "name": "1BOEX control 2",
+                "param_name": "bamfiles10"
+            },
+            {
+                "dataset_id": "22882782",
+                "extension": "bam",
+                "file_size": 1552711589,
+                "name": "1BOEX drought 1",
+                "param_name": "bamfiles11"
+            },
+            {
+                "dataset_id": "22882783",
+                "extension": "bam",
+                "file_size": 1813124169,
+                "name": "1BOEX drought 2",
+                "param_name": "bamfiles12"
+            },
+            {
+                "dataset_id": "22882784",
+                "extension": "bam",
+                "file_size": 1519057916,
+                "name": "siRNA1B control 1",
+                "param_name": "bamfiles13"
+            },
+            {
+                "dataset_id": "22882785",
+                "extension": "bam",
+                "file_size": 1778031001,
+                "name": "siRNA1B control 2",
+                "param_name": "bamfiles14"
+            },
+            {
+                "dataset_id": "22882786",
+                "extension": "bam",
+                "file_size": 1248492709,
+                "name": "siRNA1B drought 1",
+                "param_name": "bamfiles15"
+            },
+            {
+                "dataset_id": "22882787",
+                "extension": "bam",
+                "file_size": 1465606503,
+                "name": "siRNA1B drought 2",
+                "param_name": "bamfiles16"
+            },
+            {
+                "dataset_id": "22619784",
+                "extension": "len",
+                "file_size": 7093409,
+                "name": "Triticum_aestivum.TGACv1.cdna.all.fa",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3354127,
+        "id": 17891326,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11966924",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/022/619/dataset_22619784.dat\"",
+            "dbkey": "\"?\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 33070903}, {\"src\": \"hda\", \"id\": 33070904}, {\"src\": \"hda\", \"id\": 33070905}, {\"src\": \"hda\", \"id\": 33070906}, {\"src\": \"hda\", \"id\": 33070907}, {\"src\": \"hda\", \"id\": 33070908}, {\"src\": \"hda\", \"id\": 33070909}, {\"src\": \"hda\", \"id\": 33070910}, {\"src\": \"hda\", \"id\": 33070911}, {\"src\": \"hda\", \"id\": 33070912}, {\"src\": \"hda\", \"id\": 33070913}, {\"src\": \"hda\", \"id\": 33070914}, {\"src\": \"hda\", \"id\": 33070915}, {\"src\": \"hda\", \"id\": 33070916}, {\"src\": \"hda\", \"id\": 33070917}, {\"src\": \"hda\", \"id\": 33070918}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"pdf\"",
+            "outRawCounts": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42406214,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-12-26 20:31:33.290649",
+        "user_id": 117104
+    },
+    {
+        "create_time": "2017-10-25 09:48:48.183359",
+        "datasets": [
+            {
+                "dataset_id": "21187227",
+                "extension": "bam",
+                "file_size": 44114143,
+                "name": "n7.13 comb bam",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "21187227",
+                "extension": "bam",
+                "file_size": 44114143,
+                "name": "n7.13 comb bam",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "21851330",
+                "extension": "bed",
+                "file_size": 12430496,
+                "name": "mm10_coding_whole_genome_bed_non-exons-1 102517",
+                "param_name": "blackListFileName"
+            },
+            {
+                "dataset_id": "21851330",
+                "extension": "bed",
+                "file_size": 12430496,
+                "name": "mm10_coding_whole_genome_bed_non-exons-1 102517",
+                "param_name": "blackListFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3294205,
+        "id": 17209614,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11269786",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"region\": \"\", \"skipZeros\": \"true\", \"samFlagInclude\": \"\", \"numberOfSamples\": \"100000\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"plotTitle\": \"\", \"minMappingQuality\": \"1\", \"blackListFileName\": {\"values\": [{\"src\": \"hda\", \"id\": 31872865}]}, \"maxFragmentLength\": \"0\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 31779924}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 41403935,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-26 21:49:20.360323",
+        "user_id": 18481
+    },
+    {
+        "create_time": "2017-10-31 20:19:02.835201",
+        "datasets": [
+            {
+                "dataset_id": "21187227",
+                "extension": "bam",
+                "file_size": 44114143,
+                "name": "n7.13 comb bam",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "21187227",
+                "extension": "bam",
+                "file_size": 44114143,
+                "name": "n7.13 comb bam",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "21954948",
+                "extension": "bed",
+                "file_size": 4663018,
+                "name": "Complemen of SortBed on Merged SortBed on mm10 coding whole genome bed",
+                "param_name": "blackListFileName"
+            },
+            {
+                "dataset_id": "21954948",
+                "extension": "bed",
+                "file_size": 4663018,
+                "name": "Complemen of SortBed on Merged SortBed on mm10 coding whole genome bed",
+                "param_name": "blackListFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3294205,
+        "id": 17280661,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11341552",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"region\": \"\", \"skipZeros\": \"true\", \"samFlagInclude\": \"\", \"numberOfSamples\": \"100000\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"plotTitle\": \"\", \"minMappingQuality\": \"1\", \"blackListFileName\": {\"values\": [{\"src\": \"hda\", \"id\": 31993453}]}, \"maxFragmentLength\": \"0\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 31779924}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 41646383,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-11-02 08:22:03.374314",
+        "user_id": 18481
+    },
+    {
+        "create_time": "2018-02-02 19:31:06.510970",
+        "datasets": [
+            {
+                "dataset_id": "23393414",
+                "extension": "bam",
+                "file_size": 322233211,
+                "name": "C10-1.bam",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "23393414",
+                "extension": "bam",
+                "file_size": 322233211,
+                "name": "C10-1.bam",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "23393417",
+                "extension": "bam",
+                "file_size": 435294286,
+                "name": "C10-2.bam",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "23393476",
+                "extension": "bam",
+                "file_size": 747537078,
+                "name": "C10-3.bam",
+                "param_name": "bamfiles3"
+            },
+            {
+                "dataset_id": "23393496",
+                "extension": "bam",
+                "file_size": 2229221601,
+                "name": "C10-3 Old.bam",
+                "param_name": "bamfiles4"
+            },
+            {
+                "dataset_id": "23393506",
+                "extension": "bam",
+                "file_size": 2844499861,
+                "name": "C10-4.bam",
+                "param_name": "bamfiles5"
+            },
+            {
+                "dataset_id": "23393538",
+                "extension": "bam",
+                "file_size": 529156748,
+                "name": "E10-1.bam",
+                "param_name": "bamfiles6"
+            },
+            {
+                "dataset_id": "23393770",
+                "extension": "bam",
+                "file_size": 1317429068,
+                "name": "E10-2.bam",
+                "param_name": "bamfiles7"
+            },
+            {
+                "dataset_id": "23393771",
+                "extension": "bam",
+                "file_size": 2349093198,
+                "name": "E10-3.bam",
+                "param_name": "bamfiles8"
+            },
+            {
+                "dataset_id": "23393772",
+                "extension": "bam",
+                "file_size": 1399839959,
+                "name": "E10-4.bam",
+                "param_name": "bamfiles9"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3414970,
+        "id": 18240634,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12321571",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 33639558}, {\"src\": \"hda\", \"id\": 33639561}, {\"src\": \"hda\", \"id\": 33639629}, {\"src\": \"hda\", \"id\": 33639649}, {\"src\": \"hda\", \"id\": 33639659}, {\"src\": \"hda\", \"id\": 33639691}, {\"src\": \"hda\", \"id\": 33639932}, {\"src\": \"hda\", \"id\": 33639933}, {\"src\": \"hda\", \"id\": 33639934}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43556871,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_coverage/deeptools_plot_coverage/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-04 09:33:59.425076",
+        "user_id": 17286
+    }
+]

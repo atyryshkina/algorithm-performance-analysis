@@ -1,0 +1,229 @@
+[
+    {
+        "create_time": "2016-12-13 19:26:19.393878",
+        "datasets": [
+            {
+                "dataset_id": "18180868",
+                "extension": "fasta",
+                "file_size": 1175880641,
+                "name": "KA1.fasta",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "kraken",
+                "path": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28",
+                "script": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28/env.sh",
+                "version": "0.10.5"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 1135103,
+        "id": 14568038,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8747074.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences": "{\"values\": [{\"src\": \"hda\", \"id\": 27618324}]}",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34829302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-12-13 20:22:11.250395",
+        "user_id": 8720
+    },
+    {
+        "create_time": "2016-12-21 15:13:53.504806",
+        "datasets": [
+            {
+                "dataset_id": "18263096",
+                "extension": "fastqsanger",
+                "file_size": 171054063,
+                "name": "GenomeSpace import on 7-071116-1_S9_L001_R1_001.fastq.gz",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "kraken",
+                "path": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28",
+                "script": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28/env.sh",
+                "version": "0.10.5"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2934489,
+        "id": 14625514,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8802134.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences": "{\"values\": [{\"src\": \"hda\", \"id\": 27709743}]}",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34934269,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-12-21 18:48:44.627513",
+        "user_id": 88083
+    },
+    {
+        "create_time": "2016-12-01 08:12:09.212537",
+        "datasets": [
+            {
+                "dataset_id": "18028153",
+                "extension": "fasta",
+                "file_size": 468951910,
+                "name": "Molybdate_trimmed_seq.fasta",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "kraken",
+                "path": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28",
+                "script": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28/env.sh",
+                "version": "0.10.5"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2908234,
+        "id": 14458990,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8653224.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences": "{\"values\": [{\"src\": \"hda\", \"id\": 27449714}]}",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34551556,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-12-01 11:45:46.900897",
+        "user_id": 95752
+    },
+    {
+        "create_time": "2016-12-13 20:35:33.599867",
+        "datasets": [
+            {
+                "dataset_id": "18180868",
+                "extension": "fasta",
+                "file_size": 1175880641,
+                "name": "KA1.fasta",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "kraken",
+                "path": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28",
+                "script": "/galaxy/main/deps/kraken/0.10.5/devteam/kraken/0f17a8816b28/env.sh",
+                "version": "0.10.5"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 1135103,
+        "id": 14568377,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8747440.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_sequences": "{\"values\": [{\"src\": \"hda\", \"id\": 27618324}]}",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"true\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34829302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-12-13 23:19:38.758650",
+        "user_id": 8720
+    }
+]

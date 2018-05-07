@@ -1,0 +1,71 @@
+[
+    {
+        "create_time": "2017-07-20 21:43:21.583329",
+        "datasets": [
+            {
+                "dataset_id": "20629291",
+                "extension": "csfasta",
+                "file_size": 35990354599,
+                "name": "SRR1171946_F3.csfasta",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "20672728",
+                "extension": "qualsolid",
+                "file_size": 80348542858,
+                "name": "SRR1171946_F3_QV.qual",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "20629292",
+                "extension": "csfasta",
+                "file_size": 29778236947,
+                "name": "SRR1171946_F5-P2.csfasta",
+                "param_name": "input3"
+            },
+            {
+                "dataset_id": "20671657",
+                "extension": "qualsolid",
+                "file_size": 59892677096,
+                "name": "SRR1171946_F5-P2_QV.qual",
+                "param_name": "input4"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2403578,
+        "id": 16379403,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10444481.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "double_encode": "\"\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 30495217}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 30544890}]}",
+            "is_run": "{\"paired\": \"yes\", \"input4\": {\"values\": [{\"src\": \"hda\", \"id\": 30543737}]}, \"__current_case__\": 0, \"input3\": {\"values\": [{\"src\": \"hda\", \"id\": 30495218}]}}",
+            "qual": "\"0\"",
+            "trim_first_base": "\"\"",
+            "trim_name": "\"-t\""
+        },
+        "runner_name": null,
+        "session_id": 38487153,
+        "state": "error",
+        "tool_id": "solid2fastq",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-07-22 09:44:06.890905",
+        "user_id": 52189
+    }
+]

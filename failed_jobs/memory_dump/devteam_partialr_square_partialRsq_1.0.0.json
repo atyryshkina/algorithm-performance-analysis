@@ -1,0 +1,77 @@
+[
+    {
+        "create_time": "2018-02-13 16:10:08.556811",
+        "datasets": [
+            {
+                "dataset_id": "23567937",
+                "extension": "vcf",
+                "file_size": 3490990213,
+                "name": "Filter on BWA-MEM pileup",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/partialr_square/88ef41de020d",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/partialr_square/88ef41de020d/env.sh",
+                "version": "2.11.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/devteam/partialr_square/88ef41de020d",
+                "script": "/galaxy/main/deps/numpy/1.7.1/devteam/partialr_square/88ef41de020d/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/partialr_square/88ef41de020d",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/partialr_square/88ef41de020d/env.sh",
+                "version": "1.0.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3427580,
+        "id": 18366864,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12451554",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33830306}]}",
+            "predictor_cols": "[\"3\", \"4\"]",
+            "response_col": "\"1\""
+        },
+        "runner_name": null,
+        "session_id": 43886841,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/partialr_square/partialRsq/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2018-02-13 21:19:19.189194",
+        "user_id": 121441
+    }
+]

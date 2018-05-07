@@ -1,0 +1,762 @@
+[
+    {
+        "create_time": "2017-09-24 21:51:36.022280",
+        "datasets": [
+            {
+                "dataset_id": "21199582",
+                "extension": "bam",
+                "file_size": 6528772320,
+                "name": "OE1 73A BAM filter on data 129",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21199579",
+                "extension": "bam",
+                "file_size": 8616269039,
+                "name": "OE2 73A BAM filter on data 126",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2944470,
+        "id": 16915375,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10984750.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"samFlagInclude\": \"\", \"smoothLength\": \"\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"ignoreForNormalization\": \"\", \"skipNAs\": \"false\", \"minMappingQuality\": \"\", \"blackListFileName\": null, \"maxFragmentLength\": \"0\"}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31140137}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31140134}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "comparison": "{\"type\": \"mean\", \"__current_case__\": 3}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"scaleFactor1\": \"0.5\", \"scaleFactor2\": \"0.4\", \"method\": \"own\", \"__current_case__\": 2}"
+        },
+        "runner_name": null,
+        "session_id": 40108324,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-24 22:08:50.288701",
+        "user_id": 97544
+    },
+    {
+        "create_time": "2017-09-24 19:52:16.672453",
+        "datasets": [
+            {
+                "dataset_id": "21199582",
+                "extension": "bam",
+                "file_size": 6528772320,
+                "name": "OE1 73A BAM filter on data 129",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21199579",
+                "extension": "bam",
+                "file_size": 8616269039,
+                "name": "OE2 73A BAM filter on data 126",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2944470,
+        "id": 16914497,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10983946.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"samFlagInclude\": \"\", \"smoothLength\": \"\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"ignoreForNormalization\": \"\", \"skipNAs\": \"false\", \"minMappingQuality\": \"\", \"blackListFileName\": null, \"maxFragmentLength\": \"0\"}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31140137}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31140134}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "comparison": "{\"type\": \"mean\", \"__current_case__\": 3}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 40108324,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-24 20:10:38.943715",
+        "user_id": 97544
+    },
+    {
+        "create_time": "2017-09-07 04:46:31.374981",
+        "datasets": [
+            {
+                "dataset_id": "21133709",
+                "extension": "bam",
+                "file_size": 8691742345,
+                "name": "OE2 73A Bowtie2 on data 36: aligned reads (sorted BAM)",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21133711",
+                "extension": "bam",
+                "file_size": 7128542996,
+                "name": "OE2 In Bowtie2 on data 40: aligned reads (sorted BAM)",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2944470,
+        "id": 16757351,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10823981",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"samFlagInclude\": \"\", \"smoothLength\": \"\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"ignoreForNormalization\": \"\", \"skipNAs\": \"false\", \"minMappingQuality\": \"1\", \"blackListFileName\": null, \"maxFragmentLength\": \"0\"}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31069990}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31069992}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"ratio\", \"__current_case__\": 1}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 40108324,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-07 05:08:47.623624",
+        "user_id": 97544
+    },
+    {
+        "create_time": "2017-07-05 08:04:36.977169",
+        "datasets": [
+            {
+                "dataset_id": "18835727",
+                "extension": "bam",
+                "file_size": 1739337868,
+                "name": "W31m_Chip_sorted.bam",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "20498060",
+                "extension": "bam",
+                "file_size": 17796760129,
+                "name": "merging_k27_input_Merge BAM Files on data 131, data 128, and others",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2985606,
+        "id": 16260007,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10332238",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 28346741}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 30277723}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"log2\", \"__current_case__\": 0}",
+            "dbkey": "\"mm10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37751631,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-05 10:33:43.943750",
+        "user_id": 32243
+    },
+    {
+        "create_time": "2017-07-05 08:09:31.660533",
+        "datasets": [
+            {
+                "dataset_id": "18835168",
+                "extension": "bam",
+                "file_size": 1406846303,
+                "name": "K32p_Chip_sorted.bam",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "20498060",
+                "extension": "bam",
+                "file_size": 17796760129,
+                "name": "merging_k27_input_Merge BAM Files on data 131, data 128, and others",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2985606,
+        "id": 16260062,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10332929",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 28346133}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 30277723}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"log2\", \"__current_case__\": 0}",
+            "dbkey": "\"mm10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37751631,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-05 12:35:24.577132",
+        "user_id": 32243
+    },
+    {
+        "create_time": "2017-10-26 10:21:54.651642",
+        "datasets": [
+            {
+                "dataset_id": "21872128",
+                "extension": "bam",
+                "file_size": 2984579373,
+                "name": "Galaxy452-[Filter_SAM_or_BAM,_output_SAM_or_BAM_on_data_442__bam].bam",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21872125",
+                "extension": "bam",
+                "file_size": 2984579373,
+                "name": "Galaxy450-[Filter_SAM_or_BAM,_output_SAM_or_BAM_on_data_436__bam].bam",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3293678,
+        "id": 17225019,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11286425",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31896050}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31896047}]}",
+            "binSize": "\"5\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"log2\", \"__current_case__\": 0}",
+            "dbkey": "\"?\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 41537146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-26 10:45:44.815864",
+        "user_id": 96567
+    },
+    {
+        "create_time": "2017-09-24 20:28:32.758112",
+        "datasets": [
+            {
+                "dataset_id": "21199582",
+                "extension": "bam",
+                "file_size": 6528772320,
+                "name": "OE1 73A BAM filter on data 129",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21199579",
+                "extension": "bam",
+                "file_size": 8616269039,
+                "name": "OE2 73A BAM filter on data 126",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2944470,
+        "id": 16914710,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10984158.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"samFlagInclude\": \"\", \"smoothLength\": \"\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"ignoreForNormalization\": \"\", \"skipNAs\": \"false\", \"minMappingQuality\": \"\", \"blackListFileName\": null, \"maxFragmentLength\": \"0\"}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31140137}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31140134}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "comparison": "{\"type\": \"mean\", \"__current_case__\": 3}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 40108324,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-24 20:44:49.937294",
+        "user_id": 97544
+    },
+    {
+        "create_time": "2017-07-05 08:08:10.767854",
+        "datasets": [
+            {
+                "dataset_id": "18832427",
+                "extension": "bam",
+                "file_size": 1766344601,
+                "name": "K29m_Chip_sorted.bam",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "20498060",
+                "extension": "bam",
+                "file_size": 17796760129,
+                "name": "merging_k27_input_Merge BAM Files on data 131, data 128, and others",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2985606,
+        "id": 16260029,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10332364",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 28342979}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 30277723}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"log2\", \"__current_case__\": 0}",
+            "dbkey": "\"mm10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37751631,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-05 10:53:36.900447",
+        "user_id": 32243
+    },
+    {
+        "create_time": "2017-09-07 04:37:40.314353",
+        "datasets": [
+            {
+                "dataset_id": "21133712",
+                "extension": "bam",
+                "file_size": 6581306346,
+                "name": "OE1 73A Bowtie2 on data 115: aligned reads (sorted BAM)",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21133714",
+                "extension": "bam",
+                "file_size": 7307777971,
+                "name": "OE1 In Bowtie2 on data 117: aligned reads (sorted BAM)",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2944470,
+        "id": 16757331,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10823914",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"samFlagInclude\": \"\", \"smoothLength\": \"\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"ignoreForNormalization\": \"\", \"skipNAs\": \"false\", \"minMappingQuality\": \"1\", \"blackListFileName\": null, \"maxFragmentLength\": \"0\"}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31069993}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31069995}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "comparison": "{\"type\": \"subtract\", \"normalization\": {\"effectiveGenomeSize\": {\"effectiveGenomeSize_opt\": \"specific\", \"effectiveGenomeSize\": \"90000000\", \"__current_case__\": 0}, \"type\": \"1x\", \"__current_case__\": 2}, \"__current_case__\": 7}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 40108324,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-07 04:47:49.805056",
+        "user_id": 97544
+    },
+    {
+        "create_time": "2017-09-24 21:11:51.854499",
+        "datasets": [
+            {
+                "dataset_id": "21199582",
+                "extension": "bam",
+                "file_size": 6528772320,
+                "name": "OE1 73A BAM filter on data 129",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "21199579",
+                "extension": "bam",
+                "file_size": 8616269039,
+                "name": "OE2 73A BAM filter on data 126",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2944470,
+        "id": 16915165,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10984453.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"ignoreDuplicates\": \"false\", \"centerReads\": \"false\", \"doExtendCustom\": {\"__current_case__\": 0, \"doExtend\": \"no\"}, \"minFragmentLength\": \"0\", \"samFlagExclude\": \"\", \"samFlagInclude\": \"\", \"smoothLength\": \"\", \"showAdvancedOpt\": \"yes\", \"__current_case__\": 1, \"ignoreForNormalization\": \"\", \"skipNAs\": \"false\", \"minMappingQuality\": \"\", \"blackListFileName\": null, \"maxFragmentLength\": \"0\"}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 31140137}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 31140134}]}",
+            "binSize": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "comparison": "{\"type\": \"mean\", \"__current_case__\": 3}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"scaleFactor1\": \"1.0\", \"scaleFactor2\": \"0.75\", \"method\": \"own\", \"__current_case__\": 2}"
+        },
+        "runner_name": null,
+        "session_id": 40108324,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-09-24 21:25:24.141541",
+        "user_id": 97544
+    }
+]

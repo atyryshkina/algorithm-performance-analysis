@@ -1,0 +1,379 @@
+[
+    {
+        "create_time": "2016-07-25 02:04:01.364818",
+        "datasets": [
+            {
+                "dataset_id": "16674920",
+                "extension": "fastqsanger",
+                "file_size": 4360395814,
+                "name": "Trim Galore! on data 12 and data 11: trimmed reads pair 1",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "16674921",
+                "extension": "fastqsanger",
+                "file_size": 4358552754,
+                "name": "Trim Galore! on data 12 and data 11: trimmed reads pair 2",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2771636,
+        "id": 13481568,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7697474.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"--very-sensitive\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58c1f25d89f0a91d1\"}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b70ea7005a135227\"}]}, \"type\": \"paired\", \"paired_options\": {\"no_mixed\": \"false\", \"dovetail\": \"false\", \"I\": \"0\", \"no_contain\": \"false\", \"no_discordant\": \"true\", \"no_overlap\": \"false\", \"__current_case__\": 0, \"X\": \"2000\", \"fr_rf_ff\": \"--fr\", \"paired_options_selector\": \"yes\"}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg19female\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 31578981,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-25 02:34:18.863539",
+        "user_id": 73080
+    },
+    {
+        "create_time": "2016-12-22 16:58:28.886285",
+        "datasets": [
+            {
+                "dataset_id": "18273139",
+                "extension": "fastqsanger",
+                "file_size": 9167220414,
+                "name": "Trimmomatic on FASTQ Groomer on data 1 (R1 paired)",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "18273140",
+                "extension": "fastqsanger",
+                "file_size": 9006372936,
+                "name": "Trimmomatic on FASTQ Groomer on data 2 (R2 paired)",
+                "param_name": "input_2"
+            },
+            {
+                "dataset_id": "18273914",
+                "extension": "fasta",
+                "file_size": 588703,
+                "name": "EBV1_EBV2_HCMV.fasta",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2937216,
+        "id": 14633169,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8808877.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"pulsar_stampede_development\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": 27720507}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 27720506}]}, \"type\": \"paired\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27721518}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 35032762,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-12-22 17:29:05.330505",
+        "user_id": 94580
+    },
+    {
+        "create_time": "2017-05-23 18:13:09.917771",
+        "datasets": [
+            {
+                "dataset_id": "20045634",
+                "extension": "fastqsanger",
+                "file_size": 9426325586,
+                "name": "Trimmomatic on C3_R1 (R1 paired)",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "20045635",
+                "extension": "fastqsanger",
+                "file_size": 9236626162,
+                "name": "Trimmomatic on C3_R2 (R2 paired)",
+                "param_name": "input_2"
+            },
+            {
+                "dataset_id": "20046461",
+                "extension": "fasta",
+                "file_size": 784384310,
+                "name": "B.rapaV2.1_custom",
+                "param_name": "own_file"
+            },
+            {
+                "dataset_id": "20046525",
+                "extension": "len",
+                "file_size": 393152662,
+                "name": "B.rapaV2.1_custom",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3104119,
+        "id": 15919812,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10017710",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,0.5\", \"L\": \"20\", \"N\": \"0\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"score_min_loc\": \"G,20,8\", \"align_mode_selector\": \"local\", \"__current_case__\": 1}, \"__current_case__\": 0, \"no_1mm_upfront\": \"false\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"yes\", \"R\": \"3\", \"D\": \"20\", \"__current_case__\": 0}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/main/files/020/046/dataset_20046525.dat\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": 29734675}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 29734674}]}, \"type\": \"paired\", \"paired_options\": {\"no_mixed\": \"false\", \"dovetail\": \"false\", \"I\": \"0\", \"no_contain\": \"false\", \"no_discordant\": \"false\", \"no_overlap\": \"false\", \"__current_case__\": 0, \"X\": \"500\", \"fr_rf_ff\": \"--fr\", \"paired_options_selector\": \"yes\"}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29735705}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 38165199,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-05-25 06:13:49.330228",
+        "user_id": 80827
+    },
+    {
+        "create_time": "2018-01-16 23:36:26.943476",
+        "datasets": [
+            {
+                "dataset_id": "23122704",
+                "extension": "fastqsanger",
+                "file_size": 9919106718,
+                "name": "FASTQ Groomer on data 14",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "23122630",
+                "extension": "fasta",
+                "file_size": 256099,
+                "name": "repbase_chickenTEs_2017_05_31.txt",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3388133,
+        "id": 18054176,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12132576",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "__workflow_invocation_uuid__": "\"10592558fb1611e7ab4b005056ba55fb\"",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,1.15\", \"L\": \"8\", \"N\": \"1\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"true\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"a\", \"__current_case__\": 2}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 33340586}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33340512}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2018-01-18 13:47:47.890129",
+        "user_id": 101171
+    },
+    {
+        "create_time": "2018-01-16 23:35:58.879977",
+        "datasets": [
+            {
+                "dataset_id": "23122700",
+                "extension": "fastqsanger",
+                "file_size": 10359427017,
+                "name": "FASTQ Groomer on data 15",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "23122630",
+                "extension": "fasta",
+                "file_size": 256099,
+                "name": "repbase_chickenTEs_2017_05_31.txt",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3388133,
+        "id": 18054173,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12132640",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "__workflow_invocation_uuid__": "\"ff9c279cfb1511e7b74d005056ba55fb\"",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,1.15\", \"L\": \"8\", \"N\": \"1\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"true\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"a\", \"__current_case__\": 2}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 33340582}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33340512}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2018-01-18 13:52:47.988248",
+        "user_id": 101171
+    }
+]

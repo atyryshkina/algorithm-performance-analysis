@@ -1,0 +1,242 @@
+[
+    {
+        "create_time": "2017-11-02 22:17:04.842765",
+        "datasets": [
+            {
+                "dataset_id": "21997814",
+                "extension": "fastqsanger",
+                "file_size": 7753088318,
+                "name": "SRR4420298_1.fastq",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "21998355",
+                "extension": "fastqsanger",
+                "file_size": 7753088318,
+                "name": "SRR4420298_2.fastqsanger",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "21993533",
+                "extension": "fasta",
+                "file_size": 121662621,
+                "name": "Arabidopsis_thaliana.TAIR10.dna_rm.toplevel.fa",
+                "param_name": "genomeFastaFiles"
+            },
+            {
+                "dataset_id": "21993530",
+                "extension": "gtf",
+                "file_size": 232389482,
+                "name": "Arabidopsis_thaliana.TAIR10.37.gtf",
+                "param_name": "sjdbGTFfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-c9a597a010e74b65cc39e1a315ac4c91ee474e7437f09b393086009fa3edec52",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "star",
+                "version": "2.5.2b"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-c9a597a010e74b65cc39e1a315ac4c91ee474e7437f09b393086009fa3edec52",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120 --mem=8192"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2386135,
+        "id": 17310039,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11369398",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "output_params": "{\"__current_case__\": 1, \"output_select\": \"no\"}",
+            "params": "{\"settingsType\": \"default\", \"__current_case__\": 0}",
+            "quantMode": "\"false\"",
+            "refGenomeSource": "{\"sjdbOverhang\": \"100\", \"geneSource\": \"history\", \"genomeFastaFiles\": {\"values\": [{\"src\": \"hda\", \"id\": 32033797}]}, \"__current_case__\": 1, \"sjdbGTFfile\": {\"values\": [{\"src\": \"hda\", \"id\": 32033794}]}}",
+            "singlePaired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 32039426}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 32038885}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 39793038,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.5.2b-0",
+        "tool_version": "2.5.2b-0",
+        "traceback": null,
+        "update_time": "2017-11-04 11:36:18.934866",
+        "user_id": 59431
+    },
+    {
+        "create_time": "2018-01-15 22:12:26.529958",
+        "datasets": [
+            {
+                "dataset_id": "22932948",
+                "extension": "fastqsanger",
+                "file_size": 15324793160,
+                "name": "XZ02_AGTTCC_L001_R1_001.fastq",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "22932950",
+                "extension": "fastqsanger",
+                "file_size": 15324793160,
+                "name": "XZ02_AGTTCC_L001_R2_001.fastq",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-c9a597a010e74b65cc39e1a315ac4c91ee474e7437f09b393086009fa3edec52",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "star",
+                "version": "2.5.2b"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-c9a597a010e74b65cc39e1a315ac4c91ee474e7437f09b393086009fa3edec52",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120 --mem=8192"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3196740,
+        "id": 18042786,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12120099",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "output_params": "{\"__current_case__\": 1, \"output_select\": \"no\"}",
+            "params": "{\"settingsType\": \"default\", \"__current_case__\": 0}",
+            "quantMode": "\"false\"",
+            "refGenomeSource": "{\"GTFconditional\": {\"genomeDir\": \"ce9\", \"sjdbGTFfile\": null, \"GTFselect\": \"without-gtf\", \"__current_case__\": 1, \"sjdbOverhang\": \"100\"}, \"geneSource\": \"indexed\", \"__current_case__\": 0}",
+            "singlePaired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33132116}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33132114}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43184612,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.5.2b-0",
+        "tool_version": "2.5.2b-0",
+        "traceback": null,
+        "update_time": "2018-01-17 10:13:07.605916",
+        "user_id": 109149
+    },
+    {
+        "create_time": "2018-02-02 16:09:45.885076",
+        "datasets": [
+            {
+                "dataset_id": "23381556",
+                "extension": "fastq.gz",
+                "file_size": 1684778701,
+                "name": "SRR2040355_1.fastq.gz",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23381558",
+                "extension": "fastq.gz",
+                "file_size": 1756686511,
+                "name": "SRR2040355_2.fastq.gz",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "23176675",
+                "extension": "gtf",
+                "file_size": 261232632,
+                "name": "Genes_ENSEMBL_to_UCSC_hg19.gtf",
+                "param_name": "refGenomeSource|sjdbGTFfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-c9a597a010e74b65cc39e1a315ac4c91ee474e7437f09b393086009fa3edec52",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "star",
+                "version": "2.5.2b"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-c9a597a010e74b65cc39e1a315ac4c91ee474e7437f09b393086009fa3edec52",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=2 --time=00:30:00 --mem-per-cpu=5120 --mem=31681"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3398452,
+        "id": 18237120,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12317580",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"multi_bridges_compute_resource\": \"slurm_multi_development\", \"__current_case__\": 1, \"__job_resource__select\": \"yes\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "output_params": "{\"outSAMstrandField\": \"None\", \"output_select\": \"yes\", \"outSAMattributes\": \"Standard\", \"output_params2\": {\"output_select2\": \"no\", \"__current_case__\": 1}, \"__current_case__\": 0, \"outFilterIntronMotifs\": \"None\"}",
+            "params": "{\"align\": {\"alignSJoverhangMin\": \"5\", \"alignSJDBoverhangMin\": \"3\", \"alignIntronMin\": \"21\", \"alignEndsType\": \"false\", \"alignTranscriptsPerReadNmax\": \"10000\", \"alignMatesGapMax\": \"0\", \"alignWindowsPerReadNmax\": \"10000\", \"alignIntronMax\": \"0\", \"alignSplicedMateMapLminOverLmate\": \"0.66\", \"alignTranscriptsPerWindowNmax\": \"100\", \"alignSplicedMateMapLmin\": \"0\"}, \"settingsType\": \"full\", \"seed\": {\"seedPerReadNmax\": \"1000\", \"seedNoneLociPerWindow\": \"10\", \"seedSearchStartLmax\": \"50\", \"seedSearchLmax\": \"0\", \"seedMultimapNmax\": \"10000\", \"seedSearchStartLmaxOverLread\": \"1.0\", \"seedPerWindowNmax\": \"50\"}, \"__current_case__\": 2, \"chim\": {\"chimScoreDropMax\": \"20\", \"chimJunctionOverhangMin\": \"10\", \"chim_select\": \"yes\", \"chimSegmentMin\": \"30\", \"chimScoreJunctionNonGTAG\": \"-1\", \"__current_case__\": 0, \"chimScoreSeparation\": \"10\", \"chimScoreMin\": \"0\"}}",
+            "quantMode": "\"false\"",
+            "refGenomeSource": "{\"GTFconditional\": {\"genomeDir\": \"hg19\", \"sjdbGTFfile\": {\"values\": [{\"src\": \"hda\", \"id\": 33398899}]}, \"GTFselect\": \"without-gtf\", \"__current_case__\": 1, \"sjdbOverhang\": \"100\"}, \"geneSource\": \"indexed\", \"__current_case__\": 0}",
+            "singlePaired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33624516}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33624514}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43311420,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.5.2b-0",
+        "tool_version": "2.5.2b-0",
+        "traceback": null,
+        "update_time": "2018-02-02 16:40:13.108475",
+        "user_id": 120286
+    }
+]

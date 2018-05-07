@@ -1,0 +1,126 @@
+[
+    {
+        "create_time": "2017-06-20 20:07:01.764801",
+        "datasets": [
+            {
+                "dataset_id": "20362588",
+                "extension": "tabular",
+                "file_size": 366802380,
+                "name": "Du Novo: Correct barcodes on data 849",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b559d765315381cd6b4be00ffc83c475ed0d4750cc08eb357d85bb02e08d1b03",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b559d765315381cd6b4be00ffc83c475ed0d4750cc08eb357d85bb02e08d1b03",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=96:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2770488,
+        "id": 16147459,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10226409",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30102083}]}"
+        },
+        "runner_name": null,
+        "session_id": 38792267,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.7",
+        "tool_version": "0.7",
+        "traceback": null,
+        "update_time": "2017-06-20 20:30:29.102151",
+        "user_id": 15917
+    },
+    {
+        "create_time": "2017-04-28 19:18:26.978522",
+        "datasets": [
+            {
+                "dataset_id": "19756091",
+                "extension": "tabular",
+                "file_size": 4995250858,
+                "name": "Du Novo: Make families on data 6",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b559d765315381cd6b4be00ffc83c475ed0d4750cc08eb357d85bb02e08d1b03",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-b559d765315381cd6b4be00ffc83c475ed0d4750cc08eb357d85bb02e08d1b03",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3091043,
+        "id": 15703422,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9816171",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29400759}]}"
+        },
+        "runner_name": null,
+        "session_id": 37637145,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.7",
+        "tool_version": "0.7",
+        "traceback": null,
+        "update_time": "2017-04-28 20:09:03.804388",
+        "user_id": 104882
+    }
+]

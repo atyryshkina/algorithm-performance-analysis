@@ -1,0 +1,61 @@
+[
+    {
+        "create_time": "2017-05-04 01:24:07.975782",
+        "datasets": [
+            {
+                "dataset_id": "19809319",
+                "extension": "fasta",
+                "file_size": 120657,
+                "name": "gap_reapr2.gapfilled.final.fa",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3097324,
+        "id": 15741775,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9851417.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 29461230}]}",
+            "maxrepeat": "\"10000\"",
+            "minrepeat": "\"10\"",
+            "mismatch": "\"no\"",
+            "out_format1": "\"table\"",
+            "threshold": "\"20\"",
+            "uniform": "\"no\""
+        },
+        "runner_name": null,
+        "session_id": 37747045,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: etandem33/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-04 01:59:59.313954",
+        "user_id": null
+    }
+]

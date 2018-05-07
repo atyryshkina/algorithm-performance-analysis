@@ -1,0 +1,399 @@
+[
+    {
+        "create_time": "2015-05-01 02:59:35.916784",
+        "datasets": [
+            {
+                "dataset_id": "10793701",
+                "extension": "fasta",
+                "file_size": 2723494305,
+                "name": "Btau8.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "11196151",
+                "extension": "bam",
+                "file_size": 21481832948,
+                "name": "MarkDups_dedup_merged_all.bam",
+                "param_name": "input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2277608,
+        "id": 9373121,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3709505.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"max_reads_per_bam\": \"250\", \"advanced_options_selector\": \"advanced\", \"extended_BAQ_computation\": \"False\", \"region_string\": \"\", \"output_per_sample_strand_bias_p_value\": \"False\", \"minimum_base_quality\": \"20\", \"disable_probabilistic_realignment\": \"False\", \"skip_anomalous_read_pairs\": \"False\", \"minimum_mapping_quality\": \"0\", \"output_per_sample_read_depth\": \"False\", \"__current_case__\": 0, \"position_list\": null, \"coefficient_for_downgrading\": \"0\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"perform_indel_calling\": {\"__current_case__\": 1, \"perform_indel_calling_selector\": \"do_not_perform_indel_calling\"}, \"platform_list_repeat\": [], \"gap_open_sequencing_error_probability\": \"40\", \"coefficient_for_modeling_homopolymer_errors\": \"100\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"gap_extension_sequencing_error_probability\": \"20\"}",
+            "reference_source": "{\"ref_file\": 19408277, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 19532319}], \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21411784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/0.0.1",
+        "tool_version": "0.0.1",
+        "traceback": null,
+        "update_time": "2015-05-02 19:12:13.309007",
+        "user_id": 56959
+    },
+    {
+        "create_time": "2014-07-31 22:43:00.148493",
+        "datasets": [
+            {
+                "dataset_id": "7448187",
+                "extension": "bam",
+                "file_size": 11032648859,
+                "name": "Tophat for Illumina on 2,1: UntreatedA: accepted_hits",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "7448196",
+                "extension": "bam",
+                "file_size": 9308058626,
+                "name": "Tophat for Illumina on 8,7: UntreatedC- accepted_hits",
+                "param_name": "input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "7448192",
+                "extension": "bam",
+                "file_size": 10712151270,
+                "name": "Tophat for Illumina on 4,3: UntreatedB- accepted_hits",
+                "param_name": "input_bams_1|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_single",
+        "destination_params": {
+            "nativeSpecification": "--time=48:10:00 --nodes=1 --ntasks=1 --partition=single --constraint=general"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 1771067,
+        "id": 7376686,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "1380030",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"perform_indel_calling\": {\"skip_indel_calling_above_sample_depth\": \"250\", \"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling\"}, \"platform_list_repeat\": [], \"gap_open_sequencing_error_probability\": \"40\", \"coefficient_for_modeling_homopolymer_errors\": \"100\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"gap_extension_sequencing_error_probability\": \"20\"}",
+            "reference_source": "{\"ref_file\": \"12931\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 13973752}, {\"__index__\": 1, \"input_bam\": 13973757}, {\"__index__\": 2, \"input_bam\": 13973762}], \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 16017797,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/0.0.1",
+        "tool_version": "0.0.1",
+        "traceback": null,
+        "update_time": "2014-08-02 22:53:13.378382",
+        "user_id": 43393
+    },
+    {
+        "create_time": "2014-08-04 16:40:29.567712",
+        "datasets": [
+            {
+                "dataset_id": "7448187",
+                "extension": "bam",
+                "file_size": 11032648859,
+                "name": "Tophat for Illumina on 2,1: UntreatedA: accepted_hits",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "7448196",
+                "extension": "bam",
+                "file_size": 9308058626,
+                "name": "Tophat for Illumina on 8,7: UntreatedC- accepted_hits",
+                "param_name": "input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "7448192",
+                "extension": "bam",
+                "file_size": 10712151270,
+                "name": "Tophat for Illumina on 4,3: UntreatedB- accepted_hits",
+                "param_name": "input_bams_1|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_single",
+        "destination_params": {
+            "nativeSpecification": "--time=48:10:00 --nodes=1 --ntasks=1 --partition=single --constraint=general"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 1771067,
+        "id": 7391557,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "1394825",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"perform_indel_calling\": {\"skip_indel_calling_above_sample_depth\": \"250\", \"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling\"}, \"platform_list_repeat\": [], \"gap_open_sequencing_error_probability\": \"40\", \"coefficient_for_modeling_homopolymer_errors\": \"100\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"gap_extension_sequencing_error_probability\": \"20\"}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 13973752}, {\"__index__\": 1, \"input_bam\": 13973757}, {\"__index__\": 2, \"input_bam\": 13973762}], \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 16058687,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/0.0.1",
+        "tool_version": "0.0.1",
+        "traceback": null,
+        "update_time": "2014-08-06 16:51:23.597408",
+        "user_id": 43393
+    },
+    {
+        "create_time": "2014-08-07 17:44:35.951473",
+        "datasets": [
+            {
+                "dataset_id": "7448187",
+                "extension": "bam",
+                "file_size": 11032648859,
+                "name": "Tophat for Illumina on 2,1: UntreatedA: accepted_hits",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "7448196",
+                "extension": "bam",
+                "file_size": 9308058626,
+                "name": "Tophat for Illumina on 8,7: UntreatedC- accepted_hits",
+                "param_name": "input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "7448192",
+                "extension": "bam",
+                "file_size": 10712151270,
+                "name": "Tophat for Illumina on 4,3: UntreatedB- accepted_hits",
+                "param_name": "input_bams_1|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_single",
+        "destination_params": {
+            "nativeSpecification": "--time=48:10:00 --nodes=1 --ntasks=1 --partition=single --constraint=general"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 1771067,
+        "id": 7409461,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "1412014",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"perform_indel_calling\": {\"skip_indel_calling_above_sample_depth\": \"250\", \"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling\"}, \"platform_list_repeat\": [], \"gap_open_sequencing_error_probability\": \"40\", \"coefficient_for_modeling_homopolymer_errors\": \"100\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"gap_extension_sequencing_error_probability\": \"20\"}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 13973752}, {\"__index__\": 1, \"input_bam\": 13973757}, {\"__index__\": 2, \"input_bam\": 13973762}], \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 16084967,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/0.0.1",
+        "tool_version": "0.0.1",
+        "traceback": null,
+        "update_time": "2014-08-09 17:55:14.889667",
+        "user_id": 43393
+    },
+    {
+        "create_time": "2014-11-06 18:46:50.310803",
+        "datasets": [
+            {
+                "dataset_id": "9196143",
+                "extension": "bam",
+                "file_size": 4020707210,
+                "name": "Tophat2 on data 28, data 155, and data 27: accepted_hits",
+                "param_name": "input_bams_3|input_bam"
+            },
+            {
+                "dataset_id": "9196129",
+                "extension": "bam",
+                "file_size": 3952868178,
+                "name": "Tophat2 on data 24, data 155, and data 23: accepted_hits",
+                "param_name": "input_bams_1|input_bam"
+            },
+            {
+                "dataset_id": "9226338",
+                "extension": "bam",
+                "file_size": 3792465508,
+                "name": "Tophat2 on data 38, data 155, and data 37: accepted_hits",
+                "param_name": "input_bams_8|input_bam"
+            },
+            {
+                "dataset_id": "9196136",
+                "extension": "bam",
+                "file_size": 4321617799,
+                "name": "Tophat2 on data 26, data 155, and data 25: accepted_hits",
+                "param_name": "input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "9220374",
+                "extension": "bam",
+                "file_size": 4092877030,
+                "name": "Tophat2 on data 36, data 155, and data 35: accepted_hits",
+                "param_name": "input_bams_7|input_bam"
+            },
+            {
+                "dataset_id": "9204913",
+                "extension": "bam",
+                "file_size": 4388576205,
+                "name": "Tophat2 on data 30, data 155, and data 29: accepted_hits",
+                "param_name": "input_bams_4|input_bam"
+            },
+            {
+                "dataset_id": "9196115",
+                "extension": "bam",
+                "file_size": 4528704340,
+                "name": "Tophat2 on data 22, data 155, and data 21: accepted_hits",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "9204923",
+                "extension": "bam",
+                "file_size": 4143235923,
+                "name": "Tophat2 on data 32, data 155, and data 31: accepted_hits",
+                "param_name": "input_bams_5|input_bam"
+            },
+            {
+                "dataset_id": "9220165",
+                "extension": "bam",
+                "file_size": 4142417038,
+                "name": "Tophat2 on data 34, data 155, and data 33: accepted_hits",
+                "param_name": "input_bams_6|input_bam"
+            },
+            {
+                "dataset_id": "9226361",
+                "extension": "bam",
+                "file_size": 4145039194,
+                "name": "Tophat2 on data 40, data 155, and data 39: accepted_hits",
+                "param_name": "input_bams_9|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2021580,
+        "id": 8116054,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "1951129.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"max_reads_per_bam\": \"1000\", \"advanced_options_selector\": \"advanced\", \"extended_BAQ_computation\": \"False\", \"region_string\": \"\", \"output_per_sample_strand_bias_p_value\": \"True\", \"minimum_base_quality\": \"13\", \"disable_probabilistic_realignment\": \"False\", \"skip_anomalous_read_pairs\": \"False\", \"minimum_mapping_quality\": \"0\", \"output_per_sample_read_depth\": \"True\", \"__current_case__\": 0, \"position_list\": null, \"coefficient_for_downgrading\": \"0\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/rn5.len\"",
+            "dbkey": "\"rn5\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"perform_indel_calling\": {\"skip_indel_calling_above_sample_depth\": \"250\", \"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling\"}, \"platform_list_repeat\": [], \"gap_open_sequencing_error_probability\": \"40\", \"coefficient_for_modeling_homopolymer_errors\": \"100\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"gap_extension_sequencing_error_probability\": \"20\"}",
+            "reference_source": "{\"ref_file\": \"rn5\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 16896669}, {\"__index__\": 1, \"input_bam\": 16896683}, {\"__index__\": 2, \"input_bam\": 16896690}, {\"__index__\": 3, \"input_bam\": 16896697}, {\"__index__\": 4, \"input_bam\": 16908078}, {\"__index__\": 5, \"input_bam\": 16908088}, {\"__index__\": 6, \"input_bam\": 16945668}, {\"__index__\": 7, \"input_bam\": 16946177}, {\"__index__\": 8, \"input_bam\": 16962170}, {\"__index__\": 9, \"input_bam\": 16962193}], \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 18041259,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/0.0.1",
+        "tool_version": "0.0.1",
+        "traceback": null,
+        "update_time": "2014-11-08 06:47:16.305651",
+        "user_id": 50398
+    },
+    {
+        "create_time": "2014-11-14 17:24:15.329824",
+        "datasets": [
+            {
+                "dataset_id": "8324753",
+                "extension": "fasta",
+                "file_size": 323180038,
+                "name": "Lusitatissimum_200-w80.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9338808",
+                "extension": "bam",
+                "file_size": 70527415964,
+                "name": "MergeFSet2Q25.bam",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "8703641",
+                "extension": "bam",
+                "file_size": 1232932303,
+                "name": "mergeNCBI8Q1.bam",
+                "param_name": "input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "9355236",
+                "extension": "bam",
+                "file_size": 11824523524,
+                "name": "MergeFset1Q1.bam",
+                "param_name": "input_bams_1|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2113471,
+        "id": 8168579,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "211814.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"max_reads_per_bam\": \"500\", \"advanced_options_selector\": \"advanced\", \"extended_BAQ_computation\": \"False\", \"region_string\": \"\", \"output_per_sample_strand_bias_p_value\": \"False\", \"minimum_base_quality\": \"20\", \"disable_probabilistic_realignment\": \"False\", \"skip_anomalous_read_pairs\": \"False\", \"minimum_mapping_quality\": \"10\", \"output_per_sample_read_depth\": \"True\", \"__current_case__\": 0, \"position_list\": null, \"coefficient_for_downgrading\": \"0\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"perform_indel_calling\": {\"__current_case__\": 1, \"perform_indel_calling_selector\": \"do_not_perform_indel_calling\"}, \"platform_list_repeat\": [], \"gap_open_sequencing_error_probability\": \"40\", \"coefficient_for_modeling_homopolymer_errors\": \"100\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"gap_extension_sequencing_error_probability\": \"20\"}",
+            "reference_source": "{\"ref_file\": 17543745, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 17543723}, {\"__index__\": 1, \"input_bam\": 17543735}, {\"__index__\": 2, \"input_bam\": 17543748}], \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 17146067,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/0.0.1",
+        "tool_version": "0.0.1",
+        "traceback": null,
+        "update_time": "2014-11-16 05:24:34.291455",
+        "user_id": 49301
+    }
+]

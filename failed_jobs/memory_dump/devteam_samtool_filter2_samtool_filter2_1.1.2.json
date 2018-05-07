@@ -1,0 +1,71 @@
+[
+    {
+        "create_time": "2017-02-18 03:05:01.686840",
+        "datasets": [
+            {
+                "dataset_id": "18874713",
+                "extension": "sam",
+                "file_size": 67301965458,
+                "name": "Map with BWA for Illumina on data 16, data 15, and data 9: mapped reads",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18886735",
+                "extension": "bed",
+                "file_size": 16091649,
+                "name": "Ssa_ICSASG_v2.fa.fai",
+                "param_name": "bed_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtool_filter2/c31a37f6d48a",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtool_filter2/c31a37f6d48a/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2991641,
+        "id": 15072013,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9227459.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28406416}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "flag": "{\"filter\": \"no\", \"__current_case__\": 0}",
+            "header": "\"-h\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28393469}]}",
+            "library": "\"\"",
+            "mapq": "\"\"",
+            "outputtype": "\"bam\"",
+            "possibly_select_inverse": "\"false\"",
+            "read_group": "\"\"",
+            "regions": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 36134576,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtool_filter2/samtool_filter2/1.1.2",
+        "tool_version": "1.1.2",
+        "traceback": null,
+        "update_time": "2017-02-18 03:05:36.910098",
+        "user_id": 99913
+    }
+]

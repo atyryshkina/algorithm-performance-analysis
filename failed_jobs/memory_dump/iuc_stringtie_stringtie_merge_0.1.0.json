@@ -1,0 +1,494 @@
+[
+    {
+        "create_time": "2017-03-03 16:47:59.423024",
+        "datasets": [
+            {
+                "dataset_id": "17767103",
+                "extension": "gtf",
+                "file_size": 6269966574,
+                "name": "PB_A549_wt_onyx_corrected_via_gtf.fasta.gtf",
+                "param_name": "input_gtf"
+            },
+            {
+                "dataset_id": "17767103",
+                "extension": "gtf",
+                "file_size": 6269966574,
+                "name": "PB_A549_wt_onyx_corrected_via_gtf.fasta.gtf",
+                "param_name": "input_gtf1"
+            },
+            {
+                "dataset_id": "17813253",
+                "extension": "gtf",
+                "file_size": 1408161843,
+                "name": "Homo_sapiens.GRCh38.86.gtf",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "stringtie",
+                "path": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c",
+                "script": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c/env.sh",
+                "version": "1.2.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2912398,
+        "id": 15201695,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9352040.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gap_len": "\"250\"",
+            "guide_gff": "{\"values\": [{\"src\": \"hda\", \"id\": 27444728}]}",
+            "input_gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 27444722}]}",
+            "keep_introns": "\"false\"",
+            "min_cov": "\"0\"",
+            "min_fpkm": "\"1.0\"",
+            "min_iso": "\"0.01\"",
+            "min_len": "\"50\"",
+            "min_tpm": "\"1.0\""
+        },
+        "runner_name": null,
+        "session_id": 35197071,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie_merge/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-03-03 16:53:06.127788",
+        "user_id": 7115
+    },
+    {
+        "create_time": "2017-03-06 14:24:23.392879",
+        "datasets": [
+            {
+                "dataset_id": "19095446",
+                "extension": "gtf",
+                "file_size": 59812448,
+                "name": "StringTie on a549 only no ref: Assembled transcripts",
+                "param_name": "input_gtf"
+            },
+            {
+                "dataset_id": "19095446",
+                "extension": "gtf",
+                "file_size": 59812448,
+                "name": "StringTie on a549 only no ref: Assembled transcripts",
+                "param_name": "input_gtf1"
+            },
+            {
+                "dataset_id": "19096094",
+                "extension": "gtf",
+                "file_size": 58888524,
+                "name": "StringTie on onyx only no ref: Assembled transcripts",
+                "param_name": "input_gtf2"
+            },
+            {
+                "dataset_id": "19096095",
+                "extension": "gtf",
+                "file_size": 57325788,
+                "name": "StringTie on wt only no ref: Assembled transcripts",
+                "param_name": "input_gtf3"
+            },
+            {
+                "dataset_id": "17767105",
+                "extension": "gtf",
+                "file_size": 1623597670,
+                "name": "PB_A549_wt_onyx_corr_gtf_collate_all_orf.fa.sorted.gtf",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "stringtie",
+                "path": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c",
+                "script": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c/env.sh",
+                "version": "1.2.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2912398,
+        "id": 15220194,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9369026.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gap_len": "\"250\"",
+            "guide_gff": "{\"values\": [{\"src\": \"hda\", \"id\": 27444723}]}",
+            "input_gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 28637053}, {\"src\": \"hda\", \"id\": 28637717}, {\"src\": \"hda\", \"id\": 28637718}]}",
+            "keep_introns": "\"false\"",
+            "min_cov": "\"0\"",
+            "min_fpkm": "\"1.0\"",
+            "min_iso": "\"0.01\"",
+            "min_len": "\"50\"",
+            "min_tpm": "\"1.0\""
+        },
+        "runner_name": null,
+        "session_id": 35087096,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie_merge/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-03-06 14:25:45.742380",
+        "user_id": 7115
+    },
+    {
+        "create_time": "2016-12-09 16:26:17.012873",
+        "datasets": [
+            {
+                "dataset_id": "17767103",
+                "extension": "gtf",
+                "file_size": 6269966574,
+                "name": "PB_A549_wt_onyx_corrected_via_gtf.fasta.gtf",
+                "param_name": "input_gtf"
+            },
+            {
+                "dataset_id": "17767103",
+                "extension": "gtf",
+                "file_size": 6269966574,
+                "name": "PB_A549_wt_onyx_corrected_via_gtf.fasta.gtf",
+                "param_name": "input_gtf1"
+            },
+            {
+                "dataset_id": "17813253",
+                "extension": "gtf",
+                "file_size": 1408161843,
+                "name": "Homo_sapiens.GRCh38.86.gtf",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "stringtie",
+                "path": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c",
+                "script": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c/env.sh",
+                "version": "1.2.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2912398,
+        "id": 14532151,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8714948.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gap_len": "\"250\"",
+            "guide_gff": "{\"values\": [{\"src\": \"hda\", \"id\": 27444728}]}",
+            "input_gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 27444722}]}",
+            "keep_introns": "\"false\"",
+            "min_cov": "\"0\"",
+            "min_fpkm": "\"1.0\"",
+            "min_iso": "\"0.01\"",
+            "min_len": "\"50\"",
+            "min_tpm": "\"1.0\""
+        },
+        "runner_name": null,
+        "session_id": 33099108,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie_merge/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2016-12-09 16:30:38.737089",
+        "user_id": 7115
+    },
+    {
+        "create_time": "2017-03-06 14:22:01.701873",
+        "datasets": [
+            {
+                "dataset_id": "19095446",
+                "extension": "gtf",
+                "file_size": 59812448,
+                "name": "StringTie on a549 only no ref: Assembled transcripts",
+                "param_name": "input_gtf"
+            },
+            {
+                "dataset_id": "19095446",
+                "extension": "gtf",
+                "file_size": 59812448,
+                "name": "StringTie on a549 only no ref: Assembled transcripts",
+                "param_name": "input_gtf1"
+            },
+            {
+                "dataset_id": "19096094",
+                "extension": "gtf",
+                "file_size": 58888524,
+                "name": "StringTie on onyx only no ref: Assembled transcripts",
+                "param_name": "input_gtf2"
+            },
+            {
+                "dataset_id": "19096095",
+                "extension": "gtf",
+                "file_size": 57325788,
+                "name": "StringTie on wt only no ref: Assembled transcripts",
+                "param_name": "input_gtf3"
+            },
+            {
+                "dataset_id": "19094431",
+                "extension": "gtf",
+                "file_size": 1079502171,
+                "name": "Cuffcompare all pacbio with human gtf ignoring non overlapped transcripts",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "stringtie",
+                "path": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c",
+                "script": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c/env.sh",
+                "version": "1.2.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2912398,
+        "id": 15220166,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9368999.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gap_len": "\"250\"",
+            "guide_gff": "{\"values\": [{\"src\": \"hda\", \"id\": 28635913}]}",
+            "input_gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 28637053}, {\"src\": \"hda\", \"id\": 28637717}, {\"src\": \"hda\", \"id\": 28637718}]}",
+            "keep_introns": "\"false\"",
+            "min_cov": "\"0\"",
+            "min_fpkm": "\"1.0\"",
+            "min_iso": "\"0.01\"",
+            "min_len": "\"50\"",
+            "min_tpm": "\"1.0\""
+        },
+        "runner_name": null,
+        "session_id": 35087096,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie_merge/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-03-06 14:23:53.675544",
+        "user_id": 7115
+    },
+    {
+        "create_time": "2017-03-06 17:19:51.405192",
+        "datasets": [
+            {
+                "dataset_id": "19097385",
+                "extension": "gff3",
+                "file_size": 271568976,
+                "name": "longest_orf_CDS_only.sorted.gff3",
+                "param_name": "input_gtf"
+            },
+            {
+                "dataset_id": "19097385",
+                "extension": "gff3",
+                "file_size": 271568976,
+                "name": "longest_orf_CDS_only.sorted.gff3",
+                "param_name": "input_gtf1"
+            },
+            {
+                "dataset_id": "17813253",
+                "extension": "gtf",
+                "file_size": 1408161843,
+                "name": "Homo_sapiens.GRCh38.86.gtf",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "stringtie",
+                "path": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c",
+                "script": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c/env.sh",
+                "version": "1.2.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2912398,
+        "id": 15221881,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9370579.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gap_len": "\"250\"",
+            "guide_gff": "{\"values\": [{\"src\": \"hda\", \"id\": 27444728}]}",
+            "input_gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 28639016}]}",
+            "keep_introns": "\"false\"",
+            "min_cov": "\"0\"",
+            "min_fpkm": "\"1.0\"",
+            "min_iso": "\"0.01\"",
+            "min_len": "\"50\"",
+            "min_tpm": "\"1.0\""
+        },
+        "runner_name": null,
+        "session_id": 35061623,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie_merge/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-03-06 17:22:44.015541",
+        "user_id": 7115
+    },
+    {
+        "create_time": "2017-03-06 14:19:06.216971",
+        "datasets": [
+            {
+                "dataset_id": "19095446",
+                "extension": "gtf",
+                "file_size": 59812448,
+                "name": "StringTie on a549 only no ref: Assembled transcripts",
+                "param_name": "input_gtf"
+            },
+            {
+                "dataset_id": "19095446",
+                "extension": "gtf",
+                "file_size": 59812448,
+                "name": "StringTie on a549 only no ref: Assembled transcripts",
+                "param_name": "input_gtf1"
+            },
+            {
+                "dataset_id": "19096094",
+                "extension": "gtf",
+                "file_size": 58888524,
+                "name": "StringTie on onyx only no ref: Assembled transcripts",
+                "param_name": "input_gtf2"
+            },
+            {
+                "dataset_id": "19096095",
+                "extension": "gtf",
+                "file_size": 57325788,
+                "name": "StringTie on wt only no ref: Assembled transcripts",
+                "param_name": "input_gtf3"
+            },
+            {
+                "dataset_id": "19068681",
+                "extension": "gtf",
+                "file_size": 710390034,
+                "name": "Cuffcompare on data 22, data 21, and others: combined transcripts",
+                "param_name": "guide_gff"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "stringtie",
+                "path": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c",
+                "script": "/galaxy/main/deps/stringtie/1.2.3/iuc/stringtie/3437d5a5041c/env.sh",
+                "version": "1.2.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2912398,
+        "id": 15220141,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9368970.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gap_len": "\"250\"",
+            "guide_gff": "{\"values\": [{\"src\": \"hda\", \"id\": 28607745}]}",
+            "input_gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 28637053}, {\"src\": \"hda\", \"id\": 28637717}, {\"src\": \"hda\", \"id\": 28637718}]}",
+            "keep_introns": "\"false\"",
+            "min_cov": "\"0\"",
+            "min_fpkm": "\"1.0\"",
+            "min_iso": "\"0.01\"",
+            "min_len": "\"50\"",
+            "min_tpm": "\"1.0\""
+        },
+        "runner_name": null,
+        "session_id": 35087096,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie_merge/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-03-06 14:20:27.872124",
+        "user_id": 7115
+    }
+]

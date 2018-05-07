@@ -1,0 +1,398 @@
+[
+    {
+        "create_time": "2017-01-27 12:21:08.026391",
+        "datasets": [
+            {
+                "dataset_id": "18626757",
+                "extension": "h5",
+                "file_size": 27261568,
+                "name": "hifive on data 25: HiC fends",
+                "param_name": "fends"
+            },
+            {
+                "dataset_id": "18608184",
+                "extension": "bam",
+                "file_size": 7037013330,
+                "name": "Bowtie2 on data 6: aligned reads (sorted BAM)",
+                "param_name": "command|datafile|paired_bam_0|readend1"
+            },
+            {
+                "dataset_id": "18608183",
+                "extension": "bam",
+                "file_size": 7874039622,
+                "name": "Bowtie2 on data 5: aligned reads (sorted BAM)",
+                "param_name": "command|datafile|paired_bam_0|readend2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__hifive@1.3",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hifive",
+                "version": "1.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2856828,
+        "id": 14887915,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9047271.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "command": "{\"command_select\": \"hic-data\", \"fends\": {\"values\": [{\"src\": \"hda\", \"id\": 28109788}]}, \"datafile\": {\"paired_bam\": [{\"readend1\": {\"values\": [{\"src\": \"hda\", \"id\": 28088955}]}, \"__index__\": 0, \"readend2\": {\"values\": [{\"src\": \"hda\", \"id\": 28088954}]}}], \"__current_case__\": 0, \"format\": \"bam\"}, \"__current_case__\": 2, \"insert\": \"500\"}",
+            "dbkey": "\"mm10\""
+        },
+        "runner_name": null,
+        "session_id": 35343558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/sauria/hifive/hifive/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-01-27 12:24:30.758669",
+        "user_id": 47785
+    },
+    {
+        "create_time": "2017-12-06 00:18:21.785653",
+        "datasets": [
+            {
+                "dataset_id": "22618596",
+                "extension": "h5",
+                "file_size": 26356531,
+                "name": "hifive on data 1: HiC fends",
+                "param_name": "fends"
+            },
+            {
+                "dataset_id": "22607411",
+                "extension": "bam",
+                "file_size": 3353838736,
+                "name": "SRR400251_2.bam",
+                "param_name": "command|datafile|paired_bam_0|readend1"
+            },
+            {
+                "dataset_id": "22607411",
+                "extension": "bam",
+                "file_size": 3353838736,
+                "name": "SRR400251_2.bam",
+                "param_name": "command|datafile|paired_bam_0|readend2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__hifive@1.3",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hifive",
+                "version": "1.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3353792,
+        "id": 17711221,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11776161",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "command": "{\"command_select\": \"hic-data\", \"fends\": {\"values\": [{\"src\": \"hda\", \"id\": 32757372}]}, \"datafile\": {\"paired_bam\": [{\"readend1\": {\"values\": [{\"src\": \"hda\", \"id\": 32740120}]}, \"__index__\": 0, \"readend2\": {\"values\": [{\"src\": \"hda\", \"id\": 32740120}]}}], \"__current_case__\": 0, \"format\": \"bam\"}, \"__current_case__\": 2, \"insert\": \"500\"}",
+            "dbkey": "\"?\""
+        },
+        "runner_name": null,
+        "session_id": 42425236,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/sauria/hifive/hifive/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-12-06 00:21:18.585793",
+        "user_id": 117881
+    },
+    {
+        "create_time": "2017-01-27 12:25:06.096145",
+        "datasets": [
+            {
+                "dataset_id": "18626757",
+                "extension": "h5",
+                "file_size": 27261568,
+                "name": "hifive on data 25: HiC fends",
+                "param_name": "fends"
+            },
+            {
+                "dataset_id": "18608184",
+                "extension": "bam",
+                "file_size": 7037013330,
+                "name": "Bowtie2 on data 6: aligned reads (sorted BAM)",
+                "param_name": "command|datafile|paired_bam_0|readend1"
+            },
+            {
+                "dataset_id": "18608183",
+                "extension": "bam",
+                "file_size": 7874039622,
+                "name": "Bowtie2 on data 5: aligned reads (sorted BAM)",
+                "param_name": "command|datafile|paired_bam_0|readend2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__hifive@1.3",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hifive",
+                "version": "1.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2856828,
+        "id": 14887937,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9047293.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "command": "{\"command_select\": \"hic-data\", \"fends\": {\"values\": [{\"src\": \"hda\", \"id\": 28109788}]}, \"datafile\": {\"paired_bam\": [{\"readend1\": {\"values\": [{\"src\": \"hda\", \"id\": 28088955}]}, \"__index__\": 0, \"readend2\": {\"values\": [{\"src\": \"hda\", \"id\": 28088954}]}}], \"__current_case__\": 0, \"format\": \"bam\"}, \"__current_case__\": 2, \"insert\": \"500\"}",
+            "dbkey": "\"mm10\""
+        },
+        "runner_name": null,
+        "session_id": 35343558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/sauria/hifive/hifive/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-01-27 12:28:14.254583",
+        "user_id": 47785
+    },
+    {
+        "create_time": "2017-12-06 00:09:13.193175",
+        "datasets": [
+            {
+                "dataset_id": "22618596",
+                "extension": "h5",
+                "file_size": 26356531,
+                "name": "hifive on data 1: HiC fends",
+                "param_name": "fends"
+            },
+            {
+                "dataset_id": "22607409",
+                "extension": "bam",
+                "file_size": 2800258775,
+                "name": "SRR400251_1.bam",
+                "param_name": "command|datafile|paired_bam_0|readend1"
+            },
+            {
+                "dataset_id": "22607411",
+                "extension": "bam",
+                "file_size": 3353838736,
+                "name": "SRR400251_2.bam",
+                "param_name": "command|datafile|paired_bam_0|readend2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__hifive@1.3",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hifive",
+                "version": "1.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3353792,
+        "id": 17711119,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11776055",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "command": "{\"command_select\": \"hic-data\", \"fends\": {\"values\": [{\"src\": \"hda\", \"id\": 32757372}]}, \"datafile\": {\"paired_bam\": [{\"readend1\": {\"values\": [{\"src\": \"hda\", \"id\": 32740118}]}, \"__index__\": 0, \"readend2\": {\"values\": [{\"src\": \"hda\", \"id\": 32740120}]}}], \"__current_case__\": 0, \"format\": \"bam\"}, \"__current_case__\": 2, \"insert\": \"500\"}",
+            "dbkey": "\"?\""
+        },
+        "runner_name": null,
+        "session_id": 42425236,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/sauria/hifive/hifive/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-12-06 00:12:11.114560",
+        "user_id": 117881
+    },
+    {
+        "create_time": "2017-05-23 03:37:10.414973",
+        "datasets": [
+            {
+                "dataset_id": "20037587",
+                "extension": "h5",
+                "file_size": 99373090,
+                "name": "hifive on data 587: HiC fends",
+                "param_name": "fends"
+            },
+            {
+                "dataset_id": "19893387",
+                "extension": "bam",
+                "file_size": 1895523522,
+                "name": "Map with BWA on data 517 (mapped reads in BAM format)",
+                "param_name": "command|datafile|paired_bam_0|readend1"
+            },
+            {
+                "dataset_id": "19895173",
+                "extension": "bam",
+                "file_size": 2363569218,
+                "name": "Map with BWA on data 518 (mapped reads in BAM format)",
+                "param_name": "command|datafile|paired_bam_0|readend2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__hifive@1.3",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hifive",
+                "version": "1.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2729631,
+        "id": 15912208,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10010247.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "command": "{\"command_select\": \"hic-data\", \"fends\": {\"values\": [{\"src\": \"hda\", \"id\": 29726048}]}, \"datafile\": {\"paired_bam\": [{\"readend1\": {\"values\": [{\"src\": \"hda\", \"id\": 29556815}]}, \"__index__\": 0, \"readend2\": {\"values\": [{\"src\": \"hda\", \"id\": 29556827}]}}], \"__current_case__\": 0, \"format\": \"bam\"}, \"__current_case__\": 2, \"insert\": \"500\"}",
+            "dbkey": "\"mm10\""
+        },
+        "runner_name": null,
+        "session_id": 38150557,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/sauria/hifive/hifive/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-05-23 03:40:08.950197",
+        "user_id": 84314
+    },
+    {
+        "create_time": "2017-05-25 19:42:38.580802",
+        "datasets": [
+            {
+                "dataset_id": "20076547",
+                "extension": "h5",
+                "file_size": 213438088,
+                "name": "hifive on data 614: HiC fends",
+                "param_name": "fends"
+            },
+            {
+                "dataset_id": "19893387",
+                "extension": "bam",
+                "file_size": 1895523522,
+                "name": "Map with BWA on data 517 (mapped reads in BAM format)",
+                "param_name": "command|datafile|paired_bam_0|readend1"
+            },
+            {
+                "dataset_id": "19895173",
+                "extension": "bam",
+                "file_size": 2363569218,
+                "name": "Map with BWA on data 518 (mapped reads in BAM format)",
+                "param_name": "command|datafile|paired_bam_0|readend2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__hifive@1.3",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hifive",
+                "version": "1.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2729631,
+        "id": 15940243,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10038920.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "command": "{\"command_select\": \"hic-data\", \"fends\": {\"values\": [{\"src\": \"hda\", \"id\": 29774202}]}, \"datafile\": {\"paired_bam\": [{\"readend1\": {\"values\": [{\"src\": \"hda\", \"id\": 29556815}]}, \"__index__\": 0, \"readend2\": {\"values\": [{\"src\": \"hda\", \"id\": 29556827}]}}], \"__current_case__\": 0, \"format\": \"bam\"}, \"__current_case__\": 2, \"insert\": \"500\"}",
+            "dbkey": "\"mm10\""
+        },
+        "runner_name": null,
+        "session_id": 38217856,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/sauria/hifive/hifive/0.1.0",
+        "tool_version": "0.1.0",
+        "traceback": null,
+        "update_time": "2017-05-25 19:45:28.811487",
+        "user_id": 84314
+    }
+]

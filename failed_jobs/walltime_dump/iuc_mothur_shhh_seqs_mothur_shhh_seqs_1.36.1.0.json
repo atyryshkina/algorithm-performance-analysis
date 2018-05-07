@@ -1,0 +1,64 @@
+[
+    {
+        "create_time": "2017-11-21 10:15:49.777346",
+        "datasets": [
+            {
+                "dataset_id": "22353936",
+                "extension": "fasta",
+                "file_size": 14643128,
+                "name": "Unique.seqs on data 101: fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22353937",
+                "extension": "mothur.names",
+                "file_size": 938826,
+                "name": "Unique.seqs on data 101: names",
+                "param_name": "name"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2835448,
+        "id": 17532864,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11592132",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "fasta": "{\"values\": [{\"src\": \"hda\", \"id\": 32443471}]}",
+            "group": "null",
+            "name": "{\"values\": [{\"src\": \"hda\", \"id\": 32443472}]}",
+            "sigma": "\"0.01\""
+        },
+        "runner_name": null,
+        "session_id": 42143389,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_shhh_seqs/mothur_shhh_seqs/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-22 22:16:13.303160",
+        "user_id": 75964
+    }
+]

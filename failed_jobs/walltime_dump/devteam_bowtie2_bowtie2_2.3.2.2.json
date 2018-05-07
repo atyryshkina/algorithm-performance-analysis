@@ -1,0 +1,155 @@
+[
+    {
+        "create_time": "2017-10-02 00:12:29.536788",
+        "datasets": [
+            {
+                "dataset_id": "21509963",
+                "extension": "fastqsanger.gz",
+                "file_size": 84065104381,
+                "name": "EBI SRA: SRR2129993 File: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR212/003/SRR2129993/SRR2129993_1.fastq.gz",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "21509965",
+                "extension": "fastqsanger.gz",
+                "file_size": 86121866804,
+                "name": "EBI SRA: SRR2129993 File: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR212/003/SRR2129993/SRR2129993_2.fastq.gz",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-cf272fa72b0572012c68ee2cbf0c8f909a02f29be46918c2a23283da1d3d76b5",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bowtie2",
+                "version": "2.3.2"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-cf272fa72b0572012c68ee2cbf0c8f909a02f29be46918c2a23283da1d3d76b5",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3272421,
+        "id": 16982102,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11049318.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"true\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": 31494354}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 31494352}]}, \"type\": \"paired\", \"paired_options\": {\"no_mixed\": \"false\", \"dovetail\": \"false\", \"I\": \"0\", \"no_contain\": \"false\", \"no_discordant\": \"false\", \"no_overlap\": \"false\", \"__current_case__\": 0, \"X\": \"500\", \"fr_rf_ff\": \"--fr\", \"paired_options_selector\": \"yes\"}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg38canon\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40989520,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.2.2",
+        "tool_version": "2.3.2.2",
+        "traceback": null,
+        "update_time": "2017-10-03 12:13:00.832029",
+        "user_id": 112562
+    },
+    {
+        "create_time": "2017-09-22 06:56:50.013813",
+        "datasets": [
+            {
+                "dataset_id": "21265577",
+                "extension": "fastqsanger",
+                "file_size": 122938457701,
+                "name": "Trim Galore! on data 2 and data 5: trimmed reads pair 1",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "21265578",
+                "extension": "fastqsanger",
+                "file_size": 112632327633,
+                "name": "Trim Galore! on data 2 and data 5: trimmed reads pair 2",
+                "param_name": "input_2"
+            },
+            {
+                "dataset_id": "21327807",
+                "extension": "fasta",
+                "file_size": 1259808371,
+                "name": "asm.consensus.fasta",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-cf272fa72b0572012c68ee2cbf0c8f909a02f29be46918c2a23283da1d3d76b5",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bowtie2",
+                "version": "2.3.2"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-cf272fa72b0572012c68ee2cbf0c8f909a02f29be46918c2a23283da1d3d76b5",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 1172460,
+        "id": 16896379,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10965238.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": 31215255}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 31215254}]}, \"type\": \"paired\", \"paired_options\": {\"no_mixed\": \"false\", \"dovetail\": \"false\", \"I\": \"0\", \"no_contain\": \"false\", \"no_discordant\": \"false\", \"no_overlap\": \"false\", \"__current_case__\": 0, \"X\": \"1000\", \"fr_rf_ff\": \"--fr\", \"paired_options_selector\": \"yes\"}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 31288765}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40401459,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.2.2",
+        "tool_version": "2.3.2.2",
+        "traceback": null,
+        "update_time": "2017-09-23 18:57:16.695722",
+        "user_id": 27599
+    }
+]

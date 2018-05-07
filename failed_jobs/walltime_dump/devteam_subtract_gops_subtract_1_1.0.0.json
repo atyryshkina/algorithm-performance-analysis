@@ -1,0 +1,75 @@
+[
+    {
+        "create_time": "2017-01-20 00:42:54.892745",
+        "datasets": [
+            {
+                "dataset_id": "18535706",
+                "extension": "bedgraph",
+                "file_size": 2629703255,
+                "name": "15142.bedGraph",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "18535714",
+                "extension": "bedgraph",
+                "file_size": 2636222908,
+                "name": "15150.bedGraph",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/subtract/7bf44b9d7a8b",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/subtract/7bf44b9d7a8b/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/subtract/7bf44b9d7a8b",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/subtract/7bf44b9d7a8b/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2923824,
+        "id": 14825823,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8986795.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28010145}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 28010137}]}",
+            "min": "\"1\"",
+            "returntype": "\"-p\""
+        },
+        "runner_name": null,
+        "session_id": 35179543,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/subtract/gops_subtract_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-01-21 12:43:20.640119",
+        "user_id": 96598
+    }
+]

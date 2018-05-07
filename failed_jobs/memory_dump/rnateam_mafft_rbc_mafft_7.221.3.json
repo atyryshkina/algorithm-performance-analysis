@@ -1,0 +1,722 @@
+[
+    {
+        "create_time": "2017-03-07 14:37:39.452335",
+        "datasets": [
+            {
+                "dataset_id": "19112287",
+                "extension": "fasta",
+                "file_size": 7860094,
+                "name": "ImCubatao_scaffolds.fa",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3021932,
+        "id": 15230835,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9378665.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft --auto\", \"__current_case__\": 1}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 28654957}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36482023,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2017-03-07 14:56:12.369105",
+        "user_id": 101553
+    },
+    {
+        "create_time": "2017-03-23 11:41:18.705391",
+        "datasets": [
+            {
+                "dataset_id": "19309796",
+                "extension": "fasta",
+                "file_size": 9825289,
+                "name": "Filter sequences by length on data 193",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2222052,
+        "id": 15374744,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9512856.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-fftnsi\", \"__current_case__\": 2}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 28892330}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 35324192,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2017-03-23 19:26:27.592093",
+        "user_id": 8998
+    },
+    {
+        "create_time": "2017-08-14 19:55:44.907991",
+        "datasets": [
+            {
+                "dataset_id": "20956038",
+                "extension": "fasta",
+                "file_size": 3838436,
+                "name": "CLC05-mismatch0__BC2.txt",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3040340,
+        "id": 16579722,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10650998.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-linsi\", \"__current_case__\": 7}",
+            "datatype": "\"\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 30872177}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"--clustalout\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 39864452,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2017-08-14 19:56:11.331844",
+        "user_id": 102508
+    },
+    {
+        "create_time": "2016-12-02 11:32:29.800257",
+        "datasets": [
+            {
+                "dataset_id": "18048151",
+                "extension": "fasta",
+                "file_size": 132070195,
+                "name": "JV4d_M2_body_processed.fasta",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2704142,
+        "id": 14471762,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8665034.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-fftns\", \"__current_case__\": 0}",
+            "datatype": "\"\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 27471167}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34597519,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2016-12-02 11:33:04.043358",
+        "user_id": 46771
+    },
+    {
+        "create_time": "2016-11-04 18:11:22.736071",
+        "datasets": [
+            {
+                "dataset_id": "17735871",
+                "extension": "fasta",
+                "file_size": 654438462,
+                "name": "Concatenate datasets on data 154 and data 72",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2850354,
+        "id": 14255028,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8463722.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-nwns\", \"__current_case__\": 3}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"true\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5aee112036a07a1f7\"}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"--clustalout\"",
+            "reorder": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 33592673,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2016-11-04 18:21:47.727697",
+        "user_id": 48811
+    },
+    {
+        "create_time": "2018-02-19 20:37:20.132376",
+        "datasets": [
+            {
+                "dataset_id": "23670521",
+                "extension": "fasta",
+                "file_size": 22380293,
+                "name": "FASTQ to FASTA on data 1",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3434797,
+        "id": 18440229,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12534959",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-fftns\", \"__current_case__\": 0}",
+            "datatype": "\"\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"true\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 33942036}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 44005329,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2018-02-19 20:45:20.302887",
+        "user_id": 52654
+    },
+    {
+        "create_time": "2017-03-07 14:37:39.022959",
+        "datasets": [
+            {
+                "dataset_id": "19112243",
+                "extension": "fasta",
+                "file_size": 6647184,
+                "name": "ImSantoA_scaffolds.fa",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3021932,
+        "id": 15230834,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9378660.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft --auto\", \"__current_case__\": 1}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 28654913}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36482023,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2017-03-07 14:50:05.287260",
+        "user_id": 101553
+    },
+    {
+        "create_time": "2018-01-10 18:22:09.808454",
+        "datasets": [
+            {
+                "dataset_id": "23024531",
+                "extension": "fasta",
+                "file_size": 7805173,
+                "name": "Tabular-to-FASTA on data 153",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3383185,
+        "id": 17995294,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12072031",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-nwns\", \"__current_case__\": 3}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"true\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 33236701}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"--clustalout\"",
+            "reorder": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42590566,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2018-01-10 18:22:30.055538",
+        "user_id": 91624
+    },
+    {
+        "create_time": "2016-09-19 14:33:54.853280",
+        "datasets": [
+            {
+                "dataset_id": "17218629",
+                "extension": "fasta",
+                "file_size": 2355623,
+                "name": "master-align.fa",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2823740,
+        "id": 13884130,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8107583.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-ginsi\", \"__current_case__\": 6}",
+            "datatype": "\"--amino\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"true\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59faaa4ad84a1509d\"}]}",
+            "matrix_condition": "{\"BLOSUM\": \"45\", \"matrix\": \"BLOSUM\", \"__current_case__\": 1}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"--phylipout\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 33017954,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2016-09-19 14:34:48.505301",
+        "user_id": 84359
+    },
+    {
+        "create_time": "2017-12-05 18:29:50.800323",
+        "datasets": [
+            {
+                "dataset_id": "22613261",
+                "extension": "fasta",
+                "file_size": 24093644,
+                "name": "Galaxy RL1.fasta",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3353423,
+        "id": 17707667,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11772307",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-fftns\", \"__current_case__\": 0}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 32751476}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42479437,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2017-12-05 18:30:26.019962",
+        "user_id": 54826
+    },
+    {
+        "create_time": "2017-11-07 16:04:31.880557",
+        "datasets": [
+            {
+                "dataset_id": "22078376",
+                "extension": "fasta",
+                "file_size": 15093740,
+                "name": "Convert, Merge, Randomize on data 12",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3314982,
+        "id": 17368926,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11426701",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft-fftns\", \"__current_case__\": 0}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 32127556}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41813223,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2017-11-07 16:07:36.166277",
+        "user_id": 115540
+    },
+    {
+        "create_time": "2016-11-23 01:42:28.949382",
+        "datasets": [
+            {
+                "dataset_id": "17949929",
+                "extension": "fasta",
+                "file_size": 2170685769,
+                "name": "ftp://ftp.ensemblgenomes.org/pub/plants/release-33/fasta/zea_mays/dna/Zea_mays.AGPv4.dna_sm.toplevel.fa",
+                "param_name": "inputSequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "mafft",
+                "path": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195",
+                "script": "/galaxy/main/deps/mafft/7.221/rnateam/mafft/f0606dfd5195/env.sh",
+                "version": "7.221"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2775463,
+        "id": 14410073,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8614880.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adjustdirection": "\" \"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cond_flavour": "{\"flavourType\": \"mafft --auto\", \"__current_case__\": 1}",
+            "datatype": "\"--nuc\"",
+            "dbkey": "\"?\"",
+            "ep": "\"0.123\"",
+            "getTree": "\"false\"",
+            "inputSequences": "{\"values\": [{\"src\": \"hda\", \"id\": 27358757}]}",
+            "matrix_condition": "{\"matrix\": \"\", \"__current_case__\": 0}",
+            "op": "\"1.53\"",
+            "outputFormat": "\"--clustalout\"",
+            "reorder": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34364250,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/mafft/rbc_mafft/7.221.3",
+        "tool_version": "7.221.3",
+        "traceback": null,
+        "update_time": "2016-11-23 01:50:10.568866",
+        "user_id": 87777
+    }
+]

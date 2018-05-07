@@ -1,0 +1,340 @@
+[
+    {
+        "create_time": "2014-12-27 06:50:28.475141",
+        "datasets": [
+            {
+                "dataset_id": "10065371",
+                "extension": "fastqsanger",
+                "file_size": 13494661751,
+                "name": "FASTQ Groomer on data 6",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10065370",
+                "extension": "fastqsanger",
+                "file_size": 13494661751,
+                "name": "FASTQ Groomer on data 5",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "roundup_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2150273,
+        "id": 8471090,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2380648",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "18052407",
+            "refGenomeSource": "{\"genomeSource\": \"indexed\", \"index\": \"/galaxy/data/hg19/bowtie_index/hg19\", \"__current_case__\": 0}",
+            "singlePaired": "{\"input2\": 18052408, \"sPaired\": \"paired\", \"pParams\": {\"library_type\": \"fr-unstranded\", \"closure_search\": {\"use_search\": \"No\", \"__current_case__\": 1}, \"__current_case__\": 1, \"indel_search\": {\"max_insertion_length\": \"3\", \"max_deletion_length\": \"3\", \"__current_case__\": 1, \"allow_indel_search\": \"Yes\"}, \"seg_length\": \"25\", \"max_intron_length\": \"500000\", \"pSettingsType\": \"full\", \"min_intron_length\": \"70\", \"microexon_search\": \"No\", \"min_segment_intron\": \"50\", \"max_multihits\": \"20\", \"coverage_search\": {\"use_search\": \"Yes\", \"max_coverage_intron\": \"20000\", \"__current_case__\": 0, \"min_coverage_intron\": \"50\"}, \"splice_mismatches\": \"0\", \"anchor_length\": \"8\", \"mate_std_dev\": \"20\", \"own_junctions\": {\"use_junctions\": \"No\", \"__current_case__\": 1}, \"seg_mismatches\": \"2\", \"initial_read_mismatches\": \"2\", \"max_segment_intron\": \"500000\"}, \"__current_case__\": 1, \"mate_inner_distance\": \"20\"}"
+        },
+        "runner_name": null,
+        "session_id": 20241649,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tophat/tophat/1.5.0",
+        "tool_version": "1.5.0",
+        "traceback": null,
+        "update_time": "2014-12-27 22:39:25.932745",
+        "user_id": 57509
+    },
+    {
+        "create_time": "2018-01-11 16:53:19.903639",
+        "datasets": [
+            {
+                "dataset_id": "23032985",
+                "extension": "fastqsanger",
+                "file_size": 45466275326,
+                "name": "FASTQ Groomer on data 27",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/tophat/1030acbecce6/env.sh",
+                "version": "0.1.18"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie",
+                "path": "/galaxy/main/deps/bowtie/0.12.7/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/bowtie/0.12.7/devteam/tophat/1030acbecce6/env.sh",
+                "version": "0.12.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "tophat",
+                "path": "/galaxy/main/deps/tophat/1.4.0/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/tophat/1.4.0/devteam/tophat/1030acbecce6/env.sh",
+                "version": "1.4.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3375607,
+        "id": 18004908,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12081973",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33245762}]}",
+            "refGenomeSource": "{\"genomeSource\": \"indexed\", \"index\": \"/galaxy/data/hg19/bowtie_index/hg19\", \"__current_case__\": 0}",
+            "singlePaired": "{\"sParams\": {\"sSettingsType\": \"preSet\", \"__current_case__\": 0}, \"sPaired\": \"single\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43036355,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tophat/tophat/1.5.0",
+        "tool_version": "1.5.0",
+        "traceback": null,
+        "update_time": "2018-01-12 03:56:01.381436",
+        "user_id": 119118
+    },
+    {
+        "create_time": "2015-02-28 17:18:57.687843",
+        "datasets": [
+            {
+                "dataset_id": "10506223",
+                "extension": "fastqsanger",
+                "file_size": 9432655909,
+                "name": "4-2",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10506222",
+                "extension": "fastqsanger",
+                "file_size": 9432655909,
+                "name": "4-1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "roundup_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2214912,
+        "id": 8833593,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2954643",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19Patch10.len\"",
+            "dbkey": "\"hg19Patch10\"",
+            "input1": "18641011",
+            "refGenomeSource": "{\"genomeSource\": \"indexed\", \"index\": \"Araly1\", \"__current_case__\": 0}",
+            "singlePaired": "{\"input2\": 18641012, \"sPaired\": \"paired\", \"pParams\": {\"pSettingsType\": \"preSet\", \"__current_case__\": 0}, \"__current_case__\": 1, \"mate_inner_distance\": \"20\"}"
+        },
+        "runner_name": null,
+        "session_id": 21453643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tophat/tophat/1.5.0",
+        "tool_version": "1.5.0",
+        "traceback": null,
+        "update_time": "2015-02-28 22:33:29.352888",
+        "user_id": 13627
+    },
+    {
+        "create_time": "2018-01-11 16:51:26.926763",
+        "datasets": [
+            {
+                "dataset_id": "23032986",
+                "extension": "fastqsanger",
+                "file_size": 45466275326,
+                "name": "FASTQ Groomer on data 27",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/tophat/1030acbecce6/env.sh",
+                "version": "0.1.18"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie",
+                "path": "/galaxy/main/deps/bowtie/0.12.7/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/bowtie/0.12.7/devteam/tophat/1030acbecce6/env.sh",
+                "version": "0.12.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "tophat",
+                "path": "/galaxy/main/deps/tophat/1.4.0/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/tophat/1.4.0/devteam/tophat/1030acbecce6/env.sh",
+                "version": "1.4.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3375607,
+        "id": 18004892,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12081953",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33245763}]}",
+            "refGenomeSource": "{\"genomeSource\": \"indexed\", \"index\": \"/galaxy/data/hg19/bowtie_index/hg19\", \"__current_case__\": 0}",
+            "singlePaired": "{\"sParams\": {\"sSettingsType\": \"preSet\", \"__current_case__\": 0}, \"sPaired\": \"single\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43036355,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tophat/tophat/1.5.0",
+        "tool_version": "1.5.0",
+        "traceback": null,
+        "update_time": "2018-01-12 02:53:38.094730",
+        "user_id": 119118
+    },
+    {
+        "create_time": "2018-01-10 12:52:31.151937",
+        "datasets": [
+            {
+                "dataset_id": "23032985",
+                "extension": "fastqsanger",
+                "file_size": 45466275326,
+                "name": "FASTQ Groomer on data 27",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23032986",
+                "extension": "fastqsanger",
+                "file_size": 45466275326,
+                "name": "FASTQ Groomer on data 27",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/tophat/1030acbecce6/env.sh",
+                "version": "0.1.18"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie",
+                "path": "/galaxy/main/deps/bowtie/0.12.7/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/bowtie/0.12.7/devteam/tophat/1030acbecce6/env.sh",
+                "version": "0.12.7"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "tophat",
+                "path": "/galaxy/main/deps/tophat/1.4.0/devteam/tophat/1030acbecce6",
+                "script": "/galaxy/main/deps/tophat/1.4.0/devteam/tophat/1030acbecce6/env.sh",
+                "version": "1.4.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3375607,
+        "id": 17992264,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12072877",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"1bfc52baf60511e78714005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33245762}]}",
+            "refGenomeSource": "{\"genomeSource\": \"indexed\", \"index\": \"/galaxy/data/hg19/bowtie_index/hg19\", \"__current_case__\": 0}",
+            "singlePaired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33245763}]}, \"sPaired\": \"paired\", \"pParams\": {\"pSettingsType\": \"preSet\", \"__current_case__\": 0}, \"__current_case__\": 1, \"mate_inner_distance\": \"20\"}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/tophat/tophat/1.5.0",
+        "tool_version": "1.5.0",
+        "traceback": null,
+        "update_time": "2018-01-11 13:38:59.835573",
+        "user_id": 119118
+    }
+]

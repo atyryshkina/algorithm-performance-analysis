@@ -1,0 +1,57 @@
+[
+    {
+        "create_time": "2017-10-30 17:06:54.255598",
+        "datasets": [
+            {
+                "dataset_id": "21929057",
+                "extension": "fasta",
+                "file_size": 4778960604,
+                "name": "Tumor 327 fasta",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3303847,
+        "id": 17266992,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11326198",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 31963825}]}",
+            "out_format1": "\"match\"",
+            "wordsize": "\"24\""
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: seqmatchall83/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-30 17:10:53.515084",
+        "user_id": 114191
+    }
+]

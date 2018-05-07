@@ -1,0 +1,150 @@
+[
+    {
+        "create_time": "2017-08-04 20:09:22.857269",
+        "datasets": [
+            {
+                "dataset_id": "20856353",
+                "extension": "vcf",
+                "file_size": 22163877,
+                "name": "0b36eef2-2759-4945-bbb1-70136303b4ac.som.vcf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20856647",
+                "extension": "snpeffdb",
+                "file_size": 138,
+                "name": "SnpEff Download SnpEff4.1 GRCh37.74",
+                "param_name": "snpeff_db"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__snpEff@4.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "snpEff",
+                "version": "4.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3213260,
+        "id": 16507329,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10577290.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-canon\", \"-classic\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30762646}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"nextprot\", \"motif\"], \"snpeff_db\": {\"values\": [{\"src\": \"hda\", \"id\": 30763149}]}, \"regulation\": [\"H1ESC\", \"NH-A\", \"GM06990\", \"HMEC\", \"HeLa-S3\", \"K562\", \"IMR90\", \"CD4\", \"HUVEC\", \"HepG2\", \"GM12878\", \"NHEK\", \"HSMM\"], \"__current_case__\": 1, \"genomeSrc\": \"history\"}",
+            "spliceRegion": "{\"__current_case__\": 0, \"setSpliceRegions\": \"no\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 39718357,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.1.0",
+        "tool_version": "4.1.0",
+        "traceback": null,
+        "update_time": "2017-08-04 20:18:22.373271",
+        "user_id": 15791
+    },
+    {
+        "create_time": "2017-07-25 17:19:11.769309",
+        "datasets": [
+            {
+                "dataset_id": "20712195",
+                "extension": "vcf",
+                "file_size": 57394864,
+                "name": "FreeBayes on data 818 (variants)",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20721184",
+                "extension": "snpeffdb",
+                "file_size": 138,
+                "name": "SnpEff Download SnpEff4.1 GRCh37.75",
+                "param_name": "snpeff_db"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__snpEff@4.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "snpEff",
+                "version": "4.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3187857,
+        "id": 16415586,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10480642.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "null",
+            "chr": "\"chr\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30597319}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"nextprot\", \"motif\"], \"snpeff_db\": {\"values\": [{\"src\": \"hda\", \"id\": 30606747}]}, \"regulation\": [\"H1ESC\", \"NH-A\", \"GM06990\", \"HMEC\", \"HeLa-S3\", \"K562\", \"IMR90\", \"CD4\", \"HUVEC\", \"HepG2\", \"GM12878\", \"NHEK\", \"HSMM\"], \"__current_case__\": 1, \"genomeSrc\": \"history\"}",
+            "spliceRegion": "{\"__current_case__\": 0, \"setSpliceRegions\": \"no\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38728806,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.1.0",
+        "tool_version": "4.1.0",
+        "traceback": null,
+        "update_time": "2017-07-25 17:25:09.704165",
+        "user_id": 103278
+    }
+]

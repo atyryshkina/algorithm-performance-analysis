@@ -1,0 +1,3476 @@
+[
+    {
+        "create_time": "2016-04-06 17:07:21.815159",
+        "datasets": [
+            {
+                "dataset_id": "14933928",
+                "extension": "vcf",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15101270",
+                "extension": "bed",
+                "file_size": 4716297456,
+                "name": "GSM1517306_LN5_chr7.bed",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15101270",
+                "extension": "bed",
+                "file_size": 4716297456,
+                "name": "GSM1517306_LN5_chr7.bed",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2658720,
+        "id": 12355129,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6560054.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "24168544",
+            "inputB": "\"24170281\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29444958,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-06 18:01:08.857072",
+        "user_id": 30491
+    },
+    {
+        "create_time": "2016-06-02 11:36:52.261420",
+        "datasets": [
+            {
+                "dataset_id": "16062387",
+                "extension": "bed",
+                "file_size": 12830334,
+                "name": "UCSC Main on Human: wgEncodeGencodeBasicV23 (genome)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16062304",
+                "extension": "bed",
+                "file_size": 3362500676,
+                "name": "Bowtie2 on data 440: aligned reads (sorted BAM) (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16062304",
+                "extension": "bed",
+                "file_size": 3362500676,
+                "name": "Bowtie2 on data 440: aligned reads (sorted BAM) (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2652603,
+        "id": 13048935,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7234757.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b509a5ca76e9d56e65\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54aab4503c7d2b8c9\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-02 11:39:31.690628",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-06-07 08:01:31.028915",
+        "datasets": [
+            {
+                "dataset_id": "16125155",
+                "extension": "bed",
+                "file_size": 2032118,
+                "name": "UCSC Main on Human: gtexGene (genome)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16111108",
+                "extension": "bam",
+                "file_size": 1129210335,
+                "name": "RmDup on data 710",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16111108",
+                "extension": "bam",
+                "file_size": 1129210335,
+                "name": "RmDup on data 710",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2652603,
+        "id": 13092526,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7276481.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b528b6d0d55b01a1b3\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b580582d0bc8ba3b37\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-07 08:02:58.537540",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-04-22 15:58:35.118513",
+        "datasets": [
+            {
+                "dataset_id": "15365124",
+                "extension": "bed",
+                "file_size": 9198,
+                "name": "MB pooled.BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2677438,
+        "id": 12569961,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755117.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "fraction": "\"0.52\"",
+            "header": "\"true\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506048f89f892b169\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"true\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 15:59:18.108668",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-05-16 10:04:25.443151",
+        "datasets": [
+            {
+                "dataset_id": "15848286",
+                "extension": "gtf",
+                "file_size": 229923,
+                "name": "SVA_hg19_AD_fin.gtf",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15849615",
+                "extension": "bed",
+                "file_size": 1055068958,
+                "name": "Convert, Merge, Randomize on data 169",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15849615",
+                "extension": "bed",
+                "file_size": 1055068958,
+                "name": "Convert, Merge, Randomize on data 169",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2658961,
+        "id": 12907036,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7101476.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"0.25\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5404908cf1ed76d58\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f66658354145f8e1\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30210765,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-16 10:05:31.844897",
+        "user_id": 82030
+    },
+    {
+        "create_time": "2016-04-28 09:04:35.676008",
+        "datasets": [
+            {
+                "dataset_id": "15395918",
+                "extension": "bam",
+                "file_size": 70015,
+                "name": "Intersect interval files on MB pooled.BED and MB pooled.BAM",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15508746",
+                "extension": "bed",
+                "file_size": 6024210061,
+                "name": "UCSC Main on Human: snp146 (genome)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15508746",
+                "extension": "bed",
+                "file_size": 6024210061,
+                "name": "UCSC Main on Human: snp146 (genome)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2687946,
+        "id": 12664623,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6866190.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c7d6ac4a7b03387d\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f66f6e85f2a763b7\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-28 09:14:35.314069",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-05-13 14:11:58.416622",
+        "datasets": [
+            {
+                "dataset_id": "15812167",
+                "extension": "bed",
+                "file_size": 599402,
+                "name": "P22_WT-H3K4me3 Enriched TSS_500bp Flank-TSS Window.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15750793",
+                "extension": "bed",
+                "file_size": 1294738306,
+                "name": "H3K4me3-2",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15750793",
+                "extension": "bed",
+                "file_size": 1294738306,
+                "name": "H3K4me3-2",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2700893,
+        "id": 12884723,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7083719.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"mm9\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c418afb9fda1a9c8\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b9e0479ff262fe5f\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 28776799,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-13 14:13:19.090317",
+        "user_id": 67495
+    },
+    {
+        "create_time": "2016-06-06 17:53:51.180742",
+        "datasets": [
+            {
+                "dataset_id": "16118933",
+                "extension": "bed",
+                "file_size": 203377587,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16115426",
+                "extension": "bam",
+                "file_size": 673500647,
+                "name": "RmDup on data 690",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16115426",
+                "extension": "bam",
+                "file_size": 673500647,
+                "name": "RmDup on data 690",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2652603,
+        "id": 13088048,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7272234.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a949d5a190532365\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d6274259d529a97a\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-06 17:55:17.611345",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-06-02 11:26:44.128287",
+        "datasets": [
+            {
+                "dataset_id": "16062387",
+                "extension": "bed",
+                "file_size": 12830334,
+                "name": "UCSC Main on Human: wgEncodeGencodeBasicV23 (genome)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16062304",
+                "extension": "bed",
+                "file_size": 3362500676,
+                "name": "Bowtie2 on data 440: aligned reads (sorted BAM) (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16062304",
+                "extension": "bed",
+                "file_size": 3362500676,
+                "name": "Bowtie2 on data 440: aligned reads (sorted BAM) (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2652603,
+        "id": 13048889,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7234687.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b509a5ca76e9d56e65\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54aab4503c7d2b8c9\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-02 11:27:58.782826",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-08-31 22:45:51.893065",
+        "datasets": [
+            {
+                "dataset_id": "17049294",
+                "extension": "bed",
+                "file_size": 653883,
+                "name": "GSM830987_K562_CBX8.seg.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "17049000",
+                "extension": "bam",
+                "file_size": 2345113832,
+                "name": "Merge BAM Files on data 15 and data 14",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "17049000",
+                "extension": "bam",
+                "file_size": 2345113832,
+                "name": "Merge BAM Files on data 15 and data 14",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2805191,
+        "id": 13759612,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7980799.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "fraction": "\"0.50\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5575302222c889d45\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d62928e573233787\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"-s\""
+        },
+        "runner_name": null,
+        "session_id": 32701926,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-08-31 22:46:52.156120",
+        "user_id": 89304
+    },
+    {
+        "create_time": "2016-06-07 16:50:58.356376",
+        "datasets": [
+            {
+                "dataset_id": "16133008",
+                "extension": "bed",
+                "file_size": 7885712,
+                "name": "UCSC Main on Human: wgEncodeGencodeCompV23 (genome) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16133417",
+                "extension": "bed",
+                "file_size": 1390805261,
+                "name": "RmDup on data 688 (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16133417",
+                "extension": "bed",
+                "file_size": 1390805261,
+                "name": "RmDup on data 688 (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2652603,
+        "id": 13098924,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7282880.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5647866cc01389b80\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b515d6c4c9419d6952\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-07 16:53:06.884836",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-04-13 03:37:46.581546",
+        "datasets": [
+            {
+                "dataset_id": "15164402",
+                "extension": "bed",
+                "file_size": 593019385,
+                "name": "CTCF_all_Human.bed (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15164624",
+                "extension": "bed",
+                "file_size": 1091445356,
+                "name": "ResultCount_MERGING_1_NIC1254A53.hg19_rCRSchrm.fa.realign.mdups.recal.cpg.filtered.sort.CG.6plus2.fixed.bed",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15164624",
+                "extension": "bed",
+                "file_size": 1091445356,
+                "name": "ResultCount_MERGING_1_NIC1254A53.hg19_rCRSchrm.fa.realign.mdups.recal.cpg.filtered.sort.CG.6plus2.fixed.bed",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2645667,
+        "id": 12436430,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6636113.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5af9d6a527e3fe74f\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54031edf9875e1493\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29495124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-13 03:38:50.746995",
+        "user_id": 79460
+    },
+    {
+        "create_time": "2016-04-22 15:53:22.871558",
+        "datasets": [
+            {
+                "dataset_id": "15365124",
+                "extension": "bed",
+                "file_size": 9198,
+                "name": "MB pooled.BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2677438,
+        "id": 12569617,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755073.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "fraction": "\"0.52\"",
+            "header": "\"true\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506048f89f892b169\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"true\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 15:54:08.588136",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-03-20 16:20:32.353551",
+        "datasets": [
+            {
+                "dataset_id": "14891995",
+                "extension": "vcf",
+                "file_size": 26927282,
+                "name": "Varscan on data 26",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14887357",
+                "extension": "bam",
+                "file_size": 13898039460,
+                "name": "Convert, Merge, Randomize on data 498, data 211, and others",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14887357",
+                "extension": "bam",
+                "file_size": 13898039460,
+                "name": "Convert, Merge, Randomize on data 498, data 211, and others",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2639541,
+        "id": 12204068,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6415981.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/TRAC.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"TRAC\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "23930468",
+            "inputB": "\"23926879\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29077252,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-20 16:22:23.159684",
+        "user_id": 68732
+    },
+    {
+        "create_time": "2016-04-22 15:59:45.924293",
+        "datasets": [
+            {
+                "dataset_id": "15365124",
+                "extension": "bed",
+                "file_size": 9198,
+                "name": "MB pooled.BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2677438,
+        "id": 12570164,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755130.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "fraction": "\"0.52\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506048f89f892b169\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"true\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 16:00:26.367083",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-03-10 14:12:27.922422",
+        "datasets": [
+            {
+                "dataset_id": "14702115",
+                "extension": "bed",
+                "file_size": 6752,
+                "name": "chimp_AD_SVA_annot.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14757966",
+                "extension": "bam",
+                "file_size": 2995678625,
+                "name": "RmDup on data 1487",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14757966",
+                "extension": "bam",
+                "file_size": 2995678625,
+                "name": "RmDup on data 1487",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 1372215,
+        "id": 12095876,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6320244.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"panTro4\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "23713907",
+            "inputB": "\"23778093\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27460700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-10 14:13:25.950388",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-03-07 15:14:21.519470",
+        "datasets": [
+            {
+                "dataset_id": "14702115",
+                "extension": "bed",
+                "file_size": 6752,
+                "name": "chimp_AD_SVA_annot.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1372215,
+        "id": 12056138,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6279522.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"panTro4\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "23713907",
+            "inputB": "\"23709122\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27460700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-07 15:15:45.915854",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-06-08 10:36:13.104151",
+        "datasets": [
+            {
+                "dataset_id": "16144015",
+                "extension": "vcf",
+                "file_size": 3124287,
+                "name": "SnpEff on data 119",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14933928",
+                "extension": "bed",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14933928",
+                "extension": "bed",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "inputB2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2716567,
+        "id": 13105778,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7291981.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bc043d1436f58046\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bdf224b76f2a1a6c\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5daa362f81d8d6470\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30723747,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-08 10:37:14.449170",
+        "user_id": 85019
+    },
+    {
+        "create_time": "2016-03-07 11:50:44.103522",
+        "datasets": [
+            {
+                "dataset_id": "14702115",
+                "extension": "bed",
+                "file_size": 6752,
+                "name": "chimp_AD_SVA_annot.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 1372215,
+        "id": 12050955,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6276595.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"panTro4\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "23713907",
+            "inputB": "\"23709122\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27460700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-07 11:51:49.236365",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-06-02 12:45:18.570236",
+        "datasets": [
+            {
+                "dataset_id": "16063303",
+                "extension": "bed",
+                "file_size": 6327102,
+                "name": "Human_geneName_sorted.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16063329",
+                "extension": "bed",
+                "file_size": 973008375,
+                "name": "MACS2 callpeak on data 482 and data 478 (Bedgraph Treatment)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16063329",
+                "extension": "bed",
+                "file_size": 973008375,
+                "name": "MACS2 callpeak on data 482 and data 478 (Bedgraph Treatment)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2652603,
+        "id": 13049327,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7235375.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5208f84999c2c1cf3\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b2718df9ad835c59\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-02 13:04:17.344172",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-03-20 16:29:21.332577",
+        "datasets": [
+            {
+                "dataset_id": "14891995",
+                "extension": "vcf",
+                "file_size": 26927282,
+                "name": "Varscan on data 26",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14887357",
+                "extension": "bam",
+                "file_size": 13898039460,
+                "name": "Convert, Merge, Randomize on data 498, data 211, and others",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14887357",
+                "extension": "bam",
+                "file_size": 13898039460,
+                "name": "Convert, Merge, Randomize on data 498, data 211, and others",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2639541,
+        "id": 12204107,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6416033.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/TRAC.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"TRAC\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "23930468",
+            "inputB": "\"23926879\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29077252,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-20 16:32:11.012235",
+        "user_id": 68732
+    },
+    {
+        "create_time": "2016-05-27 06:36:14.708405",
+        "datasets": [
+            {
+                "dataset_id": "15849717",
+                "extension": "bed",
+                "file_size": 84438,
+                "name": "SVA_hg19_AD_fin.gtf",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15976483",
+                "extension": "bam",
+                "file_size": 553759435,
+                "name": "RmDup on data 214",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15976483",
+                "extension": "bam",
+                "file_size": 553759435,
+                "name": "RmDup on data 214",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2658961,
+        "id": 12999007,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7186125.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"0.2\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51e9ddd34f4229a40\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1d6d88db21f413b\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30210765,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-27 06:37:28.299814",
+        "user_id": 82030
+    },
+    {
+        "create_time": "2016-06-07 16:56:37.947029",
+        "datasets": [
+            {
+                "dataset_id": "16133008",
+                "extension": "bed",
+                "file_size": 7885712,
+                "name": "UCSC Main on Human: wgEncodeGencodeCompV23 (genome) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16133410",
+                "extension": "bed",
+                "file_size": 1234918095,
+                "name": "RmDup on data 685 (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16133410",
+                "extension": "bed",
+                "file_size": 1234918095,
+                "name": "RmDup on data 685 (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2652603,
+        "id": 13098967,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7282949.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5647866cc01389b80\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59b746e81cc88a74a\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-07 16:57:38.431098",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-01-08 20:12:09.256459",
+        "datasets": [
+            {
+                "dataset_id": "13849943",
+                "extension": "bed",
+                "file_size": 4826514,
+                "name": "REFSEQ_3UTR (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "13343604",
+                "extension": "bam",
+                "file_size": 1925059967,
+                "name": "NT-B SAM-to-BAM on data 47: converted BAM",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "13343604",
+                "extension": "bam",
+                "file_size": 1925059967,
+                "name": "NT-B SAM-to-BAM on data 47: converted BAM",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2517665,
+        "id": 11425212,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5687790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "22791039",
+            "inputB": "\"22174221\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 26785092,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-01-08 20:13:15.815604",
+        "user_id": 74111
+    },
+    {
+        "create_time": "2016-06-07 16:52:03.176191",
+        "datasets": [
+            {
+                "dataset_id": "16133008",
+                "extension": "bed",
+                "file_size": 7885712,
+                "name": "UCSC Main on Human: wgEncodeGencodeCompV23 (genome) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16133424",
+                "extension": "bed",
+                "file_size": 1713936991,
+                "name": "RmDup on data 710 (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16133424",
+                "extension": "bed",
+                "file_size": 1713936991,
+                "name": "RmDup on data 710 (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2652603,
+        "id": 13098934,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7282893.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5647866cc01389b80\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a295d4d68df25243\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-07 16:54:24.861934",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-05-13 14:12:25.808520",
+        "datasets": [
+            {
+                "dataset_id": "15812167",
+                "extension": "bed",
+                "file_size": 599402,
+                "name": "P22_WT-H3K4me3 Enriched TSS_500bp Flank-TSS Window.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15750464",
+                "extension": "bam",
+                "file_size": 999681341,
+                "name": "wt-H3K4me3.sorted.bam",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15750464",
+                "extension": "bam",
+                "file_size": 999681341,
+                "name": "wt-H3K4me3.sorted.bam",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2700893,
+        "id": 12884725,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7083720.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"mm9\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c418afb9fda1a9c8\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57308dfe1e8a2d434\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 28776799,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-13 14:13:35.021021",
+        "user_id": 67495
+    },
+    {
+        "create_time": "2016-05-03 14:36:29.369018",
+        "datasets": [
+            {
+                "dataset_id": "15623253",
+                "extension": "bed",
+                "file_size": 924140,
+                "name": "knownGene intron 200bp",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15623121",
+                "extension": "bed",
+                "file_size": 2645108427,
+                "name": "UCSC Main on Human: snp146 (genome)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15623121",
+                "extension": "bed",
+                "file_size": 2645108427,
+                "name": "UCSC Main on Human: snp146 (genome)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2687946,
+        "id": 12758450,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6953862.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"1\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53ac1958a01c9f699\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506d5e14acf69996d\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wo\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"-s\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-03 14:37:40.151953",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-06-08 10:38:05.322627",
+        "datasets": [
+            {
+                "dataset_id": "16144015",
+                "extension": "vcf",
+                "file_size": 3124287,
+                "name": "SnpEff on data 119",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2716567,
+        "id": 13105803,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7291998.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bc043d1436f58046\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5daa362f81d8d6470\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30723747,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-08 10:39:40.550504",
+        "user_id": 85019
+    },
+    {
+        "create_time": "2016-06-09 13:08:33.313378",
+        "datasets": [
+            {
+                "dataset_id": "16167629",
+                "extension": "bed",
+                "file_size": 1008787,
+                "name": "Bowtie2 on7DLm fastq reads and genic regions extracted from IWGSC.gff(sorted BAM) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16119028",
+                "extension": "gff3",
+                "file_size": 259889478,
+                "name": "Extract genic features on data IWGSCgff",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16119028",
+                "extension": "gff3",
+                "file_size": 259889478,
+                "name": "Extract genic features on data IWGSCgff",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2480912,
+        "id": 13120743,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7304840.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"?\"",
+            "fraction": "\"\"",
+            "header": "\"true\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a5cd0039507aeaf1\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f7e8d56d8baffa83\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30471634,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-09 13:09:36.474523",
+        "user_id": 71005
+    },
+    {
+        "create_time": "2016-04-22 16:05:48.349616",
+        "datasets": [
+            {
+                "dataset_id": "15365124",
+                "extension": "bed",
+                "file_size": 9198,
+                "name": "MB pooled.BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2677438,
+        "id": 12571304,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755196.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "fraction": "\"0.52\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506048f89f892b169\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 16:06:32.819638",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-04-06 17:07:02.847371",
+        "datasets": [
+            {
+                "dataset_id": "14933928",
+                "extension": "vcf",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15101270",
+                "extension": "bed",
+                "file_size": 4716297456,
+                "name": "GSM1517306_LN5_chr7.bed",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15101270",
+                "extension": "bed",
+                "file_size": 4716297456,
+                "name": "GSM1517306_LN5_chr7.bed",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2658720,
+        "id": 12355126,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6560053.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "24168544",
+            "inputB": "\"24170281\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29444958,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-06 18:00:53.122699",
+        "user_id": 30491
+    },
+    {
+        "create_time": "2016-03-07 15:18:37.269016",
+        "datasets": [
+            {
+                "dataset_id": "14702115",
+                "extension": "bed",
+                "file_size": 6752,
+                "name": "chimp_AD_SVA_annot.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 1372215,
+        "id": 12056452,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6279572.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"panTro4\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "23713907",
+            "inputB": "\"23709122\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27460700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-07 15:20:01.170957",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-05-25 11:45:04.878433",
+        "datasets": [
+            {
+                "dataset_id": "15955235",
+                "extension": "bed",
+                "file_size": 73654890,
+                "name": "hg19.windows.1kb.no.outliers.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15954893",
+                "extension": "bed",
+                "file_size": 10128761418,
+                "name": "rmdup on data 41 merged input (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15954893",
+                "extension": "bed",
+                "file_size": 10128761418,
+                "name": "rmdup on data 41 merged input (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2499337,
+        "id": 12983074,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7169815.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cb9cfed2e888be02\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b519e04118a07aef74\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30416932,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-25 11:46:28.773122",
+        "user_id": 50472
+    },
+    {
+        "create_time": "2016-03-30 07:55:08.131266",
+        "datasets": [
+            {
+                "dataset_id": "15004784",
+                "extension": "bed",
+                "file_size": 61308,
+                "name": "SVA_hg19.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15004520",
+                "extension": "bam",
+                "file_size": 723602572,
+                "name": "Filter on data 2396",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15004520",
+                "extension": "bam",
+                "file_size": 723602572,
+                "name": "Filter on data 2396",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1372215,
+        "id": 12281957,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6491403.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "24058016",
+            "inputB": "\"24057742\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27460700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-30 07:55:55.177296",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-05-25 12:07:38.574426",
+        "datasets": [
+            {
+                "dataset_id": "15955235",
+                "extension": "bed",
+                "file_size": 73654890,
+                "name": "hg19.windows.1kb.no.outliers.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15954893",
+                "extension": "bed",
+                "file_size": 10128761418,
+                "name": "rmdup on data 41 merged input (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15954893",
+                "extension": "bed",
+                "file_size": 10128761418,
+                "name": "rmdup on data 41 merged input (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2499337,
+        "id": 12983187,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7169921.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cb9cfed2e888be02\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b519e04118a07aef74\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30416932,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-25 12:08:48.839603",
+        "user_id": 50472
+    },
+    {
+        "create_time": "2016-05-16 06:29:48.396947",
+        "datasets": [
+            {
+                "dataset_id": "15848286",
+                "extension": "gtf",
+                "file_size": 229923,
+                "name": "SVA_hg19_AD_fin.gtf",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15848254",
+                "extension": "bam",
+                "file_size": 979494967,
+                "name": "RmDup on data 168",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15848254",
+                "extension": "bam",
+                "file_size": 979494967,
+                "name": "RmDup on data 168",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2658961,
+        "id": 12905777,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7100444.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"0.25\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5404908cf1ed76d58\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58c15bd65cd1b1524\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30210765,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-16 06:31:13.193261",
+        "user_id": 82030
+    },
+    {
+        "create_time": "2016-03-07 21:37:41.649863",
+        "datasets": [
+            {
+                "dataset_id": "14702115",
+                "extension": "bed",
+                "file_size": 6752,
+                "name": "chimp_AD_SVA_annot.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14697884",
+                "extension": "bam",
+                "file_size": 2814273221,
+                "name": "RmDup on data 1171",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 1372215,
+        "id": 12061790,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6284016.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"panTro4\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "23713907",
+            "inputB": "\"23709122\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 28361080,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-07 21:47:52.981306",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-06-09 19:24:15.284296",
+        "datasets": [
+            {
+                "dataset_id": "16175549",
+                "extension": "bed",
+                "file_size": 7743,
+                "name": "MetaboliteData.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16175550",
+                "extension": "bed",
+                "file_size": 1224708060,
+                "name": "repeats_anno",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16175550",
+                "extension": "bed",
+                "file_size": 1224708060,
+                "name": "repeats_anno",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2733171,
+        "id": 13125965,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7310514.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"?\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51fbf33f0e023e9d5\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5232cee014ffc9d5e\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30589103,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-09 19:37:55.597061",
+        "user_id": 15920
+    },
+    {
+        "create_time": "2016-04-30 03:39:56.909317",
+        "datasets": [
+            {
+                "dataset_id": "15544782",
+                "extension": "bed",
+                "file_size": 4551129,
+                "name": "Convert Genomic Intervals To BED on data 536",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15524988",
+                "extension": "bed",
+                "file_size": 508848382,
+                "name": "Galaxy485-[H3K27me3_hES_Mik_Convert_genome_coordinates_on_data_477_[_MAPPED_COORDINATES_]] (1).sorted.bed",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15524988",
+                "extension": "bed",
+                "file_size": 508848382,
+                "name": "Galaxy485-[H3K27me3_hES_Mik_Convert_genome_coordinates_on_data_477_[_MAPPED_COORDINATES_]] (1).sorted.bed",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "15524991",
+                "extension": "bed",
+                "file_size": 212211139,
+                "name": "Galaxy481-[Ezh2_hES_Mik_Convert_genome_coordinates_on_data_479_[_MAPPED_COORDINATES_]].sorted.bed",
+                "param_name": "inputB2"
+            },
+            {
+                "dataset_id": "15528477",
+                "extension": "bed",
+                "file_size": 212211139,
+                "name": "Galaxy481-[Ezh2_hES_Mik_Convert_genome_coordinates_on_data_479_[_MAPPED_COORDINATES_]].sorted.bed",
+                "param_name": "inputB3"
+            },
+            {
+                "dataset_id": "15536202",
+                "extension": "bed",
+                "file_size": 466164526,
+                "name": "Galaxy500-[H3K4me3_hES_Mik].sorted.bed",
+                "param_name": "inputB4"
+            },
+            {
+                "dataset_id": "15538375",
+                "extension": "bed",
+                "file_size": 588297426,
+                "name": "Galaxy503-[H3K36me3_hES_Mik].sorted.bed",
+                "param_name": "inputB5"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2679206,
+        "id": 12695365,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6899553.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50b9f585e07e0e990\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b583e591c634a84a7a\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c618ed9e66efd64e\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dfa754753ec41c7c\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b574244e931aeda3cf\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56b93ad2afd5b664e\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29183917,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-30 03:41:35.814914",
+        "user_id": 81363
+    },
+    {
+        "create_time": "2016-04-22 15:57:05.988363",
+        "datasets": [
+            {
+                "dataset_id": "15323444",
+                "extension": "bed",
+                "file_size": 7295,
+                "name": "MB pooled - Intron candidates BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2677438,
+        "id": 12569837,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755111.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"0.52\"",
+            "header": "\"true\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529f4c62018248aad\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"true\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 15:57:52.957985",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-05-13 14:01:01.819997",
+        "datasets": [
+            {
+                "dataset_id": "12644766",
+                "extension": "bed",
+                "file_size": 651137,
+                "name": "TSS +-500bp",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "12144167",
+                "extension": "bed",
+                "file_size": 2359675986,
+                "name": "P22 DHS WT1 unique reads",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "12144167",
+                "extension": "bed",
+                "file_size": 2359675986,
+                "name": "P22 DHS WT1 unique reads",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2567862,
+        "id": 12884625,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7083626.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "count": "\"true\"",
+            "dbkey": "\"mm9\"",
+            "fraction": "\"\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59bb2e6b86dce0bce\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55703dd454ce3af05\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30216989,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-05-13 14:02:04.439963",
+        "user_id": 32837
+    },
+    {
+        "create_time": "2016-04-13 05:53:53.402410",
+        "datasets": [
+            {
+                "dataset_id": "15183698",
+                "extension": "bed",
+                "file_size": 51665666,
+                "name": "Alu coordinate BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "15187019",
+                "extension": "bed",
+                "file_size": 25250779929,
+                "name": "Bowtie2 on data 8 and data 7: aligned reads (sorted BAM) (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "15187019",
+                "extension": "bed",
+                "file_size": 25250779929,
+                "name": "Bowtie2 on data 8 and data 7: aligned reads (sorted BAM) (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2606845,
+        "id": 12437022,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6636522.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\".005\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55ebd9fbe3e46bac0\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f290dca40f7be3a2\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"-s\""
+        },
+        "runner_name": null,
+        "session_id": 28578749,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-13 05:54:48.853458",
+        "user_id": 73750
+    },
+    {
+        "create_time": "2016-06-06 17:55:53.616131",
+        "datasets": [
+            {
+                "dataset_id": "16118933",
+                "extension": "bed",
+                "file_size": 203377587,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16109317",
+                "extension": "bam",
+                "file_size": 749660474,
+                "name": "RmDup on data 685",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16109317",
+                "extension": "bam",
+                "file_size": 749660474,
+                "name": "RmDup on data 685",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2652603,
+        "id": 13088056,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7272244.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a949d5a190532365\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5be7d84431a07410a\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-06 17:57:31.547354",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-02-02 23:48:43.377108",
+        "datasets": [
+            {
+                "dataset_id": "14176290",
+                "extension": "bed",
+                "file_size": 5977647,
+                "name": "Single Exon.txt",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14183924",
+                "extension": "bed",
+                "file_size": 1565717873,
+                "name": "GSM1102782_UW.CD14_Primary_Cells.H3K27ac.RO_01721.Histone.DS22926.bed",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14183924",
+                "extension": "bed",
+                "file_size": 1565717873,
+                "name": "GSM1102782_UW.CD14_Primary_Cells.H3K27ac.RO_01721.Histone.DS22926.bed",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2573240,
+        "id": 11689192,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5944727.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"True\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.50\"",
+            "header": "\"False\"",
+            "inputA": "23146264",
+            "inputB": "\"23154072\"",
+            "invert": "\"False\"",
+            "once": "\"True\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27179682,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-02-02 23:51:05.198534",
+        "user_id": 14117
+    },
+    {
+        "create_time": "2016-04-22 16:02:05.545521",
+        "datasets": [
+            {
+                "dataset_id": "15365124",
+                "extension": "bed",
+                "file_size": 9198,
+                "name": "MB pooled.BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2677438,
+        "id": 12570617,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755160.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "fraction": "\"0.52\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506048f89f892b169\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"true\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"true\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 16:02:46.893970",
+        "user_id": 76422
+    },
+    {
+        "create_time": "2016-06-07 16:50:33.555983",
+        "datasets": [
+            {
+                "dataset_id": "16133008",
+                "extension": "bed",
+                "file_size": 7885712,
+                "name": "UCSC Main on Human: wgEncodeGencodeCompV23 (genome) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16133410",
+                "extension": "bed",
+                "file_size": 1234918095,
+                "name": "RmDup on data 685 (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16133410",
+                "extension": "bed",
+                "file_size": 1234918095,
+                "name": "RmDup on data 685 (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2652603,
+        "id": 13098919,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7282859.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5647866cc01389b80\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59b746e81cc88a74a\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-07 16:52:10.207703",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-06-07 16:52:19.391165",
+        "datasets": [
+            {
+                "dataset_id": "16133008",
+                "extension": "bed",
+                "file_size": 7885712,
+                "name": "UCSC Main on Human: wgEncodeGencodeCompV23 (genome) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16133426",
+                "extension": "bed",
+                "file_size": 1145453498,
+                "name": "RmDup on data 690 (as BED)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16133426",
+                "extension": "bed",
+                "file_size": 1145453498,
+                "name": "RmDup on data 690 (as BED)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2652603,
+        "id": 13098937,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7282890.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "fraction": "\"0.5\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5647866cc01389b80\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c962effd9cd4cb7\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30574998,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-07 16:54:02.780379",
+        "user_id": 64006
+    },
+    {
+        "create_time": "2016-06-09 13:04:33.989527",
+        "datasets": [
+            {
+                "dataset_id": "16167629",
+                "extension": "bed",
+                "file_size": 1008787,
+                "name": "Bowtie2 on7DLm fastq reads and genic regions extracted from IWGSC.gff(sorted BAM) (as BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "16119028",
+                "extension": "gff3",
+                "file_size": 259889478,
+                "name": "Extract genic features on data IWGSCgff",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "16119028",
+                "extension": "gff3",
+                "file_size": 259889478,
+                "name": "Extract genic features on data IWGSCgff",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2480912,
+        "id": 13120701,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7304771.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"?\"",
+            "fraction": "\"\"",
+            "header": "\"true\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a5cd0039507aeaf1\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f7e8d56d8baffa83\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wao\"]",
+            "reciprocal": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 30471634,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-06-09 13:05:53.098651",
+        "user_id": 71005
+    },
+    {
+        "create_time": "2016-03-10 14:11:33.043080",
+        "datasets": [
+            {
+                "dataset_id": "14702115",
+                "extension": "bed",
+                "file_size": 6752,
+                "name": "chimp_AD_SVA_annot.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14757965",
+                "extension": "bam",
+                "file_size": 3540385183,
+                "name": "RmDup on data 1472",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14757965",
+                "extension": "bam",
+                "file_size": 3540385183,
+                "name": "RmDup on data 1472",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 1372215,
+        "id": 12095863,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6320234.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"panTro4\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "23713907",
+            "inputB": "\"23778092\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27460700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-03-10 14:12:25.409475",
+        "user_id": 32813
+    },
+    {
+        "create_time": "2016-04-06 15:35:51.911790",
+        "datasets": [
+            {
+                "dataset_id": "15100422",
+                "extension": "bed",
+                "file_size": 7974928204,
+                "name": "GSM1517305_LN4_chr2.bed",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14933928",
+                "extension": "vcf",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14933928",
+                "extension": "vcf",
+                "file_size": 26270226601,
+                "name": "dbSNP_146_hg19.vcf",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2658720,
+        "id": 12354553,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6559735.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "count": "\"False\"",
+            "dbkey": "\"hg19\"",
+            "fraction": "\"\"",
+            "header": "\"False\"",
+            "inputA": "24169123",
+            "inputB": "\"24168544\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29444958,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-06 17:13:25.851156",
+        "user_id": 30491
+    },
+    {
+        "create_time": "2016-01-15 20:58:45.914175",
+        "datasets": [
+            {
+                "dataset_id": "13967729",
+                "extension": "bed",
+                "file_size": 134909,
+                "name": "Sorted Bed of IsoA 48apf top 20%",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "13902145",
+                "extension": "bam",
+                "file_size": 1296367780,
+                "name": "e93delta1_48apf_faire.markdup.bam",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "13902145",
+                "extension": "bam",
+                "file_size": 1296367780,
+                "name": "e93delta1_48apf_faire.markdup.bam",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "13901724",
+                "extension": "len",
+                "file_size": 1017559,
+                "name": "Convert FASTA to len file on data 2",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2562409,
+        "id": 11522143,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5787869.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/013/901/dataset_13901724.dat\"",
+            "count": "\"False\"",
+            "dbkey": "\"dm6\"",
+            "fraction": "\"0.5\"",
+            "header": "\"False\"",
+            "inputA": "22920054",
+            "inputB": "\"22848604\"",
+            "invert": "\"False\"",
+            "once": "\"False\"",
+            "overlap_mode": "[\"-wa\"]",
+            "reciprocal": "\"False\"",
+            "split": "\"False\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 27377425,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-01-15 20:59:58.404972",
+        "user_id": 59928
+    },
+    {
+        "create_time": "2016-04-22 16:03:43.155608",
+        "datasets": [
+            {
+                "dataset_id": "15365124",
+                "extension": "bed",
+                "file_size": 9198,
+                "name": "MB pooled.BED",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "14866438",
+                "extension": "bam",
+                "file_size": 5344174107,
+                "name": "MB.BAM(Bowtie2)",
+                "param_name": "inputB1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2677438,
+        "id": 12570980,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6755177.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "count": "\"false\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "fraction": "\"0.52\"",
+            "header": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506048f89f892b169\"}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58dc30365ae8bf2e3\"}]}",
+            "invert": "\"false\"",
+            "once": "\"false\"",
+            "overlap_mode": "[\"-wb\"]",
+            "reciprocal": "\"true\"",
+            "split": "\"false\"",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29539513,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.22.0",
+        "tool_version": "2.22.0",
+        "traceback": null,
+        "update_time": "2016-04-22 16:04:39.599931",
+        "user_id": 76422
+    }
+]

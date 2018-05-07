@@ -1,0 +1,4746 @@
+[
+    {
+        "create_time": "2016-10-30 20:09:33.636192",
+        "datasets": [
+            {
+                "dataset_id": "17674194",
+                "extension": "bed",
+                "file_size": 276905,
+                "name": "Subtract on data 11 and data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2845046,
+        "id": 14209808,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8420908.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5085f613e8bdd6101\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51f9ae5a5acffba1c\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-10-30 20:14:09.320849",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-01-17 20:24:47.694671",
+        "datasets": [
+            {
+                "dataset_id": "18404250",
+                "extension": "bed",
+                "file_size": 276905,
+                "name": "Subtract on data 13 and data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2951837,
+        "id": 14792983,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955784.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867250}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867101}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 21:04:11.082883",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2015-05-12 22:11:11.192728",
+        "datasets": [
+            {
+                "dataset_id": "11304331",
+                "extension": "bed",
+                "file_size": 11997,
+                "name": "pwmscan_hg38_23111_1596.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11304307",
+                "extension": "gff",
+                "file_size": 1206554472,
+                "name": "Homo_sapiens.GRCh38.79.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2292137,
+        "id": 9458386,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3783358.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Both\"",
+            "input1": "19683825",
+            "input2": "19683801"
+        },
+        "runner_name": null,
+        "session_id": 22847123,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-05-12 22:16:54.760604",
+        "user_id": null
+    },
+    {
+        "create_time": "2018-02-08 12:33:25.140044",
+        "datasets": [
+            {
+                "dataset_id": "23494032",
+                "extension": "bedgraph",
+                "file_size": 4798887,
+                "name": "Filter on data 1 (Smad peaks >50)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18818312",
+                "extension": "bedgraph",
+                "file_size": 2552560218,
+                "name": "Smad2-p53WT-2.bedgraph",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3422005,
+        "id": 18313355,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12396917",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33750695}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 33750404}]}"
+        },
+        "runner_name": null,
+        "session_id": 43777955,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2018-02-08 12:45:59.583761",
+        "user_id": 96816
+    },
+    {
+        "create_time": "2016-05-02 21:22:03.378023",
+        "datasets": [
+            {
+                "dataset_id": "15411073",
+                "extension": "bed",
+                "file_size": 27447,
+                "name": "Filter on data 24",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15600832",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2682207,
+        "id": 12739173,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938893.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b555f05b6dad8fe36f\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529240212e2db64cd\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30001118,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:27:34.073790",
+        "user_id": 80130
+    },
+    {
+        "create_time": "2016-05-02 20:51:59.101032",
+        "datasets": [
+            {
+                "dataset_id": "15577735",
+                "extension": "bed",
+                "file_size": 600060,
+                "name": "Intersect on data 49 and data 48",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2684303,
+        "id": 12738715,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938285.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d8e328bb7962b624\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30000458,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:00:10.249251",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2014-11-22 03:44:20.349637",
+        "datasets": [
+            {
+                "dataset_id": "9745695",
+                "extension": "interval",
+                "file_size": 4052146021,
+                "name": "nucleosome_dome_rep_2",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "9746147",
+                "extension": "bed",
+                "file_size": 9078950,
+                "name": "dome.bed",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2112485,
+        "id": 8227033,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2087554.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/danRer7.len\"",
+            "dbkey": "\"danRer7\"",
+            "direction": "\"Either\"",
+            "input1": "17645679",
+            "input2": "17645041"
+        },
+        "runner_name": null,
+        "session_id": 17793260,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2014-11-22 03:47:31.426746",
+        "user_id": 54557
+    },
+    {
+        "create_time": "2016-06-09 16:15:01.858535",
+        "datasets": [
+            {
+                "dataset_id": "16172604",
+                "extension": "interval",
+                "file_size": 26328,
+                "name": "MetaboliteData.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "16161627",
+                "extension": "interval",
+                "file_size": 2423504072,
+                "name": "pita.HQgenes.repeats.gff3",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2733171,
+        "id": 13123846,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7307807.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b545d96552e37e6f78\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bda7729128a4b0f6\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29663867,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-06-09 16:19:10.636436",
+        "user_id": 15920
+    },
+    {
+        "create_time": "2016-09-27 07:51:46.475214",
+        "datasets": [
+            {
+                "dataset_id": "17310262",
+                "extension": "bed",
+                "file_size": 92233,
+                "name": "GenesUPTE_sorted.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17310251",
+                "extension": "interval",
+                "file_size": 148069368,
+                "name": "Rep_clean.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2833470,
+        "id": 13952526,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8173264.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506a049e720e3569f\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53e71add660f5d552\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33222351,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-09-27 07:56:20.668695",
+        "user_id": null
+    },
+    {
+        "create_time": "2015-05-05 15:34:10.504859",
+        "datasets": [
+            {
+                "dataset_id": "11231179",
+                "extension": "interval",
+                "file_size": 486465333,
+                "name": "Sort on data 6",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "11231179",
+                "extension": "interval",
+                "file_size": 486465333,
+                "name": "Sort on data 6",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2294261,
+        "id": 9400546,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3731449.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "19587946",
+            "input2": "19587946"
+        },
+        "runner_name": null,
+        "session_id": 22890017,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-05-05 15:41:50.740587",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-01-17 20:28:27.686337",
+        "datasets": [
+            {
+                "dataset_id": "18404264",
+                "extension": "bed",
+                "file_size": 29971,
+                "name": "Subtract on data 14 and data 3",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870272",
+                "extension": "bed",
+                "file_size": 1402217245,
+                "name": "CpG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2951837,
+        "id": 14793053,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955925.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867264}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867104}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 21:25:12.158157",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-05-01 21:22:49.567776",
+        "datasets": [
+            {
+                "dataset_id": "15574116",
+                "extension": "bed",
+                "file_size": 600060,
+                "name": "Filter on data 32",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2684303,
+        "id": 12717300,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921606.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b537a823405a2deed4\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:27:33.377114",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-03-23 21:56:05.673467",
+        "datasets": [
+            {
+                "dataset_id": "14950961",
+                "extension": "bed",
+                "file_size": 6413,
+                "name": "diff_coordinates_TSS_FDR<0.1_RPKM>1.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14950781",
+                "extension": "bed",
+                "file_size": 2223037678,
+                "name": "PHF6_reads_noCHD9_midNum.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2643420,
+        "id": 12239917,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6453447.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "23999232",
+            "input2": "23999038"
+        },
+        "runner_name": null,
+        "session_id": 29171924,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-23 22:02:19.473929",
+        "user_id": 81194
+    },
+    {
+        "create_time": "2015-02-26 16:00:08.749296",
+        "datasets": [
+            {
+                "dataset_id": "10514084",
+                "extension": "bedgraph",
+                "file_size": 92472264,
+                "name": "M7_E-_20m_R1_Bio-_-strand_C5",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10514083",
+                "extension": "bedgraph",
+                "file_size": 92093386,
+                "name": "M7_E-_20m_R1_Bio-_+strand_C5",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2216076,
+        "id": 8820960,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2930581.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Downstream\"",
+            "input1": "18652447",
+            "input2": "18652448"
+        },
+        "runner_name": null,
+        "session_id": 20454066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-02-26 16:04:35.031434",
+        "user_id": 58096
+    },
+    {
+        "create_time": "2015-04-07 15:03:09.755102",
+        "datasets": [
+            {
+                "dataset_id": "10933692",
+                "extension": "gtf",
+                "file_size": 1111970946,
+                "name": "gencode.v19.annotation (1).gtf",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10935636",
+                "extension": "bed",
+                "file_size": 5128,
+                "name": "nSS6004094_cSS6004104_promoter.bed.txt",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2205129,
+        "id": 9159698,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3441416.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Either\"",
+            "input1": "19174508",
+            "input2": "19171972"
+        },
+        "runner_name": null,
+        "session_id": 22174058,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-04-07 15:14:52.286759",
+        "user_id": 16545
+    },
+    {
+        "create_time": "2016-03-07 21:52:06.048081",
+        "datasets": [
+            {
+                "dataset_id": "14621469",
+                "extension": "interval",
+                "file_size": 15507821,
+                "name": "transcript w/ alignment to ref genome > 80% and coverage by LTR > 80% w/ LTR annotation",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14541307",
+                "extension": "interval",
+                "file_size": 1374868032,
+                "name": "GRCh38_GTF_BED",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2614588,
+        "id": 12061880,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6284134.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Either\"",
+            "input1": "23626564",
+            "input2": "23541659"
+        },
+        "runner_name": null,
+        "session_id": 28863718,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-07 22:06:22.427234",
+        "user_id": 3556
+    },
+    {
+        "create_time": "2016-05-01 20:53:32.238070",
+        "datasets": [
+            {
+                "dataset_id": "15502507",
+                "extension": "bed",
+                "file_size": 436909,
+                "name": "Intersect on data 31 and data 30",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2684303,
+        "id": 12717240,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921337.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58c7503b05f998f39\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 20:57:57.797417",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-06-14 09:56:18.383279",
+        "datasets": [
+            {
+                "dataset_id": "16217092",
+                "extension": "bed",
+                "file_size": 42151,
+                "name": "usites.T55E.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "16217325",
+                "extension": "bed",
+                "file_size": 169688998,
+                "name": "UCSC Main on Human: wgEncodeAwgSegmentationCombinedHelas3 (genome)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2735397,
+        "id": 13157482,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7341591.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58ac335565ec6931f\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5da2e51c5c4f6bd27\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30833245,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-06-14 10:03:01.816219",
+        "user_id": 85951
+    },
+    {
+        "create_time": "2015-03-15 09:13:25.662287",
+        "datasets": [
+            {
+                "dataset_id": "10680983",
+                "extension": "gff",
+                "file_size": 1206554472,
+                "name": "Homo_sapiens.GRCh38.79.gtf",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10607546",
+                "extension": "gtf",
+                "file_size": 49763431,
+                "name": "Cufflinks 610_normal: assembled transcripts",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2225671,
+        "id": 8950834,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3171244.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "18773825",
+            "input2": "18858913"
+        },
+        "runner_name": null,
+        "session_id": 21812339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-03-15 09:18:08.085975",
+        "user_id": 54022
+    },
+    {
+        "create_time": "2017-08-16 13:21:24.432915",
+        "datasets": [
+            {
+                "dataset_id": "20974731",
+                "extension": "bed",
+                "file_size": 515385740,
+                "name": "GSM776557_Th1_Tbet.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "20974731",
+                "extension": "bed",
+                "file_size": 515385740,
+                "name": "GSM776557_Th1_Tbet.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3223700,
+        "id": 16593687,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10665500.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg18.len\"",
+            "dbkey": "\"hg18\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 30891992}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 30891992}]}"
+        },
+        "runner_name": null,
+        "session_id": 39902207,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-08-16 13:30:21.952656",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-01-17 20:26:12.085133",
+        "datasets": [
+            {
+                "dataset_id": "18404252",
+                "extension": "bed",
+                "file_size": 38588,
+                "name": "Subtract on data 13 and data 3",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870272",
+                "extension": "bed",
+                "file_size": 1402217245,
+                "name": "CpG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2951837,
+        "id": 14793006,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955846.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867252}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867104}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 21:15:01.927204",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2015-03-15 09:27:07.014124",
+        "datasets": [
+            {
+                "dataset_id": "10680983",
+                "extension": "gff",
+                "file_size": 1206554472,
+                "name": "Homo_sapiens.GRCh38.79.gtf",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10607546",
+                "extension": "gtf",
+                "file_size": 49763431,
+                "name": "Cufflinks 610_normal: assembled transcripts",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2225671,
+        "id": 8950862,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3171279.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "18773825",
+            "input2": "18858913"
+        },
+        "runner_name": null,
+        "session_id": 21812339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-03-15 09:31:23.232695",
+        "user_id": 54022
+    },
+    {
+        "create_time": "2016-05-01 21:26:20.900285",
+        "datasets": [
+            {
+                "dataset_id": "15574131",
+                "extension": "bed",
+                "file_size": 1593,
+                "name": "Filter on data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2688676,
+        "id": 12717312,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921644.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b597525f48b04c62c6\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ab04185efddf0f62\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:31:11.122351",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2017-01-17 20:28:03.433700",
+        "datasets": [
+            {
+                "dataset_id": "18404262",
+                "extension": "bed",
+                "file_size": 246444,
+                "name": "Subtract on data 14 and data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2951837,
+        "id": 14793048,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955847.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867262}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867101}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 21:13:34.311872",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-05-01 21:24:46.932287",
+        "datasets": [
+            {
+                "dataset_id": "15574127",
+                "extension": "bed",
+                "file_size": 265991,
+                "name": "Filter on data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2688672,
+        "id": 12717308,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921626.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58c32f9ee15f87b05\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53283325e4b8a89bf\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:29:46.476053",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-05-02 21:22:05.745425",
+        "datasets": [
+            {
+                "dataset_id": "15578195",
+                "extension": "bed",
+                "file_size": 1034904,
+                "name": "Filter on data 23",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15600832",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2682207,
+        "id": 12739177,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938899.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59ebcd497d5f78b8d\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529240212e2db64cd\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30001118,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:27:06.539831",
+        "user_id": 80130
+    },
+    {
+        "create_time": "2017-04-07 23:04:27.106220",
+        "datasets": [
+            {
+                "dataset_id": "19513755",
+                "extension": "interval",
+                "file_size": 74672686,
+                "name": "Filter on data 4",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "19509128",
+                "extension": "bed",
+                "file_size": 771450121,
+                "name": "AKPB5A-2E6_S18_L002_R1_001.fastq_06Apr2017_10_37_39_998_Sorted__06Apr2017_10_37_39_998_mdup.bam (as BED)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3063874,
+        "id": 15527675,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9654512.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 29128991}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 29123763}]}"
+        },
+        "runner_name": null,
+        "session_id": 35281501,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-04-07 23:14:32.784208",
+        "user_id": 5613
+    },
+    {
+        "create_time": "2015-09-14 04:18:53.881029",
+        "datasets": [
+            {
+                "dataset_id": "12359827",
+                "extension": "gff",
+                "file_size": 99060266097,
+                "name": "BED-to-GFF on data 159",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "12359827",
+                "extension": "gff",
+                "file_size": 99060266097,
+                "name": "BED-to-GFF on data 159",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2210340,
+        "id": 10312559,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4597218.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Either\"",
+            "input1": "21003478",
+            "input2": "21003478"
+        },
+        "runner_name": null,
+        "session_id": 25160278,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-09-14 04:23:45.741729",
+        "user_id": 59804
+    },
+    {
+        "create_time": "2016-05-01 20:53:30.863333",
+        "datasets": [
+            {
+                "dataset_id": "15502491",
+                "extension": "bed",
+                "file_size": 600060,
+                "name": "Intersect on data 29 and data 28",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2684303,
+        "id": 12717239,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921341.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51d9fd4ae6ce76de0\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 20:58:03.689277",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-05-02 21:45:15.696807",
+        "datasets": [
+            {
+                "dataset_id": "15602097",
+                "extension": "bed",
+                "file_size": 1081,
+                "name": "Filter on data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15601075",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2688676,
+        "id": 12740202,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6939396.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54e742c9a6a219790\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a14a5302b4a5036c\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29997733,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:49:54.251722",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-05-02 21:22:03.885535",
+        "datasets": [
+            {
+                "dataset_id": "15411074",
+                "extension": "bed",
+                "file_size": 67338,
+                "name": "Filter on data 25",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15600832",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2682207,
+        "id": 12739174,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938897.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53ab9d1dab354c47b\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529240212e2db64cd\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30001118,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:27:06.506269",
+        "user_id": 80130
+    },
+    {
+        "create_time": "2016-05-02 20:53:48.835435",
+        "datasets": [
+            {
+                "dataset_id": "15574131",
+                "extension": "bed",
+                "file_size": 1593,
+                "name": "Filter on data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2688676,
+        "id": 12738733,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938307.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b597525f48b04c62c6\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ab04185efddf0f62\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30000458,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:00:16.397472",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-10-30 20:09:59.626268",
+        "datasets": [
+            {
+                "dataset_id": "17674195",
+                "extension": "bed",
+                "file_size": 743899,
+                "name": "Subtract on data 11 and data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2845046,
+        "id": 14209810,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8420910.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b911fc0c6950b109\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dcdf9a2dbf51c124\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-10-30 20:14:21.310609",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-10-30 20:13:43.326751",
+        "datasets": [
+            {
+                "dataset_id": "17674205",
+                "extension": "bed",
+                "file_size": 339888,
+                "name": "Subtract on data 12 and data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2845046,
+        "id": 14209842,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8420939.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5985a3f145e967017\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51f9ae5a5acffba1c\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-10-30 20:18:03.326870",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-04-12 18:47:39.853008",
+        "datasets": [
+            {
+                "dataset_id": "15183698",
+                "extension": "bed",
+                "file_size": 51665666,
+                "name": "Alu coordinate BED",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15200067",
+                "extension": "bed",
+                "file_size": 304905871,
+                "name": "SubtractBed on data 67 and data 72",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2606845,
+        "id": 12434414,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6634108.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Upstream\"",
+            "input1": "24258849",
+            "input2": "24276390"
+        },
+        "runner_name": null,
+        "session_id": 28578749,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-04-12 18:54:19.529785",
+        "user_id": 73750
+    },
+    {
+        "create_time": "2016-06-14 09:40:10.793705",
+        "datasets": [
+            {
+                "dataset_id": "16217104",
+                "extension": "gff",
+                "file_size": 74277,
+                "name": "T55E.GFF",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "16217325",
+                "extension": "bed",
+                "file_size": 169688998,
+                "name": "UCSC Main on Human: wgEncodeAwgSegmentationCombinedHelas3 (genome)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2735397,
+        "id": 13157098,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7341248.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5da4ac502fa51d512\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5da2e51c5c4f6bd27\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30833245,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-06-14 09:45:45.761593",
+        "user_id": 85951
+    },
+    {
+        "create_time": "2017-09-22 12:53:19.650063",
+        "datasets": [
+            {
+                "dataset_id": "21394571",
+                "extension": "gtf",
+                "file_size": 103125067,
+                "name": "UCSC Main on Mouse: knownGene (genome)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "21381649",
+                "extension": "bed",
+                "file_size": 382211941,
+                "name": "Galaxy9-__ob__Bowtie2_on_H3K4me3__cb__.bam (as BED)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3261570,
+        "id": 16898979,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10967768.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 31365788}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 31348415}]}"
+        },
+        "runner_name": null,
+        "session_id": 40713345,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-09-22 13:02:41.299657",
+        "user_id": 112007
+    },
+    {
+        "create_time": "2016-04-01 21:19:21.584106",
+        "datasets": [
+            {
+                "dataset_id": "15043581",
+                "extension": "interval",
+                "file_size": 5470,
+                "name": "MMERGLN-int_aligned",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15041853",
+                "extension": "interval",
+                "file_size": 284603996,
+                "name": "UCSC_Repeatmasker_for_NGS.interval",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2654263,
+        "id": 12316219,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6523472.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "24104511",
+            "input2": "24102521"
+        },
+        "runner_name": null,
+        "session_id": 28981702,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-04-01 21:24:11.173533",
+        "user_id": 6515
+    },
+    {
+        "create_time": "2015-02-04 23:13:46.999792",
+        "datasets": [
+            {
+                "dataset_id": "10321420",
+                "extension": "interval",
+                "file_size": 455943508,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10270857",
+                "extension": "bed",
+                "file_size": 905,
+                "name": "2p for Galaxy 14-03",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2193179,
+        "id": 8665960,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2647979.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "18389753",
+            "input2": "18402657"
+        },
+        "runner_name": null,
+        "session_id": 21016403,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-02-04 23:18:23.641412",
+        "user_id": 51763
+    },
+    {
+        "create_time": "2015-02-26 15:54:50.420774",
+        "datasets": [
+            {
+                "dataset_id": "10514084",
+                "extension": "bedgraph",
+                "file_size": 92472264,
+                "name": "M7_E-_20m_R1_Bio-_-strand_C5",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10514083",
+                "extension": "bedgraph",
+                "file_size": 92093386,
+                "name": "M7_E-_20m_R1_Bio-_+strand_C5",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2216076,
+        "id": 8820937,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2930517.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Downstream\"",
+            "input1": "18652447",
+            "input2": "18652448"
+        },
+        "runner_name": null,
+        "session_id": 20454066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-02-26 15:59:18.008819",
+        "user_id": 58096
+    },
+    {
+        "create_time": "2016-10-30 20:14:40.545445",
+        "datasets": [
+            {
+                "dataset_id": "17674207",
+                "extension": "bed",
+                "file_size": 48334,
+                "name": "Subtract on data 12 and data 3",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870272",
+                "extension": "bed",
+                "file_size": 1402217245,
+                "name": "CpG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2845046,
+        "id": 14209847,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8420943.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b586f0e327fa92d8a6\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57e46dccc68250149\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-10-30 20:19:14.816946",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2015-04-07 14:40:55.149517",
+        "datasets": [
+            {
+                "dataset_id": "10865956",
+                "extension": "gtf",
+                "file_size": 847928511,
+                "name": "Homo_sapiens.GRCh37.75.gtf",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10935636",
+                "extension": "bed",
+                "file_size": 5128,
+                "name": "nSS6004094_cSS6004104_promoter.bed.txt",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2205129,
+        "id": 9158926,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3441090.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "19174508",
+            "input2": "19085310"
+        },
+        "runner_name": null,
+        "session_id": 22174058,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-04-07 14:46:49.974610",
+        "user_id": 16545
+    },
+    {
+        "create_time": "2015-01-23 23:46:28.319452",
+        "datasets": [
+            {
+                "dataset_id": "10177790",
+                "extension": "bed",
+                "file_size": 146397772,
+                "name": "Chd4 wt unique reads",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10242518",
+                "extension": "bed",
+                "file_size": 57682,
+                "name": "Cut on data 944",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2173213,
+        "id": 8596888,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2549728.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "18281812",
+            "input2": "18205563"
+        },
+        "runner_name": null,
+        "session_id": 20580277,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-01-23 23:50:30.977805",
+        "user_id": 32837
+    },
+    {
+        "create_time": "2017-09-24 17:44:26.243719",
+        "datasets": [
+            {
+                "dataset_id": "21416417",
+                "extension": "bed",
+                "file_size": 23,
+                "name": "temp2.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "20476245",
+                "extension": "bed",
+                "file_size": 292219966,
+                "name": "mm10_mboI.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3171019,
+        "id": 16913828,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10983294.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 31389538}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 30251182}]}"
+        },
+        "runner_name": null,
+        "session_id": 40817843,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-09-24 17:53:39.627012",
+        "user_id": 84314
+    },
+    {
+        "create_time": "2016-05-02 21:25:42.313336",
+        "datasets": [
+            {
+                "dataset_id": "15574131",
+                "extension": "bed",
+                "file_size": 1593,
+                "name": "Filter on data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15601075",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2688676,
+        "id": 12739389,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938990.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b597525f48b04c62c6\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a14a5302b4a5036c\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30001237,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:30:42.655647",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-09-08 20:19:56.273838",
+        "datasets": [
+            {
+                "dataset_id": "17113469",
+                "extension": "bedgraph",
+                "file_size": 1193300202,
+                "name": "MACS2 callpeak on data 147 and data 146 (Bedgraph Control)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17113468",
+                "extension": "bedgraph",
+                "file_size": 708775937,
+                "name": "MACS2 callpeak on data 147 and data 146 (Bedgraph Treatment)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2799332,
+        "id": 13810803,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8031809.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c9b2da735ddc2e73\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b584985ec3befd6091\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32746960,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-09-08 20:25:29.840553",
+        "user_id": 88883
+    },
+    {
+        "create_time": "2016-09-27 07:47:05.544825",
+        "datasets": [
+            {
+                "dataset_id": "17310262",
+                "extension": "bed",
+                "file_size": 92233,
+                "name": "GenesUPTE_sorted.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17310251",
+                "extension": "interval",
+                "file_size": 148069368,
+                "name": "Rep_clean.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2833470,
+        "id": 13952496,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8173232.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b506a049e720e3569f\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53e71add660f5d552\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33222351,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-09-27 07:51:17.121727",
+        "user_id": null
+    },
+    {
+        "create_time": "2015-05-14 07:45:00.802067",
+        "datasets": [
+            {
+                "dataset_id": "11318429",
+                "extension": "interval",
+                "file_size": 27640784,
+                "name": "Join two Datasets on data 99 and data 105",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11317704",
+                "extension": "interval",
+                "file_size": 476499114,
+                "name": "RepeatMasker_hg38_full",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2269728,
+        "id": 9469079,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3801061.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Both\"",
+            "input1": "19701891",
+            "input2": "19700702"
+        },
+        "runner_name": null,
+        "session_id": 22461772,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-05-15 07:49:53.201700",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-10-30 20:10:34.700848",
+        "datasets": [
+            {
+                "dataset_id": "17674196",
+                "extension": "bed",
+                "file_size": 38588,
+                "name": "Subtract on data 11 and data 3",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870272",
+                "extension": "bed",
+                "file_size": 1402217245,
+                "name": "CpG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2845046,
+        "id": 14209814,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8420914.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53320b288ec787504\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57e46dccc68250149\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-10-30 20:15:24.857971",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-03-22 18:34:24.116244",
+        "datasets": [
+            {
+                "dataset_id": "14923751",
+                "extension": "bed",
+                "file_size": 304434,
+                "name": "diff_coordinates_TSS.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14925152",
+                "extension": "bed",
+                "file_size": 2223037678,
+                "name": "Cut on data 113",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2636390,
+        "id": 12229133,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6443097.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "23967975",
+            "input2": "23969435"
+        },
+        "runner_name": null,
+        "session_id": 28552371,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-22 18:40:41.615057",
+        "user_id": 47842
+    },
+    {
+        "create_time": "2016-05-02 21:22:04.455152",
+        "datasets": [
+            {
+                "dataset_id": "15578194",
+                "extension": "bed",
+                "file_size": 748010,
+                "name": "Filter on data 22",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15600832",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2682207,
+        "id": 12739176,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938903.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5aac278b62a9239a5\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529240212e2db64cd\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30001118,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 21:28:58.937971",
+        "user_id": 80130
+    },
+    {
+        "create_time": "2017-01-17 20:22:36.168636",
+        "datasets": [
+            {
+                "dataset_id": "18404238",
+                "extension": "bed",
+                "file_size": 200930,
+                "name": "Subtract on data 12 and data 3",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870272",
+                "extension": "bed",
+                "file_size": 1402217245,
+                "name": "CpG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2951837,
+        "id": 14792931,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955912.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867238}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867104}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 21:23:56.057627",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-05-01 20:59:30.472141",
+        "datasets": [
+            {
+                "dataset_id": "15502491",
+                "extension": "bed",
+                "file_size": 600060,
+                "name": "Intersect on data 29 and data 28",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2684303,
+        "id": 12717255,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921433.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51d9fd4ae6ce76de0\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:04:31.889326",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-10-30 20:14:07.626956",
+        "datasets": [
+            {
+                "dataset_id": "17674206",
+                "extension": "bed",
+                "file_size": 930585,
+                "name": "Subtract on data 12 and data 2",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2845046,
+        "id": 14209843,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8420940.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53e560c2bf890dbe0\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dcdf9a2dbf51c124\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-10-30 20:18:27.855838",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-05-02 20:38:18.529673",
+        "datasets": [
+            {
+                "dataset_id": "15577735",
+                "extension": "bed",
+                "file_size": 600060,
+                "name": "Intersect on data 49 and data 48",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2684303,
+        "id": 12738516,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6938095.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d8e328bb7962b624\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30000458,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 20:45:53.144815",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-01-26 08:16:26.604721",
+        "datasets": [
+            {
+                "dataset_id": "14080916",
+                "extension": "interval",
+                "file_size": 4617797053,
+                "name": "Converted Interval",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14080916",
+                "extension": "interval",
+                "file_size": 4617797053,
+                "name": "Converted Interval",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2568668,
+        "id": 11604448,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5869475.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/012/720/dataset_12720835.dat\"",
+            "dbkey": "\"v3\"",
+            "direction": "\"Either\"",
+            "input1": "23042570",
+            "input2": "23042570"
+        },
+        "runner_name": null,
+        "session_id": 27516249,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-01-26 08:21:16.787297",
+        "user_id": 42165
+    },
+    {
+        "create_time": "2017-01-17 20:17:35.830775",
+        "datasets": [
+            {
+                "dataset_id": "18404220",
+                "extension": "bed",
+                "file_size": 3061467,
+                "name": "Subtract on data 11 and data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2951837,
+        "id": 14792861,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955310.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867220}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867101}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 20:26:58.514724",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-11-03 18:23:15.374283",
+        "datasets": [
+            {
+                "dataset_id": "17720943",
+                "extension": "bed",
+                "file_size": 61517,
+                "name": "Subtract on data 38 and data 32",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2856933,
+        "id": 14244473,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8453418.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b4a8af5c61b7d85a\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d9e2cd5482a9f410\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32712034,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-11-03 18:29:24.934731",
+        "user_id": 70266
+    },
+    {
+        "create_time": "2018-02-08 12:46:20.115270",
+        "datasets": [
+            {
+                "dataset_id": "23494032",
+                "extension": "bedgraph",
+                "file_size": 4798887,
+                "name": "Filter on data 1 (Smad peaks >50)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18818312",
+                "extension": "bedgraph",
+                "file_size": 2552560218,
+                "name": "Smad2-p53WT-2.bedgraph",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3422005,
+        "id": 18313460,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12397121",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33750695}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 33750404}]}"
+        },
+        "runner_name": null,
+        "session_id": 43777955,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2018-02-08 12:57:29.949331",
+        "user_id": 96816
+    },
+    {
+        "create_time": "2017-01-17 20:19:06.103710",
+        "datasets": [
+            {
+                "dataset_id": "18404222",
+                "extension": "bed",
+                "file_size": 573787,
+                "name": "Subtract on data 11 and data 3",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870272",
+                "extension": "bed",
+                "file_size": 1402217245,
+                "name": "CpG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2951837,
+        "id": 14792872,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955510.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867222}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867104}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 20:40:48.220384",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-01-26 07:28:30.036288",
+        "datasets": [
+            {
+                "dataset_id": "14080949",
+                "extension": "interval",
+                "file_size": 86,
+                "name": "Cluster on data 77",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14080916",
+                "extension": "interval",
+                "file_size": 4617797053,
+                "name": "Converted Interval",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2568668,
+        "id": 11604306,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5869364.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/012/720/dataset_12720835.dat\"",
+            "dbkey": "\"v3\"",
+            "direction": "\"Either\"",
+            "input1": "23042604",
+            "input2": "23042570"
+        },
+        "runner_name": null,
+        "session_id": 27516249,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-01-26 07:35:51.786122",
+        "user_id": 42165
+    },
+    {
+        "create_time": "2016-05-01 20:55:43.919144",
+        "datasets": [
+            {
+                "dataset_id": "15573911",
+                "extension": "bed",
+                "file_size": 660756,
+                "name": "Cut on data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2688672,
+        "id": 12717245,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921381.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57f332f2cbaa6ebab\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53283325e4b8a89bf\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:00:49.143616",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-03-22 14:13:14.595910",
+        "datasets": [
+            {
+                "dataset_id": "14923751",
+                "extension": "bed",
+                "file_size": 304434,
+                "name": "diff_coordinates_TSS.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14925152",
+                "extension": "bed",
+                "file_size": 2223037678,
+                "name": "Cut on data 113",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2636390,
+        "id": 12226618,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6439929.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "23967975",
+            "input2": "23969435"
+        },
+        "runner_name": null,
+        "session_id": 28552371,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-22 14:19:31.661988",
+        "user_id": 47842
+    },
+    {
+        "create_time": "2016-11-03 18:22:47.987334",
+        "datasets": [
+            {
+                "dataset_id": "17720942",
+                "extension": "bed",
+                "file_size": 44430,
+                "name": "Subtract on data 38 and data 31",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2856933,
+        "id": 14244469,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8453414.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c2109e01d42f2379\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55498e08fbc30855b\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32712034,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-11-03 18:27:45.707688",
+        "user_id": 70266
+    },
+    {
+        "create_time": "2015-04-07 14:47:20.459597",
+        "datasets": [
+            {
+                "dataset_id": "10865956",
+                "extension": "gtf",
+                "file_size": 847928511,
+                "name": "Homo_sapiens.GRCh37.75.gtf",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10935636",
+                "extension": "bed",
+                "file_size": 5128,
+                "name": "nSS6004094_cSS6004104_promoter.bed.txt",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2205129,
+        "id": 9159291,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3441199.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "19174508",
+            "input2": "19085310"
+        },
+        "runner_name": null,
+        "session_id": 22174058,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-04-07 14:52:59.984702",
+        "user_id": 16545
+    },
+    {
+        "create_time": "2018-02-08 14:01:58.713567",
+        "datasets": [
+            {
+                "dataset_id": "23494032",
+                "extension": "bedgraph",
+                "file_size": 4798887,
+                "name": "Filter on data 1 (Smad peaks >50)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18818312",
+                "extension": "bedgraph",
+                "file_size": 2552560218,
+                "name": "Smad2-p53WT-2.bedgraph",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3422005,
+        "id": 18315511,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12398769",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33750695}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 33750404}]}"
+        },
+        "runner_name": null,
+        "session_id": 43777955,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2018-02-08 14:12:15.422735",
+        "user_id": 96816
+    },
+    {
+        "create_time": "2016-04-12 18:29:34.980439",
+        "datasets": [
+            {
+                "dataset_id": "15183698",
+                "extension": "bed",
+                "file_size": 51665666,
+                "name": "Alu coordinate BED",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15200067",
+                "extension": "bed",
+                "file_size": 304905871,
+                "name": "SubtractBed on data 67 and data 72",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2606845,
+        "id": 12434231,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6633870.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Upstream\"",
+            "input1": "24258849",
+            "input2": "24276390"
+        },
+        "runner_name": null,
+        "session_id": 28578749,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-04-12 18:36:26.056997",
+        "user_id": 73750
+    },
+    {
+        "create_time": "2017-01-17 20:22:14.451361",
+        "datasets": [
+            {
+                "dataset_id": "18404236",
+                "extension": "bed",
+                "file_size": 2229458,
+                "name": "Subtract on data 12 and data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2951837,
+        "id": 14792915,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8955692.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27867236}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27867101}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-01-17 20:50:53.971520",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-05-02 05:31:55.314568",
+        "datasets": [
+            {
+                "dataset_id": "15577735",
+                "extension": "bed",
+                "file_size": 600060,
+                "name": "Intersect on data 49 and data 48",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2684303,
+        "id": 12719683,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6926093.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d8e328bb7962b624\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29982835,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 05:36:25.279924",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-03-07 21:30:53.109034",
+        "datasets": [
+            {
+                "dataset_id": "14621469",
+                "extension": "interval",
+                "file_size": 15507821,
+                "name": "transcript w/ alignment to ref genome > 80% and coverage by LTR > 80% w/ LTR annotation",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14541307",
+                "extension": "interval",
+                "file_size": 1374868032,
+                "name": "GRCh38_GTF_BED",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2614588,
+        "id": 12061725,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6283971.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Either\"",
+            "input1": "23626564",
+            "input2": "23541659"
+        },
+        "runner_name": null,
+        "session_id": 28728483,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-07 21:47:27.649159",
+        "user_id": 3556
+    },
+    {
+        "create_time": "2016-04-13 01:49:13.430897",
+        "datasets": [
+            {
+                "dataset_id": "15183698",
+                "extension": "bed",
+                "file_size": 51665666,
+                "name": "Alu coordinate BED",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15200067",
+                "extension": "bed",
+                "file_size": 304905871,
+                "name": "SubtractBed on data 67 and data 72",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2606845,
+        "id": 12435943,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6635666.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Upstream\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55ebd9fbe3e46bac0\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56d69695d2ec8e82e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28578749,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-04-13 01:53:55.527378",
+        "user_id": 73750
+    },
+    {
+        "create_time": "2016-02-07 00:34:51.643222",
+        "datasets": [
+            {
+                "dataset_id": "10312997",
+                "extension": "bed",
+                "file_size": 392289,
+                "name": "P22 H3K4me3-bound TSS",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14240355",
+                "extension": "bed",
+                "file_size": 198801511,
+                "name": "P22 Mnase WT summits",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2567862,
+        "id": 11733273,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5987417.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Downstream\"",
+            "input1": "22927958",
+            "input2": "23215676"
+        },
+        "runner_name": null,
+        "session_id": 28131177,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-02-07 00:39:16.857953",
+        "user_id": 32837
+    },
+    {
+        "create_time": "2016-04-12 18:29:54.623497",
+        "datasets": [
+            {
+                "dataset_id": "15183698",
+                "extension": "bed",
+                "file_size": 51665666,
+                "name": "Alu coordinate BED",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15200067",
+                "extension": "bed",
+                "file_size": 304905871,
+                "name": "SubtractBed on data 67 and data 72",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2606845,
+        "id": 12434237,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6633880.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "direction": "\"Downstream\"",
+            "input1": "24258849",
+            "input2": "24276390"
+        },
+        "runner_name": null,
+        "session_id": 28578749,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-04-12 18:36:50.362003",
+        "user_id": 73750
+    },
+    {
+        "create_time": "2016-03-23 22:20:08.598668",
+        "datasets": [
+            {
+                "dataset_id": "14950961",
+                "extension": "bed",
+                "file_size": 6413,
+                "name": "diff_coordinates_TSS_FDR<0.1_RPKM>1.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14950781",
+                "extension": "bed",
+                "file_size": 2223037678,
+                "name": "PHF6_reads_noCHD9_midNum.bed",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2643420,
+        "id": 12240033,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6453525.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"66b0c334f14511e588fe005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "23999232",
+            "input2": "23999038"
+        },
+        "runner_name": null,
+        "session_id": 29172122,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-23 22:28:49.336426",
+        "user_id": 81194
+    },
+    {
+        "create_time": "2014-12-02 04:08:38.865388",
+        "datasets": [
+            {
+                "dataset_id": "9727204",
+                "extension": "bedgraph",
+                "file_size": 1633693289,
+                "name": "Compute on data 241",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "9325358",
+                "extension": "bed",
+                "file_size": 883484,
+                "name": "mouse TSS",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1372753,
+        "id": 8290234,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "381982.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "17098178",
+            "input2": "17620366"
+        },
+        "runner_name": null,
+        "session_id": 19850318,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2014-12-02 04:14:40.983802",
+        "user_id": 32837
+    },
+    {
+        "create_time": "2016-06-09 16:22:12.964734",
+        "datasets": [
+            {
+                "dataset_id": "16172604",
+                "extension": "interval",
+                "file_size": 26328,
+                "name": "MetaboliteData.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "16161627",
+                "extension": "interval",
+                "file_size": 2423504072,
+                "name": "pita.HQgenes.repeats.gff3",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2733171,
+        "id": 13123891,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7307901.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b545d96552e37e6f78\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bda7729128a4b0f6\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29663867,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-06-09 16:25:54.011039",
+        "user_id": 15920
+    },
+    {
+        "create_time": "2017-02-14 17:02:43.707072",
+        "datasets": [
+            {
+                "dataset_id": "18837002",
+                "extension": "bed",
+                "file_size": 7847590,
+                "name": "Galaxy15-[UCSC_Main_on_Mouse__knownGene_(genome)].bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18836231",
+                "extension": "bedgraph",
+                "file_size": 1389783574,
+                "name": "Sort on data 33",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2990331,
+        "id": 15036598,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9193042.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Both\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28348037}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 28347262}]}"
+        },
+        "runner_name": null,
+        "session_id": 34822512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2017-02-14 17:50:03.359752",
+        "user_id": 96816
+    },
+    {
+        "create_time": "2018-02-08 13:47:42.670856",
+        "datasets": [
+            {
+                "dataset_id": "23494032",
+                "extension": "bedgraph",
+                "file_size": 4798887,
+                "name": "Filter on data 1 (Smad peaks >50)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18818312",
+                "extension": "bedgraph",
+                "file_size": 2552560218,
+                "name": "Smad2-p53WT-2.bedgraph",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/flanking_features/90100b587723/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/flanking_features/90100b587723/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3422005,
+        "id": 18314947,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12398384",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33750695}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 33750404}]}"
+        },
+        "runner_name": null,
+        "session_id": 43777955,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2018-02-08 13:57:57.338205",
+        "user_id": 96816
+    },
+    {
+        "create_time": "2016-05-01 20:59:30.845596",
+        "datasets": [
+            {
+                "dataset_id": "15502507",
+                "extension": "bed",
+                "file_size": 436909,
+                "name": "Intersect on data 31 and data 30",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2684303,
+        "id": 12717256,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921432.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58c7503b05f998f39\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:04:13.217980",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-05-01 20:55:03.879023",
+        "datasets": [
+            {
+                "dataset_id": "15573905",
+                "extension": "bed",
+                "file_size": 297586,
+                "name": "Cut on data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2688676,
+        "id": 12717244,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921364.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f0f4572b4d19aafe\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ab04185efddf0f62\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 20:59:50.993512",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-06-27 01:10:08.021006",
+        "datasets": [
+            {
+                "dataset_id": "16364854",
+                "extension": "interval",
+                "file_size": 540502,
+                "name": "hyper36_hypoliver.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "16364808",
+                "extension": "gtf",
+                "file_size": 551634813,
+                "name": "Bla_annot-FINAL_v4_names.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2750362,
+        "id": 13263781,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7451802.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/braFlo2.len\"",
+            "dbkey": "\"braFlo2\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fe90ea38881f4f97\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56b43fd377afe8ce5\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31092958,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-06-27 01:14:16.023427",
+        "user_id": null
+    },
+    {
+        "create_time": "2015-11-26 11:03:02.873126",
+        "datasets": [
+            {
+                "dataset_id": "13221038",
+                "extension": "bed",
+                "file_size": 716987,
+                "name": "ERa_15772sites.bed",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "13206336",
+                "extension": "bedgraph",
+                "file_size": 3617349201,
+                "name": "H2Bub1_E2.bedgraph",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2314201,
+        "id": 11013647,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5272188.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Both\"",
+            "input1": "22030685",
+            "input2": "22014389"
+        },
+        "runner_name": null,
+        "session_id": 26294836,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2015-11-26 11:08:08.651198",
+        "user_id": 63797
+    },
+    {
+        "create_time": "2016-05-02 21:55:50.138442",
+        "datasets": [
+            {
+                "dataset_id": "15602290",
+                "extension": "bed",
+                "file_size": 1593,
+                "name": "Cut on data 12",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15601075",
+                "extension": "gtf",
+                "file_size": 1175571066,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2688676,
+        "id": 12740365,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6939630.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b531de528818eecc09\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a14a5302b4a5036c\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29997733,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 22:01:10.947338",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-05-01 21:22:50.206416",
+        "datasets": [
+            {
+                "dataset_id": "15574117",
+                "extension": "bed",
+                "file_size": 436909,
+                "name": "Filter on data 33",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2684303,
+        "id": 12717301,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6921604.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd2e630e037313b6\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29977558,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-01 21:27:15.907189",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-05-02 05:31:55.814053",
+        "datasets": [
+            {
+                "dataset_id": "15577736",
+                "extension": "bed",
+                "file_size": 436909,
+                "name": "Intersect on data 51 and data 50",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15502650",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_24/gencode.v24.annotation.gtf",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2684303,
+        "id": 12719684,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6926092.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "direction": "\"Either\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c9486ff7a4831362\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd7f148477c9980e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29982835,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-05-02 05:36:25.747214",
+        "user_id": 83138
+    },
+    {
+        "create_time": "2016-03-22 06:31:43.586434",
+        "datasets": [
+            {
+                "dataset_id": "14923751",
+                "extension": "bed",
+                "file_size": 304434,
+                "name": "diff_coordinates_TSS.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14925152",
+                "extension": "bed",
+                "file_size": 2223037678,
+                "name": "Cut on data 113",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2636390,
+        "id": 12222704,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6435800.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "direction": "\"Either\"",
+            "input1": "23967975",
+            "input2": "23969435"
+        },
+        "runner_name": null,
+        "session_id": 28552371,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/flanking_features/flanking_features_1/4.0.1",
+        "tool_version": "4.0.1",
+        "traceback": null,
+        "update_time": "2016-03-22 06:36:38.230545",
+        "user_id": 47842
+    }
+]

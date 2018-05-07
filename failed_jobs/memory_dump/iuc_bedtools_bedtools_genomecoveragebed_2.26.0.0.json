@@ -1,0 +1,200 @@
+[
+    {
+        "create_time": "2017-05-01 03:43:53.037276",
+        "datasets": [
+            {
+                "dataset_id": "19768716",
+                "extension": "bed",
+                "file_size": 39699141750,
+                "name": "Genome Coverage on data 8",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19768030",
+                "extension": "bedgraph",
+                "file_size": 23821519667,
+                "name": "Genome Coverage on data 8",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3088620,
+        "id": 15713220,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9825872.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"hg19\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29414643}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29413820}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"true\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37674903,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-01 10:10:55.374606",
+        "user_id": 104790
+    },
+    {
+        "create_time": "2017-05-08 04:49:30.066998",
+        "datasets": [
+            {
+                "dataset_id": "19751274",
+                "extension": "vcf",
+                "file_size": 4021874,
+                "name": "Varscan on data 11",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19751272",
+                "extension": "pileup",
+                "file_size": 38176994699,
+                "name": "MPileup on data 10",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3090482,
+        "id": 15776383,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9882978.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"hg38\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29395073}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29395071}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37620705,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-08 04:54:36.131051",
+        "user_id": 83897
+    },
+    {
+        "create_time": "2017-10-24 19:10:52.244447",
+        "datasets": [
+            {
+                "dataset_id": "20720903",
+                "extension": "bed",
+                "file_size": 19537144,
+                "name": "mm10_coding_whole_genome_bed_exons-2",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "21827165",
+                "extension": "tabular",
+                "file_size": 5856428024,
+                "name": "Generate pileup on data 54: converted pileup",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3294205,
+        "id": 17202096,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11261228",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 31779948}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 31845706}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"hist\", \"max\": \"0\", \"__current_case__\": 1}",
+            "split": "\"false\"",
+            "strand": "\"\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41403935,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-10-24 19:17:22.488534",
+        "user_id": 18481
+    }
+]

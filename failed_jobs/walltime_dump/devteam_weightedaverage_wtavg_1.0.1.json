@@ -1,0 +1,1214 @@
+[
+    {
+        "create_time": "2017-02-19 15:44:57.257667",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "18885880",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed (as BED)",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2975097,
+        "id": 15079349,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9234802.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28405525}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28143221}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-21 03:45:16.181261",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-10-06 14:05:22.374724",
+        "datasets": [
+            {
+                "dataset_id": "17019236",
+                "extension": "bed",
+                "file_size": 37013407,
+                "name": "1kUnit_L1_Control",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2845041,
+        "id": 14020471,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8240007.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58e908f4b9dda1759\"}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56487582be42c465e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31887632,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-10-08 04:38:23.767778",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-10-06 14:05:32.084936",
+        "datasets": [
+            {
+                "dataset_id": "17019236",
+                "extension": "bed",
+                "file_size": 37013407,
+                "name": "1kUnit_L1_Control",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "17099412",
+                "extension": "interval",
+                "file_size": 83389129,
+                "name": "ReplicationTiming_hg19",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2845041,
+        "id": 14020480,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8244779.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5624375f290650b13\"}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56487582be42c465e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31887632,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-10-08 20:31:27.463522",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-10-06 14:07:28.272583",
+        "datasets": [
+            {
+                "dataset_id": "17019237",
+                "extension": "bed",
+                "file_size": 11076023,
+                "name": "1kUnit_L1denovo",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2845041,
+        "id": 14020504,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8242082.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5056635eabaae9c3a\"}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a397772559a2c26c\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31887632,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-10-08 08:20:23.077363",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-10-06 14:05:21.430220",
+        "datasets": [
+            {
+                "dataset_id": "17019236",
+                "extension": "bed",
+                "file_size": 37013407,
+                "name": "1kUnit_L1_Control",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2845041,
+        "id": 14020470,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8242809.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5056635eabaae9c3a\"}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56487582be42c465e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31887632,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-10-08 10:16:52.281875",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-12-17 02:35:01.927285",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2932509,
+        "id": 14597680,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8776146.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 27666384}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 27668636}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-12-18 14:51:52.664917",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-12-17 02:35:30.337770",
+        "datasets": [
+            {
+                "dataset_id": "18225847",
+                "extension": "bed",
+                "file_size": 20023147,
+                "name": "1k_L1denovo.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2932509,
+        "id": 14597691,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8777059.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 27666385}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 27668637}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-12-18 23:12:56.646387",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-12-17 02:35:02.269397",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2932509,
+        "id": 14597681,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8776148.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 27666385}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 27668636}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-12-18 14:52:22.756961",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2016-12-17 02:35:29.778543",
+        "datasets": [
+            {
+                "dataset_id": "18225847",
+                "extension": "bed",
+                "file_size": 20023147,
+                "name": "1k_L1denovo.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2932509,
+        "id": 14597690,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8777368.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 27666384}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 27668637}]}"
+        },
+        "runner_name": null,
+        "session_id": 33988944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-12-19 01:57:56.281561",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-01-30 20:10:45.071643",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "18654744",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed (as BED)",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2975097,
+        "id": 14908473,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9064456.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28143234}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28143221}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-01 08:16:27.221051",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-02-17 22:04:38.746996",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2975097,
+        "id": 15071330,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9226748.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28143218}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28143221}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-19 10:09:03.673001",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-02-17 22:04:22.370532",
+        "datasets": [
+            {
+                "dataset_id": "18225847",
+                "extension": "bed",
+                "file_size": 20023147,
+                "name": "1k_L1denovo.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2975097,
+        "id": 15071327,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9226742.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28143217}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28143222}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-19 10:08:33.836755",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-02-17 22:04:21.639463",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870264",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2975097,
+        "id": 15071326,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9226743.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28143217}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28143221}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-19 10:08:34.216549",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-02-17 22:04:39.122577",
+        "datasets": [
+            {
+                "dataset_id": "18225847",
+                "extension": "bed",
+                "file_size": 20023147,
+                "name": "1k_L1denovo.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "14870265",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Methylation_hg19.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2975097,
+        "id": 15071331,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9227499.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28143218}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28143222}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-19 15:27:07.914346",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-03-09 14:32:42.099895",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "19144253",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Meth_sorted.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3025398,
+        "id": 15253951,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9405830.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28695731}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28695757}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-03-11 14:38:15.148962",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-03-09 14:32:06.759921",
+        "datasets": [
+            {
+                "dataset_id": "18225847",
+                "extension": "bed",
+                "file_size": 20023147,
+                "name": "1k_L1denovo.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "19144250",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Meth_sorted.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3025398,
+        "id": 15253947,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9399965.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28695728}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28695758}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-03-11 02:32:40.994572",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-03-09 14:32:06.219623",
+        "datasets": [
+            {
+                "dataset_id": "18225846",
+                "extension": "bed",
+                "file_size": 26335913,
+                "name": "1k_Control.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "19144250",
+                "extension": "bed",
+                "file_size": 341459672,
+                "name": "CHG_Meth_sorted.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3025398,
+        "id": 15253946,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9399964.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28695728}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28695757}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-03-11 02:32:41.099665",
+        "user_id": 52630
+    },
+    {
+        "create_time": "2017-03-09 14:32:42.663836",
+        "datasets": [
+            {
+                "dataset_id": "18225847",
+                "extension": "bed",
+                "file_size": 20023147,
+                "name": "1k_L1denovo.bed",
+                "param_name": "genomic_interval"
+            },
+            {
+                "dataset_id": "19144253",
+                "extension": "bed",
+                "file_size": 142900861,
+                "name": "CHH_Meth_sorted.bed",
+                "param_name": "genomic_feature"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "1.0.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/weightedaverage/efa2b391e887/env.sh",
+                "version": "0.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3025398,
+        "id": 15253952,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9405803.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "allow_zeros": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomic_feature": "{\"values\": [{\"src\": \"hda\", \"id\": 28695731}]}",
+            "genomic_interval": "{\"values\": [{\"src\": \"hda\", \"id\": 28695758}]}"
+        },
+        "runner_name": null,
+        "session_id": 35696643,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/weightedaverage/wtavg/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-03-11 14:24:14.188009",
+        "user_id": 52630
+    }
+]

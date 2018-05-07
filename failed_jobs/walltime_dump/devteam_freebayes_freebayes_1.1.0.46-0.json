@@ -1,0 +1,1864 @@
+[
+    {
+        "create_time": "2018-02-16 12:40:35.654756",
+        "datasets": [
+            {
+                "dataset_id": "23626505",
+                "extension": "bam",
+                "file_size": 1846383151,
+                "name": "Bowtie2 on data 7: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2814112,
+        "id": 18410325,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12496318",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33893766}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"Arabidopsis_thaliana_TAIR10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43628826,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-18 00:40:58.968483",
+        "user_id": 28313
+    },
+    {
+        "create_time": "2018-03-02 19:15:29.625953",
+        "datasets": [
+            {
+                "dataset_id": "23520591",
+                "extension": "bam",
+                "file_size": 1947,
+                "name": "SAM-to-BAM on data 8: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3424032,
+        "id": 18585372,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12680136",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33779436}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779142}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43812969,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-04 07:15:48.234114",
+        "user_id": 121223
+    },
+    {
+        "create_time": "2018-03-02 19:14:24.772827",
+        "datasets": [
+            {
+                "dataset_id": "23768848",
+                "extension": "bam",
+                "file_size": 4282891006,
+                "name": "SAM-to-BAM on data 30: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23768848",
+                "extension": "bam",
+                "file_size": 4282891006,
+                "name": "SAM-to-BAM on data 30: converted BAM",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "23768849",
+                "extension": "bam",
+                "file_size": 3759405914,
+                "name": "SAM-to-BAM on data 31: converted BAM",
+                "param_name": "reference_source|input_bams2"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3424001,
+        "id": 18585358,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12680120",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34052186}, {\"src\": \"hda\", \"id\": 34052187}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33778981}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43962823,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-04 07:15:17.883342",
+        "user_id": 115068
+    },
+    {
+        "create_time": "2018-03-02 20:09:23.202485",
+        "datasets": [
+            {
+                "dataset_id": "23520591",
+                "extension": "bam",
+                "file_size": 1947,
+                "name": "SAM-to-BAM on data 8: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3424032,
+        "id": 18585909,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12680749",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33779436}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779142}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43812969,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-04 08:10:18.420422",
+        "user_id": 121223
+    },
+    {
+        "create_time": "2018-03-02 22:07:30.939650",
+        "datasets": [
+            {
+                "dataset_id": "23872769",
+                "extension": "bam",
+                "file_size": 9160510234,
+                "name": "SAM-to-BAM on data 16: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23872769",
+                "extension": "bam",
+                "file_size": 9160510234,
+                "name": "SAM-to-BAM on data 16: converted BAM",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3449178,
+        "id": 18587197,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12682132",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34175004}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 34166668}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 44285653,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-04 10:07:48.322831",
+        "user_id": 123162
+    },
+    {
+        "create_time": "2018-03-02 19:24:03.157599",
+        "datasets": [
+            {
+                "dataset_id": "23874923",
+                "extension": "bam",
+                "file_size": 10969553462,
+                "name": "SAM-to-BAM on data 8: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3432131,
+        "id": 18585452,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12682120",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34177253}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33904477}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43647241,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-04 10:06:48.643784",
+        "user_id": 121225
+    },
+    {
+        "create_time": "2018-03-05 16:57:44.739249",
+        "datasets": [
+            {
+                "dataset_id": "23520591",
+                "extension": "bam",
+                "file_size": 1947,
+                "name": "SAM-to-BAM on data 8: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3424032,
+        "id": 18612712,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12708507",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33779436}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779142}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43812969,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-07 04:58:07.618653",
+        "user_id": 121223
+    },
+    {
+        "create_time": "2018-03-05 05:10:17.021848",
+        "datasets": [
+            {
+                "dataset_id": "23875408",
+                "extension": "bam",
+                "file_size": 5261072849,
+                "name": "SAM-to-BAM on data 10: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23875408",
+                "extension": "bam",
+                "file_size": 5261072849,
+                "name": "SAM-to-BAM on data 10: converted BAM",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3424028,
+        "id": 18605556,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12700844",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34177764}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779116}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43647343,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-06 17:10:36.732297",
+        "user_id": 121226
+    },
+    {
+        "create_time": "2018-02-16 12:40:05.785653",
+        "datasets": [
+            {
+                "dataset_id": "23626505",
+                "extension": "bam",
+                "file_size": 1846383151,
+                "name": "Bowtie2 on data 7: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2814112,
+        "id": 18410322,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12496316",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "options_type": "{\"min_coverage\": \"8\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33893766}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"Arabidopsis_thaliana_TAIR10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43628826,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-18 00:40:29.121660",
+        "user_id": 28313
+    },
+    {
+        "create_time": "2018-02-16 12:38:58.099194",
+        "datasets": [
+            {
+                "dataset_id": "23626505",
+                "extension": "bam",
+                "file_size": 1846383151,
+                "name": "Bowtie2 on data 7: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2814112,
+        "id": 18410318,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12496309",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "options_type": "{\"min_coverage\": \"5\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33893766}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"Arabidopsis_thaliana_TAIR10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43628826,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-18 00:39:28.071691",
+        "user_id": 28313
+    },
+    {
+        "create_time": "2018-02-16 19:21:33.324569",
+        "datasets": [
+            {
+                "dataset_id": "23603185",
+                "extension": "bam",
+                "file_size": 23427,
+                "name": "SAM-to-BAM on data 23: converted BAM (2ndst set)",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23603185",
+                "extension": "bam",
+                "file_size": 23427,
+                "name": "SAM-to-BAM on data 23: converted BAM (2ndst set)",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "23620207",
+                "extension": "bam",
+                "file_size": 26531,
+                "name": "SAM-to-BAM on data 22: converted BAM (first)",
+                "param_name": "reference_source|input_bams2"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3424026,
+        "id": 18414810,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12501088",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33869059}, {\"src\": \"hda\", \"id\": 33887286}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779229}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43649320,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-18 07:22:06.095297",
+        "user_id": 121232
+    },
+    {
+        "create_time": "2018-02-16 12:41:02.419839",
+        "datasets": [
+            {
+                "dataset_id": "23626505",
+                "extension": "bam",
+                "file_size": 1846383151,
+                "name": "Bowtie2 on data 7: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2814112,
+        "id": 18410331,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12496323",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "options_type": "{\"min_coverage\": \"15\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33893766}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"Arabidopsis_thaliana_TAIR10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43628826,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-18 00:41:28.967827",
+        "user_id": 28313
+    },
+    {
+        "create_time": "2018-02-16 20:32:35.337147",
+        "datasets": [
+            {
+                "dataset_id": "23618270",
+                "extension": "bam",
+                "file_size": 4961147697,
+                "name": "SAM-to-BAM on data 14: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23618270",
+                "extension": "bam",
+                "file_size": 4961147697,
+                "name": "SAM-to-BAM on data 14: converted BAM",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "23618272",
+                "extension": "bam",
+                "file_size": 5845702116,
+                "name": "SAM-to-BAM on data 13: converted BAM",
+                "param_name": "reference_source|input_bams2"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3424090,
+        "id": 18415862,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12502116",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33885121}, {\"src\": \"hda\", \"id\": 33885123}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779693}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43963374,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-18 08:33:05.882069",
+        "user_id": 121228
+    },
+    {
+        "create_time": "2018-02-18 09:14:47.696378",
+        "datasets": [
+            {
+                "dataset_id": "23437002",
+                "extension": "bam",
+                "file_size": 3551303987,
+                "name": "Merge BAM Files on data 39, data 19, and data 7",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3210364,
+        "id": 18425896,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12519989",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33690948}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43572859,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-19 21:15:21.050828",
+        "user_id": 50472
+    },
+    {
+        "create_time": "2018-02-19 02:51:47.137672",
+        "datasets": [
+            {
+                "dataset_id": "23618270",
+                "extension": "bam",
+                "file_size": 4961147697,
+                "name": "SAM-to-BAM on data 14: converted BAM",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23618270",
+                "extension": "bam",
+                "file_size": 4961147697,
+                "name": "SAM-to-BAM on data 14: converted BAM",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "23618272",
+                "extension": "bam",
+                "file_size": 5845702116,
+                "name": "SAM-to-BAM on data 13: converted BAM",
+                "param_name": "reference_source|input_bams2"
+            },
+            {
+                "dataset_id": "7611323",
+                "extension": "bed",
+                "file_size": 323349,
+                "name": "tiled probe regions",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3424090,
+        "id": 18430514,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12524731",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33885121}, {\"src\": \"hda\", \"id\": 33885123}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 33779693}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43946685,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-20 14:52:25.258872",
+        "user_id": 121228
+    },
+    {
+        "create_time": "2018-02-21 08:02:27.822033",
+        "datasets": [
+            {
+                "dataset_id": "23678385",
+                "extension": "bam",
+                "file_size": 897119548,
+                "name": "Bowtie2 on S352: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2757697,
+        "id": 18457735,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12569015",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/AaegL1.len\"",
+            "dbkey": "\"AaegL1\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 33950422}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"AaegL1\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43996791,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-23 10:35:50.636091",
+        "user_id": 86980
+    },
+    {
+        "create_time": "2018-02-25 12:41:05.456730",
+        "datasets": [
+            {
+                "dataset_id": "23763378",
+                "extension": "bam",
+                "file_size": 1031453011,
+                "name": "80548 - 9112-1",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3413968,
+        "id": 18511978,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12608295",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"1\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34046414}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43856137,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-27 00:41:42.373445",
+        "user_id": 79386
+    },
+    {
+        "create_time": "2018-02-25 12:41:06.028545",
+        "datasets": [
+            {
+                "dataset_id": "23763385",
+                "extension": "bam",
+                "file_size": 1465261274,
+                "name": "83208 - 9112-g",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3413968,
+        "id": 18511979,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12608296",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"1\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34046421}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43856137,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-27 00:41:42.263144",
+        "user_id": 79386
+    },
+    {
+        "create_time": "2018-02-25 19:58:12.826943",
+        "datasets": [
+            {
+                "dataset_id": "23758901",
+                "extension": "bam",
+                "file_size": 5921362502,
+                "name": "Map with BWA for Illumina on data 41, data 42, and data 326: mapped reads",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23758442",
+                "extension": "fasta",
+                "file_size": 742291120,
+                "name": "ftp://ftp.solgenomics.net/genomes/Solanum_galapagense/LA0436/assemblies/denovo/Sg_LA0436_denovo.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3329725,
+        "id": 18514285,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12610574",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34041695}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 34041189}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 42495373,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-27 07:58:49.532298",
+        "user_id": 114875
+    },
+    {
+        "create_time": "2018-02-25 19:58:29.634286",
+        "datasets": [
+            {
+                "dataset_id": "23758899",
+                "extension": "bam",
+                "file_size": 5679115679,
+                "name": "Map with BWA for Illumina on data 45, data 46, and data 326: mapped reads",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23758442",
+                "extension": "fasta",
+                "file_size": 742291120,
+                "name": "ftp://ftp.solgenomics.net/genomes/Solanum_galapagense/LA0436/assemblies/denovo/Sg_LA0436_denovo.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3329725,
+        "id": 18514286,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12610575",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34041693}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 34041189}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 42495373,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-27 07:58:49.152853",
+        "user_id": 114875
+    },
+    {
+        "create_time": "2018-02-25 19:58:46.667153",
+        "datasets": [
+            {
+                "dataset_id": "23761175",
+                "extension": "bam",
+                "file_size": 5867004438,
+                "name": "Bowtie2 on data 326, data 44, and data 43: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23758442",
+                "extension": "fasta",
+                "file_size": 742291120,
+                "name": "ftp://ftp.solgenomics.net/genomes/Solanum_galapagense/LA0436/assemblies/denovo/Sg_LA0436_denovo.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3329725,
+        "id": 18514288,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12610577",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34044137}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 34041189}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 42495373,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-02-27 07:59:19.505030",
+        "user_id": 114875
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "create_time": "2017-10-02 21:38:11.120042",
+        "datasets": [
+            {
+                "dataset_id": "21452624",
+                "extension": "fastqsanger",
+                "file_size": 489273307,
+                "name": "Trim sequences on data 4",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__galaxy_sequence_utils@1.1.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "galaxy_sequence_utils",
+                "version": "1.1.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3265085,
+        "id": 16994130,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11058179.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 31432148}]}"
+        },
+        "runner_name": null,
+        "session_id": 40824356,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_deinterlacer/fastq_paired_end_deinterlacer/1.1.1",
+        "tool_version": "1.1.1",
+        "traceback": null,
+        "update_time": "2017-10-04 09:40:25.352114",
+        "user_id": 104543
+    }
+]

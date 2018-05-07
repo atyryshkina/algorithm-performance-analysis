@@ -1,0 +1,70 @@
+[
+    {
+        "create_time": "2017-06-11 13:33:38.533025",
+        "datasets": [
+            {
+                "dataset_id": "20255900",
+                "extension": "gemini.sqlite",
+                "file_size": 14719931392,
+                "name": "H1ESC_mTeSR1=gemini.sqlite",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gemini",
+                "path": "/galaxy/main/deps/gemini/0.18.1/iuc/gemini_interactions/527c8e4a356f",
+                "script": "/galaxy/main/deps/gemini/0.18.1/iuc/gemini_interactions/527c8e4a356f/env.sh",
+                "version": "0.18.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "tabix",
+                "path": "/galaxy/main/deps/tabix/0.2.6/iuc/gemini_interactions/527c8e4a356f",
+                "script": "/galaxy/main/deps/tabix/0.2.6/iuc/gemini_interactions/527c8e4a356f/env.sh",
+                "version": "0.2.6"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3149448,
+        "id": 16074485,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10162076.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"8eab4bf24eaa11e7a145005056a51846\"",
+            "annotation_databases": "\"2016-03-23\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gene": "{\"gene_selector\": \"lof\", \"__current_case__\": 1}",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 29978368}]}",
+            "radius": "\"3\"",
+            "variant_mode": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gemini_interactions/gemini_interactions/0.18.1.0",
+        "tool_version": "0.18.1.0",
+        "traceback": null,
+        "update_time": "2017-06-13 01:47:47.271845",
+        "user_id": 42102
+    }
+]

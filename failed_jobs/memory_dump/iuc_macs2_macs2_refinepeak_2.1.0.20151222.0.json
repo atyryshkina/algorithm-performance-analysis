@@ -1,0 +1,241 @@
+[
+    {
+        "create_time": "2016-04-03 23:12:06.944261",
+        "datasets": [
+            {
+                "dataset_id": "15062535",
+                "extension": "bed",
+                "file_size": 2566650099,
+                "name": "MACS2 callpeak on data 79 and data 78 (Bedgraph Treatment)",
+                "param_name": "infile"
+            },
+            {
+                "dataset_id": "15062536",
+                "extension": "bed",
+                "file_size": 3524555007,
+                "name": "MACS2 callpeak on data 79 and data 78 (Bedgraph Control)",
+                "param_name": "bed_infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2407180,
+        "id": 12329070,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6535432.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_infile": "24126130",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "cutoff": "\"5.0\"",
+            "dbkey": "\"mm9\"",
+            "infile": "24126129",
+            "winsize": "\"200\""
+        },
+        "runner_name": null,
+        "session_id": 29360549,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_refinepeak/2.1.0.20151222.0",
+        "tool_version": "2.1.0.20151222.0",
+        "traceback": null,
+        "update_time": "2016-04-03 23:16:06.761397",
+        "user_id": 64607
+    },
+    {
+        "create_time": "2017-01-05 19:14:00.150928",
+        "datasets": [
+            {
+                "dataset_id": "18367385",
+                "extension": "bed",
+                "file_size": 1887696129,
+                "name": "GSM1301133_PGC7.bed",
+                "param_name": "infile"
+            },
+            {
+                "dataset_id": "18367385",
+                "extension": "bed",
+                "file_size": 1887696129,
+                "name": "GSM1301133_PGC7.bed",
+                "param_name": "bed_infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "macs2",
+                "path": "/galaxy/main/deps/macs2/2.1.0.20151222/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/macs2/2.1.0.20151222/iuc/macs2/6d4babad010f/env.sh",
+                "version": "2.1.0.20151222"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/numpy/1.7.1/iuc/macs2/6d4babad010f/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "scipy",
+                "path": "/galaxy/main/deps/scipy/0.12.0/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/scipy/0.12.0/iuc/macs2/6d4babad010f/env.sh",
+                "version": "0.12.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2947774,
+        "id": 14698188,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8868578.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_infile": "{\"values\": [{\"src\": \"hda\", \"id\": 27824784}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "cutoff": "\"5.0\"",
+            "dbkey": "\"hg19\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 27824784}]}",
+            "winsize": "\"200\""
+        },
+        "runner_name": null,
+        "session_id": 35216311,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_refinepeak/2.1.0.20151222.0",
+        "tool_version": "2.1.0.20151222.0",
+        "traceback": null,
+        "update_time": "2017-01-05 23:58:07.118887",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-07-13 19:42:18.162596",
+        "datasets": [
+            {
+                "dataset_id": "16066753",
+                "extension": "bam",
+                "file_size": 848700930,
+                "name": "12408x4 8C Convert, Merge, Randomize on data 2991 and data 2990",
+                "param_name": "infile"
+            },
+            {
+                "dataset_id": "16519168",
+                "extension": "bed",
+                "file_size": 1283584,
+                "name": "12408x4 MACS on data 3000 (peaks: bed)",
+                "param_name": "bed_infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2006311,
+        "id": 13399699,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7611615.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ee3361597bb3dd51\"}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/bosTau7.len\"",
+            "cutoff": "\"5.0\"",
+            "dbkey": "\"bosTau7\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55496560201d6cff2\"}]}",
+            "winsize": "\"200\""
+        },
+        "runner_name": null,
+        "session_id": 29753732,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_refinepeak/2.1.0.20151222.0",
+        "tool_version": "2.1.0.20151222.0",
+        "traceback": null,
+        "update_time": "2016-07-13 19:44:54.163282",
+        "user_id": 42372
+    },
+    {
+        "create_time": "2016-11-21 14:11:28.082384",
+        "datasets": [
+            {
+                "dataset_id": "6863845",
+                "extension": "bam",
+                "file_size": 2434930607,
+                "name": "Diff3T3-L1-Brd4-ChIP.bam",
+                "param_name": "infile"
+            },
+            {
+                "dataset_id": "17946825",
+                "extension": "bed",
+                "file_size": 1642843775,
+                "name": "MACS2 callpeak on data 25 (Bedgraph Treatment)",
+                "param_name": "bed_infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 1631134,
+        "id": 14398674,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8603963.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fc4a9c6d4b2fb547\"}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "cutoff": "\"5.0\"",
+            "dbkey": "\"mm9\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9814cb5323ca817\"}]}",
+            "winsize": "\"200\""
+        },
+        "runner_name": null,
+        "session_id": 34360382,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_refinepeak/2.1.0.20151222.0",
+        "tool_version": "2.1.0.20151222.0",
+        "traceback": null,
+        "update_time": "2016-11-22 02:12:41.928489",
+        "user_id": 17093
+    }
+]

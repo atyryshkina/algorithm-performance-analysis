@@ -1,0 +1,74 @@
+[
+    {
+        "create_time": "2017-12-08 14:31:28.237159",
+        "datasets": [
+            {
+                "dataset_id": "22650761",
+                "extension": "fasta",
+                "file_size": 2557546346,
+                "name": "Make.contigs on data 10: trim.contigs.fasta",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__prokka@1.12",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "prokka",
+                "version": "1.12"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3327621,
+        "id": 17747129,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11813899",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "centre": "\"\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "compliant": "{\"__current_case__\": 1, \"compliant_select\": \"yes\"}",
+            "dbkey": "\"?\"",
+            "evalue": "\"1e-06\"",
+            "fast": "\"false\"",
+            "genus": "\"\"",
+            "gffver": "\"3\"",
+            "increment": "\"1\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 32792100}]}",
+            "kingdom": "{\"gcode\": \"11\", \"kingdom_select\": \"Bacteria\", \"__current_case__\": 1}",
+            "locustag": "\"PROKKA\"",
+            "metagenome": "\"false\"",
+            "norrna": "\"false\"",
+            "notrna": "\"false\"",
+            "outputs": "[\"gff\", \"gbk\", \"fna\", \"faa\", \"ffn\", \"sqn\", \"fsa\", \"tbl\", \"err\", \"txt\"]",
+            "plasmid": "\"\"",
+            "proteins": "null",
+            "rfam": "\"false\"",
+            "species": "\"\"",
+            "strain": "\"\"",
+            "usegenus": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41617925,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/crs4/prokka/prokka/1.12.0",
+        "tool_version": "1.12.0",
+        "traceback": null,
+        "update_time": "2017-12-10 02:47:15.067948",
+        "user_id": 114736
+    }
+]

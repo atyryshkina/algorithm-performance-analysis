@@ -1,0 +1,178 @@
+[
+    {
+        "create_time": "2017-01-12 19:37:55.116744",
+        "datasets": [
+            {
+                "dataset_id": "18443380",
+                "extension": "fasta",
+                "file_size": 233085327,
+                "name": "Merged Fasta for Earray",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18442556",
+                "extension": "fasta",
+                "file_size": 161469244,
+                "name": "Merged Fasta for Earray| H0N0",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2936681,
+        "id": 14752371,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8917025.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "globaldifferences": "\"yes\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27909591}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 27908541}]}",
+            "out_format1": "\"excel\"",
+            "out_format2": "\"gff\"",
+            "out_format3": "\"gff\"",
+            "wordsize": "\"20\""
+        },
+        "runner_name": null,
+        "session_id": 35281501,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: diffseq22/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2017-01-12 19:39:49.370572",
+        "user_id": 5613
+    },
+    {
+        "create_time": "2016-11-15 11:23:25.245859",
+        "datasets": [
+            {
+                "dataset_id": "17865284",
+                "extension": "fasta",
+                "file_size": 419890973,
+                "name": "PeaTransInMedicagoRef.fa",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17844841",
+                "extension": "fasta",
+                "file_size": 418342647,
+                "name": "GCF_000219495.3_MedtrA17_4.0_genomic.fna",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2892417,
+        "id": 14343635,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8549745.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "globaldifferences": "\"no\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58290dfe3974368b5\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5622b954457fd05c2\"}]}",
+            "out_format1": "\"diffseq\"",
+            "out_format2": "\"gff\"",
+            "out_format3": "\"gff\"",
+            "wordsize": "\"20\""
+        },
+        "runner_name": null,
+        "session_id": 33817569,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: diffseq22/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2016-11-15 11:24:46.566885",
+        "user_id": 92443
+    },
+    {
+        "create_time": "2015-08-16 00:33:46.255450",
+        "datasets": [
+            {
+                "dataset_id": "12179876",
+                "extension": "fasta",
+                "file_size": 369856092,
+                "name": "P27-1 assembled to Concatenated sequences 2.fasta",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "12178360",
+                "extension": "fasta",
+                "file_size": 369871767,
+                "name": "P30-9 assembled to Concatenated sequences.fasta",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2409240,
+        "id": 10127154,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4400069.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "globaldifferences": "\"yes\"",
+            "input1": "20784258",
+            "input2": "20781579",
+            "out_format1": "\"diffseq\"",
+            "out_format2": "\"gff\"",
+            "out_format3": "\"gff\"",
+            "wordsize": "\"20\""
+        },
+        "runner_name": null,
+        "session_id": 24695213,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: diffseq22/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2015-08-16 19:27:16.753333",
+        "user_id": 65190
+    }
+]

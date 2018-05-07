@@ -1,0 +1,67 @@
+[
+    {
+        "create_time": "2017-03-14 03:08:27.205954",
+        "datasets": [
+            {
+                "dataset_id": "19169886",
+                "extension": "phylip",
+                "file_size": 219021400,
+                "name": "MAFFT on data 1",
+                "param_name": "dist"
+            },
+            {
+                "dataset_id": "19189091",
+                "extension": "tabular",
+                "file_size": 1254699,
+                "name": "g23all.names",
+                "param_name": "name"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@_uv_",
+                "exact": false,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.33"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3028218,
+        "id": 15287547,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9444626.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "count": "null",
+            "cutoff": "\"0.03\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "matrix": "{\"dist\": {\"values\": [{\"src\": \"hda\", \"id\": 28723169}]}, \"name\": {\"values\": [{\"src\": \"hda\", \"id\": 28745411}]}, \"__current_case__\": 1, \"format\": \"phylip\"}",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "sim": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36576553,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/mothur_toolsuite/mothur_cluster/1.28.0",
+        "tool_version": "1.28.0",
+        "traceback": null,
+        "update_time": "2017-03-15 14:59:57.385251",
+        "user_id": null
+    }
+]

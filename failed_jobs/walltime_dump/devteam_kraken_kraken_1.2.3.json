@@ -1,0 +1,863 @@
+[
+    {
+        "create_time": "2017-10-02 21:02:49.317610",
+        "datasets": [
+            {
+                "dataset_id": "21528091",
+                "extension": "fasta",
+                "file_size": 1324658887,
+                "name": "Tabular-to-FASTA on data 46",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "21527753",
+                "extension": "fasta",
+                "file_size": 1321212395,
+                "name": "Tabular-to-FASTA on data 47",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3266195,
+        "id": 16993723,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11057916.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 31513164}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 31513791}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 40918844,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-10-04 09:03:17.267579",
+        "user_id": 73936
+    },
+    {
+        "create_time": "2017-10-27 14:54:40.615019",
+        "datasets": [
+            {
+                "dataset_id": "21894482",
+                "extension": "fasta",
+                "file_size": 9262779,
+                "name": "SRS013876.scaffolds.fa",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=2 --time=00:30:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3300941,
+        "id": 17240818,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11301543",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 31924114}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 41542842,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-10-27 15:25:50.118319",
+        "user_id": 114572
+    },
+    {
+        "create_time": "2017-11-08 10:30:04.157628",
+        "datasets": [
+            {
+                "dataset_id": "22094502",
+                "extension": "fasta",
+                "file_size": 681767746,
+                "name": "FASTQ to FASTA on data 113",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3032474,
+        "id": 17378857,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11440308",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 32144996}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 41843567,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-11-09 22:31:00.233686",
+        "user_id": 102088
+    },
+    {
+        "create_time": "2017-11-28 12:47:41.463382",
+        "datasets": [
+            {
+                "dataset_id": "22469515",
+                "extension": "fastq",
+                "file_size": 8673524674,
+                "name": "EBI SRA: ERS738393 File: ftp://ftp.sra.ebi.ac.uk/vol1/ERA441/ERA441016/fastq/Sea_urchin_S1_L001_R1_001.fastq.gz",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22469516",
+                "extension": "fastq",
+                "file_size": 8716657028,
+                "name": "EBI SRA: ERS738393 File: ftp://ftp.sra.ebi.ac.uk/vol1/ERA441/ERA441016/fastq/Sea_urchin_S1_L001_R2_001.fastq.gz",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3196732,
+        "id": 17618417,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11679397",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32574138}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32574137}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42297710,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-11-30 15:58:45.990204",
+        "user_id": 99908
+    },
+    {
+        "create_time": "2017-11-30 13:35:52.142001",
+        "datasets": [
+            {
+                "dataset_id": "22498014",
+                "extension": "fastqsanger",
+                "file_size": 2582309788,
+                "name": "1-A_23306_ATCACG.fastq",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3344659,
+        "id": 17650418,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11712344",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 32608864}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42347610,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-02 07:51:31.199820",
+        "user_id": 100847
+    },
+    {
+        "create_time": "2017-12-04 15:26:41.080995",
+        "datasets": [
+            {
+                "dataset_id": "22590065",
+                "extension": "fastqsanger",
+                "file_size": 16173325491,
+                "name": "IMSA_037_EPI_S2_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22590066",
+                "extension": "fastqsanger",
+                "file_size": 16173325491,
+                "name": "IMSA_037_EPI_S2_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3346731,
+        "id": 17691151,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11755588",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32718743}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32718742}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42448838,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-06 03:30:52.993542",
+        "user_id": 113740
+    },
+    {
+        "create_time": "2017-12-04 20:06:52.466713",
+        "datasets": [
+            {
+                "dataset_id": "22538030",
+                "extension": "fastqsanger",
+                "file_size": 3653315872,
+                "name": "Severe_IMSA_037_EPI_Unmapped_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22538029",
+                "extension": "fastqsanger",
+                "file_size": 4337922605,
+                "name": "Severe-IMSA_037_EPI_S2_R2_Unmapped.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3346731,
+        "id": 17694992,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11759092",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32656550}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32656551}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42448838,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-06 08:07:57.688327",
+        "user_id": 113740
+    },
+    {
+        "create_time": "2018-03-07 02:35:30.644452",
+        "datasets": [
+            {
+                "dataset_id": "23945443",
+                "extension": "fasta",
+                "file_size": 705417445,
+                "name": "lib19474.genes.fa",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2646908,
+        "id": 18633472,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12730048",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 34251865}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42855583,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-03-08 14:43:27.387397",
+        "user_id": 81421
+    },
+    {
+        "create_time": "2017-12-10 19:54:42.051261",
+        "datasets": [
+            {
+                "dataset_id": "22663824",
+                "extension": "fastqsanger",
+                "file_size": 1589567508,
+                "name": "WebsterR1.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "22664019",
+                "extension": "fastqsanger",
+                "file_size": 832429643,
+                "name": "TillesR2.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3284781,
+        "id": 17766057,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11834774",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"yes\", \"min_hits\": \"1\", \"__current_case__\": 0}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32809810}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32809603}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41243504,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-12 07:55:02.576671",
+        "user_id": 113508
+    },
+    {
+        "create_time": "2018-01-25 00:44:04.176673",
+        "datasets": [
+            {
+                "dataset_id": "23257739",
+                "extension": "fastqsanger",
+                "file_size": 6458697733,
+                "name": "HI.4266.001.BioOHT_22.AC_193_R1.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23257719",
+                "extension": "fastqsanger",
+                "file_size": 6458697733,
+                "name": "HI.4266.001.BioOHT_22.AC_193_R2.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3404333,
+        "id": 18150140,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12230860",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33488657}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33488678}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"true\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43421689,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-01-26 12:44:19.331472",
+        "user_id": 120571
+    },
+    {
+        "create_time": "2018-02-05 16:26:34.681317",
+        "datasets": [
+            {
+                "dataset_id": "23400275",
+                "extension": "fastqsanger",
+                "file_size": 5033736819,
+                "name": "PHA2_R1_trimmomatic.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23400276",
+                "extension": "fastqsanger",
+                "file_size": 5033736819,
+                "name": "PHA2_R2_trimmomatic.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2750890,
+        "id": 18259969,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12341561",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"yes\", \"min_hits\": \"1\", \"__current_case__\": 0}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33647193}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33647192}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43358388,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-07 04:53:01.837110",
+        "user_id": 68223
+    },
+    {
+        "create_time": "2018-03-07 02:35:33.491105",
+        "datasets": [
+            {
+                "dataset_id": "23945781",
+                "extension": "fasta",
+                "file_size": 444550912,
+                "name": "lib19541.genes.fa",
+                "param_name": "input_sequences"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2646908,
+        "id": 18633477,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12748182",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"input_sequences\": {\"values\": [{\"src\": \"hda\", \"id\": 34252351}]}, \"__current_case__\": 2, \"single_paired_selector\": \"no\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42855583,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-03-09 19:10:23.895259",
+        "user_id": 81421
+    },
+    {
+        "create_time": "2018-02-13 04:42:04.601373",
+        "datasets": [
+            {
+                "dataset_id": "23540271",
+                "extension": "fastqsanger",
+                "file_size": 1346762179,
+                "name": "L48_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23540343",
+                "extension": "fastqsanger",
+                "file_size": 1371294545,
+                "name": "L48_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3413492,
+        "id": 18359409,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12484343",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33801112}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33801040}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43686419,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 04:29:56.971717",
+        "user_id": 84166
+    },
+    {
+        "create_time": "2018-02-19 03:17:07.405633",
+        "datasets": [
+            {
+                "dataset_id": "23540271",
+                "extension": "fastqsanger",
+                "file_size": 1346762179,
+                "name": "L48_R1_001.fastq",
+                "param_name": "forward_input"
+            },
+            {
+                "dataset_id": "23540343",
+                "extension": "fastqsanger",
+                "file_size": 1371294545,
+                "name": "L48_R2_001.fastq",
+                "param_name": "reverse_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__kraken@0.10.6_eaf8fb68",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "kraken",
+                "version": "0.10.6_eaf8fb68"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3413492,
+        "id": 18430860,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12524975",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "kraken_database": "\"bacteria\"",
+            "only_classified_output": "\"false\"",
+            "quick_operation": "{\"quick\": \"no\", \"__current_case__\": 1}",
+            "single_paired": "{\"reverse_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33801112}]}, \"forward_input\": {\"values\": [{\"src\": \"hda\", \"id\": 33801040}]}, \"__current_case__\": 1, \"single_paired_selector\": \"yes\", \"check_names\": \"false\"}",
+            "split_reads": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43686419,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken/kraken/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-20 15:17:27.295009",
+        "user_id": 84166
+    }
+]

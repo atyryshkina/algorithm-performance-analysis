@@ -1,0 +1,860 @@
+[
+    {
+        "create_time": "2017-05-01 05:04:06.503747",
+        "datasets": [
+            {
+                "dataset_id": "19768928",
+                "extension": "tabular",
+                "file_size": 8814660020,
+                "name": "all_no_comments_headers.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3092931,
+        "id": 15713447,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9824862.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29414899}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 37673465,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-05-01 05:45:30.095523",
+        "user_id": 104924
+    },
+    {
+        "create_time": "2017-05-24 15:31:04.718593",
+        "datasets": [
+            {
+                "dataset_id": "20059961",
+                "extension": "vcf",
+                "file_size": 11616162,
+                "name": "SD003_WGS_lumpy.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3125290,
+        "id": 15929241,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10026950.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\", \"-classic\", \"-hgvs\", \"-sequenceOntology\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29754269}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38187162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-05-24 15:36:22.921501",
+        "user_id": 72640
+    },
+    {
+        "create_time": "2017-08-15 09:51:51.727920",
+        "datasets": [
+            {
+                "dataset_id": "20961092",
+                "extension": "vcf",
+                "file_size": 2643067375,
+                "name": "dnl7636_alg.imputed.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3222446,
+        "id": 16583556,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10654790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "null",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30877578}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": null, \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 39874931,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-08-15 10:09:38.729605",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-06-15 13:31:06.131389",
+        "datasets": [
+            {
+                "dataset_id": "20059961",
+                "extension": "vcf",
+                "file_size": 11616162,
+                "name": "SD003_WGS_lumpy.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3125290,
+        "id": 16109049,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10192436.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\", \"-classic\", \"-hgvs\", \"-sequenceOntology\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29754269}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38187162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-06-15 13:36:41.484011",
+        "user_id": 72640
+    },
+    {
+        "create_time": "2017-06-15 22:14:52.660721",
+        "datasets": [
+            {
+                "dataset_id": "20059961",
+                "extension": "vcf",
+                "file_size": 11616162,
+                "name": "SD003_WGS_lumpy.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "reserved",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=reserved"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3157450,
+        "id": 16112636,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10195288.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "null",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30047332}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": null, \"regulation\": [\"CD4\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38237302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-06-15 22:19:06.256190",
+        "user_id": 5254
+    },
+    {
+        "create_time": "2017-05-24 15:24:37.760269",
+        "datasets": [
+            {
+                "dataset_id": "20059961",
+                "extension": "vcf",
+                "file_size": 11616162,
+                "name": "SD003_WGS_lumpy.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3125290,
+        "id": 15929165,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10026861.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\", \"-classic\", \"-hgvs\", \"-sequenceOntology\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29754269}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38187162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-05-24 15:29:25.098646",
+        "user_id": 72640
+    },
+    {
+        "create_time": "2016-11-29 23:49:18.579564",
+        "datasets": [
+            {
+                "dataset_id": "18019380",
+                "extension": "tabular",
+                "file_size": 301345648,
+                "name": "Chr1_Mo.fasta",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2802356,
+        "id": 14449396,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8645446.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "null",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 27438750}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 34526988,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2016-11-29 23:57:27.528252",
+        "user_id": 89058
+    },
+    {
+        "create_time": "2017-06-15 16:37:19.386405",
+        "datasets": [
+            {
+                "dataset_id": "20059961",
+                "extension": "vcf",
+                "file_size": 11616162,
+                "name": "SD003_WGS_lumpy.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3125290,
+        "id": 16110789,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10194023.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\", \"-classic\", \"-hgvs\", \"-sequenceOntology\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29754269}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38187162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-06-15 16:56:39.918681",
+        "user_id": 72640
+    },
+    {
+        "create_time": "2017-03-03 08:57:13.532837",
+        "datasets": [
+            {
+                "dataset_id": "19061652",
+                "extension": "vcf",
+                "file_size": 7253799,
+                "name": "diploidSV.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3017715,
+        "id": 15197377,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9347786.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "null",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28600278}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": null, \"regulation\": null, \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 36408608,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-03-03 08:59:20.914016",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-11-30 00:20:38.267475",
+        "datasets": [
+            {
+                "dataset_id": "18019380",
+                "extension": "tabular",
+                "file_size": 301345648,
+                "name": "Chr1_Mo.fasta",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2802356,
+        "id": 14449556,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8645582.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "null",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 27438750}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 34526988,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2016-11-30 00:24:58.094990",
+        "user_id": 89058
+    },
+    {
+        "create_time": "2016-11-11 20:05:57.950887",
+        "datasets": [
+            {
+                "dataset_id": "17790589",
+                "extension": "vcf",
+                "file_size": 18789086,
+                "name": "SnpEff_WGS_SplitRead_annotated.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2755105,
+        "id": 14320845,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8528966.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-canon\", \"-lof\", \"-hgvs\"]",
+            "chr": "\"chr\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38Patch2.len\"",
+            "dbkey": "\"hg38Patch2\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c64323f0fbb56c2b\"}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"genome_version\": \"GRCh38.76\", \"__current_case__\": 2, \"genomeSrc\": \"named\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 33949906,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2016-11-11 20:11:21.915563",
+        "user_id": 72640
+    },
+    {
+        "create_time": "2017-06-18 19:33:20.932686",
+        "datasets": [
+            {
+                "dataset_id": "20334613",
+                "extension": "vcf",
+                "file_size": 11821035,
+                "name": "SD003_WGS_lumpy_chr.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3125290,
+        "id": 16126677,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10207287.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\", \"-classic\", \"-hgvs\", \"-sequenceOntology\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19Patch10.len\"",
+            "dbkey": "\"hg19Patch10\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30071496}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.75\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38187162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-06-18 19:37:44.777198",
+        "user_id": 72640
+    },
+    {
+        "create_time": "2017-06-18 19:23:48.613537",
+        "datasets": [
+            {
+                "dataset_id": "20334613",
+                "extension": "vcf",
+                "file_size": 11821035,
+                "name": "SD003_WGS_lumpy_chr.vcf",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "snpEff",
+                "path": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc",
+                "script": "/galaxy/main/deps/snpEff/4.0/iuc/snpeff/500832f27cbc/env.sh",
+                "version": "4.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3125290,
+        "id": 16126623,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10207229.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotations": "[\"-lof\", \"-classic\", \"-hgvs\", \"-sequenceOntology\"]",
+            "chr": "\"\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19Patch10.len\"",
+            "dbkey": "\"hg19Patch10\"",
+            "filter": "{\"specificEffects\": \"no\", \"__current_case__\": 0}",
+            "filterOut": "null",
+            "generate_stats": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30071496}]}",
+            "inputFormat": "\"vcf\"",
+            "intervals": "null",
+            "noLog": "\"true\"",
+            "offset": "\"default\"",
+            "outputConditional": "{\"outputFormat\": \"vcf\", \"__current_case__\": 0}",
+            "snpDb": "{\"extra_annotations\": [\"-motif\", \"-nextprot\"], \"regulation\": [\"CD4\", \"GM06990\", \"GM12878\", \"H1ESC\", \"HeLa-S3\", \"HepG2\", \"HMEC\", \"HSMM\", \"HUVEC\", \"IMR90\", \"K562b\", \"K562\", \"NH-A\", \"NHEK\"], \"genomeVersion\": \"GRCh37.74\", \"__current_case__\": 0, \"genomeSrc\": \"cached\"}",
+            "spliceSiteSize": "\"2\"",
+            "transcripts": "null",
+            "udLength": "\"5000\""
+        },
+        "runner_name": null,
+        "session_id": 38187162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.0.0",
+        "tool_version": "4.0.0",
+        "traceback": null,
+        "update_time": "2017-06-18 19:27:24.972294",
+        "user_id": 72640
+    }
+]

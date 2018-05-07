@@ -1,0 +1,481 @@
+[
+    {
+        "create_time": "2015-09-24 08:47:58.566200",
+        "datasets": [
+            {
+                "dataset_id": "12516531",
+                "extension": "interval",
+                "file_size": 19952324,
+                "name": "Get flanks on data 23,Sequences upstream from all SNPs ",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "12516526",
+                "extension": "interval",
+                "file_size": 28925479,
+                "name": "Get flanks on data 23, Sequences downstream from all SNPs ",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2442139,
+        "id": 10405296,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4684604.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/012/438/dataset_12438053.dat\"",
+            "dbkey": "\"TRAC\"",
+            "input1": "21191182",
+            "input2": "21191177",
+            "min": "\"1\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 25202069,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2015-09-24 08:50:28.557244",
+        "user_id": 61115
+    },
+    {
+        "create_time": "2017-11-03 19:54:59.979783",
+        "datasets": [
+            {
+                "dataset_id": "22014053",
+                "extension": "gff3",
+                "file_size": 79320615,
+                "name": "CDD_Only_GFF3_#protein_ID_awk_'col=$1{sub(/protein_ID/,\"#protein_ID\",$1);print}'_",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "22012488",
+                "extension": "gff3",
+                "file_size": 503402230,
+                "name": "CDD_Only_GFF3_awk '$9~/CDD/'",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/intersect/81ad85f731b9",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/intersect/81ad85f731b9/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/intersect/81ad85f731b9",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/intersect/81ad85f731b9/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3307695,
+        "id": 17322191,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11382201",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10Patch4.len\"",
+            "dbkey": "\"mm10Patch4\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 32056889}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 32055490}]}",
+            "min": "\"1\"",
+            "returntype": "\"-p\""
+        },
+        "runner_name": null,
+        "session_id": 40691179,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-11-03 19:57:08.667509",
+        "user_id": 3290
+    },
+    {
+        "create_time": "2014-12-18 21:18:48.523998",
+        "datasets": [
+            {
+                "dataset_id": "10043927",
+                "extension": "bed",
+                "file_size": 26188438,
+                "name": "rapvS-gapf.gapfilled.final.fa.out.bed",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "10043857",
+                "extension": "bed",
+                "file_size": 5556641,
+                "name": "rapgap_aug2.bed",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 1784032,
+        "id": 8442679,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2345785.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "18026669",
+            "input2": "18026759",
+            "min": "\"20\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 18329793,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2014-12-18 21:19:28.786150",
+        "user_id": 44425
+    },
+    {
+        "create_time": "2016-02-26 19:08:33.706657",
+        "datasets": [
+            {
+                "dataset_id": "10969439",
+                "extension": "bed",
+                "file_size": 115814,
+                "name": "wgs_proband.bed.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14532848",
+                "extension": "interval",
+                "file_size": 4874171,
+                "name": "B30_e5_300.txt",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2258631,
+        "id": 11953708,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6187052.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "19216617",
+            "input2": "23532394",
+            "min": "\"1\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 28547920,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2016-02-26 19:09:35.315404",
+        "user_id": 30921
+    },
+    {
+        "create_time": "2018-02-22 15:33:52.746747",
+        "datasets": [
+            {
+                "dataset_id": "23734166",
+                "extension": "bed",
+                "file_size": 621773,
+                "name": "BGS_chr1_bp.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23734169",
+                "extension": "interval",
+                "file_size": 687731,
+                "name": "NCBI.37.txt",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/intersect/81ad85f731b9",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/intersect/81ad85f731b9/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/intersect/81ad85f731b9",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/intersect/81ad85f731b9/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2094947,
+        "id": 18484804,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12580010",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 34015103}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 34015105}]}",
+            "min": "\"1\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 42772700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2018-02-22 15:34:40.139697",
+        "user_id": 54767
+    },
+    {
+        "create_time": "2017-03-11 09:51:15.795976",
+        "datasets": [
+            {
+                "dataset_id": "19154867",
+                "extension": "bed",
+                "file_size": 12058080,
+                "name": "UCSC Main on Human: knownGene (genome)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "19154787",
+                "extension": "interval",
+                "file_size": 15072469,
+                "name": "genome_FAlfonso_v4_Full_20170310034501.txt",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bx-python",
+                "path": "/galaxy/main/deps/bx-python/0.7.1/devteam/intersect/81ad85f731b9",
+                "script": "/galaxy/main/deps/bx-python/0.7.1/devteam/intersect/81ad85f731b9/env.sh",
+                "version": "0.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy-ops",
+                "path": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/intersect/81ad85f731b9",
+                "script": "/galaxy/main/deps/galaxy-ops/1.0.0/devteam/intersect/81ad85f731b9/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2945501,
+        "id": 15269244,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9414962.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28706650}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": 28706570}]}",
+            "min": "\"1\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 36548467,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-03-11 09:51:35.209119",
+        "user_id": 93212
+    },
+    {
+        "create_time": "2015-05-19 16:51:27.158097",
+        "datasets": [
+            {
+                "dataset_id": "11360200",
+                "extension": "bed",
+                "file_size": 50809,
+                "name": "nb1.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11360251",
+                "extension": "interval",
+                "file_size": 9419602,
+                "name": "UCSC Main on Human: refLink (genome)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2312375,
+        "id": 9497347,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3819336.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "19756017",
+            "input2": "19756069",
+            "min": "\"1\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 23178649,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2015-05-19 16:52:10.823544",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-06-09 16:29:02.577429",
+        "datasets": [
+            {
+                "dataset_id": "16172604",
+                "extension": "interval",
+                "file_size": 26328,
+                "name": "MetaboliteData.txt",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "16161627",
+                "extension": "interval",
+                "file_size": 2423504072,
+                "name": "pita.HQgenes.repeats.gff3",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2733171,
+        "id": 13123963,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7307993.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b545d96552e37e6f78\"}]}",
+            "input2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bda7729128a4b0f6\"}]}",
+            "min": "\"1\"",
+            "returntype": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 29663867,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2016-06-09 16:31:06.667774",
+        "user_id": 15920
+    }
+]

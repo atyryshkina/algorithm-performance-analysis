@@ -1,0 +1,1072 @@
+[
+    {
+        "create_time": "2017-01-15 16:38:16.785269",
+        "datasets": [
+            {
+                "dataset_id": "18462929",
+                "extension": "fastq",
+                "file_size": 4090879229,
+                "name": "NSK-A21_1.fq",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "18462930",
+                "extension": "fastq",
+                "file_size": 4090879229,
+                "name": "NSK-A21_2.fq",
+                "param_name": "input_format|reads_r"
+            },
+            {
+                "dataset_id": "18467727",
+                "extension": "gtf",
+                "file_size": 79780224,
+                "name": "UCSC Main on Rat: ensGene (genome)",
+                "param_name": "known_splice_gtf"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2956227,
+        "id": 14772024,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8934916",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/rn6.len\"",
+            "dbkey": "\"rn6\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 27930584}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 27930583}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"1000000\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"false\", \"no_discordant\": \"false\", \"maxins\": \"10000\", \"overlap\": \"false\", \"minins\": \"0\", \"contain\": \"false\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"false\"}",
+            "reference_genome": "{\"index\": \"rn6\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"coefficient\": \"0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment\": \"false\", \"nc_function_type\": \"C\", \"constant_term\": \"0\", \"nc_coefficient\": \"1\", \"noncanonical_penalty\": \"3\", \"known_splice_gtf\": {\"values\": [{\"src\": \"hda\", \"id\": 27935592}]}, \"nc_constant_term\": \"-8\", \"min_intron\": \"20\", \"function_type\": \"C\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"--dta-cufflinks\", \"max_intron\": \"600000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 34488366,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-01-16 01:21:09.905625",
+        "user_id": 36816
+    },
+    {
+        "create_time": "2017-01-24 04:21:10.533836",
+        "datasets": [
+            {
+                "dataset_id": "18558569",
+                "extension": "fasta",
+                "file_size": 305578134,
+                "name": "Kharchia assembled master transcript",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "18567028",
+                "extension": "fasta",
+                "file_size": 13724148371,
+                "name": "Triticum aestivum genome (partial).fna",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2804944,
+        "id": 14853963,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9014191",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28035511}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28044638}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34745055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-01-24 04:39:52.721333",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2017-02-23 18:41:02.827666",
+        "datasets": [
+            {
+                "dataset_id": "18911933",
+                "extension": "fastqsanger",
+                "file_size": 15396508330,
+                "name": "Trimmomatic on HC5HWBCXY_2_GAGTGG_1.fastq (R1 paired)",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "18911934",
+                "extension": "fastqsanger",
+                "file_size": 15297467502,
+                "name": "Trimmomatic on HC5HWBCXY_2_GAGTGG_2.fastq (R2 paired)",
+                "param_name": "input_format|reads_r"
+            },
+            {
+                "dataset_id": "18882244",
+                "extension": "fasta",
+                "file_size": 5226692729,
+                "name": "a.lines.efasta",
+                "param_name": "history_item"
+            },
+            {
+                "dataset_id": "18884925",
+                "extension": "len",
+                "file_size": 42680787,
+                "name": "final.contigs.fa",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2998963,
+        "id": 15121645,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9275630",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/main/files/018/884/dataset_18884925.dat\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 28435501}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 28435500}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28401605}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"coefficient\": \"0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment\": \"false\", \"nc_function_type\": \"C\", \"constant_term\": \"0\", \"nc_coefficient\": \"1\", \"noncanonical_penalty\": \"3\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8\", \"min_intron\": \"20\", \"function_type\": \"C\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"--dta\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 35594818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-02-23 21:31:54.350441",
+        "user_id": 67011
+    },
+    {
+        "create_time": "2017-02-22 17:13:25.030255",
+        "datasets": [
+            {
+                "dataset_id": "18911933",
+                "extension": "fastqsanger",
+                "file_size": 15396508330,
+                "name": "Trimmomatic on HC5HWBCXY_2_GAGTGG_1.fastq (R1 paired)",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "18911934",
+                "extension": "fastqsanger",
+                "file_size": 15297467502,
+                "name": "Trimmomatic on HC5HWBCXY_2_GAGTGG_2.fastq (R2 paired)",
+                "param_name": "input_format|reads_r"
+            },
+            {
+                "dataset_id": "18882244",
+                "extension": "fasta",
+                "file_size": 5226692729,
+                "name": "a.lines.efasta",
+                "param_name": "history_item"
+            },
+            {
+                "dataset_id": "18884925",
+                "extension": "len",
+                "file_size": 42680787,
+                "name": "final.contigs.fa",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2998963,
+        "id": 15109690,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9264492",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/main/files/018/884/dataset_18884925.dat\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 28435501}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 28435500}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28401605}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"coefficient\": \"0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment\": \"false\", \"nc_function_type\": \"C\", \"constant_term\": \"0\", \"nc_coefficient\": \"1\", \"noncanonical_penalty\": \"3\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8\", \"min_intron\": \"20\", \"function_type\": \"C\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"--dta\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 35594818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-02-22 20:03:30.719739",
+        "user_id": 67011
+    },
+    {
+        "create_time": "2017-02-01 04:56:22.314049",
+        "datasets": [
+            {
+                "dataset_id": "18558569",
+                "extension": "fasta",
+                "file_size": 305578134,
+                "name": "Kharchia assembled master transcript",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "18567028",
+                "extension": "fasta",
+                "file_size": 13724148371,
+                "name": "Triticum aestivum genome (partial).fna",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2804944,
+        "id": 14920274,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9091548",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28035511}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28044638}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 35598654,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-02-03 08:56:18.355269",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2017-01-23 10:46:28.567976",
+        "datasets": [
+            {
+                "dataset_id": "18558569",
+                "extension": "fasta",
+                "file_size": 305578134,
+                "name": "Kharchia assembled master transcript",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "18567028",
+                "extension": "fasta",
+                "file_size": 13724148371,
+                "name": "Triticum aestivum genome (partial).fna",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2804944,
+        "id": 14845224,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9005382",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28035511}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28044638}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 35531377,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-01-23 11:03:47.671640",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2017-01-25 11:06:35.473315",
+        "datasets": [
+            {
+                "dataset_id": "18558569",
+                "extension": "fasta",
+                "file_size": 305578134,
+                "name": "Kharchia assembled master transcript",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "18567028",
+                "extension": "fasta",
+                "file_size": 13724148371,
+                "name": "Triticum aestivum genome (partial).fna",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2804944,
+        "id": 14865181,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9024703",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28035511}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28044638}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34745055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-01-25 11:26:37.772092",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2017-01-27 09:51:13.464776",
+        "datasets": [
+            {
+                "dataset_id": "18558569",
+                "extension": "fasta",
+                "file_size": 305578134,
+                "name": "Kharchia assembled master transcript",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "18625278",
+                "extension": "fasta",
+                "file_size": 13607333627,
+                "name": "NormalizeFasta on data 425: Normalized FASTA dataset",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2804944,
+        "id": 14886841,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9046163",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28035511}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28107993}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 35598654,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-01-28 01:39:06.597063",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2017-02-02 05:09:20.959753",
+        "datasets": [
+            {
+                "dataset_id": "18558569",
+                "extension": "fasta",
+                "file_size": 305578134,
+                "name": "Kharchia assembled master transcript",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "18567028",
+                "extension": "fasta",
+                "file_size": 13724148371,
+                "name": "Triticum aestivum genome (partial).fna",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2804944,
+        "id": 14929808,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9098669",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28035511}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28044638}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 35598654,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-02-03 10:49:23.656416",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2016-12-13 21:24:15.385235",
+        "datasets": [
+            {
+                "dataset_id": "18103451",
+                "extension": "fastq",
+                "file_size": 1337068252,
+                "name": "GenomeSpace import on 67_sorted_R1.fastq",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "18103452",
+                "extension": "fastq",
+                "file_size": 1305729452,
+                "name": "GenomeSpace import on 67_sorted_R2.fastq",
+                "param_name": "input_format|reads_r"
+            },
+            {
+                "dataset_id": "18183588",
+                "extension": "fasta",
+                "file_size": 35110371908,
+                "name": "GenomeSpace import on pila.v1.0.scafSeq.gz",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2919819,
+        "id": 14568824,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8747877",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 27533912}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 27533911}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 27622291}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34835808,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2016-12-13 21:39:23.972122",
+        "user_id": 87235
+    },
+    {
+        "create_time": "2017-02-23 20:55:49.215043",
+        "datasets": [
+            {
+                "dataset_id": "18911933",
+                "extension": "fastqsanger",
+                "file_size": 15396508330,
+                "name": "Trimmomatic on HC5HWBCXY_2_GAGTGG_1.fastq (R1 paired)",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "18911934",
+                "extension": "fastqsanger",
+                "file_size": 15297467502,
+                "name": "Trimmomatic on HC5HWBCXY_2_GAGTGG_2.fastq (R2 paired)",
+                "param_name": "input_format|reads_r"
+            },
+            {
+                "dataset_id": "18872013",
+                "extension": "fasta",
+                "file_size": 2360437461,
+                "name": "final.contigs.fa",
+                "param_name": "history_item"
+            },
+            {
+                "dataset_id": "18884925",
+                "extension": "len",
+                "file_size": 42680787,
+                "name": "final.contigs.fa",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2998963,
+        "id": 15122973,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9277294",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/main/files/018/884/dataset_18884925.dat\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 28435501}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 28435500}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 28389767}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"coefficient\": \"0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment\": \"false\", \"nc_function_type\": \"C\", \"constant_term\": \"0\", \"nc_coefficient\": \"1\", \"noncanonical_penalty\": \"3\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8\", \"min_intron\": \"20\", \"function_type\": \"C\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"--dta\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 35594818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-02-24 12:03:02.544907",
+        "user_id": 67011
+    },
+    {
+        "create_time": "2017-02-28 19:29:59.902505",
+        "datasets": [
+            {
+                "dataset_id": "19022848",
+                "extension": "fasta",
+                "file_size": 361876819,
+                "name": "Nem_unmasked.fasta",
+                "param_name": "input_format|reads"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3013861,
+        "id": 15170486,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9321420",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 28557320}]}, \"__current_case__\": 2, \"paired_selector\": \"single\"}, \"input_format_selector\": \"fasta\", \"__current_case__\": 0}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"mm10\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36095469,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-02-28 19:33:52.673068",
+        "user_id": 94897
+    },
+    {
+        "create_time": "2017-04-20 19:57:36.499820",
+        "datasets": [
+            {
+                "dataset_id": "19666810",
+                "extension": "fastqsanger",
+                "file_size": 19672584355,
+                "name": "Trimmomatic on SRR594456:forward (R1 paired)",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "19666811",
+                "extension": "fastqsanger",
+                "file_size": 19367327295,
+                "name": "Trimmomatic on SRR594456:reverse (R2 paired)",
+                "param_name": "input_format|reads_r"
+            },
+            {
+                "dataset_id": "19664717",
+                "extension": "fasta",
+                "file_size": 11059439701,
+                "name": "NormalizeFasta on data 2216: Normalized FASTA dataset",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2336506,
+        "id": 15639096,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9757362",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 29299105}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 29299104}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 29296957}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 37450845,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2017-04-22 00:34:41.744946",
+        "user_id": 64485
+    }
+]

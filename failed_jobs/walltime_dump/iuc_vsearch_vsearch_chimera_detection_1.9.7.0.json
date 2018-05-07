@@ -1,0 +1,370 @@
+[
+    {
+        "create_time": "2016-03-09 12:26:26.113576",
+        "datasets": [
+            {
+                "dataset_id": "14730442",
+                "extension": "fasta",
+                "file_size": 1106459546,
+                "name": "seqs_sorted.fasta",
+                "param_name": "infile_denovo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2586531,
+        "id": 12082388,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6307634.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abskew": "\"2.0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "detection_mode": "{\"infile_denovo\": 23744562, \"detection_mode_select\": \"denovo\", \"__current_case__\": 0}",
+            "dn": "\"1.4\"",
+            "mindiffs": "\"3\"",
+            "mindiv": "\"0.8\"",
+            "minh": "\"0.28\"",
+            "outputs": "null",
+            "self_param": "\"False\"",
+            "selfid_param": "\"False\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 28040003,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_chimera_detection/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-03-11 00:53:24.544949",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-12-15 08:35:03.489982",
+        "datasets": [
+            {
+                "dataset_id": "18190072",
+                "extension": "fasta",
+                "file_size": 416521226,
+                "name": "PR1D_filtered_renamed_fasta",
+                "param_name": "infile_denovo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2716288,
+        "id": 14580902,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8760304.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abskew": "\"2.0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "detection_mode": "{\"infile_denovo\": {\"values\": [{\"src\": \"hda\", \"id\": 27628977}]}, \"detection_mode_select\": \"denovo\", \"__current_case__\": 0}",
+            "dn": "\"1.4\"",
+            "mindiffs": "\"3\"",
+            "mindiv": "\"0.8\"",
+            "minh": "\"0.28\"",
+            "outputs": "[\"nonchimeras\", \"uchimealns\", \"uchimeout\"]",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 34836497,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_chimera_detection/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-12-16 20:35:39.842790",
+        "user_id": 81626
+    },
+    {
+        "create_time": "2016-12-15 08:35:04.486471",
+        "datasets": [
+            {
+                "dataset_id": "18190073",
+                "extension": "fasta",
+                "file_size": 432017070,
+                "name": "PR1ND_filtered_renamed_fasta",
+                "param_name": "infile_denovo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2716288,
+        "id": 14580903,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8760305.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abskew": "\"2.0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "detection_mode": "{\"infile_denovo\": {\"values\": [{\"src\": \"hda\", \"id\": 27628978}]}, \"detection_mode_select\": \"denovo\", \"__current_case__\": 0}",
+            "dn": "\"1.4\"",
+            "mindiffs": "\"3\"",
+            "mindiv": "\"0.8\"",
+            "minh": "\"0.28\"",
+            "outputs": "[\"nonchimeras\", \"uchimealns\", \"uchimeout\"]",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 34836497,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_chimera_detection/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-12-16 20:35:39.339289",
+        "user_id": 81626
+    },
+    {
+        "create_time": "2016-12-23 18:03:35.223385",
+        "datasets": [
+            {
+                "dataset_id": "18190072",
+                "extension": "fasta",
+                "file_size": 416521226,
+                "name": "PR1D_filtered_renamed_fasta",
+                "param_name": "infile_denovo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2716288,
+        "id": 14639577,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8814945.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abskew": "\"2.0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "detection_mode": "{\"infile_denovo\": {\"values\": [{\"src\": \"hda\", \"id\": 27628977}]}, \"detection_mode_select\": \"denovo\", \"__current_case__\": 0}",
+            "dn": "\"1.4\"",
+            "mindiffs": "\"3\"",
+            "mindiv": "\"0.8\"",
+            "minh": "\"0.28\"",
+            "outputs": "[\"nonchimeras\", \"uchimealns\", \"uchimeout\"]",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 34836497,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_chimera_detection/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-12-25 06:03:53.856099",
+        "user_id": 81626
+    },
+    {
+        "create_time": "2016-12-28 14:54:11.616102",
+        "datasets": [
+            {
+                "dataset_id": "18190072",
+                "extension": "fasta",
+                "file_size": 416521226,
+                "name": "PR1D_filtered_renamed_fasta",
+                "param_name": "infile_denovo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2716288,
+        "id": 14657772,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8831074.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abskew": "\"2.0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "detection_mode": "{\"infile_denovo\": {\"values\": [{\"src\": \"hda\", \"id\": 27628977}]}, \"detection_mode_select\": \"denovo\", \"__current_case__\": 0}",
+            "dn": "\"1.4\"",
+            "mindiffs": "\"3\"",
+            "mindiv": "\"0.8\"",
+            "minh": "\"0.28\"",
+            "outputs": "[\"nonchimeras\", \"uchimealns\", \"uchimeout\"]",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 34836497,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_chimera_detection/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-12-30 02:54:44.817662",
+        "user_id": 81626
+    },
+    {
+        "create_time": "2017-05-17 21:06:38.714100",
+        "datasets": [
+            {
+                "dataset_id": "19919959",
+                "extension": "fasta",
+                "file_size": 74801720,
+                "name": "FASTQ to FASTA on data 42",
+                "param_name": "infile_reference"
+            },
+            {
+                "dataset_id": "19892672",
+                "extension": "fasta",
+                "file_size": 3273489229,
+                "name": "Hg38_HPV16.fasta",
+                "param_name": "db"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3106125,
+        "id": 15872366,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9972538.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "abskew": "\"2.0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "detection_mode": "{\"db\": {\"values\": [{\"src\": \"hda\", \"id\": 29554112}]}, \"detection_mode_select\": \"reference\", \"__current_case__\": 1, \"infile_reference\": {\"values\": [{\"src\": \"hda\", \"id\": 29585040}]}}",
+            "dn": "\"1.4\"",
+            "mindiffs": "\"3\"",
+            "mindiv": "\"0.8\"",
+            "minh": "\"0.28\"",
+            "outputs": "null",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 37980121,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_chimera_detection/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-05-19 09:07:08.301132",
+        "user_id": 99883
+    }
+]

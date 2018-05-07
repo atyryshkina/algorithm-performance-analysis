@@ -1,0 +1,218 @@
+[
+    {
+        "create_time": "2017-03-25 03:15:21.962115",
+        "datasets": [
+            {
+                "dataset_id": "19289618",
+                "extension": "bed",
+                "file_size": 1468429607,
+                "name": "RmDup data 12   VAL2 2(as BED)",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "19289618",
+                "extension": "bed",
+                "file_size": 1468429607,
+                "name": "RmDup data 12   VAL2 2(as BED)",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "macs2",
+                "path": "/galaxy/main/deps/macs2/2.1.0.20151222/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/macs2/2.1.0.20151222/iuc/macs2/6d4babad010f/env.sh",
+                "version": "2.1.0.20151222"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/numpy/1.7.1/iuc/macs2/6d4babad010f/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "scipy",
+                "path": "/galaxy/main/deps/scipy/0.12.0/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/scipy/0.12.0/iuc/macs2/6d4babad010f/env.sh",
+                "version": "0.12.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/3.1.2/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/R/3.1.2/iuc/macs2/6d4babad010f/env.sh",
+                "version": "3.1.2"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "MACS2_SCRIPT_PATH",
+                "path": "/galaxy/main/deps/environment_settings/MACS2_SCRIPT_PATH/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/environment_settings/MACS2_SCRIPT_PATH/iuc/macs2/6d4babad010f/env.sh",
+                "version": null
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3039025,
+        "id": 15392865,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9528665.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"false\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.01\", \"__current_case__\": 1}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "effective_genome_size_options": "{\"gsize\": \"135000000\", \"effective_genome_size_options_selector\": \"user_defined\", \"__current_case__\": 4}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28868317}]}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 36859987,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.0.20151222.0",
+        "tool_version": "2.1.0.20151222.0",
+        "traceback": null,
+        "update_time": "2017-03-26 15:15:33.735937",
+        "user_id": 63480
+    },
+    {
+        "create_time": "2017-03-27 15:42:49.410947",
+        "datasets": [
+            {
+                "dataset_id": "19289618",
+                "extension": "bed",
+                "file_size": 1468429607,
+                "name": "RmDup data 12   VAL2 2(as BED)",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "19289618",
+                "extension": "bed",
+                "file_size": 1468429607,
+                "name": "RmDup data 12   VAL2 2(as BED)",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "macs2",
+                "path": "/galaxy/main/deps/macs2/2.1.0.20151222/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/macs2/2.1.0.20151222/iuc/macs2/6d4babad010f/env.sh",
+                "version": "2.1.0.20151222"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/numpy/1.7.1/iuc/macs2/6d4babad010f/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "scipy",
+                "path": "/galaxy/main/deps/scipy/0.12.0/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/scipy/0.12.0/iuc/macs2/6d4babad010f/env.sh",
+                "version": "0.12.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/3.1.2/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/R/3.1.2/iuc/macs2/6d4babad010f/env.sh",
+                "version": "3.1.2"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "MACS2_SCRIPT_PATH",
+                "path": "/galaxy/main/deps/environment_settings/MACS2_SCRIPT_PATH/iuc/macs2/6d4babad010f",
+                "script": "/galaxy/main/deps/environment_settings/MACS2_SCRIPT_PATH/iuc/macs2/6d4babad010f/env.sh",
+                "version": null
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3039025,
+        "id": 15407654,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9540515.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"false\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.01\", \"__current_case__\": 1}",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "effective_genome_size_options": "{\"gsize\": \"135000000\", \"effective_genome_size_options_selector\": \"user_defined\", \"__current_case__\": 4}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28868317}]}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 36817228,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.0.20151222.0",
+        "tool_version": "2.1.0.20151222.0",
+        "traceback": null,
+        "update_time": "2017-03-29 03:44:56.933659",
+        "user_id": 63480
+    }
+]

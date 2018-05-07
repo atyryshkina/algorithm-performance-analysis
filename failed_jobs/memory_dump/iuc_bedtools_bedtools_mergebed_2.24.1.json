@@ -1,0 +1,251 @@
+[
+    {
+        "create_time": "2017-02-11 13:22:02.072502",
+        "datasets": [
+            {
+                "dataset_id": "18799513",
+                "extension": "bam",
+                "file_size": 581395668,
+                "name": "Map with Bowtie for Illumina on data 10, data 9, and data 11: mapped reads",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18798652",
+                "extension": "len",
+                "file_size": 20,
+                "name": "rey15a.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bedtools",
+                "path": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb",
+                "script": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb/env.sh",
+                "version": "2.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2990943,
+        "id": 15011036,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9167322.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "c_and_o_argument_repeat": "[]",
+            "chromInfo": "\"/galaxy-repl/main/files/018/798/dataset_18798652.dat\"",
+            "dbkey": "\"?\"",
+            "distance": "\"0\"",
+            "header": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28306007}]}",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 35958491,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.24.1",
+        "tool_version": "2.24.1",
+        "traceback": null,
+        "update_time": "2017-02-11 13:22:36.959925",
+        "user_id": 99889
+    },
+    {
+        "create_time": "2017-02-11 08:13:09.399033",
+        "datasets": [
+            {
+                "dataset_id": "18798443",
+                "extension": "bam",
+                "file_size": 593458240,
+                "name": "Bowtie2 on data 11, data 10, and data 9: aligned reads (sorted BAM)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bedtools",
+                "path": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb",
+                "script": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb/env.sh",
+                "version": "2.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2990943,
+        "id": 15010379,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9166642.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "c_and_o_argument_repeat": "[]",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "distance": "\"0\"",
+            "header": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28304909}]}",
+            "strand": "\"-s\""
+        },
+        "runner_name": null,
+        "session_id": 35958491,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.24.1",
+        "tool_version": "2.24.1",
+        "traceback": null,
+        "update_time": "2017-02-11 08:13:47.236915",
+        "user_id": 99889
+    },
+    {
+        "create_time": "2017-02-11 09:41:45.463122",
+        "datasets": [
+            {
+                "dataset_id": "18798443",
+                "extension": "bam",
+                "file_size": 593458240,
+                "name": "Bowtie2 on data 11, data 10, and data 9: aligned reads (sorted BAM)",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18798652",
+                "extension": "len",
+                "file_size": 20,
+                "name": "rey15a.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bedtools",
+                "path": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb",
+                "script": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb/env.sh",
+                "version": "2.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2990943,
+        "id": 15010565,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9166803.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "c_and_o_argument_repeat": "[]",
+            "chromInfo": "\"/galaxy-repl/main/files/018/798/dataset_18798652.dat\"",
+            "dbkey": "\"?\"",
+            "distance": "\"0\"",
+            "header": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28304909}]}",
+            "strand": "\"-s\""
+        },
+        "runner_name": null,
+        "session_id": 35958491,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.24.1",
+        "tool_version": "2.24.1",
+        "traceback": null,
+        "update_time": "2017-02-11 09:42:21.596258",
+        "user_id": 99889
+    },
+    {
+        "create_time": "2017-02-11 12:35:27.576847",
+        "datasets": [
+            {
+                "dataset_id": "18799513",
+                "extension": "bam",
+                "file_size": 581395668,
+                "name": "Map with Bowtie for Illumina on data 10, data 9, and data 11: mapped reads",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18798652",
+                "extension": "len",
+                "file_size": 20,
+                "name": "rey15a.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bedtools",
+                "path": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb",
+                "script": "/galaxy/main/deps/bedtools/2.24/iuc/bedtools/d25966c8ddeb/env.sh",
+                "version": "2.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2990943,
+        "id": 15010925,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9167242.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "c_and_o_argument_repeat": "[]",
+            "chromInfo": "\"/galaxy-repl/main/files/018/798/dataset_18798652.dat\"",
+            "dbkey": "\"?\"",
+            "distance": "\"0\"",
+            "header": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28306007}]}",
+            "strand": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 35958491,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.24.1",
+        "tool_version": "2.24.1",
+        "traceback": null,
+        "update_time": "2017-02-11 12:42:13.509955",
+        "user_id": 99889
+    }
+]

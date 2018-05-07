@@ -1,0 +1,490 @@
+[
+    {
+        "create_time": "2017-04-12 21:45:21.100783",
+        "datasets": [
+            {
+                "dataset_id": "19569982",
+                "extension": "bedgraph",
+                "file_size": 12849316903,
+                "name": "MACS2 callpeak on Relapsed Merge BAM Files (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19569983",
+                "extension": "bedgraph",
+                "file_size": 4765032816,
+                "name": "MACS2 callpeak on Relapsed Merge BAM Files (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3040492,
+        "id": 15569101,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9693156.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29192997}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29192996}]}"
+        },
+        "runner_name": null,
+        "session_id": 35868784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-12 23:10:14.301952",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-26 15:24:11.002518",
+        "datasets": [
+            {
+                "dataset_id": "19647555",
+                "extension": "bedgraph",
+                "file_size": 12849316903,
+                "name": "MACS2 callpeak on Rel Merged BAM FDR<0.005 (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19647556",
+                "extension": "bedgraph",
+                "file_size": 4765032816,
+                "name": "MACS2 callpeak on Rel Merged BAM FDR<0.005 (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3040492,
+        "id": 15682520,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9796966.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29277864}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29277863}]}"
+        },
+        "runner_name": null,
+        "session_id": 35868784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-26 16:43:04.173140",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-12 18:23:49.307727",
+        "datasets": [
+            {
+                "dataset_id": "19568012",
+                "extension": "bedgraph",
+                "file_size": 9980945960,
+                "name": "MACS2 callpeak on NPC Merge BAM Files (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19568013",
+                "extension": "bedgraph",
+                "file_size": 3785810375,
+                "name": "MACS2 callpeak on NPC Merge BAM Files (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3040492,
+        "id": 15567777,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9691547.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29190869}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29190868}]}"
+        },
+        "runner_name": null,
+        "session_id": 35868784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-12 19:54:18.695164",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-18 00:59:07.546516",
+        "datasets": [
+            {
+                "dataset_id": "19623474",
+                "extension": "bedgraph",
+                "file_size": 12984433628,
+                "name": "MACS2 callpeak on data 842 (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19623475",
+                "extension": "bedgraph",
+                "file_size": 4785081101,
+                "name": "MACS2 callpeak on data 842 (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3040492,
+        "id": 15610044,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9729256.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29251924}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29251923}]}"
+        },
+        "runner_name": null,
+        "session_id": 35868784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-18 01:14:12.742839",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-18 01:54:30.575992",
+        "datasets": [
+            {
+                "dataset_id": "19623474",
+                "extension": "bedgraph",
+                "file_size": 12984433628,
+                "name": "MACS2 callpeak on data 842 (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19623475",
+                "extension": "bedgraph",
+                "file_size": 4785081101,
+                "name": "MACS2 callpeak on data 842 (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3040492,
+        "id": 15610495,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9729689.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29251924}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29251923}]}"
+        },
+        "runner_name": null,
+        "session_id": 35868784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-18 02:09:31.238045",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-18 02:10:20.602120",
+        "datasets": [
+            {
+                "dataset_id": "19623474",
+                "extension": "bedgraph",
+                "file_size": 12984433628,
+                "name": "MACS2 callpeak on data 842 (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19623475",
+                "extension": "bedgraph",
+                "file_size": 4785081101,
+                "name": "MACS2 callpeak on data 842 (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3040492,
+        "id": 15610545,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9729738.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29251924}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29251923}]}"
+        },
+        "runner_name": null,
+        "session_id": 35868784,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-18 02:25:02.009611",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-13 16:43:44.764806",
+        "datasets": [
+            {
+                "dataset_id": "19569982",
+                "extension": "bedgraph",
+                "file_size": 12849316903,
+                "name": "MACS2 callpeak on Relapsed Merge BAM Files (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19569983",
+                "extension": "bedgraph",
+                "file_size": 4765032816,
+                "name": "MACS2 callpeak on Relapsed Merge BAM Files (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3040492,
+        "id": 15578113,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9700651.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29192997}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29192996}]}"
+        },
+        "runner_name": null,
+        "session_id": 37276700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-13 17:01:10.561452",
+        "user_id": 91117
+    },
+    {
+        "create_time": "2017-04-19 15:39:00.054658",
+        "datasets": [
+            {
+                "dataset_id": "19647555",
+                "extension": "bedgraph",
+                "file_size": 12849316903,
+                "name": "MACS2 callpeak on Rel Merged BAM FDR<0.005 (Bedgraph Treatment)",
+                "param_name": "infile_treatment"
+            },
+            {
+                "dataset_id": "19647556",
+                "extension": "bedgraph",
+                "file_size": 4765032816,
+                "name": "MACS2 callpeak on Rel Merged BAM FDR<0.005 (Bedgraph Control)",
+                "param_name": "infile_control"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3040492,
+        "id": 15626660,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9745318.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bdgcmp_options": "{\"bdgcmp_options_selector\": \"ppois\", \"__current_case__\": 3}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "infile_control": "{\"values\": [{\"src\": \"hda\", \"id\": 29277864}]}",
+            "infile_treatment": "{\"values\": [{\"src\": \"hda\", \"id\": 29277863}]}"
+        },
+        "runner_name": null,
+        "session_id": 37276700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_bdgcmp/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-04-19 16:02:10.151559",
+        "user_id": 91117
+    }
+]

@@ -1,0 +1,240 @@
+[
+    {
+        "create_time": "2017-02-22 04:24:07.322904",
+        "datasets": [
+            {
+                "dataset_id": "18928523",
+                "extension": "bed",
+                "file_size": 285039000,
+                "name": "UCSC Main on Human: snp147 (chr10:1-133797422)",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18928437",
+                "extension": "bed",
+                "file_size": 40458,
+                "name": "UCSC Main on Human: snp147 (chr9:133252000-133280861)",
+                "param_name": "group1"
+            },
+            {
+                "dataset_id": "14933947",
+                "extension": "vcf",
+                "file_size": 26655430954,
+                "name": "dbSNP_146_hg38.vcf",
+                "param_name": "group2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/snpfreq/72ea0d13dd66",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/snpfreq/72ea0d13dd66/env.sh",
+                "version": "2.11.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bioc_qvalue",
+                "path": "/galaxy/main/deps/bioc_qvalue/1.34.0/devteam/snpfreq/72ea0d13dd66",
+                "script": "/galaxy/main/deps/bioc_qvalue/1.34.0/devteam/snpfreq/72ea0d13dd66/env.sh",
+                "version": "1.34.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2988737,
+        "id": 15102356,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9257668.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "inTypeCond": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 28455038}]}, \"inType\": \"snp\", \"group1\": {\"values\": [{\"src\": \"hda\", \"id\": 28454947}]}, \"__current_case__\": 1, \"group2\": {\"values\": [{\"src\": \"hda\", \"id\": 28455105}]}}"
+        },
+        "runner_name": null,
+        "session_id": 35915818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/snpfreq/hgv_snpFreq/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-02-22 04:26:28.575812",
+        "user_id": 99763
+    },
+    {
+        "create_time": "2017-07-13 06:40:34.355384",
+        "datasets": [
+            {
+                "dataset_id": "20561782",
+                "extension": "vcf",
+                "file_size": 52581408723,
+                "name": "MPileup on data 9 and data 15",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20561782",
+                "extension": "vcf",
+                "file_size": 52581408723,
+                "name": "MPileup on data 9 and data 15",
+                "param_name": "group1"
+            },
+            {
+                "dataset_id": "20561782",
+                "extension": "vcf",
+                "file_size": 52581408723,
+                "name": "MPileup on data 9 and data 15",
+                "param_name": "group2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/snpfreq/72ea0d13dd66",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/snpfreq/72ea0d13dd66/env.sh",
+                "version": "2.11.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bioc_qvalue",
+                "path": "/galaxy/main/deps/bioc_qvalue/1.34.0/devteam/snpfreq/72ea0d13dd66",
+                "script": "/galaxy/main/deps/bioc_qvalue/1.34.0/devteam/snpfreq/72ea0d13dd66/env.sh",
+                "version": "1.34.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3182960,
+        "id": 16328567,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10395131.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/oryza_sativa_japonica_nipponbare_IRGSP4.0.len\"",
+            "dbkey": "\"oryza_sativa_japonica_nipponbare_IRGSP4.0\"",
+            "inTypeCond": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 30369292}]}, \"inType\": \"snp\", \"group1\": {\"values\": [{\"src\": \"hda\", \"id\": 30369292}]}, \"__current_case__\": 1, \"group2\": {\"values\": [{\"src\": \"hda\", \"id\": 30369292}]}}"
+        },
+        "runner_name": null,
+        "session_id": 39112537,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/snpfreq/hgv_snpFreq/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-07-13 07:38:51.826132",
+        "user_id": 108548
+    },
+    {
+        "create_time": "2016-09-30 13:14:23.839062",
+        "datasets": [
+            {
+                "dataset_id": "17351128",
+                "extension": "tabular",
+                "file_size": 6044593604,
+                "name": "VCFtoTab-delimited: on data 28",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2834793,
+        "id": 13982254,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8201671.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "inTypeCond": "{\"group1_3\": \"1\", \"group1_2\": \"5\", \"group1_1\": \"4\", \"inType\": \"tab\", \"__current_case__\": 0, \"input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a49298c725b5f5ad\"}]}, \"group2_1\": \"1\", \"group2_2\": \"1\", \"group2_3\": \"1\"}"
+        },
+        "runner_name": null,
+        "session_id": 32992190,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/snpfreq/hgv_snpFreq/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-09-30 13:28:36.159156",
+        "user_id": 90340
+    },
+    {
+        "create_time": "2016-10-10 13:29:45.346020",
+        "datasets": [
+            {
+                "dataset_id": "17441592",
+                "extension": "vcf",
+                "file_size": 11688228970,
+                "name": "SnpEff on data 9",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2848844,
+        "id": 14044922,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8262318.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "inTypeCond": "{\"group1_3\": \"1\", \"group1_2\": \"5\", \"group1_1\": \"4\", \"inType\": \"tab\", \"__current_case__\": 0, \"input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5088ec49a3b53b179\"}]}, \"group2_1\": \"1\", \"group2_2\": \"1\", \"group2_3\": \"1\"}"
+        },
+        "runner_name": null,
+        "session_id": 33492556,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/snpfreq/hgv_snpFreq/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-10-10 13:44:29.070072",
+        "user_id": 90340
+    }
+]

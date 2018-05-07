@@ -1,0 +1,2727 @@
+[
+    {
+        "create_time": "2016-04-06 20:47:14.439827",
+        "datasets": [
+            {
+                "dataset_id": "15103252",
+                "extension": "bed",
+                "file_size": 7879247,
+                "name": "MIRb",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14921137",
+                "extension": "bigwig",
+                "file_size": 84864129,
+                "name": "PGR.bigwig",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "14923455",
+                "extension": "bigwig",
+                "file_size": 767239902,
+                "name": "H3K4me3.bigwig",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "14923567",
+                "extension": "bigwig",
+                "file_size": 260057999,
+                "name": "DNaseI.bigwig",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "14923596",
+                "extension": "bigwig",
+                "file_size": 1977065906,
+                "name": "FAIRE.bigwig",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "14934232",
+                "extension": "bigwig",
+                "file_size": 125494349,
+                "name": "GATA2input.bigwig",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "14954903",
+                "extension": "bigwig",
+                "file_size": 203405530,
+                "name": "HistoneInput.bigwig",
+                "param_name": "scoreFileName8"
+            },
+            {
+                "dataset_id": "14979536",
+                "extension": "bigwig",
+                "file_size": 153877056,
+                "name": "PGRInput.bigwig",
+                "param_name": "scoreFileName9"
+            },
+            {
+                "dataset_id": "15015416",
+                "extension": "bigwig",
+                "file_size": 116257219,
+                "name": "MeDIP-Seq.bigwig",
+                "param_name": "scoreFileName10"
+            },
+            {
+                "dataset_id": "15016373",
+                "extension": "bigwig",
+                "file_size": 105516822,
+                "name": "MethylCap-Seq.bigwig",
+                "param_name": "scoreFileName11"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2659847,
+        "id": 12356597,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6561173.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24172533}]",
+            "scoreFileName": "\"24169258,24169260,24169261,24169263,24169264,24169266,24169267,24169269,24169270,24169272,24169274\""
+        },
+        "runner_name": null,
+        "session_id": 29445088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-07 17:45:48.920860",
+        "user_id": 43829
+    },
+    {
+        "create_time": "2016-03-22 21:43:56.580139",
+        "datasets": [
+            {
+                "dataset_id": "14938363",
+                "extension": "bed",
+                "file_size": 114544253,
+                "name": "MACS2 callpeak on data 18 (Bedgraph Control)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14938364",
+                "extension": "bigwig",
+                "file_size": 85105117,
+                "name": "Bowtie2 on data 14 and data 15: aligned reads (sorted BAM)",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14938364",
+                "extension": "bigwig",
+                "file_size": 85105117,
+                "name": "Bowtie2 on data 14 and data 15: aligned reads (sorted BAM)",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2502268,
+        "id": 12230734,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6445182.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"\", \"sortUsing\": \"mean\", \"skipZeros\": \"False\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"False\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"regionBodyLength\": \"5000\", \"regionStartLength\": {\"afterRegionStartLength\": \"1000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"1000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"False\", \"saveSortedRegions\": \"False\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 23984349}]",
+            "scoreFileName": "\"23984350\""
+        },
+        "runner_name": null,
+        "session_id": 27214380,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-23 00:44:22.572781",
+        "user_id": 2621
+    },
+    {
+        "create_time": "2016-04-21 10:14:08.592985",
+        "datasets": [
+            {
+                "dataset_id": "15358943",
+                "extension": "bed",
+                "file_size": 1332807536,
+                "name": "SubtractBed on data 42 and data 50",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15355289",
+                "extension": "bigwig",
+                "file_size": 208633036,
+                "name": "Filter on data 9",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15355289",
+                "extension": "bigwig",
+                "file_size": 208633036,
+                "name": "Filter on data 9",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2677909,
+        "id": 12547309,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6735550.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd06171bd94cd29f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b505f62b5cb60746ee\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28776799,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-21 10:16:55.169772",
+        "user_id": 67495
+    },
+    {
+        "create_time": "2016-03-29 15:08:22.720485",
+        "datasets": [
+            {
+                "dataset_id": "14983551",
+                "extension": "bed",
+                "file_size": 190006595,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 1639242,
+        "id": 12272785,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6481556.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24035454}]",
+            "scoreFileName": "\"24033710\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-29 15:21:26.306946",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-05-12 17:35:11.337626",
+        "datasets": [
+            {
+                "dataset_id": "15794023",
+                "extension": "bed",
+                "file_size": 692064812,
+                "name": "MACS2 callpeak on data 6 (Bedgraph Control)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15775729",
+                "extension": "bigwig",
+                "file_size": 253210962,
+                "name": "P31CTCF_S4",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15775729",
+                "extension": "bigwig",
+                "file_size": 253210962,
+                "name": "P31CTCF_S4",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2703040,
+        "id": 12873918,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7073553",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a71cf2cfc6ad5203\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51040e5886899ccd1\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28622206,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-05-12 18:26:41.827522",
+        "user_id": 68038
+    },
+    {
+        "create_time": "2016-04-03 14:03:51.993165",
+        "datasets": [
+            {
+                "dataset_id": "15056929",
+                "extension": "bed",
+                "file_size": 6443281948,
+                "name": "E4.5_ICM_R2.bam (as BED)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15056935",
+                "extension": "bigwig",
+                "file_size": 17427075,
+                "name": "bamCoverage on data 74",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15056935",
+                "extension": "bigwig",
+                "file_size": 17427075,
+                "name": "bamCoverage on data 74",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "15056936",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoverage on data 75",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "15056937",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoverage on data 76",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "15056938",
+                "extension": "bigwig",
+                "file_size": 14339648,
+                "name": "bamCoverage on data 77",
+                "param_name": "scoreFileName4"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2640546,
+        "id": 12325401,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6532106.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24120209}]",
+            "scoreFileName": "\"24120216,24120217,24120218,24120219\""
+        },
+        "runner_name": null,
+        "session_id": 29093227,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-03 14:05:52.003520",
+        "user_id": 80993
+    },
+    {
+        "create_time": "2016-04-21 10:10:33.296876",
+        "datasets": [
+            {
+                "dataset_id": "15358943",
+                "extension": "bed",
+                "file_size": 1332807536,
+                "name": "SubtractBed on data 42 and data 50",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15355289",
+                "extension": "bigwig",
+                "file_size": 208633036,
+                "name": "Filter on data 9",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15355289",
+                "extension": "bigwig",
+                "file_size": 208633036,
+                "name": "Filter on data 9",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2677909,
+        "id": 12547275,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6735508.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd06171bd94cd29f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b505f62b5cb60746ee\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28776799,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-21 10:13:33.312439",
+        "user_id": 67495
+    },
+    {
+        "create_time": "2016-04-01 13:53:32.923336",
+        "datasets": [
+            {
+                "dataset_id": "15025925",
+                "extension": "bed",
+                "file_size": 3178506,
+                "name": "MIR3All.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 1639242,
+        "id": 12311371,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6518547.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"25000\", \"beforeRegionStartLength\": \"25000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24084875}]",
+            "scoreFileName": "\"23928179\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-02 00:19:20.085218",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-03-25 16:53:18.731669",
+        "datasets": [
+            {
+                "dataset_id": "14967776",
+                "extension": "bed",
+                "file_size": 797518277,
+                "name": "SAM-to-BAM on data 8: converted BAM (as BED)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14967858",
+                "extension": "bigwig",
+                "file_size": 63966849,
+                "name": "bamCoverage on data 9",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14967858",
+                "extension": "bigwig",
+                "file_size": 63966849,
+                "name": "bamCoverage on data 9",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2641849,
+        "id": 12253143,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6464501.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"\", \"sortUsing\": \"mean\", \"skipZeros\": \"False\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"False\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"False\", \"saveSortedRegions\": \"True\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24017843}]",
+            "scoreFileName": "\"24017928\""
+        },
+        "runner_name": null,
+        "session_id": 29028521,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-25 16:55:23.387680",
+        "user_id": 69337
+    },
+    {
+        "create_time": "2016-05-11 15:40:30.765200",
+        "datasets": [
+            {
+                "dataset_id": "15758089",
+                "extension": "bed",
+                "file_size": 2549969704,
+                "name": "MACS2 callpeak on data 27 (Bedgraph Treatment)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15758018",
+                "extension": "bigwig",
+                "file_size": 311852733,
+                "name": "Wig/BedGraph-to-bigWig on data 33",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15758018",
+                "extension": "bigwig",
+                "file_size": 311852733,
+                "name": "Wig/BedGraph-to-bigWig on data 33",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2701305,
+        "id": 12857399,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7057874.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e889de2b36c8a929\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54e06a7a2d185a1c9\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28622206,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-05-11 15:43:16.678342",
+        "user_id": 68038
+    },
+    {
+        "create_time": "2016-05-11 01:18:38.944174",
+        "datasets": [
+            {
+                "dataset_id": "15758089",
+                "extension": "bed",
+                "file_size": 2549969704,
+                "name": "MACS2 callpeak on data 27 (Bedgraph Treatment)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15758018",
+                "extension": "bigwig",
+                "file_size": 311852733,
+                "name": "Wig/BedGraph-to-bigWig on data 33",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15758018",
+                "extension": "bigwig",
+                "file_size": 311852733,
+                "name": "Wig/BedGraph-to-bigWig on data 33",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2701305,
+        "id": 12850779,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7052869.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e889de2b36c8a929\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54e06a7a2d185a1c9\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28622206,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-05-11 06:16:42.048329",
+        "user_id": 68038
+    },
+    {
+        "create_time": "2016-03-26 14:06:25.373070",
+        "datasets": [
+            {
+                "dataset_id": "14961916",
+                "extension": "bed",
+                "file_size": 2454672,
+                "name": "UCSC Main on Human: refGene (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14966259",
+                "extension": "bigwig",
+                "file_size": 297317744,
+                "name": "H1TvsIn_AGS_bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14966259",
+                "extension": "bigwig",
+                "file_size": 297317744,
+                "name": "H1TvsIn_AGS_bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14966266",
+                "extension": "bigwig",
+                "file_size": 280178240,
+                "name": "H1TvsIn_MM231_bigwig",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 1739732,
+        "id": 12257490,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6468212.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"40000\", \"regionStartLength\": {\"afterRegionStartLength\": \"2000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"2000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24011203}]",
+            "scoreFileName": "\"24016195,24016202\""
+        },
+        "runner_name": null,
+        "session_id": 28021890,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-27 01:22:12.186756",
+        "user_id": 42951
+    },
+    {
+        "create_time": "2016-04-06 20:47:15.183146",
+        "datasets": [
+            {
+                "dataset_id": "15103253",
+                "extension": "bed",
+                "file_size": 3621724,
+                "name": "MIRc",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14921137",
+                "extension": "bigwig",
+                "file_size": 84864129,
+                "name": "PGR.bigwig",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "14923455",
+                "extension": "bigwig",
+                "file_size": 767239902,
+                "name": "H3K4me3.bigwig",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "14923567",
+                "extension": "bigwig",
+                "file_size": 260057999,
+                "name": "DNaseI.bigwig",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "14923596",
+                "extension": "bigwig",
+                "file_size": 1977065906,
+                "name": "FAIRE.bigwig",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "14934232",
+                "extension": "bigwig",
+                "file_size": 125494349,
+                "name": "GATA2input.bigwig",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "14954903",
+                "extension": "bigwig",
+                "file_size": 203405530,
+                "name": "HistoneInput.bigwig",
+                "param_name": "scoreFileName8"
+            },
+            {
+                "dataset_id": "14979536",
+                "extension": "bigwig",
+                "file_size": 153877056,
+                "name": "PGRInput.bigwig",
+                "param_name": "scoreFileName9"
+            },
+            {
+                "dataset_id": "15015416",
+                "extension": "bigwig",
+                "file_size": 116257219,
+                "name": "MeDIP-Seq.bigwig",
+                "param_name": "scoreFileName10"
+            },
+            {
+                "dataset_id": "15016373",
+                "extension": "bigwig",
+                "file_size": 105516822,
+                "name": "MethylCap-Seq.bigwig",
+                "param_name": "scoreFileName11"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2659847,
+        "id": 12356598,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6561171.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24172534}]",
+            "scoreFileName": "\"24169258,24169260,24169261,24169263,24169264,24169266,24169267,24169269,24169270,24169272,24169274\""
+        },
+        "runner_name": null,
+        "session_id": 29445088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-07 18:59:48.660586",
+        "user_id": 43829
+    },
+    {
+        "create_time": "2016-04-06 20:47:13.529188",
+        "datasets": [
+            {
+                "dataset_id": "15103250",
+                "extension": "bed",
+                "file_size": 3178424,
+                "name": "MIR3",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14921137",
+                "extension": "bigwig",
+                "file_size": 84864129,
+                "name": "PGR.bigwig",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "14923455",
+                "extension": "bigwig",
+                "file_size": 767239902,
+                "name": "H3K4me3.bigwig",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "14923567",
+                "extension": "bigwig",
+                "file_size": 260057999,
+                "name": "DNaseI.bigwig",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "14923596",
+                "extension": "bigwig",
+                "file_size": 1977065906,
+                "name": "FAIRE.bigwig",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "14934232",
+                "extension": "bigwig",
+                "file_size": 125494349,
+                "name": "GATA2input.bigwig",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "14954903",
+                "extension": "bigwig",
+                "file_size": 203405530,
+                "name": "HistoneInput.bigwig",
+                "param_name": "scoreFileName8"
+            },
+            {
+                "dataset_id": "14979536",
+                "extension": "bigwig",
+                "file_size": 153877056,
+                "name": "PGRInput.bigwig",
+                "param_name": "scoreFileName9"
+            },
+            {
+                "dataset_id": "15015416",
+                "extension": "bigwig",
+                "file_size": 116257219,
+                "name": "MeDIP-Seq.bigwig",
+                "param_name": "scoreFileName10"
+            },
+            {
+                "dataset_id": "15016373",
+                "extension": "bigwig",
+                "file_size": 105516822,
+                "name": "MethylCap-Seq.bigwig",
+                "param_name": "scoreFileName11"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2659847,
+        "id": 12356595,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6561172.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24172531}]",
+            "scoreFileName": "\"24169258,24169260,24169261,24169263,24169264,24169266,24169267,24169269,24169270,24169272,24169274\""
+        },
+        "runner_name": null,
+        "session_id": 29445088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-07 19:04:23.752208",
+        "user_id": 43829
+    },
+    {
+        "create_time": "2016-04-03 14:03:49.748455",
+        "datasets": [
+            {
+                "dataset_id": "15056926",
+                "extension": "bed",
+                "file_size": 10161233464,
+                "name": "E3.5_ICM_R2.bam (as BED)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15056935",
+                "extension": "bigwig",
+                "file_size": 17427075,
+                "name": "bamCoverage on data 74",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15056935",
+                "extension": "bigwig",
+                "file_size": 17427075,
+                "name": "bamCoverage on data 74",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "15056936",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoverage on data 75",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "15056937",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoverage on data 76",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "15056938",
+                "extension": "bigwig",
+                "file_size": 14339648,
+                "name": "bamCoverage on data 77",
+                "param_name": "scoreFileName4"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2640546,
+        "id": 12325398,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6532109.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24120206}]",
+            "scoreFileName": "\"24120216,24120217,24120218,24120219\""
+        },
+        "runner_name": null,
+        "session_id": 29093227,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-03 14:05:53.611288",
+        "user_id": 80993
+    },
+    {
+        "create_time": "2016-03-25 16:58:35.240633",
+        "datasets": [
+            {
+                "dataset_id": "14967776",
+                "extension": "bed",
+                "file_size": 797518277,
+                "name": "SAM-to-BAM on data 8: converted BAM (as BED)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14967858",
+                "extension": "bigwig",
+                "file_size": 63966849,
+                "name": "bamCoverage on data 9",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14967858",
+                "extension": "bigwig",
+                "file_size": 63966849,
+                "name": "bamCoverage on data 9",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2641849,
+        "id": 12253197,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6464549.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"\", \"sortUsing\": \"mean\", \"skipZeros\": \"False\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"False\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"False\", \"saveSortedRegions\": \"True\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24017843}]",
+            "scoreFileName": "\"24017928\""
+        },
+        "runner_name": null,
+        "session_id": 29028521,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-25 17:00:40.872150",
+        "user_id": 69337
+    },
+    {
+        "create_time": "2016-04-15 03:30:18.635349",
+        "datasets": [
+            {
+                "dataset_id": "14938437",
+                "extension": "bed",
+                "file_size": 15717531,
+                "name": "K562 ChromHMM enhancers ",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15236863",
+                "extension": "bigwig",
+                "file_size": 2563171,
+                "name": "K562_plus strand polyA  Convert Wiggle to BigWig on data 56",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15236863",
+                "extension": "bigwig",
+                "file_size": 2563171,
+                "name": "K562_plus strand polyA  Convert Wiggle to BigWig on data 56",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2643388,
+        "id": 12461058,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6655863.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"20000\", \"beforeRegionStartLength\": \"20000\", \"nanAfterEnd\": \"true\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c346efd3d76559f2\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56192c8d96ff3f758\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28479787,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-16 00:42:02.543868",
+        "user_id": 40656
+    },
+    {
+        "create_time": "2016-03-29 15:08:24.204412",
+        "datasets": [
+            {
+                "dataset_id": "14983559",
+                "extension": "bed",
+                "file_size": 190006595,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1639242,
+        "id": 12272786,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6481490.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24035462}]",
+            "scoreFileName": "\"24033710\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-29 15:14:12.686347",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-03-25 13:51:53.689650",
+        "datasets": [
+            {
+                "dataset_id": "14965479",
+                "extension": "bed",
+                "file_size": 7853333364,
+                "name": "MakeWindowsBed on data 301",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14956202",
+                "extension": "bigwig",
+                "file_size": 1467853036,
+                "name": "GSM1329663_p50.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14956202",
+                "extension": "bigwig",
+                "file_size": 1467853036,
+                "name": "GSM1329663_p50.bw",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14956369",
+                "extension": "bigwig",
+                "file_size": 865948188,
+                "name": "GSM1329660_RelA.bw",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14956596",
+                "extension": "bigwig",
+                "file_size": 1152491084,
+                "name": "GSM1329661_RelB.bw",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2380224,
+        "id": 12250847,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6462668.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24015292}]",
+            "scoreFileName": "\"24004977,24005147,24005378\""
+        },
+        "runner_name": null,
+        "session_id": 29178853,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-25 14:17:44.568923",
+        "user_id": 66081
+    },
+    {
+        "create_time": "2016-03-29 16:00:38.222540",
+        "datasets": [
+            {
+                "dataset_id": "14983559",
+                "extension": "bed",
+                "file_size": 190006595,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 1639242,
+        "id": 12273888,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6482133.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24035462}]",
+            "scoreFileName": "\"24033710\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-29 16:09:57.455404",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-03-31 14:52:54.106801",
+        "datasets": [
+            {
+                "dataset_id": "15025976",
+                "extension": "bed",
+                "file_size": 7879329,
+                "name": "MIRbAll.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14934232",
+                "extension": "bigwig",
+                "file_size": 125494349,
+                "name": "GATA2input.bigwig",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1639242,
+        "id": 12300946,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6508409.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24084926}]",
+            "scoreFileName": "\"23928179,23979391\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-01 01:52:33.054261",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-04-07 19:08:47.466896",
+        "datasets": [
+            {
+                "dataset_id": "15103250",
+                "extension": "bed",
+                "file_size": 3178424,
+                "name": "MIR3",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14921137",
+                "extension": "bigwig",
+                "file_size": 84864129,
+                "name": "PGR.bigwig",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "14923455",
+                "extension": "bigwig",
+                "file_size": 767239902,
+                "name": "H3K4me3.bigwig",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "14923567",
+                "extension": "bigwig",
+                "file_size": 260057999,
+                "name": "DNaseI.bigwig",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "14923596",
+                "extension": "bigwig",
+                "file_size": 1977065906,
+                "name": "FAIRE.bigwig",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "14934232",
+                "extension": "bigwig",
+                "file_size": 125494349,
+                "name": "GATA2input.bigwig",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "14954903",
+                "extension": "bigwig",
+                "file_size": 203405530,
+                "name": "HistoneInput.bigwig",
+                "param_name": "scoreFileName8"
+            },
+            {
+                "dataset_id": "14979536",
+                "extension": "bigwig",
+                "file_size": 153877056,
+                "name": "PGRInput.bigwig",
+                "param_name": "scoreFileName9"
+            },
+            {
+                "dataset_id": "15015416",
+                "extension": "bigwig",
+                "file_size": 116257219,
+                "name": "MeDIP-Seq.bigwig",
+                "param_name": "scoreFileName10"
+            },
+            {
+                "dataset_id": "15016373",
+                "extension": "bigwig",
+                "file_size": 105516822,
+                "name": "MethylCap-Seq.bigwig",
+                "param_name": "scoreFileName11"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2659847,
+        "id": 12373705,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6571617.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24172531}]",
+            "scoreFileName": "\"24169258,24169260,24169261,24169263,24169264,24169266,24169267,24169269,24169270,24169272,24169274\""
+        },
+        "runner_name": null,
+        "session_id": 29445088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-08 17:38:58.054339",
+        "user_id": 43829
+    },
+    {
+        "create_time": "2016-05-12 00:10:50.502322",
+        "datasets": [
+            {
+                "dataset_id": "15773375",
+                "extension": "bed",
+                "file_size": 268271360,
+                "name": "Galaxy431-[[EPDoxd40-H3K27Ac.fastq]_(as_BED)].bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15774598",
+                "extension": "bigwig",
+                "file_size": 81267300,
+                "name": "Galaxy413-[Bowtie_Mapping_Output_(SE)_[VirginDoxd40H3K27Ac.fastq]].bam",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15774598",
+                "extension": "bigwig",
+                "file_size": 81267300,
+                "name": "Galaxy413-[Bowtie_Mapping_Output_(SE)_[VirginDoxd40H3K27Ac.fastq]].bam",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2703002,
+        "id": 12862439,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7063218.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"afterRegionStartLength\": \"1000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"1000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b598f3adf4824199cb\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52ac8bade5adb0b5e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30162044,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-05-12 00:17:18.892377",
+        "user_id": 84242
+    },
+    {
+        "create_time": "2016-03-29 16:37:59.378956",
+        "datasets": [
+            {
+                "dataset_id": "14983551",
+                "extension": "bed",
+                "file_size": 190006595,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 1639242,
+        "id": 12274500,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6482863.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24035454}]",
+            "scoreFileName": "\"24033710\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-29 16:40:32.538185",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-04-11 15:32:15.179646",
+        "datasets": [
+            {
+                "dataset_id": "15103250",
+                "extension": "bed",
+                "file_size": 3178424,
+                "name": "MIR3",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14889991",
+                "extension": "bigwig",
+                "file_size": 105961752,
+                "name": "GATA2.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14921137",
+                "extension": "bigwig",
+                "file_size": 84864129,
+                "name": "PGR.bigwig",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "14923455",
+                "extension": "bigwig",
+                "file_size": 767239902,
+                "name": "H3K4me3.bigwig",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "14923567",
+                "extension": "bigwig",
+                "file_size": 260057999,
+                "name": "DNaseI.bigwig",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "14923596",
+                "extension": "bigwig",
+                "file_size": 1977065906,
+                "name": "FAIRE.bigwig",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "14934232",
+                "extension": "bigwig",
+                "file_size": 125494349,
+                "name": "GATA2input.bigwig",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "14954903",
+                "extension": "bigwig",
+                "file_size": 203405530,
+                "name": "HistoneInput.bigwig",
+                "param_name": "scoreFileName8"
+            },
+            {
+                "dataset_id": "14979536",
+                "extension": "bigwig",
+                "file_size": 153877056,
+                "name": "PGRInput.bigwig",
+                "param_name": "scoreFileName9"
+            },
+            {
+                "dataset_id": "15015416",
+                "extension": "bigwig",
+                "file_size": 116257219,
+                "name": "MeDIP-Seq.bigwig",
+                "param_name": "scoreFileName10"
+            },
+            {
+                "dataset_id": "15016373",
+                "extension": "bigwig",
+                "file_size": 105516822,
+                "name": "MethylCap-Seq.bigwig",
+                "param_name": "scoreFileName11"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2659847,
+        "id": 12418830,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6619945.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"5000\", \"beforeRegionStartLength\": \"5000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24172531}]",
+            "scoreFileName": "\"24169258,24169260,24169261,24169263,24169264,24169266,24169267,24169269,24169270,24169272,24169274\""
+        },
+        "runner_name": null,
+        "session_id": 29445088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-12 14:58:36.480399",
+        "user_id": 43829
+    },
+    {
+        "create_time": "2016-05-06 22:16:13.154911",
+        "datasets": [
+            {
+                "dataset_id": "15702605",
+                "extension": "bed",
+                "file_size": 254794646,
+                "name": "GSE48895_V6.5_DMSO_Plus.bedGraph",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15701040",
+                "extension": "bigwig",
+                "file_size": 26684976,
+                "name": "GSE48895_V6.5_DMSO 1st to 12.5minTRP_Plus bigwigCompare on data 6 and data 10",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15701040",
+                "extension": "bigwig",
+                "file_size": 26684976,
+                "name": "GSE48895_V6.5_DMSO 1st to 12.5minTRP_Plus bigwigCompare on data 6 and data 10",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "15701062",
+                "extension": "bigwig",
+                "file_size": 25068164,
+                "name": "GSE48895_V6.5_DMSO 1st to 25minTRP_Plus bigwigCompare on data 9 and data 10",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "15701080",
+                "extension": "bigwig",
+                "file_size": 22801650,
+                "name": "GSE48895_V6.5_DMSO 1st to 50minTRP_Plus bigwigCompare on data 8 and data 10",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2439699,
+        "id": 12811126,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7013101.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"afterRegionStartLength\": \"15000\", \"beforeRegionStartLength\": \"15000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ce28dedfa5a4d6ef\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a22d7603da944545\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dac8b81b3e00236d\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b3f359eaf412a9b1\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28479787,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-05-06 22:21:37.764739",
+        "user_id": 40656
+    },
+    {
+        "create_time": "2016-04-21 10:33:40.621789",
+        "datasets": [
+            {
+                "dataset_id": "15358943",
+                "extension": "bed",
+                "file_size": 1332807536,
+                "name": "SubtractBed on data 42 and data 50",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15355288",
+                "extension": "bigwig",
+                "file_size": 199766859,
+                "name": "Filter on data 7",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15355288",
+                "extension": "bigwig",
+                "file_size": 199766859,
+                "name": "Filter on data 7",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2677909,
+        "id": 12547563,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6735767.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd06171bd94cd29f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54b71551a450b5a4d\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28776799,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-21 10:36:00.864030",
+        "user_id": 67495
+    },
+    {
+        "create_time": "2016-04-03 14:03:51.438028",
+        "datasets": [
+            {
+                "dataset_id": "15056928",
+                "extension": "bed",
+                "file_size": 3015788700,
+                "name": "E4.5_ICM_R1.bam (as BED)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15056935",
+                "extension": "bigwig",
+                "file_size": 17427075,
+                "name": "bamCoverage on data 74",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15056935",
+                "extension": "bigwig",
+                "file_size": 17427075,
+                "name": "bamCoverage on data 74",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "15056936",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoverage on data 75",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "15056937",
+                "extension": "bigwig",
+                "file_size": 0,
+                "name": "bamCoverage on data 76",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "15056938",
+                "extension": "bigwig",
+                "file_size": 14339648,
+                "name": "bamCoverage on data 77",
+                "param_name": "scoreFileName4"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2640546,
+        "id": 12325400,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6532117.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24120208}]",
+            "scoreFileName": "\"24120216,24120217,24120218,24120219\""
+        },
+        "runner_name": null,
+        "session_id": 29093227,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-03 14:07:49.892302",
+        "user_id": 80993
+    },
+    {
+        "create_time": "2016-03-23 16:11:21.399049",
+        "datasets": [
+            {
+                "dataset_id": "14941863",
+                "extension": "bed",
+                "file_size": 73098696,
+                "name": "ESET - Filter on data 326",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14906303",
+                "extension": "bigwig",
+                "file_size": 85925419,
+                "name": "ESET_merged_RPKM.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14906303",
+                "extension": "bigwig",
+                "file_size": 85925419,
+                "name": "ESET_merged_RPKM.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14941529",
+                "extension": "bigwig",
+                "file_size": 79209864,
+                "name": "Tudor WT scale - bigwigCompare on data 6",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2643780,
+        "id": 12236779,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6450777.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"200.0\", \"sortUsing\": \"mean\", \"skipZeros\": \"True\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"1.0\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"True\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "mode": "{\"regionBodyLength\": \"300\", \"regionStartLength\": {\"afterRegionStartLength\": \"3000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"3000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"False\", \"saveSortedRegions\": \"False\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 23988123}]",
+            "scoreFileName": "\"23987604,23987771\""
+        },
+        "runner_name": null,
+        "session_id": 27407964,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-24 03:08:19.216804",
+        "user_id": 76755
+    },
+    {
+        "create_time": "2016-03-29 16:38:01.018861",
+        "datasets": [
+            {
+                "dataset_id": "14983559",
+                "extension": "bed",
+                "file_size": 190006595,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 1639242,
+        "id": 12274501,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6482861.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24035462}]",
+            "scoreFileName": "\"24033710\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-29 16:40:35.428617",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-03-23 09:03:43.715262",
+        "datasets": [
+            {
+                "dataset_id": "14906303",
+                "extension": "bigwig",
+                "file_size": 85925419,
+                "name": "ESET_merged_RPKM.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14941863",
+                "extension": "bed",
+                "file_size": 73098696,
+                "name": "ESET - Filter on data 326",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14906303",
+                "extension": "bigwig",
+                "file_size": 85925419,
+                "name": "ESET_merged_RPKM.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14906310",
+                "extension": "bigwig",
+                "file_size": 79209551,
+                "name": "Tudor WT CIDOP rep2 merged_RPKM.bigwig",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2643780,
+        "id": 12233304,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6447692.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"200.0\", \"sortUsing\": \"mean\", \"skipZeros\": \"True\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"1.0\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"True\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "mode": "{\"regionBodyLength\": \"300\", \"regionStartLength\": {\"afterRegionStartLength\": \"3000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"3000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"False\", \"saveSortedRegions\": \"False\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 23988123}]",
+            "scoreFileName": "\"23987604,23987609\""
+        },
+        "runner_name": null,
+        "session_id": 27407964,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-23 19:37:04.631287",
+        "user_id": 76755
+    },
+    {
+        "create_time": "2016-03-23 16:16:16.975086",
+        "datasets": [
+            {
+                "dataset_id": "14946602",
+                "extension": "bed",
+                "file_size": 75879458,
+                "name": "H3K14ac - Filter on data 337",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14906303",
+                "extension": "bigwig",
+                "file_size": 85925419,
+                "name": "ESET_merged_RPKM.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14906303",
+                "extension": "bigwig",
+                "file_size": 85925419,
+                "name": "ESET_merged_RPKM.bigwig",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "14906304",
+                "extension": "bigwig",
+                "file_size": 124854130,
+                "name": "H3K14ac_RPKM.bigwig",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "14906305",
+                "extension": "bigwig",
+                "file_size": 176685538,
+                "name": "H3K9me1_rep1_RPKM.bigwig",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "14906306",
+                "extension": "bigwig",
+                "file_size": 76917684,
+                "name": "H3K9me2 25 rep1 merged_RPKM.bigwig",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "14906307",
+                "extension": "bigwig",
+                "file_size": 78289803,
+                "name": "H3K9me3_ab_merged_RPKM.bigwig",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "14906310",
+                "extension": "bigwig",
+                "file_size": 79209551,
+                "name": "Tudor WT CIDOP rep2 merged_RPKM.bigwig",
+                "param_name": "scoreFileName6"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2643780,
+        "id": 12236817,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6450837.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"200.0\", \"sortUsing\": \"mean\", \"skipZeros\": \"True\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"1.0\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"True\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "mode": "{\"regionBodyLength\": \"300\", \"regionStartLength\": {\"afterRegionStartLength\": \"3000\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"3000\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"False\", \"saveSortedRegions\": \"False\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 23994369}]",
+            "scoreFileName": "\"23987604,23987605,23987606,23987607,23987608,23987609\""
+        },
+        "runner_name": null,
+        "session_id": 27407964,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-24 02:54:08.791727",
+        "user_id": 76755
+    },
+    {
+        "create_time": "2016-03-29 16:00:36.257092",
+        "datasets": [
+            {
+                "dataset_id": "14983551",
+                "extension": "bed",
+                "file_size": 190006595,
+                "name": "UCSC Main on Human: rmsk (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14981967",
+                "extension": "bigwig",
+                "file_size": 5777277074,
+                "name": "http://hgdownload.soe.ucsc.edu/goldenPath/hg19/phastCons100way/hg19.100way.phastCons.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 1639242,
+        "id": 12273887,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6482076.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"False\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": 24035454}]",
+            "scoreFileName": "\"24033710\""
+        },
+        "runner_name": null,
+        "session_id": 28626146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-03-29 16:07:48.730352",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2016-05-12 00:13:55.569951",
+        "datasets": [
+            {
+                "dataset_id": "15773375",
+                "extension": "bed",
+                "file_size": 268271360,
+                "name": "Galaxy431-[[EPDoxd40-H3K27Ac.fastq]_(as_BED)].bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15774615",
+                "extension": "bigwig",
+                "file_size": 33453596,
+                "name": "Galaxy431-[[EPDoxd40-H3K27Ac.fastq]_(as_BED)].bed",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15774615",
+                "extension": "bigwig",
+                "file_size": 33453596,
+                "name": "Galaxy431-[[EPDoxd40-H3K27Ac.fastq]_(as_BED)].bed",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2703002,
+        "id": 12862456,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7063227.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b598f3adf4824199cb\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56b51289054c1a3b4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30162044,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-05-12 00:19:06.227475",
+        "user_id": 84242
+    },
+    {
+        "create_time": "2016-04-21 11:19:20.967617",
+        "datasets": [
+            {
+                "dataset_id": "15358943",
+                "extension": "bed",
+                "file_size": 1332807536,
+                "name": "SubtractBed on data 42 and data 50",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15355288",
+                "extension": "bigwig",
+                "file_size": 199766859,
+                "name": "Filter on data 7",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15355288",
+                "extension": "bigwig",
+                "file_size": 199766859,
+                "name": "Filter on data 7",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2677909,
+        "id": 12547925,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6736172.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"maxThreshold\": \"\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"missingDataAsZero\": \"false\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fd06171bd94cd29f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54b71551a450b5a4d\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28776799,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-21 11:21:57.049928",
+        "user_id": 67495
+    },
+    {
+        "create_time": "2016-04-15 12:53:59.006593",
+        "datasets": [
+            {
+                "dataset_id": "15248616",
+                "extension": "bed",
+                "file_size": 299869011,
+                "name": "CHON_H3K4me3.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15247352",
+                "extension": "bigwig",
+                "file_size": 112183093,
+                "name": "CHON_H3K4me3_hg19_treat_pileup.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15247352",
+                "extension": "bigwig",
+                "file_size": 112183093,
+                "name": "CHON_H3K4me3_hg19_treat_pileup.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2671235,
+        "id": 12467751,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6659274.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fbd5a0a4975a3ec3\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b516c8d507b19a973a\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29626679,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-15 12:56:35.037923",
+        "user_id": null
+    },
+    {
+        "create_time": "2016-04-25 18:35:54.571190",
+        "datasets": [
+            {
+                "dataset_id": "15445887",
+                "extension": "bed",
+                "file_size": 455223300,
+                "name": "Myc_vs_input_1.87_treat_pileup.bdg",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "15446240",
+                "extension": "bigwig",
+                "file_size": 20842,
+                "name": "Myc_vs_input_1.87_treat_pileup.bdg",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "15446240",
+                "extension": "bigwig",
+                "file_size": 20842,
+                "name": "Myc_vs_input_1.87_treat_pileup.bdg",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2683962,
+        "id": 12613971,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6811356.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f8e0d67f26b4084f\"}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c244931e4a2d79aa\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29812909,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.2.2.0",
+        "tool_version": "2.2.2.0",
+        "traceback": null,
+        "update_time": "2016-04-25 18:48:17.259224",
+        "user_id": null
+    }
+]

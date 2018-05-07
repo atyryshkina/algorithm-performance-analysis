@@ -1,0 +1,209 @@
+[
+    {
+        "create_time": "2015-03-29 00:39:23.228458",
+        "datasets": [
+            {
+                "dataset_id": "10834363",
+                "extension": "bed",
+                "file_size": 2268111775,
+                "name": "D32_HALO_LOW_SALT_HUMAN_CGATGT_L001_R1_001.subread.BAM (as BED)",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2243480,
+        "id": 9075363,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3361783.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "19047888",
+            "predictor_cols": "[\"2\"]",
+            "response_col": "\"2\""
+        },
+        "runner_name": null,
+        "session_id": 21991200,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/linear_regression/LinearRegression1/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2015-03-29 00:45:35.015841",
+        "user_id": 61201
+    },
+    {
+        "create_time": "2015-01-30 15:39:44.503663",
+        "datasets": [
+            {
+                "dataset_id": "10296846",
+                "extension": "tabular",
+                "file_size": 1880824138,
+                "name": "Cut on data 59",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2107480,
+        "id": 8638982,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2596912.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/010/265/dataset_10265393.dat\"",
+            "dbkey": "\"trypanosoma_v5.1\"",
+            "input1": "18352574",
+            "predictor_cols": "[\"3\"]",
+            "response_col": "\"2\""
+        },
+        "runner_name": null,
+        "session_id": 19892064,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/linear_regression/LinearRegression1/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2015-01-30 15:45:07.074771",
+        "user_id": 55442
+    },
+    {
+        "create_time": "2016-02-09 11:40:06.331778",
+        "datasets": [
+            {
+                "dataset_id": "14263736",
+                "extension": "tabular",
+                "file_size": 3832130680,
+                "name": "VCFtoTab-delimited: on data 22",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2276715,
+        "id": 11758450,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6013717.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "23240744",
+            "predictor_cols": "[\"2\", \"6\", \"9\", \"13\", \"20\"]",
+            "response_col": "\"2\""
+        },
+        "runner_name": null,
+        "session_id": 28123383,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/linear_regression/LinearRegression1/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-02-09 11:44:43.461701",
+        "user_id": 62597
+    },
+    {
+        "create_time": "2016-12-09 19:34:53.057886",
+        "datasets": [
+            {
+                "dataset_id": "18009046",
+                "extension": "bedgraph",
+                "file_size": 926530865,
+                "name": "bigwigCompare on data 13 and data 12",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/linear_regression/cf431604ec3e",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/linear_regression/cf431604ec3e/env.sh",
+                "version": "2.11.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/devteam/linear_regression/cf431604ec3e",
+                "script": "/galaxy/main/deps/numpy/1.7.1/devteam/linear_regression/cf431604ec3e/env.sh",
+                "version": "1.7.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/linear_regression/cf431604ec3e",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/linear_regression/cf431604ec3e/env.sh",
+                "version": "1.0.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2881673,
+        "id": 14534024,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8716776.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27427448}]}",
+            "predictor_cols": "[\"2\", \"3\", \"4\"]",
+            "response_col": "\"2\""
+        },
+        "runner_name": null,
+        "session_id": 34094627,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/linear_regression/LinearRegression1/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2016-12-09 19:39:59.533170",
+        "user_id": 93861
+    }
+]

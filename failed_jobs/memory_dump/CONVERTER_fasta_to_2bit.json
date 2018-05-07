@@ -1,0 +1,100 @@
+[
+    {
+        "create_time": "2016-06-03 08:05:02.939735",
+        "datasets": [
+            {
+                "dataset_id": "16077222",
+                "extension": "fasta",
+                "file_size": 8260300828,
+                "name": "whole genome human fasta",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "16077462",
+                "extension": "len",
+                "file_size": 821099989,
+                "name": "Convert FASTA to len file on data 18",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2723998,
+        "id": 13057571,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7243807.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/016/077/dataset_16077462.dat\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5728c45a7e860c2ac\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30534010,
+        "state": "error",
+        "tool_id": "CONVERTER_fasta_to_2bit",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2016-06-03 08:07:31.707540",
+        "user_id": 85044
+    },
+    {
+        "create_time": "2015-11-12 00:19:09.918340",
+        "datasets": [
+            {
+                "dataset_id": "13159137",
+                "extension": "fasta",
+                "file_size": 4570249350,
+                "name": "https://dl.dropboxusercontent.com/u/64075942/Data/Patient1_sample1.fasta",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "13168567",
+                "extension": "len",
+                "file_size": 1514239936,
+                "name": "Convert FASTA to len file on data 5",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2500536,
+        "id": 10880560,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5134160.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/013/168/dataset_13168567.dat\"",
+            "dbkey": "\"?\"",
+            "input": "21956470"
+        },
+        "runner_name": null,
+        "session_id": 26210900,
+        "state": "error",
+        "tool_id": "CONVERTER_fasta_to_2bit",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2015-11-12 00:21:23.430392",
+        "user_id": 73128
+    }
+]

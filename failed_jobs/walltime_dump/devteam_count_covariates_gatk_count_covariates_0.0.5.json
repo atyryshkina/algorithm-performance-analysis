@@ -1,0 +1,248 @@
+[
+    {
+        "create_time": "2017-03-10 11:07:38.921390",
+        "datasets": [
+            {
+                "dataset_id": "19154434",
+                "extension": "bam",
+                "file_size": 4048111,
+                "name": "Indel Realigner on data 20, data 16, and data 18 (BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/count_covariates/14e304b70425",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/count_covariates/14e304b70425/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/count_covariates/14e304b70425",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/count_covariates/14e304b70425/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3025504,
+        "id": 15261740,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9408219.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "covariates": "null",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": 28705733}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28705734}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28706212}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_covs": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36546408,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/count_covariates/gatk_count_covariates/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-11 11:58:45.898918",
+        "user_id": 56382
+    },
+    {
+        "create_time": "2017-03-12 09:50:54.042976",
+        "datasets": [
+            {
+                "dataset_id": "19154434",
+                "extension": "bam",
+                "file_size": 4048111,
+                "name": "Indel Realigner on data 20, data 16, and data 18 (BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/count_covariates/14e304b70425",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/count_covariates/14e304b70425/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/count_covariates/14e304b70425",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/count_covariates/14e304b70425/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3025504,
+        "id": 15273268,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9418513.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "covariates": "null",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": 28705733}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28705734}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28706212}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_covs": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36142187,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/count_covariates/gatk_count_covariates/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-13 09:51:10.909890",
+        "user_id": 56382
+    },
+    {
+        "create_time": "2017-03-13 10:07:42.861887",
+        "datasets": [
+            {
+                "dataset_id": "19154434",
+                "extension": "bam",
+                "file_size": 4048111,
+                "name": "Indel Realigner on data 20, data 16, and data 18 (BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "3990469",
+                "extension": "vcf",
+                "file_size": 7572857398,
+                "name": "dbsnp_135.hg19.vcf",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/count_covariates/14e304b70425",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/count_covariates/14e304b70425/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/count_covariates/14e304b70425",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/count_covariates/14e304b70425/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3025504,
+        "id": 15279831,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9424018.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "covariates": "null",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": 28705733}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28705734}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28706212}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_covs": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36587777,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/count_covariates/gatk_count_covariates/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-14 10:24:26.558815",
+        "user_id": 56382
+    }
+]

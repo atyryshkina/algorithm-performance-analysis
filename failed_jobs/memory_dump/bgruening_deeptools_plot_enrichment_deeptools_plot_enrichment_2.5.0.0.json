@@ -1,0 +1,225 @@
+[
+    {
+        "create_time": "2018-03-09 01:24:56.256345",
+        "datasets": [
+            {
+                "dataset_id": "23947583",
+                "extension": "bam",
+                "file_size": 737957543,
+                "name": "Bowtie2 on data 9: FF Forward Reads ChIP",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "23947583",
+                "extension": "bam",
+                "file_size": 737957543,
+                "name": "Bowtie2 on data 9: FF Forward Reads ChIP",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "23947584",
+                "extension": "bam",
+                "file_size": 792038167,
+                "name": "Bowtie2 on data 10: FF Reverse ChIP",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "23947587",
+                "extension": "bam",
+                "file_size": 740218544,
+                "name": "Bowtie2 on data 13: Control Forward ChIP",
+                "param_name": "bamfiles3"
+            },
+            {
+                "dataset_id": "23947588",
+                "extension": "bam",
+                "file_size": 787894812,
+                "name": "Bowtie2 on data 14: Control Reverse ChIP",
+                "param_name": "bamfiles4"
+            },
+            {
+                "dataset_id": "23999472",
+                "extension": "bed",
+                "file_size": 926212419,
+                "name": "bamCoverage on data 35",
+                "param_name": "BED"
+            },
+            {
+                "dataset_id": "23999472",
+                "extension": "bed",
+                "file_size": 926212419,
+                "name": "bamCoverage on data 35",
+                "param_name": "BED1"
+            },
+            {
+                "dataset_id": "23999473",
+                "extension": "bed",
+                "file_size": 918429972,
+                "name": "bamCoverage on data 36",
+                "param_name": "BED2"
+            },
+            {
+                "dataset_id": "23999474",
+                "extension": "bed",
+                "file_size": 755858916,
+                "name": "bamCoverage on data 39",
+                "param_name": "BED3"
+            },
+            {
+                "dataset_id": "23999475",
+                "extension": "bed",
+                "file_size": 756554801,
+                "name": "bamCoverage on data 40",
+                "param_name": "BED4"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3457124,
+        "id": 18666262,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12762408",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "BED": "{\"values\": [{\"src\": \"hda\", \"id\": 34311023}, {\"src\": \"hda\", \"id\": 34311024}, {\"src\": \"hda\", \"id\": 34311025}, {\"src\": \"hda\", \"id\": 34311026}]}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 34298327}, {\"src\": \"hda\", \"id\": 34298328}, {\"src\": \"hda\", \"id\": 34298333}, {\"src\": \"hda\", \"id\": 34298335}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"false\"",
+            "region": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 44480084,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_enrichment/deeptools_plot_enrichment/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-09 01:49:43.600130",
+        "user_id": 123659
+    },
+    {
+        "create_time": "2018-02-07 07:12:38.586596",
+        "datasets": [
+            {
+                "dataset_id": "23126902",
+                "extension": "bam",
+                "file_size": 8750742163,
+                "name": "Bowtie2_input_mcf7",
+                "param_name": "bamfiles"
+            },
+            {
+                "dataset_id": "23126902",
+                "extension": "bam",
+                "file_size": 8750742163,
+                "name": "Bowtie2_input_mcf7",
+                "param_name": "bamfiles1"
+            },
+            {
+                "dataset_id": "23145272",
+                "extension": "bam",
+                "file_size": 10748354386,
+                "name": "Bowtie2_V5C6_mcf7",
+                "param_name": "bamfiles2"
+            },
+            {
+                "dataset_id": "23456252",
+                "extension": "bed",
+                "file_size": 2562975587,
+                "name": "MACS2 callpeak on data 94 and data 95 (Bedgraph Treatment)",
+                "param_name": "BED"
+            },
+            {
+                "dataset_id": "23456252",
+                "extension": "bed",
+                "file_size": 2562975587,
+                "name": "MACS2 callpeak on data 94 and data 95 (Bedgraph Treatment)",
+                "param_name": "BED1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3387452,
+        "id": 18283163,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12366090",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "BED": "{\"values\": [{\"src\": \"hda\", \"id\": 33711188}]}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "multibam_conditional": "{\"orderMatters\": \"No\", \"bamfiles\": {\"values\": [{\"src\": \"hda\", \"id\": 33344910}, {\"src\": \"hda\", \"id\": 33365256}]}, \"__current_case__\": 0}",
+            "outFileFormat": "\"png\"",
+            "outRawCounts": "\"false\"",
+            "region": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 43711553,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_plot_enrichment/deeptools_plot_enrichment/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-07 07:52:22.762243",
+        "user_id": 119628
+    }
+]

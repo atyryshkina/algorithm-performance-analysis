@@ -1,0 +1,102 @@
+[
+    {
+        "create_time": "2018-02-22 17:12:49.677924",
+        "datasets": [
+            {
+                "dataset_id": "23736481",
+                "extension": "tabular",
+                "file_size": 8398,
+                "name": "G1E peaks",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23736507",
+                "extension": "bgzip",
+                "file_size": 3528,
+                "name": "G1E peaks",
+                "param_name": "bgzip"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3438292,
+        "id": 18486506,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12581743",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bgzip": "{\"values\": [{\"src\": \"hda\", \"id\": 34017627}]}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 34017601}]}"
+        },
+        "runner_name": null,
+        "session_id": 43814140,
+        "state": "error",
+        "tool_id": "CONVERTER_bed_to_tabix_0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2018-02-22 17:14:02.791004",
+        "user_id": 60364
+    },
+    {
+        "create_time": "2018-02-22 00:27:53.932544",
+        "datasets": [
+            {
+                "dataset_id": "23721338",
+                "extension": "bed",
+                "file_size": 1724,
+                "name": "Cut on data 73",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23721685",
+                "extension": "bgzip",
+                "file_size": 889,
+                "name": "Cut on data 73",
+                "param_name": "bgzip"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3437651,
+        "id": 18475788,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12570512",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bgzip": "{\"values\": [{\"src\": \"hda\", \"id\": 34002086}]}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 34001738}]}"
+        },
+        "runner_name": null,
+        "session_id": 43591797,
+        "state": "error",
+        "tool_id": "CONVERTER_bed_to_tabix_0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2018-02-22 00:38:14.205555",
+        "user_id": 91771
+    }
+]

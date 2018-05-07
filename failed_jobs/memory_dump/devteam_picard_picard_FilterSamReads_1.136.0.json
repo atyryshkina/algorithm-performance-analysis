@@ -1,0 +1,126 @@
+[
+    {
+        "create_time": "2017-03-17 12:52:29.473238",
+        "datasets": [
+            {
+                "dataset_id": "18671681",
+                "extension": "bam",
+                "file_size": 2946427967,
+                "name": "Bowtie2 on data 10: aligned reads (sorted BAM)",
+                "param_name": "inputFile"
+            },
+            {
+                "dataset_id": "19237052",
+                "extension": "tabular",
+                "file_size": 1635775553,
+                "name": "48670_unique.names",
+                "param_name": "read_list_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "picard",
+                "path": "/galaxy/main/deps/picard/1.136/devteam/picard/efc56ee1ade4",
+                "script": "/galaxy/main/deps/picard/1.136/devteam/picard/efc56ee1ade4/env.sh",
+                "version": "1.136"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2806770,
+        "id": 15324079,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9464884.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "filter_type": "{\"filter\": \"includeReadList\", \"read_list_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28804273}]}, \"__current_case__\": 2}",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 28162300}]}",
+            "validation_stringency": "\"STRICT\""
+        },
+        "runner_name": null,
+        "session_id": 36632592,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_FilterSamReads/1.136.0",
+        "tool_version": "1.136.0",
+        "traceback": null,
+        "update_time": "2017-03-17 13:26:35.172600",
+        "user_id": 89282
+    },
+    {
+        "create_time": "2017-03-17 12:33:41.480981",
+        "datasets": [
+            {
+                "dataset_id": "19203947",
+                "extension": "bam",
+                "file_size": 2904077756,
+                "name": "Galaxy21-[Bowtie2_on_data_10__aligned_reads_(sorted_BAM)]_tik_mismatches.bam",
+                "param_name": "inputFile"
+            },
+            {
+                "dataset_id": "19237052",
+                "extension": "tabular",
+                "file_size": 1635775553,
+                "name": "48670_unique.names",
+                "param_name": "read_list_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "picard",
+                "path": "/galaxy/main/deps/picard/1.136/devteam/picard/efc56ee1ade4",
+                "script": "/galaxy/main/deps/picard/1.136/devteam/picard/efc56ee1ade4/env.sh",
+                "version": "1.136"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2806770,
+        "id": 15323983,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9464793.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_type": "{\"filter\": \"includeReadList\", \"read_list_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28804273}]}, \"__current_case__\": 2}",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 28762958}]}",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 36632592,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_FilterSamReads/1.136.0",
+        "tool_version": "1.136.0",
+        "traceback": null,
+        "update_time": "2017-03-17 13:03:52.343786",
+        "user_id": 89282
+    }
+]

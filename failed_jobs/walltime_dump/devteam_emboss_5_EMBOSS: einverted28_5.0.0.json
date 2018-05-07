@@ -1,0 +1,118 @@
+[
+    {
+        "create_time": "2018-03-08 07:37:35.210612",
+        "datasets": [
+            {
+                "dataset_id": "23864466",
+                "extension": "fasta",
+                "file_size": 322954620,
+                "name": "FASTQ to FASTA on data 3",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3449094,
+        "id": 18652603,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12748396",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "gap": "\"12\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 34165370}]}",
+            "match": "\"3\"",
+            "maxrepeat": "\"2000\"",
+            "mismatch": "\"-4\"",
+            "threshold": "\"50\""
+        },
+        "runner_name": null,
+        "session_id": 43622766,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: einverted28/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-09 19:37:52.679449",
+        "user_id": 119480
+    },
+    {
+        "create_time": "2018-03-08 07:37:34.126853",
+        "datasets": [
+            {
+                "dataset_id": "23864464",
+                "extension": "fasta",
+                "file_size": 318455842,
+                "name": "FASTQ to FASTA on data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3449094,
+        "id": 18652601,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12748395",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "gap": "\"12\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 34165368}]}",
+            "match": "\"3\"",
+            "maxrepeat": "\"2000\"",
+            "mismatch": "\"-4\"",
+            "threshold": "\"50\""
+        },
+        "runner_name": null,
+        "session_id": 43622766,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: einverted28/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-09 19:37:53.741925",
+        "user_id": 119480
+    }
+]

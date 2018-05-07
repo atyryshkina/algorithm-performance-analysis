@@ -1,0 +1,706 @@
+[
+    {
+        "create_time": "2017-09-05 14:10:23.939059",
+        "datasets": [
+            {
+                "dataset_id": "21168513",
+                "extension": "gtf",
+                "file_size": 91416038,
+                "name": "DEXSeq prepare annotation on data 340",
+                "param_name": "gtf"
+            },
+            {
+                "dataset_id": "21168530",
+                "extension": "tabular",
+                "file_size": 12607979,
+                "name": "DEXSeq count reads on data 385 and data 237",
+                "param_name": "rep_factorName_0|countFiles1"
+            },
+            {
+                "dataset_id": "21168530",
+                "extension": "tabular",
+                "file_size": 12607979,
+                "name": "DEXSeq count reads on data 385 and data 237",
+                "param_name": "rep_factorName_0|countFiles11"
+            },
+            {
+                "dataset_id": "21168531",
+                "extension": "tabular",
+                "file_size": 12627896,
+                "name": "DEXSeq count reads on data 385 and data 238",
+                "param_name": "rep_factorName_0|countFiles12"
+            },
+            {
+                "dataset_id": "21168532",
+                "extension": "tabular",
+                "file_size": 12632451,
+                "name": "DEXSeq count reads on data 385 and data 239",
+                "param_name": "rep_factorName_0|countFiles13"
+            },
+            {
+                "dataset_id": "21168526",
+                "extension": "tabular",
+                "file_size": 12586425,
+                "name": "DEXSeq count reads on data 385 and data 218",
+                "param_name": "rep_factorName_0|countFiles2"
+            },
+            {
+                "dataset_id": "21168526",
+                "extension": "tabular",
+                "file_size": 12586425,
+                "name": "DEXSeq count reads on data 385 and data 218",
+                "param_name": "rep_factorName_0|countFiles21"
+            },
+            {
+                "dataset_id": "21168527",
+                "extension": "tabular",
+                "file_size": 12584955,
+                "name": "DEXSeq count reads on data 385 and data 233",
+                "param_name": "rep_factorName_0|countFiles22"
+            },
+            {
+                "dataset_id": "21168528",
+                "extension": "tabular",
+                "file_size": 12589289,
+                "name": "DEXSeq count reads on data 385 and data 234",
+                "param_name": "rep_factorName_0|countFiles23"
+            },
+            {
+                "dataset_id": "21168529",
+                "extension": "tabular",
+                "file_size": 12612376,
+                "name": "DEXSeq count reads on data 385 and data 235",
+                "param_name": "rep_factorName_0|countFiles24"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-dexseq",
+                "version": "1.20.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "r-getopt",
+                "version": "1.20.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "r-rjson",
+                "version": "0.2.15"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3226083,
+        "id": 16737460,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10806814.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "fdr_cutoff": "\"0.1\"",
+            "gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 31106695}]}",
+            "rep_factorName": "[{\"factorName\": \"Tissue Type\", \"countFiles1\": {\"values\": [{\"src\": \"hda\", \"id\": 31106712}, {\"src\": \"hda\", \"id\": 31106713}, {\"src\": \"hda\", \"id\": 31106714}]}, \"factorLevel2\": \"BFL\", \"factorLevel1\": \"BSLF\", \"countFiles2\": {\"values\": [{\"src\": \"hda\", \"id\": 31106708}, {\"src\": \"hda\", \"id\": 31106709}, {\"src\": \"hda\", \"id\": 31106710}, {\"src\": \"hda\", \"id\": 31106711}]}, \"__index__\": 0}]",
+            "report": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40275840,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/dexseq/dexseq/1.20.1",
+        "tool_version": "1.20.1",
+        "traceback": null,
+        "update_time": "2017-09-05 18:50:23.225099",
+        "user_id": 110307
+    },
+    {
+        "create_time": "2017-12-09 14:06:54.235707",
+        "datasets": [
+            {
+                "dataset_id": "22659080",
+                "extension": "gtf",
+                "file_size": 129414070,
+                "name": "DEXSeq prepare annotation on data 1",
+                "param_name": "gtf"
+            },
+            {
+                "dataset_id": "22662277",
+                "extension": "tabular",
+                "file_size": 17260655,
+                "name": "DEXSeq count reads on KS08",
+                "param_name": "rep_factorName_0|countFiles1"
+            },
+            {
+                "dataset_id": "22662277",
+                "extension": "tabular",
+                "file_size": 17260655,
+                "name": "DEXSeq count reads on KS08",
+                "param_name": "rep_factorName_0|countFiles11"
+            },
+            {
+                "dataset_id": "22662292",
+                "extension": "tabular",
+                "file_size": 17217208,
+                "name": "DEXSeq count reads on KS14",
+                "param_name": "rep_factorName_0|countFiles12"
+            },
+            {
+                "dataset_id": "22662293",
+                "extension": "tabular",
+                "file_size": 17269501,
+                "name": "DEXSeq count reads on KS10",
+                "param_name": "rep_factorName_0|countFiles13"
+            },
+            {
+                "dataset_id": "22662294",
+                "extension": "tabular",
+                "file_size": 17212425,
+                "name": "DEXSeq count reads on KS11",
+                "param_name": "rep_factorName_0|countFiles14"
+            },
+            {
+                "dataset_id": "22662295",
+                "extension": "tabular",
+                "file_size": 17270981,
+                "name": "DEXSeq count reads on KS12",
+                "param_name": "rep_factorName_0|countFiles15"
+            },
+            {
+                "dataset_id": "22662296",
+                "extension": "tabular",
+                "file_size": 17277562,
+                "name": "DEXSeq count reads on KS13",
+                "param_name": "rep_factorName_0|countFiles16"
+            },
+            {
+                "dataset_id": "22662297",
+                "extension": "tabular",
+                "file_size": 17208248,
+                "name": "DEXSeq count reads on KS09",
+                "param_name": "rep_factorName_0|countFiles17"
+            },
+            {
+                "dataset_id": "22662298",
+                "extension": "tabular",
+                "file_size": 17270069,
+                "name": "DEXSeq count reads on KS07",
+                "param_name": "rep_factorName_0|countFiles18"
+            },
+            {
+                "dataset_id": "22662299",
+                "extension": "tabular",
+                "file_size": 17183367,
+                "name": "DEXSeq count reads on KS06",
+                "param_name": "rep_factorName_0|countFiles19"
+            },
+            {
+                "dataset_id": "22662300",
+                "extension": "tabular",
+                "file_size": 17195105,
+                "name": "DEXSeq count reads on KS04",
+                "param_name": "rep_factorName_0|countFiles110"
+            },
+            {
+                "dataset_id": "22662301",
+                "extension": "tabular",
+                "file_size": 17200292,
+                "name": "DEXSeq count reads on KS01",
+                "param_name": "rep_factorName_0|countFiles111"
+            },
+            {
+                "dataset_id": "22662302",
+                "extension": "tabular",
+                "file_size": 17240375,
+                "name": "DEXSeq count reads on KS02",
+                "param_name": "rep_factorName_0|countFiles112"
+            },
+            {
+                "dataset_id": "22662303",
+                "extension": "tabular",
+                "file_size": 17207889,
+                "name": "DEXSeq count reads on KS03",
+                "param_name": "rep_factorName_0|countFiles113"
+            },
+            {
+                "dataset_id": "22659103",
+                "extension": "tabular",
+                "file_size": 17291044,
+                "name": "DEXSeq count reads on KS25",
+                "param_name": "rep_factorName_0|countFiles2"
+            },
+            {
+                "dataset_id": "22659103",
+                "extension": "tabular",
+                "file_size": 17291044,
+                "name": "DEXSeq count reads on KS25",
+                "param_name": "rep_factorName_0|countFiles21"
+            },
+            {
+                "dataset_id": "22662278",
+                "extension": "tabular",
+                "file_size": 17283576,
+                "name": "DEXSeq count reads on KS31",
+                "param_name": "rep_factorName_0|countFiles22"
+            },
+            {
+                "dataset_id": "22662279",
+                "extension": "tabular",
+                "file_size": 17201194,
+                "name": "DEXSeq count reads on KS30",
+                "param_name": "rep_factorName_0|countFiles23"
+            },
+            {
+                "dataset_id": "22662280",
+                "extension": "tabular",
+                "file_size": 17288994,
+                "name": "DEXSeq count reads on KS29",
+                "param_name": "rep_factorName_0|countFiles24"
+            },
+            {
+                "dataset_id": "22662281",
+                "extension": "tabular",
+                "file_size": 17279238,
+                "name": "DEXSeq count reads on KS27",
+                "param_name": "rep_factorName_0|countFiles25"
+            },
+            {
+                "dataset_id": "22662282",
+                "extension": "tabular",
+                "file_size": 17348855,
+                "name": "DEXSeq count reads on KS26",
+                "param_name": "rep_factorName_0|countFiles26"
+            },
+            {
+                "dataset_id": "22662283",
+                "extension": "tabular",
+                "file_size": 17327323,
+                "name": "DEXSeq count reads on KS24",
+                "param_name": "rep_factorName_0|countFiles27"
+            },
+            {
+                "dataset_id": "22662284",
+                "extension": "tabular",
+                "file_size": 17367575,
+                "name": "DEXSeq count reads on KS23",
+                "param_name": "rep_factorName_0|countFiles28"
+            },
+            {
+                "dataset_id": "22662285",
+                "extension": "tabular",
+                "file_size": 17342963,
+                "name": "DEXSeq count reads on KS19",
+                "param_name": "rep_factorName_0|countFiles29"
+            },
+            {
+                "dataset_id": "22662286",
+                "extension": "tabular",
+                "file_size": 17346650,
+                "name": "DEXSeq count reads on KS20",
+                "param_name": "rep_factorName_0|countFiles210"
+            },
+            {
+                "dataset_id": "22662287",
+                "extension": "tabular",
+                "file_size": 17330478,
+                "name": "DEXSeq count reads on KS21",
+                "param_name": "rep_factorName_0|countFiles211"
+            },
+            {
+                "dataset_id": "22662288",
+                "extension": "tabular",
+                "file_size": 17394294,
+                "name": "DEXSeq count reads on KS22",
+                "param_name": "rep_factorName_0|countFiles212"
+            },
+            {
+                "dataset_id": "22662289",
+                "extension": "tabular",
+                "file_size": 17348827,
+                "name": "DEXSeq count reads on KS18",
+                "param_name": "rep_factorName_0|countFiles213"
+            },
+            {
+                "dataset_id": "22662290",
+                "extension": "tabular",
+                "file_size": 17265441,
+                "name": "DEXSeq count reads on KS16",
+                "param_name": "rep_factorName_0|countFiles214"
+            },
+            {
+                "dataset_id": "22662291",
+                "extension": "tabular",
+                "file_size": 17274746,
+                "name": "DEXSeq count reads on KS15",
+                "param_name": "rep_factorName_0|countFiles215"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-dexseq",
+                "version": "1.20.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "r-getopt",
+                "version": "1.20.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "r-rjson",
+                "version": "0.2.15"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3357648,
+        "id": 17755667,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11823161",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "fdr_cutoff": "\"0.05\"",
+            "gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 32804546}]}",
+            "rep_factorName": "[{\"factorName\": \"Disease\", \"countFiles1\": {\"values\": [{\"src\": \"hda\", \"id\": 32807977}, {\"src\": \"hda\", \"id\": 32807992}, {\"src\": \"hda\", \"id\": 32807993}, {\"src\": \"hda\", \"id\": 32807994}, {\"src\": \"hda\", \"id\": 32807995}, {\"src\": \"hda\", \"id\": 32807996}, {\"src\": \"hda\", \"id\": 32807997}, {\"src\": \"hda\", \"id\": 32807998}, {\"src\": \"hda\", \"id\": 32807999}, {\"src\": \"hda\", \"id\": 32808000}, {\"src\": \"hda\", \"id\": 32808001}, {\"src\": \"hda\", \"id\": 32808002}, {\"src\": \"hda\", \"id\": 32808003}]}, \"factorLevel2\": \"Traditional\", \"factorLevel1\": \"Youthful\", \"countFiles2\": {\"values\": [{\"src\": \"hda\", \"id\": 32804569}, {\"src\": \"hda\", \"id\": 32807978}, {\"src\": \"hda\", \"id\": 32807979}, {\"src\": \"hda\", \"id\": 32807980}, {\"src\": \"hda\", \"id\": 32807981}, {\"src\": \"hda\", \"id\": 32807982}, {\"src\": \"hda\", \"id\": 32807983}, {\"src\": \"hda\", \"id\": 32807984}, {\"src\": \"hda\", \"id\": 32807985}, {\"src\": \"hda\", \"id\": 32807986}, {\"src\": \"hda\", \"id\": 32807987}, {\"src\": \"hda\", \"id\": 32807988}, {\"src\": \"hda\", \"id\": 32807989}, {\"src\": \"hda\", \"id\": 32807990}, {\"src\": \"hda\", \"id\": 32807991}]}, \"__index__\": 0}]",
+            "report": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42553917,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/dexseq/dexseq/1.20.1",
+        "tool_version": "1.20.1",
+        "traceback": null,
+        "update_time": "2017-12-10 03:43:55.417674",
+        "user_id": 116840
+    },
+    {
+        "create_time": "2017-12-08 12:25:52.235823",
+        "datasets": [
+            {
+                "dataset_id": "22659080",
+                "extension": "gtf",
+                "file_size": 129414070,
+                "name": "DEXSeq prepare annotation on data 1",
+                "param_name": "gtf"
+            },
+            {
+                "dataset_id": "22662277",
+                "extension": "tabular",
+                "file_size": 17260655,
+                "name": "DEXSeq count reads on KS08",
+                "param_name": "rep_factorName_0|countFiles1"
+            },
+            {
+                "dataset_id": "22662277",
+                "extension": "tabular",
+                "file_size": 17260655,
+                "name": "DEXSeq count reads on KS08",
+                "param_name": "rep_factorName_0|countFiles11"
+            },
+            {
+                "dataset_id": "22662292",
+                "extension": "tabular",
+                "file_size": 17217208,
+                "name": "DEXSeq count reads on KS14",
+                "param_name": "rep_factorName_0|countFiles12"
+            },
+            {
+                "dataset_id": "22662293",
+                "extension": "tabular",
+                "file_size": 17269501,
+                "name": "DEXSeq count reads on KS10",
+                "param_name": "rep_factorName_0|countFiles13"
+            },
+            {
+                "dataset_id": "22662294",
+                "extension": "tabular",
+                "file_size": 17212425,
+                "name": "DEXSeq count reads on KS11",
+                "param_name": "rep_factorName_0|countFiles14"
+            },
+            {
+                "dataset_id": "22662295",
+                "extension": "tabular",
+                "file_size": 17270981,
+                "name": "DEXSeq count reads on KS12",
+                "param_name": "rep_factorName_0|countFiles15"
+            },
+            {
+                "dataset_id": "22662296",
+                "extension": "tabular",
+                "file_size": 17277562,
+                "name": "DEXSeq count reads on KS13",
+                "param_name": "rep_factorName_0|countFiles16"
+            },
+            {
+                "dataset_id": "22662297",
+                "extension": "tabular",
+                "file_size": 17208248,
+                "name": "DEXSeq count reads on KS09",
+                "param_name": "rep_factorName_0|countFiles17"
+            },
+            {
+                "dataset_id": "22662298",
+                "extension": "tabular",
+                "file_size": 17270069,
+                "name": "DEXSeq count reads on KS07",
+                "param_name": "rep_factorName_0|countFiles18"
+            },
+            {
+                "dataset_id": "22662299",
+                "extension": "tabular",
+                "file_size": 17183367,
+                "name": "DEXSeq count reads on KS06",
+                "param_name": "rep_factorName_0|countFiles19"
+            },
+            {
+                "dataset_id": "22662300",
+                "extension": "tabular",
+                "file_size": 17195105,
+                "name": "DEXSeq count reads on KS04",
+                "param_name": "rep_factorName_0|countFiles110"
+            },
+            {
+                "dataset_id": "22662301",
+                "extension": "tabular",
+                "file_size": 17200292,
+                "name": "DEXSeq count reads on KS01",
+                "param_name": "rep_factorName_0|countFiles111"
+            },
+            {
+                "dataset_id": "22662302",
+                "extension": "tabular",
+                "file_size": 17240375,
+                "name": "DEXSeq count reads on KS02",
+                "param_name": "rep_factorName_0|countFiles112"
+            },
+            {
+                "dataset_id": "22662303",
+                "extension": "tabular",
+                "file_size": 17207889,
+                "name": "DEXSeq count reads on KS03",
+                "param_name": "rep_factorName_0|countFiles113"
+            },
+            {
+                "dataset_id": "22659103",
+                "extension": "tabular",
+                "file_size": 17291044,
+                "name": "DEXSeq count reads on KS25",
+                "param_name": "rep_factorName_0|countFiles2"
+            },
+            {
+                "dataset_id": "22659103",
+                "extension": "tabular",
+                "file_size": 17291044,
+                "name": "DEXSeq count reads on KS25",
+                "param_name": "rep_factorName_0|countFiles21"
+            },
+            {
+                "dataset_id": "22662278",
+                "extension": "tabular",
+                "file_size": 17283576,
+                "name": "DEXSeq count reads on KS31",
+                "param_name": "rep_factorName_0|countFiles22"
+            },
+            {
+                "dataset_id": "22662279",
+                "extension": "tabular",
+                "file_size": 17201194,
+                "name": "DEXSeq count reads on KS30",
+                "param_name": "rep_factorName_0|countFiles23"
+            },
+            {
+                "dataset_id": "22662280",
+                "extension": "tabular",
+                "file_size": 17288994,
+                "name": "DEXSeq count reads on KS29",
+                "param_name": "rep_factorName_0|countFiles24"
+            },
+            {
+                "dataset_id": "22662281",
+                "extension": "tabular",
+                "file_size": 17279238,
+                "name": "DEXSeq count reads on KS27",
+                "param_name": "rep_factorName_0|countFiles25"
+            },
+            {
+                "dataset_id": "22662282",
+                "extension": "tabular",
+                "file_size": 17348855,
+                "name": "DEXSeq count reads on KS26",
+                "param_name": "rep_factorName_0|countFiles26"
+            },
+            {
+                "dataset_id": "22662283",
+                "extension": "tabular",
+                "file_size": 17327323,
+                "name": "DEXSeq count reads on KS24",
+                "param_name": "rep_factorName_0|countFiles27"
+            },
+            {
+                "dataset_id": "22662284",
+                "extension": "tabular",
+                "file_size": 17367575,
+                "name": "DEXSeq count reads on KS23",
+                "param_name": "rep_factorName_0|countFiles28"
+            },
+            {
+                "dataset_id": "22662285",
+                "extension": "tabular",
+                "file_size": 17342963,
+                "name": "DEXSeq count reads on KS19",
+                "param_name": "rep_factorName_0|countFiles29"
+            },
+            {
+                "dataset_id": "22662286",
+                "extension": "tabular",
+                "file_size": 17346650,
+                "name": "DEXSeq count reads on KS20",
+                "param_name": "rep_factorName_0|countFiles210"
+            },
+            {
+                "dataset_id": "22662287",
+                "extension": "tabular",
+                "file_size": 17330478,
+                "name": "DEXSeq count reads on KS21",
+                "param_name": "rep_factorName_0|countFiles211"
+            },
+            {
+                "dataset_id": "22662288",
+                "extension": "tabular",
+                "file_size": 17394294,
+                "name": "DEXSeq count reads on KS22",
+                "param_name": "rep_factorName_0|countFiles212"
+            },
+            {
+                "dataset_id": "22662289",
+                "extension": "tabular",
+                "file_size": 17348827,
+                "name": "DEXSeq count reads on KS18",
+                "param_name": "rep_factorName_0|countFiles213"
+            },
+            {
+                "dataset_id": "22662290",
+                "extension": "tabular",
+                "file_size": 17265441,
+                "name": "DEXSeq count reads on KS16",
+                "param_name": "rep_factorName_0|countFiles214"
+            },
+            {
+                "dataset_id": "22662291",
+                "extension": "tabular",
+                "file_size": 17274746,
+                "name": "DEXSeq count reads on KS15",
+                "param_name": "rep_factorName_0|countFiles215"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-dexseq",
+                "version": "1.20.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "r-getopt",
+                "version": "1.20.0"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0ac87b39a40f44c0fe078d45b44a75214d4cdc24e1ddfc494e56a9ef42628a17",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "r-rjson",
+                "version": "0.2.15"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3357648,
+        "id": 17745868,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11812506",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "fdr_cutoff": "\"0.01\"",
+            "gtf": "{\"values\": [{\"src\": \"hda\", \"id\": 32804546}]}",
+            "rep_factorName": "[{\"factorName\": \"Disease\", \"countFiles1\": {\"values\": [{\"src\": \"hda\", \"id\": 32807977}, {\"src\": \"hda\", \"id\": 32807992}, {\"src\": \"hda\", \"id\": 32807993}, {\"src\": \"hda\", \"id\": 32807994}, {\"src\": \"hda\", \"id\": 32807995}, {\"src\": \"hda\", \"id\": 32807996}, {\"src\": \"hda\", \"id\": 32807997}, {\"src\": \"hda\", \"id\": 32807998}, {\"src\": \"hda\", \"id\": 32807999}, {\"src\": \"hda\", \"id\": 32808000}, {\"src\": \"hda\", \"id\": 32808001}, {\"src\": \"hda\", \"id\": 32808002}, {\"src\": \"hda\", \"id\": 32808003}]}, \"factorLevel2\": \"Traditional\", \"factorLevel1\": \"Youthful\", \"countFiles2\": {\"values\": [{\"src\": \"hda\", \"id\": 32804569}, {\"src\": \"hda\", \"id\": 32807978}, {\"src\": \"hda\", \"id\": 32807979}, {\"src\": \"hda\", \"id\": 32807980}, {\"src\": \"hda\", \"id\": 32807981}, {\"src\": \"hda\", \"id\": 32807982}, {\"src\": \"hda\", \"id\": 32807983}, {\"src\": \"hda\", \"id\": 32807984}, {\"src\": \"hda\", \"id\": 32807985}, {\"src\": \"hda\", \"id\": 32807986}, {\"src\": \"hda\", \"id\": 32807987}, {\"src\": \"hda\", \"id\": 32807988}, {\"src\": \"hda\", \"id\": 32807989}, {\"src\": \"hda\", \"id\": 32807990}, {\"src\": \"hda\", \"id\": 32807991}]}, \"__index__\": 0}]",
+            "report": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 42518830,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/dexseq/dexseq/1.20.1",
+        "tool_version": "1.20.1",
+        "traceback": null,
+        "update_time": "2017-12-09 02:38:59.575699",
+        "user_id": 116840
+    }
+]

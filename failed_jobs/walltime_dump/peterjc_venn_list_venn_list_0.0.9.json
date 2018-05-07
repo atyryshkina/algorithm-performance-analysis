@@ -1,0 +1,135 @@
+[
+    {
+        "create_time": "2016-04-08 02:58:03.326677",
+        "datasets": [
+            {
+                "dataset_id": "15122780",
+                "extension": "fastq",
+                "file_size": 1087543468,
+                "name": "SRR2013760.fastqsanger",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "15122780",
+                "extension": "fastq",
+                "file_size": 1087543468,
+                "name": "SRR2013760.fastqsanger",
+                "param_name": "sets_0|set"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2661501,
+        "id": 12378035,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6576431.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": 24192972, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": 24192972, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 29480543,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2016-04-09 14:58:44.110924",
+        "user_id": 82121
+    },
+    {
+        "create_time": "2017-08-21 21:28:31.601803",
+        "datasets": [
+            {
+                "dataset_id": "20784720",
+                "extension": "fastqsanger",
+                "file_size": 2611895703,
+                "name": "P300 SRR2000698 (fastq-dump)",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "20784559",
+                "extension": "fastqsanger",
+                "file_size": 14527936401,
+                "name": "PARP1 SRR1103708 (fastq-dump)",
+                "param_name": "sets_1|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3206616,
+        "id": 16627138,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10699228.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 30677005}]}, \"lab\": \"EP300\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 30676840}]}, \"lab\": \"PARP1\"}]",
+            "universe": "{\"type_select\": \"implicit\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 39990130,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-08-23 09:28:53.919823",
+        "user_id": 109561
+    }
+]

@@ -1,0 +1,715 @@
+[
+    {
+        "create_time": "2016-11-05 00:16:49.278566",
+        "datasets": [
+            {
+                "dataset_id": "17739698",
+                "extension": "vcf",
+                "file_size": 54551195,
+                "name": "C3L78ACXX-7-ID10.INDELs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2881902,
+        "id": 14258242,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8466929.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59f3efdba77709a10\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33346758,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-05 00:21:01.419702",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2016-11-04 23:06:33.999294",
+        "datasets": [
+            {
+                "dataset_id": "17739701",
+                "extension": "vcf",
+                "file_size": 189011453,
+                "name": "C3L78ACXX-7-ID12.SNPs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2881902,
+        "id": 14257819,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8466460.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5764350b4aab88129\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 34031617,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-04 23:19:37.265973",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2017-04-06 04:38:34.015347",
+        "datasets": [
+            {
+                "dataset_id": "19481773",
+                "extension": "vcf",
+                "file_size": 2077100,
+                "name": "VCF-BEDintersect: on data 63 and data 33",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "19481877",
+                "extension": "bed",
+                "file_size": 2583883906,
+                "name": "UCSC Main on Human: snp138 (genome)",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__vcflib@1.0.0_rc1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "vcflib",
+                "version": "1.0.0_rc1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3043374,
+        "id": 15502306,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9629572.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": 29093468}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"true\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 29093364}]}"
+        },
+        "runner_name": null,
+        "session_id": 35494274,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2017-04-06 04:41:33.542065",
+        "user_id": 98454
+    },
+    {
+        "create_time": "2017-12-09 05:46:25.178853",
+        "datasets": [
+            {
+                "dataset_id": "22679960",
+                "extension": "vcf",
+                "file_size": 57301904,
+                "name": "FreeBayes on data 1 and data 83 (variants)",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "22656119",
+                "extension": "bed",
+                "file_size": 5034335615,
+                "name": "Mapped_Sorted (as BED)",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__vcflib@1.0.0_rc1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "vcflib",
+                "version": "1.0.0_rc1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3349909,
+        "id": 17753876,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11821307",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32801320}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 32827597}]}"
+        },
+        "runner_name": null,
+        "session_id": 42463698,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2017-12-09 05:48:53.508913",
+        "user_id": 108548
+    },
+    {
+        "create_time": "2017-03-07 03:24:02.014956",
+        "datasets": [
+            {
+                "dataset_id": "19095055",
+                "extension": "vcf",
+                "file_size": 1379263,
+                "name": "MPileup on data 340 and data 147",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "19105971",
+                "extension": "bed",
+                "file_size": 11115262766,
+                "name": "SRR2141376.bed",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__vcflib@1.0.0_rc1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "vcflib",
+                "version": "1.0.0_rc1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2872625,
+        "id": 15225924,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9374372.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": 28648133}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 28636576}]}"
+        },
+        "runner_name": null,
+        "session_id": 36382770,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2017-03-07 03:26:21.350110",
+        "user_id": 82187
+    },
+    {
+        "create_time": "2017-12-06 19:13:30.757786",
+        "datasets": [
+            {
+                "dataset_id": "22636445",
+                "extension": "vcf",
+                "file_size": 744681,
+                "name": "VCF-BEDintersect: on data 2 and data 21",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "22636647",
+                "extension": "bed",
+                "file_size": 4160246868,
+                "name": "polyphen-2.whess.damaging.txt",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__vcflib@1.0.0_rc1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "vcflib",
+                "version": "1.0.0_rc1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3354159,
+        "id": 17723677,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11790026",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": 32777176}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 32776952}]}"
+        },
+        "runner_name": null,
+        "session_id": 42495750,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2017-12-06 20:01:47.341446",
+        "user_id": 222
+    },
+    {
+        "create_time": "2017-07-05 19:30:05.142035",
+        "datasets": [
+            {
+                "dataset_id": "20518600",
+                "extension": "vcf",
+                "file_size": 203091107,
+                "name": "qual60.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "20518630",
+                "extension": "bed",
+                "file_size": 18012487817,
+                "name": "Select on data 1",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__vcflib@1.0.0_rc1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "vcflib",
+                "version": "1.0.0_rc1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3183018,
+        "id": 16265908,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10337061.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": 30312601}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 30312558}]}"
+        },
+        "runner_name": null,
+        "session_id": 39118869,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2017-07-05 19:36:58.564218",
+        "user_id": 108593
+    },
+    {
+        "create_time": "2016-11-08 23:10:42.644342",
+        "datasets": [
+            {
+                "dataset_id": "17739699",
+                "extension": "vcf",
+                "file_size": 161340546,
+                "name": "C3L78ACXX-7-ID10.SNPs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17785026",
+                "extension": "bed",
+                "file_size": 3898020771,
+                "name": "corrected SNP147 0.01 Text reformatting on data 52",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2881902,
+        "id": 14289840,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8497794.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5296f80fc677756e0\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b574f5d25fe0dbb55a\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 34031617,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-08 23:23:30.435656",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2016-11-04 23:06:33.264864",
+        "datasets": [
+            {
+                "dataset_id": "17739699",
+                "extension": "vcf",
+                "file_size": 161340546,
+                "name": "C3L78ACXX-7-ID10.SNPs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2881902,
+        "id": 14257817,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8466459.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b574f5d25fe0dbb55a\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 34031617,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-04 23:11:36.982310",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2016-11-04 23:06:32.814639",
+        "datasets": [
+            {
+                "dataset_id": "17739698",
+                "extension": "vcf",
+                "file_size": 54551195,
+                "name": "C3L78ACXX-7-ID10.INDELs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2881902,
+        "id": 14257816,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8466458.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59f3efdba77709a10\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 34031617,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-04 23:14:38.569727",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2016-11-05 04:17:04.213897",
+        "datasets": [
+            {
+                "dataset_id": "17739699",
+                "extension": "vcf",
+                "file_size": 161340546,
+                "name": "C3L78ACXX-7-ID10.SNPs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2881902,
+        "id": 14259156,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8467764.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b574f5d25fe0dbb55a\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33346758,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-05 04:19:32.059627",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2016-11-05 04:40:31.741810",
+        "datasets": [
+            {
+                "dataset_id": "17739699",
+                "extension": "vcf",
+                "file_size": 161340546,
+                "name": "C3L78ACXX-7-ID10.SNPs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2881902,
+        "id": 14259231,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8467872.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b574f5d25fe0dbb55a\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33346758,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-05 04:44:24.589474",
+        "user_id": 91306
+    },
+    {
+        "create_time": "2016-11-04 23:06:33.681071",
+        "datasets": [
+            {
+                "dataset_id": "17739700",
+                "extension": "vcf",
+                "file_size": 67040337,
+                "name": "C3L78ACXX-7-ID12.INDELs_Annotated.vcf",
+                "param_name": "vcf_input"
+            },
+            {
+                "dataset_id": "17665145",
+                "extension": "bed",
+                "file_size": 3898020775,
+                "name": "<0.01 Text reformatting on data 24",
+                "param_name": "bed_input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2881902,
+        "id": 14257818,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8466461.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_vs_interval": "{\"bed_vs_interval_selector\": \"bed\", \"bed_input\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c65ee3485be1188\"}]}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "invert": "\"false\"",
+            "vcf_input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f8610af0bf139251\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 34031617,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/vcfbedintersect/vcfbedintersect/1.0.0_rc1.0",
+        "tool_version": "1.0.0_rc1.0",
+        "traceback": null,
+        "update_time": "2016-11-04 23:14:33.390474",
+        "user_id": 91306
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "create_time": "2017-02-16 08:25:52.103518",
+        "datasets": [
+            {
+                "dataset_id": "4998465",
+                "extension": "fasta",
+                "file_size": 102291840,
+                "name": "WS220.64_chr.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18861222",
+                "extension": "bed",
+                "file_size": 1788476165,
+                "name": "SAM-to-BAM on data 7: converted BAM (as BED)",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "picard",
+                "path": "/galaxy/main/deps/picard/1.136/devteam/picard/efc56ee1ade4",
+                "script": "/galaxy/main/deps/picard/1.136/devteam/picard/efc56ee1ade4/env.sh",
+                "version": "1.136"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2997658,
+        "id": 15053750,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9209305.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 28376835}]}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28376856}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35709015,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_BedToIntervalList/1.136.0",
+        "tool_version": "1.136.0",
+        "traceback": null,
+        "update_time": "2017-02-16 08:28:56.631312",
+        "user_id": 76171
+    }
+]

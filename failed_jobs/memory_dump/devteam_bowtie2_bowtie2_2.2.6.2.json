@@ -1,0 +1,1459 @@
+[
+    {
+        "create_time": "2016-07-07 11:46:02.893986",
+        "datasets": [
+            {
+                "dataset_id": "16399376",
+                "extension": "fastqsanger",
+                "file_size": 3782320081,
+                "name": "FASTQ Groomer on data 1",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2753004,
+        "id": 13352319,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7561936",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e78254034fec1abb\"}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm10\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 31171145,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-07 11:56:54.839077",
+        "user_id": 86772
+    },
+    {
+        "create_time": "2017-03-31 14:48:50.025598",
+        "datasets": [
+            {
+                "dataset_id": "19409953",
+                "extension": "fastqsanger",
+                "file_size": 11188859,
+                "name": "FASTQ Groomer on data 6",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "19410057",
+                "extension": "fasta",
+                "file_size": 5667193,
+                "name": "umnk88_complete.fasta",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3053733,
+        "id": 15448530,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9579424",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 29005175}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29005283}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 37010136,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-03-31 15:13:43.296645",
+        "user_id": 103357
+    },
+    {
+        "create_time": "2016-06-30 06:47:08.568929",
+        "datasets": [
+            {
+                "dataset_id": "16058068",
+                "extension": "fastqsanger",
+                "file_size": 247412931,
+                "name": "FASTQ Trimmer on data 406",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "16058072",
+                "extension": "fastqsanger",
+                "file_size": 202631411,
+                "name": "FASTQ Trimmer on data 407",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2626700,
+        "id": 13294062,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7495666",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54492423d2c32c602\"}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53d028e573c170d2a\"}]}, \"type\": \"paired\", \"paired_options\": {\"no_mixed\": \"false\", \"dovetail\": \"false\", \"I\": \"10000\", \"no_contain\": \"false\", \"no_discordant\": \"false\", \"no_overlap\": \"false\", \"__current_case__\": 0, \"X\": \"10000000\", \"fr_rf_ff\": \"--fr\", \"paired_options_selector\": \"yes\"}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm9\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 30255673,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-06-30 06:50:40.974553",
+        "user_id": 61645
+    },
+    {
+        "create_time": "2016-07-02 15:32:09.170746",
+        "datasets": [
+            {
+                "dataset_id": "16283932",
+                "extension": "fastqsanger",
+                "file_size": 3094810,
+                "name": "Combine FASTA and QUAL on data 68",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2736303,
+        "id": 13313646,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7520417",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,0.50\", \"L\": \"20\", \"N\": \"0\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,0,-0.6\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"false\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"yes\", \"R\": \"3\", \"D\": \"20\", \"__current_case__\": 0}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"3\", \"rdg_read_open\": \"5\", \"rfg_ref_open\": \"5\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"3\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"k\": \"10000\", \"reporting_options_selector\": \"k\", \"__current_case__\": 1}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b579aeca5e0e6abbf6\"}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm9\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 30810736,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-03 20:02:32.777835",
+        "user_id": 27915
+    },
+    {
+        "create_time": "2017-08-03 13:09:17.616648",
+        "datasets": [
+            {
+                "dataset_id": "20704000",
+                "extension": "fastqsanger",
+                "file_size": 1773666468,
+                "name": "Filter by quality on data 40",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3200150,
+        "id": 16497930,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10567521",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,1.15\", \"L\": \"22\", \"N\": \"1\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"false\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"a\", \"__current_case__\": 2}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 30585606}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg38canon\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 39460579,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-08-03 13:15:47.912127",
+        "user_id": 108158
+    },
+    {
+        "create_time": "2016-07-09 00:56:06.864717",
+        "datasets": [
+            {
+                "dataset_id": "16514230",
+                "extension": "fastqsanger",
+                "file_size": 150332969,
+                "name": "M_hordei_consensus_gene.fq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "16513954",
+                "extension": "fasta",
+                "file_size": 205678655,
+                "name": "MhSRR136493_in390_k31.scafSeq",
+                "param_name": "own_file"
+            },
+            {
+                "dataset_id": "16442726",
+                "extension": "len",
+                "file_size": 13278423,
+                "name": "Convert FASTA to len file on data 3",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2755746,
+        "id": 13365526,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7575525",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"pulsar_stampede_normal\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"--sensitive-local\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/016/442/dataset_16442726.dat\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5deb64718a36a18d1\"}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5490b7a01c8f08d88\"}]}}",
+            "rg": "{\"rg_selector\": \"set_id_auto\", \"__current_case__\": 2}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 31234577,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-09 01:02:47.733529",
+        "user_id": 86876
+    },
+    {
+        "create_time": "2016-10-20 14:58:43.232702",
+        "datasets": [
+            {
+                "dataset_id": "17567149",
+                "extension": "fastqsanger",
+                "file_size": 125488033,
+                "name": "combined_fastq.txt",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2854742,
+        "id": 14131492,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8345743",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57c8b95e318a43c9e\"}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"papHam1\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 33567893,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-10-20 15:01:40.403816",
+        "user_id": 91889
+    },
+    {
+        "create_time": "2016-07-06 09:22:43.659614",
+        "datasets": [
+            {
+                "dataset_id": "16399376",
+                "extension": "fastqsanger",
+                "file_size": 3782320081,
+                "name": "FASTQ Groomer on data 1",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2753004,
+        "id": 13342193,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7550767",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e78254034fec1abb\"}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm10\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 31171145,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-06 09:40:46.096588",
+        "user_id": 86772
+    },
+    {
+        "create_time": "2016-11-21 13:31:33.043890",
+        "datasets": [
+            {
+                "dataset_id": "17928472",
+                "extension": "fastqsanger",
+                "file_size": 63720985,
+                "name": "FASTQ Groomer on data 122",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "17945286",
+                "extension": "fasta",
+                "file_size": 2357817311,
+                "name": "piR_mouse_v1.0(2).fa",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2297162,
+        "id": 14398165,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8603224",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"true\", \"unaligned_file\": \"true\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5db5be5e1a762dda6\"}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b3e529678cf4e31c\"}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34325970,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-11-21 14:23:40.425953",
+        "user_id": 63254
+    },
+    {
+        "create_time": "2016-11-21 13:31:33.904280",
+        "datasets": [
+            {
+                "dataset_id": "17928473",
+                "extension": "fastqsanger",
+                "file_size": 81067313,
+                "name": "FASTQ Groomer on data 123",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "17945286",
+                "extension": "fasta",
+                "file_size": 2357817311,
+                "name": "piR_mouse_v1.0(2).fa",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2297162,
+        "id": 14398166,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8603226",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"true\", \"unaligned_file\": \"true\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d194831e5ff26e1a\"}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b3e529678cf4e31c\"}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34325970,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-11-21 14:20:14.874809",
+        "user_id": 63254
+    },
+    {
+        "create_time": "2017-06-28 01:30:36.419181",
+        "datasets": [
+            {
+                "dataset_id": "20425356",
+                "extension": "fastqsanger",
+                "file_size": 27070793,
+                "name": "FASTQ Groomer on data 136",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3172671,
+        "id": 16206526,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10282909",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 30171485}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg38\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 38931722,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-06-28 01:32:19.220794",
+        "user_id": 108203
+    },
+    {
+        "create_time": "2016-08-30 20:57:29.341249",
+        "datasets": [
+            {
+                "dataset_id": "17037669",
+                "extension": "fastqsanger",
+                "file_size": 3827789486,
+                "name": "myreads.fastq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "17036680",
+                "extension": "fasta",
+                "file_size": 5617978,
+                "name": "PA20genome.fas",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2234574,
+        "id": 13750898,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7971487",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e6ef2ec313ec43ba\"}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529e922f3912fef53\"}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 32505745,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-08-30 21:01:13.168445",
+        "user_id": 60779
+    },
+    {
+        "create_time": "2016-07-02 15:31:28.441110",
+        "datasets": [
+            {
+                "dataset_id": "16283932",
+                "extension": "fastqsanger",
+                "file_size": 3094810,
+                "name": "Combine FASTA and QUAL on data 68",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2736303,
+        "id": 13313645,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7517316",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,0.50\", \"L\": \"20\", \"N\": \"0\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.7\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"false\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"yes\", \"R\": \"3\", \"D\": \"20\", \"__current_case__\": 0}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"3\", \"rdg_read_open\": \"5\", \"rfg_ref_open\": \"5\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"3\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"k\": \"10000\", \"reporting_options_selector\": \"k\", \"__current_case__\": 1}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b579aeca5e0e6abbf6\"}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm9\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 30810736,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-03 12:32:08.376148",
+        "user_id": 27915
+    },
+    {
+        "create_time": "2017-07-24 13:42:26.549011",
+        "datasets": [
+            {
+                "dataset_id": "20706424",
+                "extension": "fastqsanger",
+                "file_size": 1425129533,
+                "name": "G186053K.trim.fastq",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3201071,
+        "id": 16405002,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10469471",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 30588145}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg19canon\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37775768,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-07-24 13:45:08.447067",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2017-07-20 05:08:24.486876",
+        "datasets": [
+            {
+                "dataset_id": "20662607",
+                "extension": "fastqsanger",
+                "file_size": 67605704,
+                "name": "fastq_runid_7b1d05d09e811ef7957ac7f6e9d6e821cb99eb46_1.fastq",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3097412,
+        "id": 16371357,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10436250",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 30533914}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg19\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 39390687,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-07-20 05:10:07.516875",
+        "user_id": 105175
+    },
+    {
+        "create_time": "2017-06-28 01:30:37.467626",
+        "datasets": [
+            {
+                "dataset_id": "20439948",
+                "extension": "fastqsanger",
+                "file_size": 30593718,
+                "name": "FASTQ Groomer on data 140",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3172671,
+        "id": 16206528,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10282916",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 30189343}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg38\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 38931722,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-06-28 01:31:24.711052",
+        "user_id": 108203
+    },
+    {
+        "create_time": "2016-07-09 00:42:26.799632",
+        "datasets": [
+            {
+                "dataset_id": "16514230",
+                "extension": "fastqsanger",
+                "file_size": 150332969,
+                "name": "M_hordei_consensus_gene.fq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "16513954",
+                "extension": "fasta",
+                "file_size": 205678655,
+                "name": "MhSRR136493_in390_k31.scafSeq",
+                "param_name": "own_file"
+            },
+            {
+                "dataset_id": "16442726",
+                "extension": "len",
+                "file_size": 13278423,
+                "name": "Convert FASTA to len file on data 3",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2755746,
+        "id": 13365513,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7575503",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"--sensitive-local\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/016/442/dataset_16442726.dat\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5deb64718a36a18d1\"}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5490b7a01c8f08d88\"}]}}",
+            "rg": "{\"rg_selector\": \"set_id_auto\", \"__current_case__\": 2}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 31234577,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-09 00:50:40.358662",
+        "user_id": 86876
+    },
+    {
+        "create_time": "2017-03-28 15:01:52.026486",
+        "datasets": [
+            {
+                "dataset_id": "19364242",
+                "extension": "fastqsanger",
+                "file_size": 466923270,
+                "name": "Dataset1.fq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "19362070",
+                "extension": "fasta",
+                "file_size": 171196,
+                "name": "Chloroplast_complete_NC_015899.fa",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2973498,
+        "id": 15415198,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9546820",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"true\", \"unaligned_file\": \"true\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 28953815}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28951554}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36926736,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-03-28 17:18:10.364855",
+        "user_id": 99061
+    },
+    {
+        "create_time": "2016-07-02 15:08:20.981457",
+        "datasets": [
+            {
+                "dataset_id": "16283932",
+                "extension": "fastqsanger",
+                "file_size": 3094810,
+                "name": "Combine FASTA and QUAL on data 68",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2736303,
+        "id": 13313509,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7517089",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,0.50\", \"L\": \"20\", \"N\": \"0\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"false\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"yes\", \"R\": \"3\", \"D\": \"20\", \"__current_case__\": 0}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"3\", \"rdg_read_open\": \"5\", \"rfg_ref_open\": \"5\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"3\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"k\": \"10000\", \"reporting_options_selector\": \"k\", \"__current_case__\": 1}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b579aeca5e0e6abbf6\"}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm9\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 30810736,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-07-03 03:25:55.458812",
+        "user_id": 27915
+    },
+    {
+        "create_time": "2016-11-04 18:36:41.117827",
+        "datasets": [
+            {
+                "dataset_id": "17736343",
+                "extension": "fastqsanger",
+                "file_size": 1058518319,
+                "name": "FASTQ Groomer on data 1",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "17736347",
+                "extension": "fastqsanger",
+                "file_size": 1058518319,
+                "name": "FASTQ Groomer on data 2",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2881483,
+        "id": 14255340,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8464187",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"__current_case__\": 1, \"alignment_options_selector\": \"no\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"a\", \"__current_case__\": 2}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"true\", \"unaligned_file\": \"true\", \"input_2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b6d00790aa51b39f\"}]}, \"__current_case__\": 1, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54959473ff12bc9a5\"}]}, \"type\": \"paired\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg38\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 34093919,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2016-11-06 05:05:25.552335",
+        "user_id": 93854
+    },
+    {
+        "create_time": "2017-02-01 09:17:15.524029",
+        "datasets": [
+            {
+                "dataset_id": "18625347",
+                "extension": "fastqsanger",
+                "file_size": 502001260,
+                "name": "FASTQ Groomer on data 427",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "18567028",
+                "extension": "fasta",
+                "file_size": 13724148371,
+                "name": "Triticum aestivum genome (partial).fna",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2804944,
+        "id": 14921124,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9076860",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 28108095}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28044638}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 35598654,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-02-01 09:32:34.720195",
+        "user_id": 89189
+    },
+    {
+        "create_time": "2017-05-22 07:45:40.115679",
+        "datasets": [
+            {
+                "dataset_id": "20020547",
+                "extension": "fastqsanger",
+                "file_size": 8468607906,
+                "name": "Trim Galore! on data 48: trimmed reads",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "20026544",
+                "extension": "fasta",
+                "file_size": 1202111,
+                "name": "RefSEQs_reoriented.fasta",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3111128,
+        "id": 15903805,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10002349",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"pulsar_stampede_normal\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"--very-sensitive-local\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"true\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 29705642}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29712437}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 36940342,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-05-22 07:55:00.758684",
+        "user_id": 50184
+    },
+    {
+        "create_time": "2017-06-28 01:30:36.989658",
+        "datasets": [
+            {
+                "dataset_id": "20439947",
+                "extension": "fastqsanger",
+                "file_size": 33238327,
+                "name": "FASTQ Groomer on data 139",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3172671,
+        "id": 16206527,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10282912",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"no_presets\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 30189342}]}}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg38\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 38931722,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-06-28 01:31:04.967297",
+        "user_id": 108203
+    },
+    {
+        "create_time": "2017-05-26 20:50:03.038106",
+        "datasets": [
+            {
+                "dataset_id": "20077250",
+                "extension": "fastqsanger",
+                "file_size": 3403,
+                "name": "Combine FASTA and QUAL on data 166 top50maturemiRNAseqs fastq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "20088081",
+                "extension": "fasta",
+                "file_size": 24875073845,
+                "name": "All_exceptIgG.fa",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bowtie2",
+                "path": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/bowtie2/2.2.6/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "2.2.6"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bowtie2/a9d4f71dbfb0/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3114069,
+        "id": 15948806,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10047245",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"alignment_options_selector\": \"yes\", \"i\": \"S,1,1.15\", \"L\": \"22\", \"N\": \"1\", \"norc\": \"false\", \"nofw\": \"false\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"__current_case__\": 0, \"no_1mm_upfront\": \"false\", \"gbar\": \"4\", \"ignore_quals\": \"false\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"k\": \"5000\", \"reporting_options_selector\": \"k\", \"__current_case__\": 1}, \"__current_case__\": 1, \"sam_opt\": \"false\", \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"aligned_file\": \"false\", \"unaligned_file\": \"true\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"values\": [{\"src\": \"hda\", \"id\": 29775310}]}}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29788261}]}}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}",
+            "save_mapping_stats": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 38032177,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.2.6.2",
+        "tool_version": "2.2.6.2",
+        "traceback": null,
+        "update_time": "2017-05-26 21:10:21.610388",
+        "user_id": 61604
+    }
+]

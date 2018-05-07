@@ -1,0 +1,594 @@
+[
+    {
+        "create_time": "2018-02-23 08:50:41.214024",
+        "datasets": [
+            {
+                "dataset_id": "23747013",
+                "extension": "fasta",
+                "file_size": 232195115,
+                "name": "Galaxy87-[Trinity_on_data_68_and_data_85__Assembled_Transcripts].fasta",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23747017",
+                "extension": "dmnd",
+                "file_size": 2198200378,
+                "name": "Diamond makedb on data 168",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 1964723,
+        "id": 18494356,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12589690",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"1\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"true\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"sallseqid\", \"qlen\", \"slen\", \"pident\", \"length\", \"nident\", \"mismatch\", \"positive\", \"gapopen\", \"gaps\", \"ppos\", \"qstart\", \"qend\", \"sstart\", \"send\", \"qseq\", \"sseq\", \"evalue\", \"bitscore\", \"score\", \"qframe\", \"stitle\", \"salltitles\", \"qcovhsp\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34029205}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 34029209}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 44112715,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-23 22:23:40.439692",
+        "user_id": 50820
+    },
+    {
+        "create_time": "2017-09-11 12:07:20.338855",
+        "datasets": [
+            {
+                "dataset_id": "21219842",
+                "extension": "fasta",
+                "file_size": 42605820,
+                "name": "idba_frag.fasta",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "21237752",
+                "extension": "dmnd",
+                "file_size": 81397134961,
+                "name": "Diamond makedb on data 3",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3247063,
+        "id": 16786628,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10855048.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"10\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 31162442}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 31182012}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40360697,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2017-09-11 12:12:01.324540",
+        "user_id": 100375
+    },
+    {
+        "create_time": "2018-02-09 21:29:16.753265",
+        "datasets": [
+            {
+                "dataset_id": "23521894",
+                "extension": "fastqsanger",
+                "file_size": 3995140096,
+                "name": "Trimmomatic_on_GDS1_1_nodup.fq",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23506627",
+                "extension": "dmnd",
+                "file_size": 90333132000,
+                "name": "Diamond nr database",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3422641,
+        "id": 18333530,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12417929",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"15\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 33780789}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33764596}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43814370,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-09 21:48:44.451687",
+        "user_id": 121564
+    },
+    {
+        "create_time": "2017-09-11 11:58:45.732796",
+        "datasets": [
+            {
+                "dataset_id": "21219842",
+                "extension": "fasta",
+                "file_size": 42605820,
+                "name": "idba_frag.fasta",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "21237752",
+                "extension": "dmnd",
+                "file_size": 81397134961,
+                "name": "Diamond makedb on data 3",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3247063,
+        "id": 16786612,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10855027.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"10\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 31162442}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 31182012}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"true\""
+        },
+        "runner_name": null,
+        "session_id": 40360697,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2017-09-11 12:04:46.628638",
+        "user_id": 100375
+    },
+    {
+        "create_time": "2018-02-10 04:31:11.543615",
+        "datasets": [
+            {
+                "dataset_id": "23521894",
+                "extension": "fastqsanger",
+                "file_size": 3995140096,
+                "name": "Trimmomatic_on_GDS1_1_nodup.fq",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23506627",
+                "extension": "dmnd",
+                "file_size": 90333132000,
+                "name": "Diamond nr database",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3422641,
+        "id": 18335466,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12419888",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"1.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"15\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"outfmt\": \"5\", \"__current_case__\": 0, \"salltitles\": \"true\"}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 33780789}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33764596}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43773018,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-10 04:43:05.139158",
+        "user_id": 121564
+    },
+    {
+        "create_time": "2017-12-10 23:09:18.401963",
+        "datasets": [
+            {
+                "dataset_id": "22701471",
+                "extension": "fastq",
+                "file_size": 14872303878,
+                "name": "Gerbil skin fastq",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "22701467",
+                "extension": "dmnd",
+                "file_size": 2533569484,
+                "name": "Diamond makedb on data 85",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3359000,
+        "id": 17767012,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11835741",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"25\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastp\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"outfmt\": \"5\", \"__current_case__\": 0, \"salltitles\": \"true\"}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 32849998}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 32849994}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42552045,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2017-12-10 23:45:30.096927",
+        "user_id": 118155
+    },
+    {
+        "create_time": "2018-02-10 04:11:00.690102",
+        "datasets": [
+            {
+                "dataset_id": "23521894",
+                "extension": "fastqsanger",
+                "file_size": 3995140096,
+                "name": "Trimmomatic_on_GDS1_1_nodup.fq",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23506627",
+                "extension": "dmnd",
+                "file_size": 90333132000,
+                "name": "Diamond nr database",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3422641,
+        "id": 18335379,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12419821",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"15\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"fields\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"outfmt\": \"6\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 33780789}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33764596}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43773018,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-10 04:29:13.186487",
+        "user_id": 121564
+    },
+    {
+        "create_time": "2018-02-20 21:05:29.049842",
+        "datasets": [
+            {
+                "dataset_id": "23691908",
+                "extension": "fasta",
+                "file_size": 890021,
+                "name": "TOK_top100_to_genes.fasta",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23506627",
+                "extension": "dmnd",
+                "file_size": 90333132000,
+                "name": "Diamond nr database",
+                "param_name": "reference_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__diamond@0.8.24",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "diamond",
+                "version": "0.8.24"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3433695,
+        "id": 18452748,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12547702",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "block_size": "\"2.0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "filter_score": "{\"evalue\": \"0.001\", \"__current_case__\": 0, \"filter_score_select\": \"evalue\"}",
+            "gapextend": "\"1\"",
+            "gapopen": "\"11\"",
+            "hit_filter": "{\"max_target_seqs\": \"5\", \"__current_case__\": 0, \"hit_filter_select\": \"max\"}",
+            "id": "\"0\"",
+            "matrix": "\"BLOSUM62\"",
+            "method_select": "\"blastx\"",
+            "more_sensitive": "\"false\"",
+            "output": "{\"outfmt\": \"5\", \"__current_case__\": 0, \"salltitles\": \"true\"}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 33968190}]}",
+            "query_cover": "\"0\"",
+            "query_gencode": "\"1\"",
+            "ref_db_source": "{\"reference_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33928213}]}, \"__current_case__\": 1, \"db_source\": \"history\"}",
+            "seg": "\"true\"",
+            "sensitive": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43814370,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diamond/bg_diamond/0.8.24",
+        "tool_version": "0.8.24",
+        "traceback": null,
+        "update_time": "2018-02-20 21:07:58.549407",
+        "user_id": 121564
+    }
+]

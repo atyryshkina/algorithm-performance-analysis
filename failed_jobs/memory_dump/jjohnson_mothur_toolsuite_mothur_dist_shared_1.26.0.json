@@ -1,0 +1,60 @@
+[
+    {
+        "create_time": "2017-06-09 17:53:48.904955",
+        "datasets": [
+            {
+                "dataset_id": "20251259",
+                "extension": "fasta",
+                "file_size": 662900,
+                "name": "matK.fasta",
+                "param_name": "otu"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@_uv_",
+                "exact": false,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.33"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3147024,
+        "id": 16067028,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10155535.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "as_datasets": "\"true\"",
+            "calc": "[\"jclass\", \"thetayc\"]",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groups": "null",
+            "label": "null",
+            "otu": "{\"values\": [{\"src\": \"hda\", \"id\": 29973392}]}",
+            "output": "\"lt\"",
+            "subsampling": "{\"use\": \"false\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 38553118,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/mothur_toolsuite/mothur_dist_shared/1.26.0",
+        "tool_version": "1.26.0",
+        "traceback": null,
+        "update_time": "2017-06-09 17:57:23.023601",
+        "user_id": null
+    }
+]

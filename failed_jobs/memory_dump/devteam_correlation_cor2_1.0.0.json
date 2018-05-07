@@ -1,0 +1,112 @@
+[
+    {
+        "create_time": "2017-04-13 07:22:44.662309",
+        "datasets": [
+            {
+                "dataset_id": "19484235",
+                "extension": "bedgraph",
+                "file_size": 941538880,
+                "name": "bamCompare on data 1 and data 3",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/correlation/24e01abf9e34",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/correlation/24e01abf9e34/env.sh",
+                "version": "1.0.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3060430,
+        "id": 15572564,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9695531.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 29095911}]}",
+            "method": "\"pearson\"",
+            "numeric_columns": "[\"2\", \"3\", \"4\"]"
+        },
+        "runner_name": null,
+        "session_id": 37126459,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/correlation/cor2/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-04-13 07:31:41.335553",
+        "user_id": 103642
+    },
+    {
+        "create_time": "2017-09-10 19:29:58.146378",
+        "datasets": [
+            {
+                "dataset_id": "21233089",
+                "extension": "tabular",
+                "file_size": 5930854405,
+                "name": "id,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20, 22,090,938 Lines",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/correlation/24e01abf9e34",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/correlation/24e01abf9e34/env.sh",
+                "version": "1.0.3"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3248174,
+        "id": 16782933,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10851213.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 31177001}]}",
+            "method": "\"pearson\"",
+            "numeric_columns": "[\"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11\", \"12\", \"13\", \"14\", \"15\", \"16\", \"17\", \"18\", \"19\", \"20\", \"21\"]"
+        },
+        "runner_name": null,
+        "session_id": 40366821,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/correlation/cor2/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-09-10 19:37:39.697130",
+        "user_id": 31176
+    }
+]

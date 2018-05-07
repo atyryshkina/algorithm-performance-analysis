@@ -1,0 +1,874 @@
+[
+    {
+        "create_time": "2017-05-04 18:37:49.887294",
+        "datasets": [
+            {
+                "dataset_id": "19475396",
+                "extension": "bam",
+                "file_size": 1713519429,
+                "name": "SRR1732511_sorted.bam",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "19475396",
+                "extension": "bam",
+                "file_size": 1713519429,
+                "name": "SRR1732511_sorted.bam",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3098903,
+        "id": 15751592,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9860278.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"hg_g1k_v37\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29476888}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 37763707,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-05-06 06:38:04.118819",
+        "user_id": 105301
+    },
+    {
+        "create_time": "2017-06-16 18:55:55.679537",
+        "datasets": [
+            {
+                "dataset_id": "20322760",
+                "extension": "bam",
+                "file_size": 2312567693,
+                "name": "VCAP SOX9.bam",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "20322760",
+                "extension": "bam",
+                "file_size": 2312567693,
+                "name": "VCAP SOX9.bam",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3155501,
+        "id": 16118627,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10200539.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"on\", \"ratio\": \"1.0\", \"to_large\": \"false\", \"slocal\": \"1000\", \"broad_options\": {\"broad_options_selector\": \"nobroad\", \"call_summits\": \"false\", \"__current_case__\": 1}, \"nolambda\": \"false\", \"llocal\": \"10000\", \"keep_dup_options\": {\"__current_case__\": 1, \"keep_dup_options_selector\": \"1\"}, \"__current_case__\": 0}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"?\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30057730}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\", \"html\", \"pdf\"]"
+        },
+        "runner_name": null,
+        "session_id": 38697445,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-06-18 06:56:37.770409",
+        "user_id": 7002
+    },
+    {
+        "create_time": "2017-06-27 16:27:33.321211",
+        "datasets": [
+            {
+                "dataset_id": "20430343",
+                "extension": "bam",
+                "file_size": 1012663976,
+                "name": "Bowtie2 on data 62: aligned reads (sorted BAM)",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "20430343",
+                "extension": "bam",
+                "file_size": 1012663976,
+                "name": "Bowtie2 on data 62: aligned reads (sorted BAM)",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3168389,
+        "id": 16202358,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10278496.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"mm9\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2150570000\", \"__current_case__\": 1}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30176696}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\", \"html\", \"pdf\"]"
+        },
+        "runner_name": null,
+        "session_id": 37122785,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-06-29 04:28:12.440782",
+        "user_id": 103632
+    },
+    {
+        "create_time": "2017-09-25 16:06:12.169458",
+        "datasets": [
+            {
+                "dataset_id": "21431380",
+                "extension": "bam",
+                "file_size": 2210719701,
+                "name": "Convert, Merge, Randomize on data 492 and data 491",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "21431380",
+                "extension": "bam",
+                "file_size": 2210719701,
+                "name": "Convert, Merge, Randomize on data 492 and data 491",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 1276133,
+        "id": 16925545,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10994437.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"hg38\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 31407643}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 40844435,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-09-27 04:06:48.054183",
+        "user_id": 30359
+    },
+    {
+        "create_time": "2017-10-11 00:08:15.413969",
+        "datasets": [
+            {
+                "dataset_id": "21640930",
+                "extension": "bam",
+                "file_size": 5115653728,
+                "name": "frontal cortex 1 BDP.bam",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "21640930",
+                "extension": "bam",
+                "file_size": 5115653728,
+                "name": "frontal cortex 1 BDP.bam",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3275939,
+        "id": 17071954,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11129577.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"160\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"?\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 31636948}]}",
+            "mfold": "{\"upper\": \"200\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 41104770,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-10-12 12:08:24.456944",
+        "user_id": 105071
+    },
+    {
+        "create_time": "2017-11-10 03:23:35.412931",
+        "datasets": [
+            {
+                "dataset_id": "22153973",
+                "extension": "bam",
+                "file_size": 64028529,
+                "name": "Map with BWA on data 2 (mapped reads in BAM format)",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "22153973",
+                "extension": "bam",
+                "file_size": 64028529,
+                "name": "Map with BWA on data 2 (mapped reads in BAM format)",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3319580,
+        "id": 17406201,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11467938",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"on\", \"ratio\": \"1.0\", \"to_large\": \"false\", \"slocal\": \"1000\", \"broad_options\": {\"broad_options_selector\": \"nobroad\", \"call_summits\": \"false\", \"__current_case__\": 1}, \"nolambda\": \"false\", \"llocal\": \"10000\", \"keep_dup_options\": {\"__current_case__\": 1, \"keep_dup_options_selector\": \"1\"}, \"__current_case__\": 0}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"?\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 32212594}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 41904423,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-11-11 15:24:33.736714",
+        "user_id": 108278
+    },
+    {
+        "create_time": "2017-11-13 23:19:00.089274",
+        "datasets": [
+            {
+                "dataset_id": "22200786",
+                "extension": "bam",
+                "file_size": 39249391,
+                "name": "Filter on A549-2: Filtered BAM",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "22200786",
+                "extension": "bam",
+                "file_size": 39249391,
+                "name": "Filter on A549-2: Filtered BAM",
+                "param_name": "input_treatment_file1"
+            },
+            {
+                "dataset_id": "22200788",
+                "extension": "bam",
+                "file_size": 38780124,
+                "name": "Filter on A549-2-2: Filtered BAM",
+                "param_name": "input_treatment_file2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3319353,
+        "id": 17445878,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11503001",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"on\", \"ratio\": \"1.0\", \"to_large\": \"false\", \"slocal\": \"1000\", \"broad_options\": {\"broad_options_selector\": \"nobroad\", \"call_summits\": \"false\", \"__current_case__\": 1}, \"nolambda\": \"false\", \"llocal\": \"10000\", \"keep_dup_options\": {\"__current_case__\": 1, \"keep_dup_options_selector\": \"1\"}, \"__current_case__\": 0}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"hg19\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 32271393}, {\"src\": \"hda\", \"id\": 32271395}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\", \"html\"]"
+        },
+        "runner_name": null,
+        "session_id": 41901685,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-11-15 11:19:31.992524",
+        "user_id": 115887
+    },
+    {
+        "create_time": "2017-11-13 20:37:57.636231",
+        "datasets": [
+            {
+                "dataset_id": "22200774",
+                "extension": "bam",
+                "file_size": 28369613,
+                "name": "Filter on MCF7-1: Filtered BAM",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "22200774",
+                "extension": "bam",
+                "file_size": 28369613,
+                "name": "Filter on MCF7-1: Filtered BAM",
+                "param_name": "input_treatment_file1"
+            },
+            {
+                "dataset_id": "22200776",
+                "extension": "bam",
+                "file_size": 27983134,
+                "name": "Filter on MCF7-1-2: Filtered BAM",
+                "param_name": "input_treatment_file2"
+            },
+            {
+                "dataset_id": "22200778",
+                "extension": "bam",
+                "file_size": 35137379,
+                "name": "Filter on MCF7-2: Filtered BAM",
+                "param_name": "input_treatment_file3"
+            },
+            {
+                "dataset_id": "22200780",
+                "extension": "bam",
+                "file_size": 34813032,
+                "name": "Filter on MCF7-2-2: Filtered BAM",
+                "param_name": "input_treatment_file4"
+            },
+            {
+                "dataset_id": "22200782",
+                "extension": "bam",
+                "file_size": 19797119,
+                "name": "Filter on A549-1: Filtered BAM",
+                "param_name": "input_treatment_file5"
+            },
+            {
+                "dataset_id": "22200784",
+                "extension": "bam",
+                "file_size": 19553590,
+                "name": "Filter on A549-1-2: Filtered BAM",
+                "param_name": "input_treatment_file6"
+            },
+            {
+                "dataset_id": "22200786",
+                "extension": "bam",
+                "file_size": 39249391,
+                "name": "Filter on A549-2: Filtered BAM",
+                "param_name": "input_treatment_file7"
+            },
+            {
+                "dataset_id": "22200788",
+                "extension": "bam",
+                "file_size": 38780124,
+                "name": "Filter on A549-2-2: Filtered BAM",
+                "param_name": "input_treatment_file8"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3319353,
+        "id": 17442251,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11500922",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"hg19\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 32271381}, {\"src\": \"hda\", \"id\": 32271383}, {\"src\": \"hda\", \"id\": 32271385}, {\"src\": \"hda\", \"id\": 32271387}, {\"src\": \"hda\", \"id\": 32271389}, {\"src\": \"hda\", \"id\": 32271391}, {\"src\": \"hda\", \"id\": 32271393}, {\"src\": \"hda\", \"id\": 32271395}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 41901685,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-11-15 08:38:28.370570",
+        "user_id": 115887
+    },
+    {
+        "create_time": "2017-11-29 20:00:22.167062",
+        "datasets": [
+            {
+                "dataset_id": "22492242",
+                "extension": "bam",
+                "file_size": 2988319676,
+                "name": "NBM 12-14-16 Bowtie2 on data 7 and data 6: aligned reads (sorted BAM)",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "22492242",
+                "extension": "bam",
+                "file_size": 2988319676,
+                "name": "NBM 12-14-16 Bowtie2 on data 7 and data 6: aligned reads (sorted BAM)",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3344012,
+        "id": 17641895,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11701654",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"hg19\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 32601703}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"nomodel\", \"extsize\": \"200\", \"__current_case__\": 1, \"shift\": \"0\"}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 42315300,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-12-01 08:00:52.609046",
+        "user_id": 107809
+    },
+    {
+        "create_time": "2017-12-03 20:56:46.997488",
+        "datasets": [
+            {
+                "dataset_id": "22580897",
+                "extension": "bam",
+                "file_size": 13686791,
+                "name": "Bowtie2 on data 1: aligned reads (sorted BAM)",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "22580897",
+                "extension": "bam",
+                "file_size": 13686791,
+                "name": "Bowtie2 on data 1: aligned reads (sorted BAM)",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3349711,
+        "id": 17684345,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11748790",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"36\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"mm9\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2451960000\", \"__current_case__\": 0}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 32707064}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 42402044,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2017-12-05 08:57:20.929415",
+        "user_id": 117827
+    },
+    {
+        "create_time": "2018-02-22 11:58:14.261992",
+        "datasets": [
+            {
+                "dataset_id": "23727305",
+                "extension": "bam",
+                "file_size": 2689974916,
+                "name": "2Uminas.bam",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "23727305",
+                "extension": "bam",
+                "file_size": 2689974916,
+                "name": "2Uminas.bam",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3408664,
+        "id": 18481641,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12576582",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"?\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2150570000\", \"__current_case__\": 1}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 34007807}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 43405584,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2018-02-23 23:58:55.292319",
+        "user_id": 120001
+    },
+    {
+        "create_time": "2018-02-22 11:55:50.593742",
+        "datasets": [
+            {
+                "dataset_id": "23729556",
+                "extension": "bam",
+                "file_size": 2640478013,
+                "name": "2Uplus.bam",
+                "param_name": "input_treatment_file"
+            },
+            {
+                "dataset_id": "23729556",
+                "extension": "bam",
+                "file_size": 2640478013,
+                "name": "2Uplus.bam",
+                "param_name": "input_treatment_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__macs2@2.1.1.20160309",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "macs2",
+                "version": "2.1.1.20160309"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3408664,
+        "id": 18481626,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12576557",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"off\", \"__current_case__\": 1}",
+            "bampe": "\"true\"",
+            "band_width": "\"300\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "cutoff_options": "{\"cutoff_options_selector\": \"qvalue\", \"qvalue\": \"0.05\", \"__current_case__\": 1}",
+            "dbkey": "\"mm9\"",
+            "effective_genome_size_options": "{\"effective_genome_size_options_selector\": \"2150570000\", \"__current_case__\": 1}",
+            "input_control_file": "null",
+            "input_treatment_file": "{\"values\": [{\"src\": \"hda\", \"id\": 34010180}]}",
+            "mfold": "{\"upper\": \"50\", \"lower\": \"5\"}",
+            "nomodel_type": "{\"nomodel_type_selector\": \"create_model\", \"__current_case__\": 0}",
+            "outputs": "[\"peaks_tabular\", \"summits\", \"bdg\"]"
+        },
+        "runner_name": null,
+        "session_id": 43405584,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_callpeak/2.1.1.20160309.0",
+        "tool_version": "2.1.1.20160309.0",
+        "traceback": null,
+        "update_time": "2018-02-23 23:56:26.597767",
+        "user_id": 120001
+    }
+]

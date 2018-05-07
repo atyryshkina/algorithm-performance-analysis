@@ -1,0 +1,177 @@
+[
+    {
+        "create_time": "2017-09-11 05:59:42.834076",
+        "datasets": [
+            {
+                "dataset_id": "5766100",
+                "extension": "gd_snp",
+                "file_size": 1132768638,
+                "name": "human SNPs, like aye-aye",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "21235424",
+                "extension": "gd_indivs",
+                "file_size": 83,
+                "name": "gd_individual",
+                "param_name": "pop_input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gd_c_tools",
+                "path": "/galaxy/main/deps/gd_c_tools/0.1/miller-lab/genome_diversity/884ccb07885b",
+                "script": "/galaxy/main/deps/gd_c_tools/0.1/miller-lab/genome_diversity/884ccb07885b/env.sh",
+                "version": "0.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3244183,
+        "id": 16784549,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10852991.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31179543}]}",
+            "pop_input": "{\"values\": [{\"src\": \"hda\", \"id\": 31179565}]}"
+        },
+        "runner_name": null,
+        "session_id": 40186414,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/miller-lab/genome_diversity/gd_discover_familial_relationships/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2017-09-11 06:02:00.550342",
+        "user_id": 110816
+    },
+    {
+        "create_time": "2016-01-21 23:32:11.810121",
+        "datasets": [
+            {
+                "dataset_id": "14025947",
+                "extension": "gd_genotype",
+                "file_size": 18250083649,
+                "name": "all_gd_genotype",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14041241",
+                "extension": "gd_indivs",
+                "file_size": 180,
+                "name": "high_coverage",
+                "param_name": "pop_input"
+            },
+            {
+                "dataset_id": "14025872",
+                "extension": "len",
+                "file_size": 331,
+                "name": "Convert FASTA to len file on data 1",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2570984,
+        "id": 11575610,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5841381.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/014/025/dataset_14025872.dat\"",
+            "dbkey": "\"macaque\"",
+            "input": "22982092",
+            "pop_input": "22998914"
+        },
+        "runner_name": null,
+        "session_id": 27553680,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/miller-lab/genome_diversity/gd_discover_familial_relationships/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2016-01-21 23:43:38.073891",
+        "user_id": 23751
+    },
+    {
+        "create_time": "2016-01-21 21:19:42.600378",
+        "datasets": [
+            {
+                "dataset_id": "14025947",
+                "extension": "gd_genotype",
+                "file_size": 18250083649,
+                "name": "all_gd_genotype",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "14040182",
+                "extension": "gd_indivs",
+                "file_size": 1937,
+                "name": "all_gd_indivs",
+                "param_name": "pop_input"
+            },
+            {
+                "dataset_id": "14025872",
+                "extension": "len",
+                "file_size": 331,
+                "name": "Convert FASTA to len file on data 1",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2570984,
+        "id": 11574988,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5840754.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/014/025/dataset_14025872.dat\"",
+            "dbkey": "\"macaque\"",
+            "input": "22982092",
+            "pop_input": "22997635"
+        },
+        "runner_name": null,
+        "session_id": 27553680,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/miller-lab/genome_diversity/gd_discover_familial_relationships/1.0.0",
+        "tool_version": "1.0.0",
+        "traceback": null,
+        "update_time": "2016-01-21 21:39:34.616368",
+        "user_id": 23751
+    }
+]

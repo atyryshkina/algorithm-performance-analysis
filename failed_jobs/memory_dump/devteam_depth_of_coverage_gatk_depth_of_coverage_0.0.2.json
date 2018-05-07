@@ -1,0 +1,188 @@
+[
+    {
+        "create_time": "2015-06-09 11:59:47.043281",
+        "datasets": [
+            {
+                "dataset_id": "11511260",
+                "extension": "bam",
+                "file_size": 8484410812,
+                "name": "IonXpress_034.R_2015_04_01_11_58_12_user_PRO-223-1503FNR-0010.14-00017.bam",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "11205447",
+                "extension": "fasta",
+                "file_size": 8492197072,
+                "name": "FASTQ to FASTA on data 10",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "11511058",
+                "extension": "txt",
+                "file_size": 6,
+                "name": "geneList.txt",
+                "param_name": "input_calculate_coverage_over_genes"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2161077,
+        "id": 9619199,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3930584.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"max_mapping_quality\": \"2147483647\", \"include_deletions\": \"False\", \"__current_case__\": 1, \"min_mapping_quality\": \"127\", \"start\": \"1\", \"n_bins\": \"499\", \"print_base_counts\": \"False\", \"stop\": \"500\", \"omit_per_sample_stats\": \"False\", \"omit_locus_table\": \"False\", \"analysis_param_type_selector\": \"advanced\", \"omit_interval_statistics\": \"False\", \"min_base_quality\": \"-1\", \"ignore_deletion_sites\": \"False\", \"max_base_quality\": \"127\", \"print_bin_endpoints_and_exit\": \"False\", \"omit_depth_output_at_each_base\": \"False\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_calculate_coverage_over_genes": "19951269",
+            "output_format": "\"rtable\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": 19544148, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 19951477}], \"__current_case__\": 1}",
+            "summary_coverage_threshold_group": "[{\"__index__\": 0, \"summary_coverage_threshold\": \"20\"}]"
+        },
+        "runner_name": null,
+        "session_id": 22527848,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2015-06-09 12:06:16.699244",
+        "user_id": 57795
+    },
+    {
+        "create_time": "2016-03-21 07:58:32.160099",
+        "datasets": [
+            {
+                "dataset_id": "14906041",
+                "extension": "bam",
+                "file_size": 9713587,
+                "name": "Slice on data 4 and data 42",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "14869288",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2625568,
+        "id": 12207904,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6422187.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 23904844, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "input_calculate_coverage_over_genes": "null",
+            "output_format": "\"rtable\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": 23737298, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 23945702}], \"__current_case__\": 1}",
+            "summary_coverage_threshold_group": "[{\"__index__\": 0, \"summary_coverage_threshold\": \"2\"}, {\"__index__\": 1, \"summary_coverage_threshold\": \"10\"}, {\"__index__\": 2, \"summary_coverage_threshold\": \"20\"}, {\"__index__\": 3, \"summary_coverage_threshold\": \"30\"}, {\"__index__\": 4, \"summary_coverage_threshold\": \"50\"}, {\"__index__\": 5, \"summary_coverage_threshold\": \"100\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29098783,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-03-21 12:13:12.805217",
+        "user_id": 65622
+    },
+    {
+        "create_time": "2016-03-21 08:10:46.555314",
+        "datasets": [
+            {
+                "dataset_id": "14906441",
+                "extension": "bam",
+                "file_size": 10622565,
+                "name": "Slice on data 6 and data 40",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "14869381",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632765,
+        "id": 12207944,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6422251.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 23904950, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "input_calculate_coverage_over_genes": "null",
+            "output_format": "\"rtable\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": 23826485, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 23946173}], \"__current_case__\": 1}",
+            "summary_coverage_threshold_group": "[{\"__index__\": 0, \"summary_coverage_threshold\": \"2\"}, {\"__index__\": 1, \"summary_coverage_threshold\": \"10\"}, {\"__index__\": 2, \"summary_coverage_threshold\": \"20\"}, {\"__index__\": 3, \"summary_coverage_threshold\": \"30\"}, {\"__index__\": 4, \"summary_coverage_threshold\": \"50\"}, {\"__index__\": 5, \"summary_coverage_threshold\": \"100\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29099059,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-03-21 12:16:19.383802",
+        "user_id": 73593
+    }
+]

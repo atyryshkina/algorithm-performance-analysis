@@ -1,0 +1,837 @@
+[
+    {
+        "create_time": "2016-06-29 10:59:00.096515",
+        "datasets": [
+            {
+                "dataset_id": "13858580",
+                "extension": "fastqsanger",
+                "file_size": 73009130734,
+                "name": "FASTQ Groomer on data 14",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "13858566",
+                "extension": "fastqsanger",
+                "file_size": 73009130734,
+                "name": "FASTQ Groomer on data 15",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2547741,
+        "id": 13286109,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7480225",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5715f045a36112f13\"}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d9fc8328e196f73d\"}]}}",
+            "reference_source": "{\"ref_file\": \"loxAfr3\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 30729326,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2016-06-30 23:01:05.957065",
+        "user_id": 51094
+    },
+    {
+        "create_time": "2017-01-20 09:26:39.507965",
+        "datasets": [
+            {
+                "dataset_id": "18521597",
+                "extension": "fasta",
+                "file_size": 1919181487,
+                "name": "abyss.trim-8.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18515551",
+                "extension": "fastqsanger",
+                "file_size": 930227181,
+                "name": "BR.tg.r1.fq",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "18515552",
+                "extension": "fastqsanger",
+                "file_size": 833773771,
+                "name": "BR.tg.r2.fq",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2726374,
+        "id": 14827574,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8988305",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"algorithmic_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"io_options\": {\"a\": \"true\", \"C\": \"false\", \"io_options_selector\": \"set\", \"h\": \"5\", \"M\": \"false\", \"T\": \"10\", \"__current_case__\": 0, \"V\": \"false\", \"Y\": \"false\"}, \"__current_case__\": 2, \"scoring_options\": {\"scoring_options_selector\": \"do_not_set\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"408\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 27989209}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 27989208}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27995527}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"BR\", \"__current_case__\": 1}, \"CN\": \"\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"library2\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"pop1\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"\", \"PI\": \"\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 33869962,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-01-21 21:30:53.227471",
+        "user_id": 85433
+    },
+    {
+        "create_time": "2017-01-23 07:48:57.014565",
+        "datasets": [
+            {
+                "dataset_id": "18521597",
+                "extension": "fasta",
+                "file_size": 1919181487,
+                "name": "abyss.trim-8.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18515548",
+                "extension": "fastqsanger",
+                "file_size": 1119482089,
+                "name": "B.tg.r1.fq",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "18515549",
+                "extension": "fastqsanger",
+                "file_size": 1055249917,
+                "name": "B.tg.r2.fq",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2726374,
+        "id": 14844096,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9004265",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"pulsar_stampede_normal\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"full\", \"algorithmic_options\": {\"algorithmic_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"io_options\": {\"a\": \"true\", \"C\": \"false\", \"io_options_selector\": \"set\", \"h\": \"5\", \"M\": \"false\", \"T\": \"10\", \"__current_case__\": 0, \"V\": \"false\", \"Y\": \"false\"}, \"__current_case__\": 2, \"scoring_options\": {\"scoring_options_selector\": \"do_not_set\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"489\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 27989206}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 27989205}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27995527}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"B\", \"__current_case__\": 1}, \"CN\": \"\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"library1\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"pop1\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"\", \"PI\": \"\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 35529756,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-01-24 19:53:46.878413",
+        "user_id": 85433
+    },
+    {
+        "create_time": "2017-03-02 09:25:36.374332",
+        "datasets": [
+            {
+                "dataset_id": "19044897",
+                "extension": "fasta",
+                "file_size": 1919181487,
+                "name": "abyss.trim-8.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "19033898",
+                "extension": "fastqsanger",
+                "file_size": 1143123126,
+                "name": "FASTQ Groomer on data 2",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19033897",
+                "extension": "fastqsanger",
+                "file_size": 1158781318,
+                "name": "FASTQ Groomer on data 1",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3014722,
+        "id": 15186333,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9337271",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"489\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 28569511}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 28569512}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28581573}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"B\", \"__current_case__\": 1}, \"CN\": \"\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"library1\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"pop1\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"\", \"PI\": \"\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 36382808,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-03-03 21:30:03.181878",
+        "user_id": 85433
+    },
+    {
+        "create_time": "2017-03-02 09:26:28.577406",
+        "datasets": [
+            {
+                "dataset_id": "19044897",
+                "extension": "fasta",
+                "file_size": 1919181487,
+                "name": "abyss.trim-8.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "19033899",
+                "extension": "fastqsanger",
+                "file_size": 952081515,
+                "name": "FASTQ Groomer on data 3",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19033900",
+                "extension": "fastqsanger",
+                "file_size": 961303247,
+                "name": "FASTQ Groomer on data 4",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3014722,
+        "id": 15186370,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9337288",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 28569514}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 28569513}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28581573}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"BR\", \"__current_case__\": 1}, \"CN\": \"\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"library2\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"pop2\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"\", \"PI\": \"\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 36382808,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-03-03 21:32:32.430273",
+        "user_id": 85433
+    },
+    {
+        "create_time": "2017-03-15 23:34:22.542915",
+        "datasets": [
+            {
+                "dataset_id": "19215028",
+                "extension": "fastqsanger",
+                "file_size": 5534252754,
+                "name": "DRR040626.sra.fastqsanger",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3032932,
+        "id": 15307945,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9450273.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"500\", \"__current_case__\": 3, \"fastq_input_selector\": \"paired_iv\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 28775361}]}}",
+            "reference_source": "{\"ref_file\": \"mm9\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 36649929,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-03-16 00:12:22.295950",
+        "user_id": 44428
+    },
+    {
+        "create_time": "2017-03-15 23:35:11.911082",
+        "datasets": [
+            {
+                "dataset_id": "19215029",
+                "extension": "fastqsanger",
+                "file_size": 5724813618,
+                "name": "DRR040627.sra.fastqsanger",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3032932,
+        "id": 15307949,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9450411.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"500\", \"__current_case__\": 3, \"fastq_input_selector\": \"paired_iv\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 28775362}]}}",
+            "reference_source": "{\"ref_file\": \"mm9\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 36649929,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-03-16 00:44:54.950974",
+        "user_id": 44428
+    },
+    {
+        "create_time": "2017-05-12 19:26:39.774996",
+        "datasets": [
+            {
+                "dataset_id": "19911762",
+                "extension": "fasta",
+                "file_size": 2060579432,
+                "name": "My ref P3 fasta cat ",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "19879467",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19879468",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "reserved_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=4 --partition=reserved --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3109187,
+        "id": 15826795,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9929097.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29583516}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29583515}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29583544}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37591862,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-05-17 13:27:48.289240",
+        "user_id": 5254
+    },
+    {
+        "create_time": "2017-05-12 19:28:23.167514",
+        "datasets": [
+            {
+                "dataset_id": "19919256",
+                "extension": "fasta",
+                "file_size": 2075975511,
+                "name": "NormalizeFasta on data 98: Normalized FASTA dataset",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "19879467",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19879468",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "reserved_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=4 --partition=reserved --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3109187,
+        "id": 15826802,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9929104.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29583516}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29583515}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29583674}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37591862,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-05-17 13:27:47.876882",
+        "user_id": 5254
+    },
+    {
+        "create_time": "2017-05-12 19:28:40.426392",
+        "datasets": [
+            {
+                "dataset_id": "19919260",
+                "extension": "fasta",
+                "file_size": 2075975511,
+                "name": "FASTA Width on data 98",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "19879467",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19879468",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "reserved_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=4 --partition=reserved --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3109187,
+        "id": 15826803,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9929105.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29583516}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29583515}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29583678}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37591862,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-05-17 13:27:47.369223",
+        "user_id": 5254
+    },
+    {
+        "create_time": "2017-05-12 19:24:04.340549",
+        "datasets": [
+            {
+                "dataset_id": "19911762",
+                "extension": "fasta",
+                "file_size": 2060579432,
+                "name": "My ref P3 fasta cat ",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "19879467",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "19879468",
+                "extension": "fastqsanger",
+                "file_size": 1922300642,
+                "name": "1b1-b3_L6-R2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/bwa/0.7.12/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "0.7.12"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/bwa/546ada4a9f43/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "reserved_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=4 --partition=reserved --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3109187,
+        "id": 15826755,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9929076.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input": "{\"iset_stats\": \"\", \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 29583516}]}, \"__current_case__\": 0, \"fastq_input_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 29583515}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29583544}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 37591862,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1",
+        "tool_version": "0.7.12.1",
+        "traceback": null,
+        "update_time": "2017-05-17 13:31:45.630671",
+        "user_id": 5254
+    }
+]

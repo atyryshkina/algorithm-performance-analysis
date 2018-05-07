@@ -1,0 +1,1213 @@
+[
+    {
+        "create_time": "2017-11-22 13:58:27.482315",
+        "datasets": [
+            {
+                "dataset_id": "22378975",
+                "extension": "fasta",
+                "file_size": 61711075,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22378974",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 12242221,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22378976",
+                "extension": "mothur.count_table",
+                "file_size": 4149536,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3323166,
+        "id": 17549751,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11609924",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32472275}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32472273}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32472274}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41960222,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-22 21:07:23.411208",
+        "user_id": 74066
+    },
+    {
+        "create_time": "2017-10-25 08:46:43.079390",
+        "datasets": [
+            {
+                "dataset_id": "21848120",
+                "extension": "fasta",
+                "file_size": 2502,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21848119",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 945,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21848121",
+                "extension": "mothur.count_table",
+                "file_size": 387,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3295959,
+        "id": 17208491,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11268609",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.05\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31869627}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31869625}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31869626}]}, \"taxlevel\": \"6\"}"
+        },
+        "runner_name": null,
+        "session_id": 41504249,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-25 08:47:41.697154",
+        "user_id": 72172
+    },
+    {
+        "create_time": "2017-10-21 11:40:43.223196",
+        "datasets": [
+            {
+                "dataset_id": "21771208",
+                "extension": "fasta",
+                "file_size": 132485026,
+                "name": "Remove.lineage on data 641, data 640, and data 643: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21771207",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 18928046,
+                "name": "Remove.lineage on data 641, data 640, and data 643: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21771209",
+                "extension": "mothur.count_table",
+                "file_size": 7975007,
+                "name": "Remove.lineage on data 641, data 640, and data 643: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3288291,
+        "id": 17162030,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11221137",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31786742}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31786740}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31786741}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41435436,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-21 19:14:18.262206",
+        "user_id": 113697
+    },
+    {
+        "create_time": "2017-11-23 00:14:09.198884",
+        "datasets": [
+            {
+                "dataset_id": "22378975",
+                "extension": "fasta",
+                "file_size": 61711075,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22378974",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 12242221,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22378976",
+                "extension": "mothur.count_table",
+                "file_size": 4149536,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3323166,
+        "id": 17554887,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11615211",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32472275}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32472273}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32472274}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41960222,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-23 07:11:45.854970",
+        "user_id": 74066
+    },
+    {
+        "create_time": "2017-10-26 09:17:41.956488",
+        "datasets": [
+            {
+                "dataset_id": "21848120",
+                "extension": "fasta",
+                "file_size": 2502,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21848119",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 945,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21848121",
+                "extension": "mothur.count_table",
+                "file_size": 387,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3295959,
+        "id": 17224683,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11285995",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.0\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31869627}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31869625}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31869626}]}, \"taxlevel\": \"6\"}"
+        },
+        "runner_name": null,
+        "session_id": 41536011,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-26 09:19:03.245768",
+        "user_id": 72172
+    },
+    {
+        "create_time": "2017-12-09 07:10:29.016104",
+        "datasets": [
+            {
+                "dataset_id": "22681611",
+                "extension": "fasta",
+                "file_size": 47,
+                "name": "Pre.cluster on data 35 and data 34: precluster.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22681645",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 118,
+                "name": "Classify.seqs on data 39, data 42, and others: taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22681612",
+                "extension": "mothur.count_table",
+                "file_size": 81,
+                "name": "Pre.cluster on data 35 and data 34: precluster.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3327618,
+        "id": 17754124,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11821607",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"true\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32829331}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32829364}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32829330}]}, \"taxlevel\": \"3\"}"
+        },
+        "runner_name": null,
+        "session_id": 42546022,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-12-09 07:11:36.043866",
+        "user_id": 114736
+    },
+    {
+        "create_time": "2017-11-24 00:46:19.611520",
+        "datasets": [
+            {
+                "dataset_id": "22378975",
+                "extension": "fasta",
+                "file_size": 61711075,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22378974",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 12242221,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22378976",
+                "extension": "mothur.count_table",
+                "file_size": 4149536,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3323166,
+        "id": 17567585,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11629556",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32472275}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32472273}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32472274}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41960222,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-24 07:39:11.525114",
+        "user_id": 74066
+    },
+    {
+        "create_time": "2017-11-23 07:34:43.049373",
+        "datasets": [
+            {
+                "dataset_id": "22378975",
+                "extension": "fasta",
+                "file_size": 61711075,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22378974",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 12242221,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22378976",
+                "extension": "mothur.count_table",
+                "file_size": 4149536,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3323166,
+        "id": 17558237,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11619113",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32472275}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32472273}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32472274}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41960222,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-23 14:44:51.983114",
+        "user_id": 74066
+    },
+    {
+        "create_time": "2017-10-25 07:52:22.533500",
+        "datasets": [
+            {
+                "dataset_id": "21848120",
+                "extension": "fasta",
+                "file_size": 2502,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21848119",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 945,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21848121",
+                "extension": "mothur.count_table",
+                "file_size": 387,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3295959,
+        "id": 17207332,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11267458",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"687a5634b95911e7b96f005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.05\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31869627}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31869625}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31869626}]}, \"taxlevel\": \"6\"}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-25 07:53:51.182292",
+        "user_id": 72172
+    },
+    {
+        "create_time": "2017-11-23 15:18:35.078513",
+        "datasets": [
+            {
+                "dataset_id": "22378975",
+                "extension": "fasta",
+                "file_size": 61711075,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22378974",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 12242221,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22378976",
+                "extension": "mothur.count_table",
+                "file_size": 4149536,
+                "name": "Remove.lineage on data 172, data 171, and data 176: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3323166,
+        "id": 17562524,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11623659",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32472275}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32472273}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32472274}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41960222,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-11-23 22:13:57.162160",
+        "user_id": 74066
+    },
+    {
+        "create_time": "2017-12-09 07:13:21.403602",
+        "datasets": [
+            {
+                "dataset_id": "22681611",
+                "extension": "fasta",
+                "file_size": 47,
+                "name": "Pre.cluster on data 35 and data 34: precluster.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22681645",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 118,
+                "name": "Classify.seqs on data 39, data 42, and others: taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22681612",
+                "extension": "mothur.count_table",
+                "file_size": 81,
+                "name": "Pre.cluster on data 35 and data 34: precluster.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3327618,
+        "id": 17754128,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11821612",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32829331}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32829364}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32829330}]}, \"taxlevel\": \"3\"}"
+        },
+        "runner_name": null,
+        "session_id": 42546022,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-12-09 07:14:13.190400",
+        "user_id": 114736
+    },
+    {
+        "create_time": "2017-10-26 11:20:01.002197",
+        "datasets": [
+            {
+                "dataset_id": "21848120",
+                "extension": "fasta",
+                "file_size": 2502,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21848119",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 945,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21848121",
+                "extension": "mothur.count_table",
+                "file_size": 387,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3295959,
+        "id": 17225527,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11286940",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.0\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31869627}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31869625}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31869626}]}, \"taxlevel\": \"6\"}"
+        },
+        "runner_name": null,
+        "session_id": 41536011,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-26 11:21:56.003916",
+        "user_id": 72172
+    },
+    {
+        "create_time": "2017-12-09 20:37:31.771288",
+        "datasets": [
+            {
+                "dataset_id": "22689186",
+                "extension": "fasta",
+                "file_size": 29472,
+                "name": "Pre.cluster on data 108 and data 111: precluster.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22689242",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 58736,
+                "name": "Classify.seqs on data 115, data 42, and others: taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22689187",
+                "extension": "mothur.count_table",
+                "file_size": 23359,
+                "name": "Pre.cluster on data 108 and data 111: precluster.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3327618,
+        "id": 17758103,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11826632",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32837037}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32837092}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32837036}]}, \"taxlevel\": \"3\"}"
+        },
+        "runner_name": null,
+        "session_id": 42546022,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-12-09 20:38:05.703353",
+        "user_id": 114736
+    },
+    {
+        "create_time": "2017-10-27 07:45:40.397308",
+        "datasets": [
+            {
+                "dataset_id": "21848120",
+                "extension": "fasta",
+                "file_size": 2502,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21848119",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 945,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21848121",
+                "extension": "mothur.count_table",
+                "file_size": 387,
+                "name": "Remove.lineage on data 32, data 38, and data 40: pick.count_table",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3295959,
+        "id": 17237271,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11297945",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.0\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31869627}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31869625}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31869626}]}, \"taxlevel\": \"6\"}"
+        },
+        "runner_name": null,
+        "session_id": 41558442,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-27 07:46:28.974340",
+        "user_id": 72172
+    },
+    {
+        "create_time": "2017-10-09 23:07:50.159681",
+        "datasets": [
+            {
+                "dataset_id": "21612302",
+                "extension": "mothur.pair.dist",
+                "file_size": 38493020556,
+                "name": "Dist.seqs on data 1: dist",
+                "param_name": "splitby|dist"
+            },
+            {
+                "dataset_id": "21612289",
+                "extension": "mothur.count_table",
+                "file_size": 22888670,
+                "name": "stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table",
+                "param_name": "splitby|nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3279755,
+        "id": 17059447,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11116969.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.03\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"true\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"distance\", \"matrix\": {\"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31606057}]}, \"dist\": {\"values\": [{\"src\": \"hda\", \"id\": 31606070}]}, \"__current_case__\": 0, \"format\": \"column\"}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 41148772,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-10 16:00:21.966984",
+        "user_id": 51516
+    },
+    {
+        "create_time": "2017-12-08 18:28:35.307240",
+        "datasets": [
+            {
+                "dataset_id": "22567360",
+                "extension": "fasta",
+                "file_size": 3208847,
+                "name": "Pre.cluster on data 85 and data 84: precluster.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "22600183",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 1186197,
+                "name": "Classify.seqs on data 143, data 144, and data 142: taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "22603401",
+                "extension": "mothur.count_table",
+                "file_size": 78,
+                "name": "Screen.seqs on data 87 and data 90: count",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3284661,
+        "id": 17749512,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11816410",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.15\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 32735744}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 32730599}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 32691686}]}, \"taxlevel\": \"4\"}"
+        },
+        "runner_name": null,
+        "session_id": 41883501,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-12-08 18:29:12.691426",
+        "user_id": 113495
+    },
+    {
+        "create_time": "2017-10-09 21:24:56.005458",
+        "datasets": [
+            {
+                "dataset_id": "21612302",
+                "extension": "mothur.pair.dist",
+                "file_size": 38493020556,
+                "name": "Dist.seqs on data 1: dist",
+                "param_name": "splitby|dist"
+            },
+            {
+                "dataset_id": "21612289",
+                "extension": "mothur.count_table",
+                "file_size": 22888670,
+                "name": "stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.vsearch.pick.pick.count_table",
+                "param_name": "splitby|nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3279755,
+        "id": 17058694,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11116168.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.03\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"distance\", \"matrix\": {\"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31606057}]}, \"dist\": {\"values\": [{\"src\": \"hda\", \"id\": 31606070}]}, \"__current_case__\": 0, \"format\": \"column\"}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 41148772,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-09 23:02:51.286423",
+        "user_id": 51516
+    }
+]

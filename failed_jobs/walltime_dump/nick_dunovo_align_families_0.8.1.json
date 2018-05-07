@@ -1,0 +1,317 @@
+[
+    {
+        "create_time": "2017-10-03 11:55:22.972178",
+        "datasets": [
+            {
+                "dataset_id": "21547638",
+                "extension": "tabular",
+                "file_size": 5069345,
+                "name": "Concatenate datasets on data 81, data 82, and others",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.8.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=96:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3226131,
+        "id": 17007594,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11063890.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31533712}]}",
+            "phone": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 39951261,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.8.1",
+        "tool_version": "0.8.1",
+        "traceback": null,
+        "update_time": "2017-10-07 11:55:55.586182",
+        "user_id": 110306
+    },
+    {
+        "create_time": "2017-10-19 08:12:36.792391",
+        "datasets": [
+            {
+                "dataset_id": "21741245",
+                "extension": "tabular",
+                "file_size": 22319463,
+                "name": "Trinity on data 36: Assembled Transcripts",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.8.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=96:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3259374,
+        "id": 17142431,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11199998",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31753815}]}",
+            "phone": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41352783,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.8.1",
+        "tool_version": "0.8.1",
+        "traceback": null,
+        "update_time": "2017-10-23 08:13:31.933420",
+        "user_id": 111935
+    },
+    {
+        "create_time": "2017-10-19 08:12:38.517375",
+        "datasets": [
+            {
+                "dataset_id": "21741251",
+                "extension": "tabular",
+                "file_size": 18241664,
+                "name": "Trinity on data 39: Assembled Transcripts",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.8.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=96:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3259374,
+        "id": 17142437,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11200000",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31753821}]}",
+            "phone": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41352783,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.8.1",
+        "tool_version": "0.8.1",
+        "traceback": null,
+        "update_time": "2017-10-23 08:13:59.507402",
+        "user_id": 111935
+    },
+    {
+        "create_time": "2017-10-19 08:12:37.938169",
+        "datasets": [
+            {
+                "dataset_id": "21741249",
+                "extension": "tabular",
+                "file_size": 17099684,
+                "name": "Trinity on data 38: Assembled Transcripts",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.8.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=96:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3259374,
+        "id": 17142435,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11251398",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31753819}]}",
+            "phone": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41352783,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.8.1",
+        "tool_version": "0.8.1",
+        "traceback": null,
+        "update_time": "2017-10-28 10:57:56.459456",
+        "user_id": 111935
+    },
+    {
+        "create_time": "2017-10-25 04:08:09.894711",
+        "datasets": [
+            {
+                "dataset_id": "21845651",
+                "extension": "tabular",
+                "file_size": 1387130,
+                "name": "Megablast on data 2",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mafft",
+                "version": "7.221"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0353b9854731ff3065503b435bdf01c35f6bc85fc90c9e4a09f229fba1b89630",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "dunovo",
+                "version": "0.8.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=96:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3287353,
+        "id": 17205701,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11265664",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31867070}]}",
+            "phone": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 41284750,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/nick/dunovo/align_families/0.8.1",
+        "tool_version": "0.8.1",
+        "traceback": null,
+        "update_time": "2017-10-29 04:08:32.574856",
+        "user_id": 113659
+    }
+]

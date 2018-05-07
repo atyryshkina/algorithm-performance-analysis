@@ -1,0 +1,809 @@
+[
+    {
+        "create_time": "2017-03-17 09:22:22.584756",
+        "datasets": [
+            {
+                "dataset_id": "19235087",
+                "extension": "csv",
+                "file_size": 120175361,
+                "name": "Count Covariates on data 23 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221078",
+                "extension": "bam",
+                "file_size": 401724669,
+                "name": "Indel Realigner on data 19 and data 17 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3034079,
+        "id": 15322451,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9463385.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28802228}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784422}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-17 09:37:44.914370",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2017-03-16 15:31:48.171786",
+        "datasets": [
+            {
+                "dataset_id": "19221117",
+                "extension": "csv",
+                "file_size": 120175361,
+                "name": "Count Covariates on data 23 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221078",
+                "extension": "bam",
+                "file_size": 401724669,
+                "name": "Indel Realigner on data 19 and data 17 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3034079,
+        "id": 15314778,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9456405.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28784464}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784422}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-16 16:44:00.086937",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2014-11-15 20:38:11.242775",
+        "datasets": [
+            {
+                "dataset_id": "9681041",
+                "extension": "csv",
+                "file_size": 609272,
+                "name": "Count Covariates on data 9 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "9680594",
+                "extension": "bam",
+                "file_size": 5744213943,
+                "name": "Indel Realigner on data 7 and data 5 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2119479,
+        "id": 8175807,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2023461.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "17555999",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": 17555510, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 18568067,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2014-11-15 20:40:48.550628",
+        "user_id": 50404
+    },
+    {
+        "create_time": "2017-03-17 08:56:39.613233",
+        "datasets": [
+            {
+                "dataset_id": "19221117",
+                "extension": "csv",
+                "file_size": 120175361,
+                "name": "Count Covariates on data 23 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221078",
+                "extension": "bam",
+                "file_size": 401724669,
+                "name": "Indel Realigner on data 19 and data 17 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3034079,
+        "id": 15322188,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9463045.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28784464}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784422}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-17 09:10:45.666920",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2017-03-16 12:56:12.889675",
+        "datasets": [
+            {
+                "dataset_id": "19221117",
+                "extension": "csv",
+                "file_size": 120175361,
+                "name": "Count Covariates on data 23 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221078",
+                "extension": "bam",
+                "file_size": 401724669,
+                "name": "Indel Realigner on data 19 and data 17 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3034079,
+        "id": 15312489,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9455177.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28784464}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784422}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-16 14:32:43.414711",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2017-03-16 14:42:53.269469",
+        "datasets": [
+            {
+                "dataset_id": "19221117",
+                "extension": "csv",
+                "file_size": 120175361,
+                "name": "Count Covariates on data 23 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221078",
+                "extension": "bam",
+                "file_size": 401724669,
+                "name": "Indel Realigner on data 19 and data 17 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3034079,
+        "id": 15314107,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9455757.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28784464}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784422}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-16 15:07:51.415091",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2014-11-14 06:44:26.176024",
+        "datasets": [
+            {
+                "dataset_id": "8930937",
+                "extension": "fasta",
+                "file_size": 379466370,
+                "name": "http://rapdb.dna.affrc.go.jp/download/archive/irgsp1/IRGSP-1.0_genome.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9669977",
+                "extension": "csv",
+                "file_size": 3445009,
+                "name": "Count Covariates on data 1 and data 75 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "9669377",
+                "extension": "bam",
+                "file_size": 6253809440,
+                "name": "Indel Realigner on data 1, data 73, and data 72 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2082755,
+        "id": 8165964,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2011040.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"ab3d69b06bc911e4ad3e005056a52a46\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/009/304/dataset_9304384.dat\"",
+            "dbkey": "\"IRGSP-1.0\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "17540124",
+            "reference_source": "{\"ref_file\": 17202389, \"reference_source_selector\": \"history\", \"input_bam\": 17539503, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 18124944,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2014-11-14 09:02:39.491387",
+        "user_id": 49852
+    },
+    {
+        "create_time": "2014-11-14 14:22:14.219889",
+        "datasets": [
+            {
+                "dataset_id": "7733824",
+                "extension": "fasta",
+                "file_size": 2459258986,
+                "name": "canFam3.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9632058",
+                "extension": "csv",
+                "file_size": 1854232,
+                "name": "Count Covariates on data 23 and data 155 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "9571216",
+                "extension": "bam",
+                "file_size": 5916773051,
+                "name": "MarkDups_Dupes Marked.bam",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2066037,
+        "id": 8167389,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2013153.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/007/434/dataset_7434654.dat\"",
+            "dbkey": "\"canfam3\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "17487591",
+            "reference_source": "{\"ref_file\": 17040164, \"reference_source_selector\": \"history\", \"input_bam\": 17412197, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 17194710,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2014-11-14 15:27:05.291124",
+        "user_id": 25939
+    },
+    {
+        "create_time": "2017-03-17 08:23:13.756904",
+        "datasets": [
+            {
+                "dataset_id": "19221134",
+                "extension": "csv",
+                "file_size": 124498090,
+                "name": "Count Covariates on data 25 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221105",
+                "extension": "bam",
+                "file_size": 373229197,
+                "name": "Indel Realigner on data 21 and data 18 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3034079,
+        "id": 15321848,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9462808.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28784483}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784449}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-17 08:36:21.138301",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2017-03-17 14:06:08.117474",
+        "datasets": [
+            {
+                "dataset_id": "19235087",
+                "extension": "csv",
+                "file_size": 120175361,
+                "name": "Count Covariates on data 23 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221078",
+                "extension": "bam",
+                "file_size": 401724669,
+                "name": "Indel Realigner on data 19 and data 17 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3034079,
+        "id": 15324642,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9465490.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28802228}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784422}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-17 14:20:50.225943",
+        "user_id": 102195
+    },
+    {
+        "create_time": "2014-11-14 15:59:37.592606",
+        "datasets": [
+            {
+                "dataset_id": "9672391",
+                "extension": "csv",
+                "file_size": 585474,
+                "name": "Count Covariates on data 49 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "9672377",
+                "extension": "bam",
+                "file_size": 6292970031,
+                "name": "Indel Realigner on data 47 and data 44 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2116147,
+        "id": 8167806,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2019104.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "17543324",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": 17543310, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 18548855,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2014-11-15 02:49:44.121518",
+        "user_id": 43940
+    },
+    {
+        "create_time": "2017-03-16 12:57:19.045085",
+        "datasets": [
+            {
+                "dataset_id": "19221134",
+                "extension": "csv",
+                "file_size": 124498090,
+                "name": "Count Covariates on data 25 (Covariate File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "19221105",
+                "extension": "bam",
+                "file_size": 373229197,
+                "name": "Indel Realigner on data 21 and data 18 (BAM)",
+                "param_name": "input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/table_recalibration/30e1dd77e99c/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3034079,
+        "id": 15312499,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9456216.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_recal": "{\"values\": [{\"src\": \"hda\", \"id\": 28784483}]}",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28784449}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 36659124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/table_recalibration/gatk_table_recalibration/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2017-03-16 16:08:46.464871",
+        "user_id": 102195
+    }
+]

@@ -1,0 +1,2963 @@
+[
+    {
+        "create_time": "2017-09-13 15:39:11.844931",
+        "datasets": [
+            {
+                "dataset_id": "7564267",
+                "extension": "vcf",
+                "file_size": 4483444,
+                "name": "HA_SNPs_Filtered_103346Variants_WS220.vcf",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "21259493",
+                "extension": "vcf",
+                "file_size": 471895,
+                "name": "Homozygous variants VCF (mutant under consideration, lower quality variants for cloning, Hawaiian unfiltered SNPs subtracted)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "21254148",
+                "extension": "fasta",
+                "file_size": 3784139575,
+                "name": "(iq1002)FASTQ to FASTA on data 7",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/variant_combine/1a6e16391727",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/variant_combine/1a6e16391727/env.sh",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3251072,
+        "id": 16807273,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10876287.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"af56a052989911e7a90f005056ba55fb\"",
+            "analysis_param_type": "{\"set_key\": \"\", \"minimum_n\": \"1\", \"filtered_records_merge_type\": \"KEEP_IF_ANY_UNFILTERED\", \"analysis_param_type_selector\": \"advanced\", \"assume_identical_samples\": \"false\", \"__current_case__\": 1, \"filtered_are_uncalled\": \"false\", \"print_complex_merges\": \"false\", \"minimal_vcf\": \"false\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 31216145}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": 31211022}]}, \"input_variant_name\": \"A\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": 31208529}]}, \"input_variant_name\": \"B\"}]}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2017-09-13 15:49:20.452231",
+        "user_id": 55366
+    },
+    {
+        "create_time": "2016-06-06 10:51:48.635203",
+        "datasets": [
+            {
+                "dataset_id": "15427499",
+                "extension": "vcf",
+                "file_size": 112691244,
+                "name": "rd7af04_anu3api3.vcf",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "15427541",
+                "extension": "vcf",
+                "file_size": 123836744,
+                "name": "rd7af04_den1.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "15427564",
+                "extension": "vcf",
+                "file_size": 120988810,
+                "name": "rd7af04_den2.vcf",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "15429835",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2631931,
+        "id": 13082106,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7266781.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573051810e56f391d\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5546a5ff0206addd8\"}]}, \"input_variant_name\": \"anu3\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb2ab5ee78bc95d7\"}]}, \"input_variant_name\": \"den1\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56269b3db95f57fc4\"}]}, \"input_variant_name\": \"den2\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29101110,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 10:55:02.517785",
+        "user_id": 66258
+    },
+    {
+        "create_time": "2016-08-28 19:23:18.046973",
+        "datasets": [
+            {
+                "dataset_id": "17018159",
+                "extension": "vcf",
+                "file_size": 894037885,
+                "name": "Combine Variants on data 105, data 103, and data 117 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "17003821",
+                "extension": "vcf",
+                "file_size": 362645238,
+                "name": "Chr17 (no genotypes)",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2798687,
+        "id": 13736407,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7955540.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590463a6415ebca8f\"}]}, \"input_variant_name\": \"19202122\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56ee962f8625f2bd3\"}]}, \"input_variant_name\": \"17\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32431803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 19:26:33.298741",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2015-09-11 09:19:25.141914",
+        "datasets": [
+            {
+                "dataset_id": "12401059",
+                "extension": "vcf",
+                "file_size": 22892499,
+                "name": "Unified Genotyper on data 196 and data 182 (VCF)",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "12412673",
+                "extension": "vcf",
+                "file_size": 23869277,
+                "name": "Unified Genotyper on data 196 and data 184 (VCF)",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "12412678",
+                "extension": "vcf",
+                "file_size": 20410669,
+                "name": "Unified Genotyper on data 196 and data 194 (VCF)",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "12412688",
+                "extension": "vcf",
+                "file_size": 20947941,
+                "name": "Unified Genotyper on data 196 and data 188 (VCF)",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "12412692",
+                "extension": "vcf",
+                "file_size": 22755510,
+                "name": "Unified Genotyper on data 196 and data 190 (VCF)",
+                "param_name": "input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "12412695",
+                "extension": "vcf",
+                "file_size": 21650879,
+                "name": "Unified Genotyper on data 196 and data 192 (VCF)",
+                "param_name": "input_variants_5|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2418437,
+        "id": 10300609,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4585617.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 21056184, \"input_variant_name\": \"hspd3002\"}, {\"__index__\": 1, \"input_variant\": 21069400, \"input_variant_name\": \"hspd3010\"}, {\"__index__\": 2, \"input_variant\": 21069405, \"input_variant_name\": \"hspd3020\"}, {\"__index__\": 3, \"input_variant\": 21069415, \"input_variant_name\": \"hspd3021\"}, {\"__index__\": 4, \"input_variant\": 21069419, \"input_variant_name\": \"hspd3022\"}, {\"__index__\": 5, \"input_variant\": 21069422, \"input_variant_name\": \"hspd3040\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 25017390,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-09-11 09:21:22.699287",
+        "user_id": 67855
+    },
+    {
+        "create_time": "2016-08-28 19:18:42.029052",
+        "datasets": [
+            {
+                "dataset_id": "17018159",
+                "extension": "vcf",
+                "file_size": 894037885,
+                "name": "Combine Variants on data 105, data 103, and data 117 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "17003821",
+                "extension": "vcf",
+                "file_size": 362645238,
+                "name": "Chr17 (no genotypes)",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "17003628",
+                "extension": "vcf",
+                "file_size": 419415671,
+                "name": "Chr16 (no genotypes)",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2798687,
+        "id": 13736385,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7955515.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590463a6415ebca8f\"}]}, \"input_variant_name\": \"19202122\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56ee962f8625f2bd3\"}]}, \"input_variant_name\": \"17\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ecb09701be73ac0d\"}]}, \"input_variant_name\": \"16\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32431803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 19:22:15.161781",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2015-03-10 20:16:16.017407",
+        "datasets": [
+            {
+                "dataset_id": "10635512",
+                "extension": "vcf",
+                "file_size": 2911128,
+                "name": "NA18507-300ng.base_recalibrated_ABU1U.vcf",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "10635513",
+                "extension": "vcf",
+                "file_size": 2963946,
+                "name": "NA18507-300ng.base_recalibrated_ABU75.vcf",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "10635510",
+                "extension": "vcf",
+                "file_size": 1261758,
+                "name": "NA18507-08-2.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "10635527",
+                "extension": "vcf",
+                "file_size": 476934,
+                "name": "NA18507.base_recalibrated_ABURB.vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10635507",
+                "extension": "vcf",
+                "file_size": 2583039,
+                "name": "NA18507-2.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "10635511",
+                "extension": "vcf",
+                "file_size": 991252,
+                "name": "NA18507-100ng.merged.sorted_ADY79.vcf",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "10635523",
+                "extension": "vcf",
+                "file_size": 2500533,
+                "name": "NA18507-300ng.base_recalibrated_ACL1V.vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "10635506",
+                "extension": "vcf",
+                "file_size": 2797912,
+                "name": "NA18507-1.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "10635525",
+                "extension": "vcf",
+                "file_size": 1734152,
+                "name": "NA18507-300ng.base_recalibrated_ACRLN.vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "10635526",
+                "extension": "vcf",
+                "file_size": 1637393,
+                "name": "NA18507-300ng.merged.sorted_ACK62.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "10635514",
+                "extension": "vcf",
+                "file_size": 2383788,
+                "name": "NA18507-300ng.base_recalibrated_ABV0D.vcf",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "10635518",
+                "extension": "vcf",
+                "file_size": 1996967,
+                "name": "NA18507-300ng.base_recalibrated_ABVDB.vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "10635508",
+                "extension": "vcf",
+                "file_size": 1348732,
+                "name": "NA18507-08-1.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "10635522",
+                "extension": "vcf",
+                "file_size": 978209,
+                "name": "NA18507-300ng.base_recalibrated_ABW56.vcf",
+                "param_name": "input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2233236,
+        "id": 8911633,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3097888.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18808800, \"input_variant_name\": \"1\"}, {\"__index__\": 1, \"input_variant\": 18808799, \"input_variant_name\": \"2\"}, {\"__index__\": 2, \"input_variant\": 18808798, \"input_variant_name\": \"3\"}, {\"__index__\": 3, \"input_variant\": 18808796, \"input_variant_name\": \"4\"}, {\"__index__\": 4, \"input_variant\": 18808795, \"input_variant_name\": \"5\"}, {\"__index__\": 5, \"input_variant\": 18808791, \"input_variant_name\": \"6\"}, {\"__index__\": 6, \"input_variant\": 18808787, \"input_variant_name\": \"7\"}, {\"__index__\": 7, \"input_variant\": 18808786, \"input_variant_name\": \"8\"}, {\"__index__\": 8, \"input_variant\": 18808785, \"input_variant_name\": \"9\"}, {\"__index__\": 9, \"input_variant\": 18808784, \"input_variant_name\": \"10\"}, {\"__index__\": 10, \"input_variant\": 18808783, \"input_variant_name\": \"11\"}, {\"__index__\": 11, \"input_variant\": 18808781, \"input_variant_name\": \"12\"}, {\"__index__\": 12, \"input_variant\": 18808780, \"input_variant_name\": \"13\"}, {\"__index__\": 13, \"input_variant\": 18808779, \"input_variant_name\": \"14\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21700235,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-10 20:18:20.016851",
+        "user_id": 5835
+    },
+    {
+        "create_time": "2015-03-10 20:01:31.439762",
+        "datasets": [
+            {
+                "dataset_id": "10635512",
+                "extension": "vcf",
+                "file_size": 2911128,
+                "name": "NA18507-300ng.base_recalibrated_ABU1U.vcf",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "10635513",
+                "extension": "vcf",
+                "file_size": 2963946,
+                "name": "NA18507-300ng.base_recalibrated_ABU75.vcf",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "10635510",
+                "extension": "vcf",
+                "file_size": 1261758,
+                "name": "NA18507-08-2.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "10635527",
+                "extension": "vcf",
+                "file_size": 476934,
+                "name": "NA18507.base_recalibrated_ABURB.vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10635507",
+                "extension": "vcf",
+                "file_size": 2583039,
+                "name": "NA18507-2.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "10635511",
+                "extension": "vcf",
+                "file_size": 991252,
+                "name": "NA18507-100ng.merged.sorted_ADY79.vcf",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "10635523",
+                "extension": "vcf",
+                "file_size": 2500533,
+                "name": "NA18507-300ng.base_recalibrated_ACL1V.vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "10635506",
+                "extension": "vcf",
+                "file_size": 2797912,
+                "name": "NA18507-1.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "10635525",
+                "extension": "vcf",
+                "file_size": 1734152,
+                "name": "NA18507-300ng.base_recalibrated_ACRLN.vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "10635526",
+                "extension": "vcf",
+                "file_size": 1637393,
+                "name": "NA18507-300ng.merged.sorted_ACK62.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "10635514",
+                "extension": "vcf",
+                "file_size": 2383788,
+                "name": "NA18507-300ng.base_recalibrated_ABV0D.vcf",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "10635518",
+                "extension": "vcf",
+                "file_size": 1996967,
+                "name": "NA18507-300ng.base_recalibrated_ABVDB.vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "10635508",
+                "extension": "vcf",
+                "file_size": 1348732,
+                "name": "NA18507-08-1.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "10635522",
+                "extension": "vcf",
+                "file_size": 978209,
+                "name": "NA18507-300ng.base_recalibrated_ABW56.vcf",
+                "param_name": "input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2233236,
+        "id": 8911523,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3097720.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18808800, \"input_variant_name\": \"1\"}, {\"__index__\": 1, \"input_variant\": 18808799, \"input_variant_name\": \"2\"}, {\"__index__\": 2, \"input_variant\": 18808798, \"input_variant_name\": \"3\"}, {\"__index__\": 3, \"input_variant\": 18808796, \"input_variant_name\": \"4\"}, {\"__index__\": 4, \"input_variant\": 18808795, \"input_variant_name\": \"5\"}, {\"__index__\": 5, \"input_variant\": 18808791, \"input_variant_name\": \"6\"}, {\"__index__\": 6, \"input_variant\": 18808787, \"input_variant_name\": \"7\"}, {\"__index__\": 7, \"input_variant\": 18808786, \"input_variant_name\": \"8\"}, {\"__index__\": 8, \"input_variant\": 18808785, \"input_variant_name\": \"9\"}, {\"__index__\": 9, \"input_variant\": 18808784, \"input_variant_name\": \"10\"}, {\"__index__\": 10, \"input_variant\": 18808783, \"input_variant_name\": \"11\"}, {\"__index__\": 11, \"input_variant\": 18808781, \"input_variant_name\": \"12\"}, {\"__index__\": 12, \"input_variant\": 18808780, \"input_variant_name\": \"13\"}, {\"__index__\": 13, \"input_variant\": 18808779, \"input_variant_name\": \"14\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21309773,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-10 20:03:20.634093",
+        "user_id": 5835
+    },
+    {
+        "create_time": "2016-08-28 19:08:29.066998",
+        "datasets": [
+            {
+                "dataset_id": "17016678",
+                "extension": "vcf",
+                "file_size": 335932262,
+                "name": "Combine Variants on data 45 and data 107 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "17009429",
+                "extension": "vcf",
+                "file_size": 286176807,
+                "name": "Chr19 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "17003821",
+                "extension": "vcf",
+                "file_size": 362645238,
+                "name": "Chr17 (no genotypes)",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "17003628",
+                "extension": "vcf",
+                "file_size": 419415671,
+                "name": "Chr16 (no genotypes)",
+                "param_name": "reference_source|input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2798687,
+        "id": 13736356,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7955486.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5edeaf43c35536a87\"}]}, \"input_variant_name\": \"2122\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50c50e995b730c57c\"}]}, \"input_variant_name\": \"19\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56ee962f8625f2bd3\"}]}, \"input_variant_name\": \"17\"}, {\"__index__\": 4, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ecb09701be73ac0d\"}]}, \"input_variant_name\": \"16\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32431803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 19:12:11.407557",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2015-10-19 16:15:07.751570",
+        "datasets": [
+            {
+                "dataset_id": "12858389",
+                "extension": "vcf",
+                "file_size": 127171537,
+                "name": "anu4api5_vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "12858394",
+                "extension": "vcf",
+                "file_size": 130070171,
+                "name": "anu1api1_vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "12858399",
+                "extension": "vcf",
+                "file_size": 127212791,
+                "name": "anu9sca1_vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "12844546",
+                "extension": "fasta",
+                "file_size": 121183082,
+                "name": "at_nuclear+C+M.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2470745,
+        "id": 10641524,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4906052.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": 21591898, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 21606078, \"input_variant_name\": \"1_anu4api5\"}, {\"__index__\": 1, \"input_variant\": 21606083, \"input_variant_name\": \"2_anu1api1\"}, {\"__index__\": 2, \"input_variant\": 21606088, \"input_variant_name\": \"3_anu9sca1\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 25209174,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-19 16:17:47.899855",
+        "user_id": 37688
+    },
+    {
+        "create_time": "2016-06-06 11:18:41.065682",
+        "datasets": [
+            {
+                "dataset_id": "16112553",
+                "extension": "vcf",
+                "file_size": 142715369,
+                "name": "Combine Variants on data 452, data 433, and data 446 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "15427541",
+                "extension": "vcf",
+                "file_size": 123836744,
+                "name": "rd7af04_den1.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "15429835",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2631931,
+        "id": 13083107,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7267337.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573051810e56f391d\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b504d650daa0740af1\"}]}, \"input_variant_name\": \"c1\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb2ab5ee78bc95d7\"}]}, \"input_variant_name\": \"den1\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29101110,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 11:23:40.177353",
+        "user_id": 66258
+    },
+    {
+        "create_time": "2016-08-28 19:00:39.200559",
+        "datasets": [
+            {
+                "dataset_id": "16996759",
+                "extension": "vcf",
+                "file_size": 1004003098,
+                "name": "Chr1 (no genotypes)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "16991838",
+                "extension": "vcf",
+                "file_size": 1098303722,
+                "name": "Chr2 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "16991704",
+                "extension": "vcf",
+                "file_size": 904420825,
+                "name": "Chr3 (no genotypes)",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "16991816",
+                "extension": "vcf",
+                "file_size": 889502803,
+                "name": "Chr4 (no genotypes)",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "16991602",
+                "extension": "vcf",
+                "file_size": 816129904,
+                "name": "Chr5 (no genotypes)",
+                "param_name": "reference_source|input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "16996756",
+                "extension": "vcf",
+                "file_size": 780206304,
+                "name": "Chr6 (no genotypes)",
+                "param_name": "reference_source|input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "16999888",
+                "extension": "vcf",
+                "file_size": 731231991,
+                "name": "Chr7 (no genotypes)",
+                "param_name": "reference_source|input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "16999886",
+                "extension": "vcf",
+                "file_size": 711343185,
+                "name": "Chr8 (no genotypes)",
+                "param_name": "reference_source|input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "17000769",
+                "extension": "vcf",
+                "file_size": 551673939,
+                "name": "Chr9 (no genotypes)",
+                "param_name": "reference_source|input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "17000676",
+                "extension": "vcf",
+                "file_size": 622838612,
+                "name": "Chr10 (no genotypes)",
+                "param_name": "reference_source|input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "17000731",
+                "extension": "vcf",
+                "file_size": 630683252,
+                "name": "Chr11 (no genotypes)",
+                "param_name": "reference_source|input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "17001636",
+                "extension": "vcf",
+                "file_size": 603429081,
+                "name": "Chr12 (no genotypes)",
+                "param_name": "reference_source|input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "17002970",
+                "extension": "vcf",
+                "file_size": 445588504,
+                "name": "Chr13 (no genotypes)",
+                "param_name": "reference_source|input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "17002749",
+                "extension": "vcf",
+                "file_size": 413859472,
+                "name": "Chr14 (no genotypes)",
+                "param_name": "reference_source|input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "17003520",
+                "extension": "vcf",
+                "file_size": 377589230,
+                "name": "Chr15 (no genotypes)",
+                "param_name": "reference_source|input_variants_14|input_variant"
+            },
+            {
+                "dataset_id": "17003628",
+                "extension": "vcf",
+                "file_size": 419415671,
+                "name": "Chr16 (no genotypes)",
+                "param_name": "reference_source|input_variants_15|input_variant"
+            },
+            {
+                "dataset_id": "17003821",
+                "extension": "vcf",
+                "file_size": 362645238,
+                "name": "Chr17 (no genotypes)",
+                "param_name": "reference_source|input_variants_16|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_17|input_variant"
+            },
+            {
+                "dataset_id": "17009429",
+                "extension": "vcf",
+                "file_size": 286176807,
+                "name": "Chr19 (no genotypes)",
+                "param_name": "reference_source|input_variants_18|input_variant"
+            },
+            {
+                "dataset_id": "17009422",
+                "extension": "vcf",
+                "file_size": 281811509,
+                "name": "Chr20 (no genotypes)",
+                "param_name": "reference_source|input_variants_19|input_variant"
+            },
+            {
+                "dataset_id": "17010963",
+                "extension": "vcf",
+                "file_size": 172361888,
+                "name": "Chr 21 (no genotypes)",
+                "param_name": "reference_source|input_variants_20|input_variant"
+            },
+            {
+                "dataset_id": "16990671",
+                "extension": "vcf",
+                "file_size": 172207431,
+                "name": "Chr22 (no genotypes)",
+                "param_name": "reference_source|input_variants_21|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2798687,
+        "id": 13736315,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7955414.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f7c387c794cd300a\"}]}, \"input_variant_name\": \"1\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56ca6c8ed64af57a6\"}]}, \"input_variant_name\": \"2\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b513fd10d7e0f7ad9c\"}]}, \"input_variant_name\": \"3\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5052db21780a4f271\"}]}, \"input_variant_name\": \"4\"}, {\"__index__\": 4, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c4932ad604df4906\"}]}, \"input_variant_name\": \"5\"}, {\"__index__\": 5, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b592a3678aa44db21a\"}]}, \"input_variant_name\": \"6\"}, {\"__index__\": 6, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b27a3b7311dacd58\"}]}, \"input_variant_name\": \"7\"}, {\"__index__\": 7, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57bad6561dd7fe4c2\"}]}, \"input_variant_name\": \"8\"}, {\"__index__\": 8, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52487bbbf3458fc61\"}]}, \"input_variant_name\": \"9\"}, {\"__index__\": 9, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56e1e6ec62bbd229e\"}]}, \"input_variant_name\": \"10\"}, {\"__index__\": 10, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c43ab4d25079fd03\"}]}, \"input_variant_name\": \"11\"}, {\"__index__\": 11, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55e1b994295e1ae3c\"}]}, \"input_variant_name\": \"12\"}, {\"__index__\": 12, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d84e18826e022dca\"}]}, \"input_variant_name\": \"13\"}, {\"__index__\": 13, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50e52509d884e552a\"}]}, \"input_variant_name\": \"14\"}, {\"__index__\": 14, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b575127f849beb8ddb\"}]}, \"input_variant_name\": \"15\"}, {\"__index__\": 15, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ecb09701be73ac0d\"}]}, \"input_variant_name\": \"16\"}, {\"__index__\": 16, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56ee962f8625f2bd3\"}]}, \"input_variant_name\": \"17\"}, {\"__index__\": 17, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}, {\"__index__\": 18, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50c50e995b730c57c\"}]}, \"input_variant_name\": \"19\"}, {\"__index__\": 19, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59907107ac42803dd\"}]}, \"input_variant_name\": \"20\"}, {\"__index__\": 20, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b554aa2206ee26c687\"}]}, \"input_variant_name\": \"21\"}, {\"__index__\": 21, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c040d03f8d9236f8\"}]}, \"input_variant_name\": \"22\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32431803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 19:03:42.877647",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2016-02-05 15:44:46.685364",
+        "datasets": [
+            {
+                "dataset_id": "14214846",
+                "extension": "vcf",
+                "file_size": 5246938,
+                "name": "SP3384 VCFfilter: on data 820",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "14214840",
+                "extension": "vcf",
+                "file_size": 3348868,
+                "name": "SP3383 VCFfilter: on data 819",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "14214835",
+                "extension": "vcf",
+                "file_size": 4944122,
+                "name": " SP3355 VCFfilter: on data 818",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "14214833",
+                "extension": "vcf",
+                "file_size": 3032207,
+                "name": "SP3329 VCFfilter: on data 817",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "14214827",
+                "extension": "vcf",
+                "file_size": 4504365,
+                "name": "SP3306 VCFfilter: on data 816",
+                "param_name": "input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "14214820",
+                "extension": "vcf",
+                "file_size": 3830264,
+                "name": "SP3174 VCFfilter: on data 814",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "14214819",
+                "extension": "vcf",
+                "file_size": 2270205,
+                "name": "SP3145 VCFfilter: on data 813",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "14214818",
+                "extension": "vcf",
+                "file_size": 3099619,
+                "name": "SP3043 VCFfilter: on data 812",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "14214817",
+                "extension": "vcf",
+                "file_size": 1152587,
+                "name": "SP3037 VCFfilter: on data 811",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "14214814",
+                "extension": "vcf",
+                "file_size": 2431450,
+                "name": "BP6052 VCFfilter: on data 808",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "14214813",
+                "extension": "vcf",
+                "file_size": 2859115,
+                "name": "BP 6045 VCFfilter: on data 807",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "14214812",
+                "extension": "vcf",
+                "file_size": 4606052,
+                "name": "BP 6039 VCFfilter: on data 806",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "14214811",
+                "extension": "vcf",
+                "file_size": 4261175,
+                "name": "BP 6032 VCFfilter: on data 805",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "14214810",
+                "extension": "vcf",
+                "file_size": 2788200,
+                "name": "BP6025 VCFfilter: on data 804",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "14214809",
+                "extension": "vcf",
+                "file_size": 4164899,
+                "name": "BBe009 VCFfilter: on data 803",
+                "param_name": "input_variants_14|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2411542,
+        "id": 11723018,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5979232.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 23187172, \"input_variant_name\": \"SP3384\"}, {\"__index__\": 1, \"input_variant\": 23187166, \"input_variant_name\": \"SP3383\"}, {\"__index__\": 2, \"input_variant\": 23187161, \"input_variant_name\": \"SP3355\"}, {\"__index__\": 3, \"input_variant\": 23187159, \"input_variant_name\": \"SP3329\"}, {\"__index__\": 4, \"input_variant\": 23187153, \"input_variant_name\": \"SP3306\"}, {\"__index__\": 5, \"input_variant\": 23187146, \"input_variant_name\": \"SP3174\"}, {\"__index__\": 6, \"input_variant\": 23187145, \"input_variant_name\": \"SP3145\"}, {\"__index__\": 7, \"input_variant\": 23187144, \"input_variant_name\": \"SP3043\"}, {\"__index__\": 8, \"input_variant\": 23187143, \"input_variant_name\": \"SP3037\"}, {\"__index__\": 9, \"input_variant\": 23187140, \"input_variant_name\": \"BP6052\"}, {\"__index__\": 10, \"input_variant\": 23187139, \"input_variant_name\": \"BP6045\"}, {\"__index__\": 11, \"input_variant\": 23187138, \"input_variant_name\": \"BP6039\"}, {\"__index__\": 12, \"input_variant\": 23187137, \"input_variant_name\": \"BP6032\"}, {\"__index__\": 13, \"input_variant\": 23187136, \"input_variant_name\": \"BP6025\"}, {\"__index__\": 14, \"input_variant\": 23187135, \"input_variant_name\": \"BBe009\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 28071792,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-02-05 15:47:06.549449",
+        "user_id": 67897
+    },
+    {
+        "create_time": "2015-03-10 20:35:21.449029",
+        "datasets": [
+            {
+                "dataset_id": "10635953",
+                "extension": "vcf",
+                "file_size": 2911128,
+                "name": "NA18507-300ng.base_recalibrated_ABU1U.vcf",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "10635954",
+                "extension": "vcf",
+                "file_size": 2963946,
+                "name": "NA18507-300ng.base_recalibrated_ABU75.vcf",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "10635951",
+                "extension": "vcf",
+                "file_size": 1261758,
+                "name": "NA18507-08-2.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "10635962",
+                "extension": "vcf",
+                "file_size": 476934,
+                "name": "NA18507.base_recalibrated_ABURB.vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10635949",
+                "extension": "vcf",
+                "file_size": 2583039,
+                "name": "NA18507-2.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "10635952",
+                "extension": "vcf",
+                "file_size": 991252,
+                "name": "NA18507-100ng.merged.sorted_ADY79.vcf",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "10635959",
+                "extension": "vcf",
+                "file_size": 2500533,
+                "name": "NA18507-300ng.base_recalibrated_ACL1V.vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "10635948",
+                "extension": "vcf",
+                "file_size": 2797912,
+                "name": "NA18507-1.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "10635960",
+                "extension": "vcf",
+                "file_size": 1734152,
+                "name": "NA18507-300ng.base_recalibrated_ACRLN.vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "10635961",
+                "extension": "vcf",
+                "file_size": 1637393,
+                "name": "NA18507-300ng.merged.sorted_ACK62.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "10635955",
+                "extension": "vcf",
+                "file_size": 2383788,
+                "name": "NA18507-300ng.base_recalibrated_ABV0D.vcf",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "10635956",
+                "extension": "vcf",
+                "file_size": 1996967,
+                "name": "NA18507-300ng.base_recalibrated_ABVDB.vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "10635950",
+                "extension": "vcf",
+                "file_size": 1348732,
+                "name": "NA18507-08-1.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "10635957",
+                "extension": "vcf",
+                "file_size": 978209,
+                "name": "NA18507-300ng.base_recalibrated_ABW56.vcf",
+                "param_name": "input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2233340,
+        "id": 8911730,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3098122.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18809277, \"input_variant_name\": \"1\"}, {\"__index__\": 1, \"input_variant\": 18809276, \"input_variant_name\": \"2\"}, {\"__index__\": 2, \"input_variant\": 18809275, \"input_variant_name\": \"3\"}, {\"__index__\": 3, \"input_variant\": 18809274, \"input_variant_name\": \"4\"}, {\"__index__\": 4, \"input_variant\": 18809272, \"input_variant_name\": \"5\"}, {\"__index__\": 5, \"input_variant\": 18809271, \"input_variant_name\": \"6\"}, {\"__index__\": 6, \"input_variant\": 18809270, \"input_variant_name\": \"7\"}, {\"__index__\": 7, \"input_variant\": 18809269, \"input_variant_name\": \"8\"}, {\"__index__\": 8, \"input_variant\": 18809268, \"input_variant_name\": \"9\"}, {\"__index__\": 9, \"input_variant\": 18809267, \"input_variant_name\": \"10\"}, {\"__index__\": 10, \"input_variant\": 18809266, \"input_variant_name\": \"11\"}, {\"__index__\": 11, \"input_variant\": 18809265, \"input_variant_name\": \"12\"}, {\"__index__\": 12, \"input_variant\": 18809264, \"input_variant_name\": \"13\"}, {\"__index__\": 13, \"input_variant\": 18809263, \"input_variant_name\": \"14\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21700339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-10 20:37:49.417094",
+        "user_id": 60751
+    },
+    {
+        "create_time": "2016-06-06 12:07:57.708121",
+        "datasets": [
+            {
+                "dataset_id": "16113360",
+                "extension": "vcf",
+                "file_size": 182599422,
+                "name": "Combine Variants on data 1, data 4, and data 27 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "16112763",
+                "extension": "vcf",
+                "file_size": 112679546,
+                "name": "rd7af04_den3.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "16112715",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2729131,
+        "id": 13083934,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7268049.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571c97c35c4fed4bc\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50b9d6c77549dbbdb\"}]}, \"input_variant_name\": \"c2\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52d988d6a119dee4f\"}]}, \"input_variant_name\": \"5\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30663512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 12:10:53.443813",
+        "user_id": 85530
+    },
+    {
+        "create_time": "2015-10-19 14:02:32.454797",
+        "datasets": [
+            {
+                "dataset_id": "12858389",
+                "extension": "vcf",
+                "file_size": 127171537,
+                "name": "anu4api5_vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "12858394",
+                "extension": "vcf",
+                "file_size": 130070171,
+                "name": "anu1api1_vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "12858399",
+                "extension": "vcf",
+                "file_size": 127212791,
+                "name": "anu9sca1_vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "12864519",
+                "extension": "vcf",
+                "file_size": 117328606,
+                "name": "anu2sca4_vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "12864522",
+                "extension": "vcf",
+                "file_size": 115428361,
+                "name": "anu12sca5_vcf",
+                "param_name": "input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "12864525",
+                "extension": "vcf",
+                "file_size": 117002901,
+                "name": "ero1api7_vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "12844546",
+                "extension": "fasta",
+                "file_size": 121183082,
+                "name": "at_nuclear+C+M.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2470745,
+        "id": 10639990,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4904416.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": 21591898, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 21606078, \"input_variant_name\": \"1_anu4api5\"}, {\"__index__\": 1, \"input_variant\": 21606083, \"input_variant_name\": \"2_anu1api1\"}, {\"__index__\": 2, \"input_variant\": 21606088, \"input_variant_name\": \"3_anu9sca1\"}, {\"__index__\": 3, \"input_variant\": 21612848, \"input_variant_name\": \"4_anu2sca4\"}, {\"__index__\": 4, \"input_variant\": 21612851, \"input_variant_name\": \"5_anu12sca5\"}, {\"__index__\": 5, \"input_variant\": 21612854, \"input_variant_name\": \"6_ero1api7\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 25209174,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-19 14:05:23.184014",
+        "user_id": 37688
+    },
+    {
+        "create_time": "2016-06-06 11:49:17.331469",
+        "datasets": [
+            {
+                "dataset_id": "16112732",
+                "extension": "vcf",
+                "file_size": 112691244,
+                "name": "rd7af04_anu3api3.vcf",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "16112736",
+                "extension": "vcf",
+                "file_size": 123836744,
+                "name": "rd7af04_den1.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "16112762",
+                "extension": "vcf",
+                "file_size": 120988810,
+                "name": "rd7af04_den2.vcf",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "16112763",
+                "extension": "vcf",
+                "file_size": 112679546,
+                "name": "rd7af04_den3.vcf",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "16112715",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2729131,
+        "id": 13083812,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7267840.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571c97c35c4fed4bc\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b577f9100c8f45f0c0\"}]}, \"input_variant_name\": \"2\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b551f3f43edbbb0b76\"}]}, \"input_variant_name\": \"3\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5655c57d2ac5a1f40\"}]}, \"input_variant_name\": \"4\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52d988d6a119dee4f\"}]}, \"input_variant_name\": \"5\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30663512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 11:52:07.288034",
+        "user_id": 85530
+    },
+    {
+        "create_time": "2016-08-28 19:27:04.006747",
+        "datasets": [
+            {
+                "dataset_id": "17018159",
+                "extension": "vcf",
+                "file_size": 894037885,
+                "name": "Combine Variants on data 105, data 103, and data 117 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2798687,
+        "id": 13736415,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7955548.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590463a6415ebca8f\"}]}, \"input_variant_name\": \"19202122\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32431803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 19:28:49.480002",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2015-09-25 10:05:00.225420",
+        "datasets": [
+            {
+                "dataset_id": "12547401",
+                "extension": "vcf",
+                "file_size": 22004321,
+                "name": "Unified Genotyper on data 135 and data 123 (VCF)",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "12547427",
+                "extension": "vcf",
+                "file_size": 14993754,
+                "name": "Unified Genotyper on data 135 and data 125 (VCF)",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "12547437",
+                "extension": "vcf",
+                "file_size": 20461703,
+                "name": "Unified Genotyper on data 135 and data 127 (VCF)",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "12547444",
+                "extension": "vcf",
+                "file_size": 23947124,
+                "name": "Unified Genotyper on data 135 and data 129 (VCF)",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "12547448",
+                "extension": "vcf",
+                "file_size": 21875480,
+                "name": "Unified Genotyper on data 135 and data 131 (VCF)",
+                "param_name": "input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "12547452",
+                "extension": "vcf",
+                "file_size": 21711240,
+                "name": "Unified Genotyper on data 135 and data 133 (VCF)",
+                "param_name": "input_variants_5|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2440771,
+        "id": 10420696,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4699294.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 21225542, \"input_variant_name\": \"1D\"}, {\"__index__\": 1, \"input_variant\": 21225568, \"input_variant_name\": \"2D\"}, {\"__index__\": 2, \"input_variant\": 21225578, \"input_variant_name\": \"3D\"}, {\"__index__\": 3, \"input_variant\": 21225585, \"input_variant_name\": \"4D\"}, {\"__index__\": 4, \"input_variant\": 21225589, \"input_variant_name\": \"5D\"}, {\"__index__\": 5, \"input_variant\": 21225593, \"input_variant_name\": \"6D\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 25017390,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-09-25 10:08:09.632231",
+        "user_id": 67855
+    },
+    {
+        "create_time": "2015-10-20 13:47:31.369152",
+        "datasets": [
+            {
+                "dataset_id": "12886652",
+                "extension": "vcf",
+                "file_size": 130655432,
+                "name": "Combine Variants on data 116, data 190, and data 189 (variants)",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "12882252",
+                "extension": "vcf",
+                "file_size": 114377085,
+                "name": "filtered_anu4api5.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "12844546",
+                "extension": "fasta",
+                "file_size": 121183082,
+                "name": "at_nuclear+C+M.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2470745,
+        "id": 10655878,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4920166.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": 21591898, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 21637663, \"input_variant_name\": \"A\"}, {\"__index__\": 1, \"input_variant\": 21632971, \"input_variant_name\": \"anu4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 25209174,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-20 13:51:06.776887",
+        "user_id": 37688
+    },
+    {
+        "create_time": "2016-06-06 12:13:15.594518",
+        "datasets": [
+            {
+                "dataset_id": "16113360",
+                "extension": "vcf",
+                "file_size": 182599422,
+                "name": "Combine Variants on data 1, data 4, and data 27 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "16112773",
+                "extension": "vcf",
+                "file_size": 109344547,
+                "name": "rd7af04_den6.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "16112715",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2729131,
+        "id": 13083977,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7268087.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571c97c35c4fed4bc\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50b9d6c77549dbbdb\"}]}, \"input_variant_name\": \"c2\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d18ed16d1c2e30ef\"}]}, \"input_variant_name\": \"7\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30663512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 12:16:16.720006",
+        "user_id": 85530
+    },
+    {
+        "create_time": "2016-04-25 09:28:36.439247",
+        "datasets": [
+            {
+                "dataset_id": "15427499",
+                "extension": "vcf",
+                "file_size": 112691244,
+                "name": "rd7af04_anu3api3.vcf",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "15427541",
+                "extension": "vcf",
+                "file_size": 123836744,
+                "name": "rd7af04_den1.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "15427564",
+                "extension": "vcf",
+                "file_size": 120988810,
+                "name": "rd7af04_den2.vcf",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "15427598",
+                "extension": "vcf",
+                "file_size": 112679546,
+                "name": "rd7af04_den3.vcf",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "15427631",
+                "extension": "vcf",
+                "file_size": 90114530,
+                "name": "rd7af04_den4.vcf",
+                "param_name": "reference_source|input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "15427650",
+                "extension": "vcf",
+                "file_size": 109344547,
+                "name": "rd7af04_den6.vcf",
+                "param_name": "reference_source|input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "15427654",
+                "extension": "vcf",
+                "file_size": 105444400,
+                "name": "rd7af04_den7.vcf",
+                "param_name": "reference_source|input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "15427664",
+                "extension": "vcf",
+                "file_size": 90114530,
+                "name": "rd7af04_den8.vcf",
+                "param_name": "reference_source|input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "15427676",
+                "extension": "vcf",
+                "file_size": 116042012,
+                "name": "rd7af04_den9.vcf",
+                "param_name": "reference_source|input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "15427693",
+                "extension": "vcf",
+                "file_size": 115759617,
+                "name": "rd7af04_den10.vcf",
+                "param_name": "reference_source|input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "15427703",
+                "extension": "vcf",
+                "file_size": 106470732,
+                "name": "rd7af04_den13.vcf",
+                "param_name": "reference_source|input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "15427706",
+                "extension": "vcf",
+                "file_size": 114526113,
+                "name": "rd7af04_den15.vcf",
+                "param_name": "reference_source|input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "15427715",
+                "extension": "vcf",
+                "file_size": 107537910,
+                "name": "rd7af04_den17.vcf",
+                "param_name": "reference_source|input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "15427732",
+                "extension": "vcf",
+                "file_size": 106656039,
+                "name": "rd7af04_fasteris_anu2sca4.vcf",
+                "param_name": "reference_source|input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "15427754",
+                "extension": "vcf",
+                "file_size": 106335633,
+                "name": "rd7af04_fasteris_ero1api7.vcf",
+                "param_name": "reference_source|input_variants_14|input_variant"
+            },
+            {
+                "dataset_id": "15427770",
+                "extension": "vcf",
+                "file_size": 124254913,
+                "name": "rd7af04_ond4.vcf",
+                "param_name": "reference_source|input_variants_15|input_variant"
+            },
+            {
+                "dataset_id": "15427876",
+                "extension": "vcf",
+                "file_size": 134372486,
+                "name": "rd7af04_orb1.vcf",
+                "param_name": "reference_source|input_variants_16|input_variant"
+            },
+            {
+                "dataset_id": "15428203",
+                "extension": "vcf",
+                "file_size": 134289705,
+                "name": "rd7af04_sea3.vcf",
+                "param_name": "reference_source|input_variants_17|input_variant"
+            },
+            {
+                "dataset_id": "15428479",
+                "extension": "vcf",
+                "file_size": 129711925,
+                "name": "rd7af04_sea4.vcf",
+                "param_name": "reference_source|input_variants_18|input_variant"
+            },
+            {
+                "dataset_id": "15429835",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2631931,
+        "id": 12600138,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6801333.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573051810e56f391d\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5546a5ff0206addd8\"}]}, \"input_variant_name\": \"anu3api3\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb2ab5ee78bc95d7\"}]}, \"input_variant_name\": \"den1\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56269b3db95f57fc4\"}]}, \"input_variant_name\": \"den2\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b547d36cad772f4b7b\"}]}, \"input_variant_name\": \"den3\"}, {\"__index__\": 4, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b568559c13df2ad67b\"}]}, \"input_variant_name\": \"den4\"}, {\"__index__\": 5, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b514b0c7780f6a7094\"}]}, \"input_variant_name\": \"den6\"}, {\"__index__\": 6, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dcac193c031665a5\"}]}, \"input_variant_name\": \"den7\"}, {\"__index__\": 7, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dc0190b453feb322\"}]}, \"input_variant_name\": \"den8\"}, {\"__index__\": 8, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b526a638f82813d145\"}]}, \"input_variant_name\": \"den9\"}, {\"__index__\": 9, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57962edefcbaa7662\"}]}, \"input_variant_name\": \"den10\"}, {\"__index__\": 10, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b500b7abfb9a574b0b\"}]}, \"input_variant_name\": \"den13\"}, {\"__index__\": 11, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5594ff1e7206153f1\"}]}, \"input_variant_name\": \"den15\"}, {\"__index__\": 12, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573e7966c94224f06\"}]}, \"input_variant_name\": \"den17\"}, {\"__index__\": 13, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52bbc846eaaf702d3\"}]}, \"input_variant_name\": \"anu2sca4\"}, {\"__index__\": 14, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1ce249469ffb604\"}]}, \"input_variant_name\": \"ero1api7\"}, {\"__index__\": 15, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e71d5eaa769b5ebc\"}]}, \"input_variant_name\": \"ond4\"}, {\"__index__\": 16, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54a097e99ca4fd803\"}]}, \"input_variant_name\": \"orb1\"}, {\"__index__\": 17, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5236e3283480e608a\"}]}, \"input_variant_name\": \"sea3\"}, {\"__index__\": 18, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ec4a7a6328ff1934\"}]}, \"input_variant_name\": \"sea4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29101110,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-04-25 09:31:08.933159",
+        "user_id": 66258
+    },
+    {
+        "create_time": "2015-03-10 20:09:51.168020",
+        "datasets": [
+            {
+                "dataset_id": "10635512",
+                "extension": "vcf",
+                "file_size": 2911128,
+                "name": "NA18507-300ng.base_recalibrated_ABU1U.vcf",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "10635513",
+                "extension": "vcf",
+                "file_size": 2963946,
+                "name": "NA18507-300ng.base_recalibrated_ABU75.vcf",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "10635510",
+                "extension": "vcf",
+                "file_size": 1261758,
+                "name": "NA18507-08-2.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "10635527",
+                "extension": "vcf",
+                "file_size": 476934,
+                "name": "NA18507.base_recalibrated_ABURB.vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10635507",
+                "extension": "vcf",
+                "file_size": 2583039,
+                "name": "NA18507-2.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "10635511",
+                "extension": "vcf",
+                "file_size": 991252,
+                "name": "NA18507-100ng.merged.sorted_ADY79.vcf",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "10635523",
+                "extension": "vcf",
+                "file_size": 2500533,
+                "name": "NA18507-300ng.base_recalibrated_ACL1V.vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "10635506",
+                "extension": "vcf",
+                "file_size": 2797912,
+                "name": "NA18507-1.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "10635525",
+                "extension": "vcf",
+                "file_size": 1734152,
+                "name": "NA18507-300ng.base_recalibrated_ACRLN.vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "10635526",
+                "extension": "vcf",
+                "file_size": 1637393,
+                "name": "NA18507-300ng.merged.sorted_ACK62.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "10635514",
+                "extension": "vcf",
+                "file_size": 2383788,
+                "name": "NA18507-300ng.base_recalibrated_ABV0D.vcf",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "10635518",
+                "extension": "vcf",
+                "file_size": 1996967,
+                "name": "NA18507-300ng.base_recalibrated_ABVDB.vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "10635508",
+                "extension": "vcf",
+                "file_size": 1348732,
+                "name": "NA18507-08-1.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "10635522",
+                "extension": "vcf",
+                "file_size": 978209,
+                "name": "NA18507-300ng.base_recalibrated_ABW56.vcf",
+                "param_name": "input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2233236,
+        "id": 8911582,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3097811.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18808800, \"input_variant_name\": \"1\"}, {\"__index__\": 1, \"input_variant\": 18808799, \"input_variant_name\": \"2\"}, {\"__index__\": 2, \"input_variant\": 18808798, \"input_variant_name\": \"3\"}, {\"__index__\": 3, \"input_variant\": 18808796, \"input_variant_name\": \"4\"}, {\"__index__\": 4, \"input_variant\": 18808795, \"input_variant_name\": \"5\"}, {\"__index__\": 5, \"input_variant\": 18808791, \"input_variant_name\": \"6\"}, {\"__index__\": 6, \"input_variant\": 18808787, \"input_variant_name\": \"7\"}, {\"__index__\": 7, \"input_variant\": 18808786, \"input_variant_name\": \"8\"}, {\"__index__\": 8, \"input_variant\": 18808785, \"input_variant_name\": \"9\"}, {\"__index__\": 9, \"input_variant\": 18808784, \"input_variant_name\": \"10\"}, {\"__index__\": 10, \"input_variant\": 18808783, \"input_variant_name\": \"11\"}, {\"__index__\": 11, \"input_variant\": 18808781, \"input_variant_name\": \"12\"}, {\"__index__\": 12, \"input_variant\": 18808780, \"input_variant_name\": \"13\"}, {\"__index__\": 13, \"input_variant\": 18808779, \"input_variant_name\": \"14\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21309773,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-10 20:12:51.616026",
+        "user_id": 5835
+    },
+    {
+        "create_time": "2016-08-28 19:30:49.345660",
+        "datasets": [
+            {
+                "dataset_id": "17018159",
+                "extension": "vcf",
+                "file_size": 894037885,
+                "name": "Combine Variants on data 105, data 103, and data 117 (variants)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2798687,
+        "id": 13736430,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7955560.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590463a6415ebca8f\"}]}, \"input_variant_name\": \"19202122\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32431803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 19:33:49.253405",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2015-03-10 17:31:52.620036",
+        "datasets": [
+            {
+                "dataset_id": "10633504",
+                "extension": "vcf",
+                "file_size": 2911158,
+                "name": "NA18507-300ng.base_recalibrated_ABU1U.vcf",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "10633505",
+                "extension": "vcf",
+                "file_size": 2963976,
+                "name": "NA18507-300ng.base_recalibrated_ABU75.vcf",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "10633492",
+                "extension": "vcf",
+                "file_size": 2797942,
+                "name": "NA18507-1.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "10633515",
+                "extension": "vcf",
+                "file_size": 476949,
+                "name": "NA18507.base_recalibrated_ABURB.vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10633500",
+                "extension": "vcf",
+                "file_size": 1261779,
+                "name": "NA18507-08-2.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "10633493",
+                "extension": "vcf",
+                "file_size": 2583069,
+                "name": "NA18507-2.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "10633514",
+                "extension": "vcf",
+                "file_size": 1637418,
+                "name": "NA18507-300ng.merged.sorted_ACK62.vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "10633494",
+                "extension": "vcf",
+                "file_size": 1348753,
+                "name": "NA18507-08-1.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "10633510",
+                "extension": "vcf",
+                "file_size": 2500581,
+                "name": "NA18507-300ng.base_recalibrated_ACL1V.vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "10633511",
+                "extension": "vcf",
+                "file_size": 1734182,
+                "name": "NA18507-300ng.base_recalibrated_ACRLN.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "10633506",
+                "extension": "vcf",
+                "file_size": 2383818,
+                "name": "NA18507-300ng.base_recalibrated_ABV0D.vcf",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "10633507",
+                "extension": "vcf",
+                "file_size": 1996997,
+                "name": "NA18507-300ng.base_recalibrated_ABVDB.vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "10633503",
+                "extension": "vcf",
+                "file_size": 991274,
+                "name": "NA18507-100ng.merged.sorted_ADY79.vcf",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "10633509",
+                "extension": "vcf",
+                "file_size": 978239,
+                "name": "NA18507-300ng.base_recalibrated_ABW56.vcf",
+                "param_name": "input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2233099,
+        "id": 8910046,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3095047.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18806517, \"input_variant_name\": \"NA18507_66ng_ABURB\"}, {\"__index__\": 1, \"input_variant\": 18806513, \"input_variant_name\": \"NA18507_300ng_ACRLN\"}, {\"__index__\": 2, \"input_variant\": 18806512, \"input_variant_name\": \"NA18507_300ng_ACL1V\"}, {\"__index__\": 3, \"input_variant\": 18806516, \"input_variant_name\": \"NA18507_300ng_ACK62\"}, {\"__index__\": 4, \"input_variant\": 18806511, \"input_variant_name\": \"NA18507_300ng_ABW56\"}, {\"__index__\": 5, \"input_variant\": 18806509, \"input_variant_name\": \"NA18507_300ng_ABVDB\"}, {\"__index__\": 6, \"input_variant\": 18806508, \"input_variant_name\": \"NA18507_300ng_ABV0D\"}, {\"__index__\": 7, \"input_variant\": 18806507, \"input_variant_name\": \"NA18507_300ng_ABU75\"}, {\"__index__\": 8, \"input_variant\": 18806506, \"input_variant_name\": \"NA18507_300ng_ABU1U\"}, {\"__index__\": 9, \"input_variant\": 18806495, \"input_variant_name\": \"NA18507_2_ACTRL\"}, {\"__index__\": 10, \"input_variant\": 18806494, \"input_variant_name\": \"NA18507_1_ACTRL\"}, {\"__index__\": 11, \"input_variant\": 18806505, \"input_variant_name\": \"NA18507_100ng_ADY79\"}, {\"__index__\": 12, \"input_variant\": 18806502, \"input_variant_name\": \"NA18507-225ng-2_ABUVT\"}, {\"__index__\": 13, \"input_variant\": 18806496, \"input_variant_name\": \"NA18507-225ng-1_ABUVT\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21309773,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-10 17:38:50.960667",
+        "user_id": 5835
+    },
+    {
+        "create_time": "2016-08-28 21:38:10.815140",
+        "datasets": [
+            {
+                "dataset_id": "17010963",
+                "extension": "vcf",
+                "file_size": 172361888,
+                "name": "Chr 21 (no genotypes)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "16990671",
+                "extension": "vcf",
+                "file_size": 172207431,
+                "name": "Chr22 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2798687,
+        "id": 13737097,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7956341.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b554aa2206ee26c687\"}]}, \"input_variant_name\": \"21\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c040d03f8d9236f8\"}]}, \"input_variant_name\": \"22\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32623179,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-08-28 21:41:30.270929",
+        "user_id": 88856
+    },
+    {
+        "create_time": "2015-03-21 21:10:39.062613",
+        "datasets": [
+            {
+                "dataset_id": "10735543",
+                "extension": "vcf",
+                "file_size": 252556755,
+                "name": "VCF data AF-2",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10722112",
+                "extension": "fasta",
+                "file_size": 52022965,
+                "name": "Necha2_scaffolds.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10733701",
+                "extension": "len",
+                "file_size": 4809,
+                "name": "Convert FASTA to len file on data 6",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2241395,
+        "id": 9003964,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3271081.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/main/files/010/733/dataset_10733701.dat\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": 18906440, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18926383, \"input_variant_name\": \"\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21946408,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-21 21:14:06.758775",
+        "user_id": 61042
+    },
+    {
+        "create_time": "2015-10-20 13:52:55.357667",
+        "datasets": [
+            {
+                "dataset_id": "12886652",
+                "extension": "vcf",
+                "file_size": 130655432,
+                "name": "Combine Variants on data 116, data 190, and data 189 (variants)",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "12882252",
+                "extension": "vcf",
+                "file_size": 114377085,
+                "name": "filtered_anu4api5.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "12844546",
+                "extension": "fasta",
+                "file_size": 121183082,
+                "name": "at_nuclear+C+M.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2470745,
+        "id": 10656109,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4920247.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": 21591898, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 21637663, \"input_variant_name\": \"A\"}, {\"__index__\": 1, \"input_variant\": 21632971, \"input_variant_name\": \"anu4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 25209174,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-20 14:36:39.597934",
+        "user_id": 37688
+    },
+    {
+        "create_time": "2016-06-06 10:19:15.174516",
+        "datasets": [
+            {
+                "dataset_id": "15427499",
+                "extension": "vcf",
+                "file_size": 112691244,
+                "name": "rd7af04_anu3api3.vcf",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "15427541",
+                "extension": "vcf",
+                "file_size": 123836744,
+                "name": "rd7af04_den1.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "15427564",
+                "extension": "vcf",
+                "file_size": 120988810,
+                "name": "rd7af04_den2.vcf",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "15427598",
+                "extension": "vcf",
+                "file_size": 112679546,
+                "name": "rd7af04_den3.vcf",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "15427631",
+                "extension": "vcf",
+                "file_size": 90114530,
+                "name": "rd7af04_den4.vcf",
+                "param_name": "reference_source|input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "15427650",
+                "extension": "vcf",
+                "file_size": 109344547,
+                "name": "rd7af04_den6.vcf",
+                "param_name": "reference_source|input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "15427654",
+                "extension": "vcf",
+                "file_size": 105444400,
+                "name": "rd7af04_den7.vcf",
+                "param_name": "reference_source|input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "15427664",
+                "extension": "vcf",
+                "file_size": 90114530,
+                "name": "rd7af04_den8.vcf",
+                "param_name": "reference_source|input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "15427676",
+                "extension": "vcf",
+                "file_size": 116042012,
+                "name": "rd7af04_den9.vcf",
+                "param_name": "reference_source|input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "15427693",
+                "extension": "vcf",
+                "file_size": 115759617,
+                "name": "rd7af04_den10.vcf",
+                "param_name": "reference_source|input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "15427703",
+                "extension": "vcf",
+                "file_size": 106470732,
+                "name": "rd7af04_den13.vcf",
+                "param_name": "reference_source|input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "15427706",
+                "extension": "vcf",
+                "file_size": 114526113,
+                "name": "rd7af04_den15.vcf",
+                "param_name": "reference_source|input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "15427715",
+                "extension": "vcf",
+                "file_size": 107537910,
+                "name": "rd7af04_den17.vcf",
+                "param_name": "reference_source|input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "15427732",
+                "extension": "vcf",
+                "file_size": 106656039,
+                "name": "rd7af04_fasteris_anu2sca4.vcf",
+                "param_name": "reference_source|input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "15427754",
+                "extension": "vcf",
+                "file_size": 106335633,
+                "name": "rd7af04_fasteris_ero1api7.vcf",
+                "param_name": "reference_source|input_variants_14|input_variant"
+            },
+            {
+                "dataset_id": "15427770",
+                "extension": "vcf",
+                "file_size": 124254913,
+                "name": "rd7af04_ond4.vcf",
+                "param_name": "reference_source|input_variants_15|input_variant"
+            },
+            {
+                "dataset_id": "15427876",
+                "extension": "vcf",
+                "file_size": 134372486,
+                "name": "rd7af04_orb1.vcf",
+                "param_name": "reference_source|input_variants_16|input_variant"
+            },
+            {
+                "dataset_id": "15428203",
+                "extension": "vcf",
+                "file_size": 134289705,
+                "name": "rd7af04_sea3.vcf",
+                "param_name": "reference_source|input_variants_17|input_variant"
+            },
+            {
+                "dataset_id": "15428479",
+                "extension": "vcf",
+                "file_size": 129711925,
+                "name": "rd7af04_sea4.vcf",
+                "param_name": "reference_source|input_variants_18|input_variant"
+            },
+            {
+                "dataset_id": "15429835",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2631931,
+        "id": 13081865,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7266036.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573051810e56f391d\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5546a5ff0206addd8\"}]}, \"input_variant_name\": \"anu3api3\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb2ab5ee78bc95d7\"}]}, \"input_variant_name\": \"den1\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56269b3db95f57fc4\"}]}, \"input_variant_name\": \"den2\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b547d36cad772f4b7b\"}]}, \"input_variant_name\": \"den3\"}, {\"__index__\": 4, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b568559c13df2ad67b\"}]}, \"input_variant_name\": \"den4\"}, {\"__index__\": 5, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b514b0c7780f6a7094\"}]}, \"input_variant_name\": \"den6\"}, {\"__index__\": 6, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dcac193c031665a5\"}]}, \"input_variant_name\": \"den7\"}, {\"__index__\": 7, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dc0190b453feb322\"}]}, \"input_variant_name\": \"den8\"}, {\"__index__\": 8, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b526a638f82813d145\"}]}, \"input_variant_name\": \"den9\"}, {\"__index__\": 9, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57962edefcbaa7662\"}]}, \"input_variant_name\": \"den10\"}, {\"__index__\": 10, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b500b7abfb9a574b0b\"}]}, \"input_variant_name\": \"den13\"}, {\"__index__\": 11, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5594ff1e7206153f1\"}]}, \"input_variant_name\": \"den15\"}, {\"__index__\": 12, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573e7966c94224f06\"}]}, \"input_variant_name\": \"den17\"}, {\"__index__\": 13, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52bbc846eaaf702d3\"}]}, \"input_variant_name\": \"anu2sca4\"}, {\"__index__\": 14, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1ce249469ffb604\"}]}, \"input_variant_name\": \"ero1api7\"}, {\"__index__\": 15, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e71d5eaa769b5ebc\"}]}, \"input_variant_name\": \"ond4\"}, {\"__index__\": 16, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b54a097e99ca4fd803\"}]}, \"input_variant_name\": \"orb1\"}, {\"__index__\": 17, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5236e3283480e608a\"}]}, \"input_variant_name\": \"sea3\"}, {\"__index__\": 18, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ec4a7a6328ff1934\"}]}, \"input_variant_name\": \"sea4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29101110,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 10:21:57.501826",
+        "user_id": 66258
+    },
+    {
+        "create_time": "2015-03-10 19:53:22.319284",
+        "datasets": [
+            {
+                "dataset_id": "10635512",
+                "extension": "vcf",
+                "file_size": 2911128,
+                "name": "NA18507-300ng.base_recalibrated_ABU1U.vcf",
+                "param_name": "input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "10635513",
+                "extension": "vcf",
+                "file_size": 2963946,
+                "name": "NA18507-300ng.base_recalibrated_ABU75.vcf",
+                "param_name": "input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "10635510",
+                "extension": "vcf",
+                "file_size": 1261758,
+                "name": "NA18507-08-2.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "10635527",
+                "extension": "vcf",
+                "file_size": 476934,
+                "name": "NA18507.base_recalibrated_ABURB.vcf",
+                "param_name": "input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "10635507",
+                "extension": "vcf",
+                "file_size": 2583039,
+                "name": "NA18507-2.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "10635511",
+                "extension": "vcf",
+                "file_size": 991252,
+                "name": "NA18507-100ng.merged.sorted_ADY79.vcf",
+                "param_name": "input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "10635523",
+                "extension": "vcf",
+                "file_size": 2500533,
+                "name": "NA18507-300ng.base_recalibrated_ACL1V.vcf",
+                "param_name": "input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "10635506",
+                "extension": "vcf",
+                "file_size": 2797912,
+                "name": "NA18507-1.base_recalibrated_ACTRL.vcf",
+                "param_name": "input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "10635525",
+                "extension": "vcf",
+                "file_size": 1734152,
+                "name": "NA18507-300ng.base_recalibrated_ACRLN.vcf",
+                "param_name": "input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "10635526",
+                "extension": "vcf",
+                "file_size": 1637393,
+                "name": "NA18507-300ng.merged.sorted_ACK62.vcf",
+                "param_name": "input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "10635514",
+                "extension": "vcf",
+                "file_size": 2383788,
+                "name": "NA18507-300ng.base_recalibrated_ABV0D.vcf",
+                "param_name": "input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "10635518",
+                "extension": "vcf",
+                "file_size": 1996967,
+                "name": "NA18507-300ng.base_recalibrated_ABVDB.vcf",
+                "param_name": "input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "10635508",
+                "extension": "vcf",
+                "file_size": 1348732,
+                "name": "NA18507-08-1.base_recalibrated_ABUVT.vcf",
+                "param_name": "input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "10635522",
+                "extension": "vcf",
+                "file_size": 978209,
+                "name": "NA18507-300ng.base_recalibrated_ABW56.vcf",
+                "param_name": "input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2233236,
+        "id": 8911424,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3097575.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": 18808800, \"input_variant_name\": \"1\"}, {\"__index__\": 1, \"input_variant\": 18808799, \"input_variant_name\": \"2\"}, {\"__index__\": 2, \"input_variant\": 18808798, \"input_variant_name\": \"3\"}, {\"__index__\": 3, \"input_variant\": 18808796, \"input_variant_name\": \"4\"}, {\"__index__\": 4, \"input_variant\": 18808795, \"input_variant_name\": \"5\"}, {\"__index__\": 5, \"input_variant\": 18808791, \"input_variant_name\": \"6\"}, {\"__index__\": 6, \"input_variant\": 18808787, \"input_variant_name\": \"7\"}, {\"__index__\": 7, \"input_variant\": 18808786, \"input_variant_name\": \"8\"}, {\"__index__\": 8, \"input_variant\": 18808785, \"input_variant_name\": \"9\"}, {\"__index__\": 9, \"input_variant\": 18808784, \"input_variant_name\": \"10\"}, {\"__index__\": 10, \"input_variant\": 18808783, \"input_variant_name\": \"11\"}, {\"__index__\": 11, \"input_variant\": 18808781, \"input_variant_name\": \"12\"}, {\"__index__\": 12, \"input_variant\": 18808780, \"input_variant_name\": \"13\"}, {\"__index__\": 13, \"input_variant\": 18808779, \"input_variant_name\": \"14\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 21309773,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-03-10 19:54:50.427328",
+        "user_id": 5835
+    },
+    {
+        "create_time": "2016-06-06 10:25:42.604455",
+        "datasets": [
+            {
+                "dataset_id": "15427499",
+                "extension": "vcf",
+                "file_size": 112691244,
+                "name": "rd7af04_anu3api3.vcf",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "15427541",
+                "extension": "vcf",
+                "file_size": 123836744,
+                "name": "rd7af04_den1.vcf",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "15427564",
+                "extension": "vcf",
+                "file_size": 120988810,
+                "name": "rd7af04_den2.vcf",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "15427598",
+                "extension": "vcf",
+                "file_size": 112679546,
+                "name": "rd7af04_den3.vcf",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "15427631",
+                "extension": "vcf",
+                "file_size": 90114530,
+                "name": "rd7af04_den4.vcf",
+                "param_name": "reference_source|input_variants_4|input_variant"
+            },
+            {
+                "dataset_id": "15427650",
+                "extension": "vcf",
+                "file_size": 109344547,
+                "name": "rd7af04_den6.vcf",
+                "param_name": "reference_source|input_variants_5|input_variant"
+            },
+            {
+                "dataset_id": "15427654",
+                "extension": "vcf",
+                "file_size": 105444400,
+                "name": "rd7af04_den7.vcf",
+                "param_name": "reference_source|input_variants_6|input_variant"
+            },
+            {
+                "dataset_id": "15427664",
+                "extension": "vcf",
+                "file_size": 90114530,
+                "name": "rd7af04_den8.vcf",
+                "param_name": "reference_source|input_variants_7|input_variant"
+            },
+            {
+                "dataset_id": "15427676",
+                "extension": "vcf",
+                "file_size": 116042012,
+                "name": "rd7af04_den9.vcf",
+                "param_name": "reference_source|input_variants_8|input_variant"
+            },
+            {
+                "dataset_id": "15427693",
+                "extension": "vcf",
+                "file_size": 115759617,
+                "name": "rd7af04_den10.vcf",
+                "param_name": "reference_source|input_variants_9|input_variant"
+            },
+            {
+                "dataset_id": "15427703",
+                "extension": "vcf",
+                "file_size": 106470732,
+                "name": "rd7af04_den13.vcf",
+                "param_name": "reference_source|input_variants_10|input_variant"
+            },
+            {
+                "dataset_id": "15427706",
+                "extension": "vcf",
+                "file_size": 114526113,
+                "name": "rd7af04_den15.vcf",
+                "param_name": "reference_source|input_variants_11|input_variant"
+            },
+            {
+                "dataset_id": "15427715",
+                "extension": "vcf",
+                "file_size": 107537910,
+                "name": "rd7af04_den17.vcf",
+                "param_name": "reference_source|input_variants_12|input_variant"
+            },
+            {
+                "dataset_id": "15427732",
+                "extension": "vcf",
+                "file_size": 106656039,
+                "name": "rd7af04_fasteris_anu2sca4.vcf",
+                "param_name": "reference_source|input_variants_13|input_variant"
+            },
+            {
+                "dataset_id": "15427754",
+                "extension": "vcf",
+                "file_size": 106335633,
+                "name": "rd7af04_fasteris_ero1api7.vcf",
+                "param_name": "reference_source|input_variants_14|input_variant"
+            },
+            {
+                "dataset_id": "15429835",
+                "extension": "fasta",
+                "file_size": 120654912,
+                "name": "at_nuclear_chrs.fas",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2631931,
+        "id": 13081920,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7266180.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"UNIQUIFY\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573051810e56f391d\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5546a5ff0206addd8\"}]}, \"input_variant_name\": \"anu3api3\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bb2ab5ee78bc95d7\"}]}, \"input_variant_name\": \"den1\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56269b3db95f57fc4\"}]}, \"input_variant_name\": \"den2\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b547d36cad772f4b7b\"}]}, \"input_variant_name\": \"den3\"}, {\"__index__\": 4, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b568559c13df2ad67b\"}]}, \"input_variant_name\": \"den4\"}, {\"__index__\": 5, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b514b0c7780f6a7094\"}]}, \"input_variant_name\": \"den6\"}, {\"__index__\": 6, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dcac193c031665a5\"}]}, \"input_variant_name\": \"den7\"}, {\"__index__\": 7, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dc0190b453feb322\"}]}, \"input_variant_name\": \"den8\"}, {\"__index__\": 8, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b526a638f82813d145\"}]}, \"input_variant_name\": \"den9\"}, {\"__index__\": 9, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57962edefcbaa7662\"}]}, \"input_variant_name\": \"den10\"}, {\"__index__\": 10, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b500b7abfb9a574b0b\"}]}, \"input_variant_name\": \"den13\"}, {\"__index__\": 11, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5594ff1e7206153f1\"}]}, \"input_variant_name\": \"den15\"}, {\"__index__\": 12, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573e7966c94224f06\"}]}, \"input_variant_name\": \"den17\"}, {\"__index__\": 13, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52bbc846eaaf702d3\"}]}, \"input_variant_name\": \"anu2sca4\"}, {\"__index__\": 14, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d1ce249469ffb604\"}]}, \"input_variant_name\": \"ero1api7\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 29101110,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-06-06 10:28:49.180506",
+        "user_id": 66258
+    },
+    {
+        "create_time": "2016-09-06 14:58:55.925325",
+        "datasets": [
+            {
+                "dataset_id": "17010963",
+                "extension": "vcf",
+                "file_size": 172361888,
+                "name": "Chr 21 (no genotypes)",
+                "param_name": "reference_source|input_variants_0|input_variant"
+            },
+            {
+                "dataset_id": "17009429",
+                "extension": "vcf",
+                "file_size": 286176807,
+                "name": "Chr19 (no genotypes)",
+                "param_name": "reference_source|input_variants_1|input_variant"
+            },
+            {
+                "dataset_id": "17009422",
+                "extension": "vcf",
+                "file_size": 281811509,
+                "name": "Chr20 (no genotypes)",
+                "param_name": "reference_source|input_variants_2|input_variant"
+            },
+            {
+                "dataset_id": "17003821",
+                "extension": "vcf",
+                "file_size": 362645238,
+                "name": "Chr17 (no genotypes)",
+                "param_name": "reference_source|input_variants_3|input_variant"
+            },
+            {
+                "dataset_id": "17003631",
+                "extension": "vcf",
+                "file_size": 352646677,
+                "name": "Chr18 (no genotypes)",
+                "param_name": "reference_source|input_variants_4|input_variant"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2798687,
+        "id": 13788852,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8009269.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_merge_option": "\"PRIORITIZE\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"input_variants\": [{\"__index__\": 0, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b554aa2206ee26c687\"}]}, \"input_variant_name\": \"21\"}, {\"__index__\": 1, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50c50e995b730c57c\"}]}, \"input_variant_name\": \"19\"}, {\"__index__\": 2, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59907107ac42803dd\"}]}, \"input_variant_name\": \"20\"}, {\"__index__\": 3, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56ee962f8625f2bd3\"}]}, \"input_variant_name\": \"17\"}, {\"__index__\": 4, \"input_variant\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5753a214937452dbc\"}]}, \"input_variant_name\": \"18\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 32623179,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_combine/gatk_variant_combine/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-09-06 15:02:41.667504",
+        "user_id": 88856
+    }
+]

@@ -1,0 +1,251 @@
+[
+    {
+        "create_time": "2017-04-10 09:22:26.148440",
+        "datasets": [
+            {
+                "dataset_id": "19524794",
+                "extension": "tabular",
+                "file_size": 49242209,
+                "name": "Kraken 16Ss1",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19524794",
+                "extension": "tabular",
+                "file_size": 49242209,
+                "name": "Kraken 16Ss1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "19524795",
+                "extension": "tabular",
+                "file_size": 187933112,
+                "name": "Kraken 16Ss2",
+                "param_name": "input2"
+            },
+            {
+                "dataset_id": "19524798",
+                "extension": "tabular",
+                "file_size": 14328054,
+                "name": "Kraken 16Ss3",
+                "param_name": "input3"
+            },
+            {
+                "dataset_id": "19524799",
+                "extension": "tabular",
+                "file_size": 241943553,
+                "name": "Kraken 16Ss4",
+                "param_name": "input4"
+            },
+            {
+                "dataset_id": "19524800",
+                "extension": "tabular",
+                "file_size": 61240878,
+                "name": "Kraken 16Ss5",
+                "param_name": "input5"
+            },
+            {
+                "dataset_id": "19524801",
+                "extension": "tabular",
+                "file_size": 3456047,
+                "name": "Kraken 16Ss6",
+                "param_name": "input6"
+            },
+            {
+                "dataset_id": "19524802",
+                "extension": "tabular",
+                "file_size": 1188178,
+                "name": "Kraken 16Ss7",
+                "param_name": "input7"
+            },
+            {
+                "dataset_id": "19524803",
+                "extension": "tabular",
+                "file_size": 214301946,
+                "name": "Kraken 16Ss8",
+                "param_name": "input8"
+            },
+            {
+                "dataset_id": "19524804",
+                "extension": "tabular",
+                "file_size": 553528,
+                "name": "Kraken 16Ss9",
+                "param_name": "input9"
+            },
+            {
+                "dataset_id": "19524805",
+                "extension": "tabular",
+                "file_size": 36196682,
+                "name": "Kraken STopen",
+                "param_name": "input10"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "krona",
+                "path": "/galaxy/main/deps/krona/2.6/crs4/taxonomy_krona_chart/f11a04ed443b",
+                "script": "/galaxy/main/deps/krona/2.6/crs4/taxonomy_krona_chart/f11a04ed443b/env.sh",
+                "version": "2.6"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3065587,
+        "id": 15539233,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9664591.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "combine_inputs": "\"false\"",
+            "dbkey": "\"?\"",
+            "root_name": "\"Root\"",
+            "type_of_data": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29141183}, {\"src\": \"hda\", \"id\": 29141184}, {\"src\": \"hda\", \"id\": 29141187}, {\"src\": \"hda\", \"id\": 29141188}, {\"src\": \"hda\", \"id\": 29141189}, {\"src\": \"hda\", \"id\": 29141190}, {\"src\": \"hda\", \"id\": 29141191}, {\"src\": \"hda\", \"id\": 29141192}, {\"src\": \"hda\", \"id\": 29141193}, {\"src\": \"hda\", \"id\": 29141194}]}, \"type_of_data_selector\": \"text\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37097171,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.0",
+        "tool_version": "2.6.0",
+        "traceback": null,
+        "update_time": "2017-04-10 09:25:43.133072",
+        "user_id": 50564
+    },
+    {
+        "create_time": "2017-03-11 00:20:36.715562",
+        "datasets": [
+            {
+                "dataset_id": "19162354",
+                "extension": "tabular",
+                "file_size": 4222448446,
+                "name": "FASTQ to FASTA on data 2",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19162354",
+                "extension": "tabular",
+                "file_size": 4222448446,
+                "name": "FASTQ to FASTA on data 2",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "krona",
+                "path": "/galaxy/main/deps/krona/2.6/crs4/taxonomy_krona_chart/f11a04ed443b",
+                "script": "/galaxy/main/deps/krona/2.6/crs4/taxonomy_krona_chart/f11a04ed443b/env.sh",
+                "version": "2.6"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3026081,
+        "id": 15267931,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9413806.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "combine_inputs": "\"false\"",
+            "dbkey": "\"?\"",
+            "root_name": "\"Root\"",
+            "type_of_data": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 28714873}]}, \"type_of_data_selector\": \"text\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 36555952,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.0",
+        "tool_version": "2.6.0",
+        "traceback": null,
+        "update_time": "2017-03-11 00:24:20.323851",
+        "user_id": 101427
+    },
+    {
+        "create_time": "2016-12-10 22:44:49.782511",
+        "datasets": [
+            {
+                "dataset_id": "18112119",
+                "extension": "tabular",
+                "file_size": 7161114416,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "18112119",
+                "extension": "tabular",
+                "file_size": 7161114416,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "krona",
+                "path": "/galaxy/main/deps/krona/2.6/crs4/taxonomy_krona_chart/f11a04ed443b",
+                "script": "/galaxy/main/deps/krona/2.6/crs4/taxonomy_krona_chart/f11a04ed443b/env.sh",
+                "version": "2.6"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2913197,
+        "id": 14540585,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8723437.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "combine_inputs": "\"false\"",
+            "dbkey": "\"?\"",
+            "root_name": "\"Root\"",
+            "type_of_data": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 27543408}]}, \"type_of_data_selector\": \"text\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 34726037,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.6.0",
+        "tool_version": "2.6.0",
+        "traceback": null,
+        "update_time": "2016-12-10 22:46:53.683455",
+        "user_id": 89783
+    }
+]

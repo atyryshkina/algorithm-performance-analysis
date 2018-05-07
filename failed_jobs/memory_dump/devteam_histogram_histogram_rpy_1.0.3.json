@@ -1,0 +1,2012 @@
+[
+    {
+        "create_time": "2015-12-23 15:25:18.776269",
+        "datasets": [
+            {
+                "dataset_id": "13719787",
+                "extension": "tabular",
+                "file_size": 839689931,
+                "name": "Genome Coverage on data 2 and data 1",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2547075,
+        "id": 11318354,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5595803.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "density": "\"True\"",
+            "frequency": "\"True\"",
+            "input": "22637229",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"chr1 position\""
+        },
+        "runner_name": null,
+        "session_id": 26970824,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-12-23 15:43:16.169709",
+        "user_id": 75748
+    },
+    {
+        "create_time": "2017-10-20 00:29:33.484464",
+        "datasets": [
+            {
+                "dataset_id": "21754197",
+                "extension": "tabular",
+                "file_size": 8262048631,
+                "name": "Compute sequence length on data 7",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3293237,
+        "id": 17150591,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11208610",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31768373}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 41406712,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-10-20 00:39:06.804740",
+        "user_id": 112668
+    },
+    {
+        "create_time": "2018-02-12 14:18:36.823717",
+        "datasets": [
+            {
+                "dataset_id": "23547048",
+                "extension": "tabular",
+                "file_size": 164032874,
+                "name": "Cut on data 401",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3406563,
+        "id": 18350428,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12435093",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33808192}]}",
+            "numerical_column": "\"1\"",
+            "title": "\"MapQ histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 43857027,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:34:03.713260",
+        "user_id": 107284
+    },
+    {
+        "create_time": "2015-11-09 09:19:22.877812",
+        "datasets": [
+            {
+                "dataset_id": "13131501",
+                "extension": "tabular",
+                "file_size": 2684723686,
+                "name": "Convert on data 1965",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2328579,
+        "id": 10850905,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5105402.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"True\"",
+            "frequency": "\"False\"",
+            "input": "21923293",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 26158450,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-11-09 09:28:45.783310",
+        "user_id": 32837
+    },
+    {
+        "create_time": "2017-10-20 00:56:06.543646",
+        "datasets": [
+            {
+                "dataset_id": "21754198",
+                "extension": "tabular",
+                "file_size": 8262048631,
+                "name": "Compute sequence length on data 8",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3293237,
+        "id": 17150684,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11208744",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31768374}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 41406712,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-10-20 01:06:22.829571",
+        "user_id": 112668
+    },
+    {
+        "create_time": "2017-09-11 14:28:40.861602",
+        "datasets": [
+            {
+                "dataset_id": "21228676",
+                "extension": "tabular",
+                "file_size": 713046765,
+                "name": "parma_lengthcount",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3245901,
+        "id": 16787467,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10855781.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"false\"",
+            "frequency": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31172048}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"parma small RNA read length distribution\"",
+            "xlab": "\"read length\""
+        },
+        "runner_name": null,
+        "session_id": 40373465,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-09-11 14:36:24.363428",
+        "user_id": 47006
+    },
+    {
+        "create_time": "2018-02-12 14:15:38.115845",
+        "datasets": [
+            {
+                "dataset_id": "23547048",
+                "extension": "tabular",
+                "file_size": 164032874,
+                "name": "Cut on data 401",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3406563,
+        "id": 18350351,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12435005",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"40\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33808192}]}",
+            "numerical_column": "\"1\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 43857027,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:29:57.943436",
+        "user_id": 107284
+    },
+    {
+        "create_time": "2015-11-09 09:19:55.641609",
+        "datasets": [
+            {
+                "dataset_id": "13131502",
+                "extension": "tabular",
+                "file_size": 2350153716,
+                "name": "Convert on data 1966",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2328579,
+        "id": 10850908,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5105405.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"True\"",
+            "frequency": "\"False\"",
+            "input": "21923294",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 26158450,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-11-09 09:27:25.337827",
+        "user_id": 32837
+    },
+    {
+        "create_time": "2018-02-12 14:36:56.736838",
+        "datasets": [
+            {
+                "dataset_id": "23547048",
+                "extension": "tabular",
+                "file_size": 164032874,
+                "name": "Cut on data 401",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3406563,
+        "id": 18350678,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12435400",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33808192}]}",
+            "numerical_column": "\"1\"",
+            "title": "\"MAPQ Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 43857027,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:51:37.933557",
+        "user_id": 107284
+    },
+    {
+        "create_time": "2016-07-05 13:29:01.951528",
+        "datasets": [
+            {
+                "dataset_id": "16467374",
+                "extension": "sam",
+                "file_size": 20433955839,
+                "name": "Filter SAM on data 9",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2728952,
+        "id": 13334398,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7542007.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5468ee575ea5cb23a\"}]}",
+            "numerical_column": "\"9\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 31197171,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-07-05 13:41:03.566127",
+        "user_id": 81721
+    },
+    {
+        "create_time": "2017-12-27 11:51:49.690679",
+        "datasets": [
+            {
+                "dataset_id": "22892036",
+                "extension": "bedgraph",
+                "file_size": 9414286384,
+                "name": "Genome Coverage on data 735",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2210340,
+        "id": 17903111,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11977659",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33083328}]}",
+            "numerical_column": "\"4\"",
+            "title": "\"\"",
+            "xlab": "\"\""
+        },
+        "runner_name": null,
+        "session_id": 42786511,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-12-27 11:59:10.672297",
+        "user_id": 59804
+    },
+    {
+        "create_time": "2015-03-20 13:28:11.146032",
+        "datasets": [
+            {
+                "dataset_id": "10739997",
+                "extension": "bedgraph",
+                "file_size": 1825367720,
+                "name": "Low_halo_vs_High_Halo_salt_treat_pileup.bdg",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2243480,
+        "id": 8996086,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3255828.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "density": "\"True\"",
+            "frequency": "\"False\"",
+            "input": "18932551",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 21921901,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-03-20 13:43:56.624972",
+        "user_id": 61201
+    },
+    {
+        "create_time": "2018-02-12 14:36:57.733839",
+        "datasets": [
+            {
+                "dataset_id": "23547050",
+                "extension": "tabular",
+                "file_size": 219688043,
+                "name": "Cut on data 403",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3406563,
+        "id": 18350680,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12435425",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"50\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33808194}]}",
+            "numerical_column": "\"1\"",
+            "title": "\"MAPQ Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 43857027,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:47:50.736455",
+        "user_id": 107284
+    },
+    {
+        "create_time": "2017-06-29 11:53:02.174495",
+        "datasets": [
+            {
+                "dataset_id": "20455939",
+                "extension": "bedgraph",
+                "file_size": 1435493494,
+                "name": "Genome Coverage on data 19",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3171397,
+        "id": 16222113,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10298234.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30228320}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"Chromosomes\""
+        },
+        "runner_name": null,
+        "session_id": 38852192,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-06-29 12:14:47.674766",
+        "user_id": 107044
+    },
+    {
+        "create_time": "2016-04-06 02:32:19.743022",
+        "datasets": [
+            {
+                "dataset_id": "13764088",
+                "extension": "bedgraph",
+                "file_size": 1959802084,
+                "name": "MACS2 callpeak on data 91 and data 92 (Bedgraph Control)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2548766,
+        "id": 12350064,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6554808.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "density": "\"True\"",
+            "frequency": "\"False\"",
+            "input": "22692971",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 27395168,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-04-06 02:40:46.194683",
+        "user_id": 75839
+    },
+    {
+        "create_time": "2017-10-20 00:56:01.390138",
+        "datasets": [
+            {
+                "dataset_id": "21754197",
+                "extension": "tabular",
+                "file_size": 8262048631,
+                "name": "Compute sequence length on data 7",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3293237,
+        "id": 17150682,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11208743",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31768373}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 41406712,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-10-20 01:05:48.039347",
+        "user_id": 112668
+    },
+    {
+        "create_time": "2015-01-08 21:40:59.522774",
+        "datasets": [
+            {
+                "dataset_id": "10146670",
+                "extension": "tabular",
+                "file_size": 1228012407,
+                "name": "Compute sequence length on data 478",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 1854828,
+        "id": 8518180,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2438655.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"True\"",
+            "frequency": "\"True\"",
+            "input": "18162601",
+            "numerical_column": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"2\"}",
+            "title": "\"Histogram\"",
+            "xlab": "\"scaffold length\""
+        },
+        "runner_name": null,
+        "session_id": 20344691,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-01-08 22:00:58.741817",
+        "user_id": 35312
+    },
+    {
+        "create_time": "2016-01-21 00:16:54.212594",
+        "datasets": [
+            {
+                "dataset_id": "13993582",
+                "extension": "tabular",
+                "file_size": 2493805882,
+                "name": "Group on data 8",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2569063,
+        "id": 11566698,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5832624.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19Patch10.len\"",
+            "dbkey": "\"hg19Patch10\"",
+            "density": "\"False\"",
+            "frequency": "\"False\"",
+            "input": "22947263",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 27519316,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-01-21 00:35:41.565872",
+        "user_id": 9209
+    },
+    {
+        "create_time": "2016-04-26 14:43:26.714976",
+        "datasets": [
+            {
+                "dataset_id": "15457886",
+                "extension": "bedgraph",
+                "file_size": 5382819895,
+                "name": "MACS2 callpeak on data 26, data 30, and others (Bedgraph Treatment)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2683977,
+        "id": 12623793,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6827193.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b586abe0eb53b6cc27\"}]}",
+            "numerical_column": "\"4\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 29691069,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-04-26 14:57:00.352037",
+        "user_id": 75069
+    },
+    {
+        "create_time": "2016-07-06 08:00:50.779011",
+        "datasets": [
+            {
+                "dataset_id": "16477693",
+                "extension": "sam",
+                "file_size": 24791774346,
+                "name": "Filter SAM on data 9",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2757679,
+        "id": 13341773,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7550368.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56e341caff22fd462\"}]}",
+            "numerical_column": "\"9\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 31197171,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-07-06 08:13:24.211381",
+        "user_id": 81721
+    },
+    {
+        "create_time": "2015-01-22 09:30:07.276349",
+        "datasets": [
+            {
+                "dataset_id": "9904013",
+                "extension": "wig",
+                "file_size": 2241253716,
+                "name": "MACS on data 20 (treatment: wig)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1872171,
+        "id": 8584937,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2530915.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"True\"",
+            "frequency": "\"False\"",
+            "input": "17850282",
+            "numerical_column": "\"1\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 19882713,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-01-22 09:36:07.862642",
+        "user_id": 42226
+    },
+    {
+        "create_time": "2018-02-12 14:15:38.598133",
+        "datasets": [
+            {
+                "dataset_id": "23547050",
+                "extension": "tabular",
+                "file_size": 219688043,
+                "name": "Cut on data 403",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3406563,
+        "id": 18350353,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12435046",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"40\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 33808194}]}",
+            "numerical_column": "\"1\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 43857027,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2018-02-12 14:26:51.356592",
+        "user_id": 107284
+    },
+    {
+        "create_time": "2017-10-19 16:04:03.861844",
+        "datasets": [
+            {
+                "dataset_id": "21747321",
+                "extension": "tabular",
+                "file_size": 5911490825,
+                "name": "Compute sequence length on data 13",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3291806,
+        "id": 17146615,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11204303",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31760814}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 41009097,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-10-19 16:13:10.044021",
+        "user_id": 112630
+    },
+    {
+        "create_time": "2017-02-27 21:37:40.795237",
+        "datasets": [
+            {
+                "dataset_id": "18937106",
+                "extension": "bed",
+                "file_size": 3766925325,
+                "name": "Sort on data 26",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3005372,
+        "id": 15159568,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9311176.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28464020}]}",
+            "numerical_column": "\"6\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 36153901,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-02-27 21:52:01.528211",
+        "user_id": 43474
+    },
+    {
+        "create_time": "2017-06-29 11:53:01.853909",
+        "datasets": [
+            {
+                "dataset_id": "20455938",
+                "extension": "bedgraph",
+                "file_size": 1190514499,
+                "name": "Genome Coverage on data 18",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3171397,
+        "id": 16222112,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10298233.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30228319}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"Chromosomes\""
+        },
+        "runner_name": null,
+        "session_id": 38852192,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-06-29 12:10:29.825534",
+        "user_id": 107044
+    },
+    {
+        "create_time": "2017-09-10 22:07:29.651807",
+        "datasets": [
+            {
+                "dataset_id": "21228676",
+                "extension": "tabular",
+                "file_size": 713046765,
+                "name": "parma_lengthcount",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3245901,
+        "id": 16783351,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10851697.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"false\"",
+            "frequency": "\"true\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31172048}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"parma small RNA read length distribution\"",
+            "xlab": "\"read length\""
+        },
+        "runner_name": null,
+        "session_id": 40373465,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-09-10 22:14:14.937502",
+        "user_id": 47006
+    },
+    {
+        "create_time": "2017-06-29 20:30:48.786977",
+        "datasets": [
+            {
+                "dataset_id": "20455939",
+                "extension": "bedgraph",
+                "file_size": 1435493494,
+                "name": "Genome Coverage on data 19",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3171397,
+        "id": 16226070,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10302056.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 30228320}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 38852192,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-06-29 21:07:21.786606",
+        "user_id": 107044
+    },
+    {
+        "create_time": "2017-10-20 00:29:34.328181",
+        "datasets": [
+            {
+                "dataset_id": "21754198",
+                "extension": "tabular",
+                "file_size": 8262048631,
+                "name": "Compute sequence length on data 8",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3293237,
+        "id": 17150592,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11208611",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31768374}]}",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 41406712,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2017-10-20 00:39:10.115465",
+        "user_id": 112668
+    },
+    {
+        "create_time": "2016-07-28 10:58:54.570447",
+        "datasets": [
+            {
+                "dataset_id": "16719797",
+                "extension": "tabular",
+                "file_size": 10460605191,
+                "name": "http://www.gtexportal.org/static/datasets/gtex_analysis_v6/single_tissue_eqtl_data/all_snp_gene_associations/Breast_Mammary_Tissue_Analysis_cis-eQTLs.txt",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2778239,
+        "id": 13514401,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7729749.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b3aa2f499a8680d1\"}]}",
+            "numerical_column": "\"5\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 31361323,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-07-28 11:09:25.867242",
+        "user_id": 32945
+    },
+    {
+        "create_time": "2016-04-26 14:43:27.774127",
+        "datasets": [
+            {
+                "dataset_id": "15457887",
+                "extension": "bedgraph",
+                "file_size": 1700990657,
+                "name": "MACS2 callpeak on data 26, data 30, and others (Bedgraph Control)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2683977,
+        "id": 12623794,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6827192.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b56b60c5951d857b\"}]}",
+            "numerical_column": "\"4\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 29691069,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-04-26 14:59:26.314429",
+        "user_id": 75069
+    },
+    {
+        "create_time": "2015-10-03 05:15:06.991793",
+        "datasets": [
+            {
+                "dataset_id": "12671668",
+                "extension": "tabular",
+                "file_size": 44504807025,
+                "name": "Convert, Merge, Randomize on data 10",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2459273,
+        "id": 10494149,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4770041.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"True\"",
+            "frequency": "\"False\"",
+            "input": "21380494",
+            "numerical_column": "\"2\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 25361855,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2015-10-03 05:24:29.561784",
+        "user_id": 70029
+    },
+    {
+        "create_time": "2016-07-06 06:49:42.167878",
+        "datasets": [
+            {
+                "dataset_id": "16467374",
+                "extension": "sam",
+                "file_size": 20433955839,
+                "name": "Filter SAM on data 9",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2728952,
+        "id": 13341441,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7549992.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5468ee575ea5cb23a\"}]}",
+            "numerical_column": "\"9\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 31197171,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-07-06 07:05:38.118121",
+        "user_id": 81721
+    },
+    {
+        "create_time": "2016-12-21 17:21:46.548266",
+        "datasets": [
+            {
+                "dataset_id": "18145320",
+                "extension": "bedgraph",
+                "file_size": 5326022422,
+                "name": "MACS2 callpeak on data 6, data 5, and others (Bedgraph Treatment)",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/rpy/1.0.3/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/histogram/6ff47de059a0/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2908491,
+        "id": 14626676,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8803242.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "density": "\"true\"",
+            "frequency": "\"false\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 27580804}]}",
+            "numerical_column": "\"4\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 34472099,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-12-21 17:31:36.178154",
+        "user_id": 93923
+    },
+    {
+        "create_time": "2016-01-25 22:22:29.124529",
+        "datasets": [
+            {
+                "dataset_id": "14069076",
+                "extension": "tabular",
+                "file_size": 8452834150,
+                "name": "Group on data 48",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2569063,
+        "id": 11601154,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5865914.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "breaks": "\"0\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19Patch10.len\"",
+            "dbkey": "\"hg19Patch10\"",
+            "density": "\"False\"",
+            "frequency": "\"False\"",
+            "input": "23029764",
+            "numerical_column": "\"7\"",
+            "title": "\"Histogram\"",
+            "xlab": "\"V1\""
+        },
+        "runner_name": null,
+        "session_id": 27393077,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/histogram/histogram_rpy/1.0.3",
+        "tool_version": "1.0.3",
+        "traceback": null,
+        "update_time": "2016-01-25 22:35:17.783885",
+        "user_id": 9209
+    }
+]

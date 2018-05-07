@@ -1,0 +1,61 @@
+[
+    {
+        "create_time": "2017-11-06 18:44:56.672370",
+        "datasets": [
+            {
+                "dataset_id": "22051116",
+                "extension": "bam",
+                "file_size": 9495004112,
+                "name": "Sort on data 15",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__picard@2.7.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "picard",
+                "version": "2.7.1"
+            }
+        ],
+        "destination_id": "reserved_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=reserved --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2911650,
+        "id": 17349191,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11413319.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": 32097894}]}",
+            "max_diff_rate": "\"0.03\"",
+            "max_group_ratio": "\"500\"",
+            "min_identical_bases": "\"5\"",
+            "min_mean_quality": "\"20\"",
+            "optical_duplicate_pixel_distance": "\"100\"",
+            "read_name_regex": "\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 40570174,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_EstimateLibraryComplexity/2.7.1.0",
+        "tool_version": "2.7.1.0",
+        "traceback": null,
+        "update_time": "2017-11-06 20:21:02.239154",
+        "user_id": 5254
+    }
+]

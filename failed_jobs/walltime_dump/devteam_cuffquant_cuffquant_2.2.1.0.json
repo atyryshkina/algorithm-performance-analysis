@@ -1,0 +1,498 @@
+[
+    {
+        "create_time": "2015-05-30 13:04:48.591783",
+        "datasets": [
+            {
+                "dataset_id": "11446623",
+                "extension": "gtf",
+                "file_size": 186188733,
+                "name": "Cuffmerge on data 354, data 353, and others: merged transcripts",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "11436125",
+                "extension": "bam",
+                "file_size": 850111427,
+                "name": "Tophat on data 23: accepted_hits",
+                "param_name": "samples_0|sample"
+            },
+            {
+                "dataset_id": "11436120",
+                "extension": "bam",
+                "file_size": 896693342,
+                "name": "Tophat on data 22: accepted_hits",
+                "param_name": "samples_1|sample"
+            },
+            {
+                "dataset_id": "11436114",
+                "extension": "bam",
+                "file_size": 888293713,
+                "name": "Tophat on data 21: accepted_hits",
+                "param_name": "samples_2|sample"
+            },
+            {
+                "dataset_id": "11436109",
+                "extension": "bam",
+                "file_size": 845846082,
+                "name": "Tophat on data 20: accepted_hits",
+                "param_name": "samples_3|sample"
+            },
+            {
+                "dataset_id": "11436104",
+                "extension": "bam",
+                "file_size": 900549499,
+                "name": "Tophat on data 19: accepted_hits",
+                "param_name": "samples_4|sample"
+            },
+            {
+                "dataset_id": "11436099",
+                "extension": "bam",
+                "file_size": 863068353,
+                "name": "Tophat on data 18: accepted_hits",
+                "param_name": "samples_5|sample"
+            },
+            {
+                "dataset_id": "11436158",
+                "extension": "fasta",
+                "file_size": 99137619,
+                "name": "UCSC Main on Mouse: refGene (genome)",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2322581,
+        "id": 9566407,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3879594.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"sAdvanced\": \"No\", \"__current_case__\": 0}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": 19848974, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "gtf_input": "19862082",
+            "length_correction": "\"--no-effective-length-correction\"",
+            "multiread_correct": "\"False\"",
+            "samples": "[{\"sample\": 19848941, \"__index__\": 0}, {\"sample\": 19848936, \"__index__\": 1}, {\"sample\": 19848930, \"__index__\": 2}, {\"sample\": 19848925, \"__index__\": 3}, {\"sample\": 19848920, \"__index__\": 4}, {\"sample\": 19848915, \"__index__\": 5}]"
+        },
+        "runner_name": null,
+        "session_id": 23322822,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffquant/cuffquant/2.2.1.0",
+        "tool_version": "2.2.1.0",
+        "traceback": null,
+        "update_time": "2015-06-01 01:05:22.917520",
+        "user_id": 62967
+    },
+    {
+        "create_time": "2017-05-04 00:28:00.927132",
+        "datasets": [
+            {
+                "dataset_id": "19809071",
+                "extension": "gtf",
+                "file_size": 552390290,
+                "name": "Cuffmerge on data 7, data 8, and data 27: merged transcripts",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "19809051",
+                "extension": "bam",
+                "file_size": 123215,
+                "name": "TopHat on data 9: accepted_hits",
+                "param_name": "samples_0|sample"
+            },
+            {
+                "dataset_id": "19808861",
+                "extension": "fasta",
+                "file_size": 209173538,
+                "name": "gencode.v19.pc_transcripts.fa",
+                "param_name": "bias_correction|ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "cufflinks",
+                "path": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d",
+                "script": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d/env.sh",
+                "version": "2.2.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3097281,
+        "id": 15741574,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9853908",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"805533fa306011e7b3e9005056a51846\"",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"sAdvanced\": \"No\", \"__current_case__\": 0}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29460760}]}, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gtf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 29460980}]}",
+            "length_correction": "\"\"",
+            "multiread_correct": "\"false\"",
+            "samples": "[{\"sample\": {\"values\": [{\"src\": \"hda\", \"id\": 29460960}]}, \"__index__\": 0}]"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffquant/cuffquant/2.2.1.0",
+        "tool_version": "2.2.1.0",
+        "traceback": null,
+        "update_time": "2017-05-05 20:10:01.117704",
+        "user_id": 78468
+    },
+    {
+        "create_time": "2017-07-10 15:34:53.795618",
+        "datasets": [
+            {
+                "dataset_id": "20562790",
+                "extension": "gtf",
+                "file_size": 536580293,
+                "name": "merged.gtf",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "20446055",
+                "extension": "bam",
+                "file_size": 2038134765,
+                "name": "RNAseqPlugin_Bm.bam",
+                "param_name": "samples_0|sample"
+            },
+            {
+                "dataset_id": "19865986",
+                "extension": "fasta",
+                "file_size": 3153507220,
+                "name": "Homo_sapiens.GRCh37.75.dna.primary_assembly.fa",
+                "param_name": "bias_correction|ref_file"
+            },
+            {
+                "dataset_id": "19855540",
+                "extension": "gtf",
+                "file_size": 452463,
+                "name": "rRNA_mask.gtf",
+                "param_name": "mask_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "cufflinks",
+                "path": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d",
+                "script": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d/env.sh",
+                "version": "2.2.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3094820,
+        "id": 16299143,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10367519",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"library_type\": \"fr-secondstrand\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"__current_case__\": 1, \"mask_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29513096}]}}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29525470}]}, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gtf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 30370439}]}",
+            "length_correction": "\"\"",
+            "multiread_correct": "\"false\"",
+            "samples": "[{\"sample\": {\"values\": [{\"src\": \"hda\", \"id\": 30195920}]}, \"__index__\": 0}]"
+        },
+        "runner_name": null,
+        "session_id": 39212832,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffquant/cuffquant/2.2.1.0",
+        "tool_version": "2.2.1.0",
+        "traceback": null,
+        "update_time": "2017-07-12 03:41:48.432812",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-07-10 15:35:15.008146",
+        "datasets": [
+            {
+                "dataset_id": "20562790",
+                "extension": "gtf",
+                "file_size": 536580293,
+                "name": "merged.gtf",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "20446054",
+                "extension": "bam",
+                "file_size": 2646895233,
+                "name": "RNAseqPlugin_C4m.bam",
+                "param_name": "samples_0|sample"
+            },
+            {
+                "dataset_id": "19865986",
+                "extension": "fasta",
+                "file_size": 3153507220,
+                "name": "Homo_sapiens.GRCh37.75.dna.primary_assembly.fa",
+                "param_name": "bias_correction|ref_file"
+            },
+            {
+                "dataset_id": "19855540",
+                "extension": "gtf",
+                "file_size": 452463,
+                "name": "rRNA_mask.gtf",
+                "param_name": "mask_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "cufflinks",
+                "path": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d",
+                "script": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d/env.sh",
+                "version": "2.2.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3094820,
+        "id": 16299145,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10383464",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"library_type\": \"fr-secondstrand\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"__current_case__\": 1, \"mask_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29513096}]}}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29525470}]}, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gtf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 30370439}]}",
+            "length_correction": "\"\"",
+            "multiread_correct": "\"false\"",
+            "samples": "[{\"sample\": {\"values\": [{\"src\": \"hda\", \"id\": 30195919}]}, \"__index__\": 0}]"
+        },
+        "runner_name": null,
+        "session_id": 39212832,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffquant/cuffquant/2.2.1.0",
+        "tool_version": "2.2.1.0",
+        "traceback": null,
+        "update_time": "2017-07-13 15:43:34.080330",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-07-10 15:35:33.168409",
+        "datasets": [
+            {
+                "dataset_id": "20562790",
+                "extension": "gtf",
+                "file_size": 536580293,
+                "name": "merged.gtf",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "20445654",
+                "extension": "bam",
+                "file_size": 1856667971,
+                "name": "IonXpressRNA_006_R_2017_05_23_18_33_35_user_genetica2-91-RNASeq-WHS-23-05-2017_Auto_user_genetica2-91-RNASeq-WHS-23-05-2017_178.STARBowtie2.bam",
+                "param_name": "samples_0|sample"
+            },
+            {
+                "dataset_id": "19865986",
+                "extension": "fasta",
+                "file_size": 3153507220,
+                "name": "Homo_sapiens.GRCh37.75.dna.primary_assembly.fa",
+                "param_name": "bias_correction|ref_file"
+            },
+            {
+                "dataset_id": "19855540",
+                "extension": "gtf",
+                "file_size": 452463,
+                "name": "rRNA_mask.gtf",
+                "param_name": "mask_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "cufflinks",
+                "path": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d",
+                "script": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d/env.sh",
+                "version": "2.2.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3094820,
+        "id": 16299149,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10399912",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"library_type\": \"fr-secondstrand\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"__current_case__\": 1, \"mask_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29513096}]}}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29525470}]}, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gtf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 30370439}]}",
+            "length_correction": "\"\"",
+            "multiread_correct": "\"false\"",
+            "samples": "[{\"sample\": {\"values\": [{\"src\": \"hda\", \"id\": 30195467}]}, \"__index__\": 0}]"
+        },
+        "runner_name": null,
+        "session_id": 39212832,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffquant/cuffquant/2.2.1.0",
+        "tool_version": "2.2.1.0",
+        "traceback": null,
+        "update_time": "2017-07-15 03:44:08.049822",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-07-10 15:36:05.659053",
+        "datasets": [
+            {
+                "dataset_id": "20562790",
+                "extension": "gtf",
+                "file_size": 536580293,
+                "name": "merged.gtf",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "20445635",
+                "extension": "bam",
+                "file_size": 1612456467,
+                "name": "IonXpressRNA_002_R_2017_05_23_18_33_35_user_genetica2-91-RNASeq-WHS-23-05-2017_Auto_user_genetica2-91-RNASeq-WHS-23-05-2017_178.STARBowtie2.bam",
+                "param_name": "samples_0|sample"
+            },
+            {
+                "dataset_id": "19865986",
+                "extension": "fasta",
+                "file_size": 3153507220,
+                "name": "Homo_sapiens.GRCh37.75.dna.primary_assembly.fa",
+                "param_name": "bias_correction|ref_file"
+            },
+            {
+                "dataset_id": "19855540",
+                "extension": "gtf",
+                "file_size": 452463,
+                "name": "rRNA_mask.gtf",
+                "param_name": "mask_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "cufflinks",
+                "path": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d",
+                "script": "/galaxy/main/deps/cufflinks/2.2.1/devteam/cuffquant/5d8b9dcaf17d/env.sh",
+                "version": "2.2.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3094820,
+        "id": 16299153,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10416094",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"library_type\": \"fr-secondstrand\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"__current_case__\": 1, \"mask_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29513096}]}}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29525470}]}, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gtf_input": "{\"values\": [{\"src\": \"hda\", \"id\": 30370439}]}",
+            "length_correction": "\"\"",
+            "multiread_correct": "\"false\"",
+            "samples": "[{\"sample\": {\"values\": [{\"src\": \"hda\", \"id\": 30195448}]}, \"__index__\": 0}]"
+        },
+        "runner_name": null,
+        "session_id": 39212832,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffquant/cuffquant/2.2.1.0",
+        "tool_version": "2.2.1.0",
+        "traceback": null,
+        "update_time": "2017-07-16 21:20:49.766273",
+        "user_id": 105260
+    }
+]

@@ -1,0 +1,1722 @@
+[
+    {
+        "create_time": "2015-11-16 11:21:13.308440",
+        "datasets": [
+            {
+                "dataset_id": "13210460",
+                "extension": "bam",
+                "file_size": 4336805503,
+                "name": "Bowtie2 on data 25 and data 24: aligned reads (sorted BAM)",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "13209843",
+                "extension": "fasta",
+                "file_size": 4517760859,
+                "name": "FASTQ to FASTA on data 14",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2505651,
+        "id": 10913615,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5167889.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"21bb33a08c5411e5b138005056a51846\"",
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 22018213, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 22018897}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 26296547,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2015-11-16 14:16:22.058176",
+        "user_id": 73350
+    },
+    {
+        "create_time": "2016-04-10 05:30:23.821854",
+        "datasets": [
+            {
+                "dataset_id": "15147956",
+                "extension": "bam",
+                "file_size": 1301460,
+                "name": "MarkDuplicates on data 197: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2632333,
+        "id": 12405874,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606298.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24220154}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 05:59:09.619136",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-05-06 17:55:43.722936",
+        "datasets": [
+            {
+                "dataset_id": "15698301",
+                "extension": "bam",
+                "file_size": 152086,
+                "name": "MarkDuplicates on data 26: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2697001,
+        "id": 12808117,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7008845.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5394d21d6ac8e43f0\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5678ba703908d5678\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-05-06 18:11:07.461024",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-20 16:58:38.717277",
+        "datasets": [
+            {
+                "dataset_id": "15334989",
+                "extension": "bam",
+                "file_size": 2522,
+                "name": "MarkDuplicates on data 61: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2674701,
+        "id": 12540031,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6726333.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56277923ad70db1b4\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 18:44:40.854374",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2015-09-07 21:15:34.693670",
+        "datasets": [
+            {
+                "dataset_id": "12371982",
+                "extension": "bam",
+                "file_size": 2567601,
+                "name": "Table Recalibration on data 56 and data 58 (BAM)",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "3988903",
+                "extension": "vcf",
+                "file_size": 7420545566,
+                "name": "dbsnp_135.b37.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "3988903",
+                "extension": "vcf",
+                "file_size": 7420545566,
+                "name": "dbsnp_135.b37.vcf",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2420576,
+        "id": 10273971,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4560141.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"max_alternate_alleles\": \"5\", \"doContextDependentGapPenalties\": \"False\", \"indelGapOpenPenalty\": \"45.0\", \"indelGapContinuationPenalty\": \"10.0\", \"min_base_quality_score\": \"17\", \"max_deletion_fraction\": \"0.05\", \"group\": [\"Standard\"], \"p_nonref_model\": \"EXACT\", \"output_mode\": \"EMIT_VARIANTS_ONLY\", \"analysis_param_type_selector\": \"advanced\", \"multiallelic\": \"False\", \"pcr_error_rate\": \"0.0001\", \"genotyping_mode_type\": {\"genotyping_mode\": \"DISCOVERY\", \"__current_case__\": 0}, \"min_indel_count_for_genotyping\": \"5\", \"annotation\": [\"FisherStrand\", \"HaplotypeScore\", \"HomopolymerRun\", \"MappingQualityRankSumTest\", \"QualByDepth\", \"ReadPosRankSumTest\"], \"additional_annotations\": [], \"exclude_annotations\": null, \"indel_heterozygosity\": \"0.000125\", \"heterozygosity\": \"0.001\", \"__current_case__\": 1, \"indelHaplotypeSize\": \"80\", \"compute_SLOD\": \"False\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21002224, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 21018055}], \"__current_case__\": 0}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"__current_case__\": 0, \"input_rod\": 21002224}}]",
+            "standard_min_confidence_threshold_for_calling": "\"20.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"20.0\""
+        },
+        "runner_name": null,
+        "session_id": 25026203,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2015-09-08 04:32:38.927439",
+        "user_id": 65923
+    },
+    {
+        "create_time": "2016-04-10 05:30:35.016289",
+        "datasets": [
+            {
+                "dataset_id": "15158533",
+                "extension": "bam",
+                "file_size": 353786504,
+                "name": "markDuplicates_on_data_288.bam",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632333,
+        "id": 12405886,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606589.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24231846}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 07:47:33.895104",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-20 16:58:37.565169",
+        "datasets": [
+            {
+                "dataset_id": "15334987",
+                "extension": "bam",
+                "file_size": 2451,
+                "name": "MarkDuplicates on data 60: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2674701,
+        "id": 12540030,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6727125.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50697005d786a0cc9\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 20:01:36.517797",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:24.824785",
+        "datasets": [
+            {
+                "dataset_id": "15147958",
+                "extension": "bam",
+                "file_size": 986283,
+                "name": "MarkDuplicates on data 198: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2632333,
+        "id": 12405875,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606536.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24220156}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 07:20:19.519120",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:28.435595",
+        "datasets": [
+            {
+                "dataset_id": "15152571",
+                "extension": "bam",
+                "file_size": 182997506,
+                "name": "MarkDuplicates on data 193: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2632333,
+        "id": 12405878,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606638.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24225020}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 08:14:59.757023",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-20 16:58:25.257157",
+        "datasets": [
+            {
+                "dataset_id": "15311337",
+                "extension": "bam",
+                "file_size": 1735,
+                "name": "MarkDuplicates on data 64: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2674701,
+        "id": 12540023,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6725933.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fe62d7e4dde9e4cc\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 17:50:47.233790",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2015-11-16 14:23:07.645074",
+        "datasets": [
+            {
+                "dataset_id": "13210460",
+                "extension": "bam",
+                "file_size": 4336805503,
+                "name": "Bowtie2 on data 25 and data 24: aligned reads (sorted BAM)",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "13209843",
+                "extension": "fasta",
+                "file_size": 4517760859,
+                "name": "FASTQ to FASTA on data 14",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2505651,
+        "id": 10914909,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5168027.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"SNP\"",
+            "reference_source": "{\"ref_file\": 22018213, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 22018897}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 26242716,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2015-11-16 14:32:14.576302",
+        "user_id": 73350
+    },
+    {
+        "create_time": "2016-04-20 16:58:27.297532",
+        "datasets": [
+            {
+                "dataset_id": "15311339",
+                "extension": "bam",
+                "file_size": 2387,
+                "name": "MarkDuplicates on data 65: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2674701,
+        "id": 12540024,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6725725.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5273d64fb335b0bcf\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 17:33:23.975190",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2014-12-08 16:05:25.923689",
+        "datasets": [
+            {
+                "dataset_id": "6521161",
+                "extension": "fasta",
+                "file_size": 1991431074,
+                "name": "FASTQ to FASTA on data 76",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "9918474",
+                "extension": "bam",
+                "file_size": 626714977,
+                "name": "Map with Bowtie for Illumina on data 12: mapped reads",
+                "param_name": "input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_single_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 1503522,
+        "id": 8372782,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2264407.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 11266845, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 17869009}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 19956569,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2014-12-08 16:19:01.129955",
+        "user_id": 18528
+    },
+    {
+        "create_time": "2016-04-10 05:30:32.971806",
+        "datasets": [
+            {
+                "dataset_id": "15164317",
+                "extension": "bam",
+                "file_size": 982066979,
+                "name": "Map with Bowtie for Illumina on data 284: mapped reads",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632333,
+        "id": 12405883,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606565.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24238070}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 07:32:55.803899",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:34.392020",
+        "datasets": [
+            {
+                "dataset_id": "15164321",
+                "extension": "bam",
+                "file_size": 928847298,
+                "name": "Map with Bowtie for Illumina on data 285: mapped reads",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2632333,
+        "id": 12405885,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606327.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24238074}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 06:11:47.046462",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:21.392937",
+        "datasets": [
+            {
+                "dataset_id": "15147952",
+                "extension": "bam",
+                "file_size": 110858482,
+                "name": "MarkDuplicates on data 195: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632333,
+        "id": 12405872,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606404.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24220150}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 06:38:08.674939",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:29.373703",
+        "datasets": [
+            {
+                "dataset_id": "15152722",
+                "extension": "bam",
+                "file_size": 202550678,
+                "name": "MarkDuplicates on data 192: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2632333,
+        "id": 12405879,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606679.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24225175}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 08:27:41.802555",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:25.714434",
+        "datasets": [
+            {
+                "dataset_id": "15147960",
+                "extension": "bam",
+                "file_size": 1743289,
+                "name": "MarkDuplicates on data 199: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2632333,
+        "id": 12405876,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606621.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24220158}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 08:01:58.338247",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:30.145217",
+        "datasets": [
+            {
+                "dataset_id": "15152783",
+                "extension": "bam",
+                "file_size": 178775174,
+                "name": "MarkDuplicates on data 191: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632333,
+        "id": 12405880,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606490.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24225236}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 07:07:14.278890",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:37.591729",
+        "datasets": [
+            {
+                "dataset_id": "15158603",
+                "extension": "bam",
+                "file_size": 316415243,
+                "name": "markDuplicates_on_data_289.bam",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2632333,
+        "id": 12405887,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606711.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24231932}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 08:40:30.968162",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2015-09-05 18:16:17.654879",
+        "datasets": [
+            {
+                "dataset_id": "12371982",
+                "extension": "bam",
+                "file_size": 2567601,
+                "name": "Table Recalibration on data 56 and data 58 (BAM)",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "3988903",
+                "extension": "vcf",
+                "file_size": 7420545566,
+                "name": "dbsnp_135.b37.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "3988903",
+                "extension": "vcf",
+                "file_size": 7420545566,
+                "name": "dbsnp_135.b37.vcf",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2420576,
+        "id": 10265178,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4552068.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"max_alternate_alleles\": \"5\", \"doContextDependentGapPenalties\": \"False\", \"indelGapOpenPenalty\": \"45.0\", \"indelGapContinuationPenalty\": \"10.0\", \"min_base_quality_score\": \"17\", \"max_deletion_fraction\": \"0.05\", \"group\": [\"Standard\"], \"p_nonref_model\": \"EXACT\", \"output_mode\": \"EMIT_VARIANTS_ONLY\", \"analysis_param_type_selector\": \"advanced\", \"multiallelic\": \"False\", \"pcr_error_rate\": \"0.0001\", \"genotyping_mode_type\": {\"genotyping_mode\": \"DISCOVERY\", \"__current_case__\": 0}, \"min_indel_count_for_genotyping\": \"5\", \"annotation\": [\"FisherStrand\", \"HaplotypeScore\", \"HomopolymerRun\", \"MappingQualityRankSumTest\", \"QualByDepth\", \"ReadPosRankSumTest\"], \"additional_annotations\": [], \"exclude_annotations\": null, \"indel_heterozygosity\": \"0.000125\", \"heterozygosity\": \"0.001\", \"__current_case__\": 1, \"indelHaplotypeSize\": \"80\", \"compute_SLOD\": \"False\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21002224, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 21018055}], \"__current_case__\": 0}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"__current_case__\": 0, \"input_rod\": 21002224}}]",
+            "standard_min_confidence_threshold_for_calling": "\"20.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"20.0\""
+        },
+        "runner_name": null,
+        "session_id": 25026203,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2015-09-06 00:44:31.169255",
+        "user_id": 65923
+    },
+    {
+        "create_time": "2016-04-20 16:58:42.382827",
+        "datasets": [
+            {
+                "dataset_id": "15335000",
+                "extension": "bam",
+                "file_size": 2558,
+                "name": "MarkDuplicates on data 87: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2674701,
+        "id": 12540034,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6726761.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cbbee98b871be416\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 19:28:07.296926",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:27.275250",
+        "datasets": [
+            {
+                "dataset_id": "15152565",
+                "extension": "bam",
+                "file_size": 198244808,
+                "name": "MarkDuplicates on data 190: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2632333,
+        "id": 12405877,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606377.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24225014}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 06:24:40.391677",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:23.098011",
+        "datasets": [
+            {
+                "dataset_id": "15147954",
+                "extension": "bam",
+                "file_size": 1320444,
+                "name": "MarkDuplicates on data 196: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632333,
+        "id": 12405873,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606448.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24220152}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 06:54:06.789246",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-20 16:58:33.778720",
+        "datasets": [
+            {
+                "dataset_id": "15313910",
+                "extension": "bam",
+                "file_size": 2012,
+                "name": "Map with BWA on data 41 and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2674701,
+        "id": 12540028,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6726567.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50415688c91ba0574\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 19:05:44.209304",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-05-06 17:55:42.915575",
+        "datasets": [
+            {
+                "dataset_id": "15698299",
+                "extension": "bam",
+                "file_size": 155030,
+                "name": "MarkDuplicates on data 25: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2697001,
+        "id": 12808115,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7008852.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5394d21d6ac8e43f0\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57b2dd51c52e96449\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-05-06 18:12:15.353922",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-20 16:58:35.478375",
+        "datasets": [
+            {
+                "dataset_id": "15334985",
+                "extension": "bam",
+                "file_size": 2442,
+                "name": "MarkDuplicates on data 58: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2674701,
+        "id": 12540029,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6726949.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f4f148ddaccafc85\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 19:46:22.254465",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-10 05:30:20.641789",
+        "datasets": [
+            {
+                "dataset_id": "15147950",
+                "extension": "bam",
+                "file_size": 124141593,
+                "name": "MarkDuplicates on data 194: MarkDuplicates BAM output",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15164017",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2632333,
+        "id": 12405871,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6606276.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 24237742, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24220148}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-10 05:46:21.858494",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-05-06 17:55:44.576393",
+        "datasets": [
+            {
+                "dataset_id": "15698304",
+                "extension": "bam",
+                "file_size": 156529,
+                "name": "MarkDuplicates on data 27: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2697001,
+        "id": 12808120,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7009051.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5394d21d6ac8e43f0\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56b9e3475bab021eb\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-05-06 18:27:27.280754",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-05-06 17:55:45.268608",
+        "datasets": [
+            {
+                "dataset_id": "15698306",
+                "extension": "bam",
+                "file_size": 143543,
+                "name": "MarkDuplicates on data 28: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2697001,
+        "id": 12808122,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7009032.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5394d21d6ac8e43f0\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9dfdc532bd7501a\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-05-06 18:24:49.752041",
+        "user_id": 80547
+    },
+    {
+        "create_time": "2016-04-20 16:58:31.501676",
+        "datasets": [
+            {
+                "dataset_id": "15311349",
+                "extension": "bam",
+                "file_size": 1735,
+                "name": "MarkDuplicates on data 70: MarkDuplicates BAM output",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "15345073",
+                "extension": "fasta",
+                "file_size": 4646373244,
+                "name": "est.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2674701,
+        "id": 12540027,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6726110.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "genotype_likelihoods_model": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9739f9f73c441d7\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57c2d3e87739f121f\"}]}}], \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "standard_min_confidence_threshold_for_calling": "\"30.0\"",
+            "standard_min_confidence_threshold_for_emitting": "\"30.0\""
+        },
+        "runner_name": null,
+        "session_id": 28992008,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/unified_genotyper/gatk_unified_genotyper/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-04-20 18:19:25.813482",
+        "user_id": 80547
+    }
+]

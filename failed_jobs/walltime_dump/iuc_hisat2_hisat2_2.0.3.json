@@ -1,0 +1,135 @@
+[
+    {
+        "create_time": "2016-10-13 10:11:45.383980",
+        "datasets": [
+            {
+                "dataset_id": "17482965",
+                "extension": "fastqsanger",
+                "file_size": 14176744276,
+                "name": "Trimmomatic on FASTQ Groomer on data 1 (R1 paired)",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "17482966",
+                "extension": "fastqsanger",
+                "file_size": 14176744276,
+                "name": "Trimmomatic on FASTQ Groomer on data 1 (R2 paired)",
+                "param_name": "input_format|reads_r"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2817529,
+        "id": 14071856,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8288936",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/dm6.len\"",
+            "dbkey": "\"dm6\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fcb5799aca86f548\"}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b537063d78a5f3c9ed\"}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"dm6\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 32860873,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2016-10-14 22:28:38.481189",
+        "user_id": 89710
+    },
+    {
+        "create_time": "2016-11-29 07:31:59.546386",
+        "datasets": [
+            {
+                "dataset_id": "18008208",
+                "extension": "fastq",
+                "file_size": 14131274253,
+                "name": "BN2_375_1.fq",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "18008209",
+                "extension": "fastq",
+                "file_size": 14131274253,
+                "name": "BN2_375_2.fq",
+                "param_name": "input_format|reads_r"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "hisat",
+                "path": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/hisat/2.0.3/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "2.0.3"
+            },
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab",
+                "script": "/galaxy/main/deps/samtools/1.2/iuc/hisat2/2d449a1bb5ab/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2910357,
+        "id": 14441881,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8639433.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 27426602}]}, \"paired_end_options\": {\"paired_end_options_selector\": \"advanced\", \"skip_reverse\": \"false\", \"no_mixed\": \"false\", \"__current_case__\": 1, \"no_discordant\": \"false\"}, \"__current_case__\": 1, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 27426601}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"5\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"mm10\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34501458,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.3",
+        "tool_version": "2.0.3",
+        "traceback": null,
+        "update_time": "2016-11-29 08:04:15.279542",
+        "user_id": 48215
+    }
+]

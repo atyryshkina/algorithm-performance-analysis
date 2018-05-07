@@ -1,0 +1,897 @@
+[
+    {
+        "create_time": "2017-12-13 21:24:21.163727",
+        "datasets": [
+            {
+                "dataset_id": "22747376",
+                "extension": "fastq.gz",
+                "file_size": 348246084,
+                "name": "CD34-1-_S1_L001_R1_001.fastq.gz",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "22747422",
+                "extension": "fastq.gz",
+                "file_size": 340649595,
+                "name": "CD34-1-_S1_L002_R2_001.fastq.gz",
+                "param_name": "input_format|paired|reverse"
+            },
+            {
+                "dataset_id": "20287317",
+                "extension": "gtf",
+                "file_size": 1249402843,
+                "name": "gencode.v24.annotation.gtf",
+                "param_name": "known_splice_gtf"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3364264,
+        "id": 17800902,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11870337",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 32905801}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 32905990}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"10\"",
+            "max_seeds": "\"10\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"true\", \"no_discordant\": \"false\", \"maxins\": \"500\", \"overlap\": \"true\", \"minins\": \"0\", \"contain\": \"true\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"false\"}",
+            "reference_genome": "{\"index\": \"hg38\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"true\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"\", \"__current_case__\": 1}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"12\", \"known_splice_gtf\": {\"values\": [{\"src\": \"hda\", \"id\": 32915294}]}, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"20\", \"function_type\": \"G\", \"rna_strandness\": \"R\", \"__current_case__\": 1, \"tma\": \"--dta\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 42638046,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-12-15 09:24:52.022413",
+        "user_id": 48306
+    },
+    {
+        "create_time": "2017-08-28 21:33:10.546118",
+        "datasets": [
+            {
+                "dataset_id": "20893186",
+                "extension": "fastqsanger",
+                "file_size": 3987271513,
+                "name": "266-4 groomer",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "20915966",
+                "extension": "fasta",
+                "file_size": 3161924569,
+                "name": "genome.fa",
+                "param_name": "history_item"
+            },
+            {
+                "dataset_id": "21088984",
+                "extension": "gtf",
+                "file_size": 151467494,
+                "name": "genes.gtf",
+                "param_name": "known_splice_gtf"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3215370,
+        "id": 16677211,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10749377.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg18.len\"",
+            "dbkey": "\"hg18\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 30803850}]}, \"__current_case__\": 1, \"paired_selector\": \"single\", \"unaligned_file\": \"false\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 30827751}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"--no-spliced-alignment\", \"maxins\": \"500\", \"minins\": \"0\", \"__current_case__\": 0}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"10000000\", \"known_splice_gtf\": {\"values\": [{\"src\": \"hda\", \"id\": 31020482}]}, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"20\", \"function_type\": \"G\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 40116301,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-08-28 22:03:48.645113",
+        "user_id": 109889
+    },
+    {
+        "create_time": "2018-03-05 03:54:07.372450",
+        "datasets": [
+            {
+                "dataset_id": "23904377",
+                "extension": "fastq.gz",
+                "file_size": 4790829440,
+                "name": "IWT1_S9_R1_001.fastq.gz",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "23904378",
+                "extension": "fastq.gz",
+                "file_size": 5323637686,
+                "name": "IWT1_S9_R2_001.fastq.gz",
+                "param_name": "input_format|paired|reverse"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3244695,
+        "id": 18604804,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12700186",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"d8a4eef2202811e8853d005056ba2773\"",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"true\", \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 34207784}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 34207785}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"trim_three\": \"60\", \"skip\": \"0\", \"input_options_selector\": \"advanced\", \"trim_five\": \"11\", \"__current_case__\": 1, \"stop_after\": \"0\"}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"false\", \"no_discordant\": \"false\", \"maxins\": \"500\", \"overlap\": \"false\", \"minins\": \"0\", \"contain\": \"false\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"false\"}",
+            "reference_genome": "{\"index\": \"hg38\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"2\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"3\", \"read_open_penalty\": \"3\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"1\", \"max_mismatch\": \"5\", \"function_type\": \"L\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"1\"}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"--no-spliced-alignment\", \"maxins\": \"500\", \"minins\": \"0\", \"__current_case__\": 0}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"0\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"10\", \"function_type\": \"G\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2018-03-06 15:54:35.737113",
+        "user_id": 39773
+    },
+    {
+        "create_time": "2018-03-05 03:40:08.928882",
+        "datasets": [
+            {
+                "dataset_id": "23904377",
+                "extension": "fastq.gz",
+                "file_size": 4790829440,
+                "name": "IWT1_S9_R1_001.fastq.gz",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "23904378",
+                "extension": "fastq.gz",
+                "file_size": 5323637686,
+                "name": "IWT1_S9_R2_001.fastq.gz",
+                "param_name": "input_format|paired|reverse"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3244695,
+        "id": 18604765,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12700139",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"e552723e202611e88bfb005056ba55fb\"",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"true\", \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 34207784}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 34207785}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"trim_three\": \"60\", \"skip\": \"0\", \"input_options_selector\": \"advanced\", \"trim_five\": \"11\", \"__current_case__\": 1, \"stop_after\": \"0\"}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"false\", \"no_discordant\": \"false\", \"maxins\": \"500\", \"overlap\": \"false\", \"minins\": \"0\", \"contain\": \"false\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"false\"}",
+            "reference_genome": "{\"index\": \"hg38\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"1\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"2\", \"read_open_penalty\": \"2\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"1\", \"max_mismatch\": \"3\", \"function_type\": \"L\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"1\"}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"--no-spliced-alignment\", \"maxins\": \"500\", \"minins\": \"0\", \"__current_case__\": 0}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"0\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"1\", \"function_type\": \"G\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2018-03-06 15:40:36.293607",
+        "user_id": 39773
+    },
+    {
+        "create_time": "2018-01-29 17:33:41.289081",
+        "datasets": [
+            {
+                "dataset_id": "23312958",
+                "extension": "fastqsanger",
+                "file_size": 7394828811,
+                "name": "SRR5724994 (fastq-dump)",
+                "param_name": "input_format|reads"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3383216,
+        "id": 18191108,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12271980",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 33550508}]}, \"__current_case__\": 1, \"paired_selector\": \"single\", \"unaligned_file\": \"false\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"hg38\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43008390,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2018-01-31 05:45:52.917802",
+        "user_id": 89476
+    },
+    {
+        "create_time": "2017-11-03 18:41:45.313677",
+        "datasets": [
+            {
+                "dataset_id": "21763217",
+                "extension": "fastqsanger.gz",
+                "file_size": 4422513251,
+                "name": "INTERLEAVEDREADS.ECR.FQ.paired.A.fastq.gz",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "21763218",
+                "extension": "fastqsanger.gz",
+                "file_size": 4868173271,
+                "name": "INTERLEAVEDREADS.ECR.FQ.paired.B.fastq.gz",
+                "param_name": "input_format|paired|reverse"
+            },
+            {
+                "dataset_id": "21888727",
+                "extension": "fasta",
+                "file_size": 410641523,
+                "name": "primary.polished.fasta",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3306166,
+        "id": 17321667,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11382368",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 31992852}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 31992851}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"false\", \"no_discordant\": \"true\", \"maxins\": \"500\", \"overlap\": \"true\", \"minins\": \"0\", \"contain\": \"true\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"true\"}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 31992849}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"2\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"5\", \"read_open_penalty\": \"5\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"3\", \"max_mismatch\": \"6\", \"function_type\": \"C\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"3\"}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"\", \"__current_case__\": 1}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"12\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"20\", \"function_type\": \"G\", \"rna_strandness\": \"R\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 41321373,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-11-05 08:12:54.140985",
+        "user_id": 81513
+    },
+    {
+        "create_time": "2017-11-03 18:23:39.108503",
+        "datasets": [
+            {
+                "dataset_id": "21763217",
+                "extension": "fastqsanger.gz",
+                "file_size": 4422513251,
+                "name": "INTERLEAVEDREADS.ECR.FQ.paired.A.fastq.gz",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "21763218",
+                "extension": "fastqsanger.gz",
+                "file_size": 4868173271,
+                "name": "INTERLEAVEDREADS.ECR.FQ.paired.B.fastq.gz",
+                "param_name": "input_format|paired|reverse"
+            },
+            {
+                "dataset_id": "21888727",
+                "extension": "fasta",
+                "file_size": 410641523,
+                "name": "primary.polished.fasta",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3306166,
+        "id": 17321187,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11381137",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"paired_end_options\": {\"paired_end_options_selector\": \"advanced\", \"skip_reverse\": \"false\", \"no_mixed\": \"true\", \"__current_case__\": 1, \"no_discordant\": \"true\"}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 31992852}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 31992851}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"false\", \"no_discordant\": \"true\", \"maxins\": \"500\", \"overlap\": \"true\", \"minins\": \"0\", \"contain\": \"true\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"true\"}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 31992849}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"2\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"5\", \"read_open_penalty\": \"5\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"3\", \"max_mismatch\": \"6\", \"function_type\": \"C\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"3\"}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"\", \"__current_case__\": 1}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"12\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"20\", \"function_type\": \"G\", \"rna_strandness\": \"R\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 41321373,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-11-05 06:43:53.877564",
+        "user_id": 81513
+    },
+    {
+        "create_time": "2017-11-03 22:17:15.170412",
+        "datasets": [
+            {
+                "dataset_id": "21763217",
+                "extension": "fastqsanger.gz",
+                "file_size": 4422513251,
+                "name": "INTERLEAVEDREADS.ECR.FQ.paired.A.fastq.gz",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "21763218",
+                "extension": "fastqsanger.gz",
+                "file_size": 4868173271,
+                "name": "INTERLEAVEDREADS.ECR.FQ.paired.B.fastq.gz",
+                "param_name": "input_format|paired|reverse"
+            },
+            {
+                "dataset_id": "21888727",
+                "extension": "fasta",
+                "file_size": 410641523,
+                "name": "primary.polished.fasta",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3306166,
+        "id": 17323452,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11395744",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"paired_end_options\": {\"paired_end_options_selector\": \"advanced\", \"skip_reverse\": \"false\", \"no_mixed\": \"true\", \"__current_case__\": 1, \"no_discordant\": \"true\"}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 31992852}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 31992851}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"__current_case__\": 1, \"dovetail\": \"false\", \"no_discordant\": \"true\", \"maxins\": \"100\", \"overlap\": \"true\", \"minins\": \"0\", \"contain\": \"true\", \"paired_options_selector\": \"advanced\", \"no_mixed\": \"true\"}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 31992849}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"2\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"5\", \"read_open_penalty\": \"5\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"3\", \"max_mismatch\": \"6\", \"function_type\": \"C\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"3\"}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"\", \"__current_case__\": 1}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"12\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"20\", \"function_type\": \"G\", \"rna_strandness\": \"R\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"500000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 41321373,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-11-06 18:44:31.870555",
+        "user_id": 81513
+    },
+    {
+        "create_time": "2017-11-16 00:19:40.773374",
+        "datasets": [
+            {
+                "dataset_id": "22226010",
+                "extension": "fastqsanger.gz",
+                "file_size": 1170403486,
+                "name": "SRR3325327 (fastq-dump)",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "21872107",
+                "extension": "fasta",
+                "file_size": 121662600,
+                "name": "Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa",
+                "param_name": "history_item"
+            },
+            {
+                "dataset_id": "22223149",
+                "extension": "gtf",
+                "file_size": 76462179,
+                "name": "Araport11_GFF3_genes_transposons.201606.gtf",
+                "param_name": "known_splice_gtf"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3282490,
+        "id": 17476344,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11533516",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"coefficient\": \"0.15\", \"constant_term\": \"0.0\", \"alignment_options_selector\": \"advanced\", \"skip_reverse\": \"false\", \"ignore_quals\": \"false\", \"function_type\": \"L\", \"__current_case__\": 1, \"skip_forward\": \"false\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"true\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 32299912}]}, \"__current_case__\": 1, \"paired_selector\": \"single\", \"unaligned_file\": \"true\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"trim_three\": \"0\", \"skip\": \"0\", \"input_options_selector\": \"advanced\", \"trim_five\": \"0\", \"__current_case__\": 1, \"stop_after\": \"0\"}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 31896029}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"2\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"5\", \"read_open_penalty\": \"5\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"3\", \"max_mismatch\": \"6\", \"function_type\": \"L\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"3\"}",
+            "secondary": "\"true\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"--no-spliced-alignment\", \"maxins\": \"500\", \"minins\": \"0\", \"__current_case__\": 0}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"12\", \"known_splice_gtf\": {\"values\": [{\"src\": \"hda\", \"id\": 32296782}]}, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"5\", \"function_type\": \"G\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"6000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 41203124,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-11-17 13:57:41.247332",
+        "user_id": 113329
+    },
+    {
+        "create_time": "2017-11-20 09:59:42.342656",
+        "datasets": [
+            {
+                "dataset_id": "22325322",
+                "extension": "fastqsanger.gz",
+                "file_size": 118777736,
+                "name": "BL2cp.cutadapt.fq.gz",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "22325600",
+                "extension": "fasta",
+                "file_size": 194966,
+                "name": "mirbase21.mature.hsa.fa",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3140599,
+        "id": 17515991,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11575823",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"coefficient\": \"0.15\", \"constant_term\": \"0.0\", \"alignment_options_selector\": \"advanced\", \"skip_reverse\": \"false\", \"ignore_quals\": \"false\", \"function_type\": \"C\", \"__current_case__\": 1, \"skip_forward\": \"false\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"true\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 32412881}]}, \"__current_case__\": 1, \"paired_selector\": \"single\", \"unaligned_file\": \"false\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"trim_three\": \"0\", \"skip\": \"0\", \"input_options_selector\": \"advanced\", \"trim_five\": \"0\", \"__current_case__\": 1, \"stop_after\": \"0\"}",
+            "max_primary": "\"100\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 32413174}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"coefficient\": \"-0.2\", \"no_softclip\": \"false\", \"min_mismatch\": \"2\", \"constant_term\": \"0.0\", \"ref_open_penalty\": \"5\", \"read_open_penalty\": \"5\", \"soft_clip_penalty_max\": \"2\", \"read_extend_penalty\": \"3\", \"max_mismatch\": \"6\", \"function_type\": \"C\", \"ambiguous_penalty\": \"1\", \"match_bonus\": \"2\", \"__current_case__\": 1, \"soft_clip_penalty_min\": \"1\", \"scoring_options_selector\": \"advanced\", \"ref_extend_penalty\": \"3\"}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"1.0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"--no-spliced-alignment\", \"maxins\": \"500\", \"minins\": \"0\", \"__current_case__\": 0}, \"nc_function_type\": \"G\", \"constant_term\": \"-8.0\", \"nc_coefficient\": \"1.0\", \"noncanonical_penalty\": \"12\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8.0\", \"min_intron\": \"0\", \"function_type\": \"G\", \"rna_strandness\": \"\", \"__current_case__\": 1, \"tma\": \"\", \"max_intron\": \"0\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": 42111891,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2017-11-21 21:59:58.001861",
+        "user_id": 44237
+    },
+    {
+        "create_time": "2018-02-19 11:23:46.650994",
+        "datasets": [
+            {
+                "dataset_id": "23666308",
+                "extension": "fastqsanger.gz",
+                "file_size": 1446375443,
+                "name": "SRR1550988 (fastq-dump)",
+                "param_name": "input_format|paired|forward"
+            },
+            {
+                "dataset_id": "23666308",
+                "extension": "fastqsanger.gz",
+                "file_size": 1446375443,
+                "name": "SRR1550988 (fastq-dump)",
+                "param_name": "input_format|paired|reverse"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3383216,
+        "id": 18434977,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12529741",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"paired_selector\": \"paired\", \"collection\": {\"forward\": {\"values\": [{\"src\": \"hda\", \"id\": 33937658}]}, \"collection_selector\": \"files\", \"reverse\": {\"values\": [{\"src\": \"hda\", \"id\": 33937658}]}, \"__current_case__\": 1}, \"__current_case__\": 0}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"hg38\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43993154,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.2",
+        "tool_version": "2.0.5.2",
+        "traceback": null,
+        "update_time": "2018-02-21 00:16:00.627563",
+        "user_id": 89476
+    }
+]

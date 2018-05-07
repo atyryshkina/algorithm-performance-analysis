@@ -1,0 +1,63 @@
+[
+    {
+        "create_time": "2017-12-13 14:23:56.178090",
+        "datasets": [
+            {
+                "dataset_id": "22746551",
+                "extension": "mothur.pair.dist",
+                "file_size": 62211353,
+                "name": "Dist.seqs on data 808: dist",
+                "param_name": "dist"
+            },
+            {
+                "dataset_id": "22745594",
+                "extension": "mothur.names",
+                "file_size": 29209065,
+                "name": "Unique.seqs on data 730: names",
+                "param_name": "name"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3364120,
+        "id": 17797083,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11866286",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "count": "null",
+            "dbkey": "\"?\"",
+            "fontsize": "\"24\"",
+            "input": "{\"source\": \"column\", \"dist\": {\"values\": [{\"src\": \"hda\", \"id\": 32901136}]}, \"name\": {\"values\": [{\"src\": \"hda\", \"id\": 32897646}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 42631708,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_heatmap_sim/mothur_heatmap_sim/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-12-13 14:24:23.821792",
+        "user_id": 111190
+    }
+]

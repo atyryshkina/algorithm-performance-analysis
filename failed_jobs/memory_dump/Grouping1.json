@@ -1,0 +1,2272 @@
+[
+    {
+        "create_time": "2017-03-17 20:43:30.259580",
+        "datasets": [
+            {
+                "dataset_id": "19243664",
+                "extension": "interval",
+                "file_size": 8441832033,
+                "name": "Cut on data 8",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2970175,
+        "id": 15327911,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9468753.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"5\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28811994}]}",
+            "operations": "[{\"opcol\": \"2\", \"__index__\": 0, \"optype\": \"min\", \"opround\": \"no\"}, {\"opcol\": \"2\", \"__index__\": 1, \"optype\": \"max\", \"opround\": \"no\"}, {\"opcol\": \"4\", \"__index__\": 2, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36687707,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-17 20:55:36.285422",
+        "user_id": 98025
+    },
+    {
+        "create_time": "2016-04-18 05:43:36.186467",
+        "datasets": [
+            {
+                "dataset_id": "15291809",
+                "extension": "bed",
+                "file_size": 25130549582,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2673287,
+        "id": 12500093,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6691405.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b563c83dbe5134e11a\"}]}",
+            "operations": "[]"
+        },
+        "runner_name": null,
+        "session_id": 29655905,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-04-18 05:45:02.342212",
+        "user_id": 82655
+    },
+    {
+        "create_time": "2016-01-02 09:26:07.224601",
+        "datasets": [
+            {
+                "dataset_id": "13777639",
+                "extension": "bed",
+                "file_size": 3346978633,
+                "name": "Add column on data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2538267,
+        "id": 11359741,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5632804.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "22709475",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 27049465,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-01-02 09:28:08.890696",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2017-03-17 21:14:13.828914",
+        "datasets": [
+            {
+                "dataset_id": "19243664",
+                "extension": "interval",
+                "file_size": 8441832033,
+                "name": "Cut on data 8",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2970175,
+        "id": 15328140,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9468918.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"5\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28811994}]}",
+            "operations": "[{\"opcol\": \"2\", \"__index__\": 0, \"optype\": \"min\", \"opround\": \"no\"}, {\"opcol\": \"3\", \"__index__\": 1, \"optype\": \"max\", \"opround\": \"no\"}, {\"opcol\": \"4\", \"__index__\": 2, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36687707,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-17 21:25:52.289254",
+        "user_id": 98025
+    },
+    {
+        "create_time": "2016-12-15 16:26:43.898270",
+        "datasets": [
+            {
+                "dataset_id": "18203623",
+                "extension": "sam",
+                "file_size": 172269643570,
+                "name": "Map with BWA for Illumina on data 3 and data 1: mapped reads",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2929766,
+        "id": 14585492,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8764629.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"2\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 27643965}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 34847981,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-12-15 20:49:25.077518",
+        "user_id": 9209
+    },
+    {
+        "create_time": "2014-12-03 02:44:58.648357",
+        "datasets": [
+            {
+                "dataset_id": "9837655",
+                "extension": "interval",
+                "file_size": 9023891653,
+                "name": "Compute on data 116",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2084055,
+        "id": 8306969,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2181740.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "groupcol": "\"17\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "null",
+            "input1": "17758457",
+            "operations": "[{\"opcol\": \"18\", \"__index__\": 0, \"optype\": \"random\", \"opround\": \"no\"}, {\"opcol\": \"19\", \"__index__\": 1, \"optype\": \"random\", \"opround\": \"no\"}, {\"opcol\": \"24\", \"__index__\": 2, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 3, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"17\", \"__index__\": 4, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 17550571,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2014-12-03 03:00:49.370120",
+        "user_id": 40922
+    },
+    {
+        "create_time": "2017-02-24 22:14:03.590347",
+        "datasets": [
+            {
+                "dataset_id": "18977937",
+                "extension": "sam",
+                "file_size": 33732870204,
+                "name": "PUS7KOs_tRNAs_> 65bp (on 37)",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2913837,
+        "id": 15138139,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9291461.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"3\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28507308}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36274257,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-02-24 22:41:11.152177",
+        "user_id": 86257
+    },
+    {
+        "create_time": "2017-05-01 19:34:52.574321",
+        "datasets": [
+            {
+                "dataset_id": "19773539",
+                "extension": "tabular",
+                "file_size": 52440506762,
+                "name": "Genome Coverage on data 10",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3091261,
+        "id": 15718233,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9829353.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 29419929}]}",
+            "operations": "[{\"opcol\": \"2\", \"__index__\": 0, \"optype\": \"max\", \"opround\": \"no\"}, {\"opcol\": \"3\", \"__index__\": 1, \"optype\": \"sum\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 37635728,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-05-01 20:43:00.569683",
+        "user_id": 104814
+    },
+    {
+        "create_time": "2016-03-15 17:04:56.520886",
+        "datasets": [
+            {
+                "dataset_id": "14821667",
+                "extension": "sam",
+                "file_size": 15356323759,
+                "name": "BAM-to-SAM on data 266: converted SAM",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2103600,
+        "id": 12143941,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6361410.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"64\"]",
+            "input1": "23849524",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 28652023,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-03-15 17:06:52.380487",
+        "user_id": 50209
+    },
+    {
+        "create_time": "2017-02-21 19:49:07.380550",
+        "datasets": [
+            {
+                "dataset_id": "18923526",
+                "extension": "sam",
+                "file_size": 145474634009,
+                "name": "BAM-to-SAM on data 1: converted SAM",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3003194,
+        "id": 15098645,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9253860.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"2\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28449145}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 34847981,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-02-22 00:43:17.917512",
+        "user_id": 9209
+    },
+    {
+        "create_time": "2016-09-07 02:58:15.434702",
+        "datasets": [
+            {
+                "dataset_id": "17094102",
+                "extension": "interval",
+                "file_size": 122893497706,
+                "name": "Join two Datasets on data 3",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2812654,
+        "id": 13794023,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8014614.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"ea711d0674a611e69c9d005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5425c8756a61e2d03\"}]}",
+            "operations": "[{\"opcol\": \"4\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 32806444,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-09-07 09:40:22.066235",
+        "user_id": 75964
+    },
+    {
+        "create_time": "2016-03-16 10:08:33.559197",
+        "datasets": [
+            {
+                "dataset_id": "14822308",
+                "extension": "bam",
+                "file_size": 15623284236,
+                "name": "BAM-to-SAM on data 326: converted SAM",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2103600,
+        "id": 12151070,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6369575.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"64\"]",
+            "input1": "23850302",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 28652023,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-03-16 10:10:20.047187",
+        "user_id": 50209
+    },
+    {
+        "create_time": "2015-05-26 12:45:41.345869",
+        "datasets": [
+            {
+                "dataset_id": "11407655",
+                "extension": "interval",
+                "file_size": 9737739607,
+                "name": "Join on data 50 and data 52",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2315145,
+        "id": 9535326,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3852128.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"18eb6f2a03a511e59cc9005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "19814239",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 23226824,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-05-26 19:17:23.593035",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2015-05-26 12:43:45.178732",
+        "datasets": [
+            {
+                "dataset_id": "11407614",
+                "extension": "interval",
+                "file_size": 9661292416,
+                "name": "Join on data 40 and data 43",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2315145,
+        "id": 9535294,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3851706.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"d24aed7a03a411e587c3005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "19814190",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 23226824,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-05-26 17:59:28.350504",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2017-02-24 23:45:24.380769",
+        "datasets": [
+            {
+                "dataset_id": "18979973",
+                "extension": "sam",
+                "file_size": 22579155944,
+                "name": "Select last on data 72",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2913837,
+        "id": 15138596,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9291859.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"3\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28509610}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36274257,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-02-25 00:28:14.283883",
+        "user_id": 86257
+    },
+    {
+        "create_time": "2016-06-06 12:28:43.840049",
+        "datasets": [
+            {
+                "dataset_id": "16042790",
+                "extension": "tabular",
+                "file_size": 67674101603,
+                "name": "Cut on data 14",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2722728,
+        "id": 13084111,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7268201.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/droSim1.len\"",
+            "dbkey": "\"droSim1\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5674d810795e38936\"}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 1, \"optype\": \"cat_uniq\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 30663870,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-06-06 13:35:21.323731",
+        "user_id": 84973
+    },
+    {
+        "create_time": "2016-04-29 20:21:15.195017",
+        "datasets": [
+            {
+                "dataset_id": "15541180",
+                "extension": "bed",
+                "file_size": 94003430216,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2689965,
+        "id": 12692080,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6895170.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ed0141e0f692b63a\"}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29956920,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-04-29 22:27:18.706431",
+        "user_id": 83637
+    },
+    {
+        "create_time": "2015-05-26 12:45:42.284232",
+        "datasets": [
+            {
+                "dataset_id": "11407656",
+                "extension": "interval",
+                "file_size": 9488525333,
+                "name": "Join on data 50 and data 53",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2315145,
+        "id": 9535327,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3850505.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"18eb6f2a03a511e59cc9005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "19814240",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 23226824,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-05-26 15:49:45.194543",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2016-01-02 12:17:33.581810",
+        "datasets": [
+            {
+                "dataset_id": "13554976",
+                "extension": "bed",
+                "file_size": 3292183517,
+                "name": "Hg19 CpGs same locations in all 8 samples coverage 5 n=27,397,557",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2538267,
+        "id": 11360070,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5633164.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "22452998",
+            "operations": "[]"
+        },
+        "runner_name": null,
+        "session_id": 27049465,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-01-02 12:19:04.793439",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2015-07-21 18:19:26.480269",
+        "datasets": [
+            {
+                "dataset_id": "11921312",
+                "extension": "tabular",
+                "file_size": 2582460407,
+                "name": "Concatenate datasets on data 37, data 38, and others",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2383883,
+        "id": 9931387,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4217848.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "20458269",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 24227020,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-07-21 18:21:37.382538",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2015-01-15 01:25:18.357137",
+        "datasets": [
+            {
+                "dataset_id": "10185737",
+                "extension": "interval",
+                "file_size": 2320478848,
+                "name": "Join on data 40 and data 42",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2173666,
+        "id": 8549395,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2476751.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"5a6f7f489c5511e4ba71005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "18213619",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 20497612,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-01-15 01:39:56.183727",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2015-10-15 01:18:42.478045",
+        "datasets": [
+            {
+                "dataset_id": "12786279",
+                "extension": "tabular",
+                "file_size": 3133147929,
+                "name": "Introns",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2466661,
+        "id": 10576772,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847631.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"16\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "21526282",
+            "operations": "[{\"opcol\": \"12\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"13\", \"__index__\": 1, \"optype\": \"min\", \"opround\": \"yes\"}, {\"opcol\": \"14\", \"__index__\": 2, \"optype\": \"max\", \"opround\": \"yes\"}, {\"opcol\": \"15\", \"__index__\": 3, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"4\", \"__index__\": 4, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"5\", \"__index__\": 5, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 6, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"7\", \"__index__\": 7, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 8, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"9\", \"__index__\": 9, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"10\", \"__index__\": 10, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"11\", \"__index__\": 11, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"12\", \"__index__\": 12, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 25197588,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-10-15 01:21:52.609674",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2015-01-15 02:19:49.720992",
+        "datasets": [
+            {
+                "dataset_id": "10186000",
+                "extension": "interval",
+                "file_size": 2584328184,
+                "name": "Join on data 15 and data 18",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2174146,
+        "id": 8549616,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2477035.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"f8aeb4249c5c11e4b8bb005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "18213886",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 20497612,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-01-15 02:36:25.198572",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2016-04-01 08:43:37.680994",
+        "datasets": [
+            {
+                "dataset_id": "15036424",
+                "extension": "bed",
+                "file_size": 3692680549,
+                "name": "Hg19 CpGs same locations in all 8 samples coverage 5 n=27,397,557 with id",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2652506,
+        "id": 12308338,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6516160.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"12\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "24096351",
+            "operations": "[{\"opcol\": \"12\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29313441,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-04-01 08:46:39.665169",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2015-12-25 08:34:19.658618",
+        "datasets": [
+            {
+                "dataset_id": "13729362",
+                "extension": "bed",
+                "file_size": 3346978633,
+                "name": "Add column on data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2538267,
+        "id": 11324999,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5602483.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"12\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "22649638",
+            "operations": "[{\"opcol\": \"4\", \"__index__\": 0, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"5\", \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 2, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"7\", \"__index__\": 3, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 4, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"9\", \"__index__\": 5, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"10\", \"__index__\": 6, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"11\", \"__index__\": 7, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"1\", \"__index__\": 8, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 26635806,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-12-25 08:37:31.373451",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2015-04-17 09:30:37.005690",
+        "datasets": [
+            {
+                "dataset_id": "11050068",
+                "extension": "tabular",
+                "file_size": 4894023761,
+                "name": "Convert, Merge, Randomize on data 51",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11009595",
+                "extension": "len",
+                "file_size": 11722,
+                "name": "Convert FASTA to len file on data 19",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2268347,
+        "id": 9254055,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3538805.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/011/009/dataset_11009595.dat\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "null",
+            "input1": "19327481",
+            "operations": "[{\"opcol\": \"3\", \"__index__\": 0, \"optype\": \"sum\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 20933346,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-04-17 09:50:10.550279",
+        "user_id": 59071
+    },
+    {
+        "create_time": "2017-03-17 21:39:07.003558",
+        "datasets": [
+            {
+                "dataset_id": "19243664",
+                "extension": "interval",
+                "file_size": 8441832033,
+                "name": "Cut on data 8",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2970175,
+        "id": 15328242,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9469018.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"5\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28811994}]}",
+            "operations": "[{\"opcol\": \"2\", \"__index__\": 0, \"optype\": \"min\", \"opround\": \"no\"}, {\"opcol\": \"3\", \"__index__\": 1, \"optype\": \"max\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36687707,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-17 21:49:44.134837",
+        "user_id": 98025
+    },
+    {
+        "create_time": "2016-06-06 11:01:57.525015",
+        "datasets": [
+            {
+                "dataset_id": "16062771",
+                "extension": "tabular",
+                "file_size": 80229149812,
+                "name": "Join on data 13 and data 7",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2725397,
+        "id": 13082504,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7266949.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/droSim1.len\"",
+            "dbkey": "\"droSim1\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5114f1de5b9fbff6b\"}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 1, \"optype\": \"cat_uniq\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 30661983,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-06-06 12:12:21.799318",
+        "user_id": 84592
+    },
+    {
+        "create_time": "2015-02-18 02:49:59.630724",
+        "datasets": [
+            {
+                "dataset_id": "10431568",
+                "extension": "sam",
+                "file_size": 3171326775,
+                "name": "Filter SAM or BAM, output SAM or BAM on data 35: sam",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2200472,
+        "id": 8750121,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2802577.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"3\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "\"64\"",
+            "input1": "18549459",
+            "operations": "[]"
+        },
+        "runner_name": null,
+        "session_id": 21181646,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-02-18 02:51:40.838462",
+        "user_id": 59408
+    },
+    {
+        "create_time": "2017-02-24 22:13:41.254474",
+        "datasets": [
+            {
+                "dataset_id": "18977935",
+                "extension": "sam",
+                "file_size": 32314290085,
+                "name": "WTs_tRNAs_> 65bp (on 36)",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2913837,
+        "id": 15138135,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9291457.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"3\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28507306}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36274257,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-02-24 22:56:19.123625",
+        "user_id": 86257
+    },
+    {
+        "create_time": "2016-04-13 19:08:24.795033",
+        "datasets": [
+            {
+                "dataset_id": "15214192",
+                "extension": "bed",
+                "file_size": 99706088442,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2668728,
+        "id": 12444969,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6642930.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "[]",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50f034a9f002a9a43\"}]}",
+            "operations": "[{\"opcol\": \"4\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29583705,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-04-13 19:11:39.898971",
+        "user_id": 82480
+    },
+    {
+        "create_time": "2015-07-21 18:15:46.245849",
+        "datasets": [
+            {
+                "dataset_id": "11921312",
+                "extension": "tabular",
+                "file_size": 2582460407,
+                "name": "Concatenate datasets on data 37, data 38, and others",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2383883,
+        "id": 9931268,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4217775.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "20458269",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"yes\"}, {\"opcol\": \"1\", \"__index__\": 1, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 24227020,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-07-21 18:17:54.464308",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2016-04-13 19:14:54.658262",
+        "datasets": [
+            {
+                "dataset_id": "15214192",
+                "extension": "bed",
+                "file_size": 99706088442,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2668728,
+        "id": 12445004,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6642965.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "[]",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50f034a9f002a9a43\"}]}",
+            "operations": "[{\"opcol\": \"4\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29583705,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-04-13 19:20:14.980591",
+        "user_id": 82480
+    },
+    {
+        "create_time": "2015-10-15 00:55:27.698175",
+        "datasets": [
+            {
+                "dataset_id": "12784561",
+                "extension": "tabular",
+                "file_size": 3247530773,
+                "name": "Merge Columns on data 15",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2466661,
+        "id": 10576652,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4847452.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"16\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "21524333",
+            "operations": "[{\"opcol\": \"12\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"13\", \"__index__\": 1, \"optype\": \"min\", \"opround\": \"yes\"}, {\"opcol\": \"14\", \"__index__\": 2, \"optype\": \"max\", \"opround\": \"yes\"}, {\"opcol\": \"15\", \"__index__\": 3, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"4\", \"__index__\": 4, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"5\", \"__index__\": 5, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 6, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"7\", \"__index__\": 7, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 8, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"9\", \"__index__\": 9, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"10\", \"__index__\": 10, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"11\", \"__index__\": 11, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"12\", \"__index__\": 12, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 25197588,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-10-15 00:58:00.366056",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2014-12-02 20:14:35.728984",
+        "datasets": [
+            {
+                "dataset_id": "9837655",
+                "extension": "interval",
+                "file_size": 9023891653,
+                "name": "Compute on data 116",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2084055,
+        "id": 8304066,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2177465.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"17\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "null",
+            "input1": "17758457",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"18\"}, \"__index__\": 0, \"optype\": \"random\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"19\"}, \"__index__\": 1, \"optype\": \"random\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 2, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"8\"}, \"__index__\": 3, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"17\"}, \"__index__\": 4, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 17580010,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2014-12-02 20:34:55.002923",
+        "user_id": 40922
+    },
+    {
+        "create_time": "2016-04-16 08:54:30.552296",
+        "datasets": [
+            {
+                "dataset_id": "15269678",
+                "extension": "tabular",
+                "file_size": 2953065218,
+                "name": "Concatenate datasets on data 89, data 90, and others",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2672005,
+        "id": 12482919,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6671354.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"true\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b573c5d566941ffd2c\"}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 29313441,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-04-16 08:55:36.755734",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2015-01-15 01:54:44.769795",
+        "datasets": [
+            {
+                "dataset_id": "10185876",
+                "extension": "interval",
+                "file_size": 2320478848,
+                "name": "Join on data 5 and data 7",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2174146,
+        "id": 8549491,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2476903.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"774684c89c5911e499c9005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "18213761",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 20497612,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-01-15 02:11:01.722427",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2016-03-15 16:58:42.682747",
+        "datasets": [
+            {
+                "dataset_id": "14821667",
+                "extension": "sam",
+                "file_size": 15356323759,
+                "name": "BAM-to-SAM on data 266: converted SAM",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2103600,
+        "id": 12143866,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6361296.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"64\"]",
+            "input1": "23849524",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 28652023,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-03-15 17:01:05.591009",
+        "user_id": 50209
+    },
+    {
+        "create_time": "2015-05-26 12:43:43.781279",
+        "datasets": [
+            {
+                "dataset_id": "11407613",
+                "extension": "interval",
+                "file_size": 9737739607,
+                "name": "Join on data 40 and data 42",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2315145,
+        "id": 9535293,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3851336.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"d24aed7a03a411e587c3005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "19814189",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 23226824,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-05-26 17:02:11.238264",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2015-05-26 16:50:04.398513",
+        "datasets": [
+            {
+                "dataset_id": "11407656",
+                "extension": "interval",
+                "file_size": 9488525333,
+                "name": "Join on data 50 and data 53",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2315145,
+        "id": 9537077,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3851273.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "\"23\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "19814240",
+            "operations": "[{\"opcol\": \"5\", \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"24\", \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 23226824,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-05-26 16:53:09.060152",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2016-04-18 05:40:30.647484",
+        "datasets": [
+            {
+                "dataset_id": "15291809",
+                "extension": "bed",
+                "file_size": 25130549582,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2673287,
+        "id": 12500074,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6691398.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"true\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b563c83dbe5134e11a\"}]}",
+            "operations": "[]"
+        },
+        "runner_name": null,
+        "session_id": 29655905,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-04-18 05:42:09.241382",
+        "user_id": 82655
+    },
+    {
+        "create_time": "2015-01-15 00:26:36.003753",
+        "datasets": [
+            {
+                "dataset_id": "10185231",
+                "extension": "interval",
+                "file_size": 2584328184,
+                "name": "Join on data 29 and data 32",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2173666,
+        "id": 8549043,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2476552.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"27c256909c4d11e4a793005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "groupcol": "{\"__class__\": \"UnvalidatedValue\", \"value\": \"23\"}",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "18213098",
+            "operations": "[{\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"5\"}, \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": {\"__class__\": \"UnvalidatedValue\", \"value\": \"24\"}, \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 20497612,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-01-15 00:56:07.997857",
+        "user_id": 32285
+    },
+    {
+        "create_time": "2015-10-10 04:05:15.018784",
+        "datasets": [
+            {
+                "dataset_id": "12734083",
+                "extension": "bed",
+                "file_size": 2335308587,
+                "name": "Add column on data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2466661,
+        "id": 10539709,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4813721.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"12\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "21464196",
+            "operations": "[{\"opcol\": \"4\", \"__index__\": 0, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"5\", \"__index__\": 1, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 2, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"7\", \"__index__\": 3, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 4, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"9\", \"__index__\": 5, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"10\", \"__index__\": 6, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"11\", \"__index__\": 7, \"optype\": \"mean\", \"opround\": \"no\"}, {\"opcol\": \"1\", \"__index__\": 8, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 25197588,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2015-10-10 04:09:38.251769",
+        "user_id": 31176
+    },
+    {
+        "create_time": "2017-04-30 00:32:31.366188",
+        "datasets": [
+            {
+                "dataset_id": "19763757",
+                "extension": "tabular",
+                "file_size": 4283872158,
+                "name": "Cut on data 163",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3079616,
+        "id": 15709265,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9821348.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 29409134}]}",
+            "operations": "[{\"opcol\": \"2\", \"__index__\": 0, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"2\", \"__index__\": 1, \"optype\": \"cat\", \"opround\": \"no\"}, {\"opcol\": \"3\", \"__index__\": 2, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"3\", \"__index__\": 3, \"optype\": \"cat\", \"opround\": \"no\"}, {\"opcol\": \"4\", \"__index__\": 4, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"4\", \"__index__\": 5, \"optype\": \"cat\", \"opround\": \"no\"}, {\"opcol\": \"5\", \"__index__\": 6, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"5\", \"__index__\": 7, \"optype\": \"cat\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 8, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 9, \"optype\": \"cat\", \"opround\": \"no\"}, {\"opcol\": \"7\", \"__index__\": 10, \"optype\": \"unique\", \"opround\": \"no\"}, {\"opcol\": \"7\", \"__index__\": 11, \"optype\": \"cat\", \"opround\": \"no\"}, {\"opcol\": \"8\", \"__index__\": 12, \"optype\": \"cat\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 37448936,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-04-30 00:40:06.176013",
+        "user_id": 104406
+    },
+    {
+        "create_time": "2016-06-06 11:56:08.923588",
+        "datasets": [
+            {
+                "dataset_id": "16062802",
+                "extension": "tabular",
+                "file_size": 73364067988,
+                "name": "Cut on data 14",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2725400,
+        "id": 13083862,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7267979.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/droSim1.len\"",
+            "dbkey": "\"droSim1\"",
+            "groupcol": "\"4\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a5c33db2a69b3942\"}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"cat_uniq\", \"opround\": \"no\"}, {\"opcol\": \"6\", \"__index__\": 1, \"optype\": \"cat_uniq\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 30661983,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-06-06 12:59:14.160516",
+        "user_id": 84592
+    },
+    {
+        "create_time": "2017-02-24 17:12:54.534087",
+        "datasets": [
+            {
+                "dataset_id": "18970142",
+                "extension": "sam",
+                "file_size": 47296319030,
+                "name": "WTs_concatenated_SAM",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2913837,
+        "id": 15132932,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9286389.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"3\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 28499367}]}",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 36221000,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-02-24 18:09:03.270855",
+        "user_id": 86257
+    },
+    {
+        "create_time": "2016-03-15 20:06:46.062400",
+        "datasets": [
+            {
+                "dataset_id": "14821667",
+                "extension": "sam",
+                "file_size": 15356323759,
+                "name": "BAM-to-SAM on data 266: converted SAM",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2103600,
+        "id": 12145387,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6363437.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"False\"",
+            "ignorelines": "[\"64\"]",
+            "input1": "23849524",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 28652023,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-03-15 20:09:18.912877",
+        "user_id": 50209
+    },
+    {
+        "create_time": "2017-11-08 11:41:41.331264",
+        "datasets": [
+            {
+                "dataset_id": "22095997",
+                "extension": "bed",
+                "file_size": 18692045664,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3316509,
+        "id": 17379747,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11441247",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"false\"",
+            "ignorelines": "null",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 32146623}]}",
+            "operations": "[{\"opcol\": \"4\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"no\"}]"
+        },
+        "runner_name": null,
+        "session_id": 41726903,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-11-08 12:34:46.644077",
+        "user_id": 115160
+    },
+    {
+        "create_time": "2016-01-02 12:18:30.919459",
+        "datasets": [
+            {
+                "dataset_id": "13554976",
+                "extension": "bed",
+                "file_size": 3292183517,
+                "name": "Hg19 CpGs same locations in all 8 samples coverage 5 n=27,397,557",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2538267,
+        "id": 11360077,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5633169.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "groupcol": "\"1\"",
+            "ignorecase": "\"True\"",
+            "ignorelines": "[\"62\", \"64\", \"43\", \"60\", \"42\", \"45\", \"61\", \"124\", \"63\", \"36\", \"46\", \"58\", \"38\", \"37\", \"94\", \"35\"]",
+            "input1": "22452998",
+            "operations": "[{\"opcol\": \"1\", \"__index__\": 0, \"optype\": \"length\", \"opround\": \"yes\"}]"
+        },
+        "runner_name": null,
+        "session_id": 27049465,
+        "state": "error",
+        "tool_id": "Grouping1",
+        "tool_version": "2.1.0",
+        "traceback": null,
+        "update_time": "2016-01-02 12:20:37.645192",
+        "user_id": 31176
+    }
+]

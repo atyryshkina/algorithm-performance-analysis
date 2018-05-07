@@ -1,0 +1,457 @@
+[
+    {
+        "create_time": "2017-04-07 09:31:01.351973",
+        "datasets": [
+            {
+                "dataset_id": "19459673",
+                "extension": "vcf",
+                "file_size": 5298,
+                "name": "Varscan on data 199",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "19441370",
+                "extension": "pileup",
+                "file_size": 100043798,
+                "name": "MPileup on data 157",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3035161,
+        "id": 15517053,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9643627.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29066944}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29045314}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37113126,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-04-08 21:31:22.791994",
+        "user_id": 97958
+    },
+    {
+        "create_time": "2017-04-21 16:52:50.661553",
+        "datasets": [
+            {
+                "dataset_id": "19662782",
+                "extension": "bam",
+                "file_size": 5582841609,
+                "name": "Filter SAM or BAM, output SAM or BAM on data 55: bam",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3073242,
+        "id": 15645802,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9763190.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm9\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29294683}]}, \"__current_case__\": 1, \"input_type_select\": \"bam\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 37471901,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-04-23 04:53:20.528310",
+        "user_id": 8928
+    },
+    {
+        "create_time": "2017-05-20 02:03:35.372741",
+        "datasets": [
+            {
+                "dataset_id": "20009104",
+                "extension": "bed",
+                "file_size": 816600268,
+                "name": "input2_uniq.bed",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20012735",
+                "extension": "tabular",
+                "file_size": 2812,
+                "name": "mm10.txt",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3118498,
+        "id": 15894570,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9994205.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29692659}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29697150}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"-strand +\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36283865,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-21 14:03:56.693964",
+        "user_id": 1228
+    },
+    {
+        "create_time": "2017-05-20 02:02:46.682967",
+        "datasets": [
+            {
+                "dataset_id": "20009141",
+                "extension": "bed",
+                "file_size": 445401864,
+                "name": "RiboPro6_uniq.bed",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20012735",
+                "extension": "tabular",
+                "file_size": 2812,
+                "name": "mm10.txt",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3118498,
+        "id": 15894567,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9994202.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29692696}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29697150}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"-strand -\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36283865,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-21 14:03:24.969033",
+        "user_id": 1228
+    },
+    {
+        "create_time": "2017-05-20 02:03:24.628504",
+        "datasets": [
+            {
+                "dataset_id": "20009103",
+                "extension": "bed",
+                "file_size": 604962480,
+                "name": "input1_uniq.bed",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20012735",
+                "extension": "tabular",
+                "file_size": 2812,
+                "name": "mm10.txt",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3118498,
+        "id": 15894569,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9994204.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29692658}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29697150}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"-strand -\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36283865,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-21 14:03:55.527190",
+        "user_id": 1228
+    },
+    {
+        "create_time": "2017-05-20 02:03:08.864085",
+        "datasets": [
+            {
+                "dataset_id": "20009103",
+                "extension": "bed",
+                "file_size": 604962480,
+                "name": "input1_uniq.bed",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20012735",
+                "extension": "tabular",
+                "file_size": 2812,
+                "name": "mm10.txt",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3118498,
+        "id": 15894568,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9994203.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29692658}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29697150}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"-strand +\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36283865,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-21 14:03:25.314494",
+        "user_id": 1228
+    },
+    {
+        "create_time": "2017-05-20 02:05:09.742655",
+        "datasets": [
+            {
+                "dataset_id": "20009125",
+                "extension": "bed",
+                "file_size": 713279311,
+                "name": "input6_uniq.bed",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "20012735",
+                "extension": "tabular",
+                "file_size": 2812,
+                "name": "mm10.txt",
+                "param_name": "genome"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bedtools@2.26.0gx",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.26.0gx"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3118498,
+        "id": 15894579,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9999492.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "dz": "\"false\"",
+            "five": "\"false\"",
+            "input_type": "{\"input\": {\"values\": [{\"src\": \"hda\", \"id\": 29692680}]}, \"genome\": {\"values\": [{\"src\": \"hda\", \"id\": 29697150}]}, \"__current_case__\": 0, \"input_type_select\": \"bed\"}",
+            "report": "{\"report_select\": \"bg\", \"zero_regions\": \"false\", \"scale\": \"1.0\", \"__current_case__\": 0}",
+            "split": "\"false\"",
+            "strand": "\"-strand +\"",
+            "three": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36283865,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_genomecoveragebed/2.26.0.0",
+        "tool_version": "2.26.0.0",
+        "traceback": null,
+        "update_time": "2017-05-23 03:54:09.073964",
+        "user_id": 1228
+    }
+]

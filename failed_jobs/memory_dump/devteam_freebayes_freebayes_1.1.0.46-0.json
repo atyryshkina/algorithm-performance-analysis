@@ -1,0 +1,1249 @@
+[
+    {
+        "create_time": "2018-03-07 21:45:36.339309",
+        "datasets": [
+            {
+                "dataset_id": "23955731",
+                "extension": "bam",
+                "file_size": 3906191948,
+                "name": "Filter on data 46: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3454953,
+        "id": 18648413,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12742221",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34264020}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44432964,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-08 04:39:38.022951",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-05 05:27:31.086779",
+        "datasets": [
+            {
+                "dataset_id": "23893782",
+                "extension": "bam",
+                "file_size": 5206771707,
+                "name": "Filter on data 128: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3450295,
+        "id": 18605644,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12700949",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34196912}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44332854,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-05 13:12:10.528622",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-08 05:27:53.413842",
+        "datasets": [
+            {
+                "dataset_id": "23955731",
+                "extension": "bam",
+                "file_size": 3906191948,
+                "name": "Filter on data 46: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3454953,
+        "id": 18651652,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12747498",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34264020}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44457132,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-08 11:56:04.068796",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-04 20:21:59.969790",
+        "datasets": [
+            {
+                "dataset_id": "23893782",
+                "extension": "bam",
+                "file_size": 5206771707,
+                "name": "Filter on data 128: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3450295,
+        "id": 18602666,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12697884",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34196912}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44324502,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-05 04:02:46.007771",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-02 05:23:43.821140",
+        "datasets": [
+            {
+                "dataset_id": "23839515",
+                "extension": "bam",
+                "file_size": 4724368525,
+                "name": "Filter on data 132: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3444902,
+        "id": 18576520,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12670774",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34135981}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44264571,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-02 18:18:08.659705",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-07 13:11:17.311867",
+        "datasets": [
+            {
+                "dataset_id": "23955731",
+                "extension": "bam",
+                "file_size": 3906191948,
+                "name": "Filter on data 46: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3454953,
+        "id": 18639081,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12735330",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34264020}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44413692,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-07 19:57:46.789814",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-03 02:23:55.112081",
+        "datasets": [
+            {
+                "dataset_id": "23825235",
+                "extension": "bam",
+                "file_size": 192301848,
+                "name": "DNA08-5107_RNA",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23825235",
+                "extension": "bam",
+                "file_size": 192301848,
+                "name": "DNA08-5107_RNA",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "23825657",
+                "extension": "bam",
+                "file_size": 150554277,
+                "name": "DNA09-1278_RNA",
+                "param_name": "reference_source|input_bams2"
+            },
+            {
+                "dataset_id": "23825658",
+                "extension": "bam",
+                "file_size": 247998275,
+                "name": "DNA09-2095_RNA",
+                "param_name": "reference_source|input_bams3"
+            },
+            {
+                "dataset_id": "23825659",
+                "extension": "bam",
+                "file_size": 242908958,
+                "name": "DNA10-4765_RNA",
+                "param_name": "reference_source|input_bams4"
+            },
+            {
+                "dataset_id": "23825660",
+                "extension": "bam",
+                "file_size": 187322627,
+                "name": "DNA10-6027_RNA",
+                "param_name": "reference_source|input_bams5"
+            },
+            {
+                "dataset_id": "23825661",
+                "extension": "bam",
+                "file_size": 243227646,
+                "name": "DNA12-0687_RNA",
+                "param_name": "reference_source|input_bams6"
+            },
+            {
+                "dataset_id": "23825662",
+                "extension": "bam",
+                "file_size": 117009111,
+                "name": "DNA12-8326_RNA",
+                "param_name": "reference_source|input_bams7"
+            },
+            {
+                "dataset_id": "23825663",
+                "extension": "bam",
+                "file_size": 186754238,
+                "name": "DNA12-9641_RNA",
+                "param_name": "reference_source|input_bams8"
+            },
+            {
+                "dataset_id": "23825664",
+                "extension": "bam",
+                "file_size": 177547680,
+                "name": "DNA13-00775_RNA",
+                "param_name": "reference_source|input_bams9"
+            },
+            {
+                "dataset_id": "23825665",
+                "extension": "bam",
+                "file_size": 226287633,
+                "name": "DNA13-05282_RNA",
+                "param_name": "reference_source|input_bams10"
+            },
+            {
+                "dataset_id": "23825666",
+                "extension": "bam",
+                "file_size": 178290900,
+                "name": "DNA13-05503_RNA",
+                "param_name": "reference_source|input_bams11"
+            },
+            {
+                "dataset_id": "23825667",
+                "extension": "bam",
+                "file_size": 240886233,
+                "name": "DNA13-10018_RNA",
+                "param_name": "reference_source|input_bams12"
+            },
+            {
+                "dataset_id": "23825668",
+                "extension": "bam",
+                "file_size": 223117778,
+                "name": "DNA14-52627_RNA",
+                "param_name": "reference_source|input_bams13"
+            },
+            {
+                "dataset_id": "23825669",
+                "extension": "bam",
+                "file_size": 81281790,
+                "name": "DNA14-53190_RNA",
+                "param_name": "reference_source|input_bams14"
+            },
+            {
+                "dataset_id": "23825670",
+                "extension": "bam",
+                "file_size": 218199114,
+                "name": "DNA14-54803_RNA",
+                "param_name": "reference_source|input_bams15"
+            },
+            {
+                "dataset_id": "23825671",
+                "extension": "bam",
+                "file_size": 211216134,
+                "name": "DNA14-59023_RNA",
+                "param_name": "reference_source|input_bams16"
+            },
+            {
+                "dataset_id": "23825672",
+                "extension": "bam",
+                "file_size": 211929572,
+                "name": "DNA14-59865_RNA",
+                "param_name": "reference_source|input_bams17"
+            },
+            {
+                "dataset_id": "23825673",
+                "extension": "bam",
+                "file_size": 176626417,
+                "name": "DNA14-59910_RNA",
+                "param_name": "reference_source|input_bams18"
+            },
+            {
+                "dataset_id": "23825674",
+                "extension": "bam",
+                "file_size": 136257895,
+                "name": "DNA14-59914_RNA",
+                "param_name": "reference_source|input_bams19"
+            },
+            {
+                "dataset_id": "23825675",
+                "extension": "bam",
+                "file_size": 222358731,
+                "name": "DNA14-59920_RNA",
+                "param_name": "reference_source|input_bams20"
+            },
+            {
+                "dataset_id": "23825676",
+                "extension": "bam",
+                "file_size": 238180592,
+                "name": "DNA14-60178_RNA",
+                "param_name": "reference_source|input_bams21"
+            },
+            {
+                "dataset_id": "23825677",
+                "extension": "bam",
+                "file_size": 250477646,
+                "name": "DNA14-60240_RNA",
+                "param_name": "reference_source|input_bams22"
+            },
+            {
+                "dataset_id": "23825678",
+                "extension": "bam",
+                "file_size": 27719177,
+                "name": "DNA14-60418A_RNA",
+                "param_name": "reference_source|input_bams23"
+            },
+            {
+                "dataset_id": "23825679",
+                "extension": "bam",
+                "file_size": 238510763,
+                "name": "DNA14-60611_RNA",
+                "param_name": "reference_source|input_bams24"
+            },
+            {
+                "dataset_id": "23825680",
+                "extension": "bam",
+                "file_size": 121734153,
+                "name": "DNA14-61081_RNA",
+                "param_name": "reference_source|input_bams25"
+            },
+            {
+                "dataset_id": "23825681",
+                "extension": "bam",
+                "file_size": 159160630,
+                "name": "DNA14-61173_RNA",
+                "param_name": "reference_source|input_bams26"
+            },
+            {
+                "dataset_id": "23825682",
+                "extension": "bam",
+                "file_size": 280410193,
+                "name": "DNA14-61407_RNA",
+                "param_name": "reference_source|input_bams27"
+            },
+            {
+                "dataset_id": "23825683",
+                "extension": "bam",
+                "file_size": 88504753,
+                "name": "DNA14-61719_RNA",
+                "param_name": "reference_source|input_bams28"
+            },
+            {
+                "dataset_id": "23825684",
+                "extension": "bam",
+                "file_size": 111945996,
+                "name": "DNA11-7385_RNA",
+                "param_name": "reference_source|input_bams29"
+            },
+            {
+                "dataset_id": "23825685",
+                "extension": "bam",
+                "file_size": 387382095,
+                "name": "DNA13-02219_RNA",
+                "param_name": "reference_source|input_bams30"
+            },
+            {
+                "dataset_id": "23825686",
+                "extension": "bam",
+                "file_size": 271010413,
+                "name": "DNA13-03753_RNA",
+                "param_name": "reference_source|input_bams31"
+            },
+            {
+                "dataset_id": "23825687",
+                "extension": "bam",
+                "file_size": 311581375,
+                "name": "DNA14-60162_RNA",
+                "param_name": "reference_source|input_bams32"
+            },
+            {
+                "dataset_id": "23825688",
+                "extension": "bam",
+                "file_size": 361139336,
+                "name": "DNA14-60651_RNA",
+                "param_name": "reference_source|input_bams33"
+            },
+            {
+                "dataset_id": "23825690",
+                "extension": "bam",
+                "file_size": 309424990,
+                "name": "DNA14-67183_RNA",
+                "param_name": "reference_source|input_bams34"
+            },
+            {
+                "dataset_id": "23825691",
+                "extension": "bam",
+                "file_size": 199316465,
+                "name": "DNA15-72669_RNA",
+                "param_name": "reference_source|input_bams35"
+            },
+            {
+                "dataset_id": "23825692",
+                "extension": "bam",
+                "file_size": 174606565,
+                "name": "DNA16-56229_RNA",
+                "param_name": "reference_source|input_bams36"
+            },
+            {
+                "dataset_id": "23825693",
+                "extension": "bam",
+                "file_size": 256009996,
+                "name": "DNA14-60424A_RNA",
+                "param_name": "reference_source|input_bams37"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3434644,
+        "id": 18588267,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12683298",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"min_coverage\": \"40\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34118181}, {\"src\": \"hda\", \"id\": 34118631}, {\"src\": \"hda\", \"id\": 34118632}, {\"src\": \"hda\", \"id\": 34118633}, {\"src\": \"hda\", \"id\": 34118634}, {\"src\": \"hda\", \"id\": 34118635}, {\"src\": \"hda\", \"id\": 34118636}, {\"src\": \"hda\", \"id\": 34118637}, {\"src\": \"hda\", \"id\": 34118638}, {\"src\": \"hda\", \"id\": 34118639}, {\"src\": \"hda\", \"id\": 34118640}, {\"src\": \"hda\", \"id\": 34118641}, {\"src\": \"hda\", \"id\": 34118642}, {\"src\": \"hda\", \"id\": 34118643}, {\"src\": \"hda\", \"id\": 34118644}, {\"src\": \"hda\", \"id\": 34118645}, {\"src\": \"hda\", \"id\": 34118646}, {\"src\": \"hda\", \"id\": 34118647}, {\"src\": \"hda\", \"id\": 34118648}, {\"src\": \"hda\", \"id\": 34118649}, {\"src\": \"hda\", \"id\": 34118650}, {\"src\": \"hda\", \"id\": 34118651}, {\"src\": \"hda\", \"id\": 34118652}, {\"src\": \"hda\", \"id\": 34118653}, {\"src\": \"hda\", \"id\": 34118654}, {\"src\": \"hda\", \"id\": 34118655}, {\"src\": \"hda\", \"id\": 34118656}, {\"src\": \"hda\", \"id\": 34118657}, {\"src\": \"hda\", \"id\": 34118658}, {\"src\": \"hda\", \"id\": 34118659}, {\"src\": \"hda\", \"id\": 34118660}, {\"src\": \"hda\", \"id\": 34118661}, {\"src\": \"hda\", \"id\": 34118662}, {\"src\": \"hda\", \"id\": 34118664}, {\"src\": \"hda\", \"id\": 34118665}, {\"src\": \"hda\", \"id\": 34118666}, {\"src\": \"hda\", \"id\": 34118667}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44001394,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-03 15:12:56.954888",
+        "user_id": 122228
+    },
+    {
+        "create_time": "2018-03-04 12:24:12.822694",
+        "datasets": [
+            {
+                "dataset_id": "23893782",
+                "extension": "bam",
+                "file_size": 5206771707,
+                "name": "Filter on data 128: Filtered BAM",
+                "param_name": "reference_source|input_bams"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3450295,
+        "id": 18599442,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12694477",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"min_coverage\": \"10\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34196912}]}, \"processmode\": \"individual\", \"__current_case__\": 0}, \"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44321877,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-04 20:06:36.044689",
+        "user_id": 84504
+    },
+    {
+        "create_time": "2018-03-02 09:56:47.956688",
+        "datasets": [
+            {
+                "dataset_id": "23825235",
+                "extension": "bam",
+                "file_size": 192301848,
+                "name": "DNA08-5107_RNA",
+                "param_name": "reference_source|input_bams"
+            },
+            {
+                "dataset_id": "23825235",
+                "extension": "bam",
+                "file_size": 192301848,
+                "name": "DNA08-5107_RNA",
+                "param_name": "reference_source|input_bams1"
+            },
+            {
+                "dataset_id": "23825657",
+                "extension": "bam",
+                "file_size": 150554277,
+                "name": "DNA09-1278_RNA",
+                "param_name": "reference_source|input_bams2"
+            },
+            {
+                "dataset_id": "23825658",
+                "extension": "bam",
+                "file_size": 247998275,
+                "name": "DNA09-2095_RNA",
+                "param_name": "reference_source|input_bams3"
+            },
+            {
+                "dataset_id": "23825659",
+                "extension": "bam",
+                "file_size": 242908958,
+                "name": "DNA10-4765_RNA",
+                "param_name": "reference_source|input_bams4"
+            },
+            {
+                "dataset_id": "23825660",
+                "extension": "bam",
+                "file_size": 187322627,
+                "name": "DNA10-6027_RNA",
+                "param_name": "reference_source|input_bams5"
+            },
+            {
+                "dataset_id": "23825661",
+                "extension": "bam",
+                "file_size": 243227646,
+                "name": "DNA12-0687_RNA",
+                "param_name": "reference_source|input_bams6"
+            },
+            {
+                "dataset_id": "23825662",
+                "extension": "bam",
+                "file_size": 117009111,
+                "name": "DNA12-8326_RNA",
+                "param_name": "reference_source|input_bams7"
+            },
+            {
+                "dataset_id": "23825663",
+                "extension": "bam",
+                "file_size": 186754238,
+                "name": "DNA12-9641_RNA",
+                "param_name": "reference_source|input_bams8"
+            },
+            {
+                "dataset_id": "23825664",
+                "extension": "bam",
+                "file_size": 177547680,
+                "name": "DNA13-00775_RNA",
+                "param_name": "reference_source|input_bams9"
+            },
+            {
+                "dataset_id": "23825665",
+                "extension": "bam",
+                "file_size": 226287633,
+                "name": "DNA13-05282_RNA",
+                "param_name": "reference_source|input_bams10"
+            },
+            {
+                "dataset_id": "23825666",
+                "extension": "bam",
+                "file_size": 178290900,
+                "name": "DNA13-05503_RNA",
+                "param_name": "reference_source|input_bams11"
+            },
+            {
+                "dataset_id": "23825667",
+                "extension": "bam",
+                "file_size": 240886233,
+                "name": "DNA13-10018_RNA",
+                "param_name": "reference_source|input_bams12"
+            },
+            {
+                "dataset_id": "23825668",
+                "extension": "bam",
+                "file_size": 223117778,
+                "name": "DNA14-52627_RNA",
+                "param_name": "reference_source|input_bams13"
+            },
+            {
+                "dataset_id": "23825669",
+                "extension": "bam",
+                "file_size": 81281790,
+                "name": "DNA14-53190_RNA",
+                "param_name": "reference_source|input_bams14"
+            },
+            {
+                "dataset_id": "23825670",
+                "extension": "bam",
+                "file_size": 218199114,
+                "name": "DNA14-54803_RNA",
+                "param_name": "reference_source|input_bams15"
+            },
+            {
+                "dataset_id": "23825671",
+                "extension": "bam",
+                "file_size": 211216134,
+                "name": "DNA14-59023_RNA",
+                "param_name": "reference_source|input_bams16"
+            },
+            {
+                "dataset_id": "23825672",
+                "extension": "bam",
+                "file_size": 211929572,
+                "name": "DNA14-59865_RNA",
+                "param_name": "reference_source|input_bams17"
+            },
+            {
+                "dataset_id": "23825673",
+                "extension": "bam",
+                "file_size": 176626417,
+                "name": "DNA14-59910_RNA",
+                "param_name": "reference_source|input_bams18"
+            },
+            {
+                "dataset_id": "23825674",
+                "extension": "bam",
+                "file_size": 136257895,
+                "name": "DNA14-59914_RNA",
+                "param_name": "reference_source|input_bams19"
+            },
+            {
+                "dataset_id": "23825675",
+                "extension": "bam",
+                "file_size": 222358731,
+                "name": "DNA14-59920_RNA",
+                "param_name": "reference_source|input_bams20"
+            },
+            {
+                "dataset_id": "23825676",
+                "extension": "bam",
+                "file_size": 238180592,
+                "name": "DNA14-60178_RNA",
+                "param_name": "reference_source|input_bams21"
+            },
+            {
+                "dataset_id": "23825677",
+                "extension": "bam",
+                "file_size": 250477646,
+                "name": "DNA14-60240_RNA",
+                "param_name": "reference_source|input_bams22"
+            },
+            {
+                "dataset_id": "23825678",
+                "extension": "bam",
+                "file_size": 27719177,
+                "name": "DNA14-60418A_RNA",
+                "param_name": "reference_source|input_bams23"
+            },
+            {
+                "dataset_id": "23825679",
+                "extension": "bam",
+                "file_size": 238510763,
+                "name": "DNA14-60611_RNA",
+                "param_name": "reference_source|input_bams24"
+            },
+            {
+                "dataset_id": "23825680",
+                "extension": "bam",
+                "file_size": 121734153,
+                "name": "DNA14-61081_RNA",
+                "param_name": "reference_source|input_bams25"
+            },
+            {
+                "dataset_id": "23825681",
+                "extension": "bam",
+                "file_size": 159160630,
+                "name": "DNA14-61173_RNA",
+                "param_name": "reference_source|input_bams26"
+            },
+            {
+                "dataset_id": "23825682",
+                "extension": "bam",
+                "file_size": 280410193,
+                "name": "DNA14-61407_RNA",
+                "param_name": "reference_source|input_bams27"
+            },
+            {
+                "dataset_id": "23825683",
+                "extension": "bam",
+                "file_size": 88504753,
+                "name": "DNA14-61719_RNA",
+                "param_name": "reference_source|input_bams28"
+            },
+            {
+                "dataset_id": "23825684",
+                "extension": "bam",
+                "file_size": 111945996,
+                "name": "DNA11-7385_RNA",
+                "param_name": "reference_source|input_bams29"
+            },
+            {
+                "dataset_id": "23825685",
+                "extension": "bam",
+                "file_size": 387382095,
+                "name": "DNA13-02219_RNA",
+                "param_name": "reference_source|input_bams30"
+            },
+            {
+                "dataset_id": "23825686",
+                "extension": "bam",
+                "file_size": 271010413,
+                "name": "DNA13-03753_RNA",
+                "param_name": "reference_source|input_bams31"
+            },
+            {
+                "dataset_id": "23825687",
+                "extension": "bam",
+                "file_size": 311581375,
+                "name": "DNA14-60162_RNA",
+                "param_name": "reference_source|input_bams32"
+            },
+            {
+                "dataset_id": "23825688",
+                "extension": "bam",
+                "file_size": 361139336,
+                "name": "DNA14-60651_RNA",
+                "param_name": "reference_source|input_bams33"
+            },
+            {
+                "dataset_id": "23825690",
+                "extension": "bam",
+                "file_size": 309424990,
+                "name": "DNA14-67183_RNA",
+                "param_name": "reference_source|input_bams34"
+            },
+            {
+                "dataset_id": "23825691",
+                "extension": "bam",
+                "file_size": 199316465,
+                "name": "DNA15-72669_RNA",
+                "param_name": "reference_source|input_bams35"
+            },
+            {
+                "dataset_id": "23825692",
+                "extension": "bam",
+                "file_size": 174606565,
+                "name": "DNA16-56229_RNA",
+                "param_name": "reference_source|input_bams36"
+            },
+            {
+                "dataset_id": "23825693",
+                "extension": "bam",
+                "file_size": 256009996,
+                "name": "DNA14-60424A_RNA",
+                "param_name": "reference_source|input_bams37"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "freebayes",
+                "version": "1.1.0.46"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "0.1.19"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "gawk",
+                "version": "4.1.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-19f61dde9d8a7596b631632a802f6f24b752410a1f7974425fd008b237a638e0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "parallel",
+                "version": "20170422"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3434644,
+        "id": 18578347,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12672795",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"min_coverage\": \"20\", \"__current_case__\": 2, \"options_type_selector\": \"simple_w_filters\"}",
+            "reference_source": "{\"batchmode\": {\"input_bams\": {\"values\": [{\"src\": \"hda\", \"id\": 34118181}, {\"src\": \"hda\", \"id\": 34118631}, {\"src\": \"hda\", \"id\": 34118632}, {\"src\": \"hda\", \"id\": 34118633}, {\"src\": \"hda\", \"id\": 34118634}, {\"src\": \"hda\", \"id\": 34118635}, {\"src\": \"hda\", \"id\": 34118636}, {\"src\": \"hda\", \"id\": 34118637}, {\"src\": \"hda\", \"id\": 34118638}, {\"src\": \"hda\", \"id\": 34118639}, {\"src\": \"hda\", \"id\": 34118640}, {\"src\": \"hda\", \"id\": 34118641}, {\"src\": \"hda\", \"id\": 34118642}, {\"src\": \"hda\", \"id\": 34118643}, {\"src\": \"hda\", \"id\": 34118644}, {\"src\": \"hda\", \"id\": 34118645}, {\"src\": \"hda\", \"id\": 34118646}, {\"src\": \"hda\", \"id\": 34118647}, {\"src\": \"hda\", \"id\": 34118648}, {\"src\": \"hda\", \"id\": 34118649}, {\"src\": \"hda\", \"id\": 34118650}, {\"src\": \"hda\", \"id\": 34118651}, {\"src\": \"hda\", \"id\": 34118652}, {\"src\": \"hda\", \"id\": 34118653}, {\"src\": \"hda\", \"id\": 34118654}, {\"src\": \"hda\", \"id\": 34118655}, {\"src\": \"hda\", \"id\": 34118656}, {\"src\": \"hda\", \"id\": 34118657}, {\"src\": \"hda\", \"id\": 34118658}, {\"src\": \"hda\", \"id\": 34118659}, {\"src\": \"hda\", \"id\": 34118660}, {\"src\": \"hda\", \"id\": 34118661}, {\"src\": \"hda\", \"id\": 34118662}, {\"src\": \"hda\", \"id\": 34118664}, {\"src\": \"hda\", \"id\": 34118665}, {\"src\": \"hda\", \"id\": 34118666}, {\"src\": \"hda\", \"id\": 34118667}]}, \"processmode\": \"merge\", \"__current_case__\": 1}, \"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44001394,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.1.0.46-0",
+        "tool_version": "1.1.0.46-0",
+        "traceback": null,
+        "update_time": "2018-03-02 23:08:04.929227",
+        "user_id": 122228
+    }
+]

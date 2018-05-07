@@ -1,0 +1,243 @@
+[
+    {
+        "create_time": "2016-04-07 03:59:37.104364",
+        "datasets": [
+            {
+                "dataset_id": "15080467",
+                "extension": "bam",
+                "file_size": 10503918342,
+                "name": "Table Recalibration on data 3900 and data 3901 (BAM)",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "12273009",
+                "extension": "bed",
+                "file_size": 7708563,
+                "name": "nexteraexpandedexome.bed",
+                "param_name": "input_calculate_coverage_over_genes"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2417391,
+        "id": 12358673,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6563235.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_calculate_coverage_over_genes": "20895035",
+            "output_format": "\"rtable\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24145792}], \"__current_case__\": 0}",
+            "summary_coverage_threshold_group": "[]"
+        },
+        "runner_name": null,
+        "session_id": 29454594,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-04-08 04:00:04.795964",
+        "user_id": 68134
+    },
+    {
+        "create_time": "2016-10-09 10:52:33.586264",
+        "datasets": [
+            {
+                "dataset_id": "17338030",
+                "extension": "bam",
+                "file_size": 26381685790,
+                "name": "Indel Realigner on data 107 and data 106 (BAM)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2232551,
+        "id": 14038834,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8256277.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_calculate_coverage_over_genes": "null",
+            "output_format": "\"table\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50268949b98f4e444\"}]}}], \"__current_case__\": 0}",
+            "summary_coverage_threshold_group": "[]"
+        },
+        "runner_name": null,
+        "session_id": 33556034,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-10-10 10:53:41.956691",
+        "user_id": 60720
+    },
+    {
+        "create_time": "2017-05-24 00:12:12.827060",
+        "datasets": [
+            {
+                "dataset_id": "20050844",
+                "extension": "bam",
+                "file_size": 29491272946,
+                "name": "ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA12749/alignment/NA12749.mapped.ILLUMINA.bwa.CEU.low_coverage.20130415.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/depth_of_coverage/c3f08370fc82",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/depth_of_coverage/c3f08370fc82/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/depth_of_coverage/c3f08370fc82",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/depth_of_coverage/c3f08370fc82/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3105606,
+        "id": 15922777,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10020776.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_calculate_coverage_over_genes": "null",
+            "output_format": "\"csv\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 29741233}]}}], \"__current_case__\": 0}",
+            "summary_coverage_threshold_group": "[]"
+        },
+        "runner_name": null,
+        "session_id": 37873184,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-05-25 00:12:51.204735",
+        "user_id": 105607
+    },
+    {
+        "create_time": "2017-05-25 13:55:44.039917",
+        "datasets": [
+            {
+                "dataset_id": "20050844",
+                "extension": "bam",
+                "file_size": 29491272946,
+                "name": "ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA12749/alignment/NA12749.mapped.ILLUMINA.bwa.CEU.low_coverage.20130415.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/depth_of_coverage/c3f08370fc82",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/depth_of_coverage/c3f08370fc82/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/depth_of_coverage/c3f08370fc82",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/depth_of_coverage/c3f08370fc82/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3105606,
+        "id": 15936996,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10035495.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "input_calculate_coverage_over_genes": "null",
+            "output_format": "\"csv\"",
+            "partition_type": "[\"sample\"]",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 29741233}]}}], \"__current_case__\": 0}",
+            "summary_coverage_threshold_group": "[]"
+        },
+        "runner_name": null,
+        "session_id": 37873184,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/depth_of_coverage/gatk_depth_of_coverage/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-05-26 13:56:31.209649",
+        "user_id": 105607
+    }
+]

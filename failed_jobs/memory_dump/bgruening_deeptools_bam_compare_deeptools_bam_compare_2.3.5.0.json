@@ -1,0 +1,59 @@
+[
+    {
+        "create_time": "2016-10-26 19:30:16.693997",
+        "datasets": [
+            {
+                "dataset_id": "17633520",
+                "extension": "bam",
+                "file_size": 9079534472,
+                "name": "MB2",
+                "param_name": "bamFile1"
+            },
+            {
+                "dataset_id": "17633500",
+                "extension": "bam",
+                "file_size": 11714420405,
+                "name": "MB1",
+                "param_name": "bamFile2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2869718,
+        "id": 14183426,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8396112",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "bamFile1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e81171cb54d867af\"}]}",
+            "bamFile2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b539d073d6d3f38a4f\"}]}",
+            "binSize": "\"10\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "comparison": "{\"pseudocount\": \"1.0\", \"type\": \"log2\", \"__current_case__\": 0}",
+            "dbkey": "\"hg19\"",
+            "outFileFormat": "\"bigwig\"",
+            "region": "\"\"",
+            "scaling": "{\"method\": \"readCount\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 33926352,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_compare/deeptools_bam_compare/2.3.5.0",
+        "tool_version": "2.3.5.0",
+        "traceback": null,
+        "update_time": "2016-10-26 20:26:34.478146",
+        "user_id": 12752
+    }
+]

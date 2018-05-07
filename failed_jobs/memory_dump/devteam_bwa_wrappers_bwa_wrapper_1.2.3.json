@@ -1,0 +1,2461 @@
+[
+    {
+        "create_time": "2016-04-06 08:03:05.386419",
+        "datasets": [
+            {
+                "dataset_id": "15087035",
+                "extension": "fastqsanger",
+                "file_size": 3699154606,
+                "name": "Trimmomatic on FASTQ Groomer on data 41 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15087036",
+                "extension": "fastqsanger",
+                "file_size": 2709272682,
+                "name": "Trimmomatic on FASTQ Groomer on data 42 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2607691,
+        "id": 12351391,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6555928",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": 24152891, \"sPaired\": \"paired\", \"input1\": 24152890, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 28608820,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-04-06 20:46:37.868595",
+        "user_id": 79297
+    },
+    {
+        "create_time": "2018-02-09 03:07:58.917429",
+        "datasets": [
+            {
+                "dataset_id": "23500725",
+                "extension": "fastqsanger",
+                "file_size": 11854076738,
+                "name": "Trimmomatic on panc1_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23500724",
+                "extension": "fastqsanger",
+                "file_size": 10914348458,
+                "name": "Trimmomatic on panc1_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3422314,
+        "id": 18323443,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12407567",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"6da918d40d4611e88da0005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33757588}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33757589}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-09 14:57:59.536471",
+        "user_id": 69003
+    },
+    {
+        "create_time": "2016-04-07 15:33:12.918012",
+        "datasets": [
+            {
+                "dataset_id": "15087035",
+                "extension": "fastqsanger",
+                "file_size": 3699154606,
+                "name": "Trimmomatic on FASTQ Groomer on data 41 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15087036",
+                "extension": "fastqsanger",
+                "file_size": 2709272682,
+                "name": "Trimmomatic on FASTQ Groomer on data 42 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2607691,
+        "id": 12365524,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6569055",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": 24152891, \"sPaired\": \"paired\", \"input1\": 24152890, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 28608820,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-04-08 01:03:15.839476",
+        "user_id": 79297
+    },
+    {
+        "create_time": "2018-02-16 19:57:36.459478",
+        "datasets": [
+            {
+                "dataset_id": "23636380",
+                "extension": "fastqsanger",
+                "file_size": 6522269645,
+                "name": "Select first on data 25",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23636384",
+                "extension": "fastqsanger",
+                "file_size": 7059889217,
+                "name": "Select first on data 26",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3424000,
+        "id": 18415379,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12507028",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33904953}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33904949}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"3\", \"suboptAlign\": \"\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"3\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"10\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"500\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"-1\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43963164,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 16:34:57.575694",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2018-02-09 20:54:02.885625",
+        "datasets": [
+            {
+                "dataset_id": "23520360",
+                "extension": "fastqsanger",
+                "file_size": 13938259074,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23520359",
+                "extension": "fastqsanger",
+                "file_size": 12518824830,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424000,
+        "id": 18333249,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12417675",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33779189}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33779190}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"3\", \"suboptAlign\": \"\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"3\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"10\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"500\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"-1\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43814098,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-10 08:24:19.979252",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2018-02-16 19:56:54.972307",
+        "datasets": [
+            {
+                "dataset_id": "23611424",
+                "extension": "fastqsanger",
+                "file_size": 5777158062,
+                "name": "Select last on data 21",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23636377",
+                "extension": "fastqsanger",
+                "file_size": 6642973352,
+                "name": "Select last on data 22",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3424000,
+        "id": 18415226,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12501421",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33904945}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33877675}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"3\", \"suboptAlign\": \"\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"3\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"10\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"500\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"-1\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43963164,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 06:22:11.658718",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2015-05-19 07:51:10.472673",
+        "datasets": [
+            {
+                "dataset_id": "11330513",
+                "extension": "fasta",
+                "file_size": 84485583798,
+                "name": "FASTQ to FASTA on data 25",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "11330472",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 26",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11330472",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 26",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=7:14:29"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2295142,
+        "id": 9493737,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3815944",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": 19717592, \"__current_case__\": 1}",
+            "paired": "{\"input2\": 19717543, \"sPaired\": \"paired\", \"input1\": 19717543, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23164709,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2015-05-19 08:04:38.176118",
+        "user_id": 63178
+    },
+    {
+        "create_time": "2016-08-31 14:28:48.991171",
+        "datasets": [
+            {
+                "dataset_id": "17036506",
+                "extension": "fastqsanger",
+                "file_size": 23080718980,
+                "name": "Trimmomatic on FASTQ Groomer on data 22 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17036507",
+                "extension": "fastqsanger",
+                "file_size": 22177103916,
+                "name": "Trimmomatic on FASTQ Groomer on data 23 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2806190,
+        "id": 13755230,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7976022",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg18/bwa_index/hg18.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b585e34293fa999ede\"}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b576673bf224bf01c8\"}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 32065860,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-09-01 03:37:00.404916",
+        "user_id": 73652
+    },
+    {
+        "create_time": "2015-05-19 08:43:37.699287",
+        "datasets": [
+            {
+                "dataset_id": "11330395",
+                "extension": "fasta",
+                "file_size": 84485583798,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "11330462",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 25",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11330462",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 25",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=7:14:29"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2295145,
+        "id": 9493892,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3816118",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": 19717450, \"__current_case__\": 1}",
+            "paired": "{\"input2\": 19717533, \"sPaired\": \"paired\", \"input1\": 19717533, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23166711,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2015-05-19 08:55:15.121492",
+        "user_id": 63179
+    },
+    {
+        "create_time": "2016-03-14 11:00:54.774399",
+        "datasets": [
+            {
+                "dataset_id": "14772059",
+                "extension": "fastqsanger",
+                "file_size": 7543653390,
+                "name": "FASTQ Groomer I1_T2_1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "14772149",
+                "extension": "fastqsanger",
+                "file_size": 7543653390,
+                "name": "FASTQ Groomer I1_T2_2",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2427090,
+        "id": 12126458,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6346905",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "genomeSource": "{\"indices\": \"hg38\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": 23794332, \"sPaired\": \"paired\", \"input1\": 23794236, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 28029926,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-03-14 13:53:00.232112",
+        "user_id": 64160
+    },
+    {
+        "create_time": "2017-07-05 16:21:40.768336",
+        "datasets": [
+            {
+                "dataset_id": "20516250",
+                "extension": "fastqsanger",
+                "file_size": 799636805,
+                "name": "FASTQ Groomer on data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "20516251",
+                "extension": "fastqsanger",
+                "file_size": 799636805,
+                "name": "FASTQ Groomer on data 2",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3182781,
+        "id": 16264485,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10335797",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"ce10\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 30304365}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 30304364}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"500\", \"suboptAlign\": \"5000\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"50000000\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"5000\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"5000\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"13\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 39115071,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-07-05 16:31:00.978392",
+        "user_id": 26904
+    },
+    {
+        "create_time": "2018-02-09 20:54:26.892749",
+        "datasets": [
+            {
+                "dataset_id": "23520379",
+                "extension": "fastqsanger",
+                "file_size": 15847540858,
+                "name": "Trimmomatic on panc1_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23520380",
+                "extension": "fastqsanger",
+                "file_size": 14298995044,
+                "name": "Trimmomatic on panc1_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424000,
+        "id": 18333251,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12417676",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33779213}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33779212}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43814098,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-10 08:15:30.204713",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2018-02-10 07:21:55.961453",
+        "datasets": [
+            {
+                "dataset_id": "23521372",
+                "extension": "fastqsanger",
+                "file_size": 17190663682,
+                "name": "Trimmomatic on panc1_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23521371",
+                "extension": "fastqsanger",
+                "file_size": 15425384746,
+                "name": "Trimmomatic on panc1_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424091,
+        "id": 18336105,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12420418",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33780256}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33780257}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43821238,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-10 19:24:09.808911",
+        "user_id": 115065
+    },
+    {
+        "create_time": "2016-08-30 18:23:35.102926",
+        "datasets": [
+            {
+                "dataset_id": "17036506",
+                "extension": "fastqsanger",
+                "file_size": 23080718980,
+                "name": "Trimmomatic on FASTQ Groomer on data 22 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17036507",
+                "extension": "fastqsanger",
+                "file_size": 22177103916,
+                "name": "Trimmomatic on FASTQ Groomer on data 23 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2806190,
+        "id": 13749935,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7972881",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg18/bwa_index/hg18.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b585e34293fa999ede\"}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b576673bf224bf01c8\"}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 32065860,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-08-31 13:31:12.924504",
+        "user_id": 73652
+    },
+    {
+        "create_time": "2017-12-02 22:26:59.872125",
+        "datasets": [
+            {
+                "dataset_id": "22441325",
+                "extension": "fastqsanger",
+                "file_size": 54047279448,
+                "name": "Trimmomatic on SRR934414 FASTQ de-interlacer left mates from data 12 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "22441318",
+                "extension": "fastqsanger",
+                "file_size": 51629707906,
+                "name": "Trimmomatic on SRR934414 FASTQ de-interlacer right mates from data 12 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3345765,
+        "id": 17678185,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11740777",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"bosTau7\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 32635556}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 32635554}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42340604,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-12-03 18:02:29.567865",
+        "user_id": 117570
+    },
+    {
+        "create_time": "2018-02-16 20:44:14.627698",
+        "datasets": [
+            {
+                "dataset_id": "23637224",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23637225",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424076,
+        "id": 18415956,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12502234",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33905996}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33905995}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43962743,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 09:38:01.746549",
+        "user_id": 121221
+    },
+    {
+        "create_time": "2016-11-25 09:40:21.912280",
+        "datasets": [
+            {
+                "dataset_id": "17991086",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "17991074",
+                "extension": "fastq",
+                "file_size": 1573011255,
+                "name": "2D_S10_L001_R1_001.fastq",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17991079",
+                "extension": "fastq",
+                "file_size": 1572811067,
+                "name": "2D_S10_L001_R2_001.fastq",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2908029,
+        "id": 14429108,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8630734",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"2c998a9eb2f311e6a5f3005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": {\"values\": [{\"src\": \"hda\", \"id\": 27406782}]}, \"__current_case__\": 1}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 27406774}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 27406769}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-11-25 11:17:35.807613",
+        "user_id": 82468
+    },
+    {
+        "create_time": "2018-02-16 19:15:25.009409",
+        "datasets": [
+            {
+                "dataset_id": "23635951",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23635952",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3432123,
+        "id": 18414758,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12501103",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"ba4011d6134d11e8a6a9005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33904431}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33904430}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 07:27:27.876793",
+        "user_id": 121222
+    },
+    {
+        "create_time": "2018-03-01 03:36:36.542118",
+        "datasets": [
+            {
+                "dataset_id": "23838495",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23838496",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3424088,
+        "id": 18558995,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12655642",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 34134451}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 34134450}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 44247568,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-03-01 14:33:06.948163",
+        "user_id": 115072
+    },
+    {
+        "create_time": "2016-09-01 12:12:05.679746",
+        "datasets": [
+            {
+                "dataset_id": "17036506",
+                "extension": "fastqsanger",
+                "file_size": 23080718980,
+                "name": "Trimmomatic on FASTQ Groomer on data 22 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "17036507",
+                "extension": "fastqsanger",
+                "file_size": 22177103916,
+                "name": "Trimmomatic on FASTQ Groomer on data 23 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2806190,
+        "id": 13761805,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7983258",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg18/bwa_index/hg18.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b585e34293fa999ede\"}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b576673bf224bf01c8\"}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 32091340,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-09-01 23:53:55.110628",
+        "user_id": 73652
+    },
+    {
+        "create_time": "2018-02-27 14:16:46.959853",
+        "datasets": [
+            {
+                "dataset_id": "23757248",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23757249",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3440505,
+        "id": 18535625,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12632175",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 34039848}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 34039847}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 44195846,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-28 01:57:32.072829",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2017-11-26 18:35:54.579068",
+        "datasets": [
+            {
+                "dataset_id": "22441325",
+                "extension": "fastqsanger",
+                "file_size": 54047279448,
+                "name": "Trimmomatic on SRR934414 FASTQ de-interlacer left mates from data 12 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "22441318",
+                "extension": "fastqsanger",
+                "file_size": 51629707906,
+                "name": "Trimmomatic on SRR934414 FASTQ de-interlacer right mates from data 12 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3331286,
+        "id": 17591363,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11654899",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"9ff0619cd2d811e7ac50005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"bosTau7\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 32544102}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 32544109}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-11-27 18:52:09.544346",
+        "user_id": 112479
+    },
+    {
+        "create_time": "2016-12-08 05:43:18.216020",
+        "datasets": [
+            {
+                "dataset_id": "18073201",
+                "extension": "fastqsanger",
+                "file_size": 6586190304,
+                "name": "Input_1.fastq",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18084992",
+                "extension": "fastqsanger",
+                "file_size": 6586190304,
+                "name": "Input_2.fastq",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 2918216,
+        "id": 14511448,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8693988",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 27513696}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 27500434}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 34644292,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-12-08 09:21:00.880530",
+        "user_id": 96271
+    },
+    {
+        "create_time": "2016-04-11 08:51:29.254723",
+        "datasets": [
+            {
+                "dataset_id": "15087035",
+                "extension": "fastqsanger",
+                "file_size": 3699154606,
+                "name": "Trimmomatic on FASTQ Groomer on data 41 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15087036",
+                "extension": "fastqsanger",
+                "file_size": 2709272682,
+                "name": "Trimmomatic on FASTQ Groomer on data 42 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2607691,
+        "id": 12415527,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6616175",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": 24152891, \"sPaired\": \"paired\", \"input1\": 24152890, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 28608820,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-04-11 18:10:28.926223",
+        "user_id": 79297
+    },
+    {
+        "create_time": "2018-02-16 19:56:27.875213",
+        "datasets": [
+            {
+                "dataset_id": "23611418",
+                "extension": "fastqsanger",
+                "file_size": 6741666768,
+                "name": "Select first on data 21",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23636369",
+                "extension": "fastqsanger",
+                "file_size": 7295285722,
+                "name": "Select first on data 22",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3424000,
+        "id": 18415182,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12501393",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33904937}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33877669}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"3\", \"suboptAlign\": \"\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"3\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"10\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"500\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"-1\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43963164,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 06:45:51.176283",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2018-03-01 23:25:04.219833",
+        "datasets": [
+            {
+                "dataset_id": "23838495",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23838496",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424088,
+        "id": 18573785,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12666740",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 34134451}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 34134450}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 44274671,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-03-02 10:26:31.493586",
+        "user_id": 115072
+    },
+    {
+        "create_time": "2018-02-09 20:37:19.989275",
+        "datasets": [
+            {
+                "dataset_id": "23520922",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23520923",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424081,
+        "id": 18333100,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12417549",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33779803}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33779802}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43813527,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-10 08:01:21.839386",
+        "user_id": 115069
+    },
+    {
+        "create_time": "2018-02-12 00:48:32.847427",
+        "datasets": [
+            {
+                "dataset_id": "23520922",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23520923",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3424081,
+        "id": 18345199,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12429634",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33779803}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33779802}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 42431454,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-12 11:50:17.433753",
+        "user_id": 115069
+    },
+    {
+        "create_time": "2018-02-09 20:54:40.114661",
+        "datasets": [
+            {
+                "dataset_id": "23520371",
+                "extension": "fastqsanger",
+                "file_size": 14066253721,
+                "name": "Trimmomatic on miapaca2_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23520370",
+                "extension": "fastqsanger",
+                "file_size": 12614929089,
+                "name": "Trimmomatic on miapaca2_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424000,
+        "id": 18333253,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12420601",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33779202}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33779203}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"3\", \"suboptAlign\": \"\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"3\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"10\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"500\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"-1\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43814098,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-10 18:36:52.418947",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2018-02-20 00:22:16.998375",
+        "datasets": [
+            {
+                "dataset_id": "23635951",
+                "extension": "fastqsanger",
+                "file_size": 13452053802,
+                "name": "Trimmomatic on hpac_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23635952",
+                "extension": "fastqsanger",
+                "file_size": 15033431606,
+                "name": "Trimmomatic on hpac_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3432123,
+        "id": 18442076,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12536929",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33904431}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33904430}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 44018923,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-20 11:32:17.068981",
+        "user_id": 121222
+    },
+    {
+        "create_time": "2017-07-05 16:34:12.323550",
+        "datasets": [
+            {
+                "dataset_id": "20516250",
+                "extension": "fastqsanger",
+                "file_size": 799636805,
+                "name": "FASTQ Groomer on data 1",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "20516251",
+                "extension": "fastqsanger",
+                "file_size": 799636805,
+                "name": "FASTQ Groomer on data 2",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3182781,
+        "id": 16264587,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10335891",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"ce10\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 30304365}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 30304364}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"500\", \"suboptAlign\": \"5000\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"50000000\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"5000\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"5000\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"13\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 39115071,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-07-05 16:38:43.894501",
+        "user_id": 26904
+    },
+    {
+        "create_time": "2015-05-18 06:42:02.050157",
+        "datasets": [
+            {
+                "dataset_id": "11330395",
+                "extension": "fasta",
+                "file_size": 84485583798,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "11330462",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 25",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11330462",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 25",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=7:14:29"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2295145,
+        "id": 9487139,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3810403",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": 19717450, \"__current_case__\": 1}",
+            "paired": "{\"input2\": 19717533, \"sPaired\": \"paired\", \"input1\": 19717533, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23139996,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2015-05-18 15:09:18.971225",
+        "user_id": 63179
+    },
+    {
+        "create_time": "2018-02-09 15:22:16.327803",
+        "datasets": [
+            {
+                "dataset_id": "23500725",
+                "extension": "fastqsanger",
+                "file_size": 11854076738,
+                "name": "Trimmomatic on panc1_ng_exome_R1.fastq (R2 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23500724",
+                "extension": "fastqsanger",
+                "file_size": 10914348458,
+                "name": "Trimmomatic on panc1_ng_exome_R2.fastq (R1 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3423761,
+        "id": 18330337,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12414655",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"0202a2280dad11e8a78a005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33757588}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33757589}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-10 01:36:37.769154",
+        "user_id": 69003
+    },
+    {
+        "create_time": "2017-02-21 04:58:46.889126",
+        "datasets": [
+            {
+                "dataset_id": "18861174",
+                "extension": "fastqsanger",
+                "file_size": 663549577,
+                "name": "Trimmomatic on FASTQ Groomer on file 1 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18861175",
+                "extension": "fastqsanger",
+                "file_size": 548699661,
+                "name": "Trimmomatic on FASTQ Groomer on file 2 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2997643,
+        "id": 15092287,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9247287",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 28376785}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 28376784}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36185909,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-02-21 13:23:07.903392",
+        "user_id": 100272
+    },
+    {
+        "create_time": "2017-02-20 05:05:36.133930",
+        "datasets": [
+            {
+                "dataset_id": "18861174",
+                "extension": "fastqsanger",
+                "file_size": 663549577,
+                "name": "Trimmomatic on FASTQ Groomer on file 1 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "18861175",
+                "extension": "fastqsanger",
+                "file_size": 548699661,
+                "name": "Trimmomatic on FASTQ Groomer on file 2 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 2997643,
+        "id": 15082817,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9238031",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 28376785}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 28376784}]}, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 36163045,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2017-02-20 13:59:39.278200",
+        "user_id": 100272
+    },
+    {
+        "create_time": "2016-04-07 05:44:43.191315",
+        "datasets": [
+            {
+                "dataset_id": "15087035",
+                "extension": "fastqsanger",
+                "file_size": 3699154606,
+                "name": "Trimmomatic on FASTQ Groomer on data 41 (R1 paired)",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "15087036",
+                "extension": "fastqsanger",
+                "file_size": 2709272682,
+                "name": "Trimmomatic on FASTQ Groomer on data 42 (R2 paired)",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2607691,
+        "id": 12358993,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6564194",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": 24152891, \"sPaired\": \"paired\", \"input1\": 24152890, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 28608820,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2016-04-07 15:15:40.908466",
+        "user_id": 79297
+    },
+    {
+        "create_time": "2015-05-18 06:44:39.109038",
+        "datasets": [
+            {
+                "dataset_id": "11330513",
+                "extension": "fasta",
+                "file_size": 84485583798,
+                "name": "FASTQ to FASTA on data 25",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "11330472",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 26",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11330472",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 26",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=7:14:29"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2295142,
+        "id": 9487140,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3810407",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": 19717592, \"__current_case__\": 1}",
+            "paired": "{\"input2\": 19717543, \"sPaired\": \"paired\", \"input1\": 19717543, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23140004,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2015-05-18 15:09:06.930426",
+        "user_id": 63178
+    },
+    {
+        "create_time": "2015-05-19 05:35:39.339036",
+        "datasets": [
+            {
+                "dataset_id": "11330513",
+                "extension": "fasta",
+                "file_size": 84485583798,
+                "name": "FASTQ to FASTA on data 25",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "11330472",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 26",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11330472",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 26",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=7:14:29"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2295142,
+        "id": 9492975,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3815187",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": 19717592, \"__current_case__\": 1}",
+            "paired": "{\"input2\": 19717543, \"sPaired\": \"paired\", \"input1\": 19717543, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23164709,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2015-05-19 05:51:03.875919",
+        "user_id": 63178
+    },
+    {
+        "create_time": "2018-02-16 19:58:15.451761",
+        "datasets": [
+            {
+                "dataset_id": "23636397",
+                "extension": "fastqsanger",
+                "file_size": 7948596944,
+                "name": "Select first on data 29",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "23636413",
+                "extension": "fastqsanger",
+                "file_size": 7395323083,
+                "name": "Select first on data 30",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bwa",
+                "path": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c",
+                "script": "/galaxy/main/deps/bwa/0.5.9/devteam/bwa_wrappers/ffa8aaa14f7c/env.sh",
+                "version": "0.5.9"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3424000,
+        "id": 18415503,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12507522",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"indices\": \"/galaxy/data/hg19/bwa_index/hg19.fa\", \"refGenomeSource\": \"indexed\", \"__current_case__\": 0}",
+            "paired": "{\"input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33904982}]}, \"sPaired\": \"paired\", \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33904966}]}, \"__current_case__\": 1}",
+            "params": "{\"outputTopN\": \"3\", \"suboptAlign\": \"\", \"gapOpenPenalty\": \"11\", \"maxGapOpens\": \"1\", \"mismatchPenalty\": \"3\", \"fracMissingAligns\": \"0.04\", \"disallowIndel\": \"5\", \"outputTopNDisc\": \"10\", \"disallowLongDel\": \"16\", \"readGroup\": {\"__current_case__\": 1, \"specReadGroup\": \"no\"}, \"maxInsertSize\": \"500\", \"__current_case__\": 1, \"maxEditDist\": \"0\", \"gapExtensPenalty\": \"4\", \"maxGapExtens\": \"-1\", \"maxEditDistSeed\": \"2\", \"noIterSearch\": \"false\", \"seed\": \"-1\", \"maxOccurPairing\": \"100000\", \"source_select\": \"full\"}",
+            "suppressHeader": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43963164,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2018-02-17 17:11:07.382862",
+        "user_id": 114804
+    },
+    {
+        "create_time": "2015-05-19 09:15:24.525802",
+        "datasets": [
+            {
+                "dataset_id": "11330395",
+                "extension": "fasta",
+                "file_size": 84485583798,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "ownFile"
+            },
+            {
+                "dataset_id": "11330462",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 25",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "11330462",
+                "extension": "fastqsanger",
+                "file_size": 20103099595,
+                "name": "FASTQ Groomer on data 25",
+                "param_name": "input2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=7:14:29"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2295145,
+        "id": 9493972,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3816198",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genomeSource": "{\"refGenomeSource\": \"history\", \"ownFile\": 19717450, \"__current_case__\": 1}",
+            "paired": "{\"input2\": 19717533, \"sPaired\": \"paired\", \"input1\": 19717533, \"__current_case__\": 1}",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "suppressHeader": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23166711,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3",
+        "tool_version": "1.2.3",
+        "traceback": null,
+        "update_time": "2015-05-19 09:21:57.734013",
+        "user_id": 63179
+    }
+]

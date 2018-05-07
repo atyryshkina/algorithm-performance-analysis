@@ -1,0 +1,412 @@
+[
+    {
+        "create_time": "2015-04-23 20:33:02.731730",
+        "datasets": [
+            {
+                "dataset_id": "10988915",
+                "extension": "fasta",
+                "file_size": 1023114609,
+                "name": "genome.fa",
+                "param_name": "own_file"
+            },
+            {
+                "dataset_id": "10975175",
+                "extension": "fastqsanger",
+                "file_size": 11357868935,
+                "name": "FASTQ Groomer on data 19",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2217144,
+        "id": 9315495,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3643231",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"__current_case__\": 0, \"i\": \"S,1,0.5\", \"L\": \"10\", \"N\": \"1\", \"norc\": \"False\", \"nofw\": \"False\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"alignment_options_selector\": \"yes\", \"no_1mm_upfront\": \"False\", \"gbar\": \"4\", \"ignore_quals\": \"False\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"yes\", \"R\": \"3\", \"D\": \"20\", \"__current_case__\": 0}, \"sam_options\": {\"omit_sec_seq\": \"False\", \"sam_options_selector\": \"yes\", \"no_unal\": \"True\", \"__current_case__\": 0}, \"other_options\": {\"non_deterministic\": \"False\", \"seed\": \"0\", \"other_options_selector\": \"yes\", \"__current_case__\": 0}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"3\", \"rdg_read_open\": \"5\", \"rfg_ref_open\": \"5\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"3\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"input_options\": {\"int_quals\": \"False\", \"solexa_quals\": \"False\", \"skip\": \"0\", \"input_options_selector\": \"yes\", \"qv_encoding\": \"--phred33\", \"__current_case__\": 0, \"trim3\": \"0\", \"qupto\": \"100000000\", \"trim5\": \"0\"}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/galGal4.len\"",
+            "dbkey": "\"galGal4\"",
+            "library": "{\"unaligned_file\": \"True\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": 19225327}",
+            "read_group": "{\"rgpl\": \"ILLUMINA\", \"rgsm\": \"SM1\", \"rgid\": \"HD3\", \"__current_case__\": 0, \"read_group_selector\": \"yes\", \"rglb\": \"P40_2\"}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": 19241450}"
+        },
+        "runner_name": null,
+        "session_id": 22590828,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-04-25 08:33:39.868833",
+        "user_id": 59767
+    },
+    {
+        "create_time": "2015-06-26 00:12:48.480340",
+        "datasets": [
+            {
+                "dataset_id": "11658471",
+                "extension": "fastqsanger",
+                "file_size": 1410178419,
+                "name": "CD133-EGFR-H3K27me3-IL6468_S4_L002_R1_001.fastq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "11658470",
+                "extension": "fastqsanger",
+                "file_size": 1410178419,
+                "name": "CD133-EGFR-H3K27me3-IL6468_S4_L002_R2_001.fastq",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2355846,
+        "id": 9736646,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4042392",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"--very-fast-local\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "library": "{\"unaligned_file\": \"False\", \"input_2\": 20139582, \"__current_case__\": 1, \"input_1\": 20139583, \"type\": \"paired\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm9female\"}"
+        },
+        "runner_name": null,
+        "session_id": 23682461,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-06-26 00:44:05.176180",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2015-10-01 13:06:38.072991",
+        "datasets": [
+            {
+                "dataset_id": "12653902",
+                "extension": "fastqsanger",
+                "file_size": 69424117992,
+                "name": "GenomeSpace import on A13_1P.fq.gz",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "12654101",
+                "extension": "fastqsanger",
+                "file_size": 68467494298,
+                "name": "GenomeSpace import on A13_2P.fq.gz",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2448575,
+        "id": 10480309,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4757113",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi\"}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"__current_case__\": 0, \"i\": \"S,1,1.15\", \"L\": \"22\", \"N\": \"1\", \"norc\": \"False\", \"nofw\": \"False\", \"align_mode\": {\"score_min_loc\": \"G,20,8\", \"align_mode_selector\": \"local\", \"__current_case__\": 1}, \"alignment_options_selector\": \"yes\", \"no_1mm_upfront\": \"False\", \"gbar\": \"4\", \"ignore_quals\": \"False\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"non_deterministic\": \"False\", \"seed\": \"0\", \"other_options_selector\": \"yes\", \"__current_case__\": 0}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"3\", \"rdg_read_open\": \"5\", \"rfg_ref_open\": \"5\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"3\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"unaligned_file\": \"False\", \"input_2\": 21357584, \"__current_case__\": 1, \"input_1\": 21357372, \"type\": \"paired\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm10\"}"
+        },
+        "runner_name": null,
+        "session_id": 25337647,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-10-03 01:07:21.371128",
+        "user_id": 69878
+    },
+    {
+        "create_time": "2015-10-12 15:58:25.246428",
+        "datasets": [
+            {
+                "dataset_id": "12749521",
+                "extension": "fastqsanger",
+                "file_size": 67710598215,
+                "name": "GenomeSpace import on A22_1P.fq.gz",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "12750187",
+                "extension": "fastqsanger",
+                "file_size": 66796535005,
+                "name": "GenomeSpace import on A22_2P.fq.gz",
+                "param_name": "input_2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2463399,
+        "id": 10549345,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4822613",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "analysis_type": "{\"analysis_type_selector\": \"simple\", \"presets\": \"--very-sensitive-local\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"unaligned_file\": \"False\", \"input_2\": 21485724, \"__current_case__\": 1, \"input_1\": 21485044, \"type\": \"paired\", \"paired_options\": {\"paired_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm10\"}"
+        },
+        "runner_name": null,
+        "session_id": 25567106,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-10-14 03:59:09.516453",
+        "user_id": 69878
+    },
+    {
+        "create_time": "2015-10-31 18:38:29.086278",
+        "datasets": [
+            {
+                "dataset_id": "13036755",
+                "extension": "fastqsanger",
+                "file_size": 10441577,
+                "name": "FASTQ Groomer on intron-P_reads",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "13038425",
+                "extension": "fasta",
+                "file_size": 10189,
+                "name": "intron-D_big.fasta",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2487296,
+        "id": 10780488,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5038472",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "analysis_type": "{\"alignment_options\": {\"alignment_options_selector\": \"no\", \"__current_case__\": 1}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"3\", \"rdg_read_open\": \"5\", \"rfg_ref_open\": \"5\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"0\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"unaligned_file\": \"False\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": 21816056}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": 21818088}"
+        },
+        "runner_name": null,
+        "session_id": 25957803,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-11-02 06:39:06.132205",
+        "user_id": 64695
+    },
+    {
+        "create_time": "2015-10-20 13:19:04.745076",
+        "datasets": [
+            {
+                "dataset_id": "12640107",
+                "extension": "fastqsanger",
+                "file_size": 881271,
+                "name": "FASTQ Groomer on data 10",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2453771,
+        "id": 10654634,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4919749",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "analysis_type": "{\"alignment_options\": {\"alignment_options_selector\": \"no\", \"__current_case__\": 1}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"ma\": \"2\", \"rfg_ref_extend\": \"0\", \"rdg_read_open\": \"3\", \"rfg_ref_open\": \"3\", \"mp\": \"6,2\", \"__current_case__\": 0, \"np\": \"1\", \"scoring_options_selector\": \"yes\", \"rdg_read_extend\": \"0\"}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "library": "{\"unaligned_file\": \"False\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": 21340047}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"mm10\"}"
+        },
+        "runner_name": null,
+        "session_id": 25400618,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-10-22 01:20:07.283235",
+        "user_id": 70170
+    },
+    {
+        "create_time": "2015-12-16 23:02:03.655850",
+        "datasets": [
+            {
+                "dataset_id": "13557980",
+                "extension": "fastqsanger",
+                "file_size": 9569891466,
+                "name": "d-yH2AX + 4OHT FASTQ Groomer",
+                "param_name": "input_1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2538326,
+        "id": 11202737,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5473861",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"__current_case__\": 0, \"i\": \"S,1,1.15\", \"L\": \"10\", \"N\": \"1\", \"norc\": \"False\", \"nofw\": \"False\", \"align_mode\": {\"score_min_loc\": \"G,20,8\", \"align_mode_selector\": \"local\", \"__current_case__\": 1}, \"alignment_options_selector\": \"yes\", \"no_1mm_upfront\": \"False\", \"gbar\": \"4\", \"ignore_quals\": \"False\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 1, \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "library": "{\"unaligned_file\": \"True\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": 22456163}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"indexed\", \"__current_case__\": 0, \"index\": \"hg18full\"}"
+        },
+        "runner_name": null,
+        "session_id": 26245641,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-12-18 11:02:44.375815",
+        "user_id": 73361
+    },
+    {
+        "create_time": "2015-12-21 18:58:02.833941",
+        "datasets": [
+            {
+                "dataset_id": "13691368",
+                "extension": "fastqsanger",
+                "file_size": 222622114,
+                "name": "Groomed NCU on Transcripts.fq",
+                "param_name": "input_1"
+            },
+            {
+                "dataset_id": "13384271",
+                "extension": "fasta",
+                "file_size": 273109084,
+                "name": "AGamP4_SingleLinesforGalaxy.fa",
+                "param_name": "own_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_dynamic_walltime",
+        "destination_params": {
+            "nativeSpecification": "--nodes=1 --ntasks=6 --partition=multi --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2545356,
+        "id": 11294207,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5569894",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"no\", \"__current_case__\": 0}",
+            "analysis_type": "{\"alignment_options\": {\"n_ceil\": \"L,0,0.15\", \"__current_case__\": 0, \"i\": \"S,1,1.15\", \"L\": \"10\", \"N\": \"1\", \"norc\": \"False\", \"nofw\": \"False\", \"align_mode\": {\"align_mode_selector\": \"end-to-end\", \"score_min_ete\": \"L,-0.6,-0.6\", \"__current_case__\": 0}, \"alignment_options_selector\": \"yes\", \"no_1mm_upfront\": \"False\", \"gbar\": \"4\", \"ignore_quals\": \"False\", \"dpad\": \"15\"}, \"effort_options\": {\"effort_options_selector\": \"no\", \"__current_case__\": 1}, \"sam_options\": {\"sam_options_selector\": \"no\", \"__current_case__\": 1}, \"other_options\": {\"other_options_selector\": \"no\", \"__current_case__\": 1}, \"scoring_options\": {\"scoring_options_selector\": \"no\", \"__current_case__\": 1}, \"analysis_type_selector\": \"full\", \"reporting_options\": {\"reporting_options_selector\": \"a\", \"__current_case__\": 2}, \"__current_case__\": 1, \"input_options\": {\"input_options_selector\": \"no\", \"__current_case__\": 1}}",
+            "chromInfo": "\"/galaxy-repl/main/files/011/005/dataset_11005960.dat\"",
+            "dbkey": "\"Agam_P4\"",
+            "library": "{\"unaligned_file\": \"False\", \"type\": \"single\", \"__current_case__\": 0, \"input_1\": 22606653}",
+            "read_group": "{\"__current_case__\": 1, \"read_group_selector\": \"no\"}",
+            "reference_genome": "{\"source\": \"history\", \"__current_case__\": 1, \"own_file\": 22606351}"
+        },
+        "runner_name": null,
+        "session_id": 25371130,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.4",
+        "tool_version": "0.4",
+        "traceback": null,
+        "update_time": "2015-12-23 06:58:56.590990",
+        "user_id": 43673
+    }
+]

@@ -1,0 +1,100 @@
+[
+    {
+        "create_time": "2016-12-15 08:19:25.299808",
+        "datasets": [
+            {
+                "dataset_id": "15164531",
+                "extension": "fastqsanger",
+                "file_size": 1613164198,
+                "name": "SRR085473_AD1_FASTQ Trimmer on data 80",
+                "param_name": "file_list"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": true,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy-repl/main/jobdir/014/580/14580840/conda-env",
+                "exact": true,
+                "model_class": "CondaDependency",
+                "name": "sra-tools",
+                "version": "2.7.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2863098,
+        "id": 14580840,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8760259.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv": "{\"spotgroups\": \"\", \"maxID\": \"\", \"clip\": \"false\", \"minlen\": \"\", \"region\": \"\", \"skip_technical\": \"false\", \"minID\": \"\", \"split\": \"true\", \"readfilter\": \"\", \"matepairDist\": \"\", \"alignments\": \"both\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"file_list\": {\"values\": [{\"src\": \"hda\", \"id\": 26924353}]}, \"__current_case__\": 2, \"input_select\": \"file_list\"}",
+            "outputformat": "\"fastqsanger\""
+        },
+        "runner_name": null,
+        "session_id": 34750189,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/2.7.0.1",
+        "tool_version": "2.7.0.1",
+        "traceback": null,
+        "update_time": "2016-12-15 08:20:48.822882",
+        "user_id": 37746
+    },
+    {
+        "create_time": "2016-11-12 21:54:27.261964",
+        "datasets": [
+            {
+                "dataset_id": "17812313",
+                "extension": "fastq",
+                "file_size": 1340703934,
+                "name": "EBI SRA: SRR1139595 File: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR113/005/SRR1139595/SRR1139595.fastq.gz",
+                "param_name": "file_list"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2574698,
+        "id": 14326339,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8533899.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv": "{\"spotgroups\": \"\", \"maxID\": \"\", \"clip\": \"false\", \"minlen\": \"\", \"region\": \"\", \"skip_technical\": \"false\", \"minID\": \"\", \"split\": \"true\", \"readfilter\": \"\", \"matepairDist\": \"\", \"alignments\": \"both\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input": "{\"file_list\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5620a252d81bd9586\"}]}, \"__current_case__\": 2, \"input_select\": \"file_list\"}",
+            "outputformat": "\"fastqsanger\""
+        },
+        "runner_name": null,
+        "session_id": 33960892,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/2.7.0.1",
+        "tool_version": "2.7.0.1",
+        "traceback": null,
+        "update_time": "2016-11-12 21:56:29.304209",
+        "user_id": 70414
+    }
+]

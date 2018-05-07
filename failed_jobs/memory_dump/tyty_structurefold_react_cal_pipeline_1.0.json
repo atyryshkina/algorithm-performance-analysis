@@ -1,0 +1,1556 @@
+[
+    {
+        "create_time": "2017-05-26 03:53:57.519567",
+        "datasets": [
+            {
+                "dataset_id": "20079091",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "RT Stop Counts 72Qi1",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079082",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni1",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3126403,
+        "id": 15942504,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041357.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777895}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777886}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38224427,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 04:00:09.331282",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2017-04-16 07:53:21.115943",
+        "datasets": [
+            {
+                "dataset_id": "19610090",
+                "extension": "txt",
+                "file_size": 239521350,
+                "name": "Get RT Stop Counts on data 317 and data 232",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "19610089",
+                "extension": "txt",
+                "file_size": 239760585,
+                "name": "Get RT Stop Counts on data 366 and data 232",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "19347289",
+                "extension": "fasta",
+                "file_size": 121164007,
+                "name": "\u62df\u5357\u82a5\u57fa\u56e0\u7ec4.fna",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2918295,
+        "id": 15599816,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9720600.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29237290}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29237289}]}",
+            "flag_in": "\"false\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28934537}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 36473220,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-04-16 08:05:23.020626",
+        "user_id": 96301
+    },
+    {
+        "create_time": "2016-04-24 10:54:53.726143",
+        "datasets": [
+            {
+                "dataset_id": "15407441",
+                "extension": "txt",
+                "file_size": 96260018,
+                "name": "Get RT Stop Counts on data 20 and data 3",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "15407441",
+                "extension": "txt",
+                "file_size": 96260018,
+                "name": "Get RT Stop Counts on data 20 and data 3",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "5841170",
+                "extension": "fasta",
+                "file_size": 48817472,
+                "name": "chr21.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2681105,
+        "id": 12585571,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6789458.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b591e8a507496158a2\"}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b591e8a507496158a2\"}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"ATCG\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5834e9534495fb456\"}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 28131261,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2016-04-24 11:00:50.991749",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-02-24 06:37:29.120236",
+        "datasets": [
+            {
+                "dataset_id": "18964552",
+                "extension": "txt",
+                "file_size": 723899658,
+                "name": "Get RT Stop Counts on data 8 and data 9",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "18964552",
+                "extension": "txt",
+                "file_size": 723899658,
+                "name": "Get RT Stop Counts on data 8 and data 9",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "18964548",
+                "extension": "fasta",
+                "file_size": 376520075,
+                "name": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.25_GRCm38.p5/GCF_000001635.25_GRCm38.p5_rna.fna",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3007251,
+        "id": 15127045,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9280899.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 28493365}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 28493365}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28493361}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 36244752,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-02-24 06:47:50.636692",
+        "user_id": 100758
+    },
+    {
+        "create_time": "2015-09-11 13:45:04.912678",
+        "datasets": [
+            {
+                "dataset_id": "12306593",
+                "extension": "txt",
+                "file_size": 188672122,
+                "name": "Get RT Stop Counts on data 10 and data 4",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "12306712",
+                "extension": "txt",
+                "file_size": 188828188,
+                "name": "Get RT Stop Counts on data 11 and data 4",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "12081433",
+                "extension": "fasta",
+                "file_size": 101193932,
+                "name": "TAIR10_seq_20101214_updated",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2333811,
+        "id": 10302016,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4586877.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "dist_file1": "20935539",
+            "dist_file2": "20935714",
+            "flag_in": "\"True\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "20666797",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 25119483,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2015-09-11 13:56:21.685381",
+        "user_id": 64586
+    },
+    {
+        "create_time": "2016-04-19 14:00:53.551421",
+        "datasets": [
+            {
+                "dataset_id": "15321264",
+                "extension": "txt",
+                "file_size": 306552710,
+                "name": "Get RT Stop Counts on data 6 and data 3",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "15321264",
+                "extension": "txt",
+                "file_size": 306552710,
+                "name": "Get RT Stop Counts on data 6 and data 3",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "13491700",
+                "extension": "fasta",
+                "file_size": 156692995,
+                "name": "RefSeq Transcript Sequences Dec9 2015",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2675360,
+        "id": 12523174,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6710076.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c8e0332e1430b164\"}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c8e0332e1430b164\"}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"ATCG\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59bbeaaa62e7a28fd\"}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 28855654,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2016-04-19 14:09:19.761110",
+        "user_id": 2579
+    },
+    {
+        "create_time": "2016-06-01 02:16:13.807968",
+        "datasets": [
+            {
+                "dataset_id": "16040047",
+                "extension": "txt",
+                "file_size": 239649252,
+                "name": "Get RT Stop Counts t2",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "16040405",
+                "extension": "txt",
+                "file_size": 239528769,
+                "name": "Get RT Stop Counts c1",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "15962791",
+                "extension": "fasta",
+                "file_size": 121182577,
+                "name": "TAIR10_chr_all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2119276,
+        "id": 13035981,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7215590.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b588447c13362ca948\"}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b514370b0b83a3775b\"}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b6412e64277bbfc3\"}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 30434297,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2016-06-01 02:27:26.389478",
+        "user_id": 40792
+    },
+    {
+        "create_time": "2015-10-22 10:09:42.932741",
+        "datasets": [
+            {
+                "dataset_id": "12919268",
+                "extension": "txt",
+                "file_size": 239598483,
+                "name": "Get RT Stop Counts on data 17 and data 5",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "12919265",
+                "extension": "txt",
+                "file_size": 239688024,
+                "name": "Get RT Stop Counts on data 16 and data 5",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "12867194",
+                "extension": "fasta",
+                "file_size": 121747856,
+                "name": "at21_ERCC92.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2477019,
+        "id": 10683777,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4947806.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "21676532",
+            "dist_file2": "21676529",
+            "flag_in": "\"True\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "21615638",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 25829567,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2015-10-22 10:20:47.695782",
+        "user_id": 71683
+    },
+    {
+        "create_time": "2017-05-26 03:46:13.997689",
+        "datasets": [
+            {
+                "dataset_id": "20079084",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 72Qni3",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079088",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni3",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3126403,
+        "id": 15942489,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041343.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777888}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777892}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38224427,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 03:52:41.041278",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2017-04-16 07:34:43.242091",
+        "datasets": [
+            {
+                "dataset_id": "19610090",
+                "extension": "txt",
+                "file_size": 239521350,
+                "name": "Get RT Stop Counts on data 317 and data 232",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "19610089",
+                "extension": "txt",
+                "file_size": 239760585,
+                "name": "Get RT Stop Counts on data 366 and data 232",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "19347289",
+                "extension": "fasta",
+                "file_size": 121164007,
+                "name": "\u62df\u5357\u82a5\u57fa\u56e0\u7ec4.fna",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2918295,
+        "id": 15599793,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9720590.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29237290}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29237289}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28934537}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 36473220,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-04-16 07:44:41.728408",
+        "user_id": 96301
+    },
+    {
+        "create_time": "2015-11-17 15:34:16.326712",
+        "datasets": [
+            {
+                "dataset_id": "12977786",
+                "extension": "txt",
+                "file_size": 143201727,
+                "name": "Get RT Stop Counts on data 40 and data 23",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "12958249",
+                "extension": "txt",
+                "file_size": 143014148,
+                "name": "Get RT Stop Counts on data 35 and data 23",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "12921410",
+                "extension": "fasta",
+                "file_size": 76879886,
+                "name": "TAIR10_seq_20110103_representative_gene_model_updated.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2477019,
+        "id": 10923834,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5179031.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "21748009",
+            "dist_file2": "21721871",
+            "flag_in": "\"True\"",
+            "nt_spec": "\"ATCG\"",
+            "seq_file": "21678948",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 26314561,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2015-11-17 15:42:59.078541",
+        "user_id": 71683
+    },
+    {
+        "create_time": "2017-05-26 04:08:14.619324",
+        "datasets": [
+            {
+                "dataset_id": "20079091",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "RT Stop Counts 72Qi1",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079082",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni1",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3126403,
+        "id": 15942557,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041405.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777895}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777886}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38225536,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 04:14:43.714419",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2017-05-26 03:44:17.098774",
+        "datasets": [
+            {
+                "dataset_id": "20079079",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 72Qi3",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079082",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni1",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3126403,
+        "id": 15942482,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041337.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777883}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777886}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38224427,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 03:50:46.991111",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2015-09-11 17:57:38.081893",
+        "datasets": [
+            {
+                "dataset_id": "12306593",
+                "extension": "txt",
+                "file_size": 188672122,
+                "name": "Get RT Stop Counts on data 10 and data 4",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "12306712",
+                "extension": "txt",
+                "file_size": 188828188,
+                "name": "Get RT Stop Counts on data 11 and data 4",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "12081433",
+                "extension": "fasta",
+                "file_size": 101193932,
+                "name": "TAIR10_seq_20101214_updated",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2333811,
+        "id": 10304304,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4588973.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "dist_file1": "20935539",
+            "dist_file2": "20935714",
+            "flag_in": "\"True\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "20666797",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 25119483,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2015-09-11 18:08:03.514851",
+        "user_id": 64586
+    },
+    {
+        "create_time": "2017-05-26 03:45:19.224923",
+        "datasets": [
+            {
+                "dataset_id": "20079080",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 72Qni2",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079083",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni2",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3126403,
+        "id": 15942484,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041339.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777884}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777887}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38224427,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 03:51:34.851429",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2017-07-25 14:02:48.517728",
+        "datasets": [
+            {
+                "dataset_id": "20718478",
+                "extension": "txt",
+                "file_size": 748849285,
+                "name": "Get RT Stop Counts on data 10 and data 3",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20718464",
+                "extension": "txt",
+                "file_size": 748849285,
+                "name": "Get RT Stop Counts on data 9 and data 3",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20717883",
+                "extension": "fasta",
+                "file_size": 380668985,
+                "name": "Oryza_sativa.IRGSP-1.0.dna.toplevel.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3202079,
+        "id": 16413560,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10478682.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/oryza_sativa_japonica_nipponbare_IRGSP4.0.len\"",
+            "dbkey": "\"oryza_sativa_japonica_nipponbare_IRGSP4.0\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 30603779}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 30603764}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30603178}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 39495453,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-07-25 14:17:16.564457",
+        "user_id": 59786
+    },
+    {
+        "create_time": "2017-05-26 03:48:45.170279",
+        "datasets": [
+            {
+                "dataset_id": "20079089",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 72Qni4",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079087",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni4",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3126403,
+        "id": 15942495,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041347.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777893}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777891}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38224427,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 03:55:16.100092",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2017-05-26 05:27:48.936238",
+        "datasets": [
+            {
+                "dataset_id": "20079086",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 72Qni1",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079082",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni1",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3126403,
+        "id": 15943142,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041965.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777890}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777886}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38225536,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 05:34:16.081908",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2016-06-01 02:16:14.089712",
+        "datasets": [
+            {
+                "dataset_id": "16040322",
+                "extension": "txt",
+                "file_size": 239436884,
+                "name": "Get RT Stop Counts t1",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "16040527",
+                "extension": "txt",
+                "file_size": 239528769,
+                "name": "Get RT Stop Counts c1",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "15962791",
+                "extension": "fasta",
+                "file_size": 121182577,
+                "name": "TAIR10_chr_all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2119276,
+        "id": 13035982,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7215591.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b555644774d8ccf988\"}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b50a5006ea83e6ff0c\"}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b6412e64277bbfc3\"}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 30434297,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2016-06-01 02:28:41.503347",
+        "user_id": 40792
+    },
+    {
+        "create_time": "2017-05-26 03:55:22.449064",
+        "datasets": [
+            {
+                "dataset_id": "20079084",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 72Qni3",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "20079088",
+                "extension": "txt",
+                "file_size": 331285180,
+                "name": "Get RT Stop Counts on 25Qni3",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "20079032",
+                "extension": "fasta",
+                "file_size": 182257068,
+                "name": "Mus_musculus.GRCm38.cdna.all.fa",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3126403,
+        "id": 15942512,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10041362.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29777888}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29777892}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29777836}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 38224427,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-05-26 04:01:55.459943",
+        "user_id": 106599
+    },
+    {
+        "create_time": "2017-04-17 06:41:53.936367",
+        "datasets": [
+            {
+                "dataset_id": "19610089",
+                "extension": "txt",
+                "file_size": 239760585,
+                "name": "Get RT Stop Counts on data 366 and data 232",
+                "param_name": "dist_file1"
+            },
+            {
+                "dataset_id": "19610090",
+                "extension": "txt",
+                "file_size": 239521350,
+                "name": "Get RT Stop Counts on data 317 and data 232",
+                "param_name": "dist_file2"
+            },
+            {
+                "dataset_id": "19347289",
+                "extension": "fasta",
+                "file_size": 121164007,
+                "name": "\u62df\u5357\u82a5\u57fa\u56e0\u7ec4.fna",
+                "param_name": "seq_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/biopython/1.61/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.61"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "numpy",
+                "path": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9",
+                "script": "/galaxy/main/deps/numpy/1.7.1/tyty/structurefold/7bb98e9296e9/env.sh",
+                "version": "1.7.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2918295,
+        "id": 15603450,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9723586.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/arabidopsis.len\"",
+            "dbkey": "\"arabidopsis\"",
+            "dist_file1": "{\"values\": [{\"src\": \"hda\", \"id\": 29237289}]}",
+            "dist_file2": "{\"values\": [{\"src\": \"hda\", \"id\": 29237290}]}",
+            "flag_in": "\"true\"",
+            "nt_spec": "\"AC\"",
+            "seq_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28934537}]}",
+            "threshold": "\"7.0\""
+        },
+        "runner_name": null,
+        "session_id": 36473220,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/tyty/structurefold/react_cal_pipeline/1.0",
+        "tool_version": "1.0",
+        "traceback": null,
+        "update_time": "2017-04-17 06:53:29.428300",
+        "user_id": 96301
+    }
+]

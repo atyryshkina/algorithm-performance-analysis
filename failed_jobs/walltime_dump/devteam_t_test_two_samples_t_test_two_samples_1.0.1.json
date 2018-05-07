@@ -1,0 +1,65 @@
+[
+    {
+        "create_time": "2018-02-19 20:34:21.243789",
+        "datasets": [
+            {
+                "dataset_id": "23674136",
+                "extension": "tabular",
+                "file_size": 957397100,
+                "name": "M_zebra_UMD2_referencegenome",
+                "param_name": "inputFile1"
+            },
+            {
+                "dataset_id": "23504799",
+                "extension": "gff3",
+                "file_size": 540192,
+                "name": "M_zebra_UMD2_referenceannotation.gff",
+                "param_name": "inputFile2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/t_test_two_samples/c2ffc9885b5a",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/t_test_two_samples/c2ffc9885b5a/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3435106,
+        "id": 18440195,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12535005",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "inputFile1": "{\"values\": [{\"src\": \"hda\", \"id\": 33945864}]}",
+            "inputFile2": "{\"values\": [{\"src\": \"hda\", \"id\": 33945641}]}",
+            "inputStandardDeviationEquality4": "\"equal\"",
+            "inputTestSidedness3": "\"two-sided\""
+        },
+        "runner_name": null,
+        "session_id": 44013004,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/t_test_two_samples/t_test_two_samples/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2018-02-21 08:42:32.972893",
+        "user_id": 122313
+    }
+]

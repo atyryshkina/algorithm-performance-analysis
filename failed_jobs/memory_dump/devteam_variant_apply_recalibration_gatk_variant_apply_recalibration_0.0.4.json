@@ -1,0 +1,1414 @@
+[
+    {
+        "create_time": "2015-10-19 10:29:21.978836",
+        "datasets": [
+            {
+                "dataset_id": "12863904",
+                "extension": "vcf",
+                "file_size": 30525034,
+                "name": "Unified Genotyper on data 8, data 1, and data 38 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12863907",
+                "extension": "gatk_recal",
+                "file_size": 3631723,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12863908",
+                "extension": "gatk_tranche",
+                "file_size": 572,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12863887",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2474137,
+        "id": 10637609,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4918163.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"1d5e4630764c11e59f80005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21612102, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21559295, \"input_recal\": 21612122, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21612123, \"variants\": [{\"__index__\": 0, \"input_variants\": 21612119}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25770385,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-20 10:38:54.686361",
+        "user_id": 65622
+    },
+    {
+        "create_time": "2016-07-14 07:27:47.692893",
+        "datasets": [
+            {
+                "dataset_id": "16554991",
+                "extension": "vcf",
+                "file_size": 45775677,
+                "name": "SNPs and Indels",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16556581",
+                "extension": "gatk_recal",
+                "file_size": 3732563,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16556582",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2762593,
+        "id": 13407239,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7619177.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571f822c3c48f9524\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b67bfffdb715e7b5\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5148ffd21960bf4e2\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31394434,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-14 07:31:05.512619",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2015-10-12 11:00:07.278416",
+        "datasets": [
+            {
+                "dataset_id": "12744761",
+                "extension": "vcf",
+                "file_size": 3839226,
+                "name": "Unified Genotyper on data 2, data 4, and data 7 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12745657",
+                "extension": "gatk_recal",
+                "file_size": 749481,
+                "name": "Variant Recalibrator on data 2, data 21, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12745658",
+                "extension": "gatk_tranche",
+                "file_size": 561,
+                "name": "Variant Recalibrator on data 2, data 21, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12695719",
+                "extension": "bed",
+                "file_size": 1759877,
+                "name": "Inher.Disease_Padded.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2460966,
+        "id": 10547167,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4820658.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21415599, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21415589, \"input_recal\": 21480745, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21480746, \"variants\": [{\"__index__\": 0, \"input_variants\": 21479401}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25509094,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-12 11:03:16.545548",
+        "user_id": 59391
+    },
+    {
+        "create_time": "2015-12-01 20:02:20.416250",
+        "datasets": [
+            {
+                "dataset_id": "13401255",
+                "extension": "vcf",
+                "file_size": 33881344,
+                "name": "Unified Genotyper on data 8, data 3, and data 37 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "13401258",
+                "extension": "gatk_recal",
+                "file_size": 3918479,
+                "name": "Variant Recalibrator on data 11, data 4, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "13401259",
+                "extension": "gatk_tranche",
+                "file_size": 571,
+                "name": "Variant Recalibrator on data 11, data 4, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "13401238",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2524278,
+        "id": 11056962,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5326894.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"368902d0986611e594d9005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 22241984, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 22241618, \"input_recal\": 22242004, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 22242005, \"variants\": [{\"__index__\": 0, \"input_variants\": 22242001}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 26523377,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-12-03 07:23:41.474947",
+        "user_id": 65622
+    },
+    {
+        "create_time": "2015-10-12 10:48:22.801838",
+        "datasets": [
+            {
+                "dataset_id": "12744761",
+                "extension": "vcf",
+                "file_size": 3839226,
+                "name": "Unified Genotyper on data 2, data 4, and data 7 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12745657",
+                "extension": "gatk_recal",
+                "file_size": 749481,
+                "name": "Variant Recalibrator on data 2, data 21, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12745658",
+                "extension": "gatk_tranche",
+                "file_size": 561,
+                "name": "Variant Recalibrator on data 2, data 21, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12695719",
+                "extension": "bed",
+                "file_size": 1759877,
+                "name": "Inher.Disease_Padded.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2460966,
+        "id": 10547126,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4820606.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21415599, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21415589, \"input_recal\": 21480745, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21480746, \"variants\": [{\"__index__\": 0, \"input_variants\": 21479401}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25509094,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-12 10:50:48.405978",
+        "user_id": 59391
+    },
+    {
+        "create_time": "2015-10-20 12:08:42.936325",
+        "datasets": [
+            {
+                "dataset_id": "12863904",
+                "extension": "vcf",
+                "file_size": 30525034,
+                "name": "Unified Genotyper on data 8, data 1, and data 38 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12863907",
+                "extension": "gatk_recal",
+                "file_size": 3631723,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12863908",
+                "extension": "gatk_tranche",
+                "file_size": 572,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12863887",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2474137,
+        "id": 10653102,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4919083.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21612102, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21559295, \"input_recal\": 21612122, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21612123, \"variants\": [{\"__index__\": 0, \"input_variants\": 21612119}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25789738,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-20 12:12:30.931284",
+        "user_id": 65622
+    },
+    {
+        "create_time": "2016-07-15 09:40:36.855202",
+        "datasets": [
+            {
+                "dataset_id": "16574459",
+                "extension": "vcf",
+                "file_size": 41568702,
+                "name": "SNPs",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16574592",
+                "extension": "gatk_recal",
+                "file_size": 3186062,
+                "name": "Variant Recalibrator on data 47, data 3, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16574593",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 3, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2762593,
+        "id": 13418613,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7631153.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e926892c891097b9\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c21de5ef7848728\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a888731964f3a039\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31394434,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-15 09:44:21.929892",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2016-07-13 17:20:38.209225",
+        "datasets": [
+            {
+                "dataset_id": "16554991",
+                "extension": "vcf",
+                "file_size": 45775677,
+                "name": "SNPs and Indels",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16556581",
+                "extension": "gatk_recal",
+                "file_size": 3732563,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16556582",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2762593,
+        "id": 13397886,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7609852.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571f822c3c48f9524\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b67bfffdb715e7b5\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5148ffd21960bf4e2\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31450937,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-13 17:24:39.366141",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2015-11-29 19:46:56.808943",
+        "datasets": [
+            {
+                "dataset_id": "13375315",
+                "extension": "vcf",
+                "file_size": 33920674,
+                "name": "Unified Genotyper on data 6, data 1, and data 36 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "13375318",
+                "extension": "gatk_recal",
+                "file_size": 5174591,
+                "name": "Variant Recalibrator on data 8, data 2, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "13375319",
+                "extension": "gatk_tranche",
+                "file_size": 584,
+                "name": "Variant Recalibrator on data 8, data 2, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "13375300",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2509363,
+        "id": 11038091,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5304183.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"e1590da496d111e5a3ad005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 22211527, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 22154568, \"input_recal\": 22211545, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 22211546, \"variants\": [{\"__index__\": 0, \"input_variants\": 22211542}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 26485452,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-12-01 02:04:23.500085",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2016-07-15 12:34:51.179679",
+        "datasets": [
+            {
+                "dataset_id": "16574459",
+                "extension": "vcf",
+                "file_size": 41568702,
+                "name": "SNPs",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16574592",
+                "extension": "gatk_recal",
+                "file_size": 3186062,
+                "name": "Variant Recalibrator on data 47, data 3, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16574593",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 3, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2762593,
+        "id": 13419221,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7631881.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e926892c891097b9\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c21de5ef7848728\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a888731964f3a039\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31498961,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-15 12:38:15.914263",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2015-11-27 09:52:49.635510",
+        "datasets": [
+            {
+                "dataset_id": "13351951",
+                "extension": "vcf",
+                "file_size": 34170328,
+                "name": "Unified Genotyper on data 9, data 2, and data 45 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "13351957",
+                "extension": "gatk_recal",
+                "file_size": 4518855,
+                "name": "Variant Recalibrator on data 4, data 5, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "13351958",
+                "extension": "gatk_tranche",
+                "file_size": 580,
+                "name": "Variant Recalibrator on data 4, data 5, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "13351913",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2517536,
+        "id": 11020748,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5297547.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"799dc14694ec11e594b3005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 22185792, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 22143037, \"input_recal\": 22185836, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 22185837, \"variants\": [{\"__index__\": 0, \"input_variants\": 22185830}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 26414743,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-11-30 11:59:56.751474",
+        "user_id": 59391
+    },
+    {
+        "create_time": "2015-10-20 11:47:13.980986",
+        "datasets": [
+            {
+                "dataset_id": "12863904",
+                "extension": "vcf",
+                "file_size": 30525034,
+                "name": "Unified Genotyper on data 8, data 1, and data 38 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12863907",
+                "extension": "gatk_recal",
+                "file_size": 3631723,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12863908",
+                "extension": "gatk_tranche",
+                "file_size": 572,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12863887",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2474137,
+        "id": 10653012,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4918941.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21612102, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21559295, \"input_recal\": 21612122, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21612123, \"variants\": [{\"__index__\": 0, \"input_variants\": 21612119}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25789738,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-20 11:49:34.896453",
+        "user_id": 65622
+    },
+    {
+        "create_time": "2016-07-14 07:12:55.394971",
+        "datasets": [
+            {
+                "dataset_id": "16554991",
+                "extension": "vcf",
+                "file_size": 45775677,
+                "name": "SNPs and Indels",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16556581",
+                "extension": "gatk_recal",
+                "file_size": 3732563,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16556582",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2762593,
+        "id": 13406901,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7618918.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571f822c3c48f9524\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b67bfffdb715e7b5\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5148ffd21960bf4e2\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31394434,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-14 07:16:14.149288",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2015-10-26 14:41:12.328956",
+        "datasets": [
+            {
+                "dataset_id": "12982510",
+                "extension": "vcf",
+                "file_size": 32388318,
+                "name": "Unified Genotyper on data 7, data 2, and data 37 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12982516",
+                "extension": "gatk_recal",
+                "file_size": 3938640,
+                "name": "Variant Recalibrator on data 9, data 3, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12982517",
+                "extension": "gatk_tranche",
+                "file_size": 571,
+                "name": "Variant Recalibrator on data 9, data 3, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12982484",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2367164,
+        "id": 10736461,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5003889.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"7f9b520e7bef11e5918e005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21753732, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21634863, \"input_recal\": 21753764, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21753765, \"variants\": [{\"__index__\": 0, \"input_variants\": 21753758}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25897883,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-27 14:43:14.991188",
+        "user_id": 64800
+    },
+    {
+        "create_time": "2015-11-17 13:01:25.328306",
+        "datasets": [
+            {
+                "dataset_id": "13221985",
+                "extension": "vcf",
+                "file_size": 32388318,
+                "name": "Unified Genotyper on data 8, data 3, and data 36 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "13221988",
+                "extension": "gatk_recal",
+                "file_size": 3938640,
+                "name": "Variant Recalibrator on data 10, data 4, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "13221989",
+                "extension": "gatk_tranche",
+                "file_size": 571,
+                "name": "Variant Recalibrator on data 10, data 4, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "13221969",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2509309,
+        "id": 10922065,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5190153.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"2df1037a8d2b11e58169005056a52a46\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 22031713, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 22031637, \"input_recal\": 22031732, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 22031733, \"variants\": [{\"__index__\": 0, \"input_variants\": 22031729}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 26315657,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-11-18 13:10:00.442800",
+        "user_id": 64800
+    },
+    {
+        "create_time": "2016-07-15 09:34:50.675670",
+        "datasets": [
+            {
+                "dataset_id": "16574459",
+                "extension": "vcf",
+                "file_size": 41568702,
+                "name": "SNPs",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16574592",
+                "extension": "gatk_recal",
+                "file_size": 3186062,
+                "name": "Variant Recalibrator on data 47, data 3, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16574593",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 3, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2762593,
+        "id": 13418578,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7631111.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"SNP\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e926892c891097b9\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59c21de5ef7848728\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a888731964f3a039\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31394434,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-15 09:37:54.883450",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2015-12-08 14:43:57.523632",
+        "datasets": [
+            {
+                "dataset_id": "13375315",
+                "extension": "vcf",
+                "file_size": 33920674,
+                "name": "Unified Genotyper on data 6, data 1, and data 36 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "13479805",
+                "extension": "gatk_recal",
+                "file_size": 5174591,
+                "name": "Variant Recalibrator on data 8, data 2, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "13479806",
+                "extension": "gatk_tranche",
+                "file_size": 584,
+                "name": "Variant Recalibrator on data 8, data 2, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "13375300",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2509363,
+        "id": 11118595,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5384569.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 22211527, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 22154568, \"input_recal\": 22347954, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 22347955, \"variants\": [{\"__index__\": 0, \"input_variants\": 22211542}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 26649828,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-12-08 14:47:38.615887",
+        "user_id": 73593
+    },
+    {
+        "create_time": "2015-10-22 11:13:12.662508",
+        "datasets": [
+            {
+                "dataset_id": "12863904",
+                "extension": "vcf",
+                "file_size": 30525034,
+                "name": "Unified Genotyper on data 8, data 1, and data 38 (VCF)",
+                "param_name": "variants_0|input_variants"
+            },
+            {
+                "dataset_id": "12863907",
+                "extension": "gatk_recal",
+                "file_size": 3631723,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "12863908",
+                "extension": "gatk_tranche",
+                "file_size": 572,
+                "name": "Variant Recalibrator on data 12, data 2, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "12863887",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2474137,
+        "id": 10684606,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4948732.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"False\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": 21612102, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"False\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"False\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": 21559295, \"input_recal\": 21612122, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": 21612123, \"variants\": [{\"__index__\": 0, \"input_variants\": 21612119}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 25818557,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2015-10-22 11:16:46.611493",
+        "user_id": 65622
+    },
+    {
+        "create_time": "2016-07-14 07:20:48.166843",
+        "datasets": [
+            {
+                "dataset_id": "16554991",
+                "extension": "vcf",
+                "file_size": 45775677,
+                "name": "SNPs and Indels",
+                "param_name": "reference_source|variants_0|input_variants"
+            },
+            {
+                "dataset_id": "16556581",
+                "extension": "gatk_recal",
+                "file_size": 3732563,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Recalibration File)",
+                "param_name": "input_recal"
+            },
+            {
+                "dataset_id": "16556582",
+                "extension": "gatk_tranche",
+                "file_size": 574,
+                "name": "Variant Recalibrator on data 47, data 44, and others (Tranches File)",
+                "param_name": "input_tranches"
+            },
+            {
+                "dataset_id": "11591200",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "16555900",
+                "extension": "bed",
+                "file_size": 20364436,
+                "name": "120430_HG19_ExomeV3_UTR_EZ_HX1_capture_target.bed.bed",
+                "param_name": "gatk_param_type|input_interval_repeat_0|input_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2762593,
+        "id": 13407042,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7619007.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"advanced\", \"pedigree_string_repeat\": [], \"disable_experimental_low_memory_sharding\": \"false\", \"pedigree_validation_type\": \"STRICT\", \"pedigree\": [], \"input_interval_repeat\": [{\"input_intervals\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52c970265c692cf8f\"}]}, \"__index__\": 0}], \"baq\": \"OFF\", \"input_exclude_interval_repeat\": [], \"default_base_qualities\": \"-1\", \"downsampling_type\": {\"downsampling_type_selector\": \"NONE\", \"__current_case__\": 0}, \"interval_merging\": \"ALL\", \"interval_set_rule\": \"UNION\", \"non_deterministic_random_seed\": \"false\", \"__current_case__\": 1, \"read_filter\": [], \"validation_strictness\": \"STRICT\", \"baq_gap_open_penalty\": \"40.0\", \"read_group_black_list_repeat\": [], \"use_original_qualities\": \"false\"}",
+            "ignore_filters": "[]",
+            "mode": "\"BOTH\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a4c569ffd426680e\"}]}, \"input_recal\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b571f822c3c48f9524\"}]}, \"__current_case__\": 1, \"reference_source_selector\": \"history\", \"input_tranches\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b67bfffdb715e7b5\"}]}, \"variants\": [{\"__index__\": 0, \"input_variants\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5148ffd21960bf4e2\"}]}}]}",
+            "ts_filter_level": "\"99.0\""
+        },
+        "runner_name": null,
+        "session_id": 31394434,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/variant_apply_recalibration/gatk_variant_apply_recalibration/0.0.4",
+        "tool_version": "0.0.4",
+        "traceback": null,
+        "update_time": "2016-07-14 07:24:20.025751",
+        "user_id": 73593
+    }
+]

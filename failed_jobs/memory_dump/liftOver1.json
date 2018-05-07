@@ -1,0 +1,58 @@
+[
+    {
+        "create_time": "2017-03-22 18:48:06.141810",
+        "datasets": [
+            {
+                "dataset_id": "19301533",
+                "extension": "bed",
+                "file_size": 17969069393,
+                "name": "chimp.bed",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "galaxy_package",
+                "exact": true,
+                "model_class": "GalaxyPackageDependency",
+                "name": "ucsc_tools",
+                "path": "/cvmfs/main.galaxyproject.org/deps/ucsc_tools/312/iuc/package_ucsc_tools_312/2d6bafd63401",
+                "script": "/cvmfs/main.galaxyproject.org/deps/ucsc_tools/312/iuc/package_ucsc_tools_312/2d6bafd63401/env.sh",
+                "version": "2d6bafd63401"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2886279,
+        "id": 15369287,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9507790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/panTro4.len\"",
+            "dbkey": "\"panTro4\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 28882462}]}",
+            "minMatch": "\"0.1\"",
+            "multiple": "{\"minChainT\": \"500\", \"minSizeQ\": \"300\", \"minChainQ\": \"500\", \"__current_case__\": 1, \"choice\": \"1\"}",
+            "to_dbkey": "\"/galaxy/data/panTro4/liftOver/panTro4ToHg19.over.chain\""
+        },
+        "runner_name": null,
+        "session_id": 36776507,
+        "state": "error",
+        "tool_id": "liftOver1",
+        "tool_version": "1.0.4",
+        "traceback": null,
+        "update_time": "2017-03-23 11:30:26.847907",
+        "user_id": 94242
+    }
+]

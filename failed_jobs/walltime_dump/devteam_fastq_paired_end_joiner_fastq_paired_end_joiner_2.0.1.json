@@ -1,0 +1,3175 @@
+[
+    {
+        "create_time": "2017-03-07 15:22:33.338605",
+        "datasets": [
+            {
+                "dataset_id": "18281266",
+                "extension": "fastqsanger",
+                "file_size": 544800080,
+                "name": "SRR1283287:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281266",
+                "extension": "fastqsanger",
+                "file_size": 544800080,
+                "name": "SRR1283287:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231371,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9476813.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729675}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729675}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-20 17:04:38.027772",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2016-10-25 05:47:54.586483",
+        "datasets": [
+            {
+                "dataset_id": "17613067",
+                "extension": "fastqsanger",
+                "file_size": 5094882290,
+                "name": "Extract reads",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "17613067",
+                "extension": "fastqsanger",
+                "file_size": 5094882290,
+                "name": "Extract reads",
+                "param_name": "input2_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2744714,
+        "id": 14164778,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8377293.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dfd59433808b54ef\"}]}",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5dfd59433808b54ef\"}]}",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 33888144,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2016-10-26 05:48:29.456081",
+        "user_id": 86398
+    },
+    {
+        "create_time": "2017-03-07 15:22:33.808405",
+        "datasets": [
+            {
+                "dataset_id": "18281267",
+                "extension": "fastqsanger",
+                "file_size": 541612028,
+                "name": "SRR1283287:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281267",
+                "extension": "fastqsanger",
+                "file_size": 541612028,
+                "name": "SRR1283287:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231372,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9484836.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729676}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729676}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-21 17:04:47.581082",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2016-11-06 18:49:35.511821",
+        "datasets": [
+            {
+                "dataset_id": "17751423",
+                "extension": "fastqsanger",
+                "file_size": 14236847626,
+                "name": "Extract reads",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "17751423",
+                "extension": "fastqsanger",
+                "file_size": 14236847626,
+                "name": "Extract reads",
+                "param_name": "input2_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2882386,
+        "id": 14265767,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8474161.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d5608bdce182c4a9\"}]}",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d5608bdce182c4a9\"}]}",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 34109717,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2016-11-07 18:50:08.150138",
+        "user_id": 86398
+    },
+    {
+        "create_time": "2017-03-07 15:22:36.694848",
+        "datasets": [
+            {
+                "dataset_id": "18281273",
+                "extension": "fastqsanger",
+                "file_size": 484018118,
+                "name": "SRR1283290:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281273",
+                "extension": "fastqsanger",
+                "file_size": 484018118,
+                "name": "SRR1283290:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231379,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9484835.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729682}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729682}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-21 17:04:45.124332",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:34.709028",
+        "datasets": [
+            {
+                "dataset_id": "18281269",
+                "extension": "fastqsanger",
+                "file_size": 457007326,
+                "name": "SRR1283288:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281269",
+                "extension": "fastqsanger",
+                "file_size": 457007326,
+                "name": "SRR1283288:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231374,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9496022.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729678}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729678}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-22 17:38:35.965703",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:35.249841",
+        "datasets": [
+            {
+                "dataset_id": "18281270",
+                "extension": "fastqsanger",
+                "file_size": 502777899,
+                "name": "SRR1283289:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281270",
+                "extension": "fastqsanger",
+                "file_size": 502777899,
+                "name": "SRR1283289:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231375,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9507196.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729679}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729679}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-23 17:39:10.201782",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:35.777533",
+        "datasets": [
+            {
+                "dataset_id": "18281271",
+                "extension": "fastqsanger",
+                "file_size": 499520280,
+                "name": "SRR1283289:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281271",
+                "extension": "fastqsanger",
+                "file_size": 499520280,
+                "name": "SRR1283289:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231377,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9516110.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729680}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729680}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-24 17:39:45.447137",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:39.060300",
+        "datasets": [
+            {
+                "dataset_id": "18281279",
+                "extension": "fastqsanger",
+                "file_size": 580213993,
+                "name": "SRR1283292:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281279",
+                "extension": "fastqsanger",
+                "file_size": 580213993,
+                "name": "SRR1283292:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231384,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9516109.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729688}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729688}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-24 17:39:45.433568",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:43.011424",
+        "datasets": [
+            {
+                "dataset_id": "18281288",
+                "extension": "fastqsanger",
+                "file_size": 431614420,
+                "name": "SRR1289649:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281288",
+                "extension": "fastqsanger",
+                "file_size": 431614420,
+                "name": "SRR1289649:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231393,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9531329.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729697}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729697}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-26 17:40:33.882310",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:27.822349",
+        "datasets": [
+            {
+                "dataset_id": "18281253",
+                "extension": "fastqsanger",
+                "file_size": 467956523,
+                "name": "SRR1283281:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281253",
+                "extension": "fastqsanger",
+                "file_size": 467956523,
+                "name": "SRR1283281:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231359,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9531328.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729662}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729662}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-26 17:40:33.456027",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:37.774360",
+        "datasets": [
+            {
+                "dataset_id": "18281277",
+                "extension": "fastqsanger",
+                "file_size": 668597694,
+                "name": "SRR1283291:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281277",
+                "extension": "fastqsanger",
+                "file_size": 668597694,
+                "name": "SRR1283291:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231381,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9531327.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729686}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729686}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-26 17:40:33.348363",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:36.194350",
+        "datasets": [
+            {
+                "dataset_id": "18281272",
+                "extension": "fastqsanger",
+                "file_size": 486432037,
+                "name": "SRR1283290:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281272",
+                "extension": "fastqsanger",
+                "file_size": 486432037,
+                "name": "SRR1283290:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231378,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9535177.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729681}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729681}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-27 20:25:09.874630",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:39.501146",
+        "datasets": [
+            {
+                "dataset_id": "18281280",
+                "extension": "fastqsanger",
+                "file_size": 553687421,
+                "name": "SRR1283293:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281280",
+                "extension": "fastqsanger",
+                "file_size": 553687421,
+                "name": "SRR1283293:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231385,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9525776.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729689}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729689}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-25 17:40:19.071217",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-25 23:36:02.297686",
+        "datasets": [
+            {
+                "dataset_id": "19339402",
+                "extension": "fastqsanger",
+                "file_size": 23313207910,
+                "name": "EBI SRA: SRR2960333 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR296/003/SRR2960333.fastqsanger",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "19339402",
+                "extension": "fastqsanger",
+                "file_size": 23313207910,
+                "name": "EBI SRA: SRR2960333 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR296/003/SRR2960333.fastqsanger",
+                "param_name": "input2_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3045941,
+        "id": 15396874,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9532294.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28925855}]}",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28925855}]}",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 36875989,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-26 23:36:33.780651",
+        "user_id": 102851
+    },
+    {
+        "create_time": "2017-03-07 15:22:37.142346",
+        "datasets": [
+            {
+                "dataset_id": "18281274",
+                "extension": "fastqsanger",
+                "file_size": 672573501,
+                "name": "SRR1283291:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281274",
+                "extension": "fastqsanger",
+                "file_size": 672573501,
+                "name": "SRR1283291:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231380,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9543590.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729683}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729683}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-29 10:41:07.751555",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:38.400667",
+        "datasets": [
+            {
+                "dataset_id": "18281278",
+                "extension": "fastqsanger",
+                "file_size": 582905612,
+                "name": "SRR1283292:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281278",
+                "extension": "fastqsanger",
+                "file_size": 582905612,
+                "name": "SRR1283292:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231383,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9535178.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729687}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729687}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-27 20:22:31.557996",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-02-04 00:40:40.286447",
+        "datasets": [
+            {
+                "dataset_id": "18683576",
+                "extension": "fastqsanger",
+                "file_size": 3404859790,
+                "name": "ind4_1.fastq",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18683577",
+                "extension": "fastqsanger",
+                "file_size": 3404858846,
+                "name": "ind4_2.fastq",
+                "param_name": "input2_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 584362,
+        "id": 14947918,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9105557.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28175007}]}",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28175008}]}",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35728503,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-02-05 00:41:00.539860",
+        "user_id": 12316
+    },
+    {
+        "create_time": "2017-03-07 15:22:40.433544",
+        "datasets": [
+            {
+                "dataset_id": "18281282",
+                "extension": "fastqsanger",
+                "file_size": 502639650,
+                "name": "SRR1283294:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281282",
+                "extension": "fastqsanger",
+                "file_size": 502639650,
+                "name": "SRR1283294:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231387,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9554823.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729691}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729691}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-30 13:29:58.318144",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:32.683585",
+        "datasets": [
+            {
+                "dataset_id": "18281265",
+                "extension": "fastqsanger",
+                "file_size": 555079201,
+                "name": "SRR1283286:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281265",
+                "extension": "fastqsanger",
+                "file_size": 555079201,
+                "name": "SRR1283286:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231370,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9456649.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729674}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729674}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-17 17:02:44.380845",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:41.544732",
+        "datasets": [
+            {
+                "dataset_id": "18281285",
+                "extension": "fastqsanger",
+                "file_size": 651775930,
+                "name": "SRR1283295:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281285",
+                "extension": "fastqsanger",
+                "file_size": 651775930,
+                "name": "SRR1283295:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231389,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9566553.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729694}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729694}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-31 13:42:41.161179",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:42.053852",
+        "datasets": [
+            {
+                "dataset_id": "18281286",
+                "extension": "fastqsanger",
+                "file_size": 648046503,
+                "name": "SRR1283295:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281286",
+                "extension": "fastqsanger",
+                "file_size": 648046503,
+                "name": "SRR1283295:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231390,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9577538.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729695}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729695}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-04-01 15:26:26.863010",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:39.945782",
+        "datasets": [
+            {
+                "dataset_id": "18281281",
+                "extension": "fastqsanger",
+                "file_size": 550261620,
+                "name": "SRR1283293:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281281",
+                "extension": "fastqsanger",
+                "file_size": 550261620,
+                "name": "SRR1283293:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231386,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9585587.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729690}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729690}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-04-02 15:26:58.050277",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:40.984846",
+        "datasets": [
+            {
+                "dataset_id": "18281284",
+                "extension": "fastqsanger",
+                "file_size": 498183536,
+                "name": "SRR1283294:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281284",
+                "extension": "fastqsanger",
+                "file_size": 498183536,
+                "name": "SRR1283294:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231388,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9592586.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729693}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729693}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-04-03 15:27:10.222760",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:42.566747",
+        "datasets": [
+            {
+                "dataset_id": "18281287",
+                "extension": "fastqsanger",
+                "file_size": 434268110,
+                "name": "SRR1289649:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281287",
+                "extension": "fastqsanger",
+                "file_size": 434268110,
+                "name": "SRR1289649:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231392,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9602120.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729696}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729696}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-04-04 15:29:24.294247",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:24.564549",
+        "datasets": [
+            {
+                "dataset_id": "18281247",
+                "extension": "fastqsanger",
+                "file_size": 620971603,
+                "name": "SRR1283278:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281247",
+                "extension": "fastqsanger",
+                "file_size": 620971603,
+                "name": "SRR1283278:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231353,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9379196.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729656}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729656}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-08 15:24:51.919848",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:23.230875",
+        "datasets": [
+            {
+                "dataset_id": "18281244",
+                "extension": "fastqsanger",
+                "file_size": 749550978,
+                "name": "SRR1283277:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281244",
+                "extension": "fastqsanger",
+                "file_size": 749550978,
+                "name": "SRR1283277:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231350,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9390777.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729653}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729653}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-09 15:24:59.579476",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:25.340779",
+        "datasets": [
+            {
+                "dataset_id": "18281248",
+                "extension": "fastqsanger",
+                "file_size": 636461500,
+                "name": "SRR1283279:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281248",
+                "extension": "fastqsanger",
+                "file_size": 636461500,
+                "name": "SRR1283279:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231354,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9400558.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729657}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729657}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-10 15:25:07.097701",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:28.301775",
+        "datasets": [
+            {
+                "dataset_id": "18281254",
+                "extension": "fastqsanger",
+                "file_size": 567181034,
+                "name": "SRR1283282:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281254",
+                "extension": "fastqsanger",
+                "file_size": 567181034,
+                "name": "SRR1283282:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231360,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9400557.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729663}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729663}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-10 15:25:07.020855",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:28.772454",
+        "datasets": [
+            {
+                "dataset_id": "18281255",
+                "extension": "fastqsanger",
+                "file_size": 563403161,
+                "name": "SRR1283282:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281255",
+                "extension": "fastqsanger",
+                "file_size": 563403161,
+                "name": "SRR1283282:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231361,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9409919.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729664}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729664}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-11 15:25:15.709567",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:23.673220",
+        "datasets": [
+            {
+                "dataset_id": "18281245",
+                "extension": "fastqsanger",
+                "file_size": 745207353,
+                "name": "SRR1283277:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281245",
+                "extension": "fastqsanger",
+                "file_size": 745207353,
+                "name": "SRR1283277:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231351,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9409920.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729654}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729654}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-11 15:25:14.597725",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:26.220344",
+        "datasets": [
+            {
+                "dataset_id": "18281250",
+                "extension": "fastqsanger",
+                "file_size": 555022878,
+                "name": "SRR1283280:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281250",
+                "extension": "fastqsanger",
+                "file_size": 555022878,
+                "name": "SRR1283280:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231356,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9415814.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729659}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729659}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-12 15:25:23.866600",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:26.705245",
+        "datasets": [
+            {
+                "dataset_id": "18281251",
+                "extension": "fastqsanger",
+                "file_size": 552080520,
+                "name": "SRR1283280:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281251",
+                "extension": "fastqsanger",
+                "file_size": 552080520,
+                "name": "SRR1283280:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231357,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9419494.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729660}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729660}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-13 15:28:30.785742",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:25.724355",
+        "datasets": [
+            {
+                "dataset_id": "18281249",
+                "extension": "fastqsanger",
+                "file_size": 633111853,
+                "name": "SRR1283279:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281249",
+                "extension": "fastqsanger",
+                "file_size": 633111853,
+                "name": "SRR1283279:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231355,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9419495.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729658}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729658}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-13 15:25:45.406627",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:27.108959",
+        "datasets": [
+            {
+                "dataset_id": "18281252",
+                "extension": "fastqsanger",
+                "file_size": 470578059,
+                "name": "SRR1283281:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281252",
+                "extension": "fastqsanger",
+                "file_size": 470578059,
+                "name": "SRR1283281:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231358,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9426983.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729661}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729661}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-14 15:39:01.358426",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:29.730838",
+        "datasets": [
+            {
+                "dataset_id": "18281257",
+                "extension": "fastqsanger",
+                "file_size": 723942518,
+                "name": "SRR1283283:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281257",
+                "extension": "fastqsanger",
+                "file_size": 723942518,
+                "name": "SRR1283283:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231363,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9426961.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729666}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729666}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-14 15:29:07.998551",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:29.111814",
+        "datasets": [
+            {
+                "dataset_id": "18281256",
+                "extension": "fastqsanger",
+                "file_size": 727430164,
+                "name": "SRR1283283:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281256",
+                "extension": "fastqsanger",
+                "file_size": 727430164,
+                "name": "SRR1283283:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231362,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9445670.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729665}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729665}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-16 15:47:00.078576",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:31.576168",
+        "datasets": [
+            {
+                "dataset_id": "18281261",
+                "extension": "fastqsanger",
+                "file_size": 409325121,
+                "name": "SRR1283285:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281261",
+                "extension": "fastqsanger",
+                "file_size": 409325121,
+                "name": "SRR1283285:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2938231,
+        "id": 15231368,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9436103.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729670}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729670}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-15 15:46:44.689211",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:30.189083",
+        "datasets": [
+            {
+                "dataset_id": "18281258",
+                "extension": "fastqsanger",
+                "file_size": 1179848705,
+                "name": "SRR1283284:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281258",
+                "extension": "fastqsanger",
+                "file_size": 1179848705,
+                "name": "SRR1283284:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231364,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9445671.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729667}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729667}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-16 15:46:59.330832",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:30.605023",
+        "datasets": [
+            {
+                "dataset_id": "18281259",
+                "extension": "fastqsanger",
+                "file_size": 1174369215,
+                "name": "SRR1283284:reverse",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281259",
+                "extension": "fastqsanger",
+                "file_size": 1174369215,
+                "name": "SRR1283284:reverse",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231365,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9456224.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729668}]}",
+            "input1_file|__identifier__": "\"reverse\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729668}]}",
+            "input2_file|__identifier__": "\"reverse\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-17 15:47:13.737313",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:32.078171",
+        "datasets": [
+            {
+                "dataset_id": "18281262",
+                "extension": "fastqsanger",
+                "file_size": 557490294,
+                "name": "SRR1283286:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281262",
+                "extension": "fastqsanger",
+                "file_size": 557490294,
+                "name": "SRR1283286:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2938231,
+        "id": 15231369,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9472242.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729671}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729671}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-19 17:02:56.873756",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:24.106154",
+        "datasets": [
+            {
+                "dataset_id": "18281246",
+                "extension": "fastqsanger",
+                "file_size": 627184380,
+                "name": "SRR1283278:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281246",
+                "extension": "fastqsanger",
+                "file_size": 627184380,
+                "name": "SRR1283278:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2938231,
+        "id": 15231352,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9472245.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729655}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729655}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-19 17:03:57.897384",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:34.283875",
+        "datasets": [
+            {
+                "dataset_id": "18281268",
+                "extension": "fastqsanger",
+                "file_size": 460003590,
+                "name": "SRR1283288:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281268",
+                "extension": "fastqsanger",
+                "file_size": 460003590,
+                "name": "SRR1283288:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231373,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9472241.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729677}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729677}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-19 17:02:57.766880",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-03-07 15:22:31.020109",
+        "datasets": [
+            {
+                "dataset_id": "18281260",
+                "extension": "fastqsanger",
+                "file_size": 411695550,
+                "name": "SRR1283285:forward",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "18281260",
+                "extension": "fastqsanger",
+                "file_size": 411695550,
+                "name": "SRR1283285:forward",
+                "param_name": "input2_file"
+            },
+            {
+                "dataset_id": "18281548",
+                "extension": "len",
+                "file_size": 18,
+                "name": "pAA.fasta",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2938231,
+        "id": 15231366,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9467128.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/018/281/dataset_18281548.dat\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729669}]}",
+            "input1_file|__identifier__": "\"forward\"",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27729669}]}",
+            "input2_file|__identifier__": "\"forward\"",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 35053481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-03-18 17:02:51.204805",
+        "user_id": 64744
+    },
+    {
+        "create_time": "2017-06-13 22:52:54.376916",
+        "datasets": [
+            {
+                "dataset_id": "19160290",
+                "extension": "fastqsanger",
+                "file_size": 1146018770,
+                "name": "Zea_Mays_B73_16DAP_Endosperm_R1.fastqsanger",
+                "param_name": "input1_file"
+            },
+            {
+                "dataset_id": "19160258",
+                "extension": "fastqsanger",
+                "file_size": 1404629564,
+                "name": "Zea_Mays_B73_16DAP_Embryo_R1.fastqsanger",
+                "param_name": "input2_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.1/devteam/fastq_paired_end_joiner/6a7f5da7c76d/env.sh",
+                "version": "1.0.1"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3154001,
+        "id": 16094875,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10180282.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input1_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30019117}]}",
+            "input2_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30019116}]}",
+            "paste_sequence": "\"\"",
+            "style": "\"old\""
+        },
+        "runner_name": null,
+        "session_id": 38632992,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1",
+        "tool_version": "2.0.1",
+        "traceback": null,
+        "update_time": "2017-06-14 22:53:12.837328",
+        "user_id": 107594
+    }
+]

@@ -1,0 +1,113 @@
+[
+    {
+        "create_time": "2015-03-19 05:04:37.304774",
+        "datasets": [
+            {
+                "dataset_id": "10717801",
+                "extension": "gtf",
+                "file_size": 40158378,
+                "name": "Cuffcompare on data 99: combined transcripts",
+                "param_name": "first_input"
+            },
+            {
+                "dataset_id": "10717801",
+                "extension": "gtf",
+                "file_size": 40158378,
+                "name": "Cuffcompare on data 99: combined transcripts",
+                "param_name": "reference_annotation"
+            },
+            {
+                "dataset_id": "10700005",
+                "extension": "fasta",
+                "file_size": 7980438257,
+                "name": "FASTQ to FASTA on data 50",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2233730,
+        "id": 8984742,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3234594.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotation": "{\"reference_annotation\": 18900603, \"use_ref_annotation\": \"Yes\", \"ignore_nonoverlapping_reference\": \"False\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "first_input": "18900603",
+            "input_files": "[]",
+            "seq_data": "{\"use_seq_data\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": 18879746, \"__current_case__\": 1}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 21745218,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffcompare/cuffcompare/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2015-03-20 17:05:06.269182",
+        "user_id": 60764
+    },
+    {
+        "create_time": "2014-05-24 15:54:23.812057",
+        "datasets": [
+            {
+                "dataset_id": "8241985",
+                "extension": "gtf",
+                "file_size": 108998,
+                "name": "Cuffmerge on data 25: merged transcripts",
+                "param_name": "first_input"
+            },
+            {
+                "dataset_id": "8218366",
+                "extension": "fasta",
+                "file_size": 5214482759,
+                "name": "FASTQ to FASTA on data 9",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_single",
+        "destination_params": {
+            "nativeSpecification": "--time=48:10:00 --nodes=1 --ntasks=1 --partition=single --constraint=general"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 1916555,
+        "id": 7024912,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "1041430",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annotation": "{\"use_ref_annotation\": \"No\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "first_input": "15608003",
+            "input_files": "[]",
+            "seq_data": "{\"use_seq_data\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": 15607984, \"__current_case__\": 1}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 14931607,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffcompare/cuffcompare/0.0.5",
+        "tool_version": "0.0.5",
+        "traceback": null,
+        "update_time": "2014-05-26 16:05:07.647486",
+        "user_id": 47045
+    }
+]

@@ -1,0 +1,1656 @@
+[
+    {
+        "create_time": "2017-11-03 10:56:32.511652",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3303847,
+        "id": 17315621,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11375508",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"format_type_selector\": \"bed\", \"__current_case__\": 3}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-03 11:03:34.139757",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2016-06-03 13:10:48.187985",
+        "datasets": [
+            {
+                "dataset_id": "11650098",
+                "extension": "bam",
+                "file_size": 2953965696,
+                "name": "Bowtie2 on minus (data 64, data 50, and data 49)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "11650098",
+                "extension": "bam",
+                "file_size": 2953965696,
+                "name": "Bowtie2 on minus (data 64, data 50, and data 49)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2347795,
+        "id": 13059648,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7245839.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"coverage\", \"__current_case__\": 2}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b508df4d8498511327\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 30603481,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-06-03 14:18:07.930819",
+        "user_id": 61107
+    },
+    {
+        "create_time": "2016-03-29 16:38:24.747378",
+        "datasets": [
+            {
+                "dataset_id": "14946068",
+                "extension": "bam",
+                "file_size": 2169636302,
+                "name": "HZ-24.bam",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "14946068",
+                "extension": "bam",
+                "file_size": 2169636302,
+                "name": "HZ-24.bam",
+                "param_name": "input_bams1"
+            },
+            {
+                "dataset_id": "14946069",
+                "extension": "bam",
+                "file_size": 2357870207,
+                "name": "HZ-25.bam",
+                "param_name": "input_bams2"
+            },
+            {
+                "dataset_id": "14946071",
+                "extension": "bam",
+                "file_size": 2655276906,
+                "name": "HZ-26.bam",
+                "param_name": "input_bams3"
+            },
+            {
+                "dataset_id": "14946072",
+                "extension": "bam",
+                "file_size": 1455912414,
+                "name": "HZ-27.bam",
+                "param_name": "input_bams4"
+            },
+            {
+                "dataset_id": "14946073",
+                "extension": "bam",
+                "file_size": 4288490547,
+                "name": "HZ-29.bam",
+                "param_name": "input_bams5"
+            },
+            {
+                "dataset_id": "14946074",
+                "extension": "bam",
+                "file_size": 2041453629,
+                "name": "K1-1.bam",
+                "param_name": "input_bams6"
+            },
+            {
+                "dataset_id": "14946075",
+                "extension": "bam",
+                "file_size": 2164486292,
+                "name": "K1-11.bam",
+                "param_name": "input_bams7"
+            },
+            {
+                "dataset_id": "14946076",
+                "extension": "bam",
+                "file_size": 3550626928,
+                "name": "K1-12.bam",
+                "param_name": "input_bams8"
+            },
+            {
+                "dataset_id": "14946077",
+                "extension": "bam",
+                "file_size": 2149551117,
+                "name": "K1-14.bam",
+                "param_name": "input_bams9"
+            },
+            {
+                "dataset_id": "14946078",
+                "extension": "bam",
+                "file_size": 2033742277,
+                "name": "K1-4.bam",
+                "param_name": "input_bams10"
+            },
+            {
+                "dataset_id": "14946079",
+                "extension": "bam",
+                "file_size": 2060207422,
+                "name": "K1-5.bam",
+                "param_name": "input_bams11"
+            },
+            {
+                "dataset_id": "14946082",
+                "extension": "bam",
+                "file_size": 2060127832,
+                "name": "K1-6.bam",
+                "param_name": "input_bams12"
+            },
+            {
+                "dataset_id": "14946083",
+                "extension": "bam",
+                "file_size": 1985210488,
+                "name": "K1-9.bam",
+                "param_name": "input_bams13"
+            },
+            {
+                "dataset_id": "14946084",
+                "extension": "bam",
+                "file_size": 2902639678,
+                "name": "K2-1.bam",
+                "param_name": "input_bams14"
+            },
+            {
+                "dataset_id": "14946085",
+                "extension": "bam",
+                "file_size": 3460755760,
+                "name": "K2-12.bam",
+                "param_name": "input_bams15"
+            },
+            {
+                "dataset_id": "14946086",
+                "extension": "bam",
+                "file_size": 2271497586,
+                "name": "K3-10.bam",
+                "param_name": "input_bams16"
+            },
+            {
+                "dataset_id": "14946087",
+                "extension": "bam",
+                "file_size": 1497973189,
+                "name": "K3-12.bam",
+                "param_name": "input_bams17"
+            },
+            {
+                "dataset_id": "14946088",
+                "extension": "bam",
+                "file_size": 1833429415,
+                "name": "K3-13.bam",
+                "param_name": "input_bams18"
+            },
+            {
+                "dataset_id": "14946089",
+                "extension": "bam",
+                "file_size": 2911495438,
+                "name": "K3-14.bam",
+                "param_name": "input_bams19"
+            },
+            {
+                "dataset_id": "14946090",
+                "extension": "bam",
+                "file_size": 1900426725,
+                "name": "K3-15.bam",
+                "param_name": "input_bams20"
+            },
+            {
+                "dataset_id": "14946091",
+                "extension": "bam",
+                "file_size": 2432760925,
+                "name": "K3-16.bam",
+                "param_name": "input_bams21"
+            },
+            {
+                "dataset_id": "14946092",
+                "extension": "bam",
+                "file_size": 1530297261,
+                "name": "K3-18.bam",
+                "param_name": "input_bams22"
+            },
+            {
+                "dataset_id": "14946094",
+                "extension": "bam",
+                "file_size": 1914253458,
+                "name": "K3-2.bam",
+                "param_name": "input_bams23"
+            },
+            {
+                "dataset_id": "14946095",
+                "extension": "bam",
+                "file_size": 2851532970,
+                "name": "K3-3.bam",
+                "param_name": "input_bams24"
+            },
+            {
+                "dataset_id": "14946096",
+                "extension": "bam",
+                "file_size": 2280197701,
+                "name": "K3-4.bam",
+                "param_name": "input_bams25"
+            },
+            {
+                "dataset_id": "14946098",
+                "extension": "bam",
+                "file_size": 2853227542,
+                "name": "K3-5.bam",
+                "param_name": "input_bams26"
+            },
+            {
+                "dataset_id": "14946099",
+                "extension": "bam",
+                "file_size": 1668605106,
+                "name": "K3-6.bam",
+                "param_name": "input_bams27"
+            },
+            {
+                "dataset_id": "14946100",
+                "extension": "bam",
+                "file_size": 2730585929,
+                "name": "K3-7.bam",
+                "param_name": "input_bams28"
+            },
+            {
+                "dataset_id": "14946106",
+                "extension": "bam",
+                "file_size": 4056065903,
+                "name": "K3-8.bam",
+                "param_name": "input_bams29"
+            },
+            {
+                "dataset_id": "14946107",
+                "extension": "bam",
+                "file_size": 2746016333,
+                "name": "K3-9.bam",
+                "param_name": "input_bams30"
+            },
+            {
+                "dataset_id": "14946451",
+                "extension": "bam",
+                "file_size": 3379226156,
+                "name": "8FR-1.bam",
+                "param_name": "input_bams31"
+            },
+            {
+                "dataset_id": "14946452",
+                "extension": "bam",
+                "file_size": 1829116857,
+                "name": "8FR-2.bam",
+                "param_name": "input_bams32"
+            },
+            {
+                "dataset_id": "14946453",
+                "extension": "bam",
+                "file_size": 1829116857,
+                "name": "8FR-3.bam",
+                "param_name": "input_bams33"
+            },
+            {
+                "dataset_id": "14946456",
+                "extension": "bam",
+                "file_size": 2287281904,
+                "name": "8FR-4.bam",
+                "param_name": "input_bams34"
+            },
+            {
+                "dataset_id": "14950327",
+                "extension": "bam",
+                "file_size": 3881714173,
+                "name": "FR-1.bam",
+                "param_name": "input_bams35"
+            },
+            {
+                "dataset_id": "14950328",
+                "extension": "bam",
+                "file_size": 2351585256,
+                "name": "LR-O-1.bam",
+                "param_name": "input_bams36"
+            },
+            {
+                "dataset_id": "14950329",
+                "extension": "bam",
+                "file_size": 2111772603,
+                "name": "LR-O-10.bam",
+                "param_name": "input_bams37"
+            },
+            {
+                "dataset_id": "14950335",
+                "extension": "bam",
+                "file_size": 2525853389,
+                "name": "LR-O-12.bam",
+                "param_name": "input_bams38"
+            },
+            {
+                "dataset_id": "14950336",
+                "extension": "bam",
+                "file_size": 2183076465,
+                "name": "LR-O-13.bam",
+                "param_name": "input_bams39"
+            },
+            {
+                "dataset_id": "14950337",
+                "extension": "bam",
+                "file_size": 2882806174,
+                "name": "LR-O-14.bam",
+                "param_name": "input_bams40"
+            },
+            {
+                "dataset_id": "14950338",
+                "extension": "bam",
+                "file_size": 2638635900,
+                "name": "LR-O-16.bam",
+                "param_name": "input_bams41"
+            },
+            {
+                "dataset_id": "14950339",
+                "extension": "bam",
+                "file_size": 3530911734,
+                "name": "LR-O-17.bam",
+                "param_name": "input_bams42"
+            },
+            {
+                "dataset_id": "14950340",
+                "extension": "bam",
+                "file_size": 1996184600,
+                "name": "LR-O-18.bam",
+                "param_name": "input_bams43"
+            },
+            {
+                "dataset_id": "14950341",
+                "extension": "bam",
+                "file_size": 3395213642,
+                "name": "LR-O-2.bam",
+                "param_name": "input_bams44"
+            },
+            {
+                "dataset_id": "14950342",
+                "extension": "bam",
+                "file_size": 2773807191,
+                "name": "LR-O-3.bam",
+                "param_name": "input_bams45"
+            },
+            {
+                "dataset_id": "14950343",
+                "extension": "bam",
+                "file_size": 1847304087,
+                "name": "LR-O-4.bam",
+                "param_name": "input_bams46"
+            },
+            {
+                "dataset_id": "14950344",
+                "extension": "bam",
+                "file_size": 2000505445,
+                "name": "LR-O-6.bam",
+                "param_name": "input_bams47"
+            },
+            {
+                "dataset_id": "14950346",
+                "extension": "bam",
+                "file_size": 1421718293,
+                "name": "LR-O-7.bam",
+                "param_name": "input_bams48"
+            },
+            {
+                "dataset_id": "14950347",
+                "extension": "bam",
+                "file_size": 1738871539,
+                "name": "LR-R-1.bam",
+                "param_name": "input_bams49"
+            },
+            {
+                "dataset_id": "14950348",
+                "extension": "bam",
+                "file_size": 2569568543,
+                "name": "LR-R-10.bam",
+                "param_name": "input_bams50"
+            },
+            {
+                "dataset_id": "14950349",
+                "extension": "bam",
+                "file_size": 2199175595,
+                "name": "LR-R-11.bam",
+                "param_name": "input_bams51"
+            },
+            {
+                "dataset_id": "14950350",
+                "extension": "bam",
+                "file_size": 1726564851,
+                "name": "LR-R-12.bam",
+                "param_name": "input_bams52"
+            },
+            {
+                "dataset_id": "14950351",
+                "extension": "bam",
+                "file_size": 2055730728,
+                "name": "LR-R-3.bam",
+                "param_name": "input_bams53"
+            },
+            {
+                "dataset_id": "14950352",
+                "extension": "bam",
+                "file_size": 3292958426,
+                "name": "LR-R-4.bam",
+                "param_name": "input_bams54"
+            },
+            {
+                "dataset_id": "14950353",
+                "extension": "bam",
+                "file_size": 3150959731,
+                "name": "LR-R-5.bam",
+                "param_name": "input_bams55"
+            },
+            {
+                "dataset_id": "14950354",
+                "extension": "bam",
+                "file_size": 2994338253,
+                "name": "LR-R-6.bam",
+                "param_name": "input_bams56"
+            },
+            {
+                "dataset_id": "14950355",
+                "extension": "bam",
+                "file_size": 2750041379,
+                "name": "LR-R-7.bam",
+                "param_name": "input_bams57"
+            },
+            {
+                "dataset_id": "14950356",
+                "extension": "bam",
+                "file_size": 2576839051,
+                "name": "LR-R-8.bam",
+                "param_name": "input_bams58"
+            },
+            {
+                "dataset_id": "14950357",
+                "extension": "bam",
+                "file_size": 3330097404,
+                "name": "LR-R-9.bam",
+                "param_name": "input_bams59"
+            },
+            {
+                "dataset_id": "14995060",
+                "extension": "fasta",
+                "file_size": 1654081414,
+                "name": "NormalizeFasta on data 213: Normalized FASTA dataset",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2642165,
+        "id": 12274513,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6482870.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"mapqual\": \"False\", \"reference_source\": {\"ref_file\": 24047698, \"reference_source_selector\": \"history\", \"__current_case__\": 1}, \"format_type_selector\": \"pileup\", \"__current_case__\": 0}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "\"23993747,23993748,23993750,23993751,23993752,23993753,23993754,23993755,23993756,23993757,23993758,23993761,23993762,23993763,23993764,23993765,23993766,23993767,23993768,23993769,23993770,23993771,23993773,23993774,23993775,23993777,23993778,23993779,23993785,23993786,23994175,23994176,23994177,23994180,23998560,23998561,23998562,23998568,23998569,23998570,23998571,23998572,23998573,23998574,23998575,23998576,23998578,23998579,23998580,23998581,23998582,23998583,23998584,23998585,23998586,23998587,23998588,23998589,23998590\""
+        },
+        "runner_name": null,
+        "session_id": 29266596,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-03-30 00:57:12.675280",
+        "user_id": 79663
+    },
+    {
+        "create_time": "2016-11-24 19:04:39.782048",
+        "datasets": [
+            {
+                "dataset_id": "17171136",
+                "extension": "bam",
+                "file_size": 3562119578,
+                "name": "TopHat on data 10 and data 9: accepted_hits",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "17171136",
+                "extension": "bam",
+                "file_size": 3562119578,
+                "name": "TopHat on data 10 and data 9: accepted_hits",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2820140,
+        "id": 14426678,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8629102.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"coverage\", \"__current_case__\": 2}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 26469588}]}"
+        },
+        "runner_name": null,
+        "session_id": 34205094,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-11-24 22:59:29.410958",
+        "user_id": 89558
+    },
+    {
+        "create_time": "2016-11-12 19:34:44.706421",
+        "datasets": [
+            {
+                "dataset_id": "17638853",
+                "extension": "bam",
+                "file_size": 1826432873,
+                "name": "SRR1767341.bam",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "17638853",
+                "extension": "bam",
+                "file_size": 1826432873,
+                "name": "SRR1767341.bam",
+                "param_name": "input_bams1"
+            },
+            {
+                "dataset_id": "17626432",
+                "extension": "fasta",
+                "file_size": 276545954,
+                "name": "genomic.fna",
+                "param_name": "analysis_type|format_type|ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2868947,
+        "id": 14325867,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8533401.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"mapqual\": \"false\", \"reference_source\": {\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58c779be9b235d18f\"}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}, \"format_type_selector\": \"pileup\", \"__current_case__\": 0}}",
+            "chromInfo": "\"/galaxy-repl/main/files/017/833/dataset_17833214.dat\"",
+            "dbkey": "\"neems\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53be05cae3bba6692\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33369915,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-11-12 19:37:50.736247",
+        "user_id": 91348
+    },
+    {
+        "create_time": "2017-11-01 10:04:01.240222",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3303847,
+        "id": 17283881,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11345184",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"count\", \"__current_case__\": 1}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 10:09:44.176976",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2017-06-16 17:06:09.823424",
+        "datasets": [
+            {
+                "dataset_id": "20311438",
+                "extension": "bam",
+                "file_size": 1912037818,
+                "name": "1_DPI_CONTROL_MERGED_BWA_BAM_6_15_17",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "20311438",
+                "extension": "bam",
+                "file_size": 1912037818,
+                "name": "1_DPI_CONTROL_MERGED_BWA_BAM_6_15_17",
+                "param_name": "input_bams1"
+            },
+            {
+                "dataset_id": "20312833",
+                "extension": "bam",
+                "file_size": 1573018154,
+                "name": "merged_3_dpi_control_snc",
+                "param_name": "input_bams2"
+            },
+            {
+                "dataset_id": "20312844",
+                "extension": "bam",
+                "file_size": 2425319283,
+                "name": "merged_8_dpi_control_snc",
+                "param_name": "input_bams3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3158581,
+        "id": 16117760,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10199828.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"coverage\", \"__current_case__\": 2}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 30054902}, {\"src\": \"hda\", \"id\": 30054903}, {\"src\": \"hda\", \"id\": 30054904}]}"
+        },
+        "runner_name": null,
+        "session_id": 38724013,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-06-16 18:24:54.835594",
+        "user_id": 107537
+    },
+    {
+        "create_time": "2017-11-01 10:24:55.287787",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3303847,
+        "id": 17283989,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11345329",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"count\", \"__current_case__\": 1}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 10:31:35.068943",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2017-05-25 06:53:50.291382",
+        "datasets": [
+            {
+                "dataset_id": "20068054",
+                "extension": "bam",
+                "file_size": 1952579571,
+                "name": "SRR2089848 (sam-dump)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "20068054",
+                "extension": "bam",
+                "file_size": 1952579571,
+                "name": "SRR2089848 (sam-dump)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2542554,
+        "id": 15934349,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10032781.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"coverage\", \"__current_case__\": 2}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 29764846}]}"
+        },
+        "runner_name": null,
+        "session_id": 37597403,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-05-25 06:57:23.196595",
+        "user_id": 68970
+    },
+    {
+        "create_time": "2017-11-01 09:42:36.700345",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3303847,
+        "id": 17283763,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11345086",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"format_type_selector\": \"bed\", \"__current_case__\": 3}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 09:55:39.284004",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2017-03-09 14:57:10.875429",
+        "datasets": [
+            {
+                "dataset_id": "19143661",
+                "extension": "bam",
+                "file_size": 2837753595,
+                "name": "ERR007474.bam",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "19143661",
+                "extension": "bam",
+                "file_size": 2837753595,
+                "name": "ERR007474.bam",
+                "param_name": "input_bams1"
+            },
+            {
+                "dataset_id": "19143670",
+                "extension": "bam",
+                "file_size": 509891353,
+                "name": "ERR000780.bam",
+                "param_name": "input_bams2"
+            },
+            {
+                "dataset_id": "19143704",
+                "extension": "fasta",
+                "file_size": 294,
+                "name": "113989600_113989800.fasta",
+                "param_name": "analysis_type|format_type|ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3025329,
+        "id": 15254200,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9400224.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"mapqual\": \"false\", \"reference_source\": {\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28695155}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}, \"format_type_selector\": \"pileup\", \"__current_case__\": 0}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 28695111}, {\"src\": \"hda\", \"id\": 28695120}]}"
+        },
+        "runner_name": null,
+        "session_id": 36527246,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-03-09 15:01:36.244301",
+        "user_id": 100929
+    },
+    {
+        "create_time": "2017-03-09 20:00:04.896097",
+        "datasets": [
+            {
+                "dataset_id": "19144828",
+                "extension": "bam",
+                "file_size": 509891353,
+                "name": "ERR000780.bam",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "19144828",
+                "extension": "bam",
+                "file_size": 509891353,
+                "name": "ERR000780.bam",
+                "param_name": "input_bams1"
+            },
+            {
+                "dataset_id": "19144853",
+                "extension": "bam",
+                "file_size": 2837753595,
+                "name": "ERR007474.bam",
+                "param_name": "input_bams2"
+            },
+            {
+                "dataset_id": "19144862",
+                "extension": "fasta",
+                "file_size": 294,
+                "name": "113989600_113989800.fasta",
+                "param_name": "analysis_type|format_type|ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3025462,
+        "id": 15256874,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9402911.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"mapqual\": \"false\", \"reference_source\": {\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28696353}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1}, \"format_type_selector\": \"pileup\", \"__current_case__\": 0}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 28696319}, {\"src\": \"hda\", \"id\": 28696344}]}"
+        },
+        "runner_name": null,
+        "session_id": 36539345,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-03-09 20:02:39.995764",
+        "user_id": 101765
+    },
+    {
+        "create_time": "2017-11-01 11:56:24.690110",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3303847,
+        "id": 17284689,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11346102",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"format_type_selector\": \"bed\", \"__current_case__\": 3}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 12:06:39.556146",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2017-11-01 09:42:17.781065",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3303847,
+        "id": 17283760,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11345042",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"count\", \"__current_case__\": 1}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 09:49:15.628863",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2016-07-25 22:38:43.864234",
+        "datasets": [
+            {
+                "dataset_id": "16669203",
+                "extension": "bam",
+                "file_size": 990333962,
+                "name": "TopHat on data 53 and data 57: accepted_hits",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "16669203",
+                "extension": "bam",
+                "file_size": 990333962,
+                "name": "TopHat on data 53 and data 57: accepted_hits",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2772654,
+        "id": 13492715,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7708192.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"mapqual\": \"false\", \"reference_source\": {\"ref_file\": \"pseuAeru\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}, \"format_type_selector\": \"pileup\", \"__current_case__\": 0}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a8706186c5410311\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 31647628,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2016-07-25 23:28:56.775940",
+        "user_id": 87655
+    },
+    {
+        "create_time": "2017-03-09 02:06:04.378165",
+        "datasets": [
+            {
+                "dataset_id": "19121334",
+                "extension": "bam",
+                "file_size": 4929215970,
+                "name": "SRR452328.bam",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "19121334",
+                "extension": "bam",
+                "file_size": 4929215970,
+                "name": "SRR452328.bam",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3022888,
+        "id": 15249070,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9395514.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"coverage\", \"__current_case__\": 2}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 28668752}]}"
+        },
+        "runner_name": null,
+        "session_id": 36497060,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-03-09 02:09:09.949733",
+        "user_id": 44428
+    },
+    {
+        "create_time": "2017-11-01 10:35:12.914949",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3303847,
+        "id": 17284056,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11345415",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"format_type_selector\": \"bed\", \"__current_case__\": 3}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 10:42:12.301266",
+        "user_id": 114191
+    },
+    {
+        "create_time": "2017-11-01 12:11:07.414573",
+        "datasets": [
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams"
+            },
+            {
+                "dataset_id": "21937924",
+                "extension": "bam",
+                "file_size": 139853938,
+                "name": "Bowtie2 on data 42 and data 44: aligned reads (sorted BAM)",
+                "param_name": "input_bams1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bamtools",
+                "path": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/bamtools/2.3.0_2d7685d2ae/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "2.3.0_2d7685d2ae"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/bamtools/ea3fc1adee75/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00 --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3303847,
+        "id": 17284816,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11346218",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_type": "{\"analysis_type_selector\": \"convert\", \"__current_case__\": 0, \"format_type\": {\"format_type_selector\": \"bed\", \"__current_case__\": 3}}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_bams": "{\"values\": [{\"src\": \"hda\", \"id\": 31973587}]}"
+        },
+        "runner_name": null,
+        "session_id": 41459965,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bamtools/bamtools/0.0.2",
+        "tool_version": "0.0.2",
+        "traceback": null,
+        "update_time": "2017-11-01 12:18:10.553914",
+        "user_id": 114191
+    }
+]

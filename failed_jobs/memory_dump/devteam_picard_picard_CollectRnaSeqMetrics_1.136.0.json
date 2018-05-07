@@ -1,0 +1,61 @@
+[
+    {
+        "create_time": "2016-05-05 19:50:29.521593",
+        "datasets": [
+            {
+                "dataset_id": "15672199",
+                "extension": "bam",
+                "file_size": 6366547738,
+                "name": "HISAT2 on data 229 and data 230",
+                "param_name": "inputFile"
+            },
+            {
+                "dataset_id": "15669187",
+                "extension": "tabular",
+                "file_size": 13424205,
+                "name": "UCSC Main on Mouse: knownGene (genome)",
+                "param_name": "refFlat"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2692333,
+        "id": 12798064,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6998790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"true\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "ignore_list": "[]",
+            "inputFile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ee6ae032890057eb\"}]}",
+            "metric_accumulation_level": "[\"ALL_READS\"]",
+            "minimum_length": "\"500\"",
+            "refFlat": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c65dafadbd9c08c9\"}]}",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "ribosomal_intervals": "null",
+            "rrna_fragment_percentage": "\"0.8\"",
+            "strand_specificity": "\"NONE\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 29975342,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_CollectRnaSeqMetrics/1.136.0",
+        "tool_version": "1.136.0",
+        "traceback": null,
+        "update_time": "2016-05-06 03:20:42.550544",
+        "user_id": 83669
+    }
+]

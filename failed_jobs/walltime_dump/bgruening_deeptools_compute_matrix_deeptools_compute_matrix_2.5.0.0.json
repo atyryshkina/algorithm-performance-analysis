@@ -1,0 +1,1719 @@
+[
+    {
+        "create_time": "2017-04-09 17:34:19.732364",
+        "datasets": [
+            {
+                "dataset_id": "19521674",
+                "extension": "bed",
+                "file_size": 1548170,
+                "name": "Promoters.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "19518085",
+                "extension": "bigwig",
+                "file_size": 170870334,
+                "name": "164IDTC-H3K9me3",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "19518085",
+                "extension": "bigwig",
+                "file_size": 170870334,
+                "name": "164IDTC-H3K9me3",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "19518092",
+                "extension": "bigwig",
+                "file_size": 165332711,
+                "name": "164P-H3K9me3",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "19518097",
+                "extension": "bigwig",
+                "file_size": 215459027,
+                "name": "164P-H3K27me3",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "19518100",
+                "extension": "bigwig",
+                "file_size": 237566298,
+                "name": "164IDTC-H3K27me3",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "19518126",
+                "extension": "bigwig",
+                "file_size": 182240449,
+                "name": "164P-H3K4me3",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "19518147",
+                "extension": "bigwig",
+                "file_size": 214471745,
+                "name": "164IDTC-H3K4me3",
+                "param_name": "scoreFileName6"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3065070,
+        "id": 15535081,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9660944.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 1, \"__job_resource__select\": \"yes\", \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"true\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"3000\", \"beforeRegionStartLength\": \"3000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 29137738}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 29135319}, {\"src\": \"hda\", \"id\": 29135320}, {\"src\": \"hda\", \"id\": 29135321}, {\"src\": \"hda\", \"id\": 29135322}, {\"src\": \"hda\", \"id\": 29135323}, {\"src\": \"hda\", \"id\": 29135324}]}"
+        },
+        "runner_name": null,
+        "session_id": 37226441,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-04-09 18:45:57.119842",
+        "user_id": 93861
+    },
+    {
+        "create_time": "2017-05-07 22:29:03.159196",
+        "datasets": [
+            {
+                "dataset_id": "19852556",
+                "extension": "bed",
+                "file_size": 76736177,
+                "name": "ref_GRCh37.p13_top_level.gff3",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "19852557",
+                "extension": "bigwig",
+                "file_size": 142798007,
+                "name": "RH1_merged_TopHat_accepted_hits",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "19852557",
+                "extension": "bigwig",
+                "file_size": 142798007,
+                "name": "RH1_merged_TopHat_accepted_hits",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "19852558",
+                "extension": "bigwig",
+                "file_size": 145573221,
+                "name": "RH2_merged_TopHat_accepted_hits",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "19852559",
+                "extension": "bigwig",
+                "file_size": 156849561,
+                "name": "RH3_merged_TopHat_accepted_hits",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "19852561",
+                "extension": "bigwig",
+                "file_size": 72064627,
+                "name": "RH4_merged_TopHat_accepted_hits",
+                "param_name": "scoreFileName4"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3091907,
+        "id": 15774753,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9881643",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 29509950}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 29509951}, {\"src\": \"hda\", \"id\": 29509952}, {\"src\": \"hda\", \"id\": 29509953}, {\"src\": \"hda\", \"id\": 29509955}]}"
+        },
+        "runner_name": null,
+        "session_id": 37654339,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-05-09 11:10:22.688177",
+        "user_id": 104898
+    },
+    {
+        "create_time": "2017-06-27 06:19:18.019282",
+        "datasets": [
+            {
+                "dataset_id": "20426876",
+                "extension": "bed",
+                "file_size": 14678371,
+                "name": "SRR072984.mm10.chr17.bam.e.bed",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "20426898",
+                "extension": "bigwig",
+                "file_size": 1766872,
+                "name": "bamCoverage on data 10",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "20426898",
+                "extension": "bigwig",
+                "file_size": 1766872,
+                "name": "bamCoverage on data 10",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3101871,
+        "id": 16196058,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10272263",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30173108}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 30173130}]}"
+        },
+        "runner_name": null,
+        "session_id": 37843867,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-06-28 18:19:36.671673",
+        "user_id": 101910
+    },
+    {
+        "create_time": "2017-07-21 19:49:47.819433",
+        "datasets": [
+            {
+                "dataset_id": "20672830",
+                "extension": "bed",
+                "file_size": 304287,
+                "name": "LINEs > 6000",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "20672836",
+                "extension": "bed",
+                "file_size": 98303,
+                "name": "LTRs > 3500",
+                "param_name": "regionsFiles_1|regionsFile"
+            },
+            {
+                "dataset_id": "20687907",
+                "extension": "bed",
+                "file_size": 45723790,
+                "name": "SINE >200",
+                "param_name": "regionsFiles_2|regionsFile"
+            },
+            {
+                "dataset_id": "20687902",
+                "extension": "bed",
+                "file_size": 289575,
+                "name": "Simple_repeat >500",
+                "param_name": "regionsFiles_3|regionsFile"
+            },
+            {
+                "dataset_id": "20684958",
+                "extension": "bed",
+                "file_size": 415719,
+                "name": "Satellite_todas",
+                "param_name": "regionsFiles_4|regionsFile"
+            },
+            {
+                "dataset_id": "20687898",
+                "extension": "bed",
+                "file_size": 441920,
+                "name": "DNA >1000",
+                "param_name": "regionsFiles_5|regionsFile"
+            },
+            {
+                "dataset_id": "20684541",
+                "extension": "bigwig",
+                "file_size": 183048139,
+                "name": "Accepted_hits CAP1N",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "20684541",
+                "extension": "bigwig",
+                "file_size": 183048139,
+                "name": "Accepted_hits CAP1N",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "20684542",
+                "extension": "bigwig",
+                "file_size": 156941156,
+                "name": "Accepted_hits CAP2T",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "20684543",
+                "extension": "bigwig",
+                "file_size": 198701341,
+                "name": "Accepted_hits CAP3N",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "20684544",
+                "extension": "bigwig",
+                "file_size": 191395993,
+                "name": "Accepted_hits CAP4T",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "20684545",
+                "extension": "bigwig",
+                "file_size": 179433110,
+                "name": "Accepted_hits CAP5N",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "20684546",
+                "extension": "bigwig",
+                "file_size": 200874610,
+                "name": "Accepted_hits CAP6T",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "20688013",
+                "extension": "bigwig",
+                "file_size": 10023731,
+                "name": "SINE >200",
+                "param_name": "scoreFileName7"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3190598,
+        "id": 16391364,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10455423",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"keep\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"2000\", \"regionStartLength\": {\"afterRegionStartLength\": \"500\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"500\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"false\", \"saveSortedRegions\": \"false\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30544992}]}}, {\"__index__\": 1, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30544998}]}}, {\"__index__\": 2, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30568280}]}}, {\"__index__\": 3, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30568275}]}}, {\"__index__\": 4, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30563321}]}}, {\"__index__\": 5, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30568271}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 30562800}, {\"src\": \"hda\", \"id\": 30562801}, {\"src\": \"hda\", \"id\": 30562802}, {\"src\": \"hda\", \"id\": 30562803}, {\"src\": \"hda\", \"id\": 30562804}, {\"src\": \"hda\", \"id\": 30562805}, {\"src\": \"hda\", \"id\": 30568391}]}"
+        },
+        "runner_name": null,
+        "session_id": 39405700,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-23 07:51:24.785319",
+        "user_id": 108898
+    },
+    {
+        "create_time": "2017-07-27 23:02:45.145741",
+        "datasets": [
+            {
+                "dataset_id": "20753691",
+                "extension": "bed",
+                "file_size": 86828549,
+                "name": "gencode.v26.annotation.gtf",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "19940100",
+                "extension": "bigwig",
+                "file_size": 27773659,
+                "name": "GM1-C23-V.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "19940100",
+                "extension": "bigwig",
+                "file_size": 27773659,
+                "name": "GM1-C23-V.bw",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3111881,
+        "id": 16438450,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10506306",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30641737}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 29608940}]}"
+        },
+        "runner_name": null,
+        "session_id": 37982205,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-07-29 11:03:49.190784",
+        "user_id": 105872
+    },
+    {
+        "create_time": "2017-08-20 18:47:51.840339",
+        "datasets": [
+            {
+                "dataset_id": "21007889",
+                "extension": "bed",
+                "file_size": 1550209806,
+                "name": "GSM613884_UCSF-UBC.Peripheral_Blood_Mononuclear_Primary_Cells.H3K4me1.TC012.HS2745.bedgraph",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "20096363",
+                "extension": "bigwig",
+                "file_size": 14193095,
+                "name": "Wig/BedGraph-to-bigWig on data 144",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "20096363",
+                "extension": "bigwig",
+                "file_size": 14193095,
+                "name": "Wig/BedGraph-to-bigWig on data 144",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "20972525",
+                "extension": "bigwig",
+                "file_size": 238157529,
+                "name": "Wig/BedGraph-to-bigWig on data 314",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3125029,
+        "id": 16617717,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10692708",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"keep\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"3000\", \"beforeRegionStartLength\": \"3000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30928558}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 29797452}, {\"src\": \"hda\", \"id\": 30889706}]}"
+        },
+        "runner_name": null,
+        "session_id": 38582736,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-08-22 21:47:16.445100",
+        "user_id": 62429
+    },
+    {
+        "create_time": "2017-08-21 09:48:51.876946",
+        "datasets": [
+            {
+                "dataset_id": "21007893",
+                "extension": "bed",
+                "file_size": 839457406,
+                "name": "GSM1127135_UCSF-UBC.Peripheral_Blood_Mononuclear_Primary_Cells.H3K9me3.TC016.bedgraph",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "20972525",
+                "extension": "bigwig",
+                "file_size": 238157529,
+                "name": "Wig/BedGraph-to-bigWig on data 314",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "20972525",
+                "extension": "bigwig",
+                "file_size": 238157529,
+                "name": "Wig/BedGraph-to-bigWig on data 314",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3125029,
+        "id": 16621028,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10708529",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"keep\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"3000\", \"beforeRegionStartLength\": \"3000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30928562}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 30889706}]}"
+        },
+        "runner_name": null,
+        "session_id": 38582736,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-08-24 09:47:53.097079",
+        "user_id": 62429
+    },
+    {
+        "create_time": "2017-08-22 12:58:49.039977",
+        "datasets": [
+            {
+                "dataset_id": "21007893",
+                "extension": "bed",
+                "file_size": 839457406,
+                "name": "GSM1127135_UCSF-UBC.Peripheral_Blood_Mononuclear_Primary_Cells.H3K9me3.TC016.bedgraph",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "20177611",
+                "extension": "bigwig",
+                "file_size": 318515431,
+                "name": "WGBS_REDUCED.bed",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "20177611",
+                "extension": "bigwig",
+                "file_size": 318515431,
+                "name": "WGBS_REDUCED.bed",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3125029,
+        "id": 16631451,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10720084",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"keep\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"afterRegionStartLength\": \"3000\", \"beforeRegionStartLength\": \"3000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"TSS\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 30928562}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 29889222}]}"
+        },
+        "runner_name": null,
+        "session_id": 40002328,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-08-25 21:48:10.553020",
+        "user_id": 62429
+    },
+    {
+        "create_time": "2017-10-12 20:40:56.276093",
+        "datasets": [
+            {
+                "dataset_id": "21668579",
+                "extension": "bed",
+                "file_size": 114844594,
+                "name": "UCSC Main on Human: ct_eTE_9006 (genome)",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "14904845",
+                "extension": "bigwig",
+                "file_size": 696135917,
+                "name": "H3K27ac.bigwig",
+                "param_name": "scoreFileName1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 1639242,
+        "id": 17090708,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11146734.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 31669174}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 23944450}]}"
+        },
+        "runner_name": null,
+        "session_id": 40076091,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-10-14 12:18:22.407508",
+        "user_id": 31997
+    },
+    {
+        "create_time": "2018-03-05 19:16:01.652311",
+        "datasets": [
+            {
+                "dataset_id": "23809803",
+                "extension": "bed",
+                "file_size": 67204389,
+                "name": "SINE >100",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "18753647",
+                "extension": "bigwig",
+                "file_size": 30787066,
+                "name": "bamCoverage on PrEC",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "18753647",
+                "extension": "bigwig",
+                "file_size": 30787066,
+                "name": "bamCoverage on PrEC",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "18753649",
+                "extension": "bigwig",
+                "file_size": 33514432,
+                "name": "bamCoverage on LNCaP",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "21427148",
+                "extension": "bigwig",
+                "file_size": 37073307,
+                "name": "bamCoverage on PC3",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3267690,
+        "id": 18614305,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12710037",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"1000\", \"regionStartLength\": {\"afterRegionStartLength\": \"500\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"500\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"false\", \"saveSortedRegions\": \"false\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34101050}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 31433927}, {\"src\": \"hda\", \"id\": 31433928}, {\"src\": \"hda\", \"id\": 31433948}]}"
+        },
+        "runner_name": null,
+        "session_id": 44205055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-07 07:16:38.993841",
+        "user_id": 108898
+    },
+    {
+        "create_time": "2017-11-15 18:20:06.930101",
+        "datasets": [
+            {
+                "dataset_id": "22224546",
+                "extension": "bed",
+                "file_size": 58259300,
+                "name": "gencode.vM15.annotation.gtf",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "22246203",
+                "extension": "bigwig",
+                "file_size": 57111640,
+                "name": "bamCoverage on data 2",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "22246203",
+                "extension": "bigwig",
+                "file_size": 57111640,
+                "name": "bamCoverage on data 2",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "22246204",
+                "extension": "bigwig",
+                "file_size": 47359382,
+                "name": "bamCoverage on data 3",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "22246205",
+                "extension": "bigwig",
+                "file_size": 20366789,
+                "name": "bamCoverage on data 4",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "22246206",
+                "extension": "bigwig",
+                "file_size": 20334794,
+                "name": "bamCoverage on data 5",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "22246207",
+                "extension": "bigwig",
+                "file_size": 22749754,
+                "name": "bamCoverage on data 6",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "22246208",
+                "extension": "bigwig",
+                "file_size": 17973787,
+                "name": "bamCoverage on data 7",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "22246209",
+                "extension": "bigwig",
+                "file_size": 68141138,
+                "name": "bamCoverage on data 8",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "22246210",
+                "extension": "bigwig",
+                "file_size": 10493861,
+                "name": "bamCoverage on data 9",
+                "param_name": "scoreFileName8"
+            },
+            {
+                "dataset_id": "22246211",
+                "extension": "bigwig",
+                "file_size": 105054897,
+                "name": "bamCoverage on data 10",
+                "param_name": "scoreFileName9"
+            },
+            {
+                "dataset_id": "22246212",
+                "extension": "bigwig",
+                "file_size": 15294827,
+                "name": "bamCoverage on data 11",
+                "param_name": "scoreFileName10"
+            },
+            {
+                "dataset_id": "22246213",
+                "extension": "bigwig",
+                "file_size": 16358267,
+                "name": "bamCoverage on data 12",
+                "param_name": "scoreFileName11"
+            },
+            {
+                "dataset_id": "22246214",
+                "extension": "bigwig",
+                "file_size": 59277031,
+                "name": "bamCoverage on data 13",
+                "param_name": "scoreFileName12"
+            },
+            {
+                "dataset_id": "22246215",
+                "extension": "bigwig",
+                "file_size": 39548815,
+                "name": "bamCoverage on data 14",
+                "param_name": "scoreFileName13"
+            },
+            {
+                "dataset_id": "22246216",
+                "extension": "bigwig",
+                "file_size": 14724834,
+                "name": "bamCoverage on data 15",
+                "param_name": "scoreFileName14"
+            },
+            {
+                "dataset_id": "22246217",
+                "extension": "bigwig",
+                "file_size": 28275237,
+                "name": "bamCoverage on data 16",
+                "param_name": "scoreFileName15"
+            },
+            {
+                "dataset_id": "22246218",
+                "extension": "bigwig",
+                "file_size": 19042471,
+                "name": "bamCoverage on data 42",
+                "param_name": "scoreFileName16"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3322230,
+        "id": 17473220,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11529464",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 32298304}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 32323887}, {\"src\": \"hda\", \"id\": 32323888}, {\"src\": \"hda\", \"id\": 32323889}, {\"src\": \"hda\", \"id\": 32323890}, {\"src\": \"hda\", \"id\": 32323891}, {\"src\": \"hda\", \"id\": 32323892}, {\"src\": \"hda\", \"id\": 32323893}, {\"src\": \"hda\", \"id\": 32323894}, {\"src\": \"hda\", \"id\": 32323895}, {\"src\": \"hda\", \"id\": 32323896}, {\"src\": \"hda\", \"id\": 32323897}, {\"src\": \"hda\", \"id\": 32323898}, {\"src\": \"hda\", \"id\": 32323899}, {\"src\": \"hda\", \"id\": 32323900}, {\"src\": \"hda\", \"id\": 32323901}, {\"src\": \"hda\", \"id\": 32323902}]}"
+        },
+        "runner_name": null,
+        "session_id": 40408808,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2017-11-17 07:38:37.925881",
+        "user_id": 105790
+    },
+    {
+        "create_time": "2018-02-22 16:46:22.312080",
+        "datasets": [
+            {
+                "dataset_id": "23736119",
+                "extension": "bed",
+                "file_size": 24065686,
+                "name": "Extract features on data 77",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "23733661",
+                "extension": "bigwig",
+                "file_size": 2690674,
+                "name": "f49 X Z scores.txt",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "23733661",
+                "extension": "bigwig",
+                "file_size": 2690674,
+                "name": "f49 X Z scores.txt",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "23733662",
+                "extension": "bigwig",
+                "file_size": 2736759,
+                "name": "N2 X Z scores.txt",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3436052,
+        "id": 18486199,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12581580",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34017237}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 34014594}, {\"src\": \"hda\", \"id\": 34014595}]}"
+        },
+        "runner_name": null,
+        "session_id": 42665351,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-24 05:02:23.522228",
+        "user_id": 80875
+    },
+    {
+        "create_time": "2018-02-22 17:01:56.589719",
+        "datasets": [
+            {
+                "dataset_id": "23736351",
+                "extension": "bed",
+                "file_size": 88679206,
+                "name": "Homo_sapiens.GRCh37.75.gtf",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "23733980",
+                "extension": "bigwig",
+                "file_size": 74219117,
+                "name": "HA4_23970_TAAGAT.bw",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "23733980",
+                "extension": "bigwig",
+                "file_size": 74219117,
+                "name": "HA4_23970_TAAGAT.bw",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "23734323",
+                "extension": "bigwig",
+                "file_size": 114902564,
+                "name": "HA3_23969_CATAAC.bw",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3439084,
+        "id": 18486390,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12581630",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34017470}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 34014916}, {\"src\": \"hda\", \"id\": 34015269}]}"
+        },
+        "runner_name": null,
+        "session_id": 44094229,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-24 05:17:54.133254",
+        "user_id": 86601
+    },
+    {
+        "create_time": "2018-02-25 18:29:15.907342",
+        "datasets": [
+            {
+                "dataset_id": "23774198",
+                "extension": "bed",
+                "file_size": 62906114,
+                "name": "Convert GFF to BED on data 721",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "23764354",
+                "extension": "bigwig",
+                "file_size": 3898272,
+                "name": "BigWig 1F",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "23764354",
+                "extension": "bigwig",
+                "file_size": 3898272,
+                "name": "BigWig 1F",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "23764355",
+                "extension": "bigwig",
+                "file_size": 3102388,
+                "name": "BigWig 8D",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "23764359",
+                "extension": "bigwig",
+                "file_size": 1615527,
+                "name": "BigWig 2C",
+                "param_name": "scoreFileName3"
+            },
+            {
+                "dataset_id": "23764360",
+                "extension": "bigwig",
+                "file_size": 20534593,
+                "name": "BigWig 8B",
+                "param_name": "scoreFileName4"
+            },
+            {
+                "dataset_id": "23764361",
+                "extension": "bigwig",
+                "file_size": 4243873,
+                "name": "BigWig 1B",
+                "param_name": "scoreFileName5"
+            },
+            {
+                "dataset_id": "23764364",
+                "extension": "bigwig",
+                "file_size": 3456528,
+                "name": "BigWig 2B",
+                "param_name": "scoreFileName6"
+            },
+            {
+                "dataset_id": "23764365",
+                "extension": "bigwig",
+                "file_size": 4082372,
+                "name": "BigWig 1A",
+                "param_name": "scoreFileName7"
+            },
+            {
+                "dataset_id": "23764366",
+                "extension": "bigwig",
+                "file_size": 7237990,
+                "name": "BigWig 2A",
+                "param_name": "scoreFileName8"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3430314,
+        "id": 18513545,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12609912",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"10\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"keep\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"500\", \"regionStartLength\": {\"regionStartLength_select\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34057681}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 34047429}, {\"src\": \"hda\", \"id\": 34047430}, {\"src\": \"hda\", \"id\": 34047434}, {\"src\": \"hda\", \"id\": 34047435}, {\"src\": \"hda\", \"id\": 34047436}, {\"src\": \"hda\", \"id\": 34047439}, {\"src\": \"hda\", \"id\": 34047440}, {\"src\": \"hda\", \"id\": 34047441}]}"
+        },
+        "runner_name": null,
+        "session_id": 43960053,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-27 06:29:46.813017",
+        "user_id": 107319
+    },
+    {
+        "create_time": "2018-02-27 15:35:06.031913",
+        "datasets": [
+            {
+                "dataset_id": "23736119",
+                "extension": "bed",
+                "file_size": 24065686,
+                "name": "Extract features on data 77",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "23733661",
+                "extension": "bigwig",
+                "file_size": 2690674,
+                "name": "f49 X Z scores.txt",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "23733661",
+                "extension": "bigwig",
+                "file_size": 2690674,
+                "name": "f49 X Z scores.txt",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "23733662",
+                "extension": "bigwig",
+                "file_size": 2736759,
+                "name": "N2 X Z scores.txt",
+                "param_name": "scoreFileName2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3436052,
+        "id": 18536699,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12633181",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"showAdvancedOpt\": \"no\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "mode": "{\"afterRegionStartLength\": \"1000\", \"beforeRegionStartLength\": \"1000\", \"nanAfterEnd\": \"false\", \"__current_case__\": 1, \"referencePoint\": \"center\", \"mode_select\": \"reference-point\"}",
+            "output": "{\"showOutputSettings\": \"no\", \"__current_case__\": 0}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34017237}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 34014594}, {\"src\": \"hda\", \"id\": 34014595}]}"
+        },
+        "runner_name": null,
+        "session_id": 42665351,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-01 03:35:45.393706",
+        "user_id": 80875
+    },
+    {
+        "create_time": "2018-02-28 19:31:22.949744",
+        "datasets": [
+            {
+                "dataset_id": "23809803",
+                "extension": "bed",
+                "file_size": 67204389,
+                "name": "SINE >100",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "18753647",
+                "extension": "bigwig",
+                "file_size": 30787066,
+                "name": "bamCoverage on PrEC",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "18753647",
+                "extension": "bigwig",
+                "file_size": 30787066,
+                "name": "bamCoverage on PrEC",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "18753649",
+                "extension": "bigwig",
+                "file_size": 33514432,
+                "name": "bamCoverage on LNCaP",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "21427148",
+                "extension": "bigwig",
+                "file_size": 37073307,
+                "name": "bamCoverage on PC3",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3267690,
+        "id": 18553380,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12649726",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"1000\", \"regionStartLength\": {\"afterRegionStartLength\": \"500\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"500\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"false\", \"saveSortedRegions\": \"false\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34101050}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 31433927}, {\"src\": \"hda\", \"id\": 31433928}, {\"src\": \"hda\", \"id\": 31433948}]}"
+        },
+        "runner_name": null,
+        "session_id": 44205055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-02 07:37:55.870887",
+        "user_id": 108898
+    },
+    {
+        "create_time": "2018-02-27 19:03:05.195512",
+        "datasets": [
+            {
+                "dataset_id": "23809803",
+                "extension": "bed",
+                "file_size": 67204389,
+                "name": "SINE >100",
+                "param_name": "regionsFiles_0|regionsFile"
+            },
+            {
+                "dataset_id": "18753647",
+                "extension": "bigwig",
+                "file_size": 30787066,
+                "name": "bamCoverage on PrEC",
+                "param_name": "scoreFileName"
+            },
+            {
+                "dataset_id": "18753647",
+                "extension": "bigwig",
+                "file_size": 30787066,
+                "name": "bamCoverage on PrEC",
+                "param_name": "scoreFileName1"
+            },
+            {
+                "dataset_id": "18753649",
+                "extension": "bigwig",
+                "file_size": 33514432,
+                "name": "bamCoverage on LNCaP",
+                "param_name": "scoreFileName2"
+            },
+            {
+                "dataset_id": "21427148",
+                "extension": "bigwig",
+                "file_size": 37073307,
+                "name": "bamCoverage on PC3",
+                "param_name": "scoreFileName3"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "python",
+                "version": "2.7.10"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-0fa290085c742a3ffee6a142d1fce47c178e1c289ff6f0c66023b506f3377842",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "deeptools",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3267690,
+        "id": 18539005,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12635348",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "advancedOpt": "{\"averageTypeBins\": \"mean\", \"exonID\": \"exon\", \"maxThreshold\": \"\", \"transcript_id_designator\": \"transcript_id\", \"sortUsing\": \"mean\", \"skipZeros\": \"false\", \"binSize\": \"50\", \"metagene\": \"false\", \"showAdvancedOpt\": \"yes\", \"scale\": \"\", \"__current_case__\": 1, \"minThreshold\": \"\", \"sortRegions\": \"descend\", \"transcriptID\": \"transcript\", \"missingDataAsZero\": \"true\", \"blackListFileName\": null}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "mode": "{\"regionBodyLength\": \"1000\", \"regionStartLength\": {\"afterRegionStartLength\": \"500\", \"unscaled5prime\": \"0\", \"beforeRegionStartLength\": \"500\", \"regionStartLength_select\": \"yes\", \"unscaled3prime\": \"0\", \"__current_case__\": 1}, \"__current_case__\": 0, \"mode_select\": \"scale-regions\"}",
+            "output": "{\"saveMatrix\": \"false\", \"saveSortedRegions\": \"false\", \"showOutputSettings\": \"yes\", \"__current_case__\": 1}",
+            "regionsFiles": "[{\"__index__\": 0, \"regionsFile\": {\"values\": [{\"src\": \"hda\", \"id\": 34101050}]}}]",
+            "scoreFileName": "{\"values\": [{\"src\": \"hda\", \"id\": 31433927}, {\"src\": \"hda\", \"id\": 31433928}, {\"src\": \"hda\", \"id\": 31433948}]}"
+        },
+        "runner_name": null,
+        "session_id": 44205055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_compute_matrix/deeptools_compute_matrix/2.5.0.0",
+        "tool_version": "2.5.0.0",
+        "traceback": null,
+        "update_time": "2018-03-01 07:03:46.816755",
+        "user_id": 108898
+    }
+]

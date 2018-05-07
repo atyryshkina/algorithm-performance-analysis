@@ -1,0 +1,74 @@
+[
+    {
+        "create_time": "2017-07-03 13:10:08.311926",
+        "datasets": [
+            {
+                "dataset_id": "20427630",
+                "extension": "fasta",
+                "file_size": 87261,
+                "name": "Sacer-mito.fasta",
+                "param_name": "reference"
+            },
+            {
+                "dataset_id": "20496554",
+                "extension": "bam",
+                "file_size": 382771028,
+                "name": "n-HOLV.bam",
+                "param_name": "bamfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0.9.6_9608597d12e127c847ae03aa03440ab63992fedf/devteam/freebayes_wrapper/33a0e6aca936",
+                "script": "/galaxy/main/deps/freebayes/0.9.6_9608597d12e127c847ae03aa03440ab63992fedf/devteam/freebayes_wrapper/33a0e6aca936/env.sh",
+                "version": "0.9.6_9608597d12e127c847ae03aa03440ab63992fedf"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.16/devteam/freebayes_wrapper/33a0e6aca936",
+                "script": "/galaxy/main/deps/samtools/0.1.16/devteam/freebayes_wrapper/33a0e6aca936/env.sh",
+                "version": "0.1.16"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3172982,
+        "id": 16248933,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10323117.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bamfile": "{\"values\": [{\"src\": \"hda\", \"id\": 30276187}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "params": "{\"__current_case__\": 0, \"source_select\": \"pre_set\"}",
+            "reference": "{\"values\": [{\"src\": \"hda\", \"id\": 30173879}]}"
+        },
+        "runner_name": null,
+        "session_id": 38938968,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes_wrapper/freebayes_wrapper/0.5.0",
+        "tool_version": "0.5.0",
+        "traceback": null,
+        "update_time": "2017-07-05 01:10:35.124928",
+        "user_id": 65414
+    }
+]

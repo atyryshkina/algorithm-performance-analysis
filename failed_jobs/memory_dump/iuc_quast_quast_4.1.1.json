@@ -1,0 +1,134 @@
+[
+    {
+        "create_time": "2017-09-22 03:41:46.733045",
+        "datasets": [
+            {
+                "dataset_id": "20799536",
+                "extension": "fasta",
+                "file_size": 285390461,
+                "name": "FASTQ to FASTA on data 65",
+                "param_name": "files_0|input"
+            },
+            {
+                "dataset_id": "21351772",
+                "extension": "sequences",
+                "file_size": 3889447096,
+                "name": "Map with BWA for Illumina on data 54 and data 53: mapped reads",
+                "param_name": "files_1|input"
+            },
+            {
+                "dataset_id": "20793684",
+                "extension": "fasta",
+                "file_size": 3794342,
+                "name": "bacillus safensis.txt",
+                "param_name": "input_ref"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__quast@4.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "quast",
+                "version": "4.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3191494,
+        "id": 16895575,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10964377.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annot": "null",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/baciSubt.len\"",
+            "dbkey": "\"baciSubt\"",
+            "files": "[{\"type_file\": \"contig\", \"__index__\": 0, \"input\": {\"values\": [{\"src\": \"hda\", \"id\": 30697859}]}}, {\"type_file\": \"scaffold\", \"__index__\": 1, \"input\": {\"values\": [{\"src\": \"hda\", \"id\": 31316905}]}}]",
+            "gene_selection": "\"prokaryotes\"",
+            "input_operon": "null",
+            "input_ref": "{\"values\": [{\"src\": \"hda\", \"id\": 30690633}]}",
+            "input_size": "\"\"",
+            "min_contig": "\"500\"",
+            "threshold_contig": "\"0,1000\""
+        },
+        "runner_name": null,
+        "session_id": 39584157,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/4.1.1",
+        "tool_version": "4.1.1",
+        "traceback": null,
+        "update_time": "2017-09-22 03:44:24.336361",
+        "user_id": 109559
+    },
+    {
+        "create_time": "2017-09-13 08:12:32.827727",
+        "datasets": [
+            {
+                "dataset_id": "20818794",
+                "extension": "fasta",
+                "file_size": 3869533497,
+                "name": "BAM-to-SAM on data 55: converted SAM",
+                "param_name": "files_0|input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__quast@4.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "quast",
+                "version": "4.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3191494,
+        "id": 16803063,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10872188.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "annot": "null",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/eschColi_K12.len\"",
+            "dbkey": "\"eschColi_K12\"",
+            "files": "[{\"type_file\": \"contig\", \"__index__\": 0, \"input\": {\"values\": [{\"src\": \"hda\", \"id\": 30720504}]}}]",
+            "gene_selection": "\"prokaryotes\"",
+            "input_operon": "null",
+            "input_ref": "null",
+            "input_size": "\"\"",
+            "min_contig": "\"500\"",
+            "threshold_contig": "\"0,1000\""
+        },
+        "runner_name": null,
+        "session_id": 39584157,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/quast/quast/4.1.1",
+        "tool_version": "4.1.1",
+        "traceback": null,
+        "update_time": "2017-09-13 08:14:57.598115",
+        "user_id": 109559
+    }
+]

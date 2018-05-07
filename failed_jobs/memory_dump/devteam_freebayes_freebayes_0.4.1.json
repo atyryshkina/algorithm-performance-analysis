@@ -1,0 +1,1873 @@
+[
+    {
+        "create_time": "2016-11-22 19:30:16.362420",
+        "datasets": [
+            {
+                "dataset_id": "17861867",
+                "extension": "bam",
+                "file_size": 689392632,
+                "name": "Sort on data 12",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "17858834",
+                "extension": "fasta",
+                "file_size": 8266,
+                "name": "BM3WTxho1_pCWORI.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2894223,
+        "id": 14408299,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8612988.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27258102}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27261459}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34254704,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-11-22 19:59:07.112301",
+        "user_id": 94846
+    },
+    {
+        "create_time": "2016-02-23 11:26:29.117576",
+        "datasets": [
+            {
+                "dataset_id": "14441264",
+                "extension": "bam",
+                "file_size": 8502664863,
+                "name": "Map with Bowtie for Illumina Brain reads R1R2 to TRAPID_orfs_exp3651_2_plus100: converted BAM",
+                "param_name": "input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "14440754",
+                "extension": "fasta",
+                "file_size": 17350294,
+                "name": "TRAPID_orfs_exp3651_2_plus100.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2604599,
+        "id": 11909526,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6147125.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"min_coverage\": \"10\", \"options_type_selector\": \"naive_w_filters\", \"__current_case__\": 4}",
+            "reference_source": "{\"ref_file\": 23431601, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 23432120}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 26519761,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-02-24 01:38:48.511439",
+        "user_id": 17244
+    },
+    {
+        "create_time": "2017-03-13 18:01:33.759995",
+        "datasets": [
+            {
+                "dataset_id": "18869206",
+                "extension": "bam",
+                "file_size": 5681799606,
+                "name": "CP09_hg38.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "19184465",
+                "extension": "bed",
+                "file_size": 237769378,
+                "name": "hg38_repeats.bed",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2994202,
+        "id": 15284098,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9428167.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28385848}]}}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 28740437}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35898807,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-03-14 07:11:18.008822",
+        "user_id": 68413
+    },
+    {
+        "create_time": "2016-07-10 05:44:03.811328",
+        "datasets": [
+            {
+                "dataset_id": "16487293",
+                "extension": "bam",
+                "file_size": 1843315979,
+                "name": "WST1_1 metazoan mapped",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "16487950",
+                "extension": "bam",
+                "file_size": 1841725032,
+                "name": "WST1_2 metazoan mapped",
+                "param_name": "reference_source|input_bams_1|input_bam"
+            },
+            {
+                "dataset_id": "16497260",
+                "extension": "bam",
+                "file_size": 1863203248,
+                "name": "WST1_5 metazoan mapped",
+                "param_name": "reference_source|input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "16498818",
+                "extension": "bam",
+                "file_size": 2709572278,
+                "name": "WST1_6 metazoan mapped",
+                "param_name": "reference_source|input_bams_3|input_bam"
+            },
+            {
+                "dataset_id": "16518060",
+                "extension": "bam",
+                "file_size": 2056893386,
+                "name": "WST2_1 metazoan mapped",
+                "param_name": "reference_source|input_bams_4|input_bam"
+            },
+            {
+                "dataset_id": "16514828",
+                "extension": "bam",
+                "file_size": 2552998351,
+                "name": "WST2_4 metazoan mapped",
+                "param_name": "reference_source|input_bams_5|input_bam"
+            },
+            {
+                "dataset_id": "16518078",
+                "extension": "bam",
+                "file_size": 2357593161,
+                "name": "WST2_5 metazoan mapped",
+                "param_name": "reference_source|input_bams_6|input_bam"
+            },
+            {
+                "dataset_id": "16514129",
+                "extension": "bam",
+                "file_size": 1950536727,
+                "name": "WST2_6 metazoan mapped",
+                "param_name": "reference_source|input_bams_7|input_bam"
+            },
+            {
+                "dataset_id": "16498926",
+                "extension": "bam",
+                "file_size": 1625984011,
+                "name": "WST3_1 mapped",
+                "param_name": "reference_source|input_bams_8|input_bam"
+            },
+            {
+                "dataset_id": "16499282",
+                "extension": "bam",
+                "file_size": 1635866172,
+                "name": "WST3_2 metazoan mapped",
+                "param_name": "reference_source|input_bams_9|input_bam"
+            },
+            {
+                "dataset_id": "16499714",
+                "extension": "bam",
+                "file_size": 1696890983,
+                "name": "WST3_3 metazoan mapped",
+                "param_name": "reference_source|input_bams_10|input_bam"
+            },
+            {
+                "dataset_id": "16506863",
+                "extension": "bam",
+                "file_size": 1443046858,
+                "name": "WST3_4 metazoan mapped",
+                "param_name": "reference_source|input_bams_11|input_bam"
+            },
+            {
+                "dataset_id": "16507428",
+                "extension": "bam",
+                "file_size": 1617083437,
+                "name": "WST4_1 metazoan mapped",
+                "param_name": "reference_source|input_bams_12|input_bam"
+            },
+            {
+                "dataset_id": "16511801",
+                "extension": "bam",
+                "file_size": 1712965532,
+                "name": "WST4_2 metazoan mapped",
+                "param_name": "reference_source|input_bams_13|input_bam"
+            },
+            {
+                "dataset_id": "16517502",
+                "extension": "bam",
+                "file_size": 1555151701,
+                "name": "WST4_3 metazoan mapped",
+                "param_name": "reference_source|input_bams_14|input_bam"
+            },
+            {
+                "dataset_id": "16406596",
+                "extension": "bam",
+                "file_size": 1532211783,
+                "name": "WST4_4 metazoan mapped",
+                "param_name": "reference_source|input_bams_15|input_bam"
+            },
+            {
+                "dataset_id": "16333329",
+                "extension": "fasta",
+                "file_size": 60497880,
+                "name": "Allmetazoanreads.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2760368,
+        "id": 13369292,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7579502.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e977334cf0e46217\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ae5581f93c8fbeb5\"}]}}, {\"__index__\": 1, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b529503690acfb2e9b\"}]}}, {\"__index__\": 2, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e4ece6b720a1b9fb\"}]}}, {\"__index__\": 3, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5761c588d941adbbc\"}]}}, {\"__index__\": 4, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b528e2376070313e08\"}]}}, {\"__index__\": 5, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5cdc4d9cb49b27507\"}]}}, {\"__index__\": 6, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c98f50db0ec69e89\"}]}}, {\"__index__\": 7, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f1021782679f0745\"}]}}, {\"__index__\": 8, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c637982a5de975b1\"}]}}, {\"__index__\": 9, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b540f698521006ed04\"}]}}, {\"__index__\": 10, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5662a99e3e83a1b7a\"}]}}, {\"__index__\": 11, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52f185c1c0fdf2584\"}]}}, {\"__index__\": 12, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f340299a340d08d2\"}]}}, {\"__index__\": 13, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58718241d31e98818\"}]}}, {\"__index__\": 14, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a9ee1b2f5b4473a5\"}]}}, {\"__index__\": 15, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d2b11a4d150aa087\"}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 31030319,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-07-11 04:13:04.149633",
+        "user_id": 27375
+    },
+    {
+        "create_time": "2016-12-06 19:17:12.623001",
+        "datasets": [
+            {
+                "dataset_id": "17672796",
+                "extension": "bam",
+                "file_size": 11863853180,
+                "name": "Indel Realigner on data 645 and data 642 (BAM)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "18087248",
+                "extension": "fasta",
+                "file_size": 33261769051,
+                "name": "Convert, Merge, Randomize on data 653",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2196193,
+        "id": 14502268,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8690183.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27516255}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27042777}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_region\", \"region_end\": \"249250621\", \"region_chromosome\": \"1\", \"region_start\": \"1\", \"__current_case__\": 2}"
+        },
+        "runner_name": null,
+        "session_id": 34593277,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-12-07 23:32:07.087299",
+        "user_id": 37892
+    },
+    {
+        "create_time": "2017-05-15 13:31:01.745559",
+        "datasets": [
+            {
+                "dataset_id": "19934716",
+                "extension": "bam",
+                "file_size": 805660994,
+                "name": "Map with BWA for Illumina on data 4, data 3, and data 5: mapped reads",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "19934416",
+                "extension": "fasta",
+                "file_size": 9965,
+                "name": "HXB2.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3111290,
+        "id": 15838580,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9939540.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"min_coverage\": \"1000\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29601498}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 29601800}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 37976173,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-05-15 13:39:09.274605",
+        "user_id": 105842
+    },
+    {
+        "create_time": "2016-12-26 13:51:41.940026",
+        "datasets": [
+            {
+                "dataset_id": "18294914",
+                "extension": "bam",
+                "file_size": 127772460,
+                "name": "16u071135-1f_S17_L001_R1_001.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "18091115",
+                "extension": "fasta",
+                "file_size": 13420,
+                "name": "2015H1N1concatemer.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2939684,
+        "id": 14647648,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8823326.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"67dbb586cb7211e6a5f3005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27745092}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27745224}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-12-27 04:59:29.917400",
+        "user_id": 50564
+    },
+    {
+        "create_time": "2016-07-02 02:53:23.637481",
+        "datasets": [
+            {
+                "dataset_id": "16431566",
+                "extension": "bam",
+                "file_size": 5285327,
+                "name": "Map with BWA-MEM on data 38 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2755603,
+        "id": 13311301,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7513269.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"min_coverage\": \"0\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55982d6485c1b82eb\"}]}}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 31200388,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-07-02 02:59:42.468894",
+        "user_id": 75824
+    },
+    {
+        "create_time": "2017-01-07 09:11:33.749940",
+        "datasets": [
+            {
+                "dataset_id": "18379972",
+                "extension": "bam",
+                "file_size": 143996852,
+                "name": "JH10A",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "18379901",
+                "extension": "fasta",
+                "file_size": 1855,
+                "name": "WSNnativeHA2.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2948955,
+        "id": 14708140,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8877690.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27838763}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27838836}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 35241341,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-01-07 09:30:42.580761",
+        "user_id": 72262
+    },
+    {
+        "create_time": "2016-06-27 01:55:09.099976",
+        "datasets": [
+            {
+                "dataset_id": "16345087",
+                "extension": "bam",
+                "file_size": 584415729,
+                "name": "Map with BWA-MEM on data 2, data 1, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "16345088",
+                "extension": "bam",
+                "file_size": 889016627,
+                "name": "Map with BWA-MEM on data 4, data 3, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_1|input_bam"
+            },
+            {
+                "dataset_id": "16345089",
+                "extension": "bam",
+                "file_size": 792611790,
+                "name": "Map with BWA-MEM on data 6, data 5, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "16345090",
+                "extension": "bam",
+                "file_size": 1518484,
+                "name": "Map with BWA-MEM on data 8, data 7, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_3|input_bam"
+            },
+            {
+                "dataset_id": "16345092",
+                "extension": "bam",
+                "file_size": 1162561998,
+                "name": "Map with BWA-MEM on data 10, data 9, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_4|input_bam"
+            },
+            {
+                "dataset_id": "16345094",
+                "extension": "bam",
+                "file_size": 2273130547,
+                "name": "Map with BWA-MEM on data 12, data 11, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_5|input_bam"
+            },
+            {
+                "dataset_id": "16345095",
+                "extension": "bam",
+                "file_size": 414803954,
+                "name": "Map with BWA-MEM on data 14, data 13, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_6|input_bam"
+            },
+            {
+                "dataset_id": "16345096",
+                "extension": "bam",
+                "file_size": 684865285,
+                "name": "Map with BWA-MEM on data 16, data 15, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_7|input_bam"
+            },
+            {
+                "dataset_id": "16345097",
+                "extension": "bam",
+                "file_size": 270911,
+                "name": "Map with BWA-MEM on data 18, data 17, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_8|input_bam"
+            },
+            {
+                "dataset_id": "16345098",
+                "extension": "bam",
+                "file_size": 789505598,
+                "name": "Map with BWA-MEM on data 20, data 19, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_9|input_bam"
+            },
+            {
+                "dataset_id": "16345099",
+                "extension": "bam",
+                "file_size": 862472319,
+                "name": "Map with BWA-MEM on data 22, data 21, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_10|input_bam"
+            },
+            {
+                "dataset_id": "16345106",
+                "extension": "bam",
+                "file_size": 851586742,
+                "name": "Map with BWA-MEM on data 36, data 35, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_11|input_bam"
+            },
+            {
+                "dataset_id": "16345100",
+                "extension": "bam",
+                "file_size": 1508047284,
+                "name": "Map with BWA-MEM on data 24, data 23, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_12|input_bam"
+            },
+            {
+                "dataset_id": "16345101",
+                "extension": "bam",
+                "file_size": 1482527176,
+                "name": "Map with BWA-MEM on data 26, data 25, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_13|input_bam"
+            },
+            {
+                "dataset_id": "16345102",
+                "extension": "bam",
+                "file_size": 435820584,
+                "name": "Map with BWA-MEM on data 28, data 27, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_14|input_bam"
+            },
+            {
+                "dataset_id": "16345103",
+                "extension": "bam",
+                "file_size": 1576085763,
+                "name": "Map with BWA-MEM on data 30, data 29, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_15|input_bam"
+            },
+            {
+                "dataset_id": "16345104",
+                "extension": "bam",
+                "file_size": 2820680585,
+                "name": "Map with BWA-MEM on data 32, data 31, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_16|input_bam"
+            },
+            {
+                "dataset_id": "16345105",
+                "extension": "bam",
+                "file_size": 1501683887,
+                "name": "Map with BWA-MEM on data 34, data 33, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_17|input_bam"
+            },
+            {
+                "dataset_id": "16345106",
+                "extension": "bam",
+                "file_size": 851586742,
+                "name": "Map with BWA-MEM on data 36, data 35, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_18|input_bam"
+            },
+            {
+                "dataset_id": "16345106",
+                "extension": "bam",
+                "file_size": 851586742,
+                "name": "Map with BWA-MEM on data 36, data 35, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_19|input_bam"
+            },
+            {
+                "dataset_id": "16345064",
+                "extension": "fasta",
+                "file_size": 3314901,
+                "name": "Leprae.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2747348,
+        "id": 13263853,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7451902.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/90.len\"",
+            "dbkey": "\"90\"",
+            "options_type": "{\"min_coverage\": \"0\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590846753927bdd81\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e756ca47d13203df\"}]}}, {\"__index__\": 1, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b500e612918b2262ab\"}]}}, {\"__index__\": 2, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59faf55a6fed4b91f\"}]}}, {\"__index__\": 3, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b22156261790d43c\"}]}}, {\"__index__\": 4, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e921637fb19152d2\"}]}}, {\"__index__\": 5, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ff72f5fab63d86d9\"}]}}, {\"__index__\": 6, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e7a15794f046aade\"}]}}, {\"__index__\": 7, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56c51fdcc0fb5d79e\"}]}}, {\"__index__\": 8, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57b55e7af4540b0e9\"}]}}, {\"__index__\": 9, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58a2c55253fc6fc14\"}]}}, {\"__index__\": 10, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b562fcce3fb813fd60\"}]}}, {\"__index__\": 11, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b576f33ebf301eb3b2\"}]}}, {\"__index__\": 12, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b53eb1b2707051decb\"}]}}, {\"__index__\": 13, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b552f1e983def2159e\"}]}}, {\"__index__\": 14, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b587c3aa5962abe6b7\"}]}}, {\"__index__\": 15, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5552a934e73e8a2a8\"}]}}, {\"__index__\": 16, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52d691e9725930d6d\"}]}}, {\"__index__\": 17, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d846cbf47fc11369\"}]}}, {\"__index__\": 18, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b576f33ebf301eb3b2\"}]}}, {\"__index__\": 19, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b576f33ebf301eb3b2\"}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 30920537,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-06-27 08:20:35.620880",
+        "user_id": 57573
+    },
+    {
+        "create_time": "2016-12-12 07:05:58.734693",
+        "datasets": [
+            {
+                "dataset_id": "18145466",
+                "extension": "bam",
+                "file_size": 8524648677,
+                "name": "Bowtie2 on data 1 and data 45: aligned reads (sorted BAM)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "18102745",
+                "extension": "fasta",
+                "file_size": 631450572,
+                "name": "ftp://bioinfo.bti.cornell.edu/pub/kiwifruit/Kiwifruit_pseudomolecule.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2922666,
+        "id": 14546254,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8728469.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27533153}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27580965}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34711402,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-12-12 23:28:05.643543",
+        "user_id": 96538
+    },
+    {
+        "create_time": "2016-07-01 07:55:27.552691",
+        "datasets": [
+            {
+                "dataset_id": "16421732",
+                "extension": "bam",
+                "file_size": 47450383,
+                "name": "Galaxy49-[Cleaned_merged_BAM_home].bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2754180,
+        "id": 13303341,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7505130.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"min_coverage\": \"0\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5947db618bde1e8cd\"}]}}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 31200388,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-07-01 08:00:40.678756",
+        "user_id": 75824
+    },
+    {
+        "create_time": "2016-07-02 03:16:53.309290",
+        "datasets": [
+            {
+                "dataset_id": "16431566",
+                "extension": "bam",
+                "file_size": 5285327,
+                "name": "Map with BWA-MEM on data 38 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2755603,
+        "id": 13311408,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7513567.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b55982d6485c1b82eb\"}]}}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 31200388,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-07-02 03:23:10.629671",
+        "user_id": 75824
+    },
+    {
+        "create_time": "2017-03-13 18:01:29.671330",
+        "datasets": [
+            {
+                "dataset_id": "18844104",
+                "extension": "bam",
+                "file_size": 5284763529,
+                "name": "CP04_hg38.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "19184465",
+                "extension": "bed",
+                "file_size": 237769378,
+                "name": "hg38_repeats.bed",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2994202,
+        "id": 15284092,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9428165.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28355756}]}}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 28740437}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35898807,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-03-14 06:28:12.925737",
+        "user_id": 68413
+    },
+    {
+        "create_time": "2016-04-12 10:37:39.632233",
+        "datasets": [
+            {
+                "dataset_id": "15193626",
+                "extension": "bam",
+                "file_size": 10718638,
+                "name": "P1173-D8-1_sorted.bam",
+                "param_name": "input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2666676,
+        "id": 12428999,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6629266.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "options_type": "{\"options_type_selector\": \"naive\", \"__current_case__\": 3}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24269626}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 29491852,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-04-12 11:25:43.487273",
+        "user_id": 82142
+    },
+    {
+        "create_time": "2017-05-17 08:23:54.974070",
+        "datasets": [
+            {
+                "dataset_id": "19957042",
+                "extension": "bam",
+                "file_size": 73381713,
+                "name": "Filter on data 6",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "19934416",
+                "extension": "fasta",
+                "file_size": 9965,
+                "name": "HXB2.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3111290,
+        "id": 15865353,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9965572.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"min_coverage\": \"0\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29601498}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 29628050}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 37976173,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-05-17 08:31:55.689539",
+        "user_id": 105842
+    },
+    {
+        "create_time": "2016-01-08 20:22:09.447820",
+        "datasets": [
+            {
+                "dataset_id": "13857788",
+                "extension": "bam",
+                "file_size": 3170508471,
+                "name": "Map with BWA on data 5 (mapped reads in BAM format)",
+                "param_name": "input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2551729,
+        "id": 11425500,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5687970.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "options_type": "{\"options_type_selector\": \"naive\", \"__current_case__\": 3}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 22800608}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 26873728,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-01-08 21:03:11.871121",
+        "user_id": 52987
+    },
+    {
+        "create_time": "2016-12-26 13:51:33.125715",
+        "datasets": [
+            {
+                "dataset_id": "18294877",
+                "extension": "bam",
+                "file_size": 260941680,
+                "name": "16u070564-3f_S19_L001_R1_001.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "18091115",
+                "extension": "fasta",
+                "file_size": 13420,
+                "name": "2015H1N1concatemer.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2939684,
+        "id": 14647610,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8823845.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"66be2ef4cb7211e6a5f3005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27745092}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27745187}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-12-27 06:57:31.337508",
+        "user_id": 50564
+    },
+    {
+        "create_time": "2016-04-12 09:48:25.752421",
+        "datasets": [
+            {
+                "dataset_id": "15193626",
+                "extension": "bam",
+                "file_size": 10718638,
+                "name": "P1173-D8-1_sorted.bam",
+                "param_name": "input_bams_0|input_bam"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2666676,
+        "id": 12428185,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6628739.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "options_type": "{\"options_type_selector\": \"naive\", \"__current_case__\": 3}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": 24269626}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 29491852,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-04-12 10:35:33.897029",
+        "user_id": 82142
+    },
+    {
+        "create_time": "2017-05-15 13:20:00.580965",
+        "datasets": [
+            {
+                "dataset_id": "19934716",
+                "extension": "bam",
+                "file_size": 805660994,
+                "name": "Map with BWA for Illumina on data 4, data 3, and data 5: mapped reads",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "19934416",
+                "extension": "fasta",
+                "file_size": 9965,
+                "name": "HXB2.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3111290,
+        "id": 15838409,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9939378.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"min_coverage\": \"0\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29601498}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 29601800}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 37976173,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-05-15 13:28:54.178876",
+        "user_id": 105842
+    },
+    {
+        "create_time": "2016-06-27 13:45:12.204554",
+        "datasets": [
+            {
+                "dataset_id": "16345087",
+                "extension": "bam",
+                "file_size": 584415729,
+                "name": "Map with BWA-MEM on data 2, data 1, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "16345088",
+                "extension": "bam",
+                "file_size": 889016627,
+                "name": "Map with BWA-MEM on data 4, data 3, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_1|input_bam"
+            },
+            {
+                "dataset_id": "16345089",
+                "extension": "bam",
+                "file_size": 792611790,
+                "name": "Map with BWA-MEM on data 6, data 5, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "16345090",
+                "extension": "bam",
+                "file_size": 1518484,
+                "name": "Map with BWA-MEM on data 8, data 7, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_3|input_bam"
+            },
+            {
+                "dataset_id": "16345092",
+                "extension": "bam",
+                "file_size": 1162561998,
+                "name": "Map with BWA-MEM on data 10, data 9, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_4|input_bam"
+            },
+            {
+                "dataset_id": "16345094",
+                "extension": "bam",
+                "file_size": 2273130547,
+                "name": "Map with BWA-MEM on data 12, data 11, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_5|input_bam"
+            },
+            {
+                "dataset_id": "16345095",
+                "extension": "bam",
+                "file_size": 414803954,
+                "name": "Map with BWA-MEM on data 14, data 13, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_6|input_bam"
+            },
+            {
+                "dataset_id": "16345096",
+                "extension": "bam",
+                "file_size": 684865285,
+                "name": "Map with BWA-MEM on data 16, data 15, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_7|input_bam"
+            },
+            {
+                "dataset_id": "16345097",
+                "extension": "bam",
+                "file_size": 270911,
+                "name": "Map with BWA-MEM on data 18, data 17, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_8|input_bam"
+            },
+            {
+                "dataset_id": "16345098",
+                "extension": "bam",
+                "file_size": 789505598,
+                "name": "Map with BWA-MEM on data 20, data 19, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_9|input_bam"
+            },
+            {
+                "dataset_id": "16345064",
+                "extension": "fasta",
+                "file_size": 3314901,
+                "name": "Leprae.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2747348,
+        "id": 13267050,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7455379.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/90.len\"",
+            "dbkey": "\"90\"",
+            "options_type": "{\"min_coverage\": \"5\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590846753927bdd81\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e756ca47d13203df\"}]}}, {\"__index__\": 1, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b500e612918b2262ab\"}]}}, {\"__index__\": 2, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59faf55a6fed4b91f\"}]}}, {\"__index__\": 3, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b22156261790d43c\"}]}}, {\"__index__\": 4, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e921637fb19152d2\"}]}}, {\"__index__\": 5, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ff72f5fab63d86d9\"}]}}, {\"__index__\": 6, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e7a15794f046aade\"}]}}, {\"__index__\": 7, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56c51fdcc0fb5d79e\"}]}}, {\"__index__\": 8, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57b55e7af4540b0e9\"}]}}, {\"__index__\": 9, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58a2c55253fc6fc14\"}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 30920537,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-06-27 14:18:18.840379",
+        "user_id": 57573
+    },
+    {
+        "create_time": "2016-07-28 19:41:38.066543",
+        "datasets": [
+            {
+                "dataset_id": "16725899",
+                "extension": "bam",
+                "file_size": 2485387454,
+                "name": "Merge BAM Files all samples",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "16673938",
+                "extension": "fasta",
+                "file_size": 256886062,
+                "name": "Por_naive_assembly1.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2776599,
+        "id": 13518499,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7733928.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 1, \"options_type_selector\": \"simple\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b597a4575e05b14fb0\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b5228e6fc44c5545\"}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 31676879,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-07-28 19:53:35.423993",
+        "user_id": 63215
+    },
+    {
+        "create_time": "2016-12-26 13:51:35.694580",
+        "datasets": [
+            {
+                "dataset_id": "18294886",
+                "extension": "bam",
+                "file_size": 317652667,
+                "name": "16u065458-5f_S21_L001_R1_001.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "18091115",
+                "extension": "fasta",
+                "file_size": 13420,
+                "name": "2015H1N1concatemer.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2939684,
+        "id": 14647621,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8824277.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"65709c08cb7211e6a5f3005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27745092}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27745196}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-12-27 07:30:36.593862",
+        "user_id": 50564
+    },
+    {
+        "create_time": "2016-06-27 12:06:43.384374",
+        "datasets": [
+            {
+                "dataset_id": "16345087",
+                "extension": "bam",
+                "file_size": 584415729,
+                "name": "Map with BWA-MEM on data 2, data 1, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "16345088",
+                "extension": "bam",
+                "file_size": 889016627,
+                "name": "Map with BWA-MEM on data 4, data 3, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_1|input_bam"
+            },
+            {
+                "dataset_id": "16345089",
+                "extension": "bam",
+                "file_size": 792611790,
+                "name": "Map with BWA-MEM on data 6, data 5, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_2|input_bam"
+            },
+            {
+                "dataset_id": "16345090",
+                "extension": "bam",
+                "file_size": 1518484,
+                "name": "Map with BWA-MEM on data 8, data 7, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_3|input_bam"
+            },
+            {
+                "dataset_id": "16345092",
+                "extension": "bam",
+                "file_size": 1162561998,
+                "name": "Map with BWA-MEM on data 10, data 9, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_4|input_bam"
+            },
+            {
+                "dataset_id": "16345094",
+                "extension": "bam",
+                "file_size": 2273130547,
+                "name": "Map with BWA-MEM on data 12, data 11, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_5|input_bam"
+            },
+            {
+                "dataset_id": "16345095",
+                "extension": "bam",
+                "file_size": 414803954,
+                "name": "Map with BWA-MEM on data 14, data 13, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_6|input_bam"
+            },
+            {
+                "dataset_id": "16345096",
+                "extension": "bam",
+                "file_size": 684865285,
+                "name": "Map with BWA-MEM on data 16, data 15, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_7|input_bam"
+            },
+            {
+                "dataset_id": "16345097",
+                "extension": "bam",
+                "file_size": 270911,
+                "name": "Map with BWA-MEM on data 18, data 17, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_8|input_bam"
+            },
+            {
+                "dataset_id": "16345098",
+                "extension": "bam",
+                "file_size": 789505598,
+                "name": "Map with BWA-MEM on data 20, data 19, and data 37 (mapped reads in BAM format)",
+                "param_name": "reference_source|input_bams_9|input_bam"
+            },
+            {
+                "dataset_id": "16345064",
+                "extension": "fasta",
+                "file_size": 3314901,
+                "name": "Leprae.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2747348,
+        "id": 13266436,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7454716.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/90.len\"",
+            "dbkey": "\"90\"",
+            "options_type": "{\"min_coverage\": \"5\", \"__current_case__\": 4, \"options_type_selector\": \"naive_w_filters\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b590846753927bdd81\"}]}, \"reference_source_selector\": \"history\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e756ca47d13203df\"}]}}, {\"__index__\": 1, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b500e612918b2262ab\"}]}}, {\"__index__\": 2, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59faf55a6fed4b91f\"}]}}, {\"__index__\": 3, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b22156261790d43c\"}]}}, {\"__index__\": 4, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e921637fb19152d2\"}]}}, {\"__index__\": 5, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ff72f5fab63d86d9\"}]}}, {\"__index__\": 6, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e7a15794f046aade\"}]}}, {\"__index__\": 7, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56c51fdcc0fb5d79e\"}]}}, {\"__index__\": 8, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b57b55e7af4540b0e9\"}]}}, {\"__index__\": 9, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b58a2c55253fc6fc14\"}]}}], \"__current_case__\": 1}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 30920537,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2016-06-27 12:37:15.611385",
+        "user_id": 57573
+    },
+    {
+        "create_time": "2017-03-13 18:01:33.011790",
+        "datasets": [
+            {
+                "dataset_id": "18859548",
+                "extension": "bam",
+                "file_size": 5194213362,
+                "name": "CP08_hg38.bam",
+                "param_name": "reference_source|input_bams_0|input_bam"
+            },
+            {
+                "dataset_id": "19184465",
+                "extension": "bed",
+                "file_size": 237769378,
+                "name": "hg38_repeats.bed",
+                "param_name": "input_target_bed"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "freebayes",
+                "path": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/freebayes/0_9_20_b040236/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0_9_20_b040236"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/freebayes/99684adf84de/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2994202,
+        "id": 15284097,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9428166.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "options_type": "{\"__current_case__\": 3, \"options_type_selector\": \"naive\"}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bams\": [{\"__index__\": 0, \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28374978}]}}], \"__current_case__\": 0}",
+            "target_limit_type": "{\"target_limit_type_selector\": \"limit_by_target_file\", \"input_target_bed\": {\"values\": [{\"src\": \"hda\", \"id\": 28740437}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35898807,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/0.4.1",
+        "tool_version": "0.4.1",
+        "traceback": null,
+        "update_time": "2017-03-14 05:12:00.653872",
+        "user_id": 68413
+    }
+]

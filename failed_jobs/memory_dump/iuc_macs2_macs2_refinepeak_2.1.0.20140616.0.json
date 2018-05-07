@@ -1,0 +1,106 @@
+[
+    {
+        "create_time": "2016-04-28 09:18:59.149505",
+        "datasets": [
+            {
+                "dataset_id": "15436865",
+                "extension": "bam",
+                "file_size": 2019995887,
+                "name": "RmDup on data ESC",
+                "param_name": "infile"
+            },
+            {
+                "dataset_id": "15509036",
+                "extension": "bed",
+                "file_size": 2719814542,
+                "name": "MACS2 callpeak on data 93 and data 94 (Bedgraph Treatment)",
+                "param_name": "bed_infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2673643,
+        "id": 12664875,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6867100.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b596315563cdce642e\"}]}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "cutoff": "\"5.0\"",
+            "dbkey": "\"mm10\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52b969bc3a3359ccd\"}]}",
+            "winsize": "\"200\""
+        },
+        "runner_name": null,
+        "session_id": 29681263,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_refinepeak/2.1.0.20140616.0",
+        "tool_version": "2.1.0.20140616.0",
+        "traceback": null,
+        "update_time": "2016-04-28 09:51:05.400163",
+        "user_id": 82007
+    },
+    {
+        "create_time": "2016-01-07 13:33:59.047864",
+        "datasets": [
+            {
+                "dataset_id": "13835111",
+                "extension": "bam",
+                "file_size": 884973009,
+                "name": "Galaxy77-[bam_BC83_Sc_Input].bam",
+                "param_name": "infile"
+            },
+            {
+                "dataset_id": "13836831",
+                "extension": "bed",
+                "file_size": 566649460,
+                "name": "MACS2 filterdup on data 2",
+                "param_name": "bed_infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 2557625,
+        "id": 11405387,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "5672057.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "bed_infile": "22775851",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "cutoff": "\"5.0\"",
+            "dbkey": "\"?\"",
+            "infile": "22773715",
+            "winsize": "\"200\""
+        },
+        "runner_name": null,
+        "session_id": 27259316,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/macs2/macs2_refinepeak/2.1.0.20140616.0",
+        "tool_version": "2.1.0.20140616.0",
+        "traceback": null,
+        "update_time": "2016-01-07 20:49:41.766506",
+        "user_id": 50791
+    }
+]

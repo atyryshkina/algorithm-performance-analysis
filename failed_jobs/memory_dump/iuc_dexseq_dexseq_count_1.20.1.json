@@ -1,0 +1,138 @@
+[
+    {
+        "create_time": "2018-02-03 12:06:51.426507",
+        "datasets": [
+            {
+                "dataset_id": "23390223",
+                "extension": "bam",
+                "file_size": 5593290191,
+                "name": "HISAT2 on data 14, data 2, and data 1",
+                "param_name": "bamfile"
+            },
+            {
+                "dataset_id": "23372716",
+                "extension": "gtf",
+                "file_size": 1374475,
+                "name": "LMf2365.gff3",
+                "param_name": "flattened_gtf_in"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-98ffce4c4501f036e67e530b7fca7a55847d02e3ed12ce55610e26f6c5c66184",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-dexseq",
+                "version": "1.20.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-98ffce4c4501f036e67e530b7fca7a55847d02e3ed12ce55610e26f6c5c66184",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "htseq",
+                "version": "0.6.1.post1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3414581,
+        "id": 18246026,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12327118",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"qual\": \"10\", \"stranded\": \"yes\", \"flattened_gtf_in\": {\"values\": [{\"src\": \"hda\", \"id\": 33635283}]}, \"bamfile\": {\"values\": [{\"src\": \"hda\", \"id\": 33636217}]}, \"paired\": \"true\", \"__current_case__\": 1, \"order\": \"pos\", \"mode_select\": \"count\"}"
+        },
+        "runner_name": null,
+        "session_id": 43658209,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/dexseq/dexseq_count/1.20.1",
+        "tool_version": "1.20.1",
+        "traceback": null,
+        "update_time": "2018-02-03 12:31:04.020181",
+        "user_id": 112333
+    },
+    {
+        "create_time": "2018-01-31 20:56:19.084110",
+        "datasets": [
+            {
+                "dataset_id": "23356491",
+                "extension": "bam",
+                "file_size": 6175149307,
+                "name": "HISAT2 on data 1, data 4, and data 3",
+                "param_name": "bamfile"
+            },
+            {
+                "dataset_id": "23351555",
+                "extension": "gff3",
+                "file_size": 1276993,
+                "name": "LMf2365_genome.gff",
+                "param_name": "flattened_gtf_in"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-98ffce4c4501f036e67e530b7fca7a55847d02e3ed12ce55610e26f6c5c66184",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-dexseq",
+                "version": "1.20.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-98ffce4c4501f036e67e530b7fca7a55847d02e3ed12ce55610e26f6c5c66184",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "htseq",
+                "version": "0.6.1.post1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3412008,
+        "id": 18217009,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12297242",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "mode": "{\"qual\": \"10\", \"stranded\": \"no\", \"flattened_gtf_in\": {\"values\": [{\"src\": \"hda\", \"id\": 33591926}]}, \"bamfile\": {\"values\": [{\"src\": \"hda\", \"id\": 33597234}]}, \"paired\": \"true\", \"__current_case__\": 1, \"order\": \"pos\", \"mode_select\": \"count\"}"
+        },
+        "runner_name": null,
+        "session_id": 43588200,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/dexseq/dexseq_count/1.20.1",
+        "tool_version": "1.20.1",
+        "traceback": null,
+        "update_time": "2018-01-31 21:23:46.898712",
+        "user_id": 121031
+    }
+]

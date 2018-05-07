@@ -1,0 +1,130 @@
+[
+    {
+        "create_time": "2018-03-02 15:22:31.165709",
+        "datasets": [
+            {
+                "dataset_id": "23812965",
+                "extension": "fasta",
+                "file_size": 2254015371,
+                "name": "Concatenate datasets on data 3 and data 1",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23812968",
+                "extension": "blastdbn",
+                "file_size": 312,
+                "name": "nucleotide BLAST database from data 4",
+                "param_name": "histdb"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3447054,
+        "id": 18582464,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12677024",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_optional_id_files_opts\": {\"__current_case__\": 0, \"adv_optional_id_files_opts_selector\": \"none\"}, \"max_hsps\": \"\", \"adv_opts_selector\": \"advanced\", \"ungapped\": \"false\", \"filter_query\": \"true\", \"word_size\": \"32\", \"__current_case__\": 1, \"identity_cutoff\": \"0.0\", \"parse_deflines\": \"false\", \"qcov_hsp_perc\": \"0.0\", \"strand\": \"-strand both\", \"max_hits\": \"0\"}",
+            "blast_type": "\"megablast\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "db_opts": "{\"db_opts_selector\": \"histdb\", \"subject\": \"\", \"histdb\": {\"values\": [{\"src\": \"hda\", \"id\": 34130594}]}, \"__current_case__\": 1, \"database\": \"\"}",
+            "dbkey": "\"?\"",
+            "evalue_cutoff": "\"0.001\"",
+            "output": "{\"out_format\": \"cols\", \"std_cols\": [\"qseqid\", \"sseqid\", \"length\", \"qstart\", \"qend\", \"sstart\", \"send\", \"bitscore\"], \"ids_cols\": null, \"tax_cols\": null, \"__current_case__\": 2, \"misc_cols\": [\"qcovs\"], \"ext_cols\": [\"score\", \"qlen\", \"slen\"]}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34130593}]}"
+        },
+        "runner_name": null,
+        "session_id": 43051392,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-03-04 03:23:16.439476",
+        "user_id": 91803
+    },
+    {
+        "create_time": "2018-02-28 21:34:26.684819",
+        "datasets": [
+            {
+                "dataset_id": "23812965",
+                "extension": "fasta",
+                "file_size": 2254015371,
+                "name": "Concatenate datasets on data 3 and data 1",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "23812968",
+                "extension": "blastdbn",
+                "file_size": 312,
+                "name": "nucleotide BLAST database from data 4",
+                "param_name": "histdb"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3445280,
+        "id": 18555050,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12651815",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_optional_id_files_opts\": {\"__current_case__\": 0, \"adv_optional_id_files_opts_selector\": \"none\"}, \"max_hsps\": \"\", \"adv_opts_selector\": \"advanced\", \"ungapped\": \"false\", \"filter_query\": \"true\", \"word_size\": \"32\", \"__current_case__\": 1, \"identity_cutoff\": \"0.0\", \"parse_deflines\": \"false\", \"qcov_hsp_perc\": \"0.0\", \"strand\": \"-strand both\", \"max_hits\": \"0\"}",
+            "blast_type": "\"megablast\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "db_opts": "{\"db_opts_selector\": \"histdb\", \"subject\": \"\", \"histdb\": {\"values\": [{\"src\": \"hda\", \"id\": 34104512}]}, \"__current_case__\": 1, \"database\": \"\"}",
+            "dbkey": "\"?\"",
+            "evalue_cutoff": "\"0.001\"",
+            "output": "{\"out_format\": \"cols\", \"std_cols\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"bitscore\"], \"ids_cols\": null, \"tax_cols\": null, \"__current_case__\": 2, \"misc_cols\": [\"qcovs\"], \"ext_cols\": [\"score\", \"qlen\", \"slen\"]}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34104509}]}"
+        },
+        "runner_name": null,
+        "session_id": 43051392,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastn_wrapper/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-03-02 09:34:55.391359",
+        "user_id": 91803
+    }
+]

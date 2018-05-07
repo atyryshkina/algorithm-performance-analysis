@@ -1,0 +1,476 @@
+[
+    {
+        "create_time": "2018-01-28 00:26:05.424585",
+        "datasets": [
+            {
+                "dataset_id": "23290737",
+                "extension": "fasta",
+                "file_size": 22133042689,
+                "name": "Pita.v2.0.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "23289316",
+                "extension": "fastqsanger",
+                "file_size": 3342935401,
+                "name": "Trim Galore! tpsr0643 Nd R1: trimmed reads pair 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23289317",
+                "extension": "fastqsanger",
+                "file_size": 3336002029,
+                "name": "Trim Galore! tpsr0643 Nd R2: trimmed reads pair 2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3404316,
+        "id": 18177366,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12263767",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33525704}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33525703}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33527348}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"tpsr0643_Nd\", \"__current_case__\": 1}, \"CN\": \"Sanford_Burnham_Prebys\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"tpsr0643_Nd\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"HVGH5AFXX_0643_Nd\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"2018-01-23\", \"PI\": \"300\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 43421066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-01-29 11:57:50.710471",
+        "user_id": 120568
+    },
+    {
+        "create_time": "2018-01-27 02:39:45.950946",
+        "datasets": [
+            {
+                "dataset_id": "23290737",
+                "extension": "fasta",
+                "file_size": 22133042689,
+                "name": "Pita.v2.0.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "23289253",
+                "extension": "fastqsanger",
+                "file_size": 3568494598,
+                "name": "Trim Galore! tpsr0910 Tw R1: trimmed reads pair 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23289254",
+                "extension": "fastqsanger",
+                "file_size": 3558430242,
+                "name": "Trim Galore! tpsr0910 Tw R2: trimmed reads pair 2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3404316,
+        "id": 18173403,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12254799",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33525641}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33525640}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33527348}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"true\", \"__current_case__\": 0}, \"CN\": \"Sanford_Burnham_Prebys_Discovery_Institute\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"true\", \"__current_case__\": 0}, \"read_group_id_conditional\": {\"do_auto_name\": \"true\", \"__current_case__\": 0}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"2018-01-23\", \"PI\": \"\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 43421066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-01-27 14:50:39.690100",
+        "user_id": 120568
+    },
+    {
+        "create_time": "2018-01-28 00:10:36.997116",
+        "datasets": [
+            {
+                "dataset_id": "23290737",
+                "extension": "fasta",
+                "file_size": 22133042689,
+                "name": "Pita.v2.0.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "23289273",
+                "extension": "fastqsanger",
+                "file_size": 4256077423,
+                "name": "Trim Galore! tpsr0651 Tw R1: trimmed reads pair 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23289274",
+                "extension": "fastqsanger",
+                "file_size": 4238168133,
+                "name": "Trim Galore! tpsr0651 Tw R2: trimmed reads pair 2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3404316,
+        "id": 18177328,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12263765",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33525661}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33525660}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33527348}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"tpsr0651_Tw\", \"__current_case__\": 1}, \"CN\": \"Sanford_Burnham_Prebys\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"tpsr0651_Tw\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"HVGH5AFXX_0651_Tw\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"2018-01-23\", \"PI\": \"300\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 43421066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-01-29 11:53:09.174081",
+        "user_id": 120568
+    },
+    {
+        "create_time": "2018-01-27 02:39:45.483284",
+        "datasets": [
+            {
+                "dataset_id": "23290737",
+                "extension": "fasta",
+                "file_size": 22133042689,
+                "name": "Pita.v2.0.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "23289248",
+                "extension": "fastqsanger",
+                "file_size": 3424215910,
+                "name": "Trim Galore! tpsr0911_Tw_R1: trimmed reads pair 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23289249",
+                "extension": "fastqsanger",
+                "file_size": 3414235248,
+                "name": "Trim Galore! tpsr0911 Tw R2: trimmed reads pair 2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3404316,
+        "id": 18173402,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12254784",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33525636}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33525635}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33527348}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"true\", \"__current_case__\": 0}, \"CN\": \"Sanford_Burnham_Prebys_Discovery_Institute\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"true\", \"__current_case__\": 0}, \"read_group_id_conditional\": {\"do_auto_name\": \"true\", \"__current_case__\": 0}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"2018-01-23\", \"PI\": \"\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 43421066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-01-27 14:37:16.098557",
+        "user_id": 120568
+    },
+    {
+        "create_time": "2018-01-28 00:00:51.468006",
+        "datasets": [
+            {
+                "dataset_id": "23290737",
+                "extension": "fasta",
+                "file_size": 22133042689,
+                "name": "Pita.v2.0.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "23289253",
+                "extension": "fastqsanger",
+                "file_size": 3568494598,
+                "name": "Trim Galore! tpsr0910 Tw R1: trimmed reads pair 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23289254",
+                "extension": "fastqsanger",
+                "file_size": 3558430242,
+                "name": "Trim Galore! tpsr0910 Tw R2: trimmed reads pair 2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3404316,
+        "id": 18177296,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12259054",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33525641}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33525640}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33527348}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"tpsr0910_Tw\", \"__current_case__\": 1}, \"CN\": \"Sanford_Burnham_Prebys\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"tpsr0910_Tw\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"HVGH5AFXX_0910_Tw\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"2018-01-23\", \"PI\": \"300\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 43421066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-01-28 12:35:36.783623",
+        "user_id": 120568
+    },
+    {
+        "create_time": "2018-01-27 23:47:10.673989",
+        "datasets": [
+            {
+                "dataset_id": "23290737",
+                "extension": "fasta",
+                "file_size": 22133042689,
+                "name": "Pita.v2.0.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "23289248",
+                "extension": "fastqsanger",
+                "file_size": 3424215910,
+                "name": "Trim Galore! tpsr0911_Tw_R1: trimmed reads pair 1",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23289249",
+                "extension": "fastqsanger",
+                "file_size": 3414235248,
+                "name": "Trim Galore! tpsr0911 Tw R2: trimmed reads pair 2",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3404316,
+        "id": 18177270,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12259018",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33525636}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33525635}]}}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 33527348}]}, \"reference_source_selector\": \"history\", \"__current_case__\": 1, \"index_a\": \"auto\"}",
+            "rg": "{\"rg_selector\": \"set\", \"KS\": \"\", \"read_group_sm_conditional\": {\"do_auto_name\": \"false\", \"SM\": \"tpsr0911_Tw\", \"__current_case__\": 1}, \"CN\": \"Sanford_Burnham_Prebys\", \"PU\": \"\", \"read_group_lb_conditional\": {\"do_auto_name\": \"false\", \"LB\": \"tpsr0911_Tw\", \"__current_case__\": 1}, \"read_group_id_conditional\": {\"do_auto_name\": \"false\", \"ID\": \"HVGH5AFXX_0911_Tw\", \"__current_case__\": 1}, \"PG\": \"\", \"__current_case__\": 1, \"DT\": \"2018-01-23\", \"PI\": \"300\", \"DS\": \"\", \"PL\": \"ILLUMINA\", \"FO\": \"\"}"
+        },
+        "runner_name": null,
+        "session_id": 43421066,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-01-28 12:01:26.233303",
+        "user_id": 120568
+    }
+]

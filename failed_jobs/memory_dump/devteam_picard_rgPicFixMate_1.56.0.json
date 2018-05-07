@@ -1,0 +1,99 @@
+[
+    {
+        "create_time": "2015-07-06 15:26:47.386423",
+        "datasets": [
+            {
+                "dataset_id": "11701308",
+                "extension": "sam",
+                "file_size": 7571969594,
+                "name": "Sort on data 33",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2348040,
+        "id": 9796559,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4098461.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_file": "20194579",
+            "out_prefix": "\"Fix Mate\"",
+            "outputFormat": "\"True\"",
+            "sortOrder": "\"coordinate\""
+        },
+        "runner_name": null,
+        "session_id": 23811188,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/rgPicFixMate/1.56.0",
+        "tool_version": "1.56.0",
+        "traceback": null,
+        "update_time": "2015-07-06 15:49:41.074662",
+        "user_id": 65051
+    },
+    {
+        "create_time": "2015-08-28 09:45:55.568878",
+        "datasets": [
+            {
+                "dataset_id": "12305061",
+                "extension": "bam",
+                "file_size": 7075239515,
+                "name": "SortSam on data 48: BAM sorted in queryname order",
+                "param_name": "input_file"
+            },
+            {
+                "dataset_id": "12221620",
+                "extension": "len",
+                "file_size": 2323288,
+                "name": "Convert FASTA to len file on data 4",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2413497,
+        "id": 10215327,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4485654.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/012/221/dataset_12221620.dat\"",
+            "dbkey": "\"?\"",
+            "input_file": "20933853",
+            "out_prefix": "\"Fix Mate\"",
+            "outputFormat": "\"True\"",
+            "sortOrder": "\"queryname\""
+        },
+        "runner_name": null,
+        "session_id": 24389626,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/rgPicFixMate/1.56.0",
+        "tool_version": "1.56.0",
+        "traceback": null,
+        "update_time": "2015-08-28 10:37:18.477243",
+        "user_id": 67002
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "create_time": "2017-11-07 12:31:52.756322",
+        "datasets": [
+            {
+                "dataset_id": "22071895",
+                "extension": "bam",
+                "file_size": 72702782,
+                "name": "Filter SAM or BAM, output SAM or BAM on data 41: bam",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "21954578",
+                "extension": "bed",
+                "file_size": 10753538,
+                "name": "UCSC Main on Human: refGene (genome)",
+                "param_name": "inputB"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "bedtools",
+                "path": "/galaxy/main/deps/bedtools/2.22/iuc/bedtools/2cd7e321d259",
+                "script": "/galaxy/main/deps/bedtools/2.22/iuc/bedtools/2cd7e321d259/env.sh",
+                "version": "2.22"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3304527,
+        "id": 17363151,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11422652",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"7e8e953ac3b711e7a35f005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "d": "\"true\"",
+            "dbkey": "\"hg19\"",
+            "hist": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 32120367}]}",
+            "inputB": "{\"values\": [{\"src\": \"hda\", \"id\": 31993052}]}",
+            "split": "\"false\"",
+            "strandedness": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.22.1",
+        "tool_version": "2.22.1",
+        "traceback": null,
+        "update_time": "2017-11-09 00:41:54.847964",
+        "user_id": 104911
+    }
+]

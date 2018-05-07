@@ -1,0 +1,107 @@
+[
+    {
+        "create_time": "2016-09-26 20:42:46.189323",
+        "datasets": [
+            {
+                "dataset_id": "17130808",
+                "extension": "fasta",
+                "file_size": 4226205312,
+                "name": "FASTQ to FASTA on data 13",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2814446,
+        "id": 13948566,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8169780.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e8d3d791cbf6edda\"}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 32866618,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-26 20:56:30.113805",
+        "user_id": 89783
+    },
+    {
+        "create_time": "2016-12-08 17:34:34.678865",
+        "datasets": [
+            {
+                "dataset_id": "18110556",
+                "extension": "fasta",
+                "file_size": 7174711709,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2913197,
+        "id": 14519107,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8701904.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"\"",
+            "iddef": "\"4\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 27541772}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 34726037,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-12-08 17:41:39.799029",
+        "user_id": 89783
+    }
+]

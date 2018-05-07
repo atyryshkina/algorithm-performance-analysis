@@ -1,0 +1,281 @@
+[
+    {
+        "create_time": "2016-10-20 19:28:51.580968",
+        "datasets": [
+            {
+                "dataset_id": "17570758",
+                "extension": "fasta",
+                "file_size": 34741175,
+                "name": "FASTQ to FASTA on data 61",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2839562,
+        "id": 14134302,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8349824.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"\"",
+            "iddef": "\"4\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5846c77fafd2895f7\"}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 33825532,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-10-22 11:48:00.228170",
+        "user_id": 91364
+    },
+    {
+        "create_time": "2017-01-18 09:38:18.097966",
+        "datasets": [
+            {
+                "dataset_id": "18498294",
+                "extension": "fasta",
+                "file_size": 166977805,
+                "name": "VSearch sorting on data 80",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2921970,
+        "id": 14797036,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8959797.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 27969540}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35380812,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-01-19 21:38:43.421642",
+        "user_id": 96507
+    },
+    {
+        "create_time": "2017-10-18 19:40:34.627131",
+        "datasets": [
+            {
+                "dataset_id": "21714584",
+                "extension": "fasta",
+                "file_size": 65708031,
+                "name": "Create assemblies with Unicycler on data 6 and data 7: Final Assembly",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3289785,
+        "id": 17136636,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11193191",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 31724953}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 41243504,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-10-20 07:41:15.645119",
+        "user_id": 113508
+    },
+    {
+        "create_time": "2018-01-22 11:55:33.751007",
+        "datasets": [
+            {
+                "dataset_id": "23214650",
+                "extension": "fasta",
+                "file_size": 145245382,
+                "name": "Filter sequences by length on data 6",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3394185,
+        "id": 18117782,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12197466",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"0.9\"",
+            "iddef": "\"4\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 33439144}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43225208,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2018-01-23 23:55:54.110266",
+        "user_id": 29139
+    },
+    {
+        "create_time": "2018-02-06 10:55:39.319370",
+        "datasets": [
+            {
+                "dataset_id": "22924641",
+                "extension": "fasta",
+                "file_size": 106459821,
+                "name": "DeNovo",
+                "param_name": "infile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3319449,
+        "id": 18268819,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12350570",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "acceptall": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "id": "\"\"",
+            "iddef": "\"1\"",
+            "infile": "{\"values\": [{\"src\": \"hda\", \"id\": 33117789}]}",
+            "query_cov": "\"\"",
+            "userfields_output": "{\"userfields_output_select\": \"no\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 43705994,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_alignment/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2018-02-07 22:56:15.323100",
+        "user_id": 88606
+    }
+]

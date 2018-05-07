@@ -1,0 +1,108 @@
+[
+    {
+        "create_time": "2017-03-03 06:11:45.663365",
+        "datasets": [
+            {
+                "dataset_id": "19052510",
+                "extension": "tabular",
+                "file_size": 4889400000,
+                "name": "Convert on data 28",
+                "param_name": "in_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "datamash",
+                "path": "/galaxy/main/deps/datamash/1.0.6/iuc/datamash_transpose/60e287a6d17d",
+                "script": "/galaxy/main/deps/datamash/1.0.6/iuc/datamash_transpose/60e287a6d17d/env.sh",
+                "version": "1.0.6"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2788849,
+        "id": 15196518,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9346984.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "in_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28590722}]}"
+        },
+        "runner_name": null,
+        "session_id": 36290811,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/datamash_transpose/datamash_transpose/1.0.6",
+        "tool_version": "1.0.6",
+        "traceback": null,
+        "update_time": "2017-03-03 15:36:21.738756",
+        "user_id": 88339
+    },
+    {
+        "create_time": "2017-07-13 17:35:53.238136",
+        "datasets": [
+            {
+                "dataset_id": "20613650",
+                "extension": "tabular",
+                "file_size": 2045563985,
+                "name": "Text transformation on data 15",
+                "param_name": "in_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "datamash",
+                "path": "/galaxy/main/deps/datamash/1.0.6/iuc/datamash_transpose/60e287a6d17d",
+                "script": "/galaxy/main/deps/datamash/1.0.6/iuc/datamash_transpose/60e287a6d17d/env.sh",
+                "version": "1.0.6"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3192071,
+        "id": 16335863,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10401780.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "in_file": "{\"values\": [{\"src\": \"hda\", \"id\": 30478480}]}"
+        },
+        "runner_name": null,
+        "session_id": 38167228,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/datamash_transpose/datamash_transpose/1.0.6",
+        "tool_version": "1.0.6",
+        "traceback": null,
+        "update_time": "2017-07-14 06:14:42.414747",
+        "user_id": 1224
+    }
+]

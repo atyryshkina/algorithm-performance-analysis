@@ -1,0 +1,933 @@
+[
+    {
+        "create_time": "2016-09-05 12:52:36.766121",
+        "datasets": [
+            {
+                "dataset_id": "17078469",
+                "extension": "fasta",
+                "file_size": 14064389,
+                "name": "Tabular-to-FASTA on data 21",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17077839",
+                "extension": "fasta",
+                "file_size": 2739619026,
+                "name": "SILVA_123.1_SSURef_tax_silva.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2801854,
+        "id": 13782252,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8003790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b024a47ebf0953b3\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"4\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a55afd8ef8f32790\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"both\""
+        },
+        "runner_name": null,
+        "session_id": 31749302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-05 12:57:42.685648",
+        "user_id": 50926
+    },
+    {
+        "create_time": "2017-03-07 05:28:49.448399",
+        "datasets": [
+            {
+                "dataset_id": "19105744",
+                "extension": "fasta",
+                "file_size": 4246284340,
+                "name": "FASTQ to FASTA on data 2",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "19105744",
+                "extension": "fasta",
+                "file_size": 4246284340,
+                "name": "FASTQ to FASTA on data 2",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3019773,
+        "id": 15226307,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9374743.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 28647906}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 28647906}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 36474068,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-03-07 05:32:09.093717",
+        "user_id": 101427
+    },
+    {
+        "create_time": "2016-09-15 09:52:29.403836",
+        "datasets": [
+            {
+                "dataset_id": "17078469",
+                "extension": "fasta",
+                "file_size": 14064389,
+                "name": "Tabular-to-FASTA on data 21",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17077839",
+                "extension": "fasta",
+                "file_size": 2739619026,
+                "name": "SILVA_123.1_SSURef_tax_silva.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2801854,
+        "id": 13855121,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8078165.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"query_cov\": \"\", \"userfields_output\": {\"userfields_output_select\": \"no\", \"__current_case__\": 1}, \"uclust_output\": {\"__current_case__\": 1, \"uclust_output_select\": \"no\"}, \"idsuffix\": \"\", \"maxaccepts\": \"1\", \"maxrejects\": \"32\", \"maxsubs\": \"\", \"top_hits_only\": \"true\", \"output_no_hits\": \"false\", \"mid\": \"\", \"maxsl\": \"\", \"maxid\": \"\", \"target_cov\": \"\", \"maxqt\": \"\", \"maxgaps\": \"\", \"maxdiffs\": \"\", \"mincols\": \"\", \"maxhits\": \"\", \"mismatch\": \"-4\", \"adv_opts_selector\": \"advanced\", \"rightjust\": \"false\", \"maxsizeratio\": \"\", \"wordlength\": \"8\", \"minsizeratio\": \"\", \"leftjust\": \"false\", \"idprefix\": \"\", \"maxqsize\": \"\", \"minqt\": \"\", \"minsl\": \"\", \"match\": \"2\", \"__current_case__\": 1, \"mintsize\": \"\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b024a47ebf0953b3\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"4\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a55afd8ef8f32790\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"both\""
+        },
+        "runner_name": null,
+        "session_id": 31749302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-15 09:56:43.934313",
+        "user_id": 50926
+    },
+    {
+        "create_time": "2017-06-10 19:42:43.287215",
+        "datasets": [
+            {
+                "dataset_id": "20107185",
+                "extension": "fasta",
+                "file_size": 1611,
+                "name": "Golden Eagle OAT1.fas",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "20232781",
+                "extension": "fasta",
+                "file_size": 5871896785,
+                "name": "FASTQ to FASTA on data 224",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3010041,
+        "id": 16072019,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10160119.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/aquChr2.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29951239}]}",
+            "dbkey": "\"aquChr2\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29809541}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 37492055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-06-10 19:48:43.711547",
+        "user_id": 100924
+    },
+    {
+        "create_time": "2016-09-09 09:11:31.234995",
+        "datasets": [
+            {
+                "dataset_id": "17100605",
+                "extension": "fasta",
+                "file_size": 256581,
+                "name": "1_gr1sel35.fasta",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17100603",
+                "extension": "fasta",
+                "file_size": 6597349685,
+                "name": "rnacentral_active.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2813126,
+        "id": 13814199,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8035533.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b556e47e2efdc67c75\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c68f313c23e066e8\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 32861332,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-09 09:16:59.439894",
+        "user_id": 53323
+    },
+    {
+        "create_time": "2017-06-08 13:30:51.098599",
+        "datasets": [
+            {
+                "dataset_id": "20203170",
+                "extension": "fasta",
+                "file_size": 4536,
+                "name": "Golden_Eagle_MRP4.fas",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "20232781",
+                "extension": "fasta",
+                "file_size": 5871896785,
+                "name": "FASTQ to FASTA on data 224",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3010041,
+        "id": 16053239,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10143002.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/aquChr2.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29951239}]}",
+            "dbkey": "\"aquChr2\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--dbmatched\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29918365}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 37492055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-06-08 13:35:02.534970",
+        "user_id": 100924
+    },
+    {
+        "create_time": "2016-09-09 14:26:23.878220",
+        "datasets": [
+            {
+                "dataset_id": "17100605",
+                "extension": "fasta",
+                "file_size": 256581,
+                "name": "1_gr1sel35.fasta",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17100603",
+                "extension": "fasta",
+                "file_size": 6597349685,
+                "name": "rnacentral_active.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2813126,
+        "id": 13815802,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8037168.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b556e47e2efdc67c75\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"1.0\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c68f313c23e066e8\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 32861332,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-09 14:34:30.425193",
+        "user_id": 53323
+    },
+    {
+        "create_time": "2016-09-05 13:31:28.027582",
+        "datasets": [
+            {
+                "dataset_id": "17078469",
+                "extension": "fasta",
+                "file_size": 14064389,
+                "name": "Tabular-to-FASTA on data 21",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17077839",
+                "extension": "fasta",
+                "file_size": 2739619026,
+                "name": "SILVA_123.1_SSURef_tax_silva.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2801854,
+        "id": 13782474,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8003983.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b024a47ebf0953b3\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"4\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5a55afd8ef8f32790\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"both\""
+        },
+        "runner_name": null,
+        "session_id": 31749302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-05 13:34:16.686563",
+        "user_id": 50926
+    },
+    {
+        "create_time": "2017-06-08 13:39:08.360835",
+        "datasets": [
+            {
+                "dataset_id": "20203170",
+                "extension": "fasta",
+                "file_size": 4536,
+                "name": "Golden_Eagle_MRP4.fas",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "20232781",
+                "extension": "fasta",
+                "file_size": 5871896785,
+                "name": "FASTQ to FASTA on data 224",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3010041,
+        "id": 16053362,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10143108.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/aquChr2.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29951239}]}",
+            "dbkey": "\"aquChr2\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--dbmatched\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29918365}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 37492055,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-06-08 13:42:35.913552",
+        "user_id": 100924
+    },
+    {
+        "create_time": "2016-09-09 10:32:15.221575",
+        "datasets": [
+            {
+                "dataset_id": "17100605",
+                "extension": "fasta",
+                "file_size": 256581,
+                "name": "1_gr1sel35.fasta",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17100603",
+                "extension": "fasta",
+                "file_size": 6597349685,
+                "name": "rnacentral_active.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2813126,
+        "id": 13814609,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8036000.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b556e47e2efdc67c75\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"0.9\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c68f313c23e066e8\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 32861332,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-09 10:39:39.510892",
+        "user_id": 53323
+    },
+    {
+        "create_time": "2016-09-05 11:19:51.554449",
+        "datasets": [
+            {
+                "dataset_id": "17077336",
+                "extension": "fasta",
+                "file_size": 13842695,
+                "name": "Algae16sOutputCondensed.fas",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "17077839",
+                "extension": "fasta",
+                "file_size": 2739619026,
+                "name": "SILVA_123.1_SSURef_tax_silva.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2801854,
+        "id": 13781841,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8003388.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b024a47ebf0953b3\"}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"4\"",
+            "outputs": "[\"--alnout\", \"--blast6out\", \"--fastapairs\", \"--dbmatched\", \"--dbnotmatched\", \"--notmatched\", \"--matched\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5c15ba2ac76a626f2\"}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"both\""
+        },
+        "runner_name": null,
+        "session_id": 31749302,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2016-09-05 11:25:18.607884",
+        "user_id": 50926
+    },
+    {
+        "create_time": "2017-12-05 12:49:34.701053",
+        "datasets": [
+            {
+                "dataset_id": "22605557",
+                "extension": "fasta",
+                "file_size": 1930983,
+                "name": "P1_M_27 (without duplicates) - length 100 to 286.fasta",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "22605587",
+                "extension": "fasta",
+                "file_size": 2981,
+                "name": "refseqDB.fasta",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3343695,
+        "id": 17701669,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11766341",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"query_cov\": \"80.0\", \"userfields_output\": {\"userfields_output_select\": \"no\", \"__current_case__\": 1}, \"uclust_output\": {\"__current_case__\": 1, \"uclust_output_select\": \"no\"}, \"idsuffix\": \"\", \"maxaccepts\": \"1\", \"maxrejects\": \"32\", \"maxsubs\": \"\", \"top_hits_only\": \"true\", \"output_no_hits\": \"false\", \"mid\": \"\", \"maxsl\": \"\", \"maxid\": \"\", \"target_cov\": \"80.0\", \"maxqt\": \"\", \"maxgaps\": \"\", \"maxdiffs\": \"\", \"mincols\": \"\", \"maxhits\": \"1\", \"mismatch\": \"-4\", \"adv_opts_selector\": \"advanced\", \"rightjust\": \"false\", \"maxsizeratio\": \"\", \"wordlength\": \"15\", \"minsizeratio\": \"\", \"leftjust\": \"false\", \"idprefix\": \"\", \"maxqsize\": \"\", \"minqt\": \"\", \"minsl\": \"\", \"match\": \"2\", \"__current_case__\": 1, \"mintsize\": \"\"}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 32738177}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"0.8\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--alnout\"]",
+            "qmask": "\"none\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 32738146}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"true\"",
+            "sizeout": "\"false\"",
+            "strand": "\"both\""
+        },
+        "runner_name": null,
+        "session_id": 42310539,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-12-05 12:50:47.906094",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-03-08 03:22:49.282168",
+        "datasets": [
+            {
+                "dataset_id": "19105729",
+                "extension": "fasta",
+                "file_size": 4246284340,
+                "name": "FASTQ to FASTA on data 2",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "19105729",
+                "extension": "fasta",
+                "file_size": 4246284340,
+                "name": "FASTQ to FASTA on data 2",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3019773,
+        "id": 15238405,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9386601.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 28647889}]}",
+            "dbkey": "\"?\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--blast6out\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 28647889}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 36474068,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-03-08 03:26:24.668460",
+        "user_id": 101427
+    },
+    {
+        "create_time": "2017-06-15 13:06:19.292777",
+        "datasets": [
+            {
+                "dataset_id": "20107185",
+                "extension": "fasta",
+                "file_size": 1611,
+                "name": "Golden Eagle OAT1.fas",
+                "param_name": "queryfile"
+            },
+            {
+                "dataset_id": "20232781",
+                "extension": "fasta",
+                "file_size": 5871896785,
+                "name": "FASTQ to FASTA on data 224",
+                "param_name": "dbfile"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vsearch",
+                "path": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba",
+                "script": "/galaxy/main/deps/vsearch/1.9.7/iuc/vsearch/4258854759ba/env.sh",
+                "version": "1.9.7"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3010041,
+        "id": 16108691,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10192165.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/aquChr2.len\"",
+            "dbfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29951239}]}",
+            "dbkey": "\"aquChr2\"",
+            "dbmask": "\"none\"",
+            "hardmask": "\"false\"",
+            "id": "\"\"",
+            "iddef": "\"2\"",
+            "outputs": "[\"--dbmatched\"]",
+            "qmask": "\"dust\"",
+            "queryfile": "{\"values\": [{\"src\": \"hda\", \"id\": 29809541}]}",
+            "self_param": "\"false\"",
+            "selfid_param": "\"false\"",
+            "sizeout": "\"false\"",
+            "strand": "\"plus\""
+        },
+        "runner_name": null,
+        "session_id": 37628815,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vsearch/vsearch_search/1.9.7.0",
+        "tool_version": "1.9.7.0",
+        "traceback": null,
+        "update_time": "2017-06-15 13:10:27.137928",
+        "user_id": 100924
+    }
+]

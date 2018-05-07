@@ -1,0 +1,56 @@
+[
+    {
+        "create_time": "2016-11-04 12:42:02.010945",
+        "datasets": [
+            {
+                "dataset_id": "17731199",
+                "extension": "bed",
+                "file_size": 41,
+                "name": "Create single interval",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "17729508",
+                "extension": "fasta",
+                "file_size": 8911588243,
+                "name": "Convert, Merge, Randomize on data 22",
+                "param_name": "fasta"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2634012,
+        "id": 14251666,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8460714.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/017/084/dataset_17084111.dat\"",
+            "dbkey": "\"2.1\"",
+            "fasta": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5e6bef6d1b86f4ed8\"}]}",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5fee59cedce18cab6\"}]}",
+            "name": "\"false\"",
+            "split": "\"false\"",
+            "strand": "\"false\"",
+            "tab": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 32685007,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed/2.24.0",
+        "tool_version": "2.24.0",
+        "traceback": null,
+        "update_time": "2016-11-04 12:52:43.235248",
+        "user_id": 49629
+    }
+]

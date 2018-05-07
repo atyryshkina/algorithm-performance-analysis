@@ -1,0 +1,308 @@
+[
+    {
+        "create_time": "2017-07-04 12:20:19.002611",
+        "datasets": [
+            {
+                "dataset_id": "20486686",
+                "extension": "fastqsanger",
+                "file_size": 35530498,
+                "name": "Trim on data 141",
+                "param_name": "input_format|reads_f"
+            },
+            {
+                "dataset_id": "20486685",
+                "extension": "fastqsanger",
+                "file_size": 35530498,
+                "name": "Trim on data 140",
+                "param_name": "input_format|reads_r"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3131419,
+        "id": 16255520,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10327963",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"unaligned_file\": \"false\", \"paired_end_options\": {\"paired_end_options_selector\": \"defaults\", \"__current_case__\": 0}, \"paired_selector\": \"paired\", \"reads_f\": {\"values\": [{\"src\": \"hda\", \"id\": 30262907}]}, \"__current_case__\": 1, \"reads_r\": {\"values\": [{\"src\": \"hda\", \"id\": 30262906}]}}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"rn6\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39049778,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1",
+        "tool_version": "2.0.5.1",
+        "traceback": null,
+        "update_time": "2017-07-06 00:21:42.182042",
+        "user_id": 106793
+    },
+    {
+        "create_time": "2017-07-19 21:01:03.750741",
+        "datasets": [
+            {
+                "dataset_id": "20450403",
+                "extension": "fastqsanger",
+                "file_size": 4500342618,
+                "name": "Adult_WT.fq",
+                "param_name": "input_format|reads"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3196606,
+        "id": 16369598,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10432965",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/main/files/020/660/dataset_20660016.dat\"",
+            "dbkey": "\"dm6\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 30531029}]}, \"__current_case__\": 2, \"paired_selector\": \"single\", \"unaligned_file\": \"false\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"index\": \"dm6\", \"reference_genome_source\": \"indexed\", \"__current_case__\": 0}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39380821,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1",
+        "tool_version": "2.0.5.1",
+        "traceback": null,
+        "update_time": "2017-07-21 09:06:08.207241",
+        "user_id": 109133
+    },
+    {
+        "create_time": "2017-08-03 10:48:14.016024",
+        "datasets": [
+            {
+                "dataset_id": "20794990",
+                "extension": "fastqcssanger",
+                "file_size": 5087373020,
+                "name": "Tcon1",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "20840635",
+                "extension": "fasta",
+                "file_size": 126671752,
+                "name": "Mus_musculus.GRCm38.dna.chromosome.9.fa",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3208711,
+        "id": 16496521,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10566442",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 30709018}]}, \"__current_case__\": 2, \"paired_selector\": \"single\", \"unaligned_file\": \"false\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 30744666}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"spliced_options_selector\": \"defaults\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39610360,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1",
+        "tool_version": "2.0.5.1",
+        "traceback": null,
+        "update_time": "2017-08-04 23:31:22.913269",
+        "user_id": 109603
+    },
+    {
+        "create_time": "2017-08-09 13:50:44.986373",
+        "datasets": [
+            {
+                "dataset_id": "18023089",
+                "extension": "fastqsanger",
+                "file_size": 4304028470,
+                "name": "347-1R Trim ",
+                "param_name": "input_format|reads"
+            },
+            {
+                "dataset_id": "20900991",
+                "extension": "fasta",
+                "file_size": 14323643,
+                "name": "A22_Chromosomes_3.fasta",
+                "param_name": "history_item"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "hisat2",
+                "version": "2.0.5"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-2bb67013a57cac1e35f407d06d1f347baae35159f498496f1e36f84784069212",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.4"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --nodes=1 --ntasks=6 --partition=multi"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3217424,
+        "id": 16540230,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10610917",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "__workflow_invocation_uuid__": "\"aac5fca07d0911e7b1d4005056ba55fb\"",
+            "alignment_options": "{\"__current_case__\": 0, \"alignment_options_selector\": \"defaults\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "input_format": "{\"paired\": {\"aligned_file\": \"false\", \"reads\": {\"values\": [{\"src\": \"hda\", \"id\": 30811854}]}, \"__current_case__\": 2, \"paired_selector\": \"single\", \"unaligned_file\": \"false\"}, \"input_format_selector\": \"fastq\", \"__current_case__\": 1}",
+            "input_options": "{\"input_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "max_primary": "\"\"",
+            "max_seeds": "\"\"",
+            "paired_options": "{\"paired_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "reference_genome": "{\"reference_genome_source\": \"history\", \"history_item\": {\"values\": [{\"src\": \"hda\", \"id\": 30811879}]}, \"__current_case__\": 1}",
+            "scoring_options": "{\"scoring_options_selector\": \"defaults\", \"__current_case__\": 0}",
+            "secondary": "\"false\"",
+            "spliced_options": "{\"coefficient\": \"0\", \"canonical_penalty\": \"0\", \"no_spliced_alignment_options\": {\"no_spliced_alignment\": \"--no-spliced-alignment\", \"maxins\": \"500\", \"minins\": \"0\", \"__current_case__\": 0}, \"nc_function_type\": \"G\", \"constant_term\": \"0\", \"nc_coefficient\": \"1\", \"noncanonical_penalty\": \"3\", \"known_splice_gtf\": null, \"nc_constant_term\": \"-8\", \"min_intron\": \"20\", \"function_type\": \"C\", \"rna_strandness\": \"R\", \"__current_case__\": 1, \"tma\": \"--dta\", \"max_intron\": \"5000\", \"spliced_options_selector\": \"advanced\"}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.0.5.1",
+        "tool_version": "2.0.5.1",
+        "traceback": null,
+        "update_time": "2017-08-11 01:55:15.219443",
+        "user_id": 95902
+    }
+]

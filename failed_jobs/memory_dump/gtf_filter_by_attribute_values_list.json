@@ -1,0 +1,104 @@
+[
+    {
+        "create_time": "2017-05-03 15:48:23.081492",
+        "datasets": [
+            {
+                "dataset_id": "19799014",
+                "extension": "gtf",
+                "file_size": 847928511,
+                "name": "Homo_sapiens.GRCh37.75.gtf",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "3988961",
+                "extension": "fasta",
+                "file_size": 3199905909,
+                "name": "ucsc.hg19.fasta",
+                "param_name": "ids"
+            }
+        ],
+        "dependencies": [],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3071977,
+        "id": 15736787,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9846830.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "attribute_name": "\"gene_id\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "ids": "{\"values\": [{\"src\": \"hda\", \"id\": 29452412}]}",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 29449327}]}"
+        },
+        "runner_name": null,
+        "session_id": 37723046,
+        "state": "error",
+        "tool_id": "gtf_filter_by_attribute_values_list",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2017-05-03 15:51:21.089816",
+        "user_id": 104065
+    },
+    {
+        "create_time": "2015-08-01 10:09:56.738801",
+        "datasets": [
+            {
+                "dataset_id": "12073947",
+                "extension": "gtf",
+                "file_size": 32119643511,
+                "name": "Mus_musculus_UCSC_mm10.tar",
+                "param_name": "input"
+            },
+            {
+                "dataset_id": "12073947",
+                "extension": "gtf",
+                "file_size": 32119643511,
+                "name": "Mus_musculus_UCSC_mm10.tar",
+                "param_name": "ids"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2396539,
+        "id": 10046410,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4326640.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "attribute_name": "\"gene_id\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "ids": "20657846",
+            "input": "20657846"
+        },
+        "runner_name": null,
+        "session_id": 24411592,
+        "state": "error",
+        "tool_id": "gtf_filter_by_attribute_values_list",
+        "tool_version": "0.1",
+        "traceback": null,
+        "update_time": "2015-08-01 10:14:22.823492",
+        "user_id": 67160
+    }
+]

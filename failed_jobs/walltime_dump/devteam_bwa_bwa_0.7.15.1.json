@@ -1,0 +1,284 @@
+[
+    {
+        "create_time": "2017-12-01 00:23:23.528986",
+        "datasets": [
+            {
+                "dataset_id": "22441325",
+                "extension": "fastqsanger",
+                "file_size": 54047279448,
+                "name": "Trimmomatic on SRR934414 FASTQ de-interlacer left mates from data 12 (R1 paired)",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "22441318",
+                "extension": "fastqsanger",
+                "file_size": 51629707906,
+                "name": "Trimmomatic on SRR934414 FASTQ de-interlacer right mates from data 12 (R2 paired)",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3345765,
+        "id": 17655032,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11715150",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 32635556}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 32635554}]}}",
+            "reference_source": "{\"ref_file\": \"bosTau7\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 42340604,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2017-12-02 13:40:06.164236",
+        "user_id": 117570
+    },
+    {
+        "create_time": "2018-02-19 08:11:42.322066",
+        "datasets": [
+            {
+                "dataset_id": "23659919",
+                "extension": "fastqsanger.gz",
+                "file_size": 3799204088,
+                "name": "SRR1596613",
+                "param_name": "fastq_input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 410378,
+        "id": 18433748,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12528060",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "fastq_input1|__identifier__": "\"SRR1596613\"",
+            "input_type": "{\"adv_se_options\": {\"adv_se_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"__current_case__\": 2, \"input_type_selector\": \"single\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33930804}]}}",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"set_id_auto\", \"__current_case__\": 2}"
+        },
+        "runner_name": null,
+        "session_id": 43933073,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-02-20 20:11:59.847647",
+        "user_id": 6096
+    },
+    {
+        "create_time": "2018-02-20 21:20:33.300592",
+        "datasets": [
+            {
+                "dataset_id": "23688010",
+                "extension": "fastqsanger",
+                "file_size": 16636910158,
+                "name": "GenomeSpace importer on 4B_repeat_EDL_R1.fastq.gz",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23688061",
+                "extension": "fastqsanger",
+                "file_size": 15993051848,
+                "name": "GenomeSpace importer on 4B_repeat_EDL_R2.fastq.gz",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler2",
+        "history_id": 3436257,
+        "id": 18452921,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12547873",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33963698}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33963647}]}}",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 44037960,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-02-22 09:53:42.914412",
+        "user_id": 110558
+    },
+    {
+        "create_time": "2018-02-21 06:11:51.142330",
+        "datasets": [
+            {
+                "dataset_id": "23670607",
+                "extension": "fastqsanger",
+                "file_size": 23943957444,
+                "name": "GenomeSpace importer on 658_psoas_R1.fastq.gz",
+                "param_name": "fastq_input1"
+            },
+            {
+                "dataset_id": "23670610",
+                "extension": "fastqsanger",
+                "file_size": 23001545986,
+                "name": "GenomeSpace importer on 658_psoas_R2.fastq.gz",
+                "param_name": "fastq_input2"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bwa",
+                "version": "0.7.15"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/mulled-v1-994f58669c7f0a5092618845c7bd05d42f5d84b22abfcc4dabae3085827efb35",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "samtools",
+                "version": "1.3.1"
+            }
+        ],
+        "destination_id": "slurm_multi",
+        "destination_params": {
+            "nativeSpecification": "--partition=multi --nodes=1 --ntasks=6 --time=36:00:00 --mem-per-cpu=5120"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler2",
+        "history_id": 3433875,
+        "id": 18456938,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12568727",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__current_case__\": 0, \"__job_resource__select\": \"no\"}",
+            "analysis_type": "{\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "input_type": "{\"adv_pe_options\": {\"__current_case__\": 1, \"adv_pe_options_selector\": \"do_not_set\"}, \"fastq_input2\": {\"values\": [{\"src\": \"hda\", \"id\": 33942120}]}, \"__current_case__\": 0, \"input_type_selector\": \"paired\", \"fastq_input1\": {\"values\": [{\"src\": \"hda\", \"id\": 33942117}]}}",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "rg": "{\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}"
+        },
+        "runner_name": null,
+        "session_id": 44037960,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.15.1",
+        "tool_version": "0.7.15.1",
+        "traceback": null,
+        "update_time": "2018-02-23 10:10:21.104889",
+        "user_id": 110558
+    }
+]

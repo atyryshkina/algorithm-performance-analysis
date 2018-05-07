@@ -1,0 +1,74 @@
+[
+    {
+        "create_time": "2017-10-19 10:29:05.450817",
+        "datasets": [
+            {
+                "dataset_id": "21742865",
+                "extension": "fasta",
+                "file_size": 10528856,
+                "name": "0102.fasta: fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "21742961",
+                "extension": "mothur.seq.taxonomy",
+                "file_size": 2177969,
+                "name": "0102.taxonomy",
+                "param_name": "taxonomy"
+            },
+            {
+                "dataset_id": "21742960",
+                "extension": "mothur.count_table",
+                "file_size": 848731,
+                "name": "0102.count",
+                "param_name": "nameOrCount"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@1.36.1",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.36.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3292207,
+        "id": 17143644,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11201401",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cluster": "\"true\"",
+            "cutoff": "\"0.2\"",
+            "dbkey": "\"?\"",
+            "hard": "\"true\"",
+            "large": "\"false\"",
+            "method": "\"average\"",
+            "precision": "\"100\"",
+            "splitby": "{\"splitmethod\": \"fasta\", \"classic\": \"false\", \"nameOrCount\": {\"values\": [{\"src\": \"hda\", \"id\": 31755605}]}, \"taxonomy\": {\"values\": [{\"src\": \"hda\", \"id\": 31755606}]}, \"__current_case__\": 2, \"fasta\": {\"values\": [{\"src\": \"hda\", \"id\": 31755489}]}, \"taxlevel\": \"3\"}"
+        },
+        "runner_name": null,
+        "session_id": 41381962,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mothur_cluster_split/mothur_cluster_split/1.36.1.0",
+        "tool_version": "1.36.1.0",
+        "traceback": null,
+        "update_time": "2017-10-20 22:29:53.476299",
+        "user_id": 72172
+    }
+]

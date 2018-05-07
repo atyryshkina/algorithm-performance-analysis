@@ -1,0 +1,442 @@
+[
+    {
+        "create_time": "2018-03-06 20:52:28.173163",
+        "datasets": [
+            {
+                "dataset_id": "23938840",
+                "extension": "bed",
+                "file_size": 58903,
+                "name": "MACS2 callpeak on data 25 and data 9 (summits in BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "23874579",
+                "extension": "bam",
+                "file_size": 452135499,
+                "name": "Aligned: Chd7_WT_FA",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "23874579",
+                "extension": "bam",
+                "file_size": 452135499,
+                "name": "Aligned: Chd7_WT_FA",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "23874581",
+                "extension": "bam",
+                "file_size": 454947043,
+                "name": "Aligned: Chd7_cKO_FA",
+                "param_name": "inputB2"
+            },
+            {
+                "dataset_id": "23874582",
+                "extension": "bam",
+                "file_size": 575099711,
+                "name": "Aligned: Chd7_WT_DSG",
+                "param_name": "inputB3"
+            },
+            {
+                "dataset_id": "23874583",
+                "extension": "bam",
+                "file_size": 775313957,
+                "name": "Aligned: Chd7_cKO_DSG",
+                "param_name": "inputB4"
+            },
+            {
+                "dataset_id": "23876867",
+                "extension": "bam",
+                "file_size": 1108004105,
+                "name": "Aligned: Input_Chd7_WT_FA",
+                "param_name": "inputB5"
+            },
+            {
+                "dataset_id": "23876868",
+                "extension": "bam",
+                "file_size": 1593005364,
+                "name": "Aligned: Input_Chd7_cKO_FA",
+                "param_name": "inputB6"
+            },
+            {
+                "dataset_id": "23876869",
+                "extension": "bam",
+                "file_size": 1316021102,
+                "name": "Aligned: Input_Chd7_cKO_DSG",
+                "param_name": "inputB7"
+            },
+            {
+                "dataset_id": "23876870",
+                "extension": "bam",
+                "file_size": 817060203,
+                "name": "Aligned: Input_Chd7_WT_DSG",
+                "param_name": "inputB8"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__bedtools@2.27.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.27.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3449807,
+        "id": 18630176,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12726792",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "a_or_b": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "hist": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 34244750}]}",
+            "overlap_a": "\"\"",
+            "overlap_b": "\"\"",
+            "reciprocal_overlap": "\"false\"",
+            "reduce_or_iterate": "{\"inputB\": {\"values\": [{\"src\": \"hda\", \"id\": 34176862}, {\"src\": \"hda\", \"id\": 34176864}, {\"src\": \"hda\", \"id\": 34176865}, {\"src\": \"hda\", \"id\": 34176866}, {\"src\": \"hda\", \"id\": 34179234}, {\"src\": \"hda\", \"id\": 34179235}, {\"src\": \"hda\", \"id\": 34179236}, {\"src\": \"hda\", \"id\": 34179237}]}, \"reduce_or_iterate_selector\": \"reduce\", \"__current_case__\": 1}",
+            "split": "\"false\"",
+            "strandedness": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43945109,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.27.0.2",
+        "tool_version": "2.27.0.2",
+        "traceback": null,
+        "update_time": "2018-03-06 21:32:07.567127",
+        "user_id": 115477
+    },
+    {
+        "create_time": "2018-03-06 21:41:02.531238",
+        "datasets": [
+            {
+                "dataset_id": "23938840",
+                "extension": "bed",
+                "file_size": 58903,
+                "name": "MACS2 callpeak on data 25 and data 9 (summits in BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "23874579",
+                "extension": "bam",
+                "file_size": 452135499,
+                "name": "Aligned: Chd7_WT_FA",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "23874579",
+                "extension": "bam",
+                "file_size": 452135499,
+                "name": "Aligned: Chd7_WT_FA",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "23874581",
+                "extension": "bam",
+                "file_size": 454947043,
+                "name": "Aligned: Chd7_cKO_FA",
+                "param_name": "inputB2"
+            },
+            {
+                "dataset_id": "23874582",
+                "extension": "bam",
+                "file_size": 575099711,
+                "name": "Aligned: Chd7_WT_DSG",
+                "param_name": "inputB3"
+            },
+            {
+                "dataset_id": "23874583",
+                "extension": "bam",
+                "file_size": 775313957,
+                "name": "Aligned: Chd7_cKO_DSG",
+                "param_name": "inputB4"
+            },
+            {
+                "dataset_id": "23876867",
+                "extension": "bam",
+                "file_size": 1108004105,
+                "name": "Aligned: Input_Chd7_WT_FA",
+                "param_name": "inputB5"
+            },
+            {
+                "dataset_id": "23876868",
+                "extension": "bam",
+                "file_size": 1593005364,
+                "name": "Aligned: Input_Chd7_cKO_FA",
+                "param_name": "inputB6"
+            },
+            {
+                "dataset_id": "23876869",
+                "extension": "bam",
+                "file_size": 1316021102,
+                "name": "Aligned: Input_Chd7_cKO_DSG",
+                "param_name": "inputB7"
+            },
+            {
+                "dataset_id": "23876870",
+                "extension": "bam",
+                "file_size": 817060203,
+                "name": "Aligned: Input_Chd7_WT_DSG",
+                "param_name": "inputB8"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__bedtools@2.27.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.27.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3449807,
+        "id": 18630594,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12727130",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "a_or_b": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "hist": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 34244750}]}",
+            "overlap_a": "\"\"",
+            "overlap_b": "\"\"",
+            "reciprocal_overlap": "\"false\"",
+            "reduce_or_iterate": "{\"inputB\": {\"values\": [{\"src\": \"hda\", \"id\": 34176862}, {\"src\": \"hda\", \"id\": 34176864}, {\"src\": \"hda\", \"id\": 34176865}, {\"src\": \"hda\", \"id\": 34176866}, {\"src\": \"hda\", \"id\": 34179234}, {\"src\": \"hda\", \"id\": 34179235}, {\"src\": \"hda\", \"id\": 34179236}, {\"src\": \"hda\", \"id\": 34179237}]}, \"reduce_or_iterate_selector\": \"reduce\", \"__current_case__\": 1}",
+            "split": "\"false\"",
+            "strandedness": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43945109,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.27.0.2",
+        "tool_version": "2.27.0.2",
+        "traceback": null,
+        "update_time": "2018-03-06 21:59:39.363935",
+        "user_id": 115477
+    },
+    {
+        "create_time": "2018-03-06 23:15:49.974322",
+        "datasets": [
+            {
+                "dataset_id": "23938840",
+                "extension": "bed",
+                "file_size": 58903,
+                "name": "MACS2 callpeak on data 25 and data 9 (summits in BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "23876867",
+                "extension": "bam",
+                "file_size": 1108004105,
+                "name": "Aligned: Input_Chd7_WT_FA",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "23876867",
+                "extension": "bam",
+                "file_size": 1108004105,
+                "name": "Aligned: Input_Chd7_WT_FA",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "23876868",
+                "extension": "bam",
+                "file_size": 1593005364,
+                "name": "Aligned: Input_Chd7_cKO_FA",
+                "param_name": "inputB2"
+            },
+            {
+                "dataset_id": "23876869",
+                "extension": "bam",
+                "file_size": 1316021102,
+                "name": "Aligned: Input_Chd7_cKO_DSG",
+                "param_name": "inputB3"
+            },
+            {
+                "dataset_id": "23876870",
+                "extension": "bam",
+                "file_size": 817060203,
+                "name": "Aligned: Input_Chd7_WT_DSG",
+                "param_name": "inputB4"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__bedtools@2.27.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.27.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3449807,
+        "id": 18631805,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12728144",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "a_or_b": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "hist": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 34244750}]}",
+            "overlap_a": "\"\"",
+            "overlap_b": "\"\"",
+            "reciprocal_overlap": "\"false\"",
+            "reduce_or_iterate": "{\"inputB\": {\"values\": [{\"src\": \"hda\", \"id\": 34179234}, {\"src\": \"hda\", \"id\": 34179235}, {\"src\": \"hda\", \"id\": 34179236}, {\"src\": \"hda\", \"id\": 34179237}]}, \"reduce_or_iterate_selector\": \"reduce\", \"__current_case__\": 1}",
+            "split": "\"false\"",
+            "strandedness": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43945109,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.27.0.2",
+        "tool_version": "2.27.0.2",
+        "traceback": null,
+        "update_time": "2018-03-06 23:17:15.711261",
+        "user_id": 115477
+    },
+    {
+        "create_time": "2018-03-06 23:16:01.342265",
+        "datasets": [
+            {
+                "dataset_id": "23938840",
+                "extension": "bed",
+                "file_size": 58903,
+                "name": "MACS2 callpeak on data 25 and data 9 (summits in BED)",
+                "param_name": "inputA"
+            },
+            {
+                "dataset_id": "23874579",
+                "extension": "bam",
+                "file_size": 452135499,
+                "name": "Aligned: Chd7_WT_FA",
+                "param_name": "inputB"
+            },
+            {
+                "dataset_id": "23874579",
+                "extension": "bam",
+                "file_size": 452135499,
+                "name": "Aligned: Chd7_WT_FA",
+                "param_name": "inputB1"
+            },
+            {
+                "dataset_id": "23874581",
+                "extension": "bam",
+                "file_size": 454947043,
+                "name": "Aligned: Chd7_cKO_FA",
+                "param_name": "inputB2"
+            },
+            {
+                "dataset_id": "23874582",
+                "extension": "bam",
+                "file_size": 575099711,
+                "name": "Aligned: Chd7_WT_DSG",
+                "param_name": "inputB3"
+            },
+            {
+                "dataset_id": "23874583",
+                "extension": "bam",
+                "file_size": 775313957,
+                "name": "Aligned: Chd7_cKO_DSG",
+                "param_name": "inputB4"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__bedtools@2.27.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bedtools",
+                "version": "2.27.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3449807,
+        "id": 18631807,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12728146",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "a_or_b": "\"false\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "d": "\"false\"",
+            "dbkey": "\"mm10\"",
+            "hist": "\"false\"",
+            "inputA": "{\"values\": [{\"src\": \"hda\", \"id\": 34244750}]}",
+            "overlap_a": "\"\"",
+            "overlap_b": "\"\"",
+            "reciprocal_overlap": "\"false\"",
+            "reduce_or_iterate": "{\"inputB\": {\"values\": [{\"src\": \"hda\", \"id\": 34176862}, {\"src\": \"hda\", \"id\": 34176864}, {\"src\": \"hda\", \"id\": 34176865}, {\"src\": \"hda\", \"id\": 34176866}]}, \"reduce_or_iterate_selector\": \"reduce\", \"__current_case__\": 1}",
+            "split": "\"false\"",
+            "strandedness": "\"false\""
+        },
+        "runner_name": null,
+        "session_id": 43945109,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_coveragebed/2.27.0.2",
+        "tool_version": "2.27.0.2",
+        "traceback": null,
+        "update_time": "2018-03-06 23:17:27.519883",
+        "user_id": 115477
+    }
+]

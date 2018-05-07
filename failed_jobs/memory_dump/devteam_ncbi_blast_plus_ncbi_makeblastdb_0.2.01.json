@@ -1,0 +1,67 @@
+[
+    {
+        "create_time": "2018-03-01 19:14:44.380123",
+        "datasets": [
+            {
+                "dataset_id": "23854263",
+                "extension": "fasta",
+                "file_size": 89309744426,
+                "name": "nr",
+                "param_name": "input_file"
+            },
+            {
+                "dataset_id": "23854263",
+                "extension": "fasta",
+                "file_size": 89309744426,
+                "name": "nr",
+                "param_name": "input_file1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3447863,
+        "id": 18571619,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12663986",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "dbtype": "\"prot\"",
+            "hash_index": "\"true\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 34154378}]}",
+            "mask_data_file": "null",
+            "parse_seqids": "\"true\"",
+            "tax": "{\"__current_case__\": 0, \"taxselect\": \"\"}",
+            "title": "\"nr database March 1, 2018\""
+        },
+        "runner_name": null,
+        "session_id": 44258802,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_makeblastdb/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-03-01 19:23:41.047615",
+        "user_id": 106937
+    }
+]

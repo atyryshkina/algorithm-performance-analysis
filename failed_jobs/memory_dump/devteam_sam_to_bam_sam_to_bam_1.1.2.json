@@ -1,0 +1,273 @@
+[
+    {
+        "create_time": "2014-12-22 11:19:48.220197",
+        "datasets": [
+            {
+                "dataset_id": "10060001",
+                "extension": "fasta",
+                "file_size": 1124237312,
+                "name": "FASTQ to FASTA on data 1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10060028",
+                "extension": "sam",
+                "file_size": 1354030621,
+                "name": "Filter SAM on data 7",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2156215,
+        "id": 8455277,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "620598.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"6e48740c89cc11e4917a005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "source": "{\"index_source\": \"history\", \"ref_file\": 18046513, \"input1\": 18046548, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 20099033,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/1.1.2",
+        "tool_version": "1.1.2",
+        "traceback": null,
+        "update_time": "2014-12-22 13:56:14.418830",
+        "user_id": 57565
+    },
+    {
+        "create_time": "2017-09-13 02:42:18.998318",
+        "datasets": [
+            {
+                "dataset_id": "21258426",
+                "extension": "sam",
+                "file_size": 7942330911,
+                "name": "Filter SAM on data 28",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "21254143",
+                "extension": "fasta",
+                "file_size": 1426382960,
+                "name": "(iq1207)FASTQ to FASTA on data 11",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/sam_to_bam/30fdbaccb96b",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/sam_to_bam/30fdbaccb96b/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3250557,
+        "id": 16801476,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10870923.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"151ac7aa982d11e787b0005056ba55fb\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "source": "{\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 31201941}]}, \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 31207447}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/1.1.2",
+        "tool_version": "1.1.2",
+        "traceback": null,
+        "update_time": "2017-09-13 04:32:59.415495",
+        "user_id": 55366
+    },
+    {
+        "create_time": "2014-12-29 00:53:21.708044",
+        "datasets": [
+            {
+                "dataset_id": "10031906",
+                "extension": "fasta",
+                "file_size": 4453124312,
+                "name": "Col-0_reads.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10090451",
+                "extension": "sam",
+                "file_size": 16713679436,
+                "name": "Filter SAM on data 50",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2152310,
+        "id": 8475102,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "651498.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"130e23388ef511e484d5005056a51846\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Arabidopsis_thaliana_TAIR10.len\"",
+            "dbkey": "\"Arabidopsis_thaliana_TAIR10\"",
+            "source": "{\"index_source\": \"history\", \"ref_file\": 18015382, \"input1\": 18088514, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 20255652,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/1.1.2",
+        "tool_version": "1.1.2",
+        "traceback": null,
+        "update_time": "2014-12-29 01:54:00.626324",
+        "user_id": 57500
+    },
+    {
+        "create_time": "2014-12-22 16:09:51.331927",
+        "datasets": [
+            {
+                "dataset_id": "10060001",
+                "extension": "fasta",
+                "file_size": 1124237312,
+                "name": "FASTQ to FASTA on data 1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "10060028",
+                "extension": "sam",
+                "file_size": 1354030621,
+                "name": "Filter SAM on data 7",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2156215,
+        "id": 8456157,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "621168.rodeo",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "source": "{\"index_source\": \"history\", \"ref_file\": 18046537, \"input1\": 18046548, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 20198602,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/1.1.2",
+        "tool_version": "1.1.2",
+        "traceback": null,
+        "update_time": "2014-12-22 16:19:40.795364",
+        "user_id": 57565
+    },
+    {
+        "create_time": "2017-09-14 15:58:27.262249",
+        "datasets": [
+            {
+                "dataset_id": "21285660",
+                "extension": "sam",
+                "file_size": 11361050601,
+                "name": "Filter SAM on data 4",
+                "param_name": "input1"
+            },
+            {
+                "dataset_id": "21254085",
+                "extension": "fasta",
+                "file_size": 2016950449,
+                "name": "(iq1201)FASTQ to FASTA on data 10",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/sam_to_bam/30fdbaccb96b",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/sam_to_bam/30fdbaccb96b/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3253184,
+        "id": 16821752,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10891725.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"7af919c6996511e7ad02005056ba2773\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "source": "{\"index_source\": \"history\", \"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 31201883}]}, \"input1\": {\"values\": [{\"src\": \"hda\", \"id\": 31238299}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/1.1.2",
+        "tool_version": "1.1.2",
+        "traceback": null,
+        "update_time": "2017-09-14 18:47:19.182339",
+        "user_id": 55366
+    }
+]

@@ -1,0 +1,136 @@
+[
+    {
+        "create_time": "2016-12-08 17:34:12.642452",
+        "datasets": [
+            {
+                "dataset_id": "18112119",
+                "extension": "tabular",
+                "file_size": 7161114416,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "input_abundance"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/3.2.1/iuc/vegan_diversity/2c771b437502",
+                "script": "/galaxy/main/deps/R/3.2.1/iuc/vegan_diversity/2c771b437502/env.sh",
+                "version": "3.2.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vegan",
+                "path": "/galaxy/main/deps/vegan/2.3-0/iuc/vegan_diversity/2c771b437502",
+                "script": "/galaxy/main/deps/vegan/2.3-0/iuc/vegan_diversity/2c771b437502/env.sh",
+                "version": "2.3-0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2913197,
+        "id": 14519106,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8701899.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "header": "\"false\"",
+            "index_type": "{\"base\": \"exp(1)\", \"margin\": \"1\", \"__current_case__\": 0, \"index_type_selector\": \"shannon\"}",
+            "input_abundance": "{\"values\": [{\"src\": \"hda\", \"id\": 27543408}]}",
+            "sample_columns": "[\"2\"]",
+            "species_column": "\"1\""
+        },
+        "runner_name": null,
+        "session_id": 34726037,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vegan_diversity/vegan_diversity/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-12-08 17:40:48.756290",
+        "user_id": 89783
+    },
+    {
+        "create_time": "2016-12-10 17:44:41.671421",
+        "datasets": [
+            {
+                "dataset_id": "18141569",
+                "extension": "tabular",
+                "file_size": 7161114416,
+                "name": "FASTQ to FASTA on data 24",
+                "param_name": "input_abundance"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/3.2.1/iuc/vegan_diversity/2c771b437502",
+                "script": "/galaxy/main/deps/R/3.2.1/iuc/vegan_diversity/2c771b437502/env.sh",
+                "version": "3.2.1"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "vegan",
+                "path": "/galaxy/main/deps/vegan/2.3-0/iuc/vegan_diversity/2c771b437502",
+                "script": "/galaxy/main/deps/vegan/2.3-0/iuc/vegan_diversity/2c771b437502/env.sh",
+                "version": "2.3-0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2913197,
+        "id": 14539316,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8722361.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "header": "\"false\"",
+            "index_type": "{\"base\": \"exp(1)\", \"margin\": \"1\", \"__current_case__\": 0, \"index_type_selector\": \"shannon\"}",
+            "input_abundance": "{\"values\": [{\"src\": \"hda\", \"id\": 27576781}]}",
+            "sample_columns": "[\"2\"]",
+            "species_column": "\"1\""
+        },
+        "runner_name": null,
+        "session_id": 34726037,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/vegan_diversity/vegan_diversity/0.0.3",
+        "tool_version": "0.0.3",
+        "traceback": null,
+        "update_time": "2016-12-10 17:50:59.648191",
+        "user_id": 89783
+    }
+]

@@ -1,0 +1,635 @@
+[
+    {
+        "create_time": "2016-10-31 01:48:14.737209",
+        "datasets": [
+            {
+                "dataset_id": "17675534",
+                "extension": "fastqsanger",
+                "file_size": 42880644330,
+                "name": "Extract reads",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2871876,
+        "id": 14211075,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8422004.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5965853a2dd0fbd8e\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33947225,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-11-01 13:48:21.553202",
+        "user_id": 74690
+    },
+    {
+        "create_time": "2016-11-07 20:05:49.312263",
+        "datasets": [
+            {
+                "dataset_id": "17664816",
+                "extension": "fastqsanger",
+                "file_size": 43829678818,
+                "name": "Extract reads",
+                "param_name": "input_file"
+            },
+            {
+                "dataset_id": "17709438",
+                "extension": "len",
+                "file_size": 22348,
+                "name": "Convert FASTA to len file on data 3",
+                "param_name": "chromInfo"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2871876,
+        "id": 14277438,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8485811.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/017/709/dataset_17709438.dat\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59a3c538f31324ebd\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33947225,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-11-09 08:36:55.473480",
+        "user_id": 74690
+    },
+    {
+        "create_time": "2016-12-26 15:15:45.289866",
+        "datasets": [
+            {
+                "dataset_id": "18294993",
+                "extension": "fastqsanger",
+                "file_size": 12179098134,
+                "name": "Extract reads",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 1019079,
+        "id": 14647833,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8821956.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"3\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 27745304}]}"
+        },
+        "runner_name": null,
+        "session_id": 35074431,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2016-12-28 03:16:05.357752",
+        "user_id": 23505
+    },
+    {
+        "create_time": "2017-01-26 22:47:22.695880",
+        "datasets": [
+            {
+                "dataset_id": "18533709",
+                "extension": "fastqsanger",
+                "file_size": 20300946610,
+                "name": "Extract reads",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2970625,
+        "id": 14883265,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9042757.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28101932}]}"
+        },
+        "runner_name": null,
+        "session_id": 35615364,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-01-28 10:47:52.151682",
+        "user_id": 98271
+    },
+    {
+        "create_time": "2017-02-18 06:56:12.747785",
+        "datasets": [
+            {
+                "dataset_id": "18887609",
+                "extension": "fastqsanger",
+                "file_size": 1272513697,
+                "name": "EBI SRA: SRX1101156 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR210/006/SRR2107366.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3000637,
+        "id": 15072936,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9228741.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28407394}]}"
+        },
+        "runner_name": null,
+        "session_id": 36135088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-02-19 18:56:39.104202",
+        "user_id": 100429
+    },
+    {
+        "create_time": "2017-02-18 06:56:11.273124",
+        "datasets": [
+            {
+                "dataset_id": "18887606",
+                "extension": "fastqsanger",
+                "file_size": 1118525156,
+                "name": "EBI SRA: SRX1096863 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR210/009/SRR2102239.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3000637,
+        "id": 15072933,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9228737.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28407386}]}"
+        },
+        "runner_name": null,
+        "session_id": 36135088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-02-19 18:56:39.498662",
+        "user_id": 100429
+    },
+    {
+        "create_time": "2017-02-18 06:56:11.678580",
+        "datasets": [
+            {
+                "dataset_id": "18887607",
+                "extension": "fastqsanger",
+                "file_size": 1312832857,
+                "name": "EBI SRA: SRX1101116 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR210/001/SRR2107341.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3000637,
+        "id": 15072934,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9228739.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28407388}]}"
+        },
+        "runner_name": null,
+        "session_id": 36135088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-02-19 18:56:39.989049",
+        "user_id": 100429
+    },
+    {
+        "create_time": "2017-02-18 06:56:12.070107",
+        "datasets": [
+            {
+                "dataset_id": "18887608",
+                "extension": "fastqsanger",
+                "file_size": 1431232841,
+                "name": "EBI SRA: SRX1101150 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR210/003/SRR2107363.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3000637,
+        "id": 15072935,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9228738.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28407391}]}"
+        },
+        "runner_name": null,
+        "session_id": 36135088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-02-19 18:56:41.517644",
+        "user_id": 100429
+    },
+    {
+        "create_time": "2017-02-18 06:56:13.189595",
+        "datasets": [
+            {
+                "dataset_id": "18887610",
+                "extension": "fastqsanger",
+                "file_size": 1255145244,
+                "name": "EBI SRA: PRJNA289592 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR210/009/SRR2107369.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3000637,
+        "id": 15072937,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9228740.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28407396}]}"
+        },
+        "runner_name": null,
+        "session_id": 36135088,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-02-19 18:56:39.533417",
+        "user_id": 100429
+    },
+    {
+        "create_time": "2017-03-06 22:34:32.819158",
+        "datasets": [
+            {
+                "dataset_id": "18891745",
+                "extension": "fastqsanger",
+                "file_size": 15487755178,
+                "name": "Extract reads",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "reserved",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=reserved"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3021073,
+        "id": 15224431,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9373019.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 28645892}]}"
+        },
+        "runner_name": null,
+        "session_id": 36196859,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-03-08 10:34:51.069890",
+        "user_id": 5254
+    },
+    {
+        "create_time": "2017-06-05 20:02:54.434853",
+        "datasets": [
+            {
+                "dataset_id": "19807609",
+                "extension": "fastqsanger",
+                "file_size": 5377709146,
+                "name": "SRR1612397_CONTROL_1.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3128528,
+        "id": 16019513,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10111484.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"1\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29782959}]}"
+        },
+        "runner_name": null,
+        "session_id": 38234594,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-06-07 08:03:36.947008",
+        "user_id": 104767
+    },
+    {
+        "create_time": "2017-04-22 04:25:25.134133",
+        "datasets": [
+            {
+                "dataset_id": "19559654",
+                "extension": "fastqsanger",
+                "file_size": 14043153490,
+                "name": "EBI SRA: PRJNA273002 File: ftp://ftp.sra.ebi.ac.uk/vol1/srr/SRR176/008/SRR1767298.fastqsanger",
+                "param_name": "input_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "galaxy_sequence_utils",
+                "path": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88",
+                "script": "/galaxy/main/deps/galaxy_sequence_utils/1.0.0/devteam/fastq_to_tabular/bc9269529e88/env.sh",
+                "version": "1.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3048938,
+        "id": 15649097,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9766414.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "descr_columns": "\"2\"",
+            "input_file": "{\"values\": [{\"src\": \"hda\", \"id\": 29181134}]}"
+        },
+        "runner_name": null,
+        "session_id": 36925310,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_to_tabular/fastq_to_tabular/1.1.0",
+        "tool_version": "1.1.0",
+        "traceback": null,
+        "update_time": "2017-04-23 16:25:53.394473",
+        "user_id": 103039
+    }
+]

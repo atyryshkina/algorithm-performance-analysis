@@ -1,0 +1,543 @@
+[
+    {
+        "create_time": "2015-05-25 16:53:27.754493",
+        "datasets": [
+            {
+                "dataset_id": "11369034",
+                "extension": "gtf",
+                "file_size": 151230028,
+                "name": "Cuffcompare on data 383 and data 253: combined transcripts",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "8833304",
+                "extension": "bam",
+                "file_size": 11971093433,
+                "name": "Galaxy47-[Pybx_4_cell_Tophat2_on_data_27_and_data_26__accepted_hits].bam",
+                "param_name": "conditions_0|samples"
+            },
+            {
+                "dataset_id": "8833304",
+                "extension": "bam",
+                "file_size": 11971093433,
+                "name": "Galaxy47-[Pybx_4_cell_Tophat2_on_data_27_and_data_26__accepted_hits].bam",
+                "param_name": "conditions_0|samples1"
+            },
+            {
+                "dataset_id": "8833303",
+                "extension": "bam",
+                "file_size": 9259303441,
+                "name": "Galaxy42-[Mybx_4cell_Tophat2_on_data_25_and_data_24__accepted_hits].bam",
+                "param_name": "conditions_1|samples"
+            },
+            {
+                "dataset_id": "8833303",
+                "extension": "bam",
+                "file_size": 9259303441,
+                "name": "Galaxy42-[Mybx_4cell_Tophat2_on_data_25_and_data_24__accepted_hits].bam",
+                "param_name": "conditions_1|samples1"
+            },
+            {
+                "dataset_id": "11165170",
+                "extension": "fasta",
+                "file_size": 1440727708,
+                "name": "danRer7.fa",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2310424,
+        "id": 9529840,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3845060.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"library_type\": \"auto\", \"time_series\": \"False\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"hits_norm\": \"--compatible-hits-norm\", \"num_frag_count_draws\": \"100\", \"num_frag_assign_draws\": \"50\", \"min_reps_for_js_test\": \"1\", \"__current_case__\": 1, \"mask_file\": null}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": 19745006, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/danRer7.len\"",
+            "dbkey": "\"danRer7\"",
+            "dispersion_method": "\"blind\"",
+            "fdr": "\"0.05\"",
+            "gtf_input": "19767234",
+            "in_type": "{\"set_in_type\": \"BAM\", \"conditions\": [{\"__index__\": 0, \"name\": \"4-cell Pybx\", \"samples\": \"19740995\"}, {\"__index__\": 1, \"name\": \"4-cell Mybx\", \"samples\": \"19740994\"}], \"__current_case__\": 0}",
+            "include_count_files": "\"No\"",
+            "include_read_group_files": "\"No\"",
+            "length_correction": "\"\"",
+            "library_norm_method": "\"geometric\"",
+            "min_alignment_count": "\"10\"",
+            "multiread_correct": "\"True\""
+        },
+        "runner_name": null,
+        "session_id": 23265328,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.1",
+        "tool_version": "2.2.1.1",
+        "traceback": null,
+        "update_time": "2015-05-25 20:54:58.832459",
+        "user_id": 58875
+    },
+    {
+        "create_time": "2015-05-22 12:55:03.436795",
+        "datasets": [
+            {
+                "dataset_id": "11372801",
+                "extension": "gtf",
+                "file_size": 63128901,
+                "name": "c.elegans_refseq_anno.gtf",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "11372818",
+                "extension": "bam",
+                "file_size": 734993778,
+                "name": "N2_1 tophat",
+                "param_name": "conditions_0|samples"
+            },
+            {
+                "dataset_id": "11372818",
+                "extension": "bam",
+                "file_size": 734993778,
+                "name": "N2_1 tophat",
+                "param_name": "conditions_0|samples1"
+            },
+            {
+                "dataset_id": "11372824",
+                "extension": "bam",
+                "file_size": 614002557,
+                "name": "Tophat on data 2: accepted_hits",
+                "param_name": "conditions_0|samples2"
+            },
+            {
+                "dataset_id": "11372830",
+                "extension": "bam",
+                "file_size": 589756755,
+                "name": "Tophat on data 3: accepted_hits",
+                "param_name": "conditions_0|samples3"
+            },
+            {
+                "dataset_id": "11372837",
+                "extension": "bam",
+                "file_size": 654854573,
+                "name": "Tophat on data 4: accepted_hits",
+                "param_name": "conditions_1|samples"
+            },
+            {
+                "dataset_id": "11372837",
+                "extension": "bam",
+                "file_size": 654854573,
+                "name": "Tophat on data 4: accepted_hits",
+                "param_name": "conditions_1|samples1"
+            },
+            {
+                "dataset_id": "11372844",
+                "extension": "bam",
+                "file_size": 585988616,
+                "name": "Tophat on data 5: accepted_hits",
+                "param_name": "conditions_1|samples2"
+            },
+            {
+                "dataset_id": "11372850",
+                "extension": "bam",
+                "file_size": 627469384,
+                "name": "Tophat on data 6: accepted_hits",
+                "param_name": "conditions_1|samples3"
+            },
+            {
+                "dataset_id": "11372856",
+                "extension": "bam",
+                "file_size": 708619057,
+                "name": "Tophat on data 7: accepted_hits",
+                "param_name": "conditions_2|samples"
+            },
+            {
+                "dataset_id": "11372856",
+                "extension": "bam",
+                "file_size": 708619057,
+                "name": "Tophat on data 7: accepted_hits",
+                "param_name": "conditions_2|samples1"
+            },
+            {
+                "dataset_id": "11372862",
+                "extension": "bam",
+                "file_size": 628620689,
+                "name": "Tophat on data 8: accepted_hits",
+                "param_name": "conditions_2|samples2"
+            },
+            {
+                "dataset_id": "11372868",
+                "extension": "bam",
+                "file_size": 688616477,
+                "name": "Tophat on data 9: accepted_hits",
+                "param_name": "conditions_2|samples3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 1618025,
+        "id": 9519185,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3839655.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "additional": "{\"frag_mean_len\": \"40\", \"frag_len_std_dev\": \"10\", \"sAdditional\": \"Yes\", \"__current_case__\": 1}",
+            "advanced_settings": "{\"library_type\": \"auto\", \"time_series\": \"False\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"hits_norm\": \"--compatible-hits-norm\", \"num_frag_count_draws\": \"100\", \"num_frag_assign_draws\": \"50\", \"min_reps_for_js_test\": \"3\", \"__current_case__\": 1, \"mask_file\": null}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"cached\", \"index\": \"ce10\", \"__current_case__\": 0}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "dispersion_method": "\"per-condition\"",
+            "fdr": "\"0.05\"",
+            "gtf_input": "19771606",
+            "in_type": "{\"set_in_type\": \"BAM\", \"conditions\": [{\"__index__\": 0, \"name\": \"N2\", \"samples\": \"19771623,19771629,19771635\"}, {\"__index__\": 1, \"name\": \"arid-1\", \"samples\": \"19771642,19771649,19771655\"}, {\"__index__\": 2, \"name\": \"fkh-9\", \"samples\": \"19771661,19771667,19771673\"}], \"__current_case__\": 0}",
+            "include_count_files": "\"No\"",
+            "include_read_group_files": "\"No\"",
+            "length_correction": "\"\"",
+            "library_norm_method": "\"geometric\"",
+            "min_alignment_count": "\"10\"",
+            "multiread_correct": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23175198,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.1",
+        "tool_version": "2.2.1.1",
+        "traceback": null,
+        "update_time": "2015-05-22 13:25:31.267605",
+        "user_id": 39519
+    },
+    {
+        "create_time": "2015-05-25 20:57:28.180330",
+        "datasets": [
+            {
+                "dataset_id": "11372801",
+                "extension": "gtf",
+                "file_size": 63128901,
+                "name": "c.elegans_refseq_anno.gtf",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "11372818",
+                "extension": "bam",
+                "file_size": 734993778,
+                "name": "N2_1 tophat",
+                "param_name": "conditions_0|samples"
+            },
+            {
+                "dataset_id": "11372818",
+                "extension": "bam",
+                "file_size": 734993778,
+                "name": "N2_1 tophat",
+                "param_name": "conditions_0|samples1"
+            },
+            {
+                "dataset_id": "11372824",
+                "extension": "bam",
+                "file_size": 614002557,
+                "name": "Tophat on data 2: accepted_hits",
+                "param_name": "conditions_0|samples2"
+            },
+            {
+                "dataset_id": "11372830",
+                "extension": "bam",
+                "file_size": 589756755,
+                "name": "Tophat on data 3: accepted_hits",
+                "param_name": "conditions_0|samples3"
+            },
+            {
+                "dataset_id": "11372837",
+                "extension": "bam",
+                "file_size": 654854573,
+                "name": "Tophat on data 4: accepted_hits",
+                "param_name": "conditions_1|samples"
+            },
+            {
+                "dataset_id": "11372837",
+                "extension": "bam",
+                "file_size": 654854573,
+                "name": "Tophat on data 4: accepted_hits",
+                "param_name": "conditions_1|samples1"
+            },
+            {
+                "dataset_id": "11372844",
+                "extension": "bam",
+                "file_size": 585988616,
+                "name": "Tophat on data 5: accepted_hits",
+                "param_name": "conditions_1|samples2"
+            },
+            {
+                "dataset_id": "11372850",
+                "extension": "bam",
+                "file_size": 627469384,
+                "name": "Tophat on data 6: accepted_hits",
+                "param_name": "conditions_1|samples3"
+            },
+            {
+                "dataset_id": "11372856",
+                "extension": "bam",
+                "file_size": 708619057,
+                "name": "Tophat on data 7: accepted_hits",
+                "param_name": "conditions_2|samples"
+            },
+            {
+                "dataset_id": "11372856",
+                "extension": "bam",
+                "file_size": 708619057,
+                "name": "Tophat on data 7: accepted_hits",
+                "param_name": "conditions_2|samples1"
+            },
+            {
+                "dataset_id": "11372862",
+                "extension": "bam",
+                "file_size": 628620689,
+                "name": "Tophat on data 8: accepted_hits",
+                "param_name": "conditions_2|samples2"
+            },
+            {
+                "dataset_id": "11372868",
+                "extension": "bam",
+                "file_size": 688616477,
+                "name": "Tophat on data 9: accepted_hits",
+                "param_name": "conditions_2|samples3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 1618025,
+        "id": 9530468,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3845528.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "additional": "{\"frag_mean_len\": \"40\", \"frag_len_std_dev\": \"10\", \"sAdditional\": \"Yes\", \"__current_case__\": 1}",
+            "advanced_settings": "{\"library_type\": \"auto\", \"time_series\": \"False\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"hits_norm\": \"--compatible-hits-norm\", \"num_frag_count_draws\": \"100\", \"num_frag_assign_draws\": \"50\", \"min_reps_for_js_test\": \"3\", \"__current_case__\": 1, \"mask_file\": null}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"cached\", \"index\": \"ce10\", \"__current_case__\": 0}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "dispersion_method": "\"per-condition\"",
+            "fdr": "\"0.05\"",
+            "gtf_input": "19771606",
+            "in_type": "{\"set_in_type\": \"BAM\", \"conditions\": [{\"__index__\": 0, \"name\": \"N2\", \"samples\": \"19771623,19771629,19771635\"}, {\"__index__\": 1, \"name\": \"arid-1\", \"samples\": \"19771642,19771649,19771655\"}, {\"__index__\": 2, \"name\": \"fkh-9\", \"samples\": \"19771661,19771667,19771673\"}], \"__current_case__\": 0}",
+            "include_count_files": "\"No\"",
+            "include_read_group_files": "\"No\"",
+            "length_correction": "\"\"",
+            "library_norm_method": "\"geometric\"",
+            "min_alignment_count": "\"10\"",
+            "multiread_correct": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23175198,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.1",
+        "tool_version": "2.2.1.1",
+        "traceback": null,
+        "update_time": "2015-05-25 22:17:38.756453",
+        "user_id": 39519
+    },
+    {
+        "create_time": "2015-05-27 13:41:07.462634",
+        "datasets": [
+            {
+                "dataset_id": "11411869",
+                "extension": "gtf",
+                "file_size": 4777662,
+                "name": "Cufflinks on data 30: assembled transcripts",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "11411250",
+                "extension": "bam",
+                "file_size": 3190722187,
+                "name": "Tophat on data 1, data 25, and data 24: accepted_hits",
+                "param_name": "conditions_0|samples"
+            },
+            {
+                "dataset_id": "11411250",
+                "extension": "bam",
+                "file_size": 3190722187,
+                "name": "Tophat on data 1, data 25, and data 24: accepted_hits",
+                "param_name": "conditions_0|samples1"
+            },
+            {
+                "dataset_id": "11389390",
+                "extension": "bam",
+                "file_size": 2256396409,
+                "name": "Tophat on data 1, data 3, and data 2: accepted_hits",
+                "param_name": "conditions_1|samples"
+            },
+            {
+                "dataset_id": "11389390",
+                "extension": "bam",
+                "file_size": 2256396409,
+                "name": "Tophat on data 1, data 3, and data 2: accepted_hits",
+                "param_name": "conditions_1|samples1"
+            },
+            {
+                "dataset_id": "11380924",
+                "extension": "fasta",
+                "file_size": 23153448,
+                "name": "PlasmoDB-24_Pyoeliiyoelii17X_Genome(USE THIS FOR ANNOTATED GENOME).fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2315181,
+        "id": 9544641,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "3858479.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"library_type\": \"fr-secondstrand\", \"time_series\": \"False\", \"max_bundle_frags\": \"500000\", \"sAdvanced\": \"Yes\", \"max_mle_iterations\": \"5000\", \"hits_norm\": \"--compatible-hits-norm\", \"num_frag_count_draws\": \"100\", \"num_frag_assign_draws\": \"50\", \"min_reps_for_js_test\": \"3\", \"__current_case__\": 1, \"mask_file\": null}",
+            "bias_correction": "{\"do_bias_correction\": \"Yes\", \"seq_source\": {\"index_source\": \"history\", \"ref_file\": 19780716, \"__current_case__\": 1}, \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "dispersion_method": "\"pooled\"",
+            "fdr": "\"0.05\"",
+            "gtf_input": "19819596",
+            "in_type": "{\"set_in_type\": \"BAM\", \"conditions\": [{\"__index__\": 0, \"name\": \"\", \"samples\": \"19818660\"}, {\"__index__\": 1, \"name\": \"\", \"samples\": \"19791964\"}], \"__current_case__\": 0}",
+            "include_count_files": "\"Yes\"",
+            "include_read_group_files": "\"No\"",
+            "length_correction": "\"\"",
+            "library_norm_method": "\"geometric\"",
+            "min_alignment_count": "\"10\"",
+            "multiread_correct": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 23249388,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.1",
+        "tool_version": "2.2.1.1",
+        "traceback": null,
+        "update_time": "2015-05-27 14:12:15.709196",
+        "user_id": 60198
+    },
+    {
+        "create_time": "2016-04-07 01:03:06.260796",
+        "datasets": [
+            {
+                "dataset_id": "15059756",
+                "extension": "gtf",
+                "file_size": 159953431,
+                "name": "Cuffmerge on data 17, data 234, and others: merged transcripts",
+                "param_name": "gtf_input"
+            },
+            {
+                "dataset_id": "15072348",
+                "extension": "bam",
+                "file_size": 1751531062,
+                "name": "TopHat on data 132: accepted_hits",
+                "param_name": "conditions_0|samples"
+            },
+            {
+                "dataset_id": "15072348",
+                "extension": "bam",
+                "file_size": 1751531062,
+                "name": "TopHat on data 132: accepted_hits",
+                "param_name": "conditions_0|samples1"
+            },
+            {
+                "dataset_id": "15071118",
+                "extension": "bam",
+                "file_size": 2155820845,
+                "name": "TopHat on data 131: accepted_hits",
+                "param_name": "conditions_1|samples"
+            },
+            {
+                "dataset_id": "15071118",
+                "extension": "bam",
+                "file_size": 2155820845,
+                "name": "TopHat on data 131: accepted_hits",
+                "param_name": "conditions_1|samples1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_multi_development",
+        "destination_params": {
+            "nativeSpecification": "--time=00:30:00 --clusters=roundup --nodes=1 --ntasks=2 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler2",
+        "history_id": 2634023,
+        "id": 12357826,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6562353.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__job_resource": "{\"__job_resource__select\": \"yes\", \"__current_case__\": 1, \"tacc_compute_resource\": \"slurm_multi_development\"}",
+            "additional": "{\"sAdditional\": \"No\", \"__current_case__\": 0}",
+            "advanced_settings": "{\"sAdvanced\": \"No\", \"__current_case__\": 0}",
+            "bias_correction": "{\"do_bias_correction\": \"No\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "dispersion_method": "\"pooled\"",
+            "fdr": "\"0.05\"",
+            "gtf_input": "24123225",
+            "in_type": "{\"set_in_type\": \"BAM\", \"conditions\": [{\"__index__\": 0, \"name\": \"1\", \"samples\": \"24136896\"}, {\"__index__\": 1, \"name\": \"2\", \"samples\": \"24135488\"}], \"__current_case__\": 0}",
+            "include_count_files": "\"No\"",
+            "include_read_group_files": "\"No\"",
+            "length_correction": "\"\"",
+            "library_norm_method": "\"geometric\"",
+            "min_alignment_count": "\"10\"",
+            "multiread_correct": "\"False\""
+        },
+        "runner_name": null,
+        "session_id": 29353376,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.1",
+        "tool_version": "2.2.1.1",
+        "traceback": null,
+        "update_time": "2016-04-07 01:34:27.821210",
+        "user_id": 38442
+    }
+]

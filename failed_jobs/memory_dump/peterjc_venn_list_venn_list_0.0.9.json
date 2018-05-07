@@ -1,0 +1,833 @@
+[
+    {
+        "create_time": "2017-01-10 20:55:49.934614",
+        "datasets": [
+            {
+                "dataset_id": "18403776",
+                "extension": "fastqcssanger",
+                "file_size": 13070156847,
+                "name": "FASTQ joiner on data 121 and data 120",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "18403786",
+                "extension": "fastqsanger",
+                "file_size": 10909496331,
+                "name": "FASTQ joiner on data 129 and data 128",
+                "param_name": "sets_1|set"
+            },
+            {
+                "dataset_id": "18403789",
+                "extension": "fastqsanger",
+                "file_size": 10194550690,
+                "name": "FASTQ joiner on data 137 and data 136",
+                "param_name": "sets_2|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2900634,
+        "id": 14734137,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8897951.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 27866691}]}, \"lab\": \"Larvae 1\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 27866701}]}, \"lab\": \"Female 1\"}, {\"__index__\": 2, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 27866704}]}, \"lab\": \"Male 1\"}]",
+            "universe": "{\"type_select\": \"implicit\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35156693,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-01-10 21:28:10.142095",
+        "user_id": 76703
+    },
+    {
+        "create_time": "2017-11-08 19:38:49.702443",
+        "datasets": [
+            {
+                "dataset_id": "22100500",
+                "extension": "fastqsanger",
+                "file_size": 6749155881,
+                "name": "E13-NPEM-LDN_R1.fastq",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "22100514",
+                "extension": "fastqsanger",
+                "file_size": 6765574259,
+                "name": "E13-NPEM-LDN_R2.fastq",
+                "param_name": "sets_0|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3316940,
+        "id": 17385764,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11447403",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 32154833}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 32154815}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 41858252,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-11-08 19:55:32.890200",
+        "user_id": 115603
+    },
+    {
+        "create_time": "2017-01-10 14:20:27.579504",
+        "datasets": [
+            {
+                "dataset_id": "18403795",
+                "extension": "fastqsanger",
+                "file_size": 11210068555,
+                "name": "FASTQ joiner on data 141 and data 140",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "18403795",
+                "extension": "fastqsanger",
+                "file_size": 11210068555,
+                "name": "FASTQ joiner on data 141 and data 140",
+                "param_name": "sets_0|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2900634,
+        "id": 14723910,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8896717.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 27866710}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 27866710}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 34702160,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-01-10 20:01:47.536980",
+        "user_id": 76703
+    },
+    {
+        "create_time": "2017-08-23 16:47:38.426815",
+        "datasets": [
+            {
+                "dataset_id": "21041911",
+                "extension": "fasta",
+                "file_size": 4088894600,
+                "name": "Convert, Merge, Randomize on data 11 and data 6",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "21040877",
+                "extension": "tabular",
+                "file_size": 648048424,
+                "name": "FASTA-to-Tabular on data 78",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "21040876",
+                "extension": "tabular",
+                "file_size": 319061533,
+                "name": "FASTA-to-Tabular on data 77",
+                "param_name": "sets_1|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3228245,
+        "id": 16642270,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10714842.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 30965848}]}, \"lab\": \"Group\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 30965847}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 30966932}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39874271,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-08-23 16:51:03.231961",
+        "user_id": 109360
+    },
+    {
+        "create_time": "2018-01-11 00:31:46.882203",
+        "datasets": [
+            {
+                "dataset_id": "23024569",
+                "extension": "fastqsanger",
+                "file_size": 17806695303,
+                "name": "Trimmomatic on FASTQ Groomer on data 3",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "23024568",
+                "extension": "fastqsanger",
+                "file_size": 16936370938,
+                "name": "Trimmomatic on FASTQ Groomer on data 2",
+                "param_name": "sets_0|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3385761,
+        "id": 17998492,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12075351",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 33236750}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 33236751}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 43068523,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2018-01-11 00:43:55.655226",
+        "user_id": 110665
+    },
+    {
+        "create_time": "2018-02-26 20:27:51.927334",
+        "datasets": [
+            {
+                "dataset_id": "23792528",
+                "extension": "tabular",
+                "file_size": 18766993389,
+                "name": "Convert on data 9",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "23792515",
+                "extension": "tabular",
+                "file_size": 21062324956,
+                "name": "Convert on data 13",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "23792519",
+                "extension": "tabular",
+                "file_size": 18894458515,
+                "name": "Convert on data 12",
+                "param_name": "sets_1|set"
+            },
+            {
+                "dataset_id": "23792521",
+                "extension": "tabular",
+                "file_size": 21289640923,
+                "name": "Convert on data 11",
+                "param_name": "sets_2|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3443520,
+        "id": 18526735,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12624049",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 34080562}]}, \"lab\": \"MB3\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 34080566}]}, \"lab\": \"MB2\"}, {\"__index__\": 2, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 34080574}]}, \"lab\": \"MB1\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 34080601}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 44013004,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2018-02-26 21:24:34.161570",
+        "user_id": 122313
+    },
+    {
+        "create_time": "2016-10-17 22:21:01.090163",
+        "datasets": [
+            {
+                "dataset_id": "17491076",
+                "extension": "fastq",
+                "file_size": 31665869307,
+                "name": "IDOX_S1_R2_001.fastq",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "17491075",
+                "extension": "fastq",
+                "file_size": 31665869307,
+                "name": "IDOX_S1_R1_001.fastq",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "17491076",
+                "extension": "fastq",
+                "file_size": 31665869307,
+                "name": "IDOX_S1_R2_001.fastq",
+                "param_name": "sets_1|set"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2827058,
+        "id": 14102777,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8317844.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b1c20058d291ef8f\"}]}, \"lab\": \"Group\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5938e83d2036a4bb2\"}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5938e83d2036a4bb2\"}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33764982,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2016-10-17 22:43:52.949407",
+        "user_id": 90658
+    },
+    {
+        "create_time": "2017-02-14 12:05:29.522566",
+        "datasets": [
+            {
+                "dataset_id": "18828565",
+                "extension": "fasta",
+                "file_size": 11496895404,
+                "name": "Extract reads",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "18830966",
+                "extension": "fasta",
+                "file_size": 11496895404,
+                "name": "GenomeSpace importer on Galaxy History Item bbd44e69cb8906b5191f0945914b0581 (bbd44e69cb8906b5399ce68b2a5f763c) - 27: Extract reads.fasta",
+                "param_name": "sets_0|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 1582872,
+        "id": 15032958,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9189392.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 28341497}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 28338990}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 35930156,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-02-14 12:12:08.749898",
+        "user_id": 37190
+    },
+    {
+        "create_time": "2017-08-23 16:52:27.376251",
+        "datasets": [
+            {
+                "dataset_id": "21041911",
+                "extension": "fasta",
+                "file_size": 4088894600,
+                "name": "Convert, Merge, Randomize on data 11 and data 6",
+                "param_name": "main"
+            },
+            {
+                "dataset_id": "21040877",
+                "extension": "tabular",
+                "file_size": 648048424,
+                "name": "FASTA-to-Tabular on data 78",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "21040876",
+                "extension": "tabular",
+                "file_size": 319061533,
+                "name": "FASTA-to-Tabular on data 77",
+                "param_name": "sets_1|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3228245,
+        "id": 16642301,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10714879.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 30965848}]}, \"lab\": \"Group\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 30965847}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"main\": {\"values\": [{\"src\": \"hda\", \"id\": 30966932}]}, \"type_select\": \"explicit\", \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 39874271,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-08-23 16:55:44.214434",
+        "user_id": 109360
+    },
+    {
+        "create_time": "2017-01-10 20:48:23.516594",
+        "datasets": [
+            {
+                "dataset_id": "18403776",
+                "extension": "fastqcssanger",
+                "file_size": 13070156847,
+                "name": "FASTQ joiner on data 121 and data 120",
+                "param_name": "sets_0|set"
+            },
+            {
+                "dataset_id": "18403779",
+                "extension": "fastqsanger",
+                "file_size": 12220612695,
+                "name": "FASTQ joiner on data 125 and data 124",
+                "param_name": "sets_1|set"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "rpy",
+                "path": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/rpy/1.0.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.0.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "limma",
+                "path": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/limma/3.25.3/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "3.25.3"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "biopython",
+                "path": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1",
+                "script": "/galaxy/main/deps/biopython/1.65/peterjc/venn_list/26e35d5133a1/env.sh",
+                "version": "1.65"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2900634,
+        "id": 14734113,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8897847.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "main_lab": "\"Venn Diagram\"",
+            "sets": "[{\"__index__\": 0, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 27866691}]}, \"lab\": \"Group\"}, {\"__index__\": 1, \"set\": {\"values\": [{\"src\": \"hda\", \"id\": 27866694}]}, \"lab\": \"Group\"}]",
+            "universe": "{\"type_select\": \"implicit\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 35156693,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/venn_list/0.0.9",
+        "tool_version": "0.0.9",
+        "traceback": null,
+        "update_time": "2017-01-10 21:21:46.602796",
+        "user_id": 76703
+    }
+]

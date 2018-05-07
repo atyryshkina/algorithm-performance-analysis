@@ -1,0 +1,180 @@
+[
+    {
+        "create_time": "2016-02-17 01:02:47.241463",
+        "datasets": [
+            {
+                "dataset_id": "14399468",
+                "extension": "bam",
+                "file_size": 232438481,
+                "name": "TopHat on data 179 and data 178: accepted_hits",
+                "param_name": "inputFile"
+            },
+            {
+                "dataset_id": "11925746",
+                "extension": "tabular",
+                "file_size": 13424205,
+                "name": "mm10 refFlat",
+                "param_name": "refFlat"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2602161,
+        "id": 11853785,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6096900.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"7e50f482d51111e5837d005056a52a46\"",
+            "assume_sorted": "\"True\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "ignore_list": "[]",
+            "inputFile": "23385094",
+            "metric_accumulation_level": "\"ALL_READS\"",
+            "minimum_length": "\"500\"",
+            "refFlat": "23336971",
+            "reference_source": "{\"ref_file\": \"mm10\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "ribosomal_intervals": "null",
+            "rrna_fragment_percentage": "\"0.8\"",
+            "strand_specificity": "\"NONE\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 27438825,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_CollectRnaSeqMetrics/1.126.0",
+        "tool_version": "1.126.0",
+        "traceback": null,
+        "update_time": "2016-02-17 06:29:55.774113",
+        "user_id": 65894
+    },
+    {
+        "create_time": "2015-03-03 01:25:44.327221",
+        "datasets": [
+            {
+                "dataset_id": "10552189",
+                "extension": "gtf",
+                "file_size": 158314123,
+                "name": "UCSC Main on Human: knownGene (genome)",
+                "param_name": "refFlat"
+            },
+            {
+                "dataset_id": "10552085",
+                "extension": "bam",
+                "file_size": 2342322750,
+                "name": "ReorderSam on data 56: Reordered BAM",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler0",
+        "history_id": 427993,
+        "id": 8846105,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2978446.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"True\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "ignore_list": "[]",
+            "inputFile": "18702099",
+            "metric_accumulation_level": "[\"ALL_READS\"]",
+            "minimum_length": "\"500\"",
+            "refFlat": "18702205",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "ribosomal_intervals": "null",
+            "rrna_fragment_percentage": "\"0.8\"",
+            "strand_specificity": "\"NONE\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 21540956,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_CollectRnaSeqMetrics/1.126.0",
+        "tool_version": "1.126.0",
+        "traceback": null,
+        "update_time": "2015-03-03 01:28:25.494658",
+        "user_id": 6725
+    },
+    {
+        "create_time": "2015-03-03 01:49:06.017422",
+        "datasets": [
+            {
+                "dataset_id": "10552356",
+                "extension": "tabular",
+                "file_size": 19048370,
+                "name": "UCSC Main on Human: knownGene (genome)",
+                "param_name": "refFlat"
+            },
+            {
+                "dataset_id": "10552085",
+                "extension": "bam",
+                "file_size": 2342322750,
+                "name": "ReorderSam on data 56: Reordered BAM",
+                "param_name": "inputFile"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "rodeo_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=rodeo,roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 427993,
+        "id": 8846234,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "2978693.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "assume_sorted": "\"True\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "ignore_list": "[]",
+            "inputFile": "18702099",
+            "metric_accumulation_level": "[\"ALL_READS\"]",
+            "minimum_length": "\"500\"",
+            "refFlat": "18702379",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"__current_case__\": 0}",
+            "ribosomal_intervals": "null",
+            "rrna_fragment_percentage": "\"0.8\"",
+            "strand_specificity": "\"FIRST_READ_TRANSCRIPTION_STRAND\"",
+            "validation_stringency": "\"LENIENT\""
+        },
+        "runner_name": null,
+        "session_id": 21540956,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_CollectRnaSeqMetrics/1.126.0",
+        "tool_version": "1.126.0",
+        "traceback": null,
+        "update_time": "2015-03-03 01:52:05.197379",
+        "user_id": 6725
+    }
+]

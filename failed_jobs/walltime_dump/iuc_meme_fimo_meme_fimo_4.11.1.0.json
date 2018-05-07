@@ -1,0 +1,73 @@
+[
+    {
+        "create_time": "2018-01-20 16:54:36.835625",
+        "datasets": [
+            {
+                "dataset_id": "23185136",
+                "extension": "memexml",
+                "file_size": 304847,
+                "name": "Human_all_motif_JASPAR18.txt",
+                "param_name": "input_motifs"
+            },
+            {
+                "dataset_id": "23169022",
+                "extension": "fasta",
+                "file_size": 3273481150,
+                "name": "hg38.fa",
+                "param_name": "input_database"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-70ad9d9f7121f82d76ee9ab7f9f0ecb3ce1b2693878fbf0008bbeff7d153c6ad",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "graphicsmagick",
+                "version": "1.3.20"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/mulled-v1-70ad9d9f7121f82d76ee9ab7f9f0ecb3ce1b2693878fbf0008bbeff7d153c6ad",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "meme",
+                "version": "4.11.1"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3244929,
+        "id": 18094644,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12174223",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "fasta_type": "{\"input_database\": {\"values\": [{\"src\": \"hda\", \"id\": 33390515}]}, \"fasta_type_selector\": \"history\", \"__current_case__\": 1}",
+            "input_motifs": "{\"values\": [{\"src\": \"hda\", \"id\": 33407709}]}",
+            "non_commercial_use": "\"true\"",
+            "options_type": "{\"__current_case__\": 0, \"options_type_selector\": \"basic\"}"
+        },
+        "runner_name": null,
+        "session_id": 41548783,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/meme_fimo/meme_fimo/4.11.1.0",
+        "tool_version": "4.11.1.0",
+        "traceback": null,
+        "update_time": "2018-01-22 04:55:17.834490",
+        "user_id": 79460
+    }
+]

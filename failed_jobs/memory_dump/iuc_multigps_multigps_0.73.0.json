@@ -1,0 +1,551 @@
+[
+    {
+        "create_time": "2017-04-02 16:11:14.540232",
+        "datasets": [
+            {
+                "dataset_id": "19429023",
+                "extension": "bed",
+                "file_size": 1071859120,
+                "name": "MACS2 callpeak on data 74 and data 20 (Bedgraph Treatment)",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "19429024",
+                "extension": "bed",
+                "file_size": 1063325531,
+                "name": "MACS2 callpeak on data 73 and data 22 (Bedgraph Treatment)",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3003715,
+        "id": 15462468,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9592784.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"advanced_options\": \"hide\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 29027065}]}",
+            "dbkey": "\"hg19\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 29027064}]}"
+        },
+        "runner_name": null,
+        "session_id": 37050632,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-04-03 06:01:27.637886",
+        "user_id": 100565
+    },
+    {
+        "create_time": "2017-05-24 18:47:58.508014",
+        "datasets": [
+            {
+                "dataset_id": "17216146",
+                "extension": "bam",
+                "file_size": 1470769464,
+                "name": "MarkDuplicates F-KO1 bam",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "17216141",
+                "extension": "bam",
+                "file_size": 1944631417,
+                "name": "MarkDuplicates F-WT1 bam",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2714516,
+        "id": 15930705,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10028637.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"use_motif\": \"no\", \"__current_case__\": 1}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"reads_limits\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"report_binding_events\": \"no\", \"__current_case__\": 0}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 26518622}]}",
+            "dbkey": "\"mm10\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 26518627}]}"
+        },
+        "runner_name": null,
+        "session_id": 38195798,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-05-24 19:08:58.547642",
+        "user_id": 84889
+    },
+    {
+        "create_time": "2017-06-01 19:25:40.054892",
+        "datasets": [
+            {
+                "dataset_id": "20133142",
+                "extension": "bam",
+                "file_size": 4194816602,
+                "name": "Pca1_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "20133169",
+                "extension": "bam",
+                "file_size": 3692985646,
+                "name": "RWPE_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3102514,
+        "id": 15992087,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10086596.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"use_motif\": \"no\", \"__current_case__\": 1}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"reads_limits\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"report_binding_events\": \"no\", \"__current_case__\": 0}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 29839309}]}",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 29839282}]}"
+        },
+        "runner_name": null,
+        "session_id": 38343189,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-06-02 02:27:04.675858",
+        "user_id": 105389
+    },
+    {
+        "create_time": "2017-06-01 08:40:40.192985",
+        "datasets": [
+            {
+                "dataset_id": "20105274",
+                "extension": "bam",
+                "file_size": 1372042921,
+                "name": "Filter Bolni",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "20105275",
+                "extension": "bam",
+                "file_size": 1530642494,
+                "name": "Filter Zdravi",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3131485,
+        "id": 15987116,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10082190.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"reference_genome_cond\": {\"reference_genome\": \"hg19\", \"reference_genome_source\": \"cached\", \"__current_case__\": 0}, \"use_motif\": \"yes\", \"multigps_priors_cond\": {\"multigps_priors\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"nocache\": \"no\", \"nonunique\": \"no\", \"poissongausspb\": \"0\", \"reads_limits\": \"yes\", \"mappability\": \"0.8\", \"__current_case__\": 1, \"fixedpb\": \"0\"}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"diffp\": \"0.01\", \"minqvalue\": \"0.001\", \"report_binding_events\": \"yes\", \"__current_case__\": 1, \"nodifftests\": \"yes\", \"edgerod\": \"0.15\", \"minfold\": \"1.5\"}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 29807494}]}",
+            "dbkey": "\"hg19\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 29807493}]}"
+        },
+        "runner_name": null,
+        "session_id": 38196891,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-06-02 01:57:26.387191",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2017-06-27 18:39:28.513416",
+        "datasets": [
+            {
+                "dataset_id": "20277405",
+                "extension": "bam",
+                "file_size": 11116171088,
+                "name": "Merged OE-OE BAM",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "20277403",
+                "extension": "bam",
+                "file_size": 9446160324,
+                "name": "Merged OE-Ctl BAM",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 1323885,
+        "id": 16203313,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10279619.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"reference_genome_cond\": {\"reference_genome\": \"mm9canon\", \"reference_genome_source\": \"cached\", \"__current_case__\": 0}, \"use_motif\": \"yes\", \"multigps_priors_cond\": {\"multigps_priors\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"reads_limits\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"diffp\": \"0.01\", \"minqvalue\": \"0.05\", \"report_binding_events\": \"yes\", \"__current_case__\": 1, \"nodifftests\": \"yes\", \"edgerod\": \"0.15\", \"minfold\": \"1.5\"}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 30002971}]}",
+            "dbkey": "\"mm9\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 30002973}]}"
+        },
+        "runner_name": null,
+        "session_id": 38100451,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-06-27 18:51:04.528323",
+        "user_id": 31552
+    },
+    {
+        "create_time": "2017-06-01 19:25:38.929361",
+        "datasets": [
+            {
+                "dataset_id": "20077234",
+                "extension": "bam",
+                "file_size": 3779081202,
+                "name": "PCa1_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "20046301",
+                "extension": "bam",
+                "file_size": 2789868416,
+                "name": "RWPE_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3102514,
+        "id": 15992086,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10086595.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"use_motif\": \"no\", \"__current_case__\": 1}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"reads_limits\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"report_binding_events\": \"no\", \"__current_case__\": 0}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 29735537}]}",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 29775294}]}"
+        },
+        "runner_name": null,
+        "session_id": 38343189,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-06-02 02:53:34.809324",
+        "user_id": 105389
+    },
+    {
+        "create_time": "2017-06-27 18:21:39.914831",
+        "datasets": [
+            {
+                "dataset_id": "20277405",
+                "extension": "bam",
+                "file_size": 11116171088,
+                "name": "Merged OE-OE BAM",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "20277403",
+                "extension": "bam",
+                "file_size": 9446160324,
+                "name": "Merged OE-Ctl BAM",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 1323885,
+        "id": 16203183,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10279479.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"reference_genome_cond\": {\"reference_genome\": \"mm9canon\", \"reference_genome_source\": \"cached\", \"__current_case__\": 0}, \"use_motif\": \"yes\", \"multigps_priors_cond\": {\"multigps_priors\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"reads_limits\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"diffp\": \"0.01\", \"minqvalue\": \"0.05\", \"report_binding_events\": \"yes\", \"__current_case__\": 1, \"nodifftests\": \"yes\", \"edgerod\": \"0.15\", \"minfold\": \"1.5\"}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm9.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 30002971}]}",
+            "dbkey": "\"mm9\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 30002973}]}"
+        },
+        "runner_name": null,
+        "session_id": 38100451,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-06-27 18:32:44.801778",
+        "user_id": 31552
+    },
+    {
+        "create_time": "2017-06-02 05:08:49.583302",
+        "datasets": [
+            {
+                "dataset_id": "20105274",
+                "extension": "bam",
+                "file_size": 1372042921,
+                "name": "Filter Bolni",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "20105275",
+                "extension": "bam",
+                "file_size": 1530642494,
+                "name": "Filter Zdravi",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3131485,
+        "id": 15995558,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10090089.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"alphascale\": \"1.0\", \"nomodelupdate\": \"yes\", \"gauss_model_smoothing_cond\": {\"gaussmodelsmoothing\": \"no\", \"__current_case__\": 0}, \"readdistributionfile\": null, \"binding_model_smoothing_cond\": {\"splinesmoothparam\": \"30\", \"nomodelsmoothing\": \"yes\", \"__current_case__\": 0}, \"maxtrainingrounds\": \"3\", \"prlogconf\": \"-6\", \"fixedalpha\": \"0\", \"use_motif_cond\": {\"reference_genome_cond\": {\"reference_genome\": \"hg19\", \"reference_genome_source\": \"cached\", \"__current_case__\": 0}, \"use_motif\": \"yes\", \"multigps_priors_cond\": {\"multigps_priors\": \"no\", \"__current_case__\": 0}, \"__current_case__\": 0}, \"scale_data_cond\": {\"__current_case__\": 1, \"scale_data\": \"no\"}, \"advanced_options\": \"display\", \"reads_limits_options_cond\": {\"nocache\": \"no\", \"nonunique\": \"no\", \"poissongausspb\": \"0\", \"reads_limits\": \"yes\", \"mappability\": \"0.8\", \"__current_case__\": 1, \"fixedpb\": \"0\"}, \"__current_case__\": 0, \"minmodelupdateevents\": \"500\", \"report_binding_events_cond\": {\"diffp\": \"0.001\", \"minqvalue\": \"0.001\", \"report_binding_events\": \"yes\", \"__current_case__\": 1, \"nodifftests\": \"yes\", \"edgerod\": \"0.15\", \"minfold\": \"1.5\"}, \"exclude\": null, \"mlconfignotshared\": \"yes\", \"fixedmodelrange\": \"no\", \"jointinmodel\": \"no\"}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 29807494}]}",
+            "dbkey": "\"hg19\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 29807493}]}"
+        },
+        "runner_name": null,
+        "session_id": 38196891,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-06-03 02:26:08.457456",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2017-09-01 19:02:01.337645",
+        "datasets": [
+            {
+                "dataset_id": "21139783",
+                "extension": "bam",
+                "file_size": 582614032,
+                "name": "Map with Bowtie for Illumina on data 31: mapped reads",
+                "param_name": "expt"
+            },
+            {
+                "dataset_id": "21139777",
+                "extension": "bam",
+                "file_size": 565495442,
+                "name": "Map with Bowtie for Illumina on data 30: mapped reads",
+                "param_name": "ctrl"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__multigps@0.73",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "multigps",
+                "version": "0.73"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3231547,
+        "id": 16713342,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10785715.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options_cond": "{\"advanced_options\": \"hide\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "ctrl": "{\"values\": [{\"src\": \"hda\", \"id\": 31076587}]}",
+            "dbkey": "\"hg19\"",
+            "expt": "{\"values\": [{\"src\": \"hda\", \"id\": 31076593}]}"
+        },
+        "runner_name": null,
+        "session_id": 39261442,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multigps/multigps/0.73.0",
+        "tool_version": "0.73.0",
+        "traceback": null,
+        "update_time": "2017-09-02 11:44:37.205165",
+        "user_id": 108873
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "create_time": "2018-02-01 09:20:00.533987",
+        "datasets": [
+            {
+                "dataset_id": "23364268",
+                "extension": "tabular",
+                "file_size": 19960938,
+                "name": "UCSC Main on Human: knownGene (genome)",
+                "param_name": "input1"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "emboss",
+                "path": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee",
+                "script": "/galaxy/main/deps/emboss/5.0.0/devteam/emboss_5/b810c96613ee/env.sh",
+                "version": "5.0.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3410821,
+        "id": 18220585,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12301130",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "input1": "{\"values\": [{\"src\": \"hda\", \"id\": 33605717}]}",
+            "termini": "\"yes\""
+        },
+        "runner_name": null,
+        "session_id": 43555954,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/emboss_5/EMBOSS: pepstats71/5.0.0",
+        "tool_version": "5.0.0",
+        "traceback": null,
+        "update_time": "2018-02-01 09:21:12.391478",
+        "user_id": 120952
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "create_time": "2017-10-12 17:17:46.155505",
+        "datasets": [
+            {
+                "dataset_id": "21666919",
+                "extension": "tabular",
+                "file_size": 707991553,
+                "name": "_SolTub_3.0_genomic.fna",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/lda_analysis/f38763b52f33",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/lda_analysis/f38763b52f33/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3284933,
+        "id": 17089291,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11145346.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cond": "\"3\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 31667248}]}"
+        },
+        "runner_name": null,
+        "session_id": 41245153,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/lda_analysis/lda_analy1/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-10-14 05:24:39.656882",
+        "user_id": null
+    },
+    {
+        "create_time": "2017-11-03 11:11:07.176584",
+        "datasets": [
+            {
+                "dataset_id": "22005776",
+                "extension": "tabular",
+                "file_size": 48878730,
+                "name": "All_over_taxonomy.csv",
+                "param_name": "input"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "R",
+                "path": "/galaxy/main/deps/R/2.11.0/devteam/lda_analysis/f38763b52f33",
+                "script": "/galaxy/main/deps/R/2.11.0/devteam/lda_analysis/f38763b52f33/env.sh",
+                "version": "2.11.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3306908,
+        "id": 17315712,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11376004",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "cond": "\"3\"",
+            "dbkey": "\"?\"",
+            "input": "{\"values\": [{\"src\": \"hda\", \"id\": 32047720}]}"
+        },
+        "runner_name": null,
+        "session_id": 41669533,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/lda_analysis/lda_analy1/1.0.1",
+        "tool_version": "1.0.1",
+        "traceback": null,
+        "update_time": "2017-11-04 23:43:53.613843",
+        "user_id": 114883
+    }
+]

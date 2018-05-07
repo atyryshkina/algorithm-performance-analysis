@@ -1,0 +1,78 @@
+[
+    {
+        "create_time": "2017-03-29 11:45:29.606327",
+        "datasets": [
+            {
+                "dataset_id": "19376922",
+                "extension": "fasta",
+                "file_size": 1333168935,
+                "name": "xxx.rm.fasta",
+                "param_name": "fasta"
+            },
+            {
+                "dataset_id": "19376784",
+                "extension": "fasta",
+                "file_size": 7546348,
+                "name": "core_set_16s_unaligned.fasta",
+                "param_name": "reference"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__mothur@_uv_",
+                "exact": false,
+                "model_class": "MergedCondaDependency",
+                "name": "mothur",
+                "version": "1.33"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3050260,
+        "id": 15423289,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9555407.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "alignment": "{\"ucl\": \"false\", \"__current_case__\": 0}",
+            "chimealns": "\"false\"",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "chunks": "\"4\"",
+            "dbkey": "\"?\"",
+            "dereplicate": "\"false\"",
+            "dn": "\"1.4\"",
+            "fasta": "{\"values\": [{\"src\": \"hda\", \"id\": 28968149}]}",
+            "idsmoothwindow": "\"32\"",
+            "maxlen": "\"0\"",
+            "maxp": "\"2\"",
+            "minchunk": "\"64\"",
+            "mindiv": "\"0.5\"",
+            "minh": "\"0.3\"",
+            "minlen": "\"0\"",
+            "skipgaps": "\"true\"",
+            "skipgaps2": "\"true\"",
+            "template": "{\"source\": \"hist\", \"reference\": {\"values\": [{\"src\": \"hda\", \"id\": 28968002}]}, \"__current_case__\": 1}",
+            "xa": "\"1.0\"",
+            "xn": "\"8.0\""
+        },
+        "runner_name": null,
+        "session_id": 36947219,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/mothur_toolsuite/mothur_chimera_uchime/1.23.0",
+        "tool_version": "1.23.0",
+        "traceback": null,
+        "update_time": "2017-03-31 00:43:23.602357",
+        "user_id": 103104
+    }
+]

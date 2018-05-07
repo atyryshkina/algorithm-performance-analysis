@@ -1,0 +1,3821 @@
+[
+    {
+        "create_time": "2017-05-18 14:47:12.176805",
+        "datasets": [
+            {
+                "dataset_id": "8061317",
+                "extension": "bam",
+                "file_size": 984816447,
+                "name": "HIF2a.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "8063430",
+                "extension": "bam",
+                "file_size": 902858765,
+                "name": "IgG.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "19991581",
+                "extension": "bed",
+                "file_size": 201077791,
+                "name": "MACS2 callpeak on data 42 and data 45 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "19972236",
+                "extension": "bam",
+                "file_size": 774434372,
+                "name": "Map with BWA on HIF2a(mapped reads in BAM format)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "19957187",
+                "extension": "bam",
+                "file_size": 822886556,
+                "name": "Map with BWA on control(mapped reads in BAM format)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "19973149",
+                "extension": "bed",
+                "file_size": 300252,
+                "name": "MACS on HIF2a_control (peaks: bed)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2335718,
+        "id": 15880565,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9980196.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 19955340}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29672569}]}, \"sample_id\": \"BEAS-2B-1\", \"tissue\": \"BEAS-2B\", \"replicate\": \"1\", \"factor\": \"HIF2a\", \"__index__\": 0, \"condition\": \"hypoxia\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 19955338}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29672513}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29672519}]}, \"sample_id\": \"786O-1\", \"tissue\": \"786O\", \"replicate\": \"1\", \"factor\": \"HIF2a\", \"__index__\": 1, \"condition\": \"hypoxia\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29672516}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 38056146,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-05-18 14:54:26.755115",
+        "user_id": 26920
+    },
+    {
+        "create_time": "2017-10-04 20:44:45.399226",
+        "datasets": [
+            {
+                "dataset_id": "21522718",
+                "extension": "bam",
+                "file_size": 1052662551,
+                "name": "Bowtie2 on data 12: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21574458",
+                "extension": "bed",
+                "file_size": 1430634990,
+                "name": "MACS2 callpeak on data 21 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21522761",
+                "extension": "bam",
+                "file_size": 1028666485,
+                "name": "Bowtie2 on data 15: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21574459",
+                "extension": "bed",
+                "file_size": 1412644759,
+                "name": "MACS2 callpeak on data 24 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "21522769",
+                "extension": "bam",
+                "file_size": 1155194264,
+                "name": "Bowtie2 on data 18: aligned reads (sorted BAM)",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "21574460",
+                "extension": "bed",
+                "file_size": 1586191241,
+                "name": "MACS2 callpeak on data 27 (Bedgraph Treatment)",
+                "param_name": "samples_2|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3273205,
+        "id": 17026859,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11082762.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31563105}]}, \"sample_id\": \"Ethyap\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31507317}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31563106}]}, \"sample_id\": \"TAM2YAP\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31507360}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31563107}]}, \"sample_id\": \"TAM24YAP\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 2, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31507368}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41048553,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-10-04 21:18:11.086747",
+        "user_id": 49474
+    },
+    {
+        "create_time": "2017-06-01 15:26:06.228362",
+        "datasets": [
+            {
+                "dataset_id": "20077234",
+                "extension": "bam",
+                "file_size": 3779081202,
+                "name": "PCa1_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20046301",
+                "extension": "bam",
+                "file_size": 2789868416,
+                "name": "RWPE_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "20143705",
+                "extension": "bed",
+                "file_size": 826982346,
+                "name": "PCa1_BreakSeq_1 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20133142",
+                "extension": "bam",
+                "file_size": 4194816602,
+                "name": "Pca1_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20133169",
+                "extension": "bam",
+                "file_size": 3692985646,
+                "name": "RWPE_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "20143706",
+                "extension": "bed",
+                "file_size": 1427421732,
+                "name": "PCa1_BreakSeq_2 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3102514,
+        "id": 15989948,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10085006.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29735537}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29850900}]}, \"sample_id\": \"PCa1_BreakSeq_1\", \"tissue\": \"PCa1 organoid\", \"replicate\": \"1\", \"factor\": \"DSB\", \"__index__\": 0, \"condition\": \"no treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29775294}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29839309}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29850901}]}, \"sample_id\": \"PCa1_BreakSeq_2\", \"tissue\": \"PCa1 organoid\", \"replicate\": \"2\", \"factor\": \"DSB\", \"__index__\": 1, \"condition\": \"no treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29839282}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 38343189,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-06-01 16:03:53.317432",
+        "user_id": 105389
+    },
+    {
+        "create_time": "2017-12-12 19:41:12.906400",
+        "datasets": [
+            {
+                "dataset_id": "22668186",
+                "extension": "bam",
+                "file_size": 1173741671,
+                "name": "N2 H3K27 Convert, Merge, Randomize on data 65, data 64, and others",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22669554",
+                "extension": "bam",
+                "file_size": 1771471007,
+                "name": "N2 input Convert, Merge, Randomize on data 86, data 85, and others",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22732132",
+                "extension": "bed",
+                "file_size": 1155574202,
+                "name": "MACS2 callpeak on data 86, data 85, and others (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22668148",
+                "extension": "bam",
+                "file_size": 990609625,
+                "name": "f49 H3K27 Convert, Merge, Randomize on data 41, data 40, and others",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22669553",
+                "extension": "bam",
+                "file_size": 1636981272,
+                "name": "f49 input Convert, Merge, Randomize on data 75, data 74, and others",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22732133",
+                "extension": "bed",
+                "file_size": 1033338484,
+                "name": "MACS2 callpeak on data 75, data 74, and others (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3357776,
+        "id": 17788571,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11857296",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32816736}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32883396}]}, \"sample_id\": \"N2\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32815302}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32816735}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32883397}]}, \"sample_id\": \"f49e8.2\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32815253}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40513132,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-12 19:54:10.113021",
+        "user_id": 80875
+    },
+    {
+        "create_time": "2017-07-25 21:19:48.060144",
+        "datasets": [
+            {
+                "dataset_id": "20673574",
+                "extension": "bam",
+                "file_size": 4036773805,
+                "name": "ChIP-1213-R1A.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20725227",
+                "extension": "bed",
+                "file_size": 55986445,
+                "name": "Concatenate on data 89 and data 90",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20673565",
+                "extension": "bam",
+                "file_size": 2541597179,
+                "name": "ChIP-0118-R1A.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20725227",
+                "extension": "bed",
+                "file_size": 55986445,
+                "name": "Concatenate on data 89 and data 90",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "20673573",
+                "extension": "bam",
+                "file_size": 5143079871,
+                "name": "ChIP-0320-R1A.bam",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "20725227",
+                "extension": "bed",
+                "file_size": 55986445,
+                "name": "Concatenate on data 89 and data 90",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "20673569",
+                "extension": "bam",
+                "file_size": 5359868986,
+                "name": "ChIP-1213-R2A.bam",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "20725227",
+                "extension": "bed",
+                "file_size": 55986445,
+                "name": "Concatenate on data 89 and data 90",
+                "param_name": "samples_3|peaks"
+            },
+            {
+                "dataset_id": "20673566",
+                "extension": "bam",
+                "file_size": 2481794104,
+                "name": "ChIP-0118-R2A.bam",
+                "param_name": "samples_4|bamreads"
+            },
+            {
+                "dataset_id": "20725227",
+                "extension": "bed",
+                "file_size": 55986445,
+                "name": "Concatenate on data 89 and data 90",
+                "param_name": "samples_4|peaks"
+            },
+            {
+                "dataset_id": "20673575",
+                "extension": "bam",
+                "file_size": 4246740541,
+                "name": "ChIP-0320-R2A.bam",
+                "param_name": "samples_5|bamreads"
+            },
+            {
+                "dataset_id": "20725227",
+                "extension": "bed",
+                "file_size": 55986445,
+                "name": "Concatenate on data 89 and data 90",
+                "param_name": "samples_5|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3197977,
+        "id": 16418132,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10483329.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30611078}]}, \"sample_id\": \"ChIP-1213-R1A\", \"tissue\": \"Breast\", \"replicate\": \"1\", \"factor\": \"H3K36me3\", \"__index__\": 0, \"condition\": \"WT\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30545770}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30611078}]}, \"sample_id\": \"ChIP-0118-R1A\", \"tissue\": \"Breast\", \"replicate\": \"2\", \"factor\": \"H3K36me3\", \"__index__\": 1, \"condition\": \"WT\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30545761}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30611078}]}, \"sample_id\": \"ChIP-0320-R1A\", \"tissue\": \"Breast\", \"replicate\": \"3\", \"factor\": \"H3K36me3\", \"__index__\": 2, \"condition\": \"WT\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30545769}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30611078}]}, \"sample_id\": \"ChIP-1213-R2A\", \"tissue\": \"Breast\", \"replicate\": \"1\", \"factor\": \"H3K36me3\", \"__index__\": 3, \"condition\": \"CDK19 KD\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30545765}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30611078}]}, \"sample_id\": \"ChIP-0118-R2A\", \"tissue\": \"Breast\", \"replicate\": \"2\", \"factor\": \"H3K36me3\", \"__index__\": 4, \"condition\": \"CDK19 KD\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30545762}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30611078}]}, \"sample_id\": \"ChIP-0320-R2A\", \"tissue\": \"Breast\", \"replicate\": \"3\", \"factor\": \"H3K36me3\", \"__index__\": 5, \"condition\": \"CDK19 KD\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30545771}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 39432631,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-07-25 21:23:29.363347",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2017-11-06 16:31:28.684441",
+        "datasets": [
+            {
+                "dataset_id": "22036742",
+                "extension": "bam",
+                "file_size": 1098722736,
+                "name": "Bowtie2 on data 280: PolII Rep1 WT S14 combined",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22036741",
+                "extension": "bam",
+                "file_size": 995102369,
+                "name": "Bowtie2 on data 279: INPUT WT Rep2 S16 combined",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22048918",
+                "extension": "bed",
+                "file_size": 1361128430,
+                "name": "MACS2 callpeak on data 306 and data 296 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22036120",
+                "extension": "bam",
+                "file_size": 935683678,
+                "name": "Bowtie2 on data 260: PolII QL Rep2 S9",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22036162",
+                "extension": "bam",
+                "file_size": 1222290264,
+                "name": "Bowtie2 on data 261: Input QL Rep 2 S6",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22048919",
+                "extension": "bed",
+                "file_size": 1346927754,
+                "name": "MACS2 callpeak on data 277 and data 276 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3313293,
+        "id": 17347686,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11411172",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/dm3.len\"",
+            "dbkey": "\"dm3\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32092707}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32095451}]}, \"sample_id\": \"wildtype\", \"tissue\": \"Tissue\", \"replicate\": \"2\", \"factor\": \"PolII\", \"__index__\": 0, \"condition\": \"USP+\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32092708}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32092688}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32095452}]}, \"sample_id\": \"QL\", \"tissue\": \"Tissue\", \"replicate\": \"2\", \"factor\": \"PolII\", \"__index__\": 1, \"condition\": \"USP-QL\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32092686}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41787512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-11-06 17:00:18.696114",
+        "user_id": 9277
+    },
+    {
+        "create_time": "2017-08-23 14:55:58.865858",
+        "datasets": [
+            {
+                "dataset_id": "21000968",
+                "extension": "bam",
+                "file_size": 856329073,
+                "name": "Galaxy155-[RmDup_C3].bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21000539",
+                "extension": "bam",
+                "file_size": 997190371,
+                "name": "Galaxy153-[RmDup_C1].bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "21001220",
+                "extension": "bed",
+                "file_size": 824275699,
+                "name": "MACS2 callpeak on data 941 and data 942 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21000332",
+                "extension": "bam",
+                "file_size": 1035896565,
+                "name": "Galaxy151-[RmDup_B3].bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21000054",
+                "extension": "bam",
+                "file_size": 1039254587,
+                "name": "Galaxy149-[RmDup_B1].bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "21041081",
+                "extension": "bed",
+                "file_size": 919689815,
+                "name": "MACS2 callpeak on data 939 and data 940 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3041826,
+        "id": 16641570,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10714086.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "format": "\"bed\"",
+            "pdf": "\"false\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30920035}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30920741}]}, \"sample_id\": \"N2\", \"tissue\": \"Soma\", \"replicate\": \"1\", \"factor\": \"H3K36me3\", \"__index__\": 0, \"condition\": \"1\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30920472}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30919525}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30966084}]}, \"sample_id\": \"csr-1\", \"tissue\": \"Soma\", \"replicate\": \"1\", \"factor\": \"H3k36me3\", \"__index__\": 1, \"condition\": \"1\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30919810}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 39216818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-08-23 15:33:21.509941",
+        "user_id": 83591
+    },
+    {
+        "create_time": "2017-08-28 18:28:03.417909",
+        "datasets": [
+            {
+                "dataset_id": "21000968",
+                "extension": "bam",
+                "file_size": 856329073,
+                "name": "Galaxy155-[RmDup_C3].bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21000539",
+                "extension": "bam",
+                "file_size": 997190371,
+                "name": "Galaxy153-[RmDup_C1].bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "21087585",
+                "extension": "bed",
+                "file_size": 824275699,
+                "name": "MACS2_N2_H3K36me3_1 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21000332",
+                "extension": "bam",
+                "file_size": 1035896565,
+                "name": "Galaxy151-[RmDup_B3].bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21000054",
+                "extension": "bam",
+                "file_size": 1039254587,
+                "name": "Galaxy149-[RmDup_B1].bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "21087586",
+                "extension": "bed",
+                "file_size": 919689815,
+                "name": "MACS2_csr-1_mut_H3K36me3_1 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3041826,
+        "id": 16675770,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10747622.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "format": "\"bed\"",
+            "pdf": "\"false\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30920035}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31018820}]}, \"sample_id\": \"N2a\", \"tissue\": \"BT474\", \"replicate\": \"1\", \"factor\": \"ER\", \"__index__\": 0, \"condition\": \"Resistent\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30920472}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30919525}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31018821}]}, \"sample_id\": \"N2b\", \"tissue\": \"BT474\", \"replicate\": \"1\", \"factor\": \"ER\", \"__index__\": 1, \"condition\": \"Resistent\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30919810}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 39216818,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-08-28 19:07:03.442152",
+        "user_id": 83591
+    },
+    {
+        "create_time": "2017-10-10 13:05:06.908307",
+        "datasets": [
+            {
+                "dataset_id": "20887992",
+                "extension": "bam",
+                "file_size": 950069466,
+                "name": "MarkDuplicates on Control1: BAM",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20952109",
+                "extension": "bed",
+                "file_size": 520970,
+                "name": "MACS2 callpeak on Control1 (broad Peaks)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20887994",
+                "extension": "bam",
+                "file_size": 926559336,
+                "name": "MarkDuplicates on Control2: BAM",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20952202",
+                "extension": "bed",
+                "file_size": 1049043,
+                "name": "MACS2 callpeak on Control2 (broad Peaks)",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "20887998",
+                "extension": "bam",
+                "file_size": 841233517,
+                "name": "MarkDuplicates on LPS1: BAM",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "20952213",
+                "extension": "bed",
+                "file_size": 875217,
+                "name": "MACS2 callpeak on LPS1 (broad Peaks)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "21630801",
+                "extension": "bam",
+                "file_size": 707774657,
+                "name": "MarkDuplicates on data 7: MarkDuplicates BAM output",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "21632828",
+                "extension": "bed",
+                "file_size": 2098417331,
+                "name": "MACS2 callpeak on data 9 and data 13 (Bedgraph Control)",
+                "param_name": "samples_3|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3281473,
+        "id": 17065098,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11123009.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31625016}]}, \"sample_id\": \"Control1\", \"tissue\": \"Monocytes\", \"replicate\": \"1\", \"factor\": \"H3K4me3\", \"__index__\": 0, \"condition\": \"Control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31624871}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31625053}]}, \"sample_id\": \"Control2\", \"tissue\": \"Monocytes\", \"replicate\": \"2\", \"factor\": \"H3K4me3\", \"__index__\": 1, \"condition\": \"Control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31624890}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31625090}]}, \"sample_id\": \"LPS1\", \"tissue\": \"Monocytes\", \"replicate\": \"1\", \"factor\": \"H3K4me3\", \"__index__\": 2, \"condition\": \"LPS\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31624906}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31628551}]}, \"sample_id\": \"LPS1\", \"tissue\": \"Monocytes\", \"replicate\": \"2\", \"factor\": \"H3K4me3\", \"__index__\": 3, \"condition\": \"LPS\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31626424}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41182166,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-10-10 13:41:12.654928",
+        "user_id": 112578
+    },
+    {
+        "create_time": "2017-06-01 15:46:58.581665",
+        "datasets": [
+            {
+                "dataset_id": "20046338",
+                "extension": "bam",
+                "file_size": 3177032736,
+                "name": "PCa2_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20046301",
+                "extension": "bam",
+                "file_size": 2789868416,
+                "name": "RWPE_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "20143981",
+                "extension": "bed",
+                "file_size": 701499055,
+                "name": "PCa2_BreakSeq_1 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20100797",
+                "extension": "bam",
+                "file_size": 3822064249,
+                "name": "PCa2_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20133169",
+                "extension": "bam",
+                "file_size": 3692985646,
+                "name": "RWPE_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "20143983",
+                "extension": "bed",
+                "file_size": 1391093861,
+                "name": "PCa2_BreakSeq_2 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3102514,
+        "id": 15990162,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10085156.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29735537}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29851184}]}, \"sample_id\": \"PCa2_BreakSeq_1\", \"tissue\": \"PCa2 organoid\", \"replicate\": \"1\", \"factor\": \"DSB\", \"__index__\": 0, \"condition\": \"no treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29735574}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29839309}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29851186}]}, \"sample_id\": \"PCa2_BreakSeq_2\", \"tissue\": \"PCa2 organoid\", \"replicate\": \"2\", \"factor\": \"DSB\", \"__index__\": 1, \"condition\": \"no treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29802160}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 38343189,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-06-01 16:25:32.410217",
+        "user_id": 105389
+    },
+    {
+        "create_time": "2017-09-15 19:43:16.981638",
+        "datasets": [
+            {
+                "dataset_id": "21149413",
+                "extension": "bam",
+                "file_size": 915865843,
+                "name": "Bowtie2 on Anti_HA_DT24_rep_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21145498",
+                "extension": "bam",
+                "file_size": 1234140259,
+                "name": "Bowtie2 on Input_DT24_rep_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "21309245",
+                "extension": "bed",
+                "file_size": 2311255335,
+                "name": "MACS2 callpeak on data 74 and data 86 (Bedgraph Control)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21149747",
+                "extension": "bam",
+                "file_size": 1213456272,
+                "name": "Bowtie2 on Anti_IgG_DT24_rep_1: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21145498",
+                "extension": "bam",
+                "file_size": 1234140259,
+                "name": "Bowtie2 on Input_DT24_rep_1: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "21309247",
+                "extension": "bed",
+                "file_size": 1814731444,
+                "name": "MACS2 callpeak on data 76 and data 96 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3232237,
+        "id": 16839109,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10905220.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 31082506}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31267768}]}, \"sample_id\": \"DT24_rep_1\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31086525}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 31082506}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31267770}]}, \"sample_id\": \"Anti_IgG_DT24_rep_1\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31086884}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40115743,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-09-15 20:17:15.915482",
+        "user_id": 100040
+    },
+    {
+        "create_time": "2017-10-29 03:18:31.299241",
+        "datasets": [
+            {
+                "dataset_id": "21807196",
+                "extension": "bam",
+                "file_size": 1590732698,
+                "name": "Map with BWA on data 99 (mapped reads in BAM format)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21807240",
+                "extension": "bam",
+                "file_size": 2860675683,
+                "name": "Map with BWA on data 191 (mapped reads in BAM format)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "21912125",
+                "extension": "bed",
+                "file_size": 2214677888,
+                "name": "MACS2 callpeak on data 353 and data 339 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21807187",
+                "extension": "bam",
+                "file_size": 1777918406,
+                "name": "Map with BWA on data 76 (mapped reads in BAM format)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21807240",
+                "extension": "bam",
+                "file_size": 2860675683,
+                "name": "Map with BWA on data 191 (mapped reads in BAM format)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "21912126",
+                "extension": "bed",
+                "file_size": 2205223987,
+                "name": "MACS2 callpeak on data 353 and data 337 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "21807207",
+                "extension": "bam",
+                "file_size": 1430994786,
+                "name": "Map with BWA on data 125 (mapped reads in BAM format)",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "21807240",
+                "extension": "bam",
+                "file_size": 2860675683,
+                "name": "Map with BWA on data 191 (mapped reads in BAM format)",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "21912127",
+                "extension": "bed",
+                "file_size": 1898298924,
+                "name": "MACS2 callpeak on data 353 and data 343 (Bedgraph Treatment)",
+                "param_name": "samples_2|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3273029,
+        "id": 17252395,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11312716",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 31824710}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31942489}]}, \"sample_id\": \"LIN9\", \"tissue\": \"MCF10A\", \"replicate\": \"1\", \"factor\": \"LIN9\", \"__index__\": 0, \"condition\": \"minus_doxy\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31824666}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 31824710}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31942490}]}, \"sample_id\": \"YAP\", \"tissue\": \"MCF10A\", \"replicate\": \"1\", \"factor\": \"YAP\", \"__index__\": 1, \"condition\": \"plus_doxy\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31824657}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 31824710}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31942491}]}, \"sample_id\": \"H3K4me1\", \"tissue\": \"MCF10A\", \"replicate\": \"1\", \"factor\": \"H3K4me1\", \"__index__\": 2, \"condition\": \"plus_doxy\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31824677}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41003797,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-10-29 03:59:52.159364",
+        "user_id": 8352
+    },
+    {
+        "create_time": "2017-08-19 13:26:47.723623",
+        "datasets": [
+            {
+                "dataset_id": "20991014",
+                "extension": "bam",
+                "file_size": 3953283953,
+                "name": "BOLNIKI_BAM filtered",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20992285",
+                "extension": "bed",
+                "file_size": 540938,
+                "name": "MACS2 callpeak on data 20 and data 19 (broad Peaks)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20991015",
+                "extension": "bam",
+                "file_size": 4334618066,
+                "name": "ZK_BAM filtered",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20993314",
+                "extension": "bed",
+                "file_size": 1592398826,
+                "name": "MACS2 callpeak on data 20 and data 19 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3225258,
+        "id": 16614218,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10686026.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30911011}]}, \"sample_id\": \"PFAPA_bolniki\", \"tissue\": \"Blood\", \"replicate\": \"1\", \"factor\": \"Metilacija\", \"__index__\": 0, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30909656}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30912100}]}, \"sample_id\": \"Zdrave_kontrole\", \"tissue\": \"blood\", \"replicate\": \"1\", \"factor\": \"metilacija\", \"__index__\": 1, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30909657}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 38196891,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-08-19 13:35:59.728882",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2017-05-27 13:35:34.983470",
+        "datasets": [
+            {
+                "dataset_id": "20091093",
+                "extension": "bam",
+                "file_size": 6361758952,
+                "name": "DPRing1B.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20091092",
+                "extension": "bam",
+                "file_size": 2460456401,
+                "name": "DPPcGInput.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "20091776",
+                "extension": "bed",
+                "file_size": 2487082168,
+                "name": "MACS2 callpeak on data 3 and data 4 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20091091",
+                "extension": "bam",
+                "file_size": 8455830964,
+                "name": "BMRing1B.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20091090",
+                "extension": "bam",
+                "file_size": 7167211917,
+                "name": "BMPcGInput.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "20091777",
+                "extension": "bed",
+                "file_size": 3904467612,
+                "name": "MACS2 callpeak on data 1 and data 2 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3129500,
+        "id": 15951696,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10050072.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29791602}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29792336}]}, \"sample_id\": \"DP\", \"tissue\": \"DP\", \"replicate\": \"1\", \"factor\": \"Ring1B\", \"__index__\": 0, \"condition\": \"Ring1B\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29791603}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29791600}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29792337}]}, \"sample_id\": \"BM\", \"tissue\": \"BM\", \"replicate\": \"1\", \"factor\": \"Ring1B\", \"__index__\": 1, \"condition\": \"Ring1B\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29791601}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 37671471,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-05-27 15:17:07.431576",
+        "user_id": 57381
+    },
+    {
+        "create_time": "2018-01-13 02:50:12.901884",
+        "datasets": [
+            {
+                "dataset_id": "23071451",
+                "extension": "bam",
+                "file_size": 5367717602,
+                "name": "Filter SAM or BAM, outputBAM on 5hmC 3d-",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "23082233",
+                "extension": "bed",
+                "file_size": 2824547655,
+                "name": "MACS2 callpeak on data 18 and data 23 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "23058976",
+                "extension": "bam",
+                "file_size": 4410013358,
+                "name": "Filter SAM, output BAM on data 5hmC 3d+",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "23082234",
+                "extension": "bed",
+                "file_size": 2446971938,
+                "name": "MACS2 callpeak on data 18 and data 17 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3389140,
+        "id": 18024786,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12102256",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33297916}]}, \"sample_id\": \"3d-\", \"tissue\": \"MC3T3-E1\", \"replicate\": \"1\", \"factor\": \"RT\", \"__index__\": 0, \"condition\": \"non-treated\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33285999}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33297917}]}, \"sample_id\": \"3d+\", \"tissue\": \"MC3T3-E1\", \"replicate\": \"1\", \"factor\": \"RT\", \"__index__\": 1, \"condition\": \"treated\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33273076}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42991500,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2018-01-13 03:27:27.543879",
+        "user_id": 108909
+    },
+    {
+        "create_time": "2017-11-06 21:31:26.422675",
+        "datasets": [
+            {
+                "dataset_id": "22052695",
+                "extension": "bam",
+                "file_size": 1431677130,
+                "name": "22R_wt6_hox.sort.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22053717",
+                "extension": "bed",
+                "file_size": 1638680744,
+                "name": "MACS2 callpeak on data 2 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22052694",
+                "extension": "bam",
+                "file_size": 1411444184,
+                "name": "22R_mt2_hox.sort.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22053718",
+                "extension": "bed",
+                "file_size": 1700044880,
+                "name": "MACS2 callpeak on data 1 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3313765,
+        "id": 17350912,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11414270",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"wig\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32100844}]}, \"sample_id\": \"22rv1_hoxb13_wt\", \"tissue\": \"22rv1\", \"replicate\": \"1\", \"factor\": \"hoxb13\", \"__index__\": 0, \"condition\": \"wt\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32099568}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32100845}]}, \"sample_id\": \"22rv1_hoxb13_g84e\", \"tissue\": \"22rv1\", \"replicate\": \"1\", \"factor\": \"hoxb13_g84e\", \"__index__\": 1, \"condition\": \"g84e\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32099567}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41794932,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-11-06 22:06:22.518838",
+        "user_id": 4197
+    },
+    {
+        "create_time": "2017-05-24 22:53:55.559528",
+        "datasets": [
+            {
+                "dataset_id": "20054990",
+                "extension": "bam",
+                "file_size": 491780973,
+                "name": "MBD-B_S3.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20065039",
+                "extension": "bed",
+                "file_size": 162183403,
+                "name": "MACS2 callpeak on data 88 and data 85 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20055118",
+                "extension": "bam",
+                "file_size": 502408599,
+                "name": "MBD-Z_S4.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20065040",
+                "extension": "bed",
+                "file_size": 335988365,
+                "name": "MACS2 callpeak on data 87 and data 86 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3125084,
+        "id": 15932455,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10030790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29760622}]}, \"sample_id\": \"bOLANI\", \"tissue\": \"BLOOD\", \"replicate\": \"1\", \"factor\": \"METH\", \"__index__\": 0, \"condition\": \"pFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29748624}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29760623}]}, \"sample_id\": \"KONTROLE\", \"tissue\": \"BLOOD\", \"replicate\": \"1\", \"factor\": \"METH\", \"__index__\": 1, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29748753}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 38196891,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-05-24 23:06:15.716037",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2017-11-16 00:08:39.164098",
+        "datasets": [
+            {
+                "dataset_id": "22254700",
+                "extension": "bam",
+                "file_size": 2090220185,
+                "name": "BAM filter BOLNI_MBD_RUN3",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22254698",
+                "extension": "bam",
+                "file_size": 2029652560,
+                "name": "BAM filter ZDRAVI_MBD_RUN3",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22254696",
+                "extension": "bam",
+                "file_size": 2206242125,
+                "name": "BAM filter BOLNI_MBD_RUN2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22254694",
+                "extension": "bam",
+                "file_size": 2110507645,
+                "name": "BAM filter ZDRAVI_MBD_RUN2",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "22254692",
+                "extension": "bam",
+                "file_size": 1767961693,
+                "name": "BAM filter BOLNI_MBD_RUN1",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "22254690",
+                "extension": "bam",
+                "file_size": 1385392091,
+                "name": "BAM filter ZDRAVI_MBD_RUN1",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "22265574",
+                "extension": "bed",
+                "file_size": 6352,
+                "name": "MACS2 bdgdiff on data 81, data 74, and others (Common)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "22254699",
+                "extension": "bam",
+                "file_size": 1341977983,
+                "name": "BAM filter BOLNI_MeDIP_RUN3",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "22254697",
+                "extension": "bam",
+                "file_size": 1363259412,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN3",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_3|peaks"
+            },
+            {
+                "dataset_id": "22254695",
+                "extension": "bam",
+                "file_size": 1113458879,
+                "name": "BAM filter BOLNI_MeDIP_RUN2",
+                "param_name": "samples_4|bamreads"
+            },
+            {
+                "dataset_id": "22254693",
+                "extension": "bam",
+                "file_size": 1241073424,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN2",
+                "param_name": "samples_4|bamcontrol"
+            },
+            {
+                "dataset_id": "22257352",
+                "extension": "bed",
+                "file_size": 3487868035,
+                "name": "MACS2 callpeak on data 57, data 53, and others (Bedgraph Control)",
+                "param_name": "samples_4|peaks"
+            },
+            {
+                "dataset_id": "22254691",
+                "extension": "bam",
+                "file_size": 1509570832,
+                "name": "BAM filter BOLNI_MeDIP_RUN1",
+                "param_name": "samples_5|bamreads"
+            },
+            {
+                "dataset_id": "22254689",
+                "extension": "bam",
+                "file_size": 2110425872,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN1",
+                "param_name": "samples_5|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_5|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3324146,
+        "id": 17476293,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11533465",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333242}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MBDr3\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 0, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333244}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333238}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MBDr2\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 1, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333240}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333234}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345044}]}, \"sample_id\": \"MBDr1\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 2, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333236}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333241}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MeDIPr3\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 3, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333243}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333237}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32336272}]}, \"sample_id\": \"MeDIPr2\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 4, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333239}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333233}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MeDIPr1\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 5, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333235}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40238625,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-11-16 00:17:11.391615",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2018-01-13 03:59:42.723511",
+        "datasets": [
+            {
+                "dataset_id": "23071451",
+                "extension": "bam",
+                "file_size": 5367717602,
+                "name": "Filter SAM or BAM, outputBAM on 5hmC 3d-",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "23081777",
+                "extension": "bed",
+                "file_size": 2924305939,
+                "name": "MACS2 callpeak on data 18 and data 23 (Bedgraph Control)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "23058976",
+                "extension": "bam",
+                "file_size": 4410013358,
+                "name": "Filter SAM, output BAM on data 5hmC 3d+",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "23082345",
+                "extension": "bed",
+                "file_size": 4563150465,
+                "name": "MACS2 callpeak on data 18 and data 17 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3389140,
+        "id": 18024864,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12102382",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33297458}]}, \"sample_id\": \"3d-\", \"tissue\": \"MC3T3-E1\", \"replicate\": \"1\", \"factor\": \"RT\", \"__index__\": 0, \"condition\": \"non-treated\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33285999}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33298052}]}, \"sample_id\": \"3d+\", \"tissue\": \"MC3T3-E1\", \"replicate\": \"1\", \"factor\": \"RT\", \"__index__\": 1, \"condition\": \"treated\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33273076}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42991500,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2018-01-13 04:51:09.667942",
+        "user_id": 108909
+    },
+    {
+        "create_time": "2017-12-17 13:29:07.848502",
+        "datasets": [
+            {
+                "dataset_id": "22794502",
+                "extension": "bam",
+                "file_size": 1660629877,
+                "name": "ME1468.sorted.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22797758",
+                "extension": "bed",
+                "file_size": 562409257,
+                "name": "MDA468 ME1 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22762118",
+                "extension": "bam",
+                "file_size": 1906711963,
+                "name": "27AC468.sorted.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22797759",
+                "extension": "bed",
+                "file_size": 663290296,
+                "name": "MDA468 H3K27ac (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3363643,
+        "id": 17829894,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11903212",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "dbkey": "\"?\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32971605}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32968126}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32971606}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32927929}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42626837,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-17 13:57:37.861689",
+        "user_id": 118537
+    },
+    {
+        "create_time": "2017-11-16 05:58:49.051807",
+        "datasets": [
+            {
+                "dataset_id": "22254700",
+                "extension": "bam",
+                "file_size": 2090220185,
+                "name": "BAM filter BOLNI_MBD_RUN3",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22254698",
+                "extension": "bam",
+                "file_size": 2029652560,
+                "name": "BAM filter ZDRAVI_MBD_RUN3",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22254696",
+                "extension": "bam",
+                "file_size": 2206242125,
+                "name": "BAM filter BOLNI_MBD_RUN2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22254694",
+                "extension": "bam",
+                "file_size": 2110507645,
+                "name": "BAM filter ZDRAVI_MBD_RUN2",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "22254692",
+                "extension": "bam",
+                "file_size": 1767961693,
+                "name": "BAM filter BOLNI_MBD_RUN1",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "22254690",
+                "extension": "bam",
+                "file_size": 1385392091,
+                "name": "BAM filter ZDRAVI_MBD_RUN1",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "22265574",
+                "extension": "bed",
+                "file_size": 6352,
+                "name": "MACS2 bdgdiff on data 81, data 74, and others (Common)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "22254699",
+                "extension": "bam",
+                "file_size": 1341977983,
+                "name": "BAM filter BOLNI_MeDIP_RUN3",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "22254697",
+                "extension": "bam",
+                "file_size": 1363259412,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN3",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_3|peaks"
+            },
+            {
+                "dataset_id": "22254695",
+                "extension": "bam",
+                "file_size": 1113458879,
+                "name": "BAM filter BOLNI_MeDIP_RUN2",
+                "param_name": "samples_4|bamreads"
+            },
+            {
+                "dataset_id": "22254693",
+                "extension": "bam",
+                "file_size": 1241073424,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN2",
+                "param_name": "samples_4|bamcontrol"
+            },
+            {
+                "dataset_id": "22257352",
+                "extension": "bed",
+                "file_size": 3487868035,
+                "name": "MACS2 callpeak on data 57, data 53, and others (Bedgraph Control)",
+                "param_name": "samples_4|peaks"
+            },
+            {
+                "dataset_id": "22254691",
+                "extension": "bam",
+                "file_size": 1509570832,
+                "name": "BAM filter BOLNI_MeDIP_RUN1",
+                "param_name": "samples_5|bamreads"
+            },
+            {
+                "dataset_id": "22254689",
+                "extension": "bam",
+                "file_size": 2110425872,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN1",
+                "param_name": "samples_5|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_5|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3324146,
+        "id": 17478018,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11535456",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333242}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MBDr3\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 0, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333244}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333238}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MBDr2\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 1, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333240}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333234}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345044}]}, \"sample_id\": \"MBDr1\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 2, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333236}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333241}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MeDIPr3\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 3, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333243}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333237}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32336272}]}, \"sample_id\": \"MeDIPr2\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 4, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333239}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333233}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MeDIPr1\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 5, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333235}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40238625,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-11-16 06:07:30.045688",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2017-08-15 09:51:47.278637",
+        "datasets": [
+            {
+                "dataset_id": "20961117",
+                "extension": "bam",
+                "file_size": 2080330184,
+                "name": "THP1_H3K27ac.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "7898106",
+                "extension": "bed",
+                "file_size": 62484283490,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20961117",
+                "extension": "bam",
+                "file_size": 2080330184,
+                "name": "THP1_H3K27ac.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "7898106",
+                "extension": "bed",
+                "file_size": 62484283490,
+                "name": "Join two Datasets on data 2 and data 1",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 1855155,
+        "id": 16583555,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10654775.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"wig\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 15100498}]}, \"sample_id\": \"THP1_H3K27ac\", \"tissue\": \"THP1\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30877603}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 15100498}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30877603}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 39874650,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-08-15 10:03:45.469512",
+        "user_id": 47016
+    },
+    {
+        "create_time": "2017-11-06 16:31:30.839835",
+        "datasets": [
+            {
+                "dataset_id": "22037406",
+                "extension": "bam",
+                "file_size": 1114550840,
+                "name": "Bowtie2 on data 304: PolII WT Rep2 Combined",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22037393",
+                "extension": "bam",
+                "file_size": 1125803356,
+                "name": "Bowtie2 on data 303: INPUT WT Rep 1 combined",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22048922",
+                "extension": "bed",
+                "file_size": 1368378733,
+                "name": "MACS2 callpeak on data 295 and data 307 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22036169",
+                "extension": "bam",
+                "file_size": 1065183814,
+                "name": "Bowtie2 on data 262: PolII QL Rep1 S4",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22036191",
+                "extension": "bam",
+                "file_size": 1044288069,
+                "name": "Bowtie2 on data 267: Input QL Rep1 S1",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22048923",
+                "extension": "bed",
+                "file_size": 1263121099,
+                "name": "MACS2 callpeak on data 275 and data 271 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3313293,
+        "id": 17347691,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11411183",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/dm3.len\"",
+            "dbkey": "\"dm3\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32092719}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32095455}]}, \"sample_id\": \"wildtype\", \"tissue\": \"Tissue\", \"replicate\": \"2\", \"factor\": \"PolII\", \"__index__\": 0, \"condition\": \"USP+\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32092721}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32092691}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32095456}]}, \"sample_id\": \"QL\", \"tissue\": \"Tissue\", \"replicate\": \"2\", \"factor\": \"PolII\", \"__index__\": 1, \"condition\": \"USP-QL\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32092689}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41787512,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-11-06 17:00:28.962528",
+        "user_id": 9277
+    },
+    {
+        "create_time": "2017-12-25 15:27:45.039446",
+        "datasets": [
+            {
+                "dataset_id": "22881912",
+                "extension": "bam",
+                "file_size": 653693092,
+                "name": "okuwaki Filter BAM 1",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22881915",
+                "extension": "bam",
+                "file_size": 1106932426,
+                "name": "okuwaki Filter BAM 0",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22890838",
+                "extension": "bed",
+                "file_size": 390505320,
+                "name": "MACS2 callpeak on data 55 and data 52 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22881913",
+                "extension": "bam",
+                "file_size": 785427068,
+                "name": "okuwaki Filter BAM 2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22881915",
+                "extension": "bam",
+                "file_size": 1106932426,
+                "name": "okuwaki Filter BAM 0",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22890839",
+                "extension": "bed",
+                "file_size": 432752943,
+                "name": "MACS2 callpeak on data 55 and data 53 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3279566,
+        "id": 17894269,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11968282",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33070025}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33082094}]}, \"sample_id\": \"oku1\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33070022}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33070025}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33082095}]}, \"sample_id\": \"oku2\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33070023}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42847441,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-25 15:47:14.077744",
+        "user_id": 88335
+    },
+    {
+        "create_time": "2018-02-03 22:03:09.417323",
+        "datasets": [
+            {
+                "dataset_id": "23407873",
+                "extension": "bam",
+                "file_size": 2799341591,
+                "name": "RA1346_H3K27ac_zr1329_19_s0_R1.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "23407874",
+                "extension": "bam",
+                "file_size": 2104001896,
+                "name": "RA1346_Input_zr1113_9_s0_R1.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "23408284",
+                "extension": "bed",
+                "file_size": 5762427489,
+                "name": "MACS2 callpeak on data 53, data 51, and others (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "23407871",
+                "extension": "bam",
+                "file_size": 2178394243,
+                "name": "RA1177_H3K27ac_zr1329_18_s0_R1.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "23407872",
+                "extension": "bam",
+                "file_size": 2338087878,
+                "name": "RA1177_Input_zr1113_10_s0_R1.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "23408284",
+                "extension": "bed",
+                "file_size": 5762427489,
+                "name": "MACS2 callpeak on data 53, data 51, and others (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3415398,
+        "id": 18248380,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12330249",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33656248}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33656695}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33656247}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33656246}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33656695}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33656245}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 43653439,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2018-02-03 23:08:23.303360",
+        "user_id": 41721
+    },
+    {
+        "create_time": "2017-11-16 00:22:12.556197",
+        "datasets": [
+            {
+                "dataset_id": "22254700",
+                "extension": "bam",
+                "file_size": 2090220185,
+                "name": "BAM filter BOLNI_MBD_RUN3",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22254698",
+                "extension": "bam",
+                "file_size": 2029652560,
+                "name": "BAM filter ZDRAVI_MBD_RUN3",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22254696",
+                "extension": "bam",
+                "file_size": 2206242125,
+                "name": "BAM filter BOLNI_MBD_RUN2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22254694",
+                "extension": "bam",
+                "file_size": 2110507645,
+                "name": "BAM filter ZDRAVI_MBD_RUN2",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "22254692",
+                "extension": "bam",
+                "file_size": 1767961693,
+                "name": "BAM filter BOLNI_MBD_RUN1",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "22254690",
+                "extension": "bam",
+                "file_size": 1385392091,
+                "name": "BAM filter ZDRAVI_MBD_RUN1",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "22265574",
+                "extension": "bed",
+                "file_size": 6352,
+                "name": "MACS2 bdgdiff on data 81, data 74, and others (Common)",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "22254699",
+                "extension": "bam",
+                "file_size": 1341977983,
+                "name": "BAM filter BOLNI_MeDIP_RUN3",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "22254697",
+                "extension": "bam",
+                "file_size": 1363259412,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN3",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_3|peaks"
+            },
+            {
+                "dataset_id": "22254695",
+                "extension": "bam",
+                "file_size": 1113458879,
+                "name": "BAM filter BOLNI_MeDIP_RUN2",
+                "param_name": "samples_4|bamreads"
+            },
+            {
+                "dataset_id": "22254693",
+                "extension": "bam",
+                "file_size": 1241073424,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN2",
+                "param_name": "samples_4|bamcontrol"
+            },
+            {
+                "dataset_id": "22257352",
+                "extension": "bed",
+                "file_size": 3487868035,
+                "name": "MACS2 callpeak on data 57, data 53, and others (Bedgraph Control)",
+                "param_name": "samples_4|peaks"
+            },
+            {
+                "dataset_id": "22254691",
+                "extension": "bam",
+                "file_size": 1509570832,
+                "name": "BAM filter BOLNI_MeDIP_RUN1",
+                "param_name": "samples_5|bamreads"
+            },
+            {
+                "dataset_id": "22254689",
+                "extension": "bam",
+                "file_size": 2110425872,
+                "name": "BAM filter ZDRAVI_MeDIP_RUN1",
+                "param_name": "samples_5|bamcontrol"
+            },
+            {
+                "dataset_id": "22265746",
+                "extension": "bed",
+                "file_size": 262750,
+                "name": "metilacija_INTERSECTED_regions.gtf",
+                "param_name": "samples_5|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3324146,
+        "id": 17476349,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11533526",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333242}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MBDr3\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 0, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333244}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333238}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MBDr2\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 1, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333240}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333234}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345044}]}, \"sample_id\": \"MBDr1\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 2, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333236}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333241}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MeDIPr3\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 3, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333243}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333237}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32336272}]}, \"sample_id\": \"MeDIPr2\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 4, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333239}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32333233}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32345217}]}, \"sample_id\": \"MeDIPr1\", \"tissue\": \"blood\", \"replicate\": \"3\", \"factor\": \"Pediatrics\", \"__index__\": 5, \"condition\": \"PFAPA\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32333235}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40238625,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-11-16 00:29:40.360808",
+        "user_id": 39888
+    },
+    {
+        "create_time": "2017-12-07 07:15:15.120212",
+        "datasets": [
+            {
+                "dataset_id": "22381001",
+                "extension": "bam",
+                "file_size": 564315549,
+                "name": "Bowtie2 on data 270Irf8onCD24DCs: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22399425",
+                "extension": "bam",
+                "file_size": 645963745,
+                "name": "Bowtie2 on data 276InputMurphyNew: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22645186",
+                "extension": "bed",
+                "file_size": 721192829,
+                "name": "MACS2 callpeak on data 277 and data 273 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22380991",
+                "extension": "bam",
+                "file_size": 490444378,
+                "name": "Bowtie2 on data 271Batf3onCD24DCs: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22399425",
+                "extension": "bam",
+                "file_size": 645963745,
+                "name": "Bowtie2 on data 276InputMurphyNew: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22645187",
+                "extension": "bed",
+                "file_size": 892695891,
+                "name": "MACS2 callpeak on data 277 and data 272 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2910651,
+        "id": 17729735,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11796207",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm9.len\"",
+            "dbkey": "\"mm9\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32494854}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32786271}]}, \"sample_id\": \"Irf8onCD24DCs\", \"tissue\": \"CD24\", \"replicate\": \"1\", \"factor\": \"Irf8\", \"__index__\": 0, \"condition\": \"FLDCs\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32474594}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32494854}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32786272}]}, \"sample_id\": \"Batf3onCD24\", \"tissue\": \"CD24\", \"replicate\": \"1\", \"factor\": \"Batf3\", \"__index__\": 1, \"condition\": \"FLDCs\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32474584}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42100340,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-07 07:54:00.124500",
+        "user_id": 54355
+    },
+    {
+        "create_time": "2017-10-04 21:28:32.481663",
+        "datasets": [
+            {
+                "dataset_id": "21522718",
+                "extension": "bam",
+                "file_size": 1052662551,
+                "name": "Bowtie2 on data 12: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21574458",
+                "extension": "bed",
+                "file_size": 1430634990,
+                "name": "MACS2 callpeak on data 21 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21522769",
+                "extension": "bam",
+                "file_size": 1155194264,
+                "name": "Bowtie2 on data 18: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21574460",
+                "extension": "bed",
+                "file_size": 1586191241,
+                "name": "MACS2 callpeak on data 27 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3273205,
+        "id": 17027144,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11082898.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31563105}]}, \"sample_id\": \"ETHYAP\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31507317}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31563107}]}, \"sample_id\": \"TAM24YAP\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31507368}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41048553,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-10-04 21:42:27.223363",
+        "user_id": 49474
+    },
+    {
+        "create_time": "2017-12-25 16:16:47.713785",
+        "datasets": [
+            {
+                "dataset_id": "22881912",
+                "extension": "bam",
+                "file_size": 653693092,
+                "name": "okuwaki Filter BAM 1",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22881915",
+                "extension": "bam",
+                "file_size": 1106932426,
+                "name": "okuwaki Filter BAM 0",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22890838",
+                "extension": "bed",
+                "file_size": 390505320,
+                "name": "MACS2 callpeak on data 55 and data 52 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22881913",
+                "extension": "bam",
+                "file_size": 785427068,
+                "name": "okuwaki Filter BAM 2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22881915",
+                "extension": "bam",
+                "file_size": 1106932426,
+                "name": "okuwaki Filter BAM 0",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22890839",
+                "extension": "bed",
+                "file_size": 432752943,
+                "name": "MACS2 callpeak on data 55 and data 53 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3279566,
+        "id": 17894413,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11968466",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33070025}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33082094}]}, \"sample_id\": \"oku1\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33070022}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33070025}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33082095}]}, \"sample_id\": \"oku2\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33070023}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42847441,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-25 16:30:10.640594",
+        "user_id": 88335
+    },
+    {
+        "create_time": "2017-12-18 21:22:36.775305",
+        "datasets": [
+            {
+                "dataset_id": "22174146",
+                "extension": "bam",
+                "file_size": 907407597,
+                "name": "ChIP-H3K4me3-ASXL1#4-1",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22177402",
+                "extension": "bam",
+                "file_size": 3058420039,
+                "name": "ChIP-Input-ASXL1#4-1 (K0903R)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22814693",
+                "extension": "bed",
+                "file_size": 18376373,
+                "name": "MACS2 callpeak on ASXL1#4-1 H3K4me3",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22174147",
+                "extension": "bam",
+                "file_size": 964931390,
+                "name": "ChIP-H3K4me3-ASXL1#4-2",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22177404",
+                "extension": "bam",
+                "file_size": 2998141753,
+                "name": "ChIP-Input-ASXL1#4-2 (K0905L)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22814703",
+                "extension": "bed",
+                "file_size": 18305280,
+                "name": "MACS2 callpeak on ASXL1#4-2 H3K4me3",
+                "param_name": "samples_1|peaks"
+            },
+            {
+                "dataset_id": "22174148",
+                "extension": "bam",
+                "file_size": 350430264,
+                "name": "ChIP-H3K4me3-ASXL1#4-3",
+                "param_name": "samples_2|bamreads"
+            },
+            {
+                "dataset_id": "22177405",
+                "extension": "bam",
+                "file_size": 2579005215,
+                "name": "ChIP-Input-ASXL1#4-3 (K0905R)",
+                "param_name": "samples_2|bamcontrol"
+            },
+            {
+                "dataset_id": "22814712",
+                "extension": "bed",
+                "file_size": 48284426,
+                "name": "MACS2 callpeak on ASXL1#4-3 H3K4me3",
+                "param_name": "samples_2|peaks"
+            },
+            {
+                "dataset_id": "22141339",
+                "extension": "bam",
+                "file_size": 1253086419,
+                "name": "ChIP-H3K4me3-Control-1",
+                "param_name": "samples_3|bamreads"
+            },
+            {
+                "dataset_id": "22177399",
+                "extension": "bam",
+                "file_size": 1711436797,
+                "name": "ChIP-Input-Control-1 (K0900L)",
+                "param_name": "samples_3|bamcontrol"
+            },
+            {
+                "dataset_id": "22814670",
+                "extension": "bed",
+                "file_size": 20797688,
+                "name": "MACS2 callpeak on Control-1 H3K4me3",
+                "param_name": "samples_3|peaks"
+            },
+            {
+                "dataset_id": "22141340",
+                "extension": "bam",
+                "file_size": 1334929325,
+                "name": "ChIP-H3K4me3-Control-2",
+                "param_name": "samples_4|bamreads"
+            },
+            {
+                "dataset_id": "22177400",
+                "extension": "bam",
+                "file_size": 1306668910,
+                "name": "ChIP-Input-Control-2 (K0900R)",
+                "param_name": "samples_4|bamcontrol"
+            },
+            {
+                "dataset_id": "22814676",
+                "extension": "bed",
+                "file_size": 13005062,
+                "name": "MACS2 callpeak on Control-2 H3K4me3",
+                "param_name": "samples_4|peaks"
+            },
+            {
+                "dataset_id": "22141342",
+                "extension": "bam",
+                "file_size": 1770367666,
+                "name": "ChIP-H3K4me3-Control-3",
+                "param_name": "samples_5|bamreads"
+            },
+            {
+                "dataset_id": "22177401",
+                "extension": "bam",
+                "file_size": 1269757955,
+                "name": "ChIP-Input-Control-3 (K0902R)",
+                "param_name": "samples_5|bamcontrol"
+            },
+            {
+                "dataset_id": "22814682",
+                "extension": "bed",
+                "file_size": 11629645,
+                "name": "MACS2 callpeak on Control-3 H3K4me3",
+                "param_name": "samples_5|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3317201,
+        "id": 17841797,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11916049",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32237862}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32991602}]}, \"sample_id\": \"Xenograft\", \"tissue\": \"Colon\", \"replicate\": \"1\", \"factor\": \"H3K4me3\", \"__index__\": 0, \"condition\": \"ASXL1-4 Knockdown\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32233311}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32237864}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32991612}]}, \"sample_id\": \"Xenograft\", \"tissue\": \"Colon\", \"replicate\": \"2\", \"factor\": \"H3K4me3\", \"__index__\": 1, \"condition\": \"ASXL1-4 Knockdown\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32233312}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32237865}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32991622}]}, \"sample_id\": \"Xenograft\", \"tissue\": \"Colon\", \"replicate\": \"3\", \"factor\": \"H3K4me3\", \"__index__\": 2, \"condition\": \"ASXL1-4 Knockdown\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32233313}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32237859}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32991579}]}, \"sample_id\": \"Xenograft\", \"tissue\": \"Colon\", \"replicate\": \"1\", \"factor\": \"H3K4me3\", \"__index__\": 3, \"condition\": \"Control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32197785}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32237860}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32991585}]}, \"sample_id\": \"Xenograft\", \"tissue\": \"Colon\", \"replicate\": \"2\", \"factor\": \"H3K4me3\", \"__index__\": 4, \"condition\": \"Control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32197786}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32237861}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32991591}]}, \"sample_id\": \"Xenograft\", \"tissue\": \"Colon\", \"replicate\": \"3\", \"factor\": \"H3K4me3\", \"__index__\": 5, \"condition\": \"Control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32197788}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 41861895,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-18 21:24:53.652093",
+        "user_id": 50986
+    },
+    {
+        "create_time": "2017-06-01 15:47:30.059561",
+        "datasets": [
+            {
+                "dataset_id": "20077342",
+                "extension": "bam",
+                "file_size": 3690486414,
+                "name": "PCa3_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20046301",
+                "extension": "bam",
+                "file_size": 2789868416,
+                "name": "RWPE_BreakSeq_1: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "20143997",
+                "extension": "bed",
+                "file_size": 866198114,
+                "name": "PCa3_BreakSeq_1 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20100811",
+                "extension": "bam",
+                "file_size": 3687825106,
+                "name": "PCa3_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20133169",
+                "extension": "bam",
+                "file_size": 3692985646,
+                "name": "RWPE_BreakSeq_2: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "20143999",
+                "extension": "bed",
+                "file_size": 1628621327,
+                "name": "PCa3_BreakSeq_2 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3102514,
+        "id": 15990168,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10085166.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/Homo_sapiens_nuHg19_mtrCRS.len\"",
+            "dbkey": "\"Homo_sapiens_nuHg19_mtrCRS\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29735537}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29851200}]}, \"sample_id\": \"PCa3_BreakSeq_1\", \"tissue\": \"PCa3 organoid\", \"replicate\": \"1\", \"factor\": \"DSB\", \"__index__\": 0, \"condition\": \"no treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29775930}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 29839309}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 29851202}]}, \"sample_id\": \"PCa3_BreakSeq_2\", \"tissue\": \"PCa3 organoid\", \"replicate\": \"2\", \"factor\": \"DSB\", \"__index__\": 1, \"condition\": \"no treatment\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 29802174}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 38343189,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-06-01 16:27:11.230014",
+        "user_id": 105389
+    },
+    {
+        "create_time": "2018-02-14 19:17:23.802282",
+        "datasets": [
+            {
+                "dataset_id": "23584777",
+                "extension": "bam",
+                "file_size": 7414521738,
+                "name": "Bowtie2 on data 5: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "23584776",
+                "extension": "bam",
+                "file_size": 4840807134,
+                "name": "Bowtie2 on data 4: aligned reads (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "23594639",
+                "extension": "bed",
+                "file_size": 8978700182,
+                "name": "MACS2 callpeak on data 7 and data 8 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "23584778",
+                "extension": "bam",
+                "file_size": 3468606146,
+                "name": "Bowtie2 on data 6: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "23584776",
+                "extension": "bam",
+                "file_size": 4840807134,
+                "name": "Bowtie2 on data 4: aligned reads (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "23594640",
+                "extension": "bed",
+                "file_size": 4087249519,
+                "name": "MACS2 callpeak on data 7 and data 9 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3428236,
+        "id": 18386010,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12473450",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/mm10.len\"",
+            "dbkey": "\"mm10\"",
+            "format": "\"wig\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33848149}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33859151}]}, \"sample_id\": \"Rpd3\", \"tissue\": \"Liver\", \"replicate\": \"1\", \"factor\": \"Rpd3\", \"__index__\": 0, \"condition\": \"Rpd3\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33848150}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33848149}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33859152}]}, \"sample_id\": \"Gdn1\", \"tissue\": \"Liver\", \"replicate\": \"1\", \"factor\": \"Gdn1\", \"__index__\": 1, \"condition\": \"Gdn1\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33848151}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 43898921,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2018-02-14 21:56:45.827055",
+        "user_id": 52910
+    },
+    {
+        "create_time": "2018-01-17 18:53:29.813637",
+        "datasets": [
+            {
+                "dataset_id": "22783445",
+                "extension": "bam",
+                "file_size": 1421168107,
+                "name": "66082_N2Naive23.4_nodup.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22892012",
+                "extension": "bed",
+                "file_size": 1431911747,
+                "name": "Oct4_Naive",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22783445",
+                "extension": "bam",
+                "file_size": 1421168107,
+                "name": "66082_N2Naive23.4_nodup.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22892014",
+                "extension": "bed",
+                "file_size": 1440549979,
+                "name": "OCT4_Primed",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3359375,
+        "id": 18064514,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12142449",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33083304}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32952031}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33083306}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32952031}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42568494,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2018-01-17 19:10:23.306962",
+        "user_id": 55887
+    },
+    {
+        "create_time": "2017-07-23 17:20:09.654356",
+        "datasets": [
+            {
+                "dataset_id": "20699018",
+                "extension": "bam",
+                "file_size": 2198957305,
+                "name": "AR_105_PDX_CR.sort.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20699504",
+                "extension": "bed",
+                "file_size": 2775841793,
+                "name": "MACS2 callpeak on data 4 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20699017",
+                "extension": "bam",
+                "file_size": 1998945904,
+                "name": "AR_105_PDX.sort.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20699505",
+                "extension": "bed",
+                "file_size": 2537430057,
+                "name": "MACS2 callpeak on data 3 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2538424,
+        "id": 16399620,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10463936.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "format": "\"wig\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30580862}]}, \"sample_id\": \"AR_CR_105\", \"tissue\": \"prostate\", \"replicate\": \"1\", \"factor\": \"AR\", \"__index__\": 0, \"condition\": \"CR\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30580309}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30580863}]}, \"sample_id\": \"AR_105_PDX_CS\", \"tissue\": \"prostate\", \"replicate\": \"1\", \"factor\": \"AR\", \"__index__\": 1, \"condition\": \"CS\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30580308}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 39444976,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-07-23 17:54:59.964886",
+        "user_id": 4197
+    },
+    {
+        "create_time": "2017-08-23 14:38:30.616019",
+        "datasets": [
+            {
+                "dataset_id": "21039126",
+                "extension": "bam",
+                "file_size": 1666793686,
+                "name": "chip_con2_081817.sorted.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21039126",
+                "extension": "bam",
+                "file_size": 1666793686,
+                "name": "chip_con2_081817.sorted.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "21040219",
+                "extension": "bed",
+                "file_size": 577150073,
+                "name": "MACS2 callpeak on data 16 and data 17 (Bedgraph Control)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21039140",
+                "extension": "bam",
+                "file_size": 968773656,
+                "name": "chip_stat2_081817.sorted.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21039140",
+                "extension": "bam",
+                "file_size": 968773656,
+                "name": "chip_stat2_081817.sorted.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "21040220",
+                "extension": "bed",
+                "file_size": 41904495,
+                "name": "MACS2 callpeak on data 16 and data 17 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3229935,
+        "id": 16641423,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10713756.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/dm6.len\"",
+            "dbkey": "\"dm6\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30964014}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30965161}]}, \"sample_id\": \"control\", \"tissue\": \"testes\", \"replicate\": \"2\", \"factor\": \"gfp\", \"__index__\": 0, \"condition\": \"control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30964014}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30964028}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30965162}]}, \"sample_id\": \"stat\", \"tissue\": \"testes\", \"replicate\": \"2\", \"factor\": \"stat\", \"__index__\": 1, \"condition\": \"treatment \", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30964028}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40025193,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-08-23 14:49:23.966145",
+        "user_id": 110457
+    },
+    {
+        "create_time": "2017-09-29 09:46:56.964594",
+        "datasets": [
+            {
+                "dataset_id": "21185203",
+                "extension": "bam",
+                "file_size": 282138246,
+                "name": "Filter SAM or BAM, output SAM or BAM on data 17: bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21495781",
+                "extension": "bed",
+                "file_size": 388483572,
+                "name": "MACS2 callpeak on data 17 (Bedgraph Control)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21185203",
+                "extension": "bam",
+                "file_size": 282138246,
+                "name": "Filter SAM or BAM, output SAM or BAM on data 17: bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21495781",
+                "extension": "bed",
+                "file_size": 388483572,
+                "name": "MACS2 callpeak on data 17 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--clusters=roundup --partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3240052,
+        "id": 16971298,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11038912.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/danRer10.len\"",
+            "dbkey": "\"danRer10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31478482}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31124871}]}}, {\"bamcontrol\": null, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 31478482}]}, \"sample_id\": \"Sample ID\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 31124871}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40172925,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-09-29 10:08:32.170461",
+        "user_id": 90250
+    },
+    {
+        "create_time": "2018-02-10 07:06:35.353433",
+        "datasets": [
+            {
+                "dataset_id": "22911074",
+                "extension": "bam",
+                "file_size": 2452067015,
+                "name": "ac-c (sorted BAM)",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22911069",
+                "extension": "bam",
+                "file_size": 1909391038,
+                "name": "iso-c (sorted BAM)",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "23525376",
+                "extension": "bed",
+                "file_size": 2805580172,
+                "name": "MACS2 callpeak on data 21 and data 25 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22911077",
+                "extension": "bam",
+                "file_size": 2259985521,
+                "name": "ac-r24 (sorted BAM)",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22911073",
+                "extension": "bam",
+                "file_size": 3324981415,
+                "name": "iso-r24 (sorted BAM)",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "23525377",
+                "extension": "bed",
+                "file_size": 2536653249,
+                "name": "MACS2 callpeak on data 22 and data 26 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3377298,
+        "id": 18336077,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12420454",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "format": "\"wig\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33102953}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33784388}]}, \"sample_id\": \"Ctrl\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33102958}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 33102957}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 33784389}]}, \"sample_id\": \"R24\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"Factor Name\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 33102961}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 42888218,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2018-02-10 07:41:30.162207",
+        "user_id": 95563
+    },
+    {
+        "create_time": "2017-07-27 17:33:05.215794",
+        "datasets": [
+            {
+                "dataset_id": "20742280",
+                "extension": "bam",
+                "file_size": 1039285021,
+                "name": "mergednabgal4UASLP0",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "20742973",
+                "extension": "bam",
+                "file_size": 824651715,
+                "name": "NabGal4xUASLP0input.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "20753489",
+                "extension": "bed",
+                "file_size": 729005071,
+                "name": "MACS2 callpeak on data 11 and data 9 (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "20742282",
+                "extension": "bam",
+                "file_size": 971478864,
+                "name": "mergednabgal4IsoA",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "20743168",
+                "extension": "bam",
+                "file_size": 892903902,
+                "name": "NabGal4xIsoAinput.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "20753490",
+                "extension": "bed",
+                "file_size": 650282606,
+                "name": "MACS2 callpeak on data 11 and data 9 (Bedgraph Control)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3203683,
+        "id": 16436049,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10503976.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/main/files/013/967/dataset_13967963.dat\"",
+            "dbkey": "\"dm6\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30630216}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30641533}]}, \"sample_id\": \"A\", \"tissue\": \"wing\", \"replicate\": \"1\", \"factor\": \"e93\", \"__index__\": 0, \"condition\": \"wildtype\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30629505}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30630418}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30641534}]}, \"sample_id\": \"B\", \"tissue\": \"wing\", \"replicate\": \"1\", \"factor\": \"e93\", \"__index__\": 1, \"condition\": \"mutant\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30629507}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 39547762,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-07-27 18:04:24.938145",
+        "user_id": 59928
+    },
+    {
+        "create_time": "2017-12-12 18:49:00.769519",
+        "datasets": [
+            {
+                "dataset_id": "22668186",
+                "extension": "bam",
+                "file_size": 1173741671,
+                "name": "N2 H3K27 Convert, Merge, Randomize on data 65, data 64, and others",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "22669554",
+                "extension": "bam",
+                "file_size": 1771471007,
+                "name": "N2 input Convert, Merge, Randomize on data 86, data 85, and others",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "22732132",
+                "extension": "bed",
+                "file_size": 1155574202,
+                "name": "MACS2 callpeak on data 86, data 85, and others (Bedgraph Treatment)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "22668148",
+                "extension": "bam",
+                "file_size": 990609625,
+                "name": "f49 H3K27 Convert, Merge, Randomize on data 41, data 40, and others",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "22669553",
+                "extension": "bam",
+                "file_size": 1636981272,
+                "name": "f49 input Convert, Merge, Randomize on data 75, data 74, and others",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "22732133",
+                "extension": "bed",
+                "file_size": 1033338484,
+                "name": "MACS2 callpeak on data 75, data 74, and others (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3357776,
+        "id": 17787973,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "11856902",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/ce10.len\"",
+            "dbkey": "\"ce10\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32816736}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32883396}]}, \"sample_id\": \"N2\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"H3K27me3\", \"__index__\": 0, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32815302}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 32816735}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 32883397}]}, \"sample_id\": \"f49e8.2\", \"tissue\": \"Tissue\", \"replicate\": \"1\", \"factor\": \"H3K27me3\", \"__index__\": 1, \"condition\": \"Condition\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 32815253}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40513132,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-12-12 19:31:02.360172",
+        "user_id": 80875
+    },
+    {
+        "create_time": "2017-08-23 14:23:47.256685",
+        "datasets": [
+            {
+                "dataset_id": "21039126",
+                "extension": "bam",
+                "file_size": 1666793686,
+                "name": "chip_con2_081817.sorted.bam",
+                "param_name": "samples_0|bamreads"
+            },
+            {
+                "dataset_id": "21039126",
+                "extension": "bam",
+                "file_size": 1666793686,
+                "name": "chip_con2_081817.sorted.bam",
+                "param_name": "samples_0|bamcontrol"
+            },
+            {
+                "dataset_id": "21040219",
+                "extension": "bed",
+                "file_size": 577150073,
+                "name": "MACS2 callpeak on data 16 and data 17 (Bedgraph Control)",
+                "param_name": "samples_0|peaks"
+            },
+            {
+                "dataset_id": "21039140",
+                "extension": "bam",
+                "file_size": 968773656,
+                "name": "chip_stat2_081817.sorted.bam",
+                "param_name": "samples_1|bamreads"
+            },
+            {
+                "dataset_id": "21039140",
+                "extension": "bam",
+                "file_size": 968773656,
+                "name": "chip_stat2_081817.sorted.bam",
+                "param_name": "samples_1|bamcontrol"
+            },
+            {
+                "dataset_id": "21040220",
+                "extension": "bed",
+                "file_size": 41904495,
+                "name": "MACS2 callpeak on data 16 and data 17 (Bedgraph Treatment)",
+                "param_name": "samples_1|peaks"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/galaxy/main/deps/_conda/envs/__bioconductor-diffbind@2.0.9",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "bioconductor-diffbind",
+                "version": "2.0.9"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3229935,
+        "id": 16641228,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10713403.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/dm6.len\"",
+            "dbkey": "\"dm6\"",
+            "format": "\"bed\"",
+            "pdf": "\"true\"",
+            "samples": "[{\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30964014}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30965161}]}, \"sample_id\": \"control\", \"tissue\": \"testes\", \"replicate\": \"2\", \"factor\": \"gfp\", \"__index__\": 0, \"condition\": \"control\", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30964014}]}}, {\"bamcontrol\": {\"values\": [{\"src\": \"hda\", \"id\": 30964028}]}, \"peaks\": {\"values\": [{\"src\": \"hda\", \"id\": 30965162}]}, \"sample_id\": \"stat\", \"tissue\": \"testes\", \"replicate\": \"2\", \"factor\": \"stat\", \"__index__\": 1, \"condition\": \"treatment \", \"bamreads\": {\"values\": [{\"src\": \"hda\", \"id\": 30964028}]}}]"
+        },
+        "runner_name": null,
+        "session_id": 40025193,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/diffbind/diffbind/2.2.1",
+        "tool_version": "2.2.1",
+        "traceback": null,
+        "update_time": "2017-08-23 14:34:08.874816",
+        "user_id": 110457
+    }
+]

@@ -1,0 +1,244 @@
+[
+    {
+        "create_time": "2018-03-09 13:07:38.307991",
+        "datasets": [
+            {
+                "dataset_id": "24007972",
+                "extension": "fasta",
+                "file_size": 269067,
+                "name": "3_Targetlist_UID_Name_Sequence.fasta",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "24008328",
+                "extension": "fasta",
+                "file_size": 3273481150,
+                "name": "hg38.fa",
+                "param_name": "subject"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3457454,
+        "id": 18671684,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12768171",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_optional_id_files_opts\": {\"__current_case__\": 0, \"adv_optional_id_files_opts_selector\": \"none\"}, \"matrix\": \"BLOSUM62\", \"max_hsps\": \"1\", \"adv_opts_selector\": \"advanced\", \"filter_query\": \"true\", \"word_size\": \"0\", \"__current_case__\": 1, \"parse_deflines\": \"false\", \"qcov_hsp_perc\": \"100.0\", \"db_gencode\": \"1\", \"max_hits\": \"1\"}",
+            "blast_type": "\"tblastn-fast\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "db_opts": "{\"db_opts_selector\": \"file\", \"subject\": {\"values\": [{\"src\": \"hda\", \"id\": 34323214}]}, \"histdb\": \"\", \"__current_case__\": 2, \"database\": \"\"}",
+            "dbkey": "\"hg38\"",
+            "evalue_cutoff": "\"0.0001\"",
+            "output": "{\"out_format\": \"cols\", \"std_cols\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"ids_cols\": null, \"tax_cols\": null, \"__current_case__\": 2, \"misc_cols\": null, \"ext_cols\": [\"ppos\", \"qseq\", \"sseq\"]}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34322844}]}"
+        },
+        "runner_name": null,
+        "session_id": 43957928,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-03-09 13:12:25.960382",
+        "user_id": 86263
+    },
+    {
+        "create_time": "2018-02-23 02:58:48.666756",
+        "datasets": [
+            {
+                "dataset_id": "23741064",
+                "extension": "fasta",
+                "file_size": 742153,
+                "name": "Trinity on data 463 and data 462: Assembled Transcripts",
+                "param_name": "query"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2036840,
+        "id": 18492218,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12588241",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}",
+            "blast_type": "\"tblastn\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "db_opts": "{\"db_opts_selector\": \"db\", \"subject\": \"\", \"histdb\": \"\", \"__current_case__\": 0, \"database\": [\"13apr2014-htgs\", \"17apr2014-nt\", \"20apr2014-wgs\", \"/galaxy/data/blastdb/phiX/phiX\"]}",
+            "dbkey": "\"?\"",
+            "evalue_cutoff": "\"0.001\"",
+            "output": "{\"out_format\": \"ext\", \"__current_case__\": 1}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34022986}]}"
+        },
+        "runner_name": null,
+        "session_id": 43945103,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-02-23 05:45:01.379885",
+        "user_id": 52619
+    },
+    {
+        "create_time": "2018-03-09 13:43:06.416514",
+        "datasets": [
+            {
+                "dataset_id": "24007972",
+                "extension": "fasta",
+                "file_size": 269067,
+                "name": "3_Targetlist_UID_Name_Sequence.fasta",
+                "param_name": "query"
+            },
+            {
+                "dataset_id": "24008561",
+                "extension": "fasta",
+                "file_size": 3273481150,
+                "name": "hg38.fa.masked",
+                "param_name": "subject"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3457454,
+        "id": 18672294,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12768524",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_optional_id_files_opts\": {\"__current_case__\": 0, \"adv_optional_id_files_opts_selector\": \"none\"}, \"matrix\": \"BLOSUM62\", \"max_hsps\": \"1\", \"adv_opts_selector\": \"advanced\", \"filter_query\": \"true\", \"word_size\": \"0\", \"__current_case__\": 1, \"parse_deflines\": \"false\", \"qcov_hsp_perc\": \"100.0\", \"db_gencode\": \"1\", \"max_hits\": \"1\"}",
+            "blast_type": "\"tblastn-fast\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "db_opts": "{\"db_opts_selector\": \"file\", \"subject\": {\"values\": [{\"src\": \"hda\", \"id\": 34323447}]}, \"histdb\": \"\", \"__current_case__\": 2, \"database\": \"\"}",
+            "dbkey": "\"hg38\"",
+            "evalue_cutoff": "\"0.0001\"",
+            "output": "{\"out_format\": \"cols\", \"std_cols\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"ids_cols\": null, \"tax_cols\": null, \"__current_case__\": 2, \"misc_cols\": null, \"ext_cols\": [\"ppos\", \"qseq\", \"sseq\"]}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34322844}]}"
+        },
+        "runner_name": null,
+        "session_id": 43957928,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-03-09 13:53:51.431679",
+        "user_id": 86263
+    },
+    {
+        "create_time": "2018-03-09 12:46:12.031389",
+        "datasets": [
+            {
+                "dataset_id": "24007972",
+                "extension": "fasta",
+                "file_size": 269067,
+                "name": "3_Targetlist_UID_Name_Sequence.fasta",
+                "param_name": "query"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "conda",
+                "environment_path": "/cvmfs/main.galaxyproject.org/deps/_conda/envs/__blast@2.5.0",
+                "exact": true,
+                "model_class": "MergedCondaDependency",
+                "name": "blast",
+                "version": "2.5.0"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--partition=normal --nodes=1 --ntasks=1 --time=36:00:00"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3457454,
+        "id": 18671471,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "12767957",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "adv_opts": "{\"adv_optional_id_files_opts\": {\"__current_case__\": 0, \"adv_optional_id_files_opts_selector\": \"none\"}, \"matrix\": \"BLOSUM62\", \"max_hsps\": \"1\", \"adv_opts_selector\": \"advanced\", \"filter_query\": \"true\", \"word_size\": \"0\", \"__current_case__\": 1, \"parse_deflines\": \"false\", \"qcov_hsp_perc\": \"100.0\", \"db_gencode\": \"1\", \"max_hits\": \"1\"}",
+            "blast_type": "\"tblastn-fast\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "db_opts": "{\"db_opts_selector\": \"db\", \"subject\": \"\", \"histdb\": \"\", \"__current_case__\": 0, \"database\": [\"17apr2014-nt\"]}",
+            "dbkey": "\"?\"",
+            "evalue_cutoff": "\"0.0001\"",
+            "output": "{\"out_format\": \"cols\", \"std_cols\": [\"qseqid\", \"sseqid\", \"pident\", \"length\", \"mismatch\", \"gapopen\", \"qstart\", \"qend\", \"sstart\", \"send\", \"evalue\", \"bitscore\"], \"ids_cols\": null, \"tax_cols\": null, \"__current_case__\": 2, \"misc_cols\": null, \"ext_cols\": [\"ppos\", \"qseq\", \"sseq\"]}",
+            "query": "{\"values\": [{\"src\": \"hda\", \"id\": 34322844}]}"
+        },
+        "runner_name": null,
+        "session_id": 43957928,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_tblastn_wrapper/0.2.01",
+        "tool_version": "0.2.01",
+        "traceback": null,
+        "update_time": "2018-03-09 13:31:23.072968",
+        "user_id": 86263
+    }
+]

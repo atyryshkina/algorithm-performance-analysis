@@ -1,0 +1,2519 @@
+[
+    {
+        "create_time": "2015-10-16 18:30:13.313532",
+        "datasets": [
+            {
+                "dataset_id": "12811957",
+                "extension": "bam",
+                "file_size": 13867637,
+                "name": "ReorderSam on data 14 and data 1: Reordered BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "11889867",
+                "extension": "fasta",
+                "file_size": 3157608038,
+                "name": "hg19.fasta",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "11901656",
+                "extension": "bed",
+                "file_size": 27777,
+                "name": "Chr16 (UCSC chr16:1-90354753)",
+                "param_name": "target_intervals"
+            },
+            {
+                "dataset_id": "3990468",
+                "extension": "vcf",
+                "file_size": 90199019,
+                "name": "Mills_and_1000G_gold_standard.indels.hg19.vcf",
+                "param_name": "rod_bind_0|input_rod"
+            },
+            {
+                "dataset_id": "11880558",
+                "extension": "vcf",
+                "file_size": 8590101431,
+                "name": "dbsnp_137.hg19.vcf",
+                "param_name": "rod_bind_1|input_rod"
+            },
+            {
+                "dataset_id": "11888093",
+                "extension": "vcf",
+                "file_size": 7398865818,
+                "name": "1000G_phase1.snps.high_confidence.hg19.vcf",
+                "param_name": "rod_bind_2|input_rod"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler2",
+        "history_id": 2472555,
+        "id": 10602501,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "4872855.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"False\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": 21533741, \"reference_source_selector\": \"history\", \"input_bam\": 21556404, \"__current_case__\": 1}",
+            "rod_bind": "[{\"__index__\": 0, \"rod_bind_type\": {\"rod_bind_type_selector\": \"indels\", \"__current_case__\": 2, \"input_rod\": 21533749}}, {\"__index__\": 1, \"rod_bind_type\": {\"rod_bind_type_selector\": \"dbsnp\", \"__current_case__\": 0, \"input_rod\": 21533750}}, {\"__index__\": 2, \"rod_bind_type\": {\"rod_bind_type_selector\": \"snps\", \"__current_case__\": 1, \"input_rod\": 21533744}}]",
+            "target_intervals": "21533751"
+        },
+        "runner_name": null,
+        "session_id": 25324567,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2015-10-17 22:28:54.897414",
+        "user_id": 59565
+    },
+    {
+        "create_time": "2016-10-13 04:46:30.778299",
+        "datasets": [
+            {
+                "dataset_id": "17069415",
+                "extension": "bam",
+                "file_size": 17000990522,
+                "name": "Bowtie2 on data 172 and data 171: aligned reads (sorted BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17478978",
+                "extension": "gatk_interval",
+                "file_size": 59002255,
+                "name": "Realigner Target Creator on data 437 (GATK intervals)",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2196193,
+        "id": 14069730,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8286767.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5bc15e010bab7b8ea\"}]}, \"__current_case__\": 0}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5da8619adec3f4644\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33641986,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-10-14 04:47:04.422501",
+        "user_id": 37892
+    },
+    {
+        "create_time": "2016-10-26 20:35:37.467246",
+        "datasets": [
+            {
+                "dataset_id": "17626334",
+                "extension": "bam",
+                "file_size": 16997321374,
+                "name": "Bowtie2 on data 615 and data 616: aligned reads (sorted BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17631013",
+                "extension": "gatk_interval",
+                "file_size": 63361127,
+                "name": "Realigner Target Creator on data 620 (GATK intervals)",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2196193,
+        "id": 14183733,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8396410.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg_g1k_v37.len\"",
+            "dbkey": "\"hg_g1k_v37\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": \"hg_g1k_v37\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5f8a43b805add35b3\"}]}, \"__current_case__\": 0}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5172a3a378c91d1b4\"}]}"
+        },
+        "runner_name": null,
+        "session_id": 33927294,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-10-27 20:36:17.266286",
+        "user_id": 37892
+    },
+    {
+        "create_time": "2016-12-21 12:45:36.938166",
+        "datasets": [
+            {
+                "dataset_id": "18261403",
+                "extension": "bam",
+                "file_size": 2357761895,
+                "name": "RmDup on data 435",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14624285,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8807831.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707960}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-23 12:57:39.552340",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:36.105688",
+        "datasets": [
+            {
+                "dataset_id": "18261402",
+                "extension": "bam",
+                "file_size": 1987358054,
+                "name": "RmDup on data 434",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2910256,
+        "id": 14624284,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8801003.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707959}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-22 12:57:32.952132",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:38.304109",
+        "datasets": [
+            {
+                "dataset_id": "18261405",
+                "extension": "bam",
+                "file_size": 2138819127,
+                "name": "RmDup on data 437",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2910256,
+        "id": 14624287,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8801002.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707962}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-22 12:57:32.746688",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:40.010528",
+        "datasets": [
+            {
+                "dataset_id": "18261407",
+                "extension": "bam",
+                "file_size": 1427451703,
+                "name": "RmDup on data 439",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2910256,
+        "id": 14624289,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8807832.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707964}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-23 12:57:40.953096",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:39.113090",
+        "datasets": [
+            {
+                "dataset_id": "18261406",
+                "extension": "bam",
+                "file_size": 1841716029,
+                "name": "RmDup on data 438",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14624288,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8817131.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707963}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-25 12:58:24.351736",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:41.952722",
+        "datasets": [
+            {
+                "dataset_id": "18261409",
+                "extension": "bam",
+                "file_size": 2294799698,
+                "name": "RmDup on data 441",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2910256,
+        "id": 14624291,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8813804.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707966}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-24 12:58:18.015095",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:41.094808",
+        "datasets": [
+            {
+                "dataset_id": "18261408",
+                "extension": "bam",
+                "file_size": 1727924765,
+                "name": "RmDup on data 440",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2910256,
+        "id": 14624290,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8813802.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707965}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-24 12:57:48.039099",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-21 12:45:37.686562",
+        "datasets": [
+            {
+                "dataset_id": "18261404",
+                "extension": "bam",
+                "file_size": 3025756334,
+                "name": "RmDup on data 436",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18261449",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14624286,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8817129.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707961}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27708006}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-25 12:57:56.658576",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:54.998427",
+        "datasets": [
+            {
+                "dataset_id": "18261404",
+                "extension": "bam",
+                "file_size": 3025756334,
+                "name": "RmDup on data 436",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14645110,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8819867.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707961}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-26 13:40:25.011581",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:54.206736",
+        "datasets": [
+            {
+                "dataset_id": "18261403",
+                "extension": "bam",
+                "file_size": 2357761895,
+                "name": "RmDup on data 435",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2910256,
+        "id": 14645109,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8819866.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707960}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-26 13:40:25.017201",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:53.535154",
+        "datasets": [
+            {
+                "dataset_id": "18261402",
+                "extension": "bam",
+                "file_size": 1987358054,
+                "name": "RmDup on data 434",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2910256,
+        "id": 14645108,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8819868.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707959}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-26 13:40:25.434811",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:55.818824",
+        "datasets": [
+            {
+                "dataset_id": "18261405",
+                "extension": "bam",
+                "file_size": 2138819127,
+                "name": "RmDup on data 437",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2910256,
+        "id": 14645111,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8821763.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707962}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-27 13:40:32.723651",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:56.572366",
+        "datasets": [
+            {
+                "dataset_id": "18261406",
+                "extension": "bam",
+                "file_size": 1841716029,
+                "name": "RmDup on data 438",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14645113,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8821762.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707963}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-27 13:40:32.467411",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:58.124471",
+        "datasets": [
+            {
+                "dataset_id": "18261408",
+                "extension": "bam",
+                "file_size": 1727924765,
+                "name": "RmDup on data 440",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14645115,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8825773.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707965}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-28 13:41:08.025368",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:57.393678",
+        "datasets": [
+            {
+                "dataset_id": "18261407",
+                "extension": "bam",
+                "file_size": 1427451703,
+                "name": "RmDup on data 439",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14645114,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8825772.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707964}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-28 13:41:08.027791",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:30.384745",
+        "datasets": [
+            {
+                "dataset_id": "18261404",
+                "extension": "bam",
+                "file_size": 3025756334,
+                "name": "RmDup on data 436",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14657838,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8831238.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707961}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-29 15:36:12.425573",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:33.598760",
+        "datasets": [
+            {
+                "dataset_id": "18261408",
+                "extension": "bam",
+                "file_size": 1727924765,
+                "name": "RmDup on data 440",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2910256,
+        "id": 14657843,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8831241.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707965}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-29 15:36:45.324550",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:29.596814",
+        "datasets": [
+            {
+                "dataset_id": "18261403",
+                "extension": "bam",
+                "file_size": 2357761895,
+                "name": "RmDup on data 435",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2910256,
+        "id": 14657837,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8831237.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707960}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-29 15:36:13.325593",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-25 13:39:58.699724",
+        "datasets": [
+            {
+                "dataset_id": "18261409",
+                "extension": "bam",
+                "file_size": 2294799698,
+                "name": "RmDup on data 441",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18291216",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14645116,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8830616.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707966}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27741159}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-29 13:41:42.086670",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:32.601485",
+        "datasets": [
+            {
+                "dataset_id": "18261407",
+                "extension": "bam",
+                "file_size": 1427451703,
+                "name": "RmDup on data 439",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2910256,
+        "id": 14657842,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8835905.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707964}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-30 15:37:17.329158",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:30.847281",
+        "datasets": [
+            {
+                "dataset_id": "18261405",
+                "extension": "bam",
+                "file_size": 2138819127,
+                "name": "RmDup on data 437",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2910256,
+        "id": 14657839,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8835904.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707962}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-30 15:36:47.861977",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:31.773885",
+        "datasets": [
+            {
+                "dataset_id": "18261406",
+                "extension": "bam",
+                "file_size": 1841716029,
+                "name": "RmDup on data 438",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14657840,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8839279.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707963}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-31 15:37:21.755410",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2016-12-28 15:11:34.308038",
+        "datasets": [
+            {
+                "dataset_id": "18261409",
+                "extension": "bam",
+                "file_size": 2294799698,
+                "name": "RmDup on data 441",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "18012918",
+                "extension": "fasta",
+                "file_size": 1898448185,
+                "name": "https://www.dropbox.com/s/e5jw03ykgmabmyw/MALUSV1_fasta_GCF_000148765.1_MalDomGD1.0_genomic.fa?dl=1",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "18308751",
+                "extension": "bed",
+                "file_size": 33495029,
+                "name": "https://www.dropbox.com/s/43tchuznuvgxg0w/MALUSV1_GFF_GCF_000148765.1_MalDomGD1.0_genomic.gff?dl=1",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2910256,
+        "id": 14657844,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8839343.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 27431453}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27707966}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 27760581}]}"
+        },
+        "runner_name": null,
+        "session_id": 34848496,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2016-12-31 15:58:51.903013",
+        "user_id": 29285
+    },
+    {
+        "create_time": "2017-08-11 12:26:19.476777",
+        "datasets": [
+            {
+                "dataset_id": "20925050",
+                "extension": "bam",
+                "file_size": 2687319797,
+                "name": "C4conheaders",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20178436",
+                "extension": "fasta",
+                "file_size": 3234842113,
+                "name": "genecode.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "20924744",
+                "extension": "bed",
+                "file_size": 87322227,
+                "name": "protonRNAplugin.gtf",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 3094820,
+        "id": 16558309,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10629469.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29890183}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30837846}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 30837536}]}"
+        },
+        "runner_name": null,
+        "session_id": 39821487,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2017-08-12 12:26:42.847901",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-08-11 12:26:20.810457",
+        "datasets": [
+            {
+                "dataset_id": "20925053",
+                "extension": "bam",
+                "file_size": 1073072824,
+                "name": "Pconheaders",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20178436",
+                "extension": "fasta",
+                "file_size": 3234842113,
+                "name": "genecode.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "20924744",
+                "extension": "bed",
+                "file_size": 87322227,
+                "name": "protonRNAplugin.gtf",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 3094820,
+        "id": 16558311,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10636632.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29890183}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30837849}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 30837536}]}"
+        },
+        "runner_name": null,
+        "session_id": 39821487,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2017-08-13 12:27:05.194101",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-08-14 11:11:06.877917",
+        "datasets": [
+            {
+                "dataset_id": "20925050",
+                "extension": "bam",
+                "file_size": 2687319797,
+                "name": "C4conheaders",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20178436",
+                "extension": "fasta",
+                "file_size": 3234842113,
+                "name": "genecode.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "20924744",
+                "extension": "bed",
+                "file_size": 87322227,
+                "name": "protonRNAplugin.gtf",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3094820,
+        "id": 16574634,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10645581.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29890183}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30837846}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 30837536}]}"
+        },
+        "runner_name": null,
+        "session_id": 39858638,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2017-08-15 11:11:36.536289",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-08-14 11:11:06.530762",
+        "datasets": [
+            {
+                "dataset_id": "20924992",
+                "extension": "bam",
+                "file_size": 2070448558,
+                "name": "Bconheaders",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20178436",
+                "extension": "fasta",
+                "file_size": 3234842113,
+                "name": "genecode.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "20924744",
+                "extension": "bed",
+                "file_size": 87322227,
+                "name": "protonRNAplugin.gtf",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3094820,
+        "id": 16574633,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10655239.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29890183}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30837788}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 30837536}]}"
+        },
+        "runner_name": null,
+        "session_id": 39858638,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2017-08-16 11:12:19.312860",
+        "user_id": 105260
+    },
+    {
+        "create_time": "2017-08-14 11:11:07.536680",
+        "datasets": [
+            {
+                "dataset_id": "20925053",
+                "extension": "bam",
+                "file_size": 1073072824,
+                "name": "Pconheaders",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "20178436",
+                "extension": "fasta",
+                "file_size": 3234842113,
+                "name": "genecode.fa",
+                "param_name": "ref_file"
+            },
+            {
+                "dataset_id": "20924744",
+                "extension": "bed",
+                "file_size": 87322227,
+                "name": "protonRNAplugin.gtf",
+                "param_name": "target_intervals"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "gatk",
+                "path": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/gatk/1.4/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "1.4"
+            },
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83",
+                "script": "/galaxy/main/deps/samtools/0.1.18/devteam/indel_realigner/bb0beda6cf83/env.sh",
+                "version": "0.1.18"
+            }
+        ],
+        "destination_id": "slurm_normal_16gb",
+        "destination_params": {
+            "nativeSpecification": "--time=24:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal --mem-per-cpu=15360"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3094820,
+        "id": 16574636,
+        "imported": false,
+        "info": "This job was terminated because it ran longer than the maximum allowed job run time.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "10665311.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "analysis_param_type": "{\"analysis_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "gatk_param_type": "{\"gatk_param_type_selector\": \"basic\", \"__current_case__\": 0}",
+            "knowns_only": "\"false\"",
+            "lod_threshold": "\"5.0\"",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 29890183}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 30837849}]}, \"__current_case__\": 1}",
+            "rod_bind": "[]",
+            "target_intervals": "{\"values\": [{\"src\": \"hda\", \"id\": 30837536}]}"
+        },
+        "runner_name": null,
+        "session_id": 39858638,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6",
+        "tool_version": "0.0.6",
+        "traceback": null,
+        "update_time": "2017-08-17 12:58:28.195426",
+        "user_id": 105260
+    }
+]

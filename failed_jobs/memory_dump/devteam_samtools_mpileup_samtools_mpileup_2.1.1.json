@@ -1,0 +1,1357 @@
+[
+    {
+        "create_time": "2017-03-30 16:26:40.466106",
+        "datasets": [
+            {
+                "dataset_id": "19396005",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Lambda_1D.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "19396005",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Lambda_1D.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "19396525",
+                "extension": "fasta",
+                "file_size": 49251,
+                "name": "Lambda Reference.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3048905,
+        "id": 15437196,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9568479.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": [\"DP\", \"DPR\", \"DV\", \"DP4\", \"INFO/DPR\", \"SP\"]}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28988742}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28988212}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 36924385,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-30 16:34:47.423482",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2016-07-14 06:21:27.522882",
+        "datasets": [
+            {
+                "dataset_id": "16572887",
+                "extension": "bam",
+                "file_size": 1438854,
+                "name": "Map with BWA-MEM on data 4 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "16572887",
+                "extension": "bam",
+                "file_size": 1438854,
+                "name": "Map with BWA-MEM on data 4 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "16572888",
+                "extension": "bam",
+                "file_size": 3035623,
+                "name": "Map with BWA-MEM on data 5 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "16572852",
+                "extension": "fasta",
+                "file_size": 4458950,
+                "name": "tuberculosi.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2765680,
+        "id": 13406774,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7618730.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b563ea4c4f20f4ddde\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5b419737dcb8b743f\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b558b0ba38becf5dbb\"}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 31466834,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-07-14 06:26:24.427756",
+        "user_id": 64111
+    },
+    {
+        "create_time": "2016-09-20 11:52:31.923206",
+        "datasets": [
+            {
+                "dataset_id": "17228624",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Bowtie2 on data 10 and data 9: aligned reads (sorted BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17228624",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Bowtie2 on data 10 and data 9: aligned reads (sorted BAM)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "17228658",
+                "extension": "bam",
+                "file_size": 10150035,
+                "name": "Bowtie2 on data 12 and data 11: aligned reads (sorted BAM)",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "17228662",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Bowtie2 on data 14 and data 13: aligned reads (sorted BAM)",
+                "param_name": "input_bam3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2826073,
+        "id": 13892146,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8116244.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d2f295843e553990\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56a29ddafedcbd1b4\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59a02b4d7615d9344\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33008040,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-09-20 13:12:04.198298",
+        "user_id": 43501
+    },
+    {
+        "create_time": "2016-09-20 23:24:53.787827",
+        "datasets": [
+            {
+                "dataset_id": "17228624",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Bowtie2 on data 10 and data 9: aligned reads (sorted BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17228624",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Bowtie2 on data 10 and data 9: aligned reads (sorted BAM)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "17228658",
+                "extension": "bam",
+                "file_size": 10150035,
+                "name": "Bowtie2 on data 12 and data 11: aligned reads (sorted BAM)",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "17228662",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Bowtie2 on data 14 and data 13: aligned reads (sorted BAM)",
+                "param_name": "input_bam3"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler1",
+        "history_id": 2826073,
+        "id": 13901114,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8123934.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5d2f295843e553990\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56a29ddafedcbd1b4\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b59a02b4d7615d9344\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33008040,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-09-20 23:26:54.509558",
+        "user_id": 43501
+    },
+    {
+        "create_time": "2017-03-30 16:38:14.240674",
+        "datasets": [
+            {
+                "dataset_id": "19396005",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Lambda_1D.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "19396005",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Lambda_1D.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "19396525",
+                "extension": "fasta",
+                "file_size": 49251,
+                "name": "Lambda Reference.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 3048905,
+        "id": 15437269,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9568568.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"true\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28988742}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28988212}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 36924385,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-30 16:46:08.729166",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2016-10-24 00:52:28.695004",
+        "datasets": [
+            {
+                "dataset_id": "12230343",
+                "extension": "fastqsanger",
+                "file_size": 32246969,
+                "name": "Coriell-NA12877_R2.fastq",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "12230343",
+                "extension": "fastqsanger",
+                "file_size": 32246969,
+                "name": "Coriell-NA12877_R2.fastq",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "12230337",
+                "extension": "fastqsanger",
+                "file_size": 32247479,
+                "name": "Coriell-NA12877_R1.fastq",
+                "param_name": "input_bam2"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2866064,
+        "id": 14153705,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8365157.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"223952d8998411e69d7f005056a51846\"",
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ad11921d447221f5\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5ac06ed2ac989fcfe\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33858745,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-10-24 00:54:41.912077",
+        "user_id": 15268
+    },
+    {
+        "create_time": "2016-07-14 06:50:44.293469",
+        "datasets": [
+            {
+                "dataset_id": "16572888",
+                "extension": "bam",
+                "file_size": 3035623,
+                "name": "Map with BWA-MEM on data 5 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "16572888",
+                "extension": "bam",
+                "file_size": 3035623,
+                "name": "Map with BWA-MEM on data 5 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "16572852",
+                "extension": "fasta",
+                "file_size": 4458950,
+                "name": "tuberculosi.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2765680,
+        "id": 13406831,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7618829.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"output_mapping_quality\": \"false\", \"__current_case__\": 1, \"genotype_likelihood_computation_type_selector\": \"do_not_perform_genotype_likelihood_computation\", \"base_position_on_reads\": \"true\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b563ea4c4f20f4ddde\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b558b0ba38becf5dbb\"}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 31466834,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-07-14 06:51:52.696863",
+        "user_id": 64111
+    },
+    {
+        "create_time": "2016-10-20 15:35:33.326563",
+        "datasets": [
+            {
+                "dataset_id": "17567380",
+                "extension": "bam",
+                "file_size": 39157455,
+                "name": "Map with BWA-MEM on data 2 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17567380",
+                "extension": "bam",
+                "file_size": 39157455,
+                "name": "Map with BWA-MEM on data 2 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2854742,
+        "id": 14131993,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8346269.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/sacCer2.len\"",
+            "dbkey": "\"sacCer2\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"sacCer2\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5215b7f0c3225a48d\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33567893,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-10-20 15:35:58.063489",
+        "user_id": 91889
+    },
+    {
+        "create_time": "2016-10-20 15:29:38.646212",
+        "datasets": [
+            {
+                "dataset_id": "17567380",
+                "extension": "bam",
+                "file_size": 39157455,
+                "name": "Map with BWA-MEM on data 2 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17567380",
+                "extension": "bam",
+                "file_size": 39157455,
+                "name": "Map with BWA-MEM on data 2 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2854742,
+        "id": 14131899,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8346173.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/sacCer2.len\"",
+            "dbkey": "\"sacCer2\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"sacCer2\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5215b7f0c3225a48d\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33567893,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-10-20 15:30:02.633710",
+        "user_id": 91889
+    },
+    {
+        "create_time": "2017-03-31 08:25:12.817104",
+        "datasets": [
+            {
+                "dataset_id": "19396005",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Lambda_1D.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "19396005",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Lambda_1D.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "19396525",
+                "extension": "fasta",
+                "file_size": 49251,
+                "name": "Lambda Reference.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3048905,
+        "id": 15443620,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9574457.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"output_mapping_quality\": \"false\", \"__current_case__\": 1, \"genotype_likelihood_computation_type_selector\": \"do_not_perform_genotype_likelihood_computation\", \"base_position_on_reads\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28988742}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 28988212}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37001750,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-31 08:32:51.338307",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2016-11-23 20:14:07.287077",
+        "datasets": [
+            {
+                "dataset_id": "17977261",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Table Recalibration on data 4, data 18, and data 19 (BAM)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17977261",
+                "extension": "bam",
+                "file_size": 0,
+                "name": "Table Recalibration on data 4, data 18, and data 19 (BAM)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "17968158",
+                "extension": "bed",
+                "file_size": 8368,
+                "name": "panel_coverage.bed",
+                "param_name": "advanced_options|bed_regions"
+            }
+        ],
+        "dependencies": [
+            {
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler1",
+        "history_id": 2906242,
+        "id": 14419119,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8623719.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"5ebb9f3eb1b911e68b6c005056a51846\"",
+            "advanced_options": "{\"max_reads_per_bam\": \"250\", \"advanced_options_selector\": \"advanced\", \"extended_BAQ_computation\": \"true\", \"region_string\": \"\", \"limit_by_region\": {\"bed_regions\": {\"values\": [{\"src\": \"hda\", \"id\": 27389812}]}, \"limit_by_regions\": \"history\", \"__current_case__\": 0}, \"disable_probabilistic_realignment\": \"false\", \"skip_anomalous_read_pairs\": \"false\", \"minimum_mapping_quality\": \"1\", \"filter_by_flags\": {\"require_flags\": null, \"__current_case__\": 0, \"filter_flags\": \"filter\", \"exclude_flags\": null}, \"__current_case__\": 0, \"coefficient_for_downgrading\": \"0\", \"minimum_base_quality\": \"13\", \"ignore_overlaps\": \"false\", \"exclude_read_group\": {\"__current_case__\": 2, \"exclude_read_groups\": \"no_limit\"}}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg19.len\"",
+            "dbkey": "\"hg19\"",
+            "genotype_likelihood_computation_type": "{\"output_mapping_quality\": \"true\", \"__current_case__\": 1, \"genotype_likelihood_computation_type_selector\": \"do_not_perform_genotype_likelihood_computation\", \"base_position_on_reads\": \"false\"}",
+            "reference_source": "{\"ref_file\": \"hg19\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 27390037}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": null,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-11-23 21:19:56.701458",
+        "user_id": 95001
+    },
+    {
+        "create_time": "2017-03-31 10:58:38.105366",
+        "datasets": [
+            {
+                "dataset_id": "19406317",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Sorted BAM File",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "19406317",
+                "extension": "bam",
+                "file_size": 435210131,
+                "name": "Sorted BAM File",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "19396525",
+                "extension": "fasta",
+                "file_size": 49251,
+                "name": "Lambda Reference.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": [
+            {
+                "cacheable": false,
+                "dependency_type": "tool_shed_package",
+                "exact": true,
+                "model_class": "ToolShedDependency",
+                "name": "samtools",
+                "path": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037",
+                "script": "/galaxy/main/deps/samtools/1.2/devteam/samtools_mpileup/bfc4517aa037/env.sh",
+                "version": "1.2"
+            }
+        ],
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 3048905,
+        "id": 15444472,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "9575404.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"output_mapping_quality\": \"false\", \"__current_case__\": 1, \"genotype_likelihood_computation_type_selector\": \"do_not_perform_genotype_likelihood_computation\", \"base_position_on_reads\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": 28988742}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": 29000857}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 37001750,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2017-03-31 11:05:57.214117",
+        "user_id": 103036
+    },
+    {
+        "create_time": "2016-10-22 19:12:02.139265",
+        "datasets": [
+            {
+                "dataset_id": "17567380",
+                "extension": "bam",
+                "file_size": 39157455,
+                "name": "Map with BWA-MEM on data 2 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17567380",
+                "extension": "bam",
+                "file_size": 39157455,
+                "name": "Map with BWA-MEM on data 2 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w3_handler0",
+        "history_id": 2854742,
+        "id": 14148064,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "8360604.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/sacCer2.len\"",
+            "dbkey": "\"sacCer2\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": \"sacCer3\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5215b7f0c3225a48d\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 33567893,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-10-22 19:12:56.314197",
+        "user_id": 91889
+    },
+    {
+        "create_time": "2016-07-14 06:30:49.204428",
+        "datasets": [
+            {
+                "dataset_id": "16572888",
+                "extension": "bam",
+                "file_size": 3035623,
+                "name": "Map with BWA-MEM on data 5 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "16572888",
+                "extension": "bam",
+                "file_size": 3035623,
+                "name": "Map with BWA-MEM on data 5 and data 3 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "16572852",
+                "extension": "fasta",
+                "file_size": 4458950,
+                "name": "tuberculosi.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler1",
+        "history_id": 2765680,
+        "id": 13406803,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7618790.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"output_mapping_quality\": \"false\", \"__current_case__\": 1, \"genotype_likelihood_computation_type_selector\": \"do_not_perform_genotype_likelihood_computation\", \"base_position_on_reads\": \"false\"}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b563ea4c4f20f4ddde\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b558b0ba38becf5dbb\"}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 31466834,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-07-14 06:32:15.357722",
+        "user_id": 64111
+    },
+    {
+        "create_time": "2016-07-14 05:48:30.872161",
+        "datasets": [
+            {
+                "dataset_id": "16555992",
+                "extension": "bam",
+                "file_size": 3042284,
+                "name": "Map with BWA-MEM on data 156 and data 17 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "16555992",
+                "extension": "bam",
+                "file_size": 3042284,
+                "name": "Map with BWA-MEM on data 156 and data 17 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "16524129",
+                "extension": "fasta",
+                "file_size": 4458950,
+                "name": "tuberculosi.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2756068,
+        "id": 13406604,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7618102.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51ca846bba6717026\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56989e0b0e656ed13\"}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 31410240,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-07-14 05:49:46.636859",
+        "user_id": 63548
+    },
+    {
+        "create_time": "2016-07-14 05:44:31.225208",
+        "datasets": [
+            {
+                "dataset_id": "16555992",
+                "extension": "bam",
+                "file_size": 3042284,
+                "name": "Map with BWA-MEM on data 156 and data 17 (mapped reads in BAM format)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "16555992",
+                "extension": "bam",
+                "file_size": 3042284,
+                "name": "Map with BWA-MEM on data 156 and data 17 (mapped reads in BAM format)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "16524129",
+                "extension": "fasta",
+                "file_size": 4458950,
+                "name": "tuberculosi.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w2_handler1",
+        "history_id": 2756068,
+        "id": 13406572,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7617948.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b51ca846bba6717026\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b56989e0b0e656ed13\"}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 31410240,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-07-14 05:45:54.967372",
+        "user_id": 63548
+    },
+    {
+        "create_time": "2016-04-17 19:41:11.216502",
+        "datasets": [
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam2"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam3"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam4"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam5"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam6"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam7"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam8"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam9"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam10"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam11"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam12"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam13"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam14"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam15"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam16"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam17"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam18"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam19"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam20"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam21"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam22"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam23"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam24"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam25"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam26"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam27"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam28"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam29"
+            },
+            {
+                "dataset_id": "15283425",
+                "extension": "fastqsanger",
+                "file_size": 1804758,
+                "name": "SamToFastq run (UNPAIRED_READS)",
+                "param_name": "input_bam30"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2673024,
+        "id": 12493222,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6686510.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "__workflow_invocation_uuid__": "\"3285af8c04d411e6999d005056a52a46\"",
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/hg38.len\"",
+            "dbkey": "\"hg38\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"false\", \"__current_case__\": 0, \"output_tags\": [\"SP\"]}",
+            "reference_source": "{\"ref_file\": \"hg38\", \"reference_source_selector\": \"cached\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}, {\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52e40884867e7c7ac\"}]}, \"__current_case__\": 0}"
+        },
+        "runner_name": null,
+        "session_id": 29009079,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-04-17 19:43:34.330746",
+        "user_id": 80620
+    },
+    {
+        "create_time": "2016-03-23 16:44:01.990304",
+        "datasets": [
+            {
+                "dataset_id": "14945593",
+                "extension": "bam",
+                "file_size": 12903414,
+                "name": "spadesmulti2ref.bam",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "14945593",
+                "extension": "bam",
+                "file_size": 12903414,
+                "name": "spadesmulti2ref.bam",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "14946723",
+                "extension": "fasta",
+                "file_size": 2876655,
+                "name": "MW2.fna",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w1_handler0",
+        "history_id": 2642459,
+        "id": 12237007,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "6450998.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"__current_case__\": 0, \"output_format\": \"--VCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"False\", \"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": 23994493, \"reference_source_selector\": \"history\", \"input_bam\": \"23993242\", \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 29133788,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-03-23 16:49:25.239648",
+        "user_id": 81149
+    },
+    {
+        "create_time": "2016-09-02 15:30:41.325195",
+        "datasets": [
+            {
+                "dataset_id": "17063012",
+                "extension": "bam",
+                "file_size": 3549181,
+                "name": "SAM-to-BAM on data 2 and data 9: converted BAM",
+                "param_name": "input_bam"
+            },
+            {
+                "dataset_id": "17063012",
+                "extension": "bam",
+                "file_size": 3549181,
+                "name": "SAM-to-BAM on data 2 and data 9: converted BAM",
+                "param_name": "input_bam1"
+            },
+            {
+                "dataset_id": "17062422",
+                "extension": "fasta",
+                "file_size": 121163641,
+                "name": "tair10chr.fasta",
+                "param_name": "ref_file"
+            }
+        ],
+        "dependencies": null,
+        "destination_id": "slurm_normal",
+        "destination_params": {
+            "nativeSpecification": "--time=36:00:00 --clusters=roundup --nodes=1 --ntasks=1 --partition=normal"
+        },
+        "exit_code": null,
+        "handler": "main_w4_handler0",
+        "history_id": 2808867,
+        "id": 13770701,
+        "imported": false,
+        "info": "This job was terminated because it used more memory than it was allocated.\nPlease click the bug icon to report this problem if you need help.",
+        "job_runner_external_id": "7991869.roundup",
+        "job_runner_name": "slurm",
+        "library_folder_id": null,
+        "metrics": {},
+        "object_store_id": "corral-repl",
+        "param_filename": null,
+        "parameters": {
+            "advanced_options": "{\"advanced_options_selector\": \"basic\", \"__current_case__\": 1}",
+            "chromInfo": "\"/galaxy-repl/localdata/chrom/?.len\"",
+            "dbkey": "\"?\"",
+            "genotype_likelihood_computation_type": "{\"genotype_likelihood_computation_type_selector\": \"perform_genotype_likelihood_computation\", \"output_format\": \"--BCF\", \"perform_indel_calling\": {\"__current_case__\": 0, \"perform_indel_calling_selector\": \"perform_indel_calling_def\"}, \"compressed\": \"true\", \"__current_case__\": 0, \"output_tags\": null}",
+            "reference_source": "{\"ref_file\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b5be89f1da7cf24a3b\"}]}, \"reference_source_selector\": \"history\", \"input_bam\": {\"values\": [{\"src\": \"hda\", \"id\": \"bbd44e69cb8906b52fe4c3bbd17e07b3\"}]}, \"__current_case__\": 1}"
+        },
+        "runner_name": null,
+        "session_id": 32577162,
+        "state": "error",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.1",
+        "tool_version": "2.1.1",
+        "traceback": null,
+        "update_time": "2016-09-02 15:32:44.902649",
+        "user_id": 88867
+    }
+]
