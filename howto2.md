@@ -14,7 +14,15 @@ The public server of the Galaxy Project, www.usegalaxy.org, has been collecting 
 * classification results
 * future work
 
-## What is the Galaxy Project
+## Definining the Goal of this Paper
+
+This dataset has not previously been analyzed, so we have a lot of opportunities to be creative with it. In this project I will discuss 3 closely related projects.
+
+1. Getting to know the data - It is important to understand the type of data we have, how the data is represented, a few statistical metrics, limitations, and problems.
+2. Predicting the runtime of jobs - To predict the runtime of jobs, we test several machine learning regression models that train on the data and evaluate the performance of the models.
+3. Predicting whether a job will finish in a specific amount of time - To predict whether a job will finish within a specific amount of time we use a random forest classyfier.
+
+### Background: What is the Galaxy Project
 
 To people who are unfamiliar with the Galaxy Project, it is easier to explain why the Galaxy Project is than to explain what the Galaxy Project is.
 
@@ -24,7 +32,17 @@ With the Galaxy Project, researchers run algorithms on the public Galaxy server.
 
 For more information visit www.galaxyproject.org.
 
-## Description of Data Collected
+### Background: Random Forests
+
+### Background: Previous work on runtime prediction of programs
+
+Previous work done on predicting the runtime of programs mostly focused on predicting the runtimes of short programs such as SQL queries - these are on the order of milliseconds. Recently, there has been some work done on predicting the runtimes of longer, more complex programs, such as (that paper about bio tools) and (the np paper).
+
+This is the first time that such a large dataset has been available to attempt to create a runtime prediction model. We verify that Random Forests are the best model for the regression, and present a practical approach for determining an appropriate walltime, which is with the use of a classyfier.
+
+## Overview of Data
+
+### Description of Data Collected
 
 All of the tools found on usegalaxy.org are tracked. The data is collected using the Galactic Radio Telescope (GRT), which records a comprehensive set of job run attributes.
 
@@ -49,22 +67,7 @@ This includes:
 
 Description of bioinformatics algorithms. They are typically run on a large strands of dna... the human genome is 4 giga bytes.. some take long.. some are fast.. bioinfomatics is a growing field... provide a number on how much traffic the galaxy project gets a day and how this has increased over the past
 
-## Definining the Goal of this Paper
-
-This dataset has not previously been analyzed, so we have a lot of opportunities to be creative with it. In this project I will discuss 3 closely related projects.
-
-1. getting to know the data
-2. predicting the runtime of jobs
-3. predicting whether a job will finish in a specific amount of runtime
-
-It is important to understand the type of data we have, how the data is represented, a few statistical metrics, limitations, and problems.
-
-To predict the runtime of jobs, we test several machine learning regression models that train on the data and evaluate the performance of the models on a testing set.
-
-To predict whether a job will finish within a specific amount of time we use a random forest classyfier.
-
-
-## Overview of Data
+### Undetected Errors
 
 One hurdle the dataset presents is that it contains undedected errors - errors that occured but were not recorded.
 
@@ -76,7 +79,7 @@ One goal of this project is to create a computer program that predicts if a job 
 
 For bwa mem (v. 0.7.15.1) - an alignment algorithm - 1.7% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 5.0% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
 
-One way to account for undetected errors is to simply get rid of the jobs that took the longest and the shortest amount of time
+One way to account for undetected errors is to simply get rid of the jobs that took the longest and the shortest amount of time to complete.
 
 Skewness of runtimes
 
