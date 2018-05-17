@@ -61,28 +61,26 @@ This includes:
 
 ## Overview of Data
 
-### Statistical Summary
+Statistical Summary
 
 A summary of the tool runtime statistics can be found at summary_statistics.csv
 
-### Limitations of the Data
+Limitations of the Data
 
 The GRT was set up to collect all of the important data for a job run. However, as with all data collection, there were some unforseeable problems with the data collected.
 
-#### Future attributes to track
+Future attributes to track
 
 * memory
 * server load
 * add noise to processors
 
-#### messiness of user selected parameters
+ messiness of user selected parameters
 
 * labels (such as plot axes names)
 * redundency (two attributes that represent the same information)
 * lists
 * ids
-
-#### silent errors
 
 One hurdle the dataset presents is that it contains what I call silent errors. By that, I mean, an error that occured was not recorded.
 
