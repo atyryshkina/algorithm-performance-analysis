@@ -32,7 +32,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses quickly and easily. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysys software on one's own machines. This can be a difficult and time consuming task.
 
-With the Galaxy Project, researchers run analyses on the public Galaxy server. To do so, the user needs only to connect to www.usegalaxy.org, upload their data, choose the analysis and the analysis parameters (if any), and hit run. The output of can be viewed once it is finished.
+With the Galaxy Project, researchers run analyses on the public Galaxy server. To do so, the user needs only to connect to www.usegalaxy.org, upload their data, choose the analysis and the analysis parameters (if any), and hit run. The output can be viewed once it is finished.
 
 For more information visit www.galaxyproject.org.
 
@@ -50,7 +50,7 @@ In this case, the decision tree tries predict how long a job is going to take. T
 
 ![alt text](images/decision_tree_vertical.png)
 
-A random forest is a collection of decision trees, each of which are trained with a unique random seed. The random seed determines which sub-sample of the data each decision tree is trained and which sub-sample of attributes each tree uses. By implementing these constraints, the random forest protects itself from overfitting, which decision trees are susceptible to.
+A random forest is a collection of decision trees, each of which are trained with a unique random seed. The random seed determines which sub-sample of the data each decision tree is trained and which sub-sample of attributes each tree uses. By implementing these constraints, the random forest protects itself from overfitting - a problem to which decision trees are susceptible.
 
 Incidently, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attibute to split a node, the larger it's implied effect on the dependent attribute. The scikit-learn Random Forest classes have an easy way of getting this information with the feature_importances_ class attribute.
 
@@ -58,18 +58,18 @@ Incidently, the decision tree also offers a way to see which independent attribu
 
 [
 this part in brackets are just my notes
-PQR: Predicting Query Execution Times for Autonomous Workload Management (2008) [Gupta et al.](10.1109/ICAC.2008.12) -> PQR trees are like decision trees, but the categories are chosen dynamically and each node has a different classifier.
+PQR: Predicting Query Execution Times for Autonomous Workload Management (2008) [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) -> PQR trees are like decision trees, but the categories are chosen dynamically and each node has a different classifier.
 
-On the use of machine learning to predict the time and resources consumed by applications (2010) [Matsunaga et al.](10.1109/CCGRID.2010.98) -> BLAST (local alignment algorithm) and RAXML PQR2
+On the use of machine learning to predict the time and resources consumed by applications (2010) [Matsunaga et al.](http://doi.org/10.1109/CCGRID.2010.98) -> BLAST (local alignment algorithm) and RAXML PQR2
 
 Algorithm Runtime Prediction: Methods & Evaluation (2014) -> [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003)
 ]
 
 Previous work on runtime prediction of complex algorithms have seen a wide range of approaches.
 
-In 2008, Gupta proposes a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. In the same paper, Gupta presents a way to dynamically choose runtime bins that would be appropriate for a set of historical query runtimes. [an explanation of how they do this] The paper notes that the PQR Tree outperforms the decision tree, and that the performance of both trees imporoves with the use of dynamically chosen bins over the use of a-priori chosen bins. However, the results were not compared to the performance of a Random Forest.
+In 2008, [Gupta](http://doi.org/10.1109/ICAC.2008.12) proposes a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. In the same paper, Gupta presents a way to dynamically choose runtime bins that would be appropriate for a set of historical query runtimes. [an explanation of how they do this] The paper notes that the PQR Tree outperforms the decision tree, and that the performance of both trees imporoves with the use of dynamically chosen bins over the use of a-priori chosen bins. However, the results were not compared to the performance of a Random Forest.
 
-In 2010, Matsunaga enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). They used mean performance error (MPE) as a metric for their results. The improvements found are shown in the table below.
+In 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). They used mean performance error (MPE) as a metric for their results. The improvements found are shown in the table below.
 
 #### MPE of PQR vs PQR2
 
@@ -78,13 +78,11 @@ In 2010, Matsunaga enhances on the PQR Tree by adding linear regressors at its l
 |BLAST|8.81%|8.76%|
 |RAxML|40.82%|35.30%|
 
-Previous work done on predicting the runtime of programs mostly focused on predicting the runtimes of short programs such as SQL queries - these are on the order of milliseconds. Recently, there has been some work done on predicting the runtimes of longer, more complex programs, such as (that paper about bio tools) and (the np paper).
+Recently, [Hutter](https://doi.org/10.1016/j.artint.2013.10.003) compared multiple methods of predicting the runtime of a number of complex algorithms. They compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests. They did not include PQR tree in their evaluations. They find that the random forest outperforms the other regressors in nearly all assessments and is able to handle high dimensional data without the need of feature selection.
 
-This is the first time that such a large dataset has been available to attempt to create a runtime prediction model trained on real data. We verify that Random Forests are the best model for the regression, and present a practical approach for determining an appropriate walltime, which is with the use of a classyfier.
+This is the first time that such a large dataset has been available to attempt to create a runtime prediction model trained on real data. We verify that Random Forests are the best model for the regression, and present a practical approach for determining an appropriate walltime, which is with the use of a classifier.
 
 ## Overview of Data
-
-### Description of Data Collected
 
 All of the tools found on usegalaxy.org are tracked. The data is collected using the Galactic Radio Telescope (GRT), which records a comprehensive set of job run attributes.
 
@@ -107,7 +105,7 @@ This includes:
     - session id
     - history id
 
-Description of bioinformatics algorithms. They are typically run on a large strands of dna... the human genome is 4 giga bytes.. some take long.. some are fast.. bioinfomatics is a growing field... provide a number on how much traffic the galaxy project gets a day and how this has increased over the past
+Description of bioinformatics algorithms. They are typically run on a large strands of dna... the human genome is 4 giga bytes.. some take a long time.. some take a short time.. provide a number on how much traffic the galaxy project gets a day and how this has increased over the past
 
 ### Undetected Errors
 
