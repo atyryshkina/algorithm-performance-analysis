@@ -129,17 +129,17 @@ This transformation works for most of the runtime and intput file size attribute
 
 One hurdle the dataset presents is that it contains undedected errors - errors that occured but were not recorded.
 
-For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided to bwa mem, it should not run at all or else the run should result in an error. In spite of this, the dataset of bwa mem v. 0.7.15.1 jobs that ran succesfuly and without an input file is 1186 or 15.1% of "succesful" jobs. Of these same runs 350 (4.5%) of these jobs take longer than 60 seconds to complete, and 22 (0.3%) of the jobs take longer than an hour to complete.
+For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided, bwa mem should not run at all or else the run should result in an error. In spite of this, the dataset of bwa mem v. 0.7.15.1 jobs that ran succesfuly and without an input file is 49 or 0.25% of "succesful" jobs. Of these same runs 15 (0.08%) of these jobs take longer than 60 seconds to complete.
 
-With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the large number of (this specific type) of errors found is troubling. If there are as many other jobs mislabelled as "sucesfully completed" that are not so easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
+With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the large number of (this specific type) of errors found is troubling. If there are many other jobs mislabelled as "sucesfully completed" that are not so easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
 
 There are other ways that we can guess that a job can be considered to have experienced a undedected error. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
 
-One way to account for undetected errors is to simply get rid of the jobs that took the longest and the shortest amount of time to complete.
+Using this hueristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
 
 ![alt text](images/gaus_dist2.png)
 
-For bwa mem (v. 0.7.15.1) - an alignment algorithm - 1.7% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 5.0% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
+For bwa mem (v. 0.7.15.1) - an alignment algorithm - 8.1% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 17.1% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
 
 Another method to remove bad jobs from the dataset is to use our intuition. For most tools, we know which variables have the largest influence on the runtime. For bwa mem, the variables that affect runtime the most are input file size and reference file size. If we freeze all of the other variables and only look at the relationship between these two attributes and runtime, we may be able to find bad jobs.
 
@@ -153,17 +153,11 @@ The refernece file, hg19 is the human genome
 
 The reference file, hg38 is another version of the human genome.
 
-The fi
+The first graph shows a strong correlation between input file and runtime. This is the correlation we expect. The outliers that we remove are the datapoints in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster than it.
 
-One goal of this project is to create a computer program that predicts if a job has experienced an undedected error and is taking an unreasonably long time to finish. To do that we employ a machine learning model, and train it on the collected data. If the training data contains few undedected errors, we can treat those outliers as noise, and train the model on the unpruned data without much worry. If the training data contains many instances of undedected errors this will effect the performance and reliability of the model, so we would want to filter the bad data out before hand.
+The second graph, displays complete uncorrelation between runtime and input file size. In this case, we would throw all of the datapoints away.
 
-One way to account for undetected errors is to simply get rid of the jobs that took the longest and the shortest amount of time to complete.
-
-Skewness of runtimes
-
-Limitations of the Data
-
-The GRT was set up to collect all of the important data for a job run. However, as with all data collection, there were some unforseeable problems with the data collected.
+#### next title
 
 Future attributes to track
 
