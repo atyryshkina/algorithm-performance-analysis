@@ -19,7 +19,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 ## Table of Contents
 [to be fixed at the end]
-* [what is the galaxy project](###background:-what-is-the-galaxy-project)
+* [what is the galaxy project](#background:-what-is-the-galaxy-project)
 * scikit-learn and machine learning
 * previous work
 * description of data collected
@@ -194,7 +194,7 @@ The parameters are screened for usefulness in the following way:
 
 There are cetain types of data the machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
 
-For the continuous variables, as previously noted, we log transform with numpy.log1p when the variable is highly skewed. Then, we scale the continuous variable to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
+For the continuous variables, as previously noted, we log transform with numpy.log1p if the variable is highly skewed. Then, we scale the continuous variable to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
 
 For categorical variables, we binarize them using sklearn.preprocessing.LabelBinarizer. An example of label binarization is shown below. The categorical variable "analysis_type" is expanded into four discrete variables that can take the values 0 or 1.
 
@@ -205,9 +205,7 @@ For categorical variables, we binarize them using sklearn.preprocessing.LabelBin
 |pacbio   |0   | 0  | 1  |0|
 |ont2d   |0   | 0  | 0  |1|
 
-We typically see two or three continuous variables for every tool, and about one hundred expanded categorical variables.
-
-
+We typically have two or three continuous variables for every tool, and about one hundred expanded categorical variables. Although some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options, may have only a handful of expanded categorical variables, such as fastq groomer.
 
 ## Future Work
 
