@@ -36,7 +36,7 @@ With the Galaxy Project, researchers run analyses on the public Galaxy server. T
 
 For more information visit www.galaxyproject.org.
 
-### Background: scikit-learn and Machine Learning
+### Background: scikit-learn and machine learning
 
 scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data prepocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests - specifically the regression and classification classes.
 
@@ -105,19 +105,57 @@ This includes:
     - session id
     - history id
 
-Description of bioinformatics algorithms. They are typically run on a large strands of dna... the human genome is 4 giga bytes.. some take a long time.. some take a short time.. provide a number on how much traffic the galaxy project gets a day and how this has increased over the past
+[Description of bioinformatics algorithms. They are typically run on a large strands of dna... the human genome is 4 giga bytes.. some take a long time.. some take a short time.. provide a number on how much traffic the galaxy project gets a day and how this has increased over the past]
 
-### Undetected Errors
+#### Distribution of the Data
+
+Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and filesizes in the Galaxy dataset are highly skewed. The distribution of filesizes and runtimes for a tool called bwa mem version 0.7.15.1 can be seen below. I will be using bew mem as an example for the rest of this paper.
+
+![alt text](images/runtimes3.png)
+
+![alt text](images/filesize_bwamem.png)
+
+
+In this project, we address this skewness by doing a log transform on the data.
+We use numpy's log transformer numpy.log1p which transforms the data by log(1+x)
+
+![alt text](images/log_runtimes3.png)
+
+![alt text](images/log_filesize3.png)
+
+This transformation works for most of the runtime and intput file size attributes to give a more balanced distribution.
+
+#### Undetected Errors
 
 One hurdle the dataset presents is that it contains undedected errors - errors that occured but were not recorded.
 
-A job can be considered to have experienced a undedected error if it finished in an unreasonably short time (such an alignment job that finishes in 6 seconds), of if it finished in an unreasonably long time (such as a ??). Someone familiar with the algorithm can quickly infer that something went wrong in these two cases. Can we teach a computer do the same?
+For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided to bwa mem, it should not run at all or else the run should result in an error. In spite of this, the dataset of bwa mem v. 0.7.15.1 jobs that ran succesfuly and without an input file is 1186 or 15.1% of "succesful" jobs. Of these same runs 350 (4.5%) of these jobs take longer than 60 seconds to complete, and 22 (0.3%) of the jobs take longer than an hour to complete.
 
-Undedected errors can happen for a variety of reasons. It could be that the job was given bad data that caused it do end quickly without outputing an error. Another possibility is that the algorithm gets stuck in a loop that causes it to go on for ages. Or it could be some error on the server side.
+With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the large number of (this specific type) of errors found is troubling. If there are as many other jobs mislabelled as "sucesfully completed" that are not so easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
 
-One goal of this project is to create a computer program that predicts if a job has experienced an undedected error and is taking an unreasonably long time to finish. To do that we employ a machine learning model, and train it on the collected data. If the training data contains few undedected errors, we can treat those outliers as noise, and feed the data to the model without much worry. If the training data contains many instances of undedected errors this will effect the performance and reliability of the model, so we would want to filter the bad data out before hand.
+There are other ways that we can guess that a job can be considered to have experienced a undedected error. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+
+One way to account for undetected errors is to simply get rid of the jobs that took the longest and the shortest amount of time to complete.
+
+![alt text](images/gaus_dist2.png)
 
 For bwa mem (v. 0.7.15.1) - an alignment algorithm - 1.7% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 5.0% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
+
+Another method to remove bad jobs from the dataset is to use our intuition. For most tools, we know which variables have the largest influence on the runtime. For bwa mem, the variables that affect runtime the most are input file size and reference file size. If we freeze all of the other variables and only look at the relationship between these two attributes and runtime, we may be able to find bad jobs.
+
+In the following figures all of the user selected parameters are frozen except for input file size. We were able to freeze the reference file size because many reference genomes, such as the human genome, are very popular.
+
+![alt text](images/hg19.png)
+
+The refernece file, hg19 is the human genome
+
+![alt text](images/hg38patch.png)
+
+The reference file, hg38 is another version of the human genome.
+
+The fi
+
+One goal of this project is to create a computer program that predicts if a job has experienced an undedected error and is taking an unreasonably long time to finish. To do that we employ a machine learning model, and train it on the collected data. If the training data contains few undedected errors, we can treat those outliers as noise, and train the model on the unpruned data without much worry. If the training data contains many instances of undedected errors this will effect the performance and reliability of the model, so we would want to filter the bad data out before hand.
 
 One way to account for undetected errors is to simply get rid of the jobs that took the longest and the shortest amount of time to complete.
 
