@@ -19,7 +19,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 ## Table of Contents
 [to be fixed at the end]
-* [what is the galaxy project](###background:-what-is-the-galaxy-project)
+* [what is the galaxy project](#background:-what-is-the-galaxy-project)
 * scikit-learn and machine learning
 * previous work
 * description of data collected
