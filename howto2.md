@@ -18,11 +18,12 @@ The ability to determine appropriate walltimes will save server resources from j
 undetected by the server — such as jobs that fall into infinite loops. Once freed, these resources can then be used to run jobs in the queue without the need to allocate additional hardware.
 
 ## Table of Contents
+[to be fixed at the end]
 * What is the Galaxy Project
+* scikit-learn and machine learning
+* previous work
 * Description of Data Collected
-* Limitations (or problems) of the Data
 * Possible schemes for outlier detection
-* Machine Learning Models
 * feature selection
 * random forests
 * classification results
@@ -129,21 +130,21 @@ This transformation works for most of the runtime and intput file size attribute
 
 One hurdle the dataset presents is that it contains undedected errors - errors that occured but were not recorded.
 
-For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided, bwa mem should not run at all or else the run should result in an error. In spite of this, the dataset of bwa mem v. 0.7.15.1 jobs that ran succesfuly and without an input file is 49 or 0.25% of "succesful" jobs. Of these same runs 15 (0.08%) of these jobs take longer than 60 seconds to complete.
+For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided, bwa mem should not run at all or else the run should result in an error. In spite of this, the number of bwa mem v. 0.7.15.1 jobs in the dataset that ran succesfuly and without an input file is 49 or 0.25% of "successful" jobs. Of these same runs 15 (0.08%) took longer than 60 seconds to complete.
 
-With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the large number of (this specific type) of errors found is troubling. If there are many other jobs mislabelled as "sucesfully completed" that are not so easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
+With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of (this specific type) of errors is troubling. If there are many other jobs similarly mislabelled as "sucessfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
 
-There are other ways that we can guess that a job can be considered to have experienced a undedected error. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+There are other ways that we can guess that a job experienced a undedected error. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
 
 Using this hueristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
 
 ![alt text](images/gaus_dist2.png)
 
-For bwa mem (v. 0.7.15.1) - an alignment algorithm - 8.1% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 17.1% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
+This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa mem (v. 0.7.15.1) - an alignment algorithm - 8.1% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 17.1% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
 
-Another method to remove bad jobs from the dataset is to use our intuition. For most tools, we know which variables have the largest influence on the runtime. For bwa mem, the variables that affect runtime the most are input file size and reference file size. If we freeze all of the other variables and only look at the relationship between these two attributes and runtime, we may be able to find bad jobs.
+Since we know that the two variables that have the greatest affect on the runtime of bwa mem are input file size and reference file size, we should add these variable into our consideration. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file size and runtime.
 
-In the following figures all of the user selected parameters are frozen except for input file size. We were able to freeze the reference file size because many reference genomes, such as the human genome, are very popular.
+In the following figures all of the user selected parameters are frozen except for input file size. We were able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used.
 
 ![alt text](images/hg19.png)
 
@@ -157,21 +158,26 @@ The first graph shows a strong correlation between input file and runtime. This 
 
 The second graph, displays complete uncorrelation between runtime and input file size. In this case, we would throw all of the datapoints away.
 
-#### next title
+Using this method to prune out bad jobs requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning. This type of analysis would lead to the best results, but at the time of this writing, it has not been completed for the Galaxy dataset.
 
-Future attributes to track
+A final method of undetected error detection that we will discuss is with the use of an isolation forest. In a regular random forest, a node in a decision tree chooses to divide data based on the attribute and split that most greatly decreases that variability of the following to datasets. In an isolation forest, the data is split based on a random selection of an attribute and split. The longer it takes to isolate a datapoint, the less likely it is an outlier. As with removing the tails of the runtime distribution, we need to choose the percentage of jobs that are bad before hand.
 
-* memory
-* server load
-* add noise to processors
+To remove bad jobs, we used the isolation forest. We also removed any obvious undetected errors, such as no-input- file errors, wherever we could.
 
-messiness of user selected parameters
+#### user selected parameters
+
+Before we move to the machine learning models, we also should discuss which variables we used to train the prediction models. The user selected parameters are a mixed bag. Some of the parameters are very important, such as the reference genome size, and some are not important at all. Unimportant parameters include:
 
 * labels (such as plot axes names)
 * redundency (two attributes that represent the same information)
-* lists
 * ids
 
+There are also some attributes that are important, but are not immediately available in the dataset. The complexity of bwa mem is O(reference size * input file size). This product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome name is provided then the reference genome size is not provided. Adding the size of named genomes would be misleading to a machine learning model. Unnamed genomes are always indexed before each run, and the time it takes to index is part of the runtime. Named genomes are pre-indexed, and so do not have the extra indexing time tacked onto them like unnamed genomes.
+
+The parameters are screened for usefulness in the following way:
+
+1. asked
+2. 
 
 ## Future Work
 
