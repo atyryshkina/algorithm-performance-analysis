@@ -19,10 +19,10 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 ## Table of Contents
 [to be fixed at the end]
-* What is the Galaxy Project
+* [what is the galaxy project](###background:-what-is-the-galaxy-project)
 * scikit-learn and machine learning
 * previous work
-* Description of Data Collected
+* description of data collected
 * Possible schemes for outlier detection
 * feature selection
 * random forests
@@ -58,12 +58,17 @@ Incidently, the decision tree also offers a way to see which independent attribu
 ### Background: Previous work on runtime prediction of programs
 
 [
+
 this part in brackets are just my notes
+
+also this section needs to be heavily edited at the end
+
 PQR: Predicting Query Execution Times for Autonomous Workload Management (2008) [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) -> PQR trees are like decision trees, but the categories are chosen dynamically and each node has a different classifier.
 
 On the use of machine learning to predict the time and resources consumed by applications (2010) [Matsunaga et al.](http://doi.org/10.1109/CCGRID.2010.98) -> BLAST (local alignment algorithm) and RAXML PQR2
 
 Algorithm Runtime Prediction: Methods & Evaluation (2014) -> [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003)
+
 ]
 
 Previous work on runtime prediction of complex algorithms have seen a wide range of approaches.
@@ -166,18 +171,43 @@ To remove bad jobs, we used the isolation forest. We also removed any obvious un
 
 #### user selected parameters
 
-Before we move to the machine learning models, we also should discuss which variables we used to train the prediction models. The user selected parameters are a mixed bag. Some of the parameters are very important, such as the reference genome size, and some are not important at all. Unimportant parameters include:
+Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The user selected parameters are a mixed bag. Some of the parameters are very important, such as the reference genome size, and some are not important at all. Unimportant parameters include:
 
 * labels (such as plot axes names)
-* redundency (two attributes that represent the same information)
+* redundenct parameters (two attributes that represent the same information)
 * ids
 
-There are also some attributes that are important, but are not immediately available in the dataset. The complexity of bwa mem is O(reference size * input file size). This product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome name is provided then the reference genome size is not provided. Adding the size of named genomes would be misleading to a machine learning model. Unnamed genomes are always indexed before each run, and the time it takes to index is part of the runtime. Named genomes are pre-indexed, and so do not have the extra indexing time tacked onto them like unnamed genomes.
+There are also some attributes that are important, but are not immediately available in the dataset. The complexity of bwa mem is O(reference size * input file size). However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome name is provided then the reference genome size is not provided. Adding the size of named genomes would be misleading to a machine learning model. Unnamed genomes are always indexed before each run, and the time it takes to index adds signifcantly to the runtime. Named genomes are pre-indexed, and so do not have the extra indexing time tacked onto them like unnamed genomes.
 
 The parameters are screened for usefulness in the following way:
 
-1. asked
-2. 
+1. Remove universally unuseful parameters
+  - __workflow_invocation_uuid_
+  - chromInfo
+  - parameters whose names begin with "__job_resource"
+  - parameters whose names end with "values"
+  - parameters whose names end with "|__identifier_"
+2. Remove any categorical parameters whose number of unique categories exceed a threshhold
+3. Remove any categorical parameters which are lists
+
+#### attribute preprocessing
+
+There are cetain types of data the machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
+
+For the continuous variables, as previously noted, we log transform with numpy.log1p when the variable is highly skewed. Then, we scale the continuous variable to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
+
+For categorical variables, we binarize them using sklearn.preprocessing.LabelBinarizer. An example of label binarization is shown below. The categorical variable "analysis_type" is expanded into four discrete variables that can take the values 0 or 1.
+
+||x1|x2|x3|x4|
+|---|---|---|---|---|
+| illumina  | 1  | 0  | 0  |0|
+|full   |0   | 1  | 0  |0|
+|pacbio   |0   | 0  | 1  |0|
+|ont2d   |0   | 0  | 0  |1|
+
+We typically see two or three continuous variables for every tool, and about one hundred expanded categorical variables.
+
+
 
 ## Future Work
 
