@@ -216,7 +216,33 @@ We typically have two or three continuous variables for every tool, and about on
 
 ## Model Comparison
 
-In this work, we trained the most popular regression models available on scikit-learn, and compared their performance on runtime prediction. Our results agreed with Hutter et al. that the Random Forest is the best predictor for problem. This is specifically for algorithms with many parameters and variable runtime.
+In this work, we trained popular regression models available on scikit-learn, and compared their performance. Our results agreed with Hutter et al. that the Random Forest is the best predictor for of the runtime of complex algorithms. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors.
+
+A snapshot of the results can be viewed [here](). We used a correlation metric r-squared to compare the the models. We tested it on historical data with undetected errors present and unpruned and on historical data with 5% of the jobs pruned by an isolation forest. Pruning the datasets improves the predictions of the model.
+
+||unpruned|pruned|
+|---|---|---|
+|mean r-squared over all tools|-18.5|0.51|
+
+## Estimating a Range of Runtimes
+
+The random forest gave us the best results for estimating the runtime of a job. It would be more useful, though, to estimate a range of runtimes that the job would take to complete. This way, when using the model for choosing walltimes, we lower the risk of ending jobs prematurely.
+
+A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, the quantile random forest allows one to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
+
+Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space.
+
+We tested the quantile regression forest against the historical data with five fold validation. We tested it on historical data with undetected errors unpruned and on historical data with 5% of the jobs pruned by an isolation forest.
+
+The results can be viewed [here]().
+
+||unpruned|pruned|
+|---|---|---|
+|mean accuracy of quantile forest for all tools|0.59|0.69|
+
+The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they are useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would also mess up the model predictions.
+
+## Using a random forest classifier
 
 ## Future Work
 
