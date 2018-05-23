@@ -19,7 +19,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 ## Table of Contents
 [to be fixed at the end]
-* [what is the galaxy project](#background:-what-is-the-galaxy-project)
+* [what is the galaxy project](#what-is-the-galaxy-project)
 * scikit-learn and machine learning
 * previous work
 * description of data collected
@@ -29,7 +29,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 * classification results
 * future work
 
-### Background: What is the Galaxy Project
+### What is the Galaxy Project
 
 The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses quickly and easily. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysys software on one's own machines. This can be a difficult and time consuming task.
 
