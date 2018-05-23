@@ -61,13 +61,20 @@ Incidently, the decision tree also offers a way to see which independent attribu
 
 this part in brackets are just my notes
 
-also this section needs to be heavily edited at the end
-
 PQR: Predicting Query Execution Times for Autonomous Workload Management (2008) [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) -> PQR trees are like decision trees, but the categories are chosen dynamically and each node has a different classifier.
 
 On the use of machine learning to predict the time and resources consumed by applications (2010) [Matsunaga et al.](http://doi.org/10.1109/CCGRID.2010.98) -> BLAST (local alignment algorithm) and RAXML PQR2
 
 Algorithm Runtime Prediction: Methods & Evaluation (2014) -> [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003)
+
+A Method for Estimating the Execution Time of a Parallel Task on a Grid Node (2005) -> [Phinjaroenphan](https://doi.org/10.1007/11508380_24) uses k-nearest neighbors
+
+A Hybrid Intelligent Method for Performance Modeling and Prediction of Workflow Activities in Grids (2009) -> [Duan](https://doi.org/10.1109/CCGRID.2009.58) a bayesian neural network
+
+Trace-Based Evaluation of Job Runtime and Queue Wait Time Predictions in Grids (2009) -> [Sonmez et al.](https://doi.org/10.1145/1551609.1551632)
+classified jobs into where they run, who is running it, and the size of the job then took a running average of the runtime of previous jobs in this category tof make a prediction
+
+A Survey of Online Failure Prediction Methods (2010) -> [SALFNER et al.](https://doi.org/10.1145/1670679.1670680) looks at markers such as memory usage, function called, runtime, to monitor programs being run on the server in real time. --- many different methods are described
 
 ]
 
@@ -139,7 +146,7 @@ For example, some tools require that an input file be provided. Bwa mem is one s
 
 With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of (this specific type) of errors is troubling. If there are many other jobs similarly mislabelled as "sucessfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
 
-There are other ways that we can guess that a job experienced a undedected error. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower tha possible. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
 
 Using this hueristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
 
@@ -206,6 +213,10 @@ For categorical variables, we binarize them using sklearn.preprocessing.LabelBin
 |ont2d   |0   | 0  | 0  |1|
 
 We typically have two or three continuous variables for every tool, and about one hundred expanded categorical variables. Although some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options, may have only a handful of expanded categorical variables, such as fastq groomer.
+
+## Model Comparison
+
+In this work, we trained the most popular regression models available on scikit-learn, and compared their performance on runtime prediction. Our results agreed with Hutter et al. that the Random Forest is the best predictor for problem. This is specifically for algorithms with many parameters and variable runtime.
 
 ## Future Work
 
