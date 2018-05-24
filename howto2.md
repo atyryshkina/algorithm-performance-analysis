@@ -97,11 +97,11 @@ This includes:
     - history id
 
 
-Our dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistcal summary of those tools, ordered by most popular, can be found [here]().
+The Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistcal summary of those tools, ordered by most popular, can be found [here]().
 
-The computer clusters of the Galaxy Server have different hardware specifications. The hardware which tools run on is recorded in the dataset. [I need to put hardware specs here.]
+The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
 
-The jobs have amount of memory alotted to them, but they do not have dedicated processors. The processors are shared with other jobs running on the node. The published dataset does not contain server load information or the total amount of memory used for a job. We began tracking those two attributes not long before writing this, and will publish those datasets when available.
+The jobs contain information about the amount of memory alotted to them, but they do not contain information about the amount of memory used, which we consider an important attribute. In addition, the CPUs are shared with other jobs running on the node, so the perfomance of jobs is affected by the server load at the time of execution. We began tracking these two attributes (memory used and server load) not long before writing this, and will publish those datasets when available.
 
 
 #### Distribution of the Data
