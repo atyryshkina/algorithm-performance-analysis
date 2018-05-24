@@ -73,27 +73,6 @@ The most comprehensive survey of runtime prediction models was done by [Hutter e
 
 In our paper, we verify that random forests are the best model for the regression, discuss the merits of quantile regression forests, and present a practical approach for determining an appropriate walltime with the use of a classifier.
 
-[
-
-this part in brackets are just my notes
-
-PQR: Predicting Query Execution Times for Autonomous Workload Management (2008) [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) -> PQR trees are like decision trees, but the categories are chosen dynamically and each node has a different classifier.
-
-On the use of machine learning to predict the time and resources consumed by applications (2010) [Matsunaga et al.](http://doi.org/10.1109/CCGRID.2010.98) -> BLAST (local alignment algorithm) and RAXML PQR2
-
-Algorithm Runtime Prediction: Methods & Evaluation (2014) -> [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003)
-
-A Method for Estimating the Execution Time of a Parallel Task on a Grid Node (2005) -> [Phinjaroenphan](https://doi.org/10.1007/11508380_24) uses k-nearest neighbors
-
-A Hybrid Intelligent Method for Performance Modeling and Prediction of Workflow Activities in Grids (2009) -> [Duan](https://doi.org/10.1109/CCGRID.2009.58) a bayesian neural network
-
-Trace-Based Evaluation of Job Runtime and Queue Wait Time Predictions in Grids (2009) -> [Sonmez et al.](https://doi.org/10.1145/1551609.1551632)
-classified jobs into where they run, who is running it, and the size of the job then took a running average of the runtime of previous jobs in this category tof make a prediction
-
-A Survey of Online Failure Prediction Methods (2010) -> [SALFNER et al.](https://doi.org/10.1145/1670679.1670680) looks at markers such as memory usage, function called, runtime, to monitor programs being run on the server in real time. --- many different methods are described
-
-]
-
 ## Overview of Data
 
 All of the tools found on usegalaxy.org are tracked. The data is collected using the Galactic Radio Telescope (GRT), which records a comprehensive set of job run attributes.
