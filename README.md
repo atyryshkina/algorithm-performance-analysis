@@ -47,7 +47,7 @@ For more information visit www.galaxyproject.org.
 
 scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data prepocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests, specifically the regression and classification classes.
 
-In this paper our main tool for regression and classification was the random forest, so we will briefly go over random forests.
+In this paper our main tool for regression and classification was the random forest, so we will briefly go over random forests now.
 
 A random forest is a collection of decision trees, and a desion tree is a series of questions asked about an object. At the end of the questions, a previously unkown attribute of the object is guessed. An example of a decision tree is shown below. In this case, the decision tree tries predict how long a job is going to take.
 
@@ -63,7 +63,7 @@ Incidently, the decision tree also offers a way to see which independent attribu
 
 ### Previous work on runtime prediction of programs
 
-The prediction of runtimes of complex algorithms with machine learning approaches has been tackled before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
+The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
 In a few works, new machine learning methods are designed specifically for the problem. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
 
@@ -101,7 +101,7 @@ The Galaxy dataset contains runtime data for 1372 different tools that were run 
 
 The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
 
-The CPUs are shared with other jobs running on the node, so the perfomance of jobs is affected by the server load at the time of execution. This attribute is not in the published dataset, but we began tracking it not long before writing this, and will publish those datasets when available.
+The CPUs are shared with other jobs running on the node, so the perfomance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset, but we began tracking it not long before writing this, and will publish those datasets when available.
 
 
 #### Distribution of the Data
@@ -129,13 +129,13 @@ For example, some tools require that an input file be provided. Bwa mem is one s
 
 Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors is troubling. With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. If there are many other jobs similarly mislabelled as "sucessfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions.
 
-Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an human genome alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
 
 Using this hueristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
 
 ![alt text](images/gaus_dist2.png)
 
-This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa mem (v. 0.7.15.1) - an alignment algorithm - 8.1% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 17.1% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
+This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa mem (v. 0.7.15.1) - an alignment algorithm - 2.5% of jobs in the collected data took 4 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold, we see that 5% of jobs took 5 seconds or less to finish. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
 
 Since we know that the two variables that have the greatest affect on the runtime of bwa mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
 
@@ -157,7 +157,7 @@ Using this method to prune out bad jobs requires examining each tool individuall
 
 A final method of undetected error detection that we will discuss is with the use of an isolation forest. In a regular random forest, a node in a decision tree chooses to divide data based on the attribute and split that most greatly decreases that variability of the following to datasets. In an isolation forest, the data is split based on a random selection of an attribute and split. The longer it takes to isolate a datapoint, the less likely it is an outlier. As with removing the tails of the runtime distribution, we need to choose the percentage of jobs that are bad before hand.
 
-To remove bad jobs, we used the isolation forest. We also removed any obvious undetected errors, such as no-input-file errors, wherever we could.
+To remove bad jobs, we used the isolation forest with contamination=0.05. We also removed any obvious undetected errors, such as no-input-file errors, wherever we could.
 
 #### User Selected Parameters
 
@@ -269,7 +269,7 @@ For example, for bwa mem the buckets we found (in seconds) were
 
 As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i where i is the bucket. For bwa mem, the last bucket, where i=7, holds only 0.78% of the jobs. Dividing it further would make it so the next bucket created has less than 100 jobs, which we chose as the threshold.
 
-This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
+This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
 
 The results of the classifier can be found [here](clf_pred_metrics.csv).
 
