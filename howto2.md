@@ -18,12 +18,12 @@ The ability to determine appropriate walltimes will save server resources from j
 undetected by the server — such as jobs that fall into infinite loops. Once freed, these resources can then be used to run jobs in the queue without the need to allocate additional hardware.
 
 ## Table of Contents
-[to be fixed at the end]
 
 
-* [Background: What is the Galaxy Project](#what-is-the-galaxy-project)
-* [Background: scikit-learn and machine learning](#scikit-learn-and-machine-learning)
-* [Background: Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
+- [Background](#what-is-the-galaxy-project)
+  + [What is the Galaxy Project](#what-is-the-galaxy-project)
+  + [scikit-learn and machine learning](#scikit-learn-and-machine-learning)
+  + [Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
   + [Undetected Errors](#undetected-errors)
@@ -45,9 +45,9 @@ For more information visit www.galaxyproject.org.
 
 ### scikit-learn and machine learning
 
-scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data prepocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests - specifically the regression and classification classes.
+scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data prepocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests, specifically the regression and classification classes.
 
-In this paper our main tool for regression and classification was the random forest, so we will briefly go over what a random forest is.
+In this paper our main tool for regression and classification was the random forest, so we will briefly go over random forests.
 
 A random forest is a collection of decision trees, and a desion tree is a series of questions asked about an object. At the end of the questions, a previously unkown attribute of the object is guessed. An example of a decision tree is shown below.
 
@@ -62,6 +62,16 @@ A random forest is a collection of decision trees, each of which are trained wit
 Incidently, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attibute to split a node, the larger it's implied effect on the dependent attribute. The scikit-learn Random Forest classes have an easy way of getting this information with the feature_importances_ class attribute.
 
 ### Previous work on runtime prediction of programs
+
+The prediction of runtimes of complex algorithms with machine learning approaches has been tackled before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
+
+In some works, new machine learning methods are designed specifically for the problem. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
+
+Most previous works tweak and tailor old machine learning methods to the problem. For instance, in 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). The downside of PQR2 is that there are not readily available libraries of the model in Python, R.
+
+The most comprehensive survey of runtime prediction models was done by [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) In 2014. In the paper, they compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests. They did not include PQR tree in their evaluations. They found that the random forest outperforms the other regressors in nearly all assessments and is able to handle high dimensional data without the need of feature selection.
+
+In our paper, we verify that random forests are the best model for the regression, discuss the merits of quantile regression forests, and present a practical approach for determining an appropriate walltime with the use of a classifier.
 
 [
 
@@ -83,23 +93,6 @@ classified jobs into where they run, who is running it, and the size of the job 
 A Survey of Online Failure Prediction Methods (2010) -> [SALFNER et al.](https://doi.org/10.1145/1670679.1670680) looks at markers such as memory usage, function called, runtime, to monitor programs being run on the server in real time. --- many different methods are described
 
 ]
-
-Previous work on runtime prediction of complex algorithms have seen a wide range of approaches.
-
-In 2008, [Gupta](http://doi.org/10.1109/ICAC.2008.12) proposes a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. In the same paper, Gupta presents a way to dynamically choose runtime bins that would be appropriate for a set of historical query runtimes. [an explanation of how they do this] The paper notes that the PQR Tree outperforms the decision tree, and that the performance of both trees imporoves with the use of dynamically chosen bins over the use of a-priori chosen bins. However, the results were not compared to the performance of a Random Forest.
-
-In 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). They used mean performance error (MPE) as a metric for their results. The improvements found are shown in the table below.
-
-#### MPE of PQR vs PQR2
-
-|TOOL|PQR|PQR2|
-|---|---|---|
-|BLAST|8.81%|8.76%|
-|RAxML|40.82%|35.30%|
-
-Recently, [Hutter](https://doi.org/10.1016/j.artint.2013.10.003) compared multiple methods of predicting the runtime of a number of complex algorithms. They compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests. They did not include PQR tree in their evaluations. They find that the random forest outperforms the other regressors in nearly all assessments and is able to handle high dimensional data without the need of feature selection.
-
-This is the first time that such a large dataset has been available to attempt to create a runtime prediction model trained on real data. We verify that Random Forests are the best model for the regression, and present a practical approach for determining an appropriate walltime, which is with the use of a classifier.
 
 ## Overview of Data
 
@@ -124,16 +117,16 @@ This includes:
     - session id
     - history id
 
-[Description of bioinformatics algorithms. They are typically run on a large strands of dna... the human genome is 4 giga bytes.. some take a long time.. some take a short time.. provide a number on how much traffic the galaxy project gets a day and how this has increased over the past]
+
+[Description of bioinformatics algorithms, and the server that they run on.]
 
 #### Distribution of the Data
 
-Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and filesizes in the Galaxy dataset are highly skewed. The distribution of filesizes and runtimes for a tool called bwa mem version 0.7.15.1 can be seen below. I will be using bew mem as an example for the rest of this paper.
+Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and filesizes in the Galaxy dataset are highly skewed. The distribution for a tool called BWA (version 0.7.15.1) can be seen below.
 
 ![alt text](images/runtimes3.png)
 
 ![alt text](images/filesize_bwamem.png)
-
 
 In this project, we address this skewness by doing a log transform on the data.
 We use numpy's log transformer numpy.log1p which transforms the data by log(1+x)
@@ -148,11 +141,11 @@ This transformation works for most of the runtime and intput file size attribute
 
 One hurdle the dataset presents is that it contains undedected errors - errors that occured but were not recorded.
 
-For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided, bwa mem should not run at all or else the run should result in an error. In spite of this, the number of bwa mem v. 0.7.15.1 jobs in the dataset that ran succesfuly and without an input file is 49 or 0.25% of "successful" jobs. Of these same runs 15 (0.08%) took longer than 60 seconds to complete.
+For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided, bwa mem should not run at all or else the run should result in an error. In spite of this, the number of bwa mem v. 0.7.15.1 jobs in the dataset that ran succesfuly and without an input file is 49 or 0.25% of "successful" jobs. These jobs should not have run at all, and yet they are present in the dataset and marked as succesfuly completed.
 
-With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of (this specific type) of errors is troubling. If there are many other jobs similarly mislabelled as "sucessfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions immensely.
+Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors is troubling. With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. If there are many other jobs similarly mislabelled as "sucessfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions.
 
-Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower tha possible. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), of a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
 
 Using this hueristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
 
@@ -160,7 +153,7 @@ Using this hueristic, we can account for undetected errors by getting rid of the
 
 This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa mem (v. 0.7.15.1) - an alignment algorithm - 8.1% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 17.1% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
 
-Since we know that the two variables that have the greatest affect on the runtime of bwa mem are input file size and reference file size, we should add these variable into our consideration. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file size and runtime.
+Since we know that the two variables that have the greatest affect on the runtime of bwa mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
 
 In the following figures all of the user selected parameters are frozen except for input file size. We were able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used.
 
@@ -172,7 +165,7 @@ The refernece file, hg19 is the human genome
 
 The reference file, hg38 is another version of the human genome.
 
-The first graph shows a strong correlation between input file and runtime. This is the correlation we expect. The outliers that we remove are the datapoints in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster than it.
+The first graph shows a strong correlation between input file and runtime. This is the correlation we expect. The outliers that we remove are the datapoints in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster.
 
 The second graph, displays complete uncorrelation between runtime and input file size. In this case, we would throw all of the datapoints away.
 
@@ -180,28 +173,27 @@ Using this method to prune out bad jobs requires examining each tool individuall
 
 A final method of undetected error detection that we will discuss is with the use of an isolation forest. In a regular random forest, a node in a decision tree chooses to divide data based on the attribute and split that most greatly decreases that variability of the following to datasets. In an isolation forest, the data is split based on a random selection of an attribute and split. The longer it takes to isolate a datapoint, the less likely it is an outlier. As with removing the tails of the runtime distribution, we need to choose the percentage of jobs that are bad before hand.
 
-To remove bad jobs, we used the isolation forest. We also removed any obvious undetected errors, such as no-input- file errors, wherever we could.
+To remove bad jobs, we used the isolation forest. We also removed any obvious undetected errors, such as no-input-file errors, wherever we could.
 
 #### user selected parameters
 
-Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The user selected parameters are a mixed bag. Some of the parameters are very important, such as the reference genome size, and some are not important at all. Unimportant parameters include:
+Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line to the tool that runs it. This presents in the dataset as a mixed bag of useful and useless attributes. Some of the parameters are very important, such as the reference genome size, and some are not important at all. Unimportant parameters include:
 
 * labels (such as plot axes names)
 * redundenct parameters (two attributes that represent the same information)
-* ids
+* identification numbers (such as file ids)
 
-There are also some attributes that are important, but are not immediately available in the dataset. The complexity of bwa mem is O(reference size * input file size). However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome name is provided then the reference genome size is not provided. Adding the size of named genomes would be misleading to a machine learning model. Unnamed genomes are always indexed before each run, and the time it takes to index adds signifcantly to the runtime. Named genomes are pre-indexed, and so do not have the extra indexing time tacked onto them like unnamed genomes.
+There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), so this is a very important attribute. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because the method in which the attributes were tracked.
 
 The parameters are screened for usefulness in the following way:
 
 1. Remove universally unuseful parameters
-  - __workflow_invocation_uuid_
+  - \__workflow_invocation_uuid__
   - chromInfo
-  - parameters whose names begin with "__job_resource"
-  - parameters whose names end with "values"
-  - parameters whose names end with "|__identifier_"
+  - parameters whose names end with "|\__identifier__"
 2. Remove any categorical parameters whose number of unique categories exceed a threshhold
-3. Remove any categorical parameters which are lists
+
+
 
 #### attribute preprocessing
 
