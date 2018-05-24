@@ -189,11 +189,11 @@ With these filters, we are able to remove most of the parameters that are either
 
 There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), so this is a very important attribute. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because the method in which the attributes were tracked.
 
-Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may make it easier for the random forest to find relationships, which would improve results.
+Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may make it easier for the random forest to find relationships, which would improve results, but we judged that it would be too costly to do so for all of the tools for this project.
 
 #### attribute preprocessing
 
-There are cetain types of data the machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
+There are cetain types of data that machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
 
 For the continuous variables, as previously noted, we log transform with numpy.log1p if the variable is highly skewed. Then, we scale the continuous variable to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
 
@@ -206,7 +206,7 @@ For categorical variables, we binarize them using sklearn.preprocessing.LabelBin
 |pacbio   |0   | 0  | 1  |0|
 |ont2d   |0   | 0  | 0  |1|
 
-We typically have two or three continuous variables for every tool, and about one hundred expanded categorical variables. Although some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options, may have only a handful of expanded categorical variables, such as fastq groomer.
+We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options, may have only a handful of expanded categorical variables, such as fastq groomer.
 
 ## Model Comparison
 
