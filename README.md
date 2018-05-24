@@ -1,134 +1,253 @@
-# Algorithm Performance Analysis 
+# The Analysis of Data Collected by the Galaxy Project
 
-This is a collection of tools to analyze the performance of complex algorithms. The tools use machine learning and statistics to look at real data to determine performance bottlenecks and the relationships between parameters and runtime. In the future we want to help determine appropriate hardware constraints (e.g. memory) for efficient use of resources. We also hope to make a tool for reliable runtime prediction. It is made with [Galaxy Project](https://galaxyproject.org/) admins in mind.
+## Abstract
+The public server of the Galaxy Project ( http://usegalaxy.org ) has been collecting extensive job run data on all analyses since 2013. This large collection of jobs run instances (with their corresponding attributes) can be leveraged to determine more efficient ways for allocation of Galaxy server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model for runtime prediction of complex algorithms trained on real data. In this paper we will:
 
+1. Present statistical summaries of the dataset, describe its structure, identify the presence of
+undetected errors, and discuss any other insights into the Galaxy server that we believe will be
+useful to the community.
+2. Confirm that the random forest regressor gives the best performance for predicting the runtime
+of complex algorithms as was seen by Hutter et al.
+3. Discuss the benefits and drawbacks of using a quantile random forest for creating runtime
+prediction confidence intervals.
+4. Present an alternative approach for choosing a walltime for complex algorithms with the use of
+a random forest classifier.
 
-### What this can do:
-* collect historical data from your galaxy database
-* manipulate the data
-* determine which parameters affect the runtime of the algorithm
-* inspect the impact of a single parameter on runtime
+Studying the Galaxy Project dataset reveals that there may be room to fine tune the resource allocation.
+The ability to determine appropriate walltimes will save server resources from jobs that result in errors
+undetected by the server — such as jobs that fall into infinite loops. Once freed, these resources can then be used to run jobs in the queue without the need to allocate additional hardware.
 
-### Future plans:
-* determine an appropriate run walltime for tools
-* determine appropriate memory allocation
-* determine approptiate processor cores
-
-
-## Collect Data From Galaxy Database
-
-use get_tool_run_info.py to collect data from your [galaxy](https://galaxyproject.org/) database. The output file formats supported are csv and json. 
-
-There is also an example data file available: [bwa_mem_0.7.15.1_example.csv](examples/bwa_mem_0.7.15.1_example.csv)
-
-|options|default|description|
-|--- | --- |---|
-|--config| default="config/galaxy.yml" | config of your galaxy |
-|--toolid| required | tool id (e.g. "toolshed.g2.bx.psu.edu/repos/devteam/tophat2/tophat2/0.9")|
-|--outfile|default="job_data.csv"|Output file, extension determines format.|
-
-### Best input format for current and future analysis
-
-The best input format to use is a comma-separated values (CSV).
-
-## Manipulate Data
-
-Use (csv_file_manipulation.ipynb)[csv_file_manipulation.ipynb] for suggestions on how to view and manipulate csv data with python. It has examples to inspect the data, delete data, transform data, and combine data.
-
-A full example of data manipulation can be found at (finding_outliers.ipynb)[finding_outliers.ipynb]
-
-## Feature Importances with Random Forests
-
-This tool (feature_importances_with_random_forests.py) estimates the relative impact of parameters on the runtime of tools. It does so by fitting a Random Forest Regressor to a historical dataset (of parameters and runtimes) and determining the [Mean Decrease Impurity](http://papers.nips.cc/paper/4928-understanding-variable-importances-in-forests-of-randomized-trees.pdf) of each parameter. The Mean Decrease Impurity is an estimate of how much the Random Forest uses the parameter in it's decisions.
+## Table of Contents
 
 
-The tool accepts a .tsv or .csv file. [Here is a sample csv file](examples/bwa_mem_0.7.15.1_example.csv).
-The file should have one column labeled "runtime", which the Random Forest will treat as the dependent variable to predict.
+- [Background](#what-is-the-galaxy-project)
+  + [What is the Galaxy Project](#what-is-the-galaxy-project)
+  + [scikit-learn and machine learning](#scikit-learn-and-machine-learning)
+  + [Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
+- [Overview of Data](#overview-of-data)
+  + [Distribution of the Data](#distribution-of-the-data)
+  + [Undetected Errors](#undetected-errors)
+  + [user selected parameters](#user-selected-parameters)
+  + [attribute preprocessing](#attribute-preprocessing)
+- [Model Comparison](#model-comparison)
+- [Estimating a Range of Runtimes](#estimating-a-range-of-runtimes)
+- [Using a random forest classifier](#using-a-random-forest-classifier)
+- [Future Work](#future-work)
+- [References](#references)
 
-The tool will warn you if you have a parameter with more than 30 categories, or if you have a parameter that is monotonic (such as an id or a constant number)
+### What is the Galaxy Project
 
-The tool should take less than a minute to finish. It will save the important features in a .tsv file, and optionally save a plot to a .png file.
+The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses quickly and easily. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysys software on one's own machines. This can be a difficult and time consuming task.
 
+With the Galaxy Project, researchers run analyses on the public Galaxy server. To do so, the user needs only to connect to www.usegalaxy.org, upload their data, choose the analysis and the analysis parameters (if any), and hit run. The output can be viewed once it is finished.
 
+For more information visit www.galaxyproject.org.
 
+### scikit-learn and machine learning
 
+scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data prepocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests, specifically the regression and classification classes.
 
-|options|default|description|
-|--- | --- |---|
-|--filename| required | the name of the .csv or .tsv file with the data|
-|--outfile| default="feature_importances.tsv"| name of a .tsv file where you want the output|
-|--plot_outfile|default=None|If you want a plot, use this to name the .png file you want it saved to. Otherwise, leave as default.
-|--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
-|--unite_categorical_features|default=True|whether to give the importances of categorical features with one number, or to give the importance of each seperate category (e.g. give importance of "color" vs. give importance of "color_blue", "color_green", "color_yellow")
+In this paper our main tool for regression and classification was the random forest, so we will briefly go over random forests.
 
+A random forest is a collection of decision trees, and a desion tree is a series of questions asked about an object. At the end of the questions, a previously unkown attribute of the object is guessed. An example of a decision tree is shown below. In this case, the decision tree tries predict how long a job is going to take.
 
-## Inspect single feature
+![alt text](images/simple_decision_tree.png)
 
-Inspect the effect of a single parameter on runtime while holding all of the other parameters constant. (single_feature_analysis.py)
+The decision tree learns what questions to ask by training on a training set of previous jobs. At each node, it looks at a subset of attributes and chooses to split the data in the way that most minimizes variability in the subsequent two nodes. In this way, it sorts objects by similarity of the dependent and independent variables. In the figure below, a decision tree is training on a set of 100 jobs. All 100 jobs start at the root node, and they are split up as they travel down the tree. Once the tree is trained, it can then be used to predict the runtime of previously unseen jobs.
 
-The tool accepts a tsv or csv file, and it requires a feature_of_interest and a runtime column to be named. It sorts the dataset into sets of jobs that all have similar parameters. Then it saves the parameters of the largest sets of jobs in files named parameters_i.tsv and saves plots of feature_of_interest vs runtime to plot_i.png. 
+![alt text](images/decision_tree_vertical.png)
 
-For example, say you put in a csv file like this:
+A random forest is a collection of decision trees, each of which are trained with a unique random seed. The random seed determines which sub-sample of the data each decision tree is trained and which sub-sample of attributes each tree uses and which splits each tree attempts. By implementing these constraints, the random forest protects itself from overfitting - a problem to which decision trees are susceptible.
 
-|runtime|feature_of_interest|category|number|
-|---|---|---|---|
-|5|1|True|0|
-|10|5|False|0|
-|2|3|True|7|
-|3|2|True|6|
-|4|1|False|25|
+Incidently, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attibute to split a node, the larger it's implied effect on the dependent attribute. The scikit-learn Random Forest classes have an easy way of getting this information with the feature_importances_ class attribute.
 
-First, the continuous columns will be placed into bins like so
+### Previous work on runtime prediction of programs
 
-|runtime|feature_of_interest|category|number|
-|---|---|---|---|
-|5|1|True|0|
-|10|5|False|0|
-|2|3|True|(5, 7.5]|
-|3|2|True|(5, 7.5]|
-|4|1|False|(23.5, 25]|
+The prediction of runtimes of complex algorithms with machine learning approaches has been tackled before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
-The largest set with equivelent parameters is chosen:
+In a few works, new machine learning methods are designed specifically for the problem. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
 
-|runtime|feature_of_interest|category|number|
-|---|---|---|---|
-|2|3|True|(5, 7.5]|
-|3|2|True|(5, 7.5]|
+Most previous works tweak and tailor old machine learning methods to the problem. For instance, in 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). The downside of PQR2 is that there are not readily available libraries of the model in popular programming languages like Python or R.
 
-And the values of the equivelent parameters is saved to parameters_i.tsv and the plot of runtime vs. feature_of_interest is saved to plot_i.png. You can choose to inspect the n largest sets with the option --num_to_plot.
+The most comprehensive survey of runtime prediction models was done by [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) In 2014. In the paper, they compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests although they did not include PQR tree in their evaluations. They found that the random forest outperforms the other regressors in nearly all assessments and is able to handle high dimensional data without the need of feature selection.
 
+In our paper, we verify that random forests are the best model for the regression, discuss the merits of quantile regression forests, and present a practical approach for determining an appropriate walltime with the use of a classifier.
 
-|options|default|description|
-|--- | --- |---|
-|--filename| required | the name of the .csv or .tsv file with the data|
-|--feature_of_interest| requireds | name parameter to inspect|
-|--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
-|--num_to_plot|default=1| number of parameter sets to examine
-|--outdir| default='single_feature' | the name of the directory the output file should go|
+## Overview of Data
 
+All of the tools found on usegalaxy.org are tracked. The data is collected using the Galactic Radio Telescope (GRT), which records a comprehensive set of job run attributes.
 
-# Predicting
+This includes:
 
-Once you are ready to build a random forest predictor, train_model.py will train a random forest and save the model in a pickle file. 
-
-|options|default|description|
-|--- | --- |---|
-|--filename| required | the name of the .csv or .tsv file with the data|
-|--model_outfile| default='model.pkl'| name of a .pkl file where you want the output|
-|--plot_outfile|default='plot.png'|If you want a plot, use this to name the .png file you want it saved to. Otherwise, leave as default.
-|--runtime_label|default="runtime"| this specifies the label of the variable to predict in your dataset
-|--split_train_test|default=False| if you are making a plot, do you want to split the dataset into a training and testing set, or do you want to use the whole dataset for both training and testing
-|--split_randomly|default=False| if split_train_test == True, this specifies whether to split the data randomly
+* create time
+* runtime
+* user selected parameters (tool specific)
+* state ("ok", "error", or other)
+* input data
+  - size of input data
+  - filetype of input data (.fastq, .fastq.gz, ...)
+* hardware info
+  - memory allocated
+  - swap memory allocated
+  - number of processors allotted
+  - destination id (which node the job was run on)
+* user info
+    - user id
+    - session id
+    - history id
 
 
-Then use the model.pkl to predict the runtime of new instances using predict_runtime_with_model.py
+The Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistcal summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv).
 
-|options|default|description|
-|--- | --- |---|
-|--filename| required | the name of the .csv or .tsv file with the data|
-|--model_filename| required | the name of the .pkl of the model|
-|--plot_outfile|default='plot.png'|To get a plot you must also provide a runtime_label
-|--runtime_label|default="runtime"| may be set to None. this specifies the label of the variable to predict in your dataset. may be left empty if you don't want prediction metrics
-|--single_prediction|default=False| if you want a single prediction, setting this to True will return the prediction and nothing else
+The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
+
+The CPUs are shared with other jobs running on the node, so the perfomance of jobs is affected by the server load at the time of execution. This attribute is not in the published dataset, but we began tracking it not long before writing this, and will publish those datasets when available.
 
 
+#### Distribution of the Data
+
+Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and filesizes in the Galaxy dataset are highly skewed. The distribution for a tool called BWA (version 0.7.15.1) can be seen below.
+
+![alt text](images/runtimes3.png)
+
+![alt text](images/filesize_bwamem.png)
+
+In this project, we address this skewness by doing a log transform on the data.
+We use numpy's log transformer numpy.log1p which transforms the data by log(1+x)
+
+![alt text](images/log_runtimes3.png)
+
+![alt text](images/log_filesize3.png)
+
+This transformation works for most of the runtime and intput file size attributes to give a more balanced distribution.
+
+#### Undetected Errors
+
+One hurdle the dataset presents is that it contains undedected errors - errors that occured but were not recorded.
+
+For example, some tools require that an input file be provided. Bwa mem is one such tool. If an input file is not provided, bwa mem should not run at all or else the run should result in an error. In spite of this, the number of bwa mem v. 0.7.15.1 jobs in the dataset that ran succesfuly and without an input file is 49 or 0.25% of "successful" jobs. These jobs should not have run at all, and yet they are present in the dataset and marked as succesfuly completed.
+
+Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors is troubling. With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. If there are many other jobs similarly mislabelled as "sucessfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions.
+
+Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, indentifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+
+Using this hueristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
+
+![alt text](images/gaus_dist2.png)
+
+This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa mem (v. 0.7.15.1) - an alignment algorithm - 8.1% of jobs in the collected data took 6 seconds or less to finish. Are all of these jobs undedected errors? If we increase the unreasonable runtime threshhold to 9 seconds, we see that 17.1% of jobs experienced undedected errors. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
+
+Since we know that the two variables that have the greatest affect on the runtime of bwa mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
+
+In the following figures all of the user selected parameters are frozen except for input file size. We were able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used.
+
+![alt text](images/hg19.png)
+
+The refernece file, hg19 is the human genome
+
+![alt text](images/hg38patch.png)
+
+The reference file, hg38 is another version of the human genome.
+
+The first graph shows a strong correlation between input file and runtime. This is the correlation we expect. The outliers that we remove are the datapoints in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster.
+
+The second graph, displays complete uncorrelation between runtime and input file size. In this case, we would throw all of the datapoints away.
+
+Using this method to prune out bad jobs requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning. This type of analysis would lead to the best results, but at the time of this writing, it has not been completed for the Galaxy dataset.
+
+A final method of undetected error detection that we will discuss is with the use of an isolation forest. In a regular random forest, a node in a decision tree chooses to divide data based on the attribute and split that most greatly decreases that variability of the following to datasets. In an isolation forest, the data is split based on a random selection of an attribute and split. The longer it takes to isolate a datapoint, the less likely it is an outlier. As with removing the tails of the runtime distribution, we need to choose the percentage of jobs that are bad before hand.
+
+To remove bad jobs, we used the isolation forest. We also removed any obvious undetected errors, such as no-input-file errors, wherever we could.
+
+#### user selected parameters
+
+Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
+
+* labels (such as plot axes names)
+* redundent parameters (two attributes that represent the same information)
+* identification numbers (such as file ids)
+
+Useful atttributes include:
+
+* file sizes
+* file types (compressed or uncompressed)
+* whether the data was pre-indexed
+* analysis type selection
+* other analysis parameters
+
+Instead of hand selecting parameters for each tool, we made a filter for the computer to do the pruning. It is a simple filter that removes any labels or identification numbers that might be present.
+
+The parameters are screened in the following way:
+
+1. Remove universally unuseful parameters such as:
+  - \__workflow_invocation_uuid__
+  - chromInfo
+  - parameters whose names end with "|\__identifier__"
+2. Remove any categorical parameters whose number of unique categories exceed a threshhold
+
+With these filters, we are able to remove most of the parameters that are either identifiers or labels. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters.
+
+There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), so this is a very important attribute. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because the method in which the attributes were tracked.
+
+Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may make it easier for the random forest to find relationships, which would improve results, but we judged that it would be too costly to do so for all of the tools for this project.
+
+#### attribute preprocessing
+
+There are cetain types of data that machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
+
+For the continuous variables, as previously noted, we log transform with numpy.log1p if the variable is highly skewed. Then, we scale the continuous variable to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
+
+For categorical variables, we binarize them using sklearn.preprocessing.LabelBinarizer. An example of label binarization is shown below. The categorical variable "analysis_type" is expanded into four discrete variables that can take the values 0 or 1.
+
+||x1|x2|x3|x4|
+|---|---|---|---|---|
+| illumina  | 1  | 0  | 0  |0|
+|full   |0   | 1  | 0  |0|
+|pacbio   |0   | 0  | 1  |0|
+|ont2d   |0   | 0  | 0  |1|
+
+We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options,  such as fastq groomer, may have only a handful of expanded categorical variables.
+
+## Model Comparison
+
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets improves the predictions of the model.
+
+||unpruned|pruned|
+|---|---|---|
+|mean r-squared over all tools|-18.5|0.51|
+
+A snapshot of the results can be viewed [here]().
+
+
+
+## Estimating a Range of Runtimes
+
+The random forest gave us the best results for estimating the runtime of a job. It would be more useful, though, to estimate a range of runtimes that the job would take to complete. This way, when using the model for choosing walltimes, we lower the risk of ending jobs prematurely.
+
+A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows one to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
+
+Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space.
+
+We tested the quantile regression forest against the historical data with five fold validation. We tested it on historical data with undetected errors unpruned and on historical data with 5% of the jobs pruned by an isolation forest.
+
+The results can be viewed [here]().
+
+||unpruned|pruned|
+|---|---|---|
+|mean accuracy of quantile forest for all tools|0.59|0.69|
+
+The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they are useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would also mess up the model predictions.
+
+## Using a random forest classifier
+
+
+
+## Future Work
+
+Recently, we have set up the GRT to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we will create models to predict memory usage and CPU time and evaluate their performance.
+
+We also want to model the relationship between processor count and runtime. Currently, every job is allotted 32 processor cores, so we do not have the data to investigate the relationship between number of processors and runtime. In the future, we plan to add random variability to the number of processor cores allotted, so that we can see how great of an effect parallelability has on these bioinformatic algorithms.
+
+## References
+
+Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
