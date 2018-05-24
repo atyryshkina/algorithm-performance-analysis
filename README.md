@@ -159,7 +159,7 @@ A final method of undetected error detection that we will discuss is with the us
 
 To remove bad jobs, we used the isolation forest. We also removed any obvious undetected errors, such as no-input-file errors, wherever we could.
 
-#### user selected parameters
+#### User Selected Parameters
 
 Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
 
@@ -175,7 +175,7 @@ Useful atttributes include:
 * analysis type selection
 * other analysis parameters
 
-Instead of hand selecting parameters for each tool, we made a filter for the computer to do the pruning. It is a simple filter that removes any labels or identification numbers that might be present.
+Instead of hand selecting parameters for each tool, we made a filter for the computer to do the pruning. It is a simple filter that attempts to remove any labels or identification numbers that are present.
 
 The parameters are screened in the following way:
 
@@ -187,11 +187,11 @@ The parameters are screened in the following way:
 
 With these filters, we are able to remove most of the parameters that are either identifiers or labels. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters. In this paper, we used a unique category threshhold of 10.
 
-There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), so this is a very important attribute. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because the method in which the attributes were tracked.
+There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), which is linearly correlated with runtime. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because of the method in which the attributes were tracked.
 
-Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may make it easier for the random forest to find relationships, which would improve results, but we judged that it would be too costly to do so for all of the tools for this project.
+Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may make it easier for the random forest to find relationships, which would improve results. However, combining relavent parameters for each tool would require close monitoring and attention, and this is out of the scope of the project.
 
-#### attribute preprocessing
+#### Attribute Preprocessing
 
 There are cetain types of data that machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
 
@@ -236,7 +236,7 @@ Storing the entire dataset in the leaves of every tree is computationally costly
 
 We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles. A prediction that is within one standard deviation of one of the actual value was counted as an accurate prediction.
 
-We tested the quantile regression forest against the historical data with three fold validation. We tested it on historical data with undetected errors unpruned and on historical data with 5% of the jobs pruned by an isolation forest.
+We tested the quantile regression forest against the historical data with three fold validation. We tested it on the data with undetected errors unpruned and on the data with 5% of the jobs pruned by an isolation forest.
 
 The results can be viewed [here](). A summary is also shown below.
 
@@ -267,7 +267,11 @@ For example, for bwa mem the buckets we found (in seconds) were
 
 [0, 155.0, 592.5, 1616.0, 3975.0, 7024.5, 10523.0, 60409.0]
 
+As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i where i is the bucket. For bwa mem, the last bucket, where i=7, holds only 0.78% of the jobs. Dividing it further would make it so the next bucket created has less than 100 jobs, which we chose as the threshold.
 
+This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
+
+The results of the classifier can be found [here](clf_pred_metrics.csv).
 
 ## Future Work
 
