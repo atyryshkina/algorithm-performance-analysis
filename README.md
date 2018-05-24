@@ -185,7 +185,7 @@ The parameters are screened in the following way:
   - parameters whose names end with "|\__identifier__"
 2. Remove any categorical parameters whose number of unique categories exceed a threshhold
 
-With these filters, we are able to remove most of the parameters that are either identifiers or labels. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters.
+With these filters, we are able to remove most of the parameters that are either identifiers or labels. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters. In this paper, we used a unique category threshhold of 10.
 
 There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), so this is a very important attribute. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because the method in which the attributes were tracked.
 
@@ -210,13 +210,19 @@ We typically have two or three continuous variables for each tool, and about one
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets improves the predictions of the model.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Our random forest had 100 trees and a max_depth of 12. Pruning the datasets improves the predictions of the model.
+
+The table below shows the r-squared score for all of the tools averaged out for each of the
 
 ||unpruned|pruned|
 |---|---|---|
-|mean r-squared over all tools|-18.5|0.51|
+|random forest|-1.5|0.51|
+|nearest neihbors| 0.2 | 0.3  |
+|LASSO|   |   |
 
-A snapshot of the results can be viewed [here]().
+[i didn't save this data, so the table above is just filler. I have to run this test again]
+
+A more in depth snapshot of the results can be viewed [here]().
 
 
 
@@ -224,17 +230,21 @@ A snapshot of the results can be viewed [here]().
 
 The random forest gave us the best results for estimating the runtime of a job. It would be more useful, though, to estimate a range of runtimes that the job would take to complete. This way, when using the model for choosing walltimes, we lower the risk of ending jobs prematurely.
 
-A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows one to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
+A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows us to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
 
 Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space.
 
-We tested the quantile regression forest against the historical data with five fold validation. We tested it on historical data with undetected errors unpruned and on historical data with 5% of the jobs pruned by an isolation forest.
+We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles. A prediction that is within one standard deviation of one of the actual value was counted as an accurate prediction.
 
-The results can be viewed [here]().
+We tested the quantile regression forest against the historical data with three fold validation. We tested it on historical data with undetected errors unpruned and on historical data with 5% of the jobs pruned by an isolation forest.
+
+The results can be viewed [here](). A summary is also shown below.
+
+##### Mean accuracy of 3-fold cross-validated tests
 
 ||unpruned|pruned|
 |---|---|---|
-|mean accuracy of quantile forest for all tools|0.59|0.69|
+|all tools|0.59|0.69|
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they are useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would also mess up the model predictions.
 
