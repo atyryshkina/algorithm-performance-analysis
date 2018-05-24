@@ -57,7 +57,7 @@ The decision tree learns what questions to ask by training on a training set of 
 
 ![alt text](images/decision_tree_vertical.png)
 
-A random forest is a collection of decision trees, each of which are trained with a unique random seed. The random seed determines which sub-sample of the data each decision tree is trained and which sub-sample of attributes each tree uses. By implementing these constraints, the random forest protects itself from overfitting - a problem to which decision trees are susceptible.
+A random forest is a collection of decision trees, each of which are trained with a unique random seed. The random seed determines which sub-sample of the data each decision tree is trained and which sub-sample of attributes each tree uses and which splits each tree attempts. By implementing these constraints, the random forest protects itself from overfitting - a problem to which decision trees are susceptible.
 
 Incidently, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attibute to split a node, the larger it's implied effect on the dependent attribute. The scikit-learn Random Forest classes have an easy way of getting this information with the feature_importances_ class attribute.
 
@@ -193,7 +193,7 @@ The parameters are screened for usefulness in the following way:
   - parameters whose names end with "|\__identifier__"
 2. Remove any categorical parameters whose number of unique categories exceed a threshhold
 
-
+With these filters, we are able to remove most of the parameters that are either identifiers or label. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters.
 
 #### attribute preprocessing
 
