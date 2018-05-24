@@ -180,7 +180,7 @@ Instead of hand selecting parameters for each tool, we made a filter for the com
 The parameters are screened in the following way:
 
 1. Remove universally unuseful parameters such as:
-  - \__workflow_invocation_uuid__
+  + \__workflow_invocation_uuid__
   - chromInfo
   - parameters whose names end with "|\__identifier__"
 2. Remove any categorical parameters whose number of unique categories exceed a threshhold
@@ -246,17 +246,34 @@ The results can be viewed [here](). A summary is also shown below.
 |---|---|---|
 |all tools|0.59|0.69|
 
-The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they are useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would also mess up the model predictions.
+The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they may be useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would make the confidence intervals larger than they should be.
+
+<!-- ![alt text](plots_w_error_dump/timesplit/devteam_bwa_bwa_mem_0.7.15.1.png) -->
 
 ## Using a random forest classifier
+
+The main avantage of a random forest classifier over a quantile regression forest, is that you can select the size of the runtime bins. Where in the quantile regression forest, you are at the mercy of the bins dynamically selected by the model.
+
+In our tests, we chose buckets in the following fashion.
+1. We ordered the jobs by length of runtime.
+2. Then, we made (0, median] our first bucket.
+3. We recursively took the median of the remaining runtimes until the number of remaining runtimes was less than 100.
+
+|------------50%-----------|-----25%-----|--12.5%--|--12.5%--|      < ---- division of jobs
+
+0-------------------------50s----------612s------4002s-----10530s   < ---- buckets
+
+For example, for bwa mem the buckets we found (in seconds) were
+
+[0, 155.0, 592.5, 1616.0, 3975.0, 7024.5, 10523.0, 60409.0]
 
 
 
 ## Future Work
 
-Recently, we have set up the GRT to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we will create models to predict memory usage and CPU time and evaluate their performance.
+Recently, we have set up the GRT to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we want to create models to predict memory usage and CPU time and evaluate their performance.
 
-We also want to model the relationship between processor count and runtime. Currently, every job is allotted 32 processor cores, so we do not have the data to investigate the relationship between number of processors and runtime. In the future, we plan to add random variability to the number of processor cores allotted, so that we can see how great of an effect parallelability has on these bioinformatic algorithms.
+We also want to find the effect of processor count on runtime. Currently, every job is allotted 32 processor cores, so we do not have the data to investigate the relationship between number of processors and runtime. In the future, we plan to add random variability to the number of processor cores allotted, so that we can see how great of an effect parallelability has on these bioinformatic algorithms.
 
 ## References
 
