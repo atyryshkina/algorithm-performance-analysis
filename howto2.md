@@ -21,9 +21,9 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 [to be fixed at the end]
 
 
-* [Background: What is the Galaxy Project](#background--what-is-the-galaxy-project)
-* [Background: scikit-learn and machine learning](#background--scikit-learn-and-machine-learning)
-* [Background: Previous work on runtime prediction of programs](#background--previous-work-on-runtime-prediction-of-programs)
+* [Background: What is the Galaxy Project](#what-is-the-galaxy-project)
+* [Background: scikit-learn and machine learning](#scikit-learn-and-machine-learning)
+* [Background: Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
   + [Undetected Errors](#undetected-errors)
@@ -35,7 +35,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 - [Future Work](#future-work)
 - [References](#references)
 
-### Background: What is the Galaxy Project
+### What is the Galaxy Project
 
 The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses quickly and easily. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysys software on one's own machines. This can be a difficult and time consuming task.
 
@@ -43,7 +43,7 @@ With the Galaxy Project, researchers run analyses on the public Galaxy server. T
 
 For more information visit www.galaxyproject.org.
 
-### Background: scikit-learn and machine learning
+### scikit-learn and machine learning
 
 scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data prepocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests - specifically the regression and classification classes.
 
@@ -61,7 +61,7 @@ A random forest is a collection of decision trees, each of which are trained wit
 
 Incidently, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attibute to split a node, the larger it's implied effect on the dependent attribute. The scikit-learn Random Forest classes have an easy way of getting this information with the feature_importances_ class attribute.
 
-### Background: Previous work on runtime prediction of programs
+### Previous work on runtime prediction of programs
 
 [
 
