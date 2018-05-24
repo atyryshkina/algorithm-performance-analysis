@@ -118,7 +118,12 @@ This includes:
     - history id
 
 
-[Description of bioinformatics algorithms, and the server that they run on.]
+Our dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistcal summary of those tools, ordered by most popular, can be found [here]().
+
+The computer clusters of the Galaxy Server have different hardware specifications. The hardware which tools run on is recorded in the dataset. [I need to put hardware specs here.]
+
+The jobs have amount of memory alotted to them, but they do not have dedicated processors. The processors are shared with other jobs running on the node. The published dataset does not contain server load information or the total amount of memory used for a job. We began tracking those two attributes not long before writing this, and will publish those datasets when available.
+
 
 #### Distribution of the Data
 
@@ -193,7 +198,7 @@ The parameters are screened for usefulness in the following way:
   - parameters whose names end with "|\__identifier__"
 2. Remove any categorical parameters whose number of unique categories exceed a threshhold
 
-With these filters, we are able to remove most of the parameters that are either identifiers or label. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters.
+With these filters, we are able to remove most of the parameters that are either identifiers or labels. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing reduntant parameters.
 
 #### attribute preprocessing
 
