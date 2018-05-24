@@ -101,7 +101,7 @@ The Galaxy dataset contains runtime data for 1372 different tools that were run 
 
 The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
 
-The jobs contain information about the amount of memory alotted to them, but they do not contain information about the amount of memory used, which we consider an important attribute. In addition, the CPUs are shared with other jobs running on the node, so the perfomance of jobs is affected by the server load at the time of execution. We began tracking these two attributes (memory used and server load) not long before writing this, and will publish those datasets when available.
+The CPUs are shared with other jobs running on the node, so the perfomance of jobs is affected by the server load at the time of execution. We began tracking this attribute not long before writing this, and will publish those datasets when available.
 
 
 #### Distribution of the Data
