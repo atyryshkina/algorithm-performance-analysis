@@ -161,17 +161,27 @@ To remove bad jobs, we used the isolation forest. We also removed any obvious un
 
 #### user selected parameters
 
-Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line to the tool that runs it. This presents in the dataset as a mixed bag of useful and useless attributes. Some of the parameters are very important, such as the reference genome size, and some are not important at all. Unimportant parameters include:
+Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line to the tool that runs it. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
 
 * labels (such as plot axes names)
 * redundenct parameters (two attributes that represent the same information)
 * identification numbers (such as file ids)
 
+Useful atttributes include:
+
+* file sizes
+* file types (compressed or uncompressed)
+* whether the data was pre-indexed
+* analysis type selection
+* other analysis parameters
+
 There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa mem is O(reference size \* input file size), so this is a very important attribute. However, this product is not a variable of the bwa mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because the method in which the attributes were tracked.
+
+Instead of hand selecting parameters for each tool, we made a filter for the computer to do the pruning. It is a simple filter that removes any labels or identification numbers that might be present.
 
 The parameters are screened for usefulness in the following way:
 
-1. Remove universally unuseful parameters
+1. Remove universally unuseful parameters such as:
   - \__workflow_invocation_uuid__
   - chromInfo
   - parameters whose names end with "|\__identifier__"
