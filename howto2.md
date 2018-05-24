@@ -97,7 +97,7 @@ This includes:
     - history id
 
 
-The Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistcal summary of those tools, ordered by most popular, can be found [here]().
+The Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistcal summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv).
 
 The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
 
@@ -206,23 +206,25 @@ For categorical variables, we binarize them using sklearn.preprocessing.LabelBin
 |pacbio   |0   | 0  | 1  |0|
 |ont2d   |0   | 0  | 0  |1|
 
-We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options, may have only a handful of expanded categorical variables, such as fastq groomer.
+We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options,  such as fastq groomer, may have only a handful of expanded categorical variables.
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn, and compared their performance. Our results agreed with Hutter et al. that the Random Forest is the best predictor for of the runtime of complex algorithms. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors.
-
-A snapshot of the results can be viewed [here](). We used a correlation metric r-squared to compare the the models. We tested it on historical data with undetected errors present and unpruned and on historical data with 5% of the jobs pruned by an isolation forest. Pruning the datasets improves the predictions of the model.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets improves the predictions of the model.
 
 ||unpruned|pruned|
 |---|---|---|
 |mean r-squared over all tools|-18.5|0.51|
 
+A snapshot of the results can be viewed [here]().
+
+
+
 ## Estimating a Range of Runtimes
 
 The random forest gave us the best results for estimating the runtime of a job. It would be more useful, though, to estimate a range of runtimes that the job would take to complete. This way, when using the model for choosing walltimes, we lower the risk of ending jobs prematurely.
 
-A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, the quantile random forest allows one to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
+A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows one to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
 
 Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space.
 
@@ -237,6 +239,8 @@ The results can be viewed [here]().
 The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they are useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would also mess up the model predictions.
 
 ## Using a random forest classifier
+
+
 
 ## Future Work
 
