@@ -233,16 +233,12 @@ Pruning out outliers with contamination=0.05 affected the predictions as follows
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
 | bwa v 0.7.15.1     | 0.89267 | -0.00098 | 0.777449 | 0.674398 | 0.528471 | NaN | NaN |
 | bwa mem v 0.7.15.1 |  0.778393 | -2.2e-05 | 0.703741 | 0.514927 | 0.37121 | NaN | NaN |
-| fastq groomer v 1.1.1 to change | 0.994565 | -6.4e-05 | 0.966611 | 0.513012 | 0.281224 | NaN | NaN|
+| fastq groomer v 1.1.1 *to change | 0.994565 | -6.4e-05 | 0.966611 | 0.513012 | 0.281224 | NaN | NaN|
 | megablast v 1.2.0  | 0.837926 | -0.008938 | 0.745341 | 0.730984 | 0.577824 | NaN | -0.182977|
-| total mean         | 0.60 | -0.01 | 0.26 | 0.32 | 0.09 | NaN | -0.13 |
-| total median   |0.71 | -0.0004 | 0.25 | 0.33| 0.06 | NaN | 0.21 |
+| total mean *to change  | 0.60 | -0.01 | 0.26 | 0.32 | 0.09 | NaN | -0.13 |
+| total median *to change |0.71 | -0.0004 | 0.25 | 0.33| 0.06 | NaN | 0.21 |
 
 The linear regressor was not able to handle the high-dimensional and categorical data. Total number of egregious error - those with r-squared score less than -10.0 is shown below.
-
-|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
-|--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| number of r-squared less than -10.0     | 0 | 0 | 0 | 0 | 14 | 0 | 596 |
 
 
 The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
@@ -294,7 +290,11 @@ As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i
 
 This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
 
-The results of the classifier can be found [here](clf_pred_metrics.csv).
+The results of the classifier can be found [here](benchmarks/classifier_metrics.csv).
+
+## Conclusion
+
+In this paper, we introduced the Galaxy dataset, tested popular machine learning models in predicting the runtime of the tools, and introduced another way to choose walltimes
 
 ## Future Work
 
