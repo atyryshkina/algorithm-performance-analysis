@@ -210,11 +210,11 @@ We typically have two or three continuous variables for each tool, and about one
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets improves the predictions of the model.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets with the isolation forest only affects the performance of the models slightly.
 
-We used the Default Settings for the sklearn Linear Regressor, LASSO, Ridge Regressor, SVR Regressor, and SGD Regressor. Out neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default. Our random forest had 100 trees and a max_depth of 12.
+We used the Default Settings for the sklearn Linear Regressor, LASSO, Ridge Regressor, SVR Regressor, and SGD Regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest had 100 trees and a max_depth of 12.
 
-The table below shows the r-squared score for all of the tools averaged out for each of the
+The table below shows the r-squared score for a select number of tools, and the total mean and median taken from the performance over each tool with more than 100 recorded runs.
 
 |                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
@@ -222,21 +222,30 @@ The table below shows the r-squared score for all of the tools averaged out for 
 | bwa mem v 0.7.15.1 |  0.823522 | -0.000149 | 0.714105 | 0.396975 | 0.169044 | NaN | NaN |
 | fastq groomer v 1.1.1 | 0.994533 | -9.9e-05 | 0.968487 | 0.512761 | 0.280944 | 0.452238 | NaN |
 | megablast v 1.2.0  | 0.77818 | -0.000959 | 0.30325 | 0.293292 | 0.195893 | 0.221871 | NaN|
-| total mean         | 0.28 | -0.25 | -0.04 | 0.03 | -0.27 | -0.04 | -0.86 |
-| total median   | 0.59 | -0.01 | 0.17 | 0.27 | 0.02 | 0.04 | 0.03  |
+| total mean         | 0.59 | -0.01 | 0.26 | 0.32 | 0.09 | 0.14 | -0.25 |
+| total median   |0.70 | -0.008 | 0.26 | 0.33 | 0.06 | 0.10 | 0.18 |
 
-We used the r-sqaured score as the metric to compare the performance of the models. We marked the r-squared score as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor. The total mean and the total median are the mean and median performance of the models over all of the tools in the dataset.
+The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the set. The total mean and the total median were taken from the performance of each model over all of the tools with more than 100 recorded runs.
 
-The linear regressor was not able to handle the high-dimensional and categorical data. Total number of egregious error - those with r-squared score less than -10.0 is shown below. 
+Pruning out outliers with contamination=0.05 affected the predictions as follows.
 
 |                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| number of r-squared less than -10.0     | 26 | 36 | 48 | 28 | 125 | 20 | 757 |
+| bwa v 0.7.15.1     | 0.906882 | -0.000447 | 0.777334 | 0.556928 | 0.244509 | NaN | NaN |
+| bwa mem v 0.7.15.1 |  0.821532 | -0.000136 | 0.717181 | 0.388933 | 0.168009 | NaN | NaN |
+| fastq groomer v 1.1.1 | 0.994565 | -6.4e-05 | 0.966611 | 0.513012 | 0.281224 | NaN | NaN|
+| megablast v 1.2.0  | 0.779925 | -0.000227 | 0.303499 | 0.298224 | 0.195356 | NaN | NaN|
+| total mean         | 0.60 | -0.01 | 0.26 | 0.32 | 0.09 | NaN | -0.13 |
+| total median   |0.71 | -0.0004 | 0.25 | 0.33| 0.06 | NaN | 0.21 |
+
+The linear regressor was not able to handle the high-dimensional and categorical data. Total number of egregious error - those with r-squared score less than -10.0 is shown below.
+
+|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
+|--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
+| number of r-squared less than -10.0     | 0 | 0 | 0 | 0 | 14 | 0 | 596 |
 
 
-
-
-The full results can be viewed [here](comparison_benchmarks.csv). It includes the time to train the model.
+The full results can be viewed [here](comparison_benchmarks.csv). It includes the time (in seconds) to train the model. And the results for the dataset pruned with the isolation forest can be found [here](comparison_benchmarks_minus_outliers.csv)
 
 
 
