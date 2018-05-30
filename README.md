@@ -273,7 +273,7 @@ We tested the modified regression forest against the historical data with three 
 | groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
 | total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
-| total median | 0.69 | 0.90 | 0.95 |  |  |  |
+| total median | 0.69 | 0.90 | 0.95 | - | - |  -
 
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
@@ -291,7 +291,7 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 | groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
 | wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
 | total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
-| total median | 0.79 | 0.92 | 0.95 |  | | |
+| total median | 0.79 | 0.92 | 0.95 | - | -| -|
 
 
 ![alt text](images/freq_conf_intervals_1std_bwa.png)
