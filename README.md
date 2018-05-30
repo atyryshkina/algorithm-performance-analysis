@@ -260,9 +260,9 @@ The random forest gave us the best results for estimating the runtime of a job. 
 
 A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows us to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
 
-Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
+Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store only the means and the standard deviations. Doing so reduces the precision of the confidence interval, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
 
-We tested the quantile regression forest against the historical data with three fold validation on the full dataset. A prediction that is within one, two, or three standard deviations of the actual value was counted as an accurate prediction. The results can be viewed [here](benchmarks/quantile_forest_metrics.csv), and a summary is also shown below.
+We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed [here](benchmarks/quantile_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
@@ -272,15 +272,15 @@ We tested the quantile regression forest against the historical data with three 
 | bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
 | groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
-| total mean | 0.69 | 0.89 | 0.94 | 333.49 | 4352.68 | |
-| total median | 0.69 | 0.90 | 0.95 | 21.74 | 117.49 | |
+| total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
+| total median | 0.69 | 0.90 | 0.95 |  |  |  | |
 
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
-For this test, we were log transforming the runtimes, which had given us better results for the regressions in the previous section. But by doing this, it also meant that the standard deviations calculated by the quantile regressor were also on a log scale, and ballooned on the tail end. So, using a confidence interval of two standard deviations about the mean is more than twice as large as using just one standard deviation about the mean.
+For the tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used.
 
-By not log transforming the the runtimes we improve the interval sizes and the performance of the quantile regressor.
+By not log transforming the the runtimes we improve the interval sizes and the performance of the modified random forest regressor.
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
@@ -290,17 +290,20 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 | bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
 | groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
 | wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
-| total mean  | 0.69 | 0.89 | 0.94 | 326.17 | 74.50|
-| total median |0.69 | 0.90 | 0.95 | 22.23 | 3.56 |
+| total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
+| total median | 0.79 | 0.92 | 0.95 |  | | | |
 
-The confidence intervals for one standard deviation are larger than the one's found previously, which accounts for the better accuracy
+![alt text](images/freq_conf_intervals_1std_bwa.png)
 
 
-<!-- ![alt text](plots_w_error_dump/timesplit/devteam_bwa_bwa_mem_0.7.15.1.png) -->
+![alt text](images/freq_conf_intervals_3std_bwa.png)
+
+
+The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this
 
 ## Using a random forest classifier
 
-The main advantage of a random forest classifier over a quantile regression forest, is that you can select the sizes of the runtime bins. Where in the quantile regression forest, you are at the mercy of the bins dynamically selected by the model.
+The main advantage of a random forest classifier over a quantile regression forest (or a modified regression forest using standard deviations), is that you can select the sizes of the runtime bins. Where in the quantile regression forest, you are at the mercy of the bins dynamically selected by the model.
 
 In our tests, we chose buckets in the following fashion.
 1. We ordered the jobs by length of runtime.
@@ -334,6 +337,7 @@ A comparison of the accuracy of the classifier vs the quantile regression forest
 | total mean  | 0.75 | 1343.36 | 1073.15 | 0.69 | 326.17 | 74.50|
 | total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56|
 
+![alt text](images/freq_clf_intervals_bwa.png)
 
 
 
@@ -341,7 +345,7 @@ A comparison of the accuracy of the classifier vs the quantile regression forest
 
 In this paper, we introduced the Galaxy dataset, tested popular machine learning models in predicting the runtime of the tools, and compared two methods of predicting runtime intervals: quantile regression forests and random forest classifiers.
 
-Quantile regression forest gives more confidence and accuracy in the runtime intervals predicted. Random forest classifiers give more control over the size of the prediction intervals.
+Quantile regression forest gives more confidence and accuracy in the runtime intervals predicted. Random forest classifiers give more control over the size of the prediction intervals desired with a hit to accuracy. 
 
 ## Future Work
 
