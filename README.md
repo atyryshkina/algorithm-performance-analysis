@@ -262,7 +262,7 @@ A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for 
 
 Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store only the means and the standard deviations. Doing so reduces the precision of the confidence interval, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
 
-We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed [here](benchmarks/quantile_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
+We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed [here](benchmarks/modified_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
@@ -273,14 +273,14 @@ We tested the modified regression forest against the historical data with three 
 | groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
 | total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
-| total median | 0.69 | 0.90 | 0.95 |  |  |  | |
+| total median | 0.69 | 0.90 | 0.95 |  |  |  |
 
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
 For the tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used.
 
-By not log transforming the the runtimes we improve the interval sizes and the performance of the modified random forest regressor.
+By not log transforming the the runtimes we improve the interval sizes and the performance of the modified random forest regressor. These results can be view at [benchmarks/modified_forest_metrics_no_log.csv](benchmarks/modified_forest_metrics_no_log.csv)
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
@@ -291,7 +291,7 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 | groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
 | wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
 | total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
-| total median | 0.79 | 0.92 | 0.95 |  | | | |
+| total median | 0.79 | 0.92 | 0.95 |  | | |
 
 
 ![alt text](images/freq_conf_intervals_1std_bwa.png)
@@ -344,9 +344,13 @@ A comparison of the accuracy of the classifier vs the quantile regression forest
 
 ## Conclusion
 
-In this paper, we introduced the Galaxy dataset, tested popular machine learning models in predicting the runtime of the tools, and compared two methods of predicting runtime intervals: quantile regression forests and random forest classifiers.
+In this paper, we introduced the Galaxy dataset, tested popular machine learning models, and compared two methods of predicting runtime intervals: modified quantile regression forests and random forest classifiers.
 
-Quantile regression forest gives more confidence and accuracy in the runtime intervals predicted. Random forest classifiers give more control over the size of the prediction intervals desired with a hit to accuracy. 
+Quantile regression forests are more accurate in their predictions. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is more than an hour large. Thoguh random forest classifiers are less accurate, they allow for more control over the size of the confidence intervals.
+
+Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs.
+
+To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning.
 
 ## Future Work
 
