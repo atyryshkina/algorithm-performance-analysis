@@ -265,7 +265,7 @@ We used the modified version of the quantile regression forest that is described
 
 We tested the quantile regression forest against the historical data with three fold validation. We tested it on the data with undetected errors unpruned and on the data with 5% of the jobs pruned by an isolation forest.
 
-The results can be viewed [here](quantile_forest_metrics.csv). A summary is also shown below.
+The results can be viewed [here](benchmarks/quantile_forest_metrics.csv). A summary is also shown below.
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
@@ -300,7 +300,7 @@ This method of creating buckets puts an arbitrary limit on the longest amount of
 
 The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the altered quantile forest with the standard deviations would not have
 
-The results of the classifier can be found [here](benchmarks/classifier_metrics.csv).
+The results of the classifier can be found [here](benchmarks/classifier_forest_metrics.csv).
 
 A comparison of the accuracy of the classifier vs the quantile regression forest with an interval of one standard deviation can be found below.
 
