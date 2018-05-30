@@ -41,6 +41,8 @@ The Galaxy Project is a platform that allows researchers to run popular bioinfor
 
 With the Galaxy Project, researchers can run analyses using the graphical user interface in their browser. To do so, the user needs only to connect to a Galaxy server (e.g. https://www.usegalaxy.org), upload their data, choose the analysis and the analysis parameters, and hit run.
 
+The Galaxy Project has been storing the information about the execution of these analyses since 2013, and, to date, has the largest dataset of the performance of popular bioinformatics tools. We begin to study this dataset in this paper.
+
 For more information visit https://www.galaxyproject.org.
 
 ### scikit-learn and machine learning
@@ -97,7 +99,7 @@ This includes:
     - history id
 
 
-The Main Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv).
+The Main Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
 
 The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
 
@@ -210,43 +212,42 @@ We typically have two or three continuous variables for each tool, and about one
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not affect the performance of the random forest regressor.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
 
 For most of the tools, we used the default settings provided by sklearn library: Linear Regressor, LASSO, Ridge Regressor, SVR Regressor, and SGD Regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest had 100 trees and a max_depth of 12.
 
-
-The table below shows the r-squared score for a select number of tools, and the total mean and median taken from the performance over each tool with more than 100 recorded runs.
+The table below shows the r-squared score for a select number of tools, and the total mean and median over each tool with more than 100 recorded runs. The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. The total mean and the total median were taken from the performance of each model over all of the tools with more than 100 recorded runs.
 
 ##### model comaprison with full dataset
 
 
 |                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| bwa v 0.7.15.1     | 0.907309 | -0.000351 | 0.639557 | 0.552426 | 0.245956 | 0.259903 | NaN |
-| bwa_mem v 0.7.15.1 |  0.823522 | -0.000149 | 0.714105 | 0.396975 | 0.169044 | NaN | NaN |
-| fastq groomer v 1.1.1 | 0.994533 | -9.9e-05 | 0.968487 | 0.512761 | 0.280944 | 0.452238 | NaN |
-| megablast v 1.2.0  | 0.77818 | -0.000959 | 0.30325 | 0.293292 | 0.195893 | 0.221871 | NaN|
-| total mean         | 0.59 | -0.01 | 0.26 | 0.32 | 0.09 | 0.14 | -0.25 |
-| total median   |0.71 | -0.002 | 0.26 | 0.33 | 0.06 | 0.10 | 0.18 |
+| bwa v 0.7.15.1 | 0.91 | -0.0004 | 0.64 | 0.55 | 0.25 | 0.26 | nan|
+| bwa mem v 0.7.15.1 | 0.82 | -0.0001 | 0.71 | 0.40 | 0.17 | nan | nan|
+| groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.97 | 0.51 | 0.28 | 0.45 | nan|
+| wrapper megablast wrapper v 1.2.0 | 0.78 | -0.001 | 0.30 | 0.29 | 0.20 | 0.22 | nan|
+| total mean | 0.60 | -0.01 | 0.27 | 0.32 | 0.10 | 0.14 | -0.26 |
+| total median | 0.71 | -0.002 | 0.27 | 0.33 | 0.06 | 0.11 | 0.18 |
 
 
-The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. The total mean and the total median were taken from the performance of each model over all of the tools with more than 100 recorded runs.
+The Random Forest outperforms all of the other regressors followed by the neural network (MLPRegressor). The other regressors are not able to handle the high dimensional, and mixed continuous/categorical, dataset. We have seen in the section [Undetected Errors](#undetected-errors) that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would be more useful. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is indeed designed to do, do not hold up in the high dimensional space.
 
-Pruning out outliers with contamination=0.05 affected the predictions as follows. SVR Regression was not performed in these tests.
+Pruning out outliers with contamination=0.05 affected the predictions as follows.
 
 ##### model comaprison pruning of 5% of the datasets with isolation forest
 
 |                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| bwa v 0.7.15.1     | 0.89267 | -0.00098 | 0.777449 | 0.674398 | 0.528471 | NaN | NaN |
-| bwa mem v 0.7.15.1 |  0.778393 | -2.2e-05 | 0.703741 | 0.514927 | 0.37121 | NaN | NaN |
-| fastq groomer v 1.1.1 | 0.994348 | -0.000132 | 0.988992 | 0.639289 | 0.631749 | NaN | NaN|
-| megablast v 1.2.0  | 0.837926 | -0.008938 | 0.745341 | 0.730984 | 0.577824 | NaN | -0.182977|
-| total mean  | 0.54 | -0.01 | 0.27 | 0.39 | 0.17 | NaN | 0.25 |
-| total median |0.66 | -0.002 | 0.31| 0.43 | 0.15 | NaN | 0.35 |
+| bwa v 0.7.15.1 | 0.89 | -0.0001 | 0.78 | 0.67 | 0.53 | nan | nan|
+| bwa mem v 0.7.15.1 | 0.78 | -0.00002 | 0.70 | 0.51 | 0.37 | nan | nan|
+| groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.99 | 0.64 | 0.63 | nan | nan|
+| wrapper megablast wrapper v 1.2.0 | 0.78 | -0.002 | 0.48 | 0.44 | 0.30 | nan | nan|
+| total mean | 0.54 | -0.01 | 0.28 | 0.40 | 0.18 | nan | 0.25 |
+| total median | 0.66 | -0.002 | 0.32 | 0.43 | 0.16 | nan | 0.35 |
 
 
-The linear regressor was not able to handle the high-dimensional and categorical data. Total number of egregious error - those with r-squared score less than -10.0 is shown below.
+ SVR Regression was not performed in these tests because of the length of time required to comlete them. Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, SGD Regressor, and the Linear Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or LASSO. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
 
 
 The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
@@ -259,21 +260,41 @@ The random forest gave us the best results for estimating the runtime of a job. 
 
 A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows us to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
 
-Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space.
+Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
 
-We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles. A prediction that is within one standard deviation of one of the actual value was counted as an accurate prediction.
-
-We tested the quantile regression forest against the historical data with three fold validation. We tested it on the data with undetected errors unpruned and on the data with 5% of the jobs pruned by an isolation forest.
-
-The results can be viewed [here](benchmarks/quantile_forest_metrics.csv). A summary is also shown below.
+We tested the quantile regression forest against the historical data with three fold validation on the full dataset. A prediction that is within one, two, or three standard deviations of the actual value was counted as an accurate prediction. The results can be viewed [here](benchmarks/quantile_forest_metrics.csv), and a summary is also shown below.
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
-||unpruned|pruned|
-|---|---|---|
-|all tools|0.59|0.69|
+|                    | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)
+|--------------------|---------------|---------------|---------------|---------------|-----------------|
+| bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
+| bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
+| groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
+| megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
+| total mean | 0.69 | 0.89 | 0.94 | 333.49 | 4352.68 | |
+| total median | 0.69 | 0.90 | 0.95 | 21.74 | 117.49 | |
 
-The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they may be useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would make the confidence intervals larger than they should be.
+
+The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
+
+For this test, we were log transforming the runtimes, which had given us better results for the regressions in the previous section. But by doing this, it also meant that the standard deviations calculated by the quantile regressor were also on a log scale, and ballooned on the tail end. So, using a confidence interval of two standard deviations about the mean is more than twice as large as using just one standard deviation about the mean.
+
+By not log transforming the the runtimes we improve the interval sizes and the performance of the quantile regressor.
+
+##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
+
+|                    | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)
+|--------------------|---------------|---------------|---------------|---------------|-----------------|
+| bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
+| bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
+| groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
+| wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
+| total mean  | 0.69 | 0.89 | 0.94 | 326.17 | 74.50|
+| total median |0.69 | 0.90 | 0.95 | 22.23 | 3.56 |
+
+The confidence intervals for one standard deviation are larger than the one's found previously, which accounts for the better accuracy
+
 
 <!-- ![alt text](plots_w_error_dump/timesplit/devteam_bwa_bwa_mem_0.7.15.1.png) -->
 
@@ -306,16 +327,21 @@ A comparison of the accuracy of the classifier vs the quantile regression forest
 
 |                    | clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
 |--------------------|--------------|-------------------|---------------------|-------------|------------------|--------------------|
-| bwa v 0.7.15.1     | 0.821463     | -10000.0          |                     |             |                  |                    |
-| bwa mem v 0.7.15.1 |              |                   |                     |             |                  |                    |
-| total mean         | -27          | -5034             | -25                 | -29         | -28              | -141               |
+| bwa v 0.7.15.1     | 0.81 | 698.08 | 197.00| 0.90 | 2196.55 | 651.40|
+| bwa mem v 0.7.15.1 |  0.76 | 247.83 | 47.00 | 0.94 | 715.16 | 413.40|
+| fastq groomer v 1.1.1 |0.93 | 1250.62 | 1010.50 | 0.84 | 631.85 | 130.41|
+| megablast v 1.2.0  | 0.72 | 3821.06 | 1352.00 | 0.80 | 14722.29 | 4687.70|
+| total mean  | 0.75 | 1343.36 | 1073.15 | 0.69 | 326.17 | 74.50|
+| total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56|
 
 
 
 
 ## Conclusion
 
-In this paper, we introduced the Galaxy dataset, tested popular machine learning models in predicting the runtime of the tools, and introduced another way to choose walltimes
+In this paper, we introduced the Galaxy dataset, tested popular machine learning models in predicting the runtime of the tools, and compared two methods of predicting runtime intervals: quantile regression forests and random forest classifiers.
+
+Quantile regression forest gives more confidence and accuracy in the runtime intervals predicted. Random forest classifiers give more control over the size of the prediction intervals.
 
 ## Future Work
 
