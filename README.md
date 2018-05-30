@@ -268,7 +268,6 @@ We tested the modified regression forest against the historical data with three 
 
 | | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std) |
 |--------------------|---------------|---------------|---------------|---------------|-----------------|
-
 | bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
 | bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
 | groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
