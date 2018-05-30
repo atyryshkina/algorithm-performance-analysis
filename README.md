@@ -266,7 +266,7 @@ We tested the modified regression forest against the historical data with three 
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
-|                    | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)
+| | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)
 |--------------------|---------------|---------------|---------------|---------------|-----------------|
 | bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
 | bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
@@ -284,7 +284,7 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
-|                    | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)
+| | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)|
 |--------------------|---------------|---------------|---------------|---------------|-----------------|
 | bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
 | bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
@@ -328,8 +328,8 @@ The results of the classifier can be found [here](benchmarks/classifier_forest_m
 
 A comparison of the accuracy of the classifier vs the quantile regression forest with an interval of one standard deviation can be found below.
 
-|                    | clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
-|--------------------|--------------|-------------------|---------------------|-------------|------------------|--------------------|
+|| clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
+|---|--------------|-------------------|---------------------|-------------|------------------|--------------------|
 | bwa v 0.7.15.1     | 0.81 | 698.08 | 197.00| 0.90 | 2196.55 | 651.40|
 | bwa mem v 0.7.15.1 |  0.76 | 247.83 | 47.00 | 0.94 | 715.16 | 413.40|
 | fastq groomer v 1.1.1 |0.93 | 1250.62 | 1010.50 | 0.84 | 631.85 | 130.41|
