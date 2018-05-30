@@ -216,6 +216,9 @@ For most of the tools, we used the default settings provided by sklearn library:
 
 The table below shows the r-squared score for a select number of tools, and the total mean and median taken from the performance over each tool with more than 100 recorded runs.
 
+##### model comaprison with full dataset
+
+
 |                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
 | bwa v 0.7.15.1     | 0.907309 | -0.000351 | 0.639557 | 0.552426 | 0.245956 | 0.259903 | NaN |
@@ -223,20 +226,22 @@ The table below shows the r-squared score for a select number of tools, and the 
 | fastq groomer v 1.1.1 | 0.994533 | -9.9e-05 | 0.968487 | 0.512761 | 0.280944 | 0.452238 | NaN |
 | megablast v 1.2.0  | 0.77818 | -0.000959 | 0.30325 | 0.293292 | 0.195893 | 0.221871 | NaN|
 | total mean         | 0.59 | -0.01 | 0.26 | 0.32 | 0.09 | 0.14 | -0.25 |
-| total median   |0.70 | -0.008 | 0.26 | 0.33 | 0.06 | 0.10 | 0.18 |
+| total median   |0.71 | -0.002 | 0.26 | 0.33 | 0.06 | 0.10 | 0.18 |
 
 The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. The total mean and the total median were taken from the performance of each model over all of the tools with more than 100 recorded runs.
 
-Pruning out outliers with contamination=0.05 affected the predictions as follows.
+Pruning out outliers with contamination=0.05 affected the predictions as follows. SVR Regression was not performed in these tests.
+
+##### model comaprison pruning of 5% of the datasets with isolation forest
 
 |                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
 | bwa v 0.7.15.1     | 0.89267 | -0.00098 | 0.777449 | 0.674398 | 0.528471 | NaN | NaN |
 | bwa mem v 0.7.15.1 |  0.778393 | -2.2e-05 | 0.703741 | 0.514927 | 0.37121 | NaN | NaN |
-| fastq groomer v 1.1.1 *to change | 0.994565 | -6.4e-05 | 0.966611 | 0.513012 | 0.281224 | NaN | NaN|
+| fastq groomer v 1.1.1 | 0.994348 | -0.000132 | 0.988992 | 0.639289 | 0.631749 | NaN | NaN|
 | megablast v 1.2.0  | 0.837926 | -0.008938 | 0.745341 | 0.730984 | 0.577824 | NaN | -0.182977|
-| total mean *to change  | 0.60 | -0.01 | 0.26 | 0.32 | 0.09 | NaN | -0.13 |
-| total median *to change |0.71 | -0.0004 | 0.25 | 0.33| 0.06 | NaN | 0.21 |
+| total mean  | 0.54 | -0.01 | 0.27 | 0.39 | 0.17 | NaN | 0.25 |
+| total median |0.66 | -0.002 | 0.31| 0.43 | 0.15 | NaN | 0.35 |
 
 The linear regressor was not able to handle the high-dimensional and categorical data. Total number of egregious error - those with r-squared score less than -10.0 is shown below.
 
@@ -290,7 +295,20 @@ As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i
 
 This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
 
+The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the altered quantile forest with the standard deviations would not have
+
 The results of the classifier can be found [here](benchmarks/classifier_metrics.csv).
+
+A comparison of the accuracy of the classifier vs the quantile regression forest with an interval of one standard deviation can be found below.
+
+|                    | clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
+|--------------------|--------------|-------------------|---------------------|-------------|------------------|--------------------|
+| bwa v 0.7.15.1     | 0.821463     | -10000.0          |                     |             |                  |                    |
+| bwa mem v 0.7.15.1 |              |                   |                     |             |                  |                    |
+| total mean         | -27          | -5034             | -25                 | -29         | -28              | -141               |
+
+
+
 
 ## Conclusion
 
