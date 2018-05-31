@@ -212,45 +212,46 @@ We typically have two or three continuous variables for each tool, and about one
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%, and compared the performance of the regressors with using the r-squared score metric. As you will see, pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
 
 For most of the tools, we used the default settings provided by sklearn library: Linear Regressor, LASSO, Ridge Regressor, SVR Regressor, and SGD Regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest had 100 trees and a max_depth of 12.
 
-The table below shows the r-squared score for a select number of tools, and the total mean and median over each tool with more than 100 recorded runs. The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. The total mean and the total median were taken from the performance of each model over all of the tools with more than 100 recorded runs.
+The table below shows the r-squared score for a select number of tools. The total mean and median were taken as the performance of the tool over every tool with more than 100 recorded runs.
 
 ##### model comaprison with full dataset
 
 
-|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
+<!--|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
 | bwa v 0.7.15.1 | 0.91 | -0.0004 | 0.64 | 0.55 | 0.25 | 0.26 | nan|
 | bwa mem v 0.7.15.1 | 0.82 | -0.0001 | 0.71 | 0.40 | 0.17 | nan | nan|
 | groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.97 | 0.51 | 0.28 | 0.45 | nan|
 | wrapper megablast wrapper v 1.2.0 | 0.78 | -0.001 | 0.30 | 0.29 | 0.20 | 0.22 | nan|
-| total mean | 0.60 | -0.01 | 0.27 | 0.32 | 0.10 | 0.14 | -0.26 |
-| total median | 0.71 | -0.002 | 0.27 | 0.33 | 0.06 | 0.11 | 0.18 |
+| total mean | 0.60 | -0.01 | 0.27 | 0.32 | nan | 0.14 | nan |
+| total median | 0.7109 | -0.0022 | 0.2654 | 0.3319 | 0.0599 | 0.1093 | nan |-->
 
+![alt text](images/model_comparison.png)
 
-The Random Forest outperforms all of the other regressors followed by the neural network (MLPRegressor). The other regressors are not able to handle the high dimensional, and mixed continuous/categorical, dataset. We have seen in the section [Undetected Errors](#undetected-errors) that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would be more useful. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is indeed designed to do, do not hold up in the high dimensional space.
+The Random Forest outperforms all of the other regressors, and it's followed by the neural network (MLPRegressor). Lasso scored close to zero for nearly all of the tests, as can be seen from it's total mean and median performance. It seems that many of the regressors are unable to handle the high dimensional, and mixed continuous/categorical, dataset. We have seen in the section [Undetected Errors](#undetected-errors) that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would be more useful. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is indeed designed to do, do not hold up in the high dimensional space.
 
-Pruning out outliers with contamination=0.05 affected the predictions as follows.
+Pruning out outliers with contamination=0.05 affected the predictions as follows. SVR Regression was not performed in these tests because of the length of time required to comlete them.
 
 ##### model comaprison pruning of 5% of the datasets with isolation forest
 
-|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
+![alt text](images/model_comparison_minus_outliers.png)
+<!--|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
 | bwa v 0.7.15.1 | 0.89 | -0.0001 | 0.78 | 0.67 | 0.53 | nan | nan|
 | bwa mem v 0.7.15.1 | 0.78 | -0.00002 | 0.70 | 0.51 | 0.37 | nan | nan|
 | groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.99 | 0.64 | 0.63 | nan | nan|
 | wrapper megablast wrapper v 1.2.0 | 0.78 | -0.002 | 0.48 | 0.44 | 0.30 | nan | nan|
-| total mean | 0.54 | -0.01 | 0.28 | 0.40 | 0.18 | nan | 0.25 |
-| total median | 0.66 | -0.002 | 0.32 | 0.43 | 0.16 | nan | 0.35 |
+| total mean | 0.54 | -0.01 | 0.28 | 0.40 | nan | nan | nan |
+| total median | 0.6605 | -0.0024 | 0.3152 | 0.4344 | 0.1483 | nan | nan |-->
+
+ Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, SGD Regressor, and the Linear Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or LASSO. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
 
 
- SVR Regression was not performed in these tests because of the length of time required to comlete them. Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, SGD Regressor, and the Linear Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or LASSO. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
-
-
-The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
+The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
 
 
 
