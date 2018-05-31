@@ -48,9 +48,9 @@ For more information visit https://www.galaxyproject.org.
 
 ### The Galactic Radio Telescope and Tracking Data
 
-All Galaxy instances have an option to keep records of runtime data. This is a service that adminstrators can select when configuring a Galaxy. The most widely used Galaxy instance, Galaxy main, does so, and the data collected on Galaxy main is the data used in these tests.
+All Galaxy instances are able to keep records of runtime data. This is a choice that adminstrators can make when configuring Galaxy. The most widely used Galaxy instance, Galaxy Main, does so, and the data collected there is the data used in the presented tests.
 
-If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to export their data and have it released to the public in a standard package. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
+If other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is a service that allows Galaxy admins to export anonymous data from their instance and release it to the public in a standard format. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
 
 ### scikit-learn and machine learning
 
