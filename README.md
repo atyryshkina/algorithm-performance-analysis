@@ -50,7 +50,7 @@ For more information visit https://www.galaxyproject.org.
 
 All Galaxy instances have an option to keep records of runtime data. This is a service that adminstrators can select when configuring a Galaxy. The most widely used Galaxy instance, Galaxy main, does so, and the data collected on Galaxy main is the data used in these tests.
 
-If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to send data to a server to then be released to the public. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
+If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to export their data and have it released to the public in a standard package. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
 
 ### scikit-learn and machine learning
 
@@ -107,6 +107,8 @@ This includes:
 
 
 The Main Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
+
+A note about the tools' versions listed in the dataset should be made here. The versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself.
 
 The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
 
