@@ -360,7 +360,7 @@ Quantile regression forests are more accurate in their predictions, and grant th
 
 Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs.
 
-To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning. We find these methods promising and hope to implement a test instance of them on  Galaxy main soon.
+To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning. We find these methods promising and plan to implement a test instance of them on  Galaxy main to test their performance in a real setting.
 
 ## Future Work
 
