@@ -22,6 +22,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 - [Background](#what-is-the-galaxy-project)
   + [What is the Galaxy Project](#what-is-the-galaxy-project)
+  + [The Galactic Radio Telescope and Tracking Data](#the-galactic-radio-telescope-and-tracking-data)
   + [scikit-learn and machine learning](#scikit-learn-and-machine-learning)
   + [Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
 - [Overview of Data](#overview-of-data)
@@ -37,13 +38,19 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 ### What is the Galaxy Project
 
-The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses quickly and easily. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysis software on one's own machines. This can be a difficult and time consuming task.
+The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses on designated servers. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysis software on one's own machines. This can be a difficult and time consuming task.
 
-With the Galaxy Project, researchers can run analyses using the graphical user interface in their browser. To do so, the user needs only to connect to a Galaxy server (e.g. https://www.usegalaxy.org), upload their data, choose the analysis and the analysis parameters, and hit run.
+With the Galaxy Project, researchers can run analyses using the graphical user interface through the web. To do so, the user needs only to connect to a Galaxy server (e.g. https://www.usegalaxy.org), upload their data, choose the analysis and the analysis parameters, and hit run.
 
 The Galaxy Project has been storing the information about the execution of these analyses since 2013, and, to date, has the largest dataset of the performance of popular bioinformatics tools. We begin to study this dataset in this paper.
 
 For more information visit https://www.galaxyproject.org.
+
+### The Galactic Radio Telescope and Tracking Data
+
+All Galaxy instances have an option to keep records of runtime data. This is a service that adminstrators can select when configuring a Galaxy. The most widely used Galaxy instance, Galaxy main, does so, and the data collected on Galaxy main is the data used in these tests.
+
+If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to send data to a server to then be released to the public. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
 
 ### scikit-learn and machine learning
 
@@ -77,7 +84,7 @@ In our paper, we verify that random forests are the best model for the regressio
 
 ## Overview of Data
 
-All of the tool execution on https://usegalaxy.org are tracked. The data is collected using the Galactic Radio Telescope (GRT), which records a comprehensive set of job run attributes.
+All of the tool execution on https://usegalaxy.org are tracked. Twhich records a comprehensive set of job run attributes.
 
 This includes:
 
@@ -163,7 +170,7 @@ To remove bad jobs, we used the isolation forest with contamination=0.05. We als
 
 #### User Selected Parameters
 
-Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
+Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The records are of all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
 
 * labels (such as plot axes names)
 * redundant parameters (two attributes that represent the same information)
@@ -251,7 +258,7 @@ Pruning out outliers with contamination=0.05 affected the predictions as follows
 Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, and the SGD Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or LASSO. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
 
 
-The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
+The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
 
 
 
@@ -279,9 +286,9 @@ We tested the modified regression forest against the historical data with three 
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
-For the tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used.
+For these tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used for the interval.
 
-By not log transforming the the runtimes we improve the interval sizes and the performance of the modified random forest regressor. These results can be view at [benchmarks/modified_forest_metrics_no_log.csv](benchmarks/modified_forest_metrics_no_log.csv)
+Without log transformation the interval sizes improve and so does the performance. These results can be view at [benchmarks/modified_forest_metrics_no_log.csv](benchmarks/modified_forest_metrics_no_log.csv)
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
@@ -297,7 +304,7 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 <!--![alt text](images/freq_conf_intervals_3std_bwa.png)-->
 
 
-The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this
+The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this may be reasonable.
 
 ## Using a random forest classifier
 
@@ -344,15 +351,15 @@ A comparison of the accuracy of the classifier vs the quantile regression forest
 
 In this paper, we introduced the Galaxy dataset, tested popular machine learning models, and compared two methods of predicting runtime intervals: modified quantile regression forests and random forest classifiers.
 
-Quantile regression forests are more accurate in their predictions. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is more than an hour large. Thoguh random forest classifiers are less accurate, they allow for more control over the size of the confidence intervals.
+Quantile regression forests are more accurate in their predictions. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is more than an hour large. Though random forest classifiers are less accurate, they allow for more control over the size of the confidence intervals.
 
 Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs.
 
-To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning.
+To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning. We find these methods promising and hope to implement a test instance of them on  Galaxy main soon.
 
 ## Future Work
 
-Recently, we have set up the GRT to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we want to create models to predict memory usage and CPU time and evaluate their performance.
+Recently, we have set up the galaxy main to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we want to create models to predict memory usage and CPU time and evaluate their performance.
 
 We also want to find the effect of processor count on runtime. Currently, every job is allotted 32 processor cores, so we do not have the data to investigate the relationship between number of processors and runtime. In the future, we plan to add random variability to the number of processor cores allotted, so that we can see how great of an effect parallelism has on these bioinformatic algorithms.
 
