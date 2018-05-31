@@ -48,9 +48,9 @@ For more information visit https://www.galaxyproject.org.
 
 ### The Galactic Radio Telescope and Tracking Data
 
-All Galaxy instances are able to keep records of runtime data. This is a choice that adminstrators can make when configuring Galaxy. The most widely used Galaxy instance, Galaxy Main, does so, and the data collected there is the data used in the presented tests.
+All Galaxy instances have an option to keep records of runtime data. This is a service that adminstrators can select when configuring a Galaxy. The most widely used Galaxy instance, Galaxy main, does so, and the data collected on Galaxy main is the data used in these tests.
 
-If other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is a service that allows Galaxy admins to export anonymous data from their instance and release it to the public in a standard format. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
+If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to export their data and have it released to the public in a standard package. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
 
 ### scikit-learn and machine learning
 
@@ -276,15 +276,15 @@ We tested the modified regression forest against the historical data with three 
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
-|                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
+<!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
 |---|---|-----|-------|--------------|-------|--------------|
 | bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
 | bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
 | groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
 | total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
-| total median | 0.69 | 0.90 | 0.95 | - | - |  -|
-
+| total median | 0.69 | 0.90 | 0.95 | - | - |  -| -->
+![](images/accuracy-qrf.png | width=200)![](images/accuracy-qrf.png =200x200)
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
