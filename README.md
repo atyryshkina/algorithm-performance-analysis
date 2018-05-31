@@ -284,7 +284,7 @@ We tested the modified regression forest against the historical data with three 
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
 | total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
 | total median | 0.69 | 0.90 | 0.95 | - | - |  -| -->
-![](images/accuracy-qrf.png | width=200)![](images/accuracy-qrf.png =200x200)
+![alt text](images/accuracy-qrf.png)   ![alt text](images/intervals-qrf.png)
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
@@ -294,14 +294,15 @@ Without log transformation the interval sizes improve and so does the performanc
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
-|                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
+![alt text](images/accuracy-qrf-no-log.png)   ![alt text](images/intervals-qrf-no-log.png)
+<!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
 |---|---|-----|-------|--------------|-------|--------------|
 | bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
 | bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
 | groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
 | wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
 | total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
-| total median | 0.79 | 0.92 | 0.95 | - | -| -|
+| total median | 0.79 | 0.92 | 0.95 | - | -| -| -->
 
 <!--![alt text](images/freq_conf_intervals_3std_bwa.png)-->
 
@@ -329,31 +330,33 @@ As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i
 
 This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
 
-The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the altered quantile forest with the standard deviations would not have
+The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the modified quantile forest with the standard deviations would have an arbitrary upper limit based on the variability of historical data found in its leaves.
 
-The results of the classifier can be found [here](benchmarks/classifier_forest_metrics.csv).
+The results of the classifier can be found [here](benchmarks/classifier_forest_metrics.csv). A comparison of the accuracy of the classifier vs the modified regression forest with an interval of one standard deviation can be found below.
 
-A comparison of the accuracy of the classifier vs the quantile regression forest with an interval of one standard deviation can be found below.
+![alt text](images/comparison-accuracies.png)   ![alt text](images/comparison-intervals.png)
 
-|| clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
+<!-- || clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
 |---|--------------|-------------------|---------------------|-------------|------------------|--------------------|
 | bwa v 0.7.15.1     | 0.81 | 698.08 | 197.00| 0.90 | 2196.55 | 651.40|
 | bwa mem v 0.7.15.1 |  0.76 | 247.83 | 47.00 | 0.94 | 715.16 | 413.40|
 | fastq groomer v 1.1.1 |0.93 | 1250.62 | 1010.50 | 0.84 | 631.85 | 130.41|
 | megablast v 1.2.0  | 0.72 | 3821.06 | 1352.00 | 0.80 | 14722.29 | 4687.70|
 | total mean  | 0.75 | 1343.36 | 1073.15 | 0.69 | 326.17 | 74.50|
-| total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56|
+| total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56| -->
 
-![alt text](images/freq_conf_intervals_1std_bwa.png)![alt text](images/freq_clf_intervals_bwa.png)
+The two models have comparable performance on the Galaxy dataset when a prediction interval of one standard deviation about the mean is used. However, the modified regression forest edges out a little bit once we increase the interval. We did not include the interval size for the 2 std dev mrf in the interval size bar graph because it is simply twice as large as the 1 std dev mrf bar graph. To take a more in depth look at the prediction intervals, I've also provided a comparison of the frequency distributions below. This for one tool only - BWA version 0.7.15.1.
 
+![alt text](images/freq_conf_intervals_1std_bwa.png)  ![alt text](images/freq_clf_intervals_bwa.png)
 
+The modified regression forest is using an interval of only one standard deviation about the mean. Still, it has prediction spike of very large intervals, over one hundred minutes long. The classifier has controlled prediction intervals. The method we used to choose buckets, makes it so that the one of the intervals is over an hour long. These, however, can be controlled and modified in the bucket selection step.
 
 
 ## Conclusion
 
 In this paper, we introduced the Galaxy dataset, tested popular machine learning models, and compared two methods of predicting runtime intervals: modified quantile regression forests and random forest classifiers.
 
-Quantile regression forests are more accurate in their predictions. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is more than an hour large. Though random forest classifiers are less accurate, they allow for more control over the size of the confidence intervals.
+Quantile regression forests are more accurate in their predictions, and grant the ability to improve performance by changing the confidence of the interval estimates. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is very large. Random forest classifiers are less accurate, but they allow for more control over the size of the prediction intervals.
 
 Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs.
 
