@@ -294,11 +294,7 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 | total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
 | total median | 0.79 | 0.92 | 0.95 | - | -| -|
 
-
-![alt text](images/freq_conf_intervals_1std_bwa.png)
-
-
-![alt text](images/freq_conf_intervals_3std_bwa.png)
+<!--![alt text](images/freq_conf_intervals_3std_bwa.png)-->
 
 
 The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this
@@ -339,7 +335,8 @@ A comparison of the accuracy of the classifier vs the quantile regression forest
 | total mean  | 0.75 | 1343.36 | 1073.15 | 0.69 | 326.17 | 74.50|
 | total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56|
 
-![alt text](images/freq_clf_intervals_bwa.png)
+![alt text](images/freq_conf_intervals_1std_bwa.png)![alt text](images/freq_clf_intervals_bwa.png)
+
 
 
 
