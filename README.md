@@ -266,14 +266,14 @@ We tested the modified regression forest against the historical data with three 
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
-| | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)
-|--------------------|---------------|---------------|---------------|---------------|-----------------|
+|                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
+|---|---|-----|-------|--------------|-------|--------------|
 | bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
 | bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
 | groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
 | total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
-| total median | 0.69 | 0.90 | 0.95 | - | - |  -
+| total median | 0.69 | 0.90 | 0.95 | - | - |  -|
 
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
@@ -284,8 +284,8 @@ By not log transforming the the runtimes we improve the interval sizes and the p
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
-| | accuracy 1std | accuracy 2std | accuracy 3std | mean interval (1std)| mean_interval (2std) | mean_interval (3std)|
-|----|---------------|---------------|---------------|---------------|-----------------|
+|                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
+|---|---|-----|-------|--------------|-------|--------------|
 | bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
 | bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
 | groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
