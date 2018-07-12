@@ -1,7 +1,7 @@
 # The Analysis of Data Collected by the Galaxy Project
 
 ## Abstract
-The Main public server of the Galaxy Project (https://usegalaxy.org) has been collecting extensive job run data on all analyses since 2013. This large collection of job runs with attributes can be leveraged to determine more efficient ways for allocation of server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model for runtime prediction of complex algorithms trained on real data. In this paper we will:
+The Main public server of the Galaxy Project (https://usegalaxy.org) has been collecting extensive job run data on all analyses since 2013. This large collection of job runs with attributes can be leveraged to determine more efficient ways for allocation of server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model to predict the runtime and max memory usage of complex algorithms trained on real data. In this paper we will:
 
 1. Present statistical summaries of the dataset, describe its structure, identify the presence of
 undetected errors, and discuss any other insights into the Galaxy server that we believe will be
@@ -11,10 +11,11 @@ of complex algorithms as was seen by Hutter et al.
 3. Discuss the benefits and drawbacks of using a quantile random forest for creating runtime
 prediction confidence intervals.
 4. Present an alternative approach for choosing a walltime for complex algorithms with the use of
+5. Consider the applicability of runtime and memory use prediction for tools run on Galaxy servers with different hardware.
 a random forest classifier.
 
 Studying the Galaxy Project dataset reveals that there may be room to fine tune the resource allocation.
-The ability to determine appropriate walltimes will save server resources from jobs that result in errors
+The ability to determine appropriate walltimes and RAM allowance will save server resources from jobs that result in errors
 undetected by the server — such as jobs that fall into infinite loops. Once freed, these resources can then be used to run jobs in the queue without the need to allocate additional hardware.
 
 ## Table of Contents
@@ -33,6 +34,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 - [Model Comparison](#model-comparison)
 - [Estimating a Range of Runtimes](#estimating-a-range-of-runtimes)
 - [Using a random forest classifier](#using-a-random-forest-classifier)
+- [Walltime and Memory Requirement Estimations as an API](#walltime-and-memory-requirement-estimations-as-an-api)
 - [Future Work](#future-work)
 - [References](#references)
 
@@ -70,7 +72,7 @@ A random forest is a collection of decision trees, each of which are trained wit
 
 Incidentally, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attribute to split a node, the larger its implied effect on the dependent attribute. The scikit-learn Random Forest classes have a way of getting this information with the feature_importances_ class attribute.
 
-### Previous work on runtime prediction of programs
+### Previous work on the prediction of resource usage of programs
 
 The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
@@ -350,6 +352,20 @@ The two models have comparable performance on the Galaxy dataset when a predicti
 ![alt text](images/freq_conf_intervals_1std_bwa.png)  ![alt text](images/freq_clf_intervals_bwa.png)
 
 The modified regression forest is using an interval of only one standard deviation about the mean. Still, it has prediction spike of very large intervals, over one hundred minutes long. The classifier has controlled prediction intervals. The method we used to choose buckets, makes it so that the one of the intervals is over an hour long. These, however, can be controlled and modified in the bucket selection step.
+
+## Walltime and Memory Requirement Estimations as an API
+
+It is convenient for Galaxy server administrators to know the resource requirements of a job before it is run. Allocating the correct computational resources, without using more than necessary, would lead to shorter queue times and more efficient use of resources. Moreover, for tools with high resource demand, such as those that require hundreds of gigabytes of memory, an estimation of resource requirement could reveal whether a certain job will run to completion or fail.
+
+<!--
+Currently, resource allocation of Galaxy servers is done with heuristics. On Galaxy Main, the amount of resources given a job is determined by the tool and is often even shared across tools. The ultimate walltime of all tools on the default Galaxy cluster is three days. If a job exceeds that time it is given the option to go to a Galaxy cluster called Jetstream, which has no walltime. Similarly, all tools are alloted 32 Gb of memory, and if a job runs out of memory, it can be run on Jetstream with unlimitted memory.
+-->
+
+The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of these differences in hardware influences, a reliable prediction model would have to be trained on jobs that were run on the machine in question.
+
+On the other hand, max memory usage of a job is not hardware dependent. This is of benefit, since we can then train a model on run instances of jobs across all servers to create a more robust model. 
+
+
 
 
 ## Conclusion
