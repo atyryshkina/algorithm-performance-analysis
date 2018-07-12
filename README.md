@@ -25,7 +25,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
   + [What is the Galaxy Project](#what-is-the-galaxy-project)
   + [The Galactic Radio Telescope and Tracking Data](#the-galactic-radio-telescope-and-tracking-data)
   + [scikit-learn and machine learning](#scikit-learn-and-machine-learning)
-  + [Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
+  + [Previous work on the prediction of resource usage of programs](#previous-work-on-the-prediction-of-resource-usage-of-programs)
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
   + [Undetected Errors](#undetected-errors)
