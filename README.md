@@ -76,6 +76,12 @@ Incidentally, the decision tree also offers a way to see which independent attri
 
 The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
+
+
+The popularity of cloud computing has also stimulated activity in the problem of resource usage prediction. [[6]](https://doi.org/10.1016/j.future.2011.05.027)[[7]](10.1109/CCECE.2013.6567848)[[8]](10.1109/CNSM.2010.5691343)
+These methods, however, typically scale virtual machines with no knowledge of what programs or algorithms are being run. The predictions are based on traffic and use patterns.
+
+
 In a few works, new machine learning methods are designed specifically for the problem. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
 
 Most previous works tweak and tailor old machine learning methods to the problem. For instance, in 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). The downside of PQR2 is that there are not readily available libraries of the model in popular programming languages like Python or R.
@@ -361,7 +367,7 @@ It is convenient for Galaxy server administrators to know the resource requireme
 Currently, resource allocation of Galaxy servers is done with heuristics. On Galaxy Main, the amount of resources given a job is determined by the tool and is often even shared across tools. The ultimate walltime of all tools on the default Galaxy cluster is three days. If a job exceeds that time it is given the option to go to a Galaxy cluster called Jetstream, which has no walltime. Similarly, all tools are alloted 32 Gb of memory, and if a job runs out of memory, it can be run on Jetstream with unlimitted memory.
 -->
 
-The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of these differences in hardware influences, a reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate. 
+The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of these differences in hardware influences, a reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate.
 
 On the other hand, max memory usage of a job is not hardware dependent. This is of benefit, since we can then train a model on run instances of jobs across all servers to create a more robust model. Here, a generic API would be reasonable.
 
