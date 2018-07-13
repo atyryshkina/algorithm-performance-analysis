@@ -386,7 +386,7 @@ Galaxy Main began collecting memory use data in 2018. Because of this, we do not
 
 Below are sample predictions. The datasets are randomly split into a training set and testing set with a testing set of size 0.2. A condifence interval of two standard deviations was chosen for the graphs because it provided a reasonable accuracy.
 
-![alt text](images/all.png)
+![alt text](images/all2.png)
 
 
 ## Walltime and Memory Requirement Estimations as an API
