@@ -92,35 +92,51 @@ In our paper, we verify that random forests are the best model for the regressio
 
 ## Overview of Data
 
-All of the tool execution on https://usegalaxy.org are tracked. Twhich records a comprehensive set of job run attributes.
+All of the tool executions on https://usegalaxy.org are tracked, and a comprehensive set of job run attributes are recorded.
 
 This includes:
 
-* create time
-* runtime
-* user selected parameters (tool specific)
-* state ("ok", "error", or other)
-* input data
-  - size of input data
-  - filetype of input data (bam, fastq, fastq.gz, etc.)
-* hardware information
-  - memory allocated
-  - swap memory allocated
-  - number of processors allotted
-  - destination id (which node the job was run on)
-* user information
-    - user id
-    - session id
-    - history id
+**Job Info**
+ * id
+ * user_id
+ * tool_id
+ * tool_version
+ * state
+ * create_time
 
+**Numeric Metrics**
+ * processor_count
+ * memtotal
+ * swaptotal
+ * runtime_seconds
+ * galaxy_slots
+ * start_epoch
+ * end_epoch
+ * galaxy_memory_mb
+ * memory.oom_control.under_oom
+ * memory.oom_control.oom_kill_disable
+ * cpuacct.usage
+ * memory.max_usage_in_bytes
+ * memory.memsw.max_usage_in_bytes
+ * memory.failcnt
+ * memory.memsw.limit_in_bytes
+ * memory.limit_in_bytes
+ * memory.soft_limit_in_bytes
 
-The Main Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
+**User Selected Parameters**
 
-A note about the tools' versions listed in the dataset should be made here. The versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself.
+ * tool specific
 
-The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
+**Datasets**
 
-The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset yet, but we began tracking it not long before writing this, and will publish those datasets when available.
+ * sizes of input and output files
+ * extensions of input and output files
+
+The Main Galaxy dataset contains runtime data for 1051 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
+
+A note about the tools' versions listed in the dataset: the versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Also, the Galaxy Main server has three clusters with different hardware specifications. The cluster on which a job runs is also recorded in the database.
+
+The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
 
 
 #### Distribution of the Data
