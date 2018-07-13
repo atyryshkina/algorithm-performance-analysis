@@ -79,7 +79,7 @@ The prediction of runtimes of complex algorithms using machine learning approach
 
 
 The popularity of cloud computing has also stimulated activity in the problem of resource usage prediction. [[6]](https://doi.org/10.1016/j.future.2011.05.027)[[7]](10.1109/CCECE.2013.6567848)[[8]](10.1109/CNSM.2010.5691343)
-These methods, however, typically scale virtual machines with no knowledge of what programs or algorithms are being run. The predictions are based on traffic and use patterns.
+The methods developed for cloud computing, however, typically scale virtual machines with no knowledge of what programs or algorithms are running on the maching. The predictions are based on traffic and use patterns. In this project we want to estimate complex algorithms' resource requirements, not on predicting the traffic of a website.
 
 
 In a few works, new machine learning methods are designed specifically for the problem. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
@@ -384,6 +384,7 @@ Galaxy Main began collecting memory use data less than two months before the tim
 |bwa mem|2199|0.78|0.71|0.93|0.97
 |stringtie|1399|0.90|0.68|0.89|0.94
 
+Here are sample predictions. The dataset was randomly split into a training set and testing set with a testing set of size 0.2. A condifence interval of two standard deviations was chosen for the graphs because it provided a reasonable accuracy.
 
 ![alt text](images/all.png)
 
