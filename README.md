@@ -375,23 +375,14 @@ The modified regression forest is using an interval of only one standard deviati
 
 ## Maximum Memory use Prediction
 
-Galaxy Main began collecting memory use data less than two months before the time of this writing. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtime. We will focus on a subset of the most popular jobs for our predictive model.
-
-| tool | number of jobs |
-|---|---|
-|bowtie2   | 3985  |
-|hisat2   | 2811  |
-|bwa mem   |2199   |
-|stringtie   |1399   |
-
-We use a cross validation of 5 on the data with the following results.
+Galaxy Main began collecting memory use data less than two months before the time of this writing. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtime. We will focus on a subset of the most popular jobs for our predictive model. We use a cross validation of 5 on the data with the following results.
 
 |tool|number of jobs in dataset|r2 score|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
 |---|---|---|---|---|---|
-|bowtie2|3985|0.81|0.59|0.82|0.91|
-|hisat2|2811|0.76|0.55|0.84|0.92|
-|bwa mem|2199|0.50|0.49|0.74|0.83|
-|stringtie|1399|0.81|0.61|0.81|0.88|
+|bowtie2|3985|0.95|0.77|0.95|0.99
+|hisat2|2811|0.96|0.70|0.92|0.96
+|bwa mem|2199|0.78|0.71|0.93|0.97
+|stringtie|1399|0.90|0.68|0.89|0.94
 
 
 ![alt text](images/all.png)
