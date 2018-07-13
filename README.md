@@ -382,11 +382,19 @@ Galaxy Main began collecting memory use data less than two months before the tim
 |bowtie2   | 3985  |
 |hisat2   | 2811  |
 |bwa mem   |2199   |
-| bwa wrapper  | 1025  |
-|bwa |665|
+|stringtie   |1399   |
+
+We use a cross validation of 5 on the data with the following results.
+
+|tool|number of jobs in dataset|r2 score|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
+|---|---|---|---|---|---|
+|bowtie2|3985|0.81|0.59|0.82|0.91|
+|hisat2|2811|0.76|0.55|0.84|0.92|
+|bwa mem|2199|0.50|0.49|0.74|0.83|
+|stringtie|1399|0.81|0.61|0.81|0.88|
 
 
-
+![alt text](images/all.png)
 
 
 ## Walltime and Memory Requirement Estimations as an API
@@ -397,7 +405,7 @@ It is convenient for Galaxy server administrators to know the resource requireme
 Currently, resource allocation of Galaxy servers is done with heuristics. On Galaxy Main, the amount of resources given a job is determined by the tool and is often even shared across tools. The ultimate walltime of all tools on the default Galaxy cluster is three days. If a job exceeds that time it is given the option to go to a Galaxy cluster called Jetstream, which has no walltime. Similarly, all tools are alloted 32 Gb of memory, and if a job runs out of memory, it can be run on Jetstream with unlimitted memory.
 -->
 
-The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of these differences in hardware influences, a reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate.
+The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. A reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate.
 
 On the other hand, max memory usage of a job is not hardware dependent. This is of benefit, since we can then train a model on run instances of jobs across all servers to create a more robust model. Here, a generic API would be reasonable.
 
