@@ -359,6 +359,22 @@ The two models have comparable performance on the Galaxy dataset when a predicti
 
 The modified regression forest is using an interval of only one standard deviation about the mean. Still, it has prediction spike of very large intervals, over one hundred minutes long. The classifier has controlled prediction intervals. The method we used to choose buckets, makes it so that the one of the intervals is over an hour long. These, however, can be controlled and modified in the bucket selection step.
 
+## Maximum Memory use Prediction
+
+Galaxy Main began collecting memory use data less than two months before the time of this writing. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtime. We will focus on a subset of the most popular jobs for our predictive model.
+
+| tool | number of jobs |
+|---|---|
+|bowtie2   | 3985  |
+|hisat2   | 2811  |
+|bwa mem   |2199   |
+| bwa wrapper  | 1025  |
+|bwa |665|
+
+
+
+
+
 ## Walltime and Memory Requirement Estimations as an API
 
 It is convenient for Galaxy server administrators to know the resource requirements of a job before it is run. Allocating the correct computational resources, without using more than necessary, would lead to shorter queue times and more efficient use of resources. Moreover, for tools with high resource demand, such as those that require hundreds of gigabytes of memory, an estimation of resource requirement could reveal whether a certain job will run to completion or fail.
