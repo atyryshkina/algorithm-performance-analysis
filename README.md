@@ -306,7 +306,7 @@ We tested the modified regression forest against the historical data with three 
 | megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
 | total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
 | total median | 0.69 | 0.90 | 0.95 | - | - |  -| -->
-![alt text](images/accuracy-qrf.png)   ![alt text](images/intervals-qrf.png)
+![alt text](images/accuracy-qrf.png?)   ![alt text](images/intervals-qrf.png?)
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
@@ -316,7 +316,7 @@ Without log transformation the interval sizes improve and so does the performanc
 
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
-![alt text](images/accuracy-qrf-no-log.png)   ![alt text](images/intervals-qrf-no-log.png)
+![alt text](images/accuracy-qrf-no-log.png?)   ![alt text](images/intervals-qrf-no-log.png?)
 <!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
 |---|---|-----|-------|--------------|-------|--------------|
 | bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
@@ -356,7 +356,7 @@ The aribitrary upper limit would also be present in the original qunatile random
 
 The results of the classifier can be found [here](benchmarks/classifier_forest_metrics.csv). A comparison of the accuracy of the classifier vs the modified regression forest with an interval of one standard deviation can be found below.
 
-![alt text](images/comparison-accuracies.png)   ![alt text](images/comparison-intervals.png)
+![alt text](images/comparison-accuracies.png?)   ![alt text](images/comparison-intervals.png?)
 
 <!-- || clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
 |---|--------------|-------------------|---------------------|-------------|------------------|--------------------|
