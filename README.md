@@ -375,16 +375,16 @@ The modified regression forest is using an interval of only one standard deviati
 
 ## Maximum Memory use Prediction
 
-Galaxy Main began collecting memory use data less than two months before the time of this writing. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtime. We will focus on a subset of the most popular jobs for our predictive model. We use a cross validation of 5 on the data with the following results.
+Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtimes. We will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
 
-|tool|number of jobs in dataset|r2 score|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
+|tool|number of jobs in dataset|r2 score (mean)|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
 |---|---|---|---|---|---|
 |bowtie2|3985|0.95|0.77|0.95|0.99
 |hisat2|2811|0.96|0.70|0.92|0.96
 |bwa mem|2199|0.78|0.71|0.93|0.97
 |stringtie|1399|0.90|0.68|0.89|0.94
 
-Here are sample predictions. The dataset was randomly split into a training set and testing set with a testing set of size 0.2. A condifence interval of two standard deviations was chosen for the graphs because it provided a reasonable accuracy.
+Below are sample predictions. The datasets are randomly split into a training set and testing set with a testing set of size 0.2. A condifence interval of two standard deviations was chosen for the graphs because it provided a reasonable accuracy.
 
 ![alt text](images/all.png)
 
