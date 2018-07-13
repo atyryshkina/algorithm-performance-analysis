@@ -143,16 +143,14 @@ The CPUs are shared with other jobs running on the node, so the performance of j
 
 Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and file sizes in the Galaxy dataset are highly skewed. The distribution for a tool called BWA (Galaxy version 0.7.15.1) can be seen below.
 
-![alt text](images/runtimes3.png)
-
-![alt text](images/filesize_bwamem.png)
+![alt text](images/runtimes3.png?)
+![alt text](images/filesize_bwamem.png?)
 
 In this project, we address this skewness by doing a log transform on the data.
 We use numpy's log transformer numpy.log1p which transforms the data by log(1+x)
 
-![alt text](images/log_runtimes3.png)
-
-![alt text](images/log_filesize3.png)
+![alt text](images/log_runtimes3.png?)
+![alt text](images/log_filesize3.png?)
 
 This transformation works for most of the runtime and input file size attributes to give a more balanced distribution.
 
