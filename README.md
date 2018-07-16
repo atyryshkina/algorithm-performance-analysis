@@ -34,6 +34,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 - [Model Comparison](#model-comparison)
 - [Estimating a Range of Runtimes](#estimating-a-range-of-runtimes)
 - [Using a random forest classifier](#using-a-random-forest-classifier)
+- [Maximum Memory use Prediction](#maximum-memory-use-prediction)
 - [Walltime and Memory Requirement Estimations as an API](#walltime-and-memory-requirement-estimations-as-an-api)
 - [Future Work](#future-work)
 - [References](#references)
@@ -131,23 +132,21 @@ This includes:
 
 The Main Galaxy dataset contains runtime data for 1051 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
 
-A note about the tools' versions listed in the dataset: the versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Also, the Galaxy Main server has three clusters with different hardware specifications. The cluster on which a job runs is also recorded in the database.
-
-The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
+A note about the tools' versions listed in the dataset: the versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Also, the Galaxy Main server has three clusters with different hardware specifications. The cluster on which a job runs is also recorded in the database. [TODO: not currently true] Also, The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
 
 
 #### Distribution of the Data
 
 Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and file sizes in the Galaxy dataset are highly skewed. The distribution for a tool called BWA (Galaxy version 0.7.15.1) can be seen below.
 
-![alt text](images/runtimes3.png?)
-![alt text](images/filesize_bwamem.png?)
+![alt text](images/runtime_distribution_bwa_mem.png)
+![alt text](images/filesize_distribution_bwa_mem.png)
 
 In this project, we address this skewness by doing a log transform on the data.
 We use numpy's log transformer numpy.log1p which transforms the data by log(1+x)
 
-![alt text](images/log_runtimes3.png?)
-![alt text](images/log_filesize3.png?)
+![alt text](images/log_runtime_distribution.png)
+![alt text](images/log_filesize_distribution.png)
 
 This transformation works for most of the runtime and input file size attributes to give a more balanced distribution.
 
