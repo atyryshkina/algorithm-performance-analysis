@@ -77,7 +77,7 @@ Incidentally, the decision tree also offers a way to see which independent attri
 The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
 The popularity of cloud computing has also stimulated activity in the problem of resource usage prediction. [[6]](https://doi.org/10.1016/j.future.2011.05.027)[[7]](https://doi.org/10.1109/CCECE.2013.6567848)[[8]](https://doi.org/10.1109/CNSM.2010.5691343)
-The methods developed for cloud computing, however, typically scale virtual machines with no knowledge of which programs or algorithms are being run. The predictions are based on traffic and use patterns as a seqential time analysis. 
+The methods developed for cloud computing, however, typically scale virtual machines with no knowledge of which programs or algorithms are being run. The predictions are based on traffic and use patterns as a seqential time analysis.
 
 In a few works, new machine learning methods are designed specifically to estimate a complex algorithms' resource requirements. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
 
@@ -372,7 +372,7 @@ The modified regression forest is using an interval of only one standard deviati
 
 ## Maximum Memory use Prediction
 
-Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtimes. We will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
+Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtimes. Therefore, we will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
 
 |tool|number of jobs in dataset|r2 score (mean)|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
 |---|---|---|---|---|---|
