@@ -1,7 +1,7 @@
 # The Analysis of Data Collected by the Galaxy Project
 
 ## Abstract
-The Main public server of the Galaxy Project (https://usegalaxy.org) has been collecting extensive job run data on all analyses since 2013. This large collection of job runs with attributes can be leveraged to determine more efficient ways for allocation of server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model for runtime prediction of complex algorithms trained on real data. In this paper we will:
+The Main public server of the Galaxy Project (https://usegalaxy.org) has been collecting extensive job run data on all analyses since 2013. This large collection of job runs with attributes can be leveraged to determine more efficient ways for allocation of server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model to predict the runtime and max memory usage of complex algorithms trained on real data. In this paper we will:
 
 1. Present statistical summaries of the dataset, describe its structure, identify the presence of
 undetected errors, and discuss any other insights into the Galaxy server that we believe will be
@@ -11,10 +11,11 @@ of complex algorithms as was seen by Hutter et al.
 3. Discuss the benefits and drawbacks of using a quantile random forest for creating runtime
 prediction confidence intervals.
 4. Present an alternative approach for choosing a walltime for complex algorithms with the use of
+5. Consider the applicability of runtime and memory use prediction for tools run on Galaxy servers with different hardware.
 a random forest classifier.
 
 Studying the Galaxy Project dataset reveals that there may be room to fine tune the resource allocation.
-The ability to determine appropriate walltimes will save server resources from jobs that result in errors
+The ability to determine appropriate walltimes and RAM allowance will save server resources from jobs that result in errors
 undetected by the server — such as jobs that fall into infinite loops. Once freed, these resources can then be used to run jobs in the queue without the need to allocate additional hardware.
 
 ## Table of Contents
@@ -22,8 +23,9 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 - [Background](#what-is-the-galaxy-project)
   + [What is the Galaxy Project](#what-is-the-galaxy-project)
+  + [The Galactic Radio Telescope and Tracking Data](#the-galactic-radio-telescope-and-tracking-data)
   + [scikit-learn and machine learning](#scikit-learn-and-machine-learning)
-  + [Previous work on runtime prediction of programs](#previous-work-on-runtime-prediction-of-programs)
+  + [Previous work on the prediction of resource usage of programs](#previous-work-on-the-prediction-of-resource-usage-of-programs)
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
   + [Undetected Errors](#undetected-errors)
@@ -32,16 +34,26 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 - [Model Comparison](#model-comparison)
 - [Estimating a Range of Runtimes](#estimating-a-range-of-runtimes)
 - [Using a random forest classifier](#using-a-random-forest-classifier)
+- [Maximum Memory use Prediction](#maximum-memory-use-prediction)
+- [Walltime and Memory Requirement Estimations as an API](#walltime-and-memory-requirement-estimations-as-an-api)
 - [Future Work](#future-work)
 - [References](#references)
 
 ### What is the Galaxy Project
 
-The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses quickly and easily. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysis software on one's own machines. This can be a difficult and time consuming task.
+The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses on designated servers. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysis software on one's own machines. This can be a difficult and time consuming task.
 
-With the Galaxy Project, researchers can run analyses using the graphical user interface in their browser. To do so, the user needs only to connect to a Galaxy server (e.g. https://www.usegalaxy.org), upload their data, choose the analysis and the analysis parameters, and hit run.
+With the Galaxy Project, researchers can run analyses using the graphical user interface through the web. To do so, the user needs only to connect to a Galaxy server (e.g. https://www.usegalaxy.org), upload their data, choose the analysis and the analysis parameters, and hit run.
+
+The Galaxy Project has been storing the information about the execution of these analyses since 2013, and, to date, has the largest dataset of the performance of popular bioinformatics tools. We begin to study this dataset in this paper.
 
 For more information visit https://www.galaxyproject.org.
+
+### The Galactic Radio Telescope and Tracking Data
+
+All Galaxy instances have an option to keep records of runtime data. This is a service that adminstrators can select when configuring a Galaxy. The most widely used Galaxy instance, Galaxy main, does so, and the data collected on Galaxy main is the data used in these tests.
+
+If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to export their data and have it released to the public in a standard package. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
 
 ### scikit-learn and machine learning
 
@@ -61,11 +73,14 @@ A random forest is a collection of decision trees, each of which are trained wit
 
 Incidentally, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attribute to split a node, the larger its implied effect on the dependent attribute. The scikit-learn Random Forest classes have a way of getting this information with the feature_importances_ class attribute.
 
-### Previous work on runtime prediction of programs
+### Previous work on the prediction of resource usage of programs
 
 The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
-In a few works, new machine learning methods are designed specifically for the problem. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
+The popularity of cloud computing has also stimulated activity in the problem of resource usage prediction. [[6]](https://doi.org/10.1016/j.future.2011.05.027)[[7]](https://doi.org/10.1109/CCECE.2013.6567848)[[8]](https://doi.org/10.1109/CNSM.2010.5691343)
+The methods developed for cloud computing, however, typically scale virtual machines with no knowledge of which programs or algorithms are being run. The predictions are based on traffic and use patterns as a seqential time analysis.
+
+In a few works, new machine learning methods are designed specifically to estimate a complex algorithms' resource requirements. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
 
 Most previous works tweak and tailor old machine learning methods to the problem. For instance, in 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). The downside of PQR2 is that there are not readily available libraries of the model in popular programming languages like Python or R.
 
@@ -75,49 +90,63 @@ In our paper, we verify that random forests are the best model for the regressio
 
 ## Overview of Data
 
-All of the tool execution on https://usegalaxy.org are tracked. The data is collected using the Galactic Radio Telescope (GRT), which records a comprehensive set of job run attributes.
+All of the tool executions on https://usegalaxy.org are tracked, and a comprehensive set of job run attributes are recorded.
 
 This includes:
 
-* create time
-* runtime
-* user selected parameters (tool specific)
-* state ("ok", "error", or other)
-* input data
-  - size of input data
-  - filetype of input data (bam, fastq, fastq.gz, etc.)
-* hardware information
-  - memory allocated
-  - swap memory allocated
-  - number of processors allotted
-  - destination id (which node the job was run on)
-* user information
-    - user id
-    - session id
-    - history id
+**Job Info**
+ * id
+ * user_id
+ * tool_id
+ * tool_version
+ * state
+ * create_time
 
+**Numeric Metrics**
+ * processor_count
+ * memtotal
+ * swaptotal
+ * runtime_seconds
+ * galaxy_slots
+ * start_epoch
+ * end_epoch
+ * galaxy_memory_mb
+ * memory.oom_control.under_oom
+ * memory.oom_control.oom_kill_disable
+ * cpuacct.usage
+ * memory.max_usage_in_bytes
+ * memory.memsw.max_usage_in_bytes
+ * memory.failcnt
+ * memory.memsw.limit_in_bytes
+ * memory.limit_in_bytes
+ * memory.soft_limit_in_bytes
 
-The Main Galaxy dataset contains runtime data for 1372 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv).
+**User Selected Parameters**
 
-The Galaxy server has three different clusters with different hardware specifications. The hardware on which a job was run is recorded in the dataset. [I need to put hardware specs here. or a link to them]
+ * tool specific
 
-The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset yet, but we began tracking it not long before writing this, and will publish those datasets when available.
+**Datasets**
+
+ * sizes of input and output files
+ * extensions of input and output files
+
+The Main Galaxy dataset contains runtime data for 1051 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
+
+A note about the tools' versions listed in the dataset: the versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Also, the Galaxy Main server has three clusters with different hardware specifications. The cluster on which a job runs is also recorded in the database. [TODO: not currently true] Also, The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
 
 
 #### Distribution of the Data
 
 Typically, machine learning algorithms, such as, random forests and neural networks prefer to use data with a normal distribution. The distribution of runtimes and file sizes in the Galaxy dataset are highly skewed. The distribution for a tool called BWA (Galaxy version 0.7.15.1) can be seen below.
 
-![alt text](images/runtimes3.png)
-
-![alt text](images/filesize_bwamem.png)
+![alt text](images/runtime_distribution_bwa_mem.png)
+![alt text](images/filesize_distribution_bwa_mem.png)
 
 In this project, we address this skewness by doing a log transform on the data.
 We use numpy's log transformer numpy.log1p which transforms the data by log(1+x)
 
-![alt text](images/log_runtimes3.png)
-
-![alt text](images/log_filesize3.png)
+![alt text](images/log_runtime_distribution.png)
+![alt text](images/log_filesize_distribution.png)
 
 This transformation works for most of the runtime and input file size attributes to give a more balanced distribution.
 
@@ -161,7 +190,7 @@ To remove bad jobs, we used the isolation forest with contamination=0.05. We als
 
 #### User Selected Parameters
 
-Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The GRT records all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
+Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The records are of all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
 
 * labels (such as plot axes names)
 * redundant parameters (two attributes that represent the same information)
@@ -210,41 +239,46 @@ We typically have two or three continuous variables for each tool, and about one
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%. Pruning the datasets with the isolation forest improves the performance of the models.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%, and compared the performance of the regressors with using the r-squared score metric. As you will see, pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
 
-For most of the tools, we used the default settings provided by sklearn library: Linear Regressor, LASSO, Ridge Regressor, SVR Regressor, and SGD Regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest had 100 trees and a max_depth of 12.
+For most of the tools, we used the default settings provided by sklearn library: SVR, Ridge Regressor, SGD Regressor, Extra Trees Regressor, and Gradient Boosting regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest and extra trees regressors had 100 estimators and a max_depth of 12.
+
+The table below shows the r-squared score for a select number of tools. The total mean and median were taken as the performance of the tool over every tool with more than 100 recorded runs.
+
+##### model comaprison with full dataset
 
 
-The table below shows the r-squared score for a select number of tools, and the total mean and median taken from the performance over each tool with more than 100 recorded runs.
-
-|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
+<!--|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| bwa v 0.7.15.1     | 0.907309 | -0.000351 | 0.639557 | 0.552426 | 0.245956 | 0.259903 | NaN |
-| bwa_mem v 0.7.15.1 |  0.823522 | -0.000149 | 0.714105 | 0.396975 | 0.169044 | NaN | NaN |
-| fastq groomer v 1.1.1 | 0.994533 | -9.9e-05 | 0.968487 | 0.512761 | 0.280944 | 0.452238 | NaN |
-| megablast v 1.2.0  | 0.77818 | -0.000959 | 0.30325 | 0.293292 | 0.195893 | 0.221871 | NaN|
-| total mean         | 0.59 | -0.01 | 0.26 | 0.32 | 0.09 | 0.14 | -0.25 |
-| total median   |0.70 | -0.008 | 0.26 | 0.33 | 0.06 | 0.10 | 0.18 |
+| bwa v 0.7.15.1 | 0.91 | -0.0004 | 0.64 | 0.55 | 0.25 | 0.26 | nan|
+| bwa mem v 0.7.15.1 | 0.82 | -0.0001 | 0.71 | 0.40 | 0.17 | 0.16 | nan|
+| groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.97 | 0.51 | 0.28 | 0.45 | nan|
+| wrapper megablast wrapper v 1.2.0 | 0.78 | -0.001 | 0.30 | 0.29 | 0.20 | 0.22 | nan|
+| total mean | 0.60 | -0.01 | 0.27 | 0.32 | nan | 0.14 | nan |
+| total median | 0.7109 | -0.0022 | 0.2654 | 0.3319 | 0.0599 | 0.1093 | nan |-->
 
+![alt text](images/model_benchmark_comparisons.png?)
 
-The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the number of datapoints in the training set. The total mean and the total median were taken from the performance of each model over all of the tools with more than 100 recorded runs.
+The Random Forest, the Extra Treest Regressor, and the Gradient Boosting Regressor have compariable performances, but the Random Forest performs slightlr better. They are followed by the neural network (MLPRegressor). It seems that many of the regressors are unable to handle the high dimensional, and mixed continuous/categorical, dataset. We have seen in the section [Undetected Errors](#undetected-errors), when we looked at bwa mam, that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would be more useful. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is designed to do, do not hold up in the high dimensional space.
 
-Pruning out outliers with contamination=0.05 affected the predictions as follows.
+Pruning out outliers with contamination=0.05 affected the predictions as follows. SVR Regression was not performed in these tests because of the length of time required to comlete them.
 
-|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
+##### model comaprison pruning of 5% of the datasets with isolation forest
+
+![alt text](images/model_benchmarks_outliers.png)
+<!--|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
 |--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| bwa v 0.7.15.1     | 0.89267 | -0.00098 | 0.777449 | 0.674398 | 0.528471 | NaN | NaN |
-| bwa mem v 0.7.15.1 |  0.778393 | -2.2e-05 | 0.703741 | 0.514927 | 0.37121 | NaN | NaN |
-| fastq groomer v 1.1.1 *to change | 0.994565 | -6.4e-05 | 0.966611 | 0.513012 | 0.281224 | NaN | NaN|
-| megablast v 1.2.0  | 0.837926 | -0.008938 | 0.745341 | 0.730984 | 0.577824 | NaN | -0.182977|
-| total mean *to change  | 0.60 | -0.01 | 0.26 | 0.32 | 0.09 | NaN | -0.13 |
-| total median *to change |0.71 | -0.0004 | 0.25 | 0.33| 0.06 | NaN | 0.21 |
+| bwa v 0.7.15.1 | 0.89 | -0.0001 | 0.78 | 0.67 | 0.53 | nan | nan|
+| bwa mem v 0.7.15.1 | 0.78 | -0.00002 | 0.70 | 0.51 | 0.37 | nan | nan|
+| groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.99 | 0.64 | 0.63 | nan | nan|
+| wrapper megablast wrapper v 1.2.0 | 0.78 | -0.002 | 0.48 | 0.44 | 0.30 | nan | nan|
+| total mean | 0.54 | -0.01 | 0.28 | 0.40 | nan | nan | nan |
+| total median | 0.6605 | -0.0024 | 0.3152 | 0.4344 | 0.1483 | nan | nan |-->
+
+Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, and the SGD Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or Extra Trees. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
 
 
-The linear regressor was not able to handle the high-dimensional and categorical data. Total number of egregious error - those with r-squared score less than -10.0 is shown below.
-
-
-The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
+The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -10.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
 
 
 
@@ -254,27 +288,48 @@ The random forest gave us the best results for estimating the runtime of a job. 
 
 A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows us to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
 
-Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store the means and the standard deviations. Doing so reduces the accuracy of the time ranges, but saves a lot of space.
+Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store only the means and the standard deviations. Doing so reduces the precision of the confidence interval, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
 
-We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles. A prediction that is within one standard deviation of one of the actual value was counted as an accurate prediction.
-
-We tested the quantile regression forest against the historical data with three fold validation. We tested it on the data with undetected errors unpruned and on the data with 5% of the jobs pruned by an isolation forest.
-
-The results can be viewed [here](quantile_forest_metrics.csv). A summary is also shown below.
+We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed [here](benchmarks/modified_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
-||unpruned|pruned|
-|---|---|---|
-|all tools|0.59|0.69|
+<!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
+|---|---|-----|-------|--------------|-------|--------------|
+| bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
+| bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
+| groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
+| megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
+| total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
+| total median | 0.69 | 0.90 | 0.95 | - | - |  -| -->
+![alt text](images/accuracy-qrf.png?)   ![alt text](images/intervals-qrf.png?)
 
-The largest drawback of the quantile regression forest is that the time ranges that it guesses are very large. These large time ranges are not useful for runtime estimates for users, but they may be useful for creating walltimes. Because of the skewed nature of the runtime distribution, the quantile random forest tends to underestimate rather than overestimate, which is problematic. In addition, if there are bad jobs present in the training dataset, it would make the confidence intervals larger than they should be.
+The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
-<!-- ![alt text](plots_w_error_dump/timesplit/devteam_bwa_bwa_mem_0.7.15.1.png) -->
+For these tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used for the interval.
+
+Without log transformation the interval sizes improve and so does the performance. These results can be view at [benchmarks/modified_forest_metrics_no_log.csv](benchmarks/modified_forest_metrics_no_log.csv)
+
+##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
+
+![alt text](images/accuracy-qrf-no-log.png?)   ![alt text](images/intervals-qrf-no-log.png?)
+<!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
+|---|---|-----|-------|--------------|-------|--------------|
+| bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
+| bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
+| groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
+| wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
+| total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
+| total median | 0.79 | 0.92 | 0.95 | - | -| -| -->
+
+<!--![alt text](images/freq_conf_intervals_3std_bwa.png)-->
+
+
+The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this may be reasonable.
 
 ## Using a random forest classifier
 
-The main advantage of a random forest classifier over a quantile regression forest, is that you can select the sizes of the runtime bins. Where in the quantile regression forest, you are at the mercy of the bins dynamically selected by the model.
+The main advantage of a random forest classifier over a quantile regression forest (or a modified regression forest using standard deviations), is that you can select the sizes of the runtime bins. Where in the quantile regression forest, you are at the mercy of the bins dynamically selected by the model.
 
 In our tests, we chose buckets in the following fashion.
 1. We ordered the jobs by length of runtime.
@@ -293,18 +348,83 @@ As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i
 
 This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
 
-The results of the classifier can be found [here](benchmarks/classifier_metrics.csv).
+The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the modified quantile forest with the standard deviations would have an arbitrary upper limit based on the variability of historical data found in its leaves.
+
+The results of the classifier can be found [here](benchmarks/classifier_forest_metrics.csv). A comparison of the accuracy of the classifier vs the modified regression forest with an interval of one standard deviation can be found below.
+
+![alt text](images/comparison-accuracies.png?)   ![alt text](images/comparison-intervals.png?)
+
+<!-- || clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
+|---|--------------|-------------------|---------------------|-------------|------------------|--------------------|
+| bwa v 0.7.15.1     | 0.81 | 698.08 | 197.00| 0.90 | 2196.55 | 651.40|
+| bwa mem v 0.7.15.1 |  0.76 | 247.83 | 47.00 | 0.94 | 715.16 | 413.40|
+| fastq groomer v 1.1.1 |0.93 | 1250.62 | 1010.50 | 0.84 | 631.85 | 130.41|
+| megablast v 1.2.0  | 0.72 | 3821.06 | 1352.00 | 0.80 | 14722.29 | 4687.70|
+| total mean  | 0.75 | 1343.36 | 1073.15 | 0.69 | 326.17 | 74.50|
+| total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56| -->
+
+The two models have comparable performance on the Galaxy dataset when a prediction interval of one standard deviation about the mean is used. However, the modified regression forest edges out a little bit once we increase the interval. We did not include the interval size for the 2 std dev mrf in the interval size bar graph because it is simply twice as large as the 1 std dev mrf bar graph. To take a more in depth look at the prediction intervals, I've also provided a comparison of the frequency distributions below. This for one tool only - BWA version 0.7.15.1.
+
+![alt text](images/freq_conf_intervals_1std_bwa.png)  ![alt text](images/freq_clf_intervals_bwa.png)
+
+The modified regression forest is using an interval of only one standard deviation about the mean. Still, it has prediction spike of very large intervals, over one hundred minutes long. The classifier has controlled prediction intervals. The method we used to choose buckets, makes it so that the one of the intervals is over an hour long. These, however, can be controlled and modified in the bucket selection step.
+
+## Maximum Memory use Prediction
+
+Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtimes. Therefore, we will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
+
+|tool|number of jobs in dataset|r2 score (mean)|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
+|---|---|---|---|---|---|
+|bowtie2|3985|0.95|0.77|0.95|0.99
+|hisat2|2811|0.96|0.70|0.92|0.96
+|bwa mem|2199|0.78|0.71|0.93|0.97
+|stringtie|1399|0.90|0.68|0.89|0.94
+
+Below are sample predictions. The datasets are randomly split into a training set and testing set with a testing set of size 0.2. A condifence interval of two standard deviations was chosen for the graphs because it provided a reasonable accuracy.
+
+![alt text](images/all2.png)
+
+
+## Walltime and Memory Requirement Estimations as an API
+
+It is convenient for Galaxy server administrators to know the resource requirements of a job before it is run. Allocating the correct computational resources, without using more than necessary, would lead to shorter queue times and more efficient use of resources. Moreover, for tools with high resource demand, such as those that require hundreds of gigabytes of memory, an estimation of resource requirement could reveal whether a certain job will run to completion or fail.
+
+<!--
+Currently, resource allocation of Galaxy servers is done with heuristics. On Galaxy Main, the amount of resources given a job is determined by the tool and is often even shared across tools. The ultimate walltime of all tools on the default Galaxy cluster is three days. If a job exceeds that time it is given the option to go to a Galaxy cluster called Jetstream, which has no walltime. Similarly, all tools are alloted 32 Gb of memory, and if a job runs out of memory, it can be run on Jetstream with unlimitted memory.
+-->
+
+The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. A reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate.
+
+On the other hand, max memory usage of a job is not hardware dependent. This is of benefit, since we can then train a model on run instances of jobs across all servers to create a more robust model. Here, a generic API would be reasonable.
+
+
+
+
 
 ## Conclusion
 
-In this paper, we introduced the Galaxy dataset, tested popular machine learning models in predicting the runtime of the tools, and introduced another way to choose walltimes
+In this paper, we introduced the Galaxy dataset, tested popular machine learning models, and compared two methods of predicting runtime intervals: modified quantile regression forests and random forest classifiers.
+
+Quantile regression forests are more accurate in their predictions, and grant the ability to improve performance by changing the confidence of the interval estimates. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is very large. Random forest classifiers are less accurate, but they allow for more control over the size of the prediction intervals.
+
+Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs.
+
+To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning. We find these methods promising and plan to implement a test instance of them on  Galaxy main to test their performance in a real setting.
 
 ## Future Work
 
-Recently, we have set up the GRT to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we want to create models to predict memory usage and CPU time and evaluate their performance.
+Recently, we have set up the galaxy main to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we want to create models to predict memory usage and CPU time and evaluate their performance.
 
 We also want to find the effect of processor count on runtime. Currently, every job is allotted 32 processor cores, so we do not have the data to investigate the relationship between number of processors and runtime. In the future, we plan to add random variability to the number of processor cores allotted, so that we can see how great of an effect parallelism has on these bioinformatic algorithms.
 
 ## References
 
+Enis Afgan, Dannon Baker, Marius van den Beek, Daniel Blankenberg, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Carl Eberhard, Björn Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Greg Von Kuster, E. Rasche, Nicola Soranzo, Nitesh Turaga, James Taylor, Anton Nekrutenko, and Jeremy Goecks. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2016 update. Nucleic Acids Research (2016) 44(W1): W3-W10 doi:10.1093/nar/gkw343
+
 Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
+
+Hutter, Frank, et al. "Algorithm runtime prediction: Methods & evaluation." Artificial Intelligence 206 (2014): 79-111.
+
+Matsunaga, Andréa, and José AB Fortes. "On the use of machine learning to predict the time and resources consumed by applications." Proceedings of the 2010 10th IEEE/ACM International Conference on Cluster, Cloud and Grid Computing. IEEE Computer Society, 2010.
+
+Gupta, Chetan, Abhay Mehta, and Umeshwar Dayal. "PQR: Predicting query execution times for autonomous workload management." Autonomic Computing, 2008. ICAC'08. International Conference on. IEEE, 2008.
