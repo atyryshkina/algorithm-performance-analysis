@@ -132,7 +132,8 @@ This includes:
 
 The Main Galaxy dataset contains runtime data for 1051 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
 
-A note about the tools' versions listed in the dataset: the versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Also, the Galaxy Main server has three clusters with different hardware specifications. The cluster on which a job runs is also recorded in the database. [TODO: not currently true] Also, The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
+##### Some notes about the dataset.
+The versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. The Galaxy Main has three clusters to which it sends jobs. The clusters have different hardware specifications, and the clusters themselves may exhibit heterogeneous . The cluster on which a job runs is also recorded in the database. [TODO: not currently true] Also, The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
 
 
 #### Distribution of the Data
@@ -156,31 +157,41 @@ One hurdle the dataset presents is that it contains undetected errors - errors t
 
 For example, some tools require that an input file is provided. `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef))  is one such tool. If an input file is not provided, bwa_mem should not run at all or else the run will result in an error. In spite of this, the number of jobs executing this tool in the dataset that ran successfully and without an input file is 49 or 0.25% of "successful" jobs. These jobs should not have run at all, and yet they are present in the dataset and marked as successfully completed.
 
-Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors is troubling. With undetected input file errors, it is trivial to identify and remove the culprits from the dataset. However, these errors call into question the validity of the rest of the data. If there are many other jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, and these mislabelled jobs are used to train a machine learning model, they could skew the predictions.
+Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors casts doubt on the validity of the rest of the dataset. If there are many other jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, it will bias the predictions and the performance metrics, which are computed on the same contaminated dataset.
 
-Another method of screening the dataset for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an human genome alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, identifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
+One method of screening the dataset is by excluding extreme values.
 
-Using this heuristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.
+<!--trimming the distribution.
 
-![alt text](images/gaus_dist2.png)
+One method for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an human genome alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, identifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
 
-This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa_mem - an alignment algorithm - 2.5% of jobs in the collected data took 4 seconds or less to finish. Are all of these jobs undetected errors? If we increase the unreasonable runtime threshold, we see that 5% of jobs took 5 seconds or less to finish. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.
+Using this heuristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.-->
 
+![alt text](images/extreme_values.png?)
+
+<!--This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa_mem - an alignment algorithm - 2.5% of jobs in the collected data took 4 seconds or less to finish. Are all of these jobs undetected errors? If we increase the unreasonable runtime threshold, we see that 5% of jobs took 5 seconds or less to finish. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.-->
+
+<!--
 Since we know that the two variables that have the greatest affect on the runtime of bwa_mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
+-->
 
-In the following figures all of the user selected parameters are frozen except for input file size. We were able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used.
+This requires choosing quantiles of contamination for each tool. This method does catche a portion of the bad jobs, but it does not catch them all. Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional by the input file sizes. This result of this procedure can be seen in the following two plots.
 
 ![alt text](images/hg19.png)
 
-The reference file, hg19 is the human genome
+User selected parameters are frozen in the above plot, and the reference file, hg19 is the human genome
 
 ![alt text](images/hg38patch.png)
 
-The reference file, hg38 is another version of the human genome.
+Here, the reference file, hg38 is another version of the human genome.
 
-The first graph shows a strong correlation between input file and runtime. This is the correlation we expect. The outliers that we remove are the data points in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster.
+The first plot shows a strong correlation between input file and runtime, as we expect. Three suspicious outliers can be seen in the lower right corner. These jobs are unlikely to have completed succefully since they ran much faster than the correlation presented. On the other hand, the second plot displays no correlation between runtime and input file size. Trimming
+In this case, we would throw all of the data points away.
 
-The second graph, displays complete uncorrelation between runtime and input file size. In this case, we would throw all of the data points away.
+<!--
+that we remove are the data points in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster.
+-->
+
 
 Using this method to prune out bad jobs requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning. This type of analysis would lead to the best results, but at the time of this writing, it has not been completed for the Galaxy dataset.
 
