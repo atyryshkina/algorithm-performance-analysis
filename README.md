@@ -182,15 +182,15 @@ Using this heuristic, we can account for undetected errors by getting rid of the
 Since we know that the two variables that have the greatest affect on the runtime of bwa_mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
 -->
 
-This requires choosing quantiles of contamination for each tool. This method excludes a portion of the bad jobs, but it does not exclude them all and may also exclude good jobs.
+This requires choosing quantiles of contamination for each tool. This method may exclude a portion of the bad jobs, but it does not exclude them all and will also exclude good jobs.
 
-Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional by the input file sizes. This result of this procedure can be seen in the following two plots.
+Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional to the input file sizes. This result of this procedure can be seen in the following two plots.
 
-![alt text](images/hg19.png)
+![alt text](images/hg19.png)![alt text](images/hg38patch.png)
 
 User selected parameters are frozen in the above plot, and the reference file, hg19 is the human genome
 
-![alt text](images/hg38patch.png)
+
 
 Here, the reference file, hg38 is another version of the human genome.
 
