@@ -182,27 +182,15 @@ Using this heuristic, we can account for undetected errors by getting rid of the
 Since we know that the two variables that have the greatest affect on the runtime of bwa_mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
 -->
 
-This requires choosing quantiles of contamination for each tool. This method may exclude a portion of the bad jobs, but it does not exclude them all and will also exclude good jobs.
+This requires choosing quantiles of contamination for each tool. This method may exclude a portion of the bad jobs, but it does not exclude them all and will exclude good jobs as well.
 
 Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional to the input file sizes. This result of this procedure can be seen in the following two plots.
 
-![alt text](images/hg19.png)![alt text](images/hg38patch.png)
+![alt text](images/bwamem_good_corel3.png)![alt text](images/bwamem_bad_corel.png)
 
-User selected parameters are frozen in the above plot, and the reference file, hg19 is the human genome
+User selected parameters are frozen in the above plot, and the reference file, hg38 and hg38Patch11 are two versions of the human genome. In the plot to the left, the relation between runtime and input file size is as expected. In the plot to the right, there appears to be no correlation between the two attributes. By trimming the dataset and excluding the most extreme values, only a portion of the bad jobs are adressed.
 
-
-
-Here, the reference file, hg38 is another version of the human genome.
-
-The first plot shows a strong correlation between input file and runtime, as we expect. Three suspicious outliers can be seen in the lower right corner. These jobs are unlikely to have completed succefully since they ran much faster than the correlation presented. On the other hand, the second plot displays no correlation between runtime and input file size. Trimming
-In this case, we would throw all of the data points away.
-
-<!--
-that we remove are the data points in the bottom right corner. We can do this safely because, while it is possible for a job to run longer than the correlation displayed on the graph, it is impossible for jobs to run faster.
--->
-
-
-Using this method to prune out bad jobs requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning. This type of analysis would lead to the best results, but at the time of this writing, it has not been completed for the Galaxy dataset.
+Manually finding and removing bad jobs from the dataset is the best method for cleaning it. However, this is time consuming as it requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning. 
 
 A final method of undetected error detection that we will discuss is with the use of an isolation forest. In a regular random forest, a node in a decision tree chooses to divide data based on the attribute and split that most greatly decreases that variability of the following to datasets. In an isolation forest, the data is split based on a random selection of an attribute and split. The longer it takes to isolate a datapoint, the less likely it is an outlier. As with removing the tails of the runtime distribution, we need to choose the percentage of jobs that are bad before hand.
 
