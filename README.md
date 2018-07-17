@@ -155,7 +155,7 @@ This transformation works for most of the runtime and input file size attributes
 
 A hurdle the dataset presents is that it contains undetected errors - errors that occurred but were not recorded.
 
-One type of undetected error are jobs recorded to have completed 'succefully' without the requisite input data. One tool that requires input is `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef)). Yet the number of jobs labelled as 'succesfully completed' without a required input is 49 or 0.25% of 'successful' jobs.
+One type of undetected error is the input file error, in which jobs are recorded to have completed 'succefully' without the requisite input data. For instance, the tool `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef)) requires input, yet the number of jobs labelled as 'succesfully' completed without a required input is 49 or 0.25% of 'successful' jobs runs of the tool.
 
 <!--
 
@@ -164,7 +164,7 @@ For example, some tools require that an input file is provided. `bwa_mem Galaxy 
 
 -->
 
-Whether these errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors casts doubt on the validity of the rest of the dataset. If there are many jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, it will bias the predictions and the performance metrics, which are computed on the same, possibly contaminated, dataset.
+Whether these errors are caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors casts doubt on the validity of the rest of the dataset. If there are many jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, it will bias the predictions and the performance metrics, which are computed on the same, possibly contaminated, dataset.
 
 One method of screening the dataset is by excluding extreme values.
 
