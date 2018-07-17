@@ -382,7 +382,7 @@ The modified regression forest is using an interval of only one standard deviati
 
 ## Maximum Memory use Prediction
 
-Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do runtimes. Therefore, we will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
+Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do for runtimes. Therefore, we will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
 
 |tool|number of jobs in dataset|r2 score (mean)|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
 |---|---|---|---|---|---|
@@ -391,22 +391,22 @@ Galaxy Main began collecting memory use data in 2018. Because of this, we do not
 |bwa mem|2199|0.78|0.71|0.93|0.97
 |stringtie|1399|0.90|0.68|0.89|0.94
 
-Below are sample predictions. The datasets are randomly split into a training set and testing set with a testing set of size 0.2. A condifence interval of two standard deviations was chosen for the graphs because it provided a reasonable accuracy.
+Below are sample predictions. The datasets are randomly split into a training set and a testing set with the testing set size of 0.2. A confidence interval of two standard deviations has been chosen for the graphs to provide a reasonable accuracy.
 
 ![alt text](images/all2.png)
 
 
-## Walltime and Memory Requirement Estimations as an API
+## Walltime and Memory Requirement Estimations via an API
 
-It is convenient for Galaxy server administrators to know the resource requirements of a job before it is run. Allocating the correct computational resources, without using more than necessary, would lead to shorter queue times and more efficient use of resources. Moreover, for tools with high resource demand, such as those that require hundreds of gigabytes of memory, an estimation of resource requirement could reveal whether a certain job will run to completion or fail.
+It is beneficial for Galaxy server administrators to know the resource requirements of a job before it is run. Allocating the correct computational resources, without using more than necessary, would lead to shorter queue times and more efficient use of resources. Moreover, for tools with high resource demand, such as those that require hundreds of gigabytes of memory, an estimation of resource requirement could detect whether a certain job will run to completion or fail.
 
 <!--
 Currently, resource allocation of Galaxy servers is done with heuristics. On Galaxy Main, the amount of resources given a job is determined by the tool and is often even shared across tools. The ultimate walltime of all tools on the default Galaxy cluster is three days. If a job exceeds that time it is given the option to go to a Galaxy cluster called Jetstream, which has no walltime. Similarly, all tools are alloted 32 Gb of memory, and if a job runs out of memory, it can be run on Jetstream with unlimitted memory.
 -->
 
-The runtime of a job is hardware specific. It depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Wherease a job with many computations may have CPU clock as the bottleneck. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. A reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate.
+The runtime of a job is hardware specific. It mostly depends on the CPU clock, CPU cache, memory speed, and disk read/write speed. For instance, for a job with a very large output file, the disk read/write speed may be the bottleneck. Whereas a job with complex computations may have CPU clock as the bottleneck. Because of the high variability in server hardware configurations, it is doubtful that a runtime prediction API would be accurate or even useful across different servers. A reliable prediction model would have to be trained on jobs that were run on the machine in question. Rather than a generic API, an extension of the galaxy code to create a runtime prediction model trained on the server's database would be more appropriate.
 
-On the other hand, max memory usage of a job is not hardware dependent. This is of benefit, since we can then train a model on run instances of jobs across all servers to create a more robust model. Here, a generic API would be reasonable.
+On the other hand, max memory usage of a job is not hardware dependent. This is of benefit, since we can then train model on  instances of jobs across all servers to create a more robust one. Here, a generic API could be reasonable.
 
 
 
