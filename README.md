@@ -153,11 +153,18 @@ This transformation works for most of the runtime and input file size attributes
 
 #### Undetected Errors
 
-One hurdle the dataset presents is that it contains undetected errors - errors that occurred but were not recorded.
+A hurdle the dataset presents is that it contains undetected errors - errors that occurred but were not recorded.
 
-For example, some tools require that an input file is provided. `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef))  is one such tool. If an input file is not provided, bwa_mem should not run at all or else the run will result in an error. In spite of this, the number of jobs executing this tool in the dataset that ran successfully and without an input file is 49 or 0.25% of "successful" jobs. These jobs should not have run at all, and yet they are present in the dataset and marked as successfully completed.
+One type of undetected error are jobs recorded to have completed 'succefully' without the requisite input data. One tool that requires input is `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef)). Yet the number of jobs labelled as 'succesfully completed' without a required input is 49 or 0.25% of 'successful' jobs.
 
-Whether the errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors casts doubt on the validity of the rest of the dataset. If there are many other jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, it will bias the predictions and the performance metrics, which are computed on the same contaminated dataset.
+<!--
+
+
+For example, some tools require that an input file is provided. `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef))  is one such tool. <!--If an input file is not provided, bwa_mem should not run at all or else the run will result in an error. In spite of this, the number of jobs executing this tool that ran successfully and without an input file is 49 or 0.25% of "successful" jobs. These jobs should not have run at all, and yet they are present in the dataset and marked as successfully completed.
+
+-->
+
+Whether these errors were be caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors casts doubt on the validity of the rest of the dataset. If there are many jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, it will bias the predictions and the performance metrics, which are computed on the same, possibly contaminated, dataset.
 
 One method of screening the dataset is by excluding extreme values.
 
@@ -175,7 +182,9 @@ Using this heuristic, we can account for undetected errors by getting rid of the
 Since we know that the two variables that have the greatest affect on the runtime of bwa_mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
 -->
 
-This requires choosing quantiles of contamination for each tool. This method does catche a portion of the bad jobs, but it does not catch them all. Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional by the input file sizes. This result of this procedure can be seen in the following two plots.
+This requires choosing quantiles of contamination for each tool. This method excludes a portion of the bad jobs, but it does not exclude them all and may also exclude good jobs.
+
+Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional by the input file sizes. This result of this procedure can be seen in the following two plots.
 
 ![alt text](images/hg19.png)
 
