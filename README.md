@@ -130,10 +130,10 @@ This includes:
  * sizes of input and output files
  * extensions of input and output files
 
-The Main Galaxy dataset contains runtime data for 1051 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes.
+The Galaxy Main dataset contains runtime data for 1051 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_of_tools.csv). The runtimes are in minutes. The full dataset of jobs run on Galaxy Main can be found at https://telescope.galaxyproject.org. The telescope webpage also hosts datasets of jobs run on other Galaxy instances, such as [Galaxy Europe](https://usegalaxy.eu).
 
-##### Some notes about the dataset.
-The versions are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. The Galaxy Main has three clusters to which it sends jobs. The clusters have different hardware specifications, and the clusters themselves may exhibit heterogeneous . The cluster on which a job runs is also recorded in the database. [TODO: not currently true] Also, The CPUs are shared with other jobs running on the node, so the performance of jobs is effected by the server load at the time of execution. This attribute is not in the published dataset because it is a difficult parameter to track.
+##### Some notes about the dataset:
+The versions listed are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Galaxy Main has three server clusters to which it sends jobs. The clusters have different hardware specifications, and the clusters themselves may exhibit heterogeneous configurations. Because the jobs are run on a remote site, the Galaxy Main instance does not know which hardware is assigned to which job. In addition, The CPUs of the nodes are shared with other jobs running concurrently, so the performance of jobs is also effected by the server load at the time of execution. These attributes are not in the published dataset because of the difficulty of tracking them.
 
 
 #### Distribution of the Data
