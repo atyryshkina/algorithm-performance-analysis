@@ -29,7 +29,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
   + [Undetected Errors](#undetected-errors)
-  + [user selected parameters](#user-selected-parameters)
+  + [Feature Selection](#feature-selection)
   + [attribute preprocessing](#attribute-preprocessing)
 - [Model Comparison](#model-comparison)
 - [Estimating a Range of Runtimes](#estimating-a-range-of-runtimes)
@@ -178,37 +178,41 @@ A final method of undetected error detection that we will discuss is with the us
 
 To remove bad jobs, we used the isolation forest with contamination=0.05. We also removed any obvious undetected errors, such as no-input-file errors, wherever we could.
 
-#### User Selected Parameters
+#### Feature Selection
 
-Before we move on to the machine learning models, we also should discuss which variables we used to train the prediction models. The records are of all parameters passed through the command line. This presents in the dataset as a mixed bag of useful and useless attributes. Useless attributes include:
+Galaxy records all parameters passed through the command line. This presents in the dataset as a mixed bag of relevant and irrelevant attributes. A brief sample:
 
-* labels (such as plot axes names)
-* redundant parameters (two attributes that represent the same information)
-* identification numbers (such as file ids)
+|Relevant attributes|Irrelevant attributes|
+|---|---|
+| file sizes  | labels (such as plot axes names)  |
+|  indexing information |  redundant parameters (two attributes that represent the same information) |
+| algorithm parameters selection |  identification numbers (such as file ids) |
 
-Useful attributes include:
-
-* file sizes
-* file types (compressed or uncompressed)
-* whether the data was pre-indexed
-* analysis type selection
-* other analysis parameters
-
-Instead of hand selecting parameters for each tool, we made a filter for the computer to do the pruning. It is a simple filter that attempts to remove any labels or identification numbers that are present.
+For a few, popular tools, we manually select which parameters to use. However, since we have many tools, with incongruous naming schemes and unique parameters, we cannot do this for each tool. Instead, we created a heuristic to eliminate common irrelevant features. The simple heuristic attempts to remove any labels or identification numbers that are present. Although it does not search for redundant parameters, it can be altered to do so.
 
 The parameters are screened in the following way:
 
-1. Remove universally not useful parameters such as:
+1. Remove likely irrelevant parameters such as:
   + \__workflow_invocation_uuid__
   - chromInfo
-  - parameters whose names end with "|\__identifier__"
-2. Remove any categorical parameters whose number of unique categories exceed a threshold
+  - parameters whose name begins with
+    - __job_resource
+    - rg
+    - reference_source
+  - parameters whose names end with
+    - \__identifier__
+    - id
+    - indeces
+    - identifier
+2. Remove any non-numerical parameter whose number of unique values exceeds a threshold
+3. Remove parameters whose number of undecalared insatance exceed a threshold
+4. Remove parameters that are list or dict representations of objects
 
-With these filters, we are able to remove most of the parameters that are either identifiers or labels. Since identifiers and labels are more likely to negatively affect and add noise to the results of a machine learning model we are more concerned with removing these than removing redundant parameters. In this paper, we used a unique category threshold of 10.
+With these filters, we are able to remove computationally costly parameters. Since identifiers and labels are more likely to explode in size when binarized and dilute the importance of other attirbutes, we are most concerned with removing these. In this paper, we used a unique category threshold of 100 and a undeclared instance threshold of 0.75 \* number of instances.
 
-There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa_mem is O(reference size \* input file size), which is linearly correlated with runtime. However, this product is not a variable of the bwa_mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because of the method in which the attributes were tracked.
+There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa_mem is O(reference size \* input file size), which is linearly correlated with runtime. However, this product is not a variable of the bwa_mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because of the method in which the attributes are tracked.
 
-Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may make it easier for the random forest to find relationships, which would improve results. However, combining relevant parameters for each tool would require close monitoring and attention, and this is out of the scope of the project.
+Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may improve results. However, combining it would require close monitoring and attention, and this is out of the scope of the project.
 
 #### Attribute Preprocessing
 
