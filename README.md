@@ -193,16 +193,16 @@ For a few, popular tools, we manually select which parameters to use. However, s
 The parameters are screened in the following way:
 
 1. Remove likely irrelevant parameters such as:
-  - workflow_invocation_uuid
-  - chromInfo
-  - parameters whose name begins with
-    - __job_resource
-    - rg
-    - reference_source
-  - parameters whose names end with
-    - id
-    - indeces
-    - identifier
+    - workflow_invocation_uuid
+    - chromInfo
+    - parameters whose name begins with
+      - __job_resource
+      - rg
+      - reference_source
+    - parameters whose names end with
+      - id
+      - indeces
+      - identifier
 2. Remove any non-numerical parameter whose number of unique values exceeds a threshold
 3. Remove parameters whose number of undecalared insatance exceed a threshold
 4. Remove parameters that are list or dict representations of objects
