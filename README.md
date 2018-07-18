@@ -155,42 +155,24 @@ This transformation works for most of the runtime and input file size attributes
 
 A hurdle the dataset presents is that it contains undetected errors - errors that occurred but were not recorded.
 
-One type of undetected error is the input file error, in which jobs are recorded to have completed 'succefully' without the requisite input data. For instance, the tool `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef)) requires input, yet the number of jobs labelled as 'succesfully' completed without a required input is 49 or 0.25% of 'successful' jobs runs of the tool.
+One type of undetected error is the input file error, in which jobs are recorded to have completed 'succefully' without the requisite input data. For instance, there are 49 jobs of the tool `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef)) that completed succesfully without the requisite input. This comprises .25% of 'successful' jobs recorded for this tool.
 
-<!--
-
-
-For example, some tools require that an input file is provided. `bwa_mem Galaxy version 0.7.15.1` ([link](https://toolshed.g2.bx.psu.edu/view/devteam/bwa/53646aaaafef))  is one such tool. <!--If an input file is not provided, bwa_mem should not run at all or else the run will result in an error. In spite of this, the number of jobs executing this tool that ran successfully and without an input file is 49 or 0.25% of "successful" jobs. These jobs should not have run at all, and yet they are present in the dataset and marked as successfully completed.
-
--->
 
 Whether these errors are caused by bugs in the tool code, malfunctions in the server, mistakes in record keeping, or a combination of these, the presence of these of errors casts doubt on the validity of the rest of the dataset. If there are many jobs similarly mislabelled as "successfully completed" that are not as easily identified as input file errors, it will bias the predictions and the performance metrics, which are computed on the same, possibly contaminated, dataset.
 
 One method of screening the dataset is by excluding extreme values.
 
-<!--trimming the distribution.
-
-One method for undetected errors is by looking for jobs that ran faster than possible and jobs that ran slower than probable. A job that finishes in an unreasonably short time (such an human genome alignment job that finishes in 6 seconds), or a job that finishes in an unreasonably long time (such as a ??). However, identifying these errors requires the trained eye of someone who is both familiar with the tools and has ample time to look through the dataset.
-
-Using this heuristic, we can account for undetected errors by getting rid of the jobs that took the longest and the shortest amount of time to complete.-->
-
 ![alt text](images/extreme_values.png?)
 
-<!--This requires choosing quantiles of contamination for each tool. In the figure above the quantiles used are 2.5%. For bwa_mem - an alignment algorithm - 2.5% of jobs in the collected data took 4 seconds or less to finish. Are all of these jobs undetected errors? If we increase the unreasonable runtime threshold, we see that 5% of jobs took 5 seconds or less to finish. It is difficult, even for a human, to decide if these recordings are reasonable job runtimes.-->
+This requires choosing quantiles of contamination for each tool. This method may exclude a portion of the bad jobs, but it does not exclude them all and will also exclude good jobs.
 
-<!--
-Since we know that the two variables that have the greatest affect on the runtime of bwa_mem are input file size and reference file size. The larger the file sizes, the longer it would take for the job to run. We should be considering these variables when looking for undetected errors. One method of doing this is by freezing all of the other variables and only looking at the relationship between these input file sizes and runtime.
--->
-
-This requires choosing quantiles of contamination for each tool. This method may exclude a portion of the bad jobs, but it does not exclude them all and will exclude good jobs as well.
-
-Take the following example. Freeze all the user selected parameters, except for input file size. We are able to freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional to the input file sizes. This result of this procedure can be seen in the following two plots.
+Take the following example. Freeze all the user selected parameters, except for input file size. We can freeze the reference file size because many reference genomes, such as the human genome, are popular and commonly used. The runtimes, therefore, should be directly proportional to the input file sizes. This result of this procedure can be seen in the following two plots.
 
 ![alt text](images/bwamem_good_corel3.png)![alt text](images/bwamem_bad_corel.png)
 
-User selected parameters are frozen in the above plot, and the reference file, hg38 and hg38Patch11 are two versions of the human genome. In the plot to the left, the relation between runtime and input file size is as expected. In the plot to the right, there appears to be no correlation between the two attributes. By trimming the dataset and excluding the most extreme values, only a portion of the bad jobs are adressed.
+User selected parameters are frozen in the above plot, and the reference file, hg38 and hg38Patch11 are two versions of the human genome. In the plot to the left, the relation between runtime and input file size is as expected. In the plot to the right, there appears to be no correlation between the two attributes. By trimming the dataset and excluding the most extreme values, only a portion of the bad jobs are addressed.
 
-Manually finding and removing bad jobs from the dataset is the best method for cleaning it. However, this is time consuming as it requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning. 
+Manually finding and removing bad jobs from the dataset is the most likely the best method for cleaning it. However, this is time consuming as it requires examining each tool individually or, at the least, it requires writing instructions for each tool individually - instructions that the computer can follow to do the pruning.
 
 A final method of undetected error detection that we will discuss is with the use of an isolation forest. In a regular random forest, a node in a decision tree chooses to divide data based on the attribute and split that most greatly decreases that variability of the following to datasets. In an isolation forest, the data is split based on a random selection of an attribute and split. The longer it takes to isolate a datapoint, the less likely it is an outlier. As with removing the tails of the runtime distribution, we need to choose the percentage of jobs that are bad before hand.
 
