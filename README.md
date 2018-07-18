@@ -193,14 +193,13 @@ For a few, popular tools, we manually select which parameters to use. However, s
 The parameters are screened in the following way:
 
 1. Remove likely irrelevant parameters such as:
-  + \__workflow_invocation_uuid__
+  + workflow_invocation_uuid
   - chromInfo
   - parameters whose name begins with
     - __job_resource
     - rg
     - reference_source
   - parameters whose names end with
-    - \__identifier__
     - id
     - indeces
     - identifier
