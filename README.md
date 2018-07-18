@@ -193,7 +193,7 @@ For a few, popular tools, we manually select which parameters to use. However, s
 The parameters are screened in the following way:
 
 1. Remove likely irrelevant parameters such as:
-  + workflow_invocation_uuid
+  - workflow_invocation_uuid
   - chromInfo
   - parameters whose name begins with
     - __job_resource
