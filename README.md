@@ -180,7 +180,7 @@ To remove bad jobs, we used the isolation forest with contamination=0.05. We als
 
 #### Feature Selection
 
-Galaxy records all parameters passed through the command line. This presents in the dataset as a mixed bag of relevant and irrelevant attributes. A brief sample:
+Galaxy records all parameters passed through the command line. This presents in the dataset as a mixed bag of relevant and irrelevant attributes. A brief sample follows:
 
 |Relevant attributes|Irrelevant attributes|
 |---|---|
@@ -197,8 +197,8 @@ The parameters are screened in the following way:
     - chromInfo
     - parameters whose name begins with
       - __job_resource
-      - rg
-      - reference_source
+      - rg (i.e. read groups)
+      - reference_source (this is often redundant to dbkey)
     - parameters whose names end with
       - id
       - indeces
@@ -211,15 +211,15 @@ With these filters, we are able to remove computationally costly parameters. Sin
 
 There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa_mem is O(reference size \* input file size), which is linearly correlated with runtime. However, this product is not a variable of the bwa_mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because of the method in which the attributes are tracked.
 
-Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step. Combining attributes in preprocessing may improve results. However, combining it would require close monitoring and attention, and this is out of the scope of the project.
+Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step.
 
 #### Attribute Preprocessing
 
-There are certain types of data that machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.
+<!--There are certain types of data that machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.-->
 
-For the continuous variables, as previously noted, we log transform with numpy.log1p if the variable is highly skewed. Then, we scale the continuous variable to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
+As previously noted, if a continuous variables is highly skewed, it is log transformed with numpy.log1p. All continuous variables are scaled to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
 
-For categorical variables, we binarize them using sklearn.preprocessing.LabelBinarizer. An example of label binarization is shown below. The categorical variable "analysis_type" is expanded into four discrete variables that can take the values 0 or 1.
+Categorical variables are binarized using sklearn.preprocessing.LabelBinarizer. An example of label binarization is shown below. The categorical variable 'analysis_type' is expanded into four discrete variables that can take the value 0 or 1.
 
 ||x1|x2|x3|x4|
 |---|---|---|---|---|
@@ -228,7 +228,7 @@ For categorical variables, we binarize them using sklearn.preprocessing.LabelBin
 |pacbio   |0   | 0  | 1  |0|
 |ont2d   |0   | 0  | 0  |1|
 
-We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options,  such as fastq groomer, may have only a handful of expanded categorical variables.
+<!-- We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options,  such as fastq groomer, may have only a handful of expanded categorical variables. -->
 
 ## Model Comparison
 
