@@ -1,7 +1,7 @@
 # The Analysis of Data Collected by the Galaxy Project
 
 ## Abstract
-The Main public server of the Galaxy Project (https://usegalaxy.org) has been collecting extensive job run data on all analyses since 2013. This large collection of job runs with attributes can be leveraged to determine more efficient ways for allocation of server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model to predict the runtime and max memory usage of complex algorithms trained on real data. In this paper we will:
+The Main public server of the Galaxy Project (https://usegalaxy.org) has been collecting extensive job run data on all analyses since 2013. This large collection of job runs with attributes can be leveraged to determine more efficient ways for allocation of server resources. In addition, these data represent the largest, most comprehensive dataset available to date on the runtime dynamics for some of the most popular biological data analysis software. In this work we were aiming at creating a model to predict the runtime and maximum memory usage of complex algorithms trained on real data. In this paper we will:
 
 1. Present statistical summaries of the dataset, describe its structure, identify the presence of
 undetected errors, and discuss any other insights into the Galaxy server that we believe will be
@@ -10,13 +10,11 @@ useful to the community.
 of complex algorithms as was seen by Hutter et al.
 3. Discuss the benefits and drawbacks of using a quantile random forest for creating runtime
 prediction confidence intervals.
-4. Present an alternative approach for choosing a walltime for complex algorithms with the use of
 5. Consider the applicability of runtime and memory use prediction for tools run on Galaxy servers with different hardware.
-a random forest classifier.
 
 Studying the Galaxy Project dataset reveals that there may be room to fine tune the resource allocation.
 The ability to determine appropriate walltimes and RAM allowance will save server resources from jobs that result in errors
-undetected by the server — such as jobs that fall into infinite loops. Once freed, these resources can then be used to run jobs in the queue without the need to allocate additional hardware.
+undetected by the server. Once freed, these resources can then be used to reduce queue wait times and increase volume of jobs processed by the server.
 
 ## Table of Contents
 
@@ -24,7 +22,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 - [Background](#what-is-the-galaxy-project)
   + [What is the Galaxy Project](#what-is-the-galaxy-project)
   + [The Galactic Radio Telescope and Tracking Data](#the-galactic-radio-telescope-and-tracking-data)
-  + [scikit-learn and machine learning](#scikit-learn-and-machine-learning)
+  + [Random Forests](#random-forests)
   + [Previous work on the prediction of resource usage of programs](#previous-work-on-the-prediction-of-resource-usage-of-programs)
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
@@ -41,7 +39,7 @@ undetected by the server — such as jobs that fall into infinite loops. Once fr
 
 ### What is the Galaxy Project
 
-The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses on designated servers. In the past, trying to run a popular analysis would require downloading, configuring, and troubleshooting the analysis software on one's own machines. This can be a difficult and time consuming task.
+The Galaxy Project is a platform that allows researchers to run popular bioinformatics analyses on designated servers. Running a popular analysis requires downloading, configuring, and troubleshooting the analysis software on one's own machines. This can be a difficult and time consuming task.
 
 With the Galaxy Project, researchers can run analyses using the graphical user interface through the web. To do so, the user needs only to connect to a Galaxy server (e.g. https://www.usegalaxy.org), upload their data, choose the analysis and the analysis parameters, and hit run.
 
@@ -55,11 +53,7 @@ All Galaxy instances have an option to keep records of runtime data. This is a s
 
 If adminstrators of other Galaxy instances would like to share their runtime data with the community, they can do so with the [Galactic Radio Telescope (GRT)](https://telescope.galaxyproject.org/). The GRT is an API service that allows Galaxy admins to export their data and have it released to the public in a standard package. For more information visit the [documentation](https://docs.galaxyproject.org/en/master/admin/special_topics/grt.html).
 
-### scikit-learn and machine learning
-
-scikit-learn is a library of machine learning tools for Python. It has classes for anything machine learning related - from data preprocessing to regression and classification to model evaluation. The sci-kit learn library is the main library we used in our tests, specifically the regression and classification classes.
-
-In this paper our main tool for regression and classification was the random forest, so we will briefly go over random forests now.
+### Random Forests
 
 A random forest is a collection of decision trees which themselves are series of questions asked about an object. At the end of the questions, a previously unknown attribute of the object is guessed. An example of a decision tree is shown below. In this case, the decision tree tries predicting how long a job is going to take.
 
@@ -71,22 +65,22 @@ The decision tree learns what questions to ask by training on a set of previous 
 
 A random forest is a collection of decision trees, each of which are trained with a unique random seed. The random seed determines which sub-sample of the data each decision tree is trained and which sub-sample of attributes each tree uses and which splits each tree attempts. By implementing these constraints, the random forest protects itself from overfitting - a problem to which decision trees are susceptible.
 
-Incidentally, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attribute to split a node, the larger its implied effect on the dependent attribute. The scikit-learn Random Forest classes have a way of getting this information with the feature_importances_ class attribute.
+Incidentally, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attribute to split a node, the larger its implied effect on the dependent attribute. The scikit-learn Random Forest classes have a way of retrieving this information with the feature_importances_ class attribute.
 
 ### Previous work on the prediction of resource usage of programs
 
 The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
 The popularity of cloud computing has also stimulated activity in the problem of resource usage prediction. [[6]](https://doi.org/10.1016/j.future.2011.05.027)[[7]](https://doi.org/10.1109/CCECE.2013.6567848)[[8]](https://doi.org/10.1109/CNSM.2010.5691343)
-The methods developed for cloud computing, however, typically scale virtual machines with no knowledge of which programs or algorithms are being run. The predictions are based on traffic and use patterns as a seqential time analysis.
+The methods developed for cloud computing, however, typically scale virtual machines with no knowledge of the programs or algorithms are being run. The predictions are based on traffic and usage patterns at seqential time steps. Since we are not interested in predicting resource usage based on time usage patterns, we forego these methods.
 
 In a few works, new machine learning methods are designed specifically to estimate a complex algorithms' resource requirements. In 2008, [Gupta et al.](http://doi.org/10.1109/ICAC.2008.12) proposed a tool called a PQR (Predicting Query Runtime) Tree to classify the runtime of queries that users place on a server. The PQR tree dynamically choose runtime bins during training that would be appropriate for a set of historical query runtimes. The paper notes that the PQR Tree outperforms the decision tree.
 
 Most previous works tweak and tailor old machine learning methods to the problem. For instance, in 2010, [Matsunaga](http://doi.org/10.1109/CCGRID.2010.98) enhances on the PQR Tree by adding linear regressors at its leaves, naming it PQR2. They test their model against two bioinformatic analyses tools: BLAST (a local alignment algorithm) and RAxML (a phylogenetic tree constructer). The downside of PQR2 is that there are not readily available libraries of the model in popular programming languages like Python or R.
 
-The most comprehensive survey of runtime prediction models was done by [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) In 2014. In the paper, they compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests although they did not include PQR tree in their evaluations. They found that the random forest outperforms the other regressors in nearly all assessments and is able to handle high dimensional data without the need of feature selection.
+The most comprehensive survey of runtime prediction models was done by [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) In 2014. In the paper, they compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests. They did not include PQR tree in their evaluations. They found that the random forest outperforms the other regressors in nearly all runtime prediction assessments and is able to handle high dimensional data without the need of feature selection.
 
-In our paper, we verify that random forests are the best model for the regression, discuss the merits of quantile regression forests, and present a practical approach for determining an appropriate walltime with the use of a classifier.
+In our paper, we verify that random forests are the best model for the regression, adding two popular ensemble methods to the comparison. We discuss the merits of quantile regression forests, as an API and present a practical approach for determining an appropriate walltime with the use of a classifier.
 
 ## Overview of Data
 
