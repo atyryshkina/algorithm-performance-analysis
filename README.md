@@ -240,16 +240,6 @@ The table below shows the r-squared score for a select number of tools. The tota
 
 ##### model comaprison with full dataset
 
-
-<!--|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
-|--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| bwa v 0.7.15.1 | 0.91 | -0.0004 | 0.64 | 0.55 | 0.25 | 0.26 | nan|
-| bwa mem v 0.7.15.1 | 0.82 | -0.0001 | 0.71 | 0.40 | 0.17 | 0.16 | nan|
-| groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.97 | 0.51 | 0.28 | 0.45 | nan|
-| wrapper megablast wrapper v 1.2.0 | 0.78 | -0.001 | 0.30 | 0.29 | 0.20 | 0.22 | nan|
-| total mean | 0.60 | -0.01 | 0.27 | 0.32 | nan | 0.14 | nan |
-| total median | 0.7109 | -0.0022 | 0.2654 | 0.3319 | 0.0599 | 0.1093 | nan |-->
-
 ![alt text](images/model_benchmark_comparisons.png?)
 
 The Random Forest, the Extra Treest Regressor, and the Gradient Boosting Regressor have compariable performances, but the Random Forest performs slightlr better. They are followed by thefeed forward neural network (MLPRegressor). It seems that many of the regressors are unable to handle the high dimensional, and mixed continuous/categorical, dataset. We have seen in the section [Undetected Errors](#undetected-errors), when we looked at bwa mam, that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would perform better. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is designed to do, do not hold up in the high dimensional space.
@@ -259,19 +249,12 @@ Pruning out outliers with contamination=0.05 affected the predictions as follows
 ##### model comaprison pruning of 5% of the datasets with isolation forest
 
 ![alt text](images/model_benchmarks_outliers.png)
-<!--|                    | Random Forest | Lasso | MLPRegressor | Ridge | SGDRegressor | SVR |LinearRegression|
-|--------------------|---------------|------------------|-------|--------------|-------|--------------|-----|
-| bwa v 0.7.15.1 | 0.89 | -0.0001 | 0.78 | 0.67 | 0.53 | nan | nan|
-| bwa mem v 0.7.15.1 | 0.78 | -0.00002 | 0.70 | 0.51 | 0.37 | nan | nan|
-| groomer fastq groomer v 1.1.1 | 0.99 | -0.0001 | 0.99 | 0.64 | 0.63 | nan | nan|
-| wrapper megablast wrapper v 1.2.0 | 0.78 | -0.002 | 0.48 | 0.44 | 0.30 | nan | nan|
-| total mean | 0.54 | -0.01 | 0.28 | 0.40 | nan | nan | nan |
-| total median | 0.6605 | -0.0024 | 0.3152 | 0.4344 | 0.1483 | nan | nan |-->
+
 
 Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, and the SGD Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or Extra Trees. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
 
 
-The full results can be viewed [here](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -1000.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found [here](benchmarks/comparison_benchmarks_minus_outliers.csv)
+The full results can be viewed [benchmarks/comparison_benchmarks.csv](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -1000.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found [benchmarks/comparison_benchmarks_minus_outliers.csv](benchmarks/comparison_benchmarks_minus_outliers.csv)
 
 
 
@@ -287,14 +270,7 @@ We tested the modified regression forest against the historical data with three 
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
-<!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
-|---|---|-----|-------|--------------|-------|--------------|
-| bwa v 0.7.15.1 | 0.75 | 0.94 | 0.98 | 566.07 | 3054.79 | 12527.35|
-| bwa mem v 0.7.15.1 | 0.80 | 0.95 | 0.98 | 286.21 | 2263.54 | 22946.34|
-| groomer fastq groomer v 1.1.1 | 0.79 | 0.94 | 0.98 | 54.21 | 223.82 | 534.01|
-| megablast v 1.2.0 | 0.69 | 0.91 | 0.97 | 5287.06 | 34613.03 | 182434.66|
-| total mean | 0.69 | 0.89 | 0.94 | 332.67 | 4415.36 | 139264.13 |
-| total median | 0.69 | 0.90 | 0.95 | - | - |  -| -->
+
 ![alt text](images/accuracy-qrf.png?)   ![alt text](images/intervals-qrf.png?)
 
 The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
@@ -364,7 +340,7 @@ The modified regression forest is using an interval of only one standard deviati
 
 ## Maximum Memory use Prediction
 
-Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do for runtimes. Therefore, we will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
+Galaxy Main began collecting memory use data in 2018. Because of this, we do not have as large of a dataset for memory usage of jobs as we do for runtimes. Consequently, we will focus on a subset of the most popular jobs for our predictive models. We use a cross validation of 5 on the data with the following results.
 
 |tool|number of jobs in dataset|r2 score (mean)|accuracy: 1 std. dev.|accuracy: 2 std. dev.|accuracy: 3 std. dev.|
 |---|---|---|---|---|---|
