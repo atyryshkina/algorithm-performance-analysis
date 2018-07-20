@@ -23,7 +23,7 @@ undetected by the server. Once freed, these resources can then be used to reduce
   + [What is the Galaxy Project](#what-is-the-galaxy-project)
   + [The Galactic Radio Telescope and Tracking Data](#the-galactic-radio-telescope-and-tracking-data)
   + [Random Forests](#random-forests)
-  + [Previous work on the prediction of resource usage of programs](#previous-work-on-the-prediction-of-resource-usage-of-programs)
+  + [Previous work on resource usage prediction](#previous-work-on-resource-usage-prediction)
 - [Overview of Data](#overview-of-data)
   + [Distribution of the Data](#distribution-of-the-data)
   + [Undetected Errors](#undetected-errors)
@@ -67,7 +67,7 @@ A random forest is a collection of decision trees, each of which are trained wit
 
 Incidentally, the decision tree also offers a way to see which independent attributes have the greatest effect on the dependent attribute. The more often a decision tree uses an attribute to split a node, the larger its implied effect on the dependent attribute. The scikit-learn Random Forest classes have a way of retrieving this information with the feature_importances_ class attribute.
 
-### Previous work on the prediction of resource usage of programs
+### Previous work on resource usage prediction
 
 The prediction of runtimes of complex algorithms using machine learning approaches has been done before. [[1]](https://doi.org/10.1007/11508380_24)[[2]](https://doi.org/10.1109/CCGRID.2009.58)[[3]](https://doi.org/10.1145/1551609.1551632)[[4]](https://doi.org/10.1109/CCGRID.2009.77)[[5]](https://doi.org/10.1007/11889205_17)
 
@@ -80,7 +80,7 @@ Most previous works tweak and tailor old machine learning methods to the problem
 
 The most comprehensive survey of runtime prediction models was done by [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) In 2014. In the paper, they compared 11 regressors including ridge regression, neural networks, Gaussian process regression, and random forests. They did not include PQR tree in their evaluations. They found that the random forest outperforms the other regressors in nearly all runtime prediction assessments and is able to handle high dimensional data without the need of feature selection.
 
-In our paper, we verify that random forests are the best model for the regression, adding two popular ensemble methods to the comparison. We discuss the merits of quantile regression forests, as an API and present a practical approach for determining an appropriate walltime with the use of a classifier.
+In our paper, we verify that random forests are the best model for the regression, adding two popular ensemble methods to the comparison. We consider the use of quantile regression and classification for walltime and maximum memory usage estimation. Finally, we discuss [dicuss -> test once we get euro data] the plausibility of an API that provides resource use estimation for Galaxy jobs.
 
 ## Overview of Data
 
@@ -124,7 +124,7 @@ This includes:
  * sizes of input and output files
  * extensions of input and output files
 
-The Galaxy Main dataset contains runtime data for 1371 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found [here](summary_statistics.csv). The runtimes are in seconds. The full dataset of jobs run on Galaxy Main can be found at https://telescope.galaxyproject.org. The telescope webpage also hosts datasets of jobs run on other Galaxy instances, such as [Galaxy Europe](https://usegalaxy.eu).
+The Galaxy Main dataset contains runtime data for 1371 different tools that were run on the Galaxy Servers over the past five years. A statistical summary of those tools, ordered by most popular, can be found at [summary_statistics.csv](summary_statistics.csv). The runtimes are in seconds. The full dataset of jobs run on Galaxy Main can be found at https://telescope.galaxyproject.org. The telescope webpage also hosts datasets of jobs run on other Galaxy instances, such as [Galaxy Europe](https://usegalaxy.eu).
 
 ##### Some notes about the dataset:
 The versions listed are the version of the Galaxy wrapper of the tool, not the version of the underlying tool itself. Galaxy Main has three server clusters to which it sends jobs. The clusters have different hardware specifications, and the clusters themselves may exhibit heterogeneous configurations. Because the jobs are run on a remote site, the Galaxy Main instance does not know which hardware is assigned to which job. In addition, The CPUs of the nodes are shared with other jobs running concurrently, so the performance of jobs is also effected by the server load at the time of execution. These attributes are not in the published dataset because of the difficulty of tracking them.
@@ -198,14 +198,10 @@ The parameters are screened in the following way:
       - indeces
       - identifier
 2. Remove any non-numerical parameter whose number of unique values exceeds a threshold
-3. Remove parameters whose number of undecalared insatance exceed a threshold
+3. Remove parameters whose number of undecalared insatances exceed a threshold
 4. Remove parameters that are list or dict representations of objects
 
-With these filters, we are able to remove computationally costly parameters. Since identifiers and labels are more likely to explode in size when binarized and dilute the importance of other attirbutes, we are most concerned with removing these. In this paper, we used a unique category threshold of 100 and a undeclared instance threshold of 0.75 \* number of instances.
-
-There are also some important attributes, that are not immediately available in the dataset. For instance, the complexity of bwa_mem is O(reference size \* input file size), which is linearly correlated with runtime. However, this product is not a variable of the bwa_mem dataset, but can be calculated and added. Just to note, in the Galaxy dataset, if the reference genome *name* is provided then the reference genome *size* is not provided. This is because of the method in which the attributes are tracked.
-
-Because the random forest is able to find non-linear relationships, we did not combine attributes in the preprocessing step.
+With these filters, we are able to remove computationally costly parameters. Since identifiers and labels are more likely to explode in size when binarized and dilute the importance of other attirbutes, we are most concerned with removing those. In this paper, we used a unique category threshold of 100 and a undeclared instance threshold of 0.75 \* number of instances.
 
 #### Attribute Preprocessing
 
@@ -226,7 +222,7 @@ Categorical variables are binarized using sklearn.preprocessing.LabelBinarizer. 
 
 ## Model Comparison
 
-In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without removing any undedected errors and with removing undetected errors via the isolation forest with contamination=5%, and compared the performance of the regressors with using the r-squared score metric. As you will see, pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
+In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without the exclusion any undedected errors and with the exclusion of undetected errors via the isolation forest with contamination=5%, and compared the performance of the regressors with using the r-squared score metric. As you will see, pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
 
 For most of the tools, we used the default settings provided by sklearn library: SVR, Ridge Regressor, SGD Regressor, Extra Trees Regressor, and Gradient Boosting regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest and extra trees regressors had 100 estimators and a max_depth of 12.
 
@@ -248,7 +244,7 @@ Pruning out outliers with contamination=0.05 affected the predictions as follows
 Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, and the SGD Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or Extra Trees. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
 
 
-The full results can be viewed [benchmarks/comparison_benchmarks.csv](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -1000.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found [benchmarks/comparison_benchmarks_minus_outliers.csv](benchmarks/comparison_benchmarks_minus_outliers.csv)
+The full results can be viewed [benchmarks/comparison_benchmarks.csv](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -1000.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found at [benchmarks/comparison_benchmarks_minus_outliers.csv](benchmarks/comparison_benchmarks_minus_outliers.csv)
 
 
 
@@ -260,7 +256,7 @@ A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for 
 
 Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store only the means and the standard deviations. Doing so reduces the precision of the confidence interval, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
 
-We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed [here](benchmarks/modified_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
+We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed at [benchmarks/modified_forest_metrics.csv](benchmarks/modified_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
 
 ##### Mean accuracy of 3-fold cross-validated tests
 
@@ -313,7 +309,7 @@ This method of creating buckets puts an arbitrary limit on the longest amount of
 
 The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the modified quantile forest with the standard deviations would have an arbitrary upper limit based on the variability of historical data found in its leaves.
 
-The results of the classifier can be found [here](benchmarks/classifier_forest_metrics.csv). A comparison of the accuracy of the classifier vs the modified regression forest with an interval of one standard deviation can be found below.
+The results of the classifier can be found at [benchmarks/classifier_forest_metrics.csv](benchmarks/classifier_forest_metrics.csv). A comparison of the accuracy of the classifier vs the modified regression forest with an interval of one standard deviation can be found below.
 
 ![alt text](images/comparison-accuracies.png?)   ![alt text](images/comparison-intervals.png?)
 
@@ -391,3 +387,5 @@ Hutter, Frank, et al. "Algorithm runtime prediction: Methods & evaluation." Arti
 Matsunaga, Andréa, and José AB Fortes. "On the use of machine learning to predict the time and resources consumed by applications." Proceedings of the 2010 10th IEEE/ACM International Conference on Cluster, Cloud and Grid Computing. IEEE Computer Society, 2010.
 
 Gupta, Chetan, Abhay Mehta, and Umeshwar Dayal. "PQR: Predicting query execution times for autonomous workload management." Autonomic Computing, 2008. ICAC'08. International Conference on. IEEE, 2008.
+
+Breiman, Leo. "Random forests." Machine learning 45.1 (2001): 5-32.
