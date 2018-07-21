@@ -273,19 +273,10 @@ Without log transformation the interval sizes improve and so does the performanc
 ##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
 ![alt text](images/accuracy-qrf-no-log.png?)   ![alt text](images/intervals-qrf-no-log.png?)
-<!-- |                    | accuracy 1std | accuracy 2std | accuracy 3std  | mean interval (1std) | mean_interval (2std) | mean_interval (3std) |
-|---|---|-----|-------|--------------|-------|--------------|
-| bwa v 0.7.15.1 | 0.90 | 0.97 | 0.99 | 2196.55 | 4393.11 | 6589.66|
-| bwa mem v 0.7.15.1 | 0.94 | 0.98 | 0.99 | 715.16 | 1430.32 | 2145.47|
-| groomer fastq groomer v 1.1.1 | 0.84 | 0.96 | 0.98 | 631.85 | 1263.70 | 1895.55|
-| wrapper megablast wrapper v 1.2.0 | 0.80 | 0.94 | 0.97 | 14722.29 | 29444.58 | 44166.88|
-| total mean | 0.77 | 0.91 | 0.94 | 729.32 | 1458.64 | 2187.96 |
-| total median | 0.79 | 0.92 | 0.95 | - | -| -| -->
-
-<!--![alt text](images/freq_conf_intervals_3std_bwa.png)-->
 
 
-The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this may be reasonable.
+
+The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this may be reasonable. To replicate these results use [scripts/modified_random_forest_metrics.py](scripts/modified_random_forest_metrics.py)
 
 ## Using a random forest classifier
 
