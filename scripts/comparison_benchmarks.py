@@ -191,7 +191,7 @@ class TrainModel(object):
         return df
         
 
-filenames = ['../examples/bwa_mem_0.7.15.1_example.csv', '../examples/stringtie_1.3.3_example.csv']
+filenames = ['examples/bwa_mem_0.7.15.1_example.csv', 'examples/stringtie_1.3.3_example.csv']
 
 
 for i in range(len(filenames)):

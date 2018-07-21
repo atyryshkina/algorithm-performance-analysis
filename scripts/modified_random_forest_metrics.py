@@ -11,9 +11,10 @@ from preprocessing import MyMapper
 
 class TrainModel(object):
 
-    def __init__(self, toolid):
+    def __init__(self, filename):
 
-        self.df=pd.read_csv("../data/csv_dump/%s.csv"%toolid, low_memory=False)
+        # load the csv file into a dataframe
+        self.df=pd.read_csv(filename, low_memory=False)
 
         if len(self.df)<4:
             print("less than 4 data points, skipping")
@@ -72,7 +73,7 @@ class TrainModel(object):
         for metric in metrics:
             metrics[metric] = float(np.mean(metrics[metric]))
          
-        metrics['toolid'] = toolid
+        metrics['toolid'] = filename
         metrics['num_instances'] = num_instances   
 
         print(tabulate(sorted([(k,v) for k,v in metrics.items()])))
@@ -203,10 +204,10 @@ class TrainModel(object):
         return df
 
 
-filenames=["devteam_bwa_bwa_0.7.15.1.csv", "devteam_bwa_bwa_mem_0.7.15.1.csv", "devteam_fastq_groomer_fastq_groomer_1.1.1.csv",
-      "devteam_megablast_wrapper_megablast_wrapper_1.2.0.csv"]
+filenames = ['examples/bwa_mem_0.7.15.1_example.csv', 'examples/stringtie_1.3.3_example.csv']
+
 
 for i in range(len(filenames)):
-    print("%d/%d %s"%(i,(len(filenames)), filenames[i][:-4]))
-    TrainModel(filenames[i][:-4])
+    print("%d/%d %s"%(i,(len(filenames)), filenames[i]))
+    TrainModel(filenames[i])
 
