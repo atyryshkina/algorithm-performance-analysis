@@ -224,7 +224,7 @@ Categorical variables are binarized using sklearn.preprocessing.LabelBinarizer. 
 
 In this work, we trained popular regression models available on scikit-learn and compared their performance. We used a cross validation of three and tested the models on the dataset of each tool without the exclusion any undedected errors and with the exclusion of undetected errors via the isolation forest with contamination=5%, and compared the performance of the regressors with using the r-squared score metric. As you will see, pruning the datasets with the isolation forest improved the performance of some of the regressors, but it did not improve the performance of the random forest regressor.
 
-For most of the tools, we used the default settings provided by sklearn library: SVR, Ridge Regressor, SGD Regressor, Extra Trees Regressor, and Gradient Boosting regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest and extra trees regressors had 100 estimators and a max_depth of 12.
+For most of the tools, we used the default settings provided by sklearn library: SVR, Ridge Regressor, SGD Regressor, and Gradient Boosting regressor. The neural network (sklearn.neural_network.MLPRegressor) had two hidden layers of sizes [100,10] with the rest of the attributes set to default, and the random forest and extra trees regressors had 100 estimators and a max_depth of 12.
 
 The table below shows the r-squared score for a select number of tools. The total mean and median were taken as the performance of the tool over every tool with more than 100 recorded runs.
 
@@ -232,7 +232,9 @@ The table below shows the r-squared score for a select number of tools. The tota
 
 ![alt text](images/model_benchmark_comparisons.png?)
 
-The Random Forest, the Extra Treest Regressor, and the Gradient Boosting Regressor have compariable performances, but the Random Forest performs slightlr better. They are followed by thefeed forward neural network (MLPRegressor). It seems that many of the regressors are unable to handle the high dimensional, and mixed continuous/categorical, dataset. We have seen in the section [Undetected Errors](#undetected-errors), when we looked at bwa mam, that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would perform better. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is designed to do, do not hold up in the high dimensional space.
+The Random Forest, the Extra Treest Regressor, and the Gradient Boosting Regressor have compariable performances, but the Random Forest performs slightly better. They are followed by the feed forward neural network (MLPRegressor). It seems that many of the regressors are unable to handle the high dimensional, and mixed continuous/categorical, dataset.
+
+<!-- We have seen in the section [Undetected Errors](#undetected-errors), when we looked at bwa mam, that a linear relationship was expected when all of the parameters are frozen except for file size. If it was the case that most of the paremeters except for one or two were frozen, the other regressors, like the linear regressor, would perform better. However, those regressors that are unable to group the jobs into similar parameters, the way the Random Forest is able to do, and is designed to do, do not hold up in the high dimensional space. -->
 
 Pruning out outliers with contamination=0.05 affected the predictions as follows. SVR Regression was not performed in these tests because of the length of time required to comlete them.
 
@@ -241,10 +243,9 @@ Pruning out outliers with contamination=0.05 affected the predictions as follows
 ![alt text](images/model_benchmarks_outliers.png)
 
 
-Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, and the SGD Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or Extra Trees. Because of this, we did not continue to used the pruned datset for the remainder of the tests.
+Pruning the outliers with the isolation forest improved the performance of the MLPRegressor, the Ridge Regressor, and the SGD Regressor. Surpisingly, it did not improve the performance of the Random Forest Regressor or Extra Trees. Because of this, we did not continue to use the dataset pruned by the isolation forest for the remainder of the tests.
 
-
-The full results can be viewed [benchmarks/comparison_benchmarks.csv](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -1000.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found at [benchmarks/comparison_benchmarks_minus_outliers.csv](benchmarks/comparison_benchmarks_minus_outliers.csv)
+The full results can be viewed [benchmarks/comparison_benchmarks.csv](benchmarks/comparison_benchmarks.csv). It includes the time (in seconds) to train the model. The performance is marked as NaN if it's r-squared scores was below -1000.0, as was often the case with the linear regressor. We also marked a score as NaN if a model took more than 5 minutes to train, as was sometimes the case with the SVR Regressor, whose complexity scales quickly with the size of the training set. And the results for the dataset pruned with the isolation forest can be found at [benchmarks/comparison_benchmarks_minus_outliers.csv](benchmarks/comparison_benchmarks_minus_outliers.csv). The results can be replicated with [scripts/comparison_benchmarks.py](scripts/comparison_benchmarks.py)
 
 
 
