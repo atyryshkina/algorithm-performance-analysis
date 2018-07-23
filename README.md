@@ -268,7 +268,8 @@ Without log transformation the interval sizes improve and so does the performanc
 
 
 
-![alt text](images/mod_regr_forest_accuracies.png?)![alt text](images/mean_conf_inter.png)
+![alt text](images/mod_regr_forest_accuracies.png)
+<!-- ![alt text](images/mean_conf_inter.png?) -->
 
 ![alt text](images/freq_conf_inter_megablast.png)
 
