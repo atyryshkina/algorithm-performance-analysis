@@ -305,11 +305,9 @@ The results of the classifier can be found at [benchmarks/classifier_forest_metr
 
 ![alt text](images/comparison-accuracies.png?)   ![alt text](images/comparison-intervals.png?)
 
-The two models have comparable performance on the Galaxy dataset when a prediction interval of one standard deviation about the mean is used. However, the modified regression forest edges out a little bit once we increase the interval. We did not include the interval size for the 2 std dev mrf in the interval size bar graph because it is simply twice as large as the 1 std dev mrf bar graph. To take a more in depth look at the prediction intervals, I've also provided a comparison of the frequency distributions below. This for one tool only - BWA version 0.7.15.1.
 
-![alt text](images/freq_conf_intervals_1std_bwa.png)  ![alt text](images/freq_clf_intervals_bwa.png)
 
-The modified regression forest is using an interval of only one standard deviation about the mean. Still, it has prediction spike of very large intervals, over one hundred minutes long. The classifier has controlled prediction intervals. The method we used to choose buckets, makes it so that the one of the intervals is over an hour long. These, however, can be controlled and modified in the bucket selection step.
+
 
 ## Maximum Memory use Prediction
 
@@ -345,17 +343,19 @@ On the other hand, max memory usage of a job is not hardware dependent. This is 
 
 ## Conclusion
 
-In this paper, we introduced the Galaxy dataset, tested popular machine learning models, and compared two methods of predicting runtime intervals: modified quantile regression forests and random forest classifiers.
+In this paper, we introduced the Galaxy dataset and tested popular machine learning models. We included three popular ensemble models: the Extra Trees Regressor, the Gradient Boosting Regressor, and the Random Forest Regressor. We found that Random Forests perform best in the runtime prediction task.
 
-Quantile regression forests are more accurate in their predictions, and grant the ability to improve performance by changing the confidence of the interval estimates. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is very large. Random forest classifiers are less accurate, but they allow for more control over the size of the prediction intervals.
+We also presented two methods of choosing walltimes for previously unseen jobs. Quantile regression forests are more accurate in their predictions, and grant the ability to improve performance by changing the confidence of the interval estimates. However, the sizes of the confidence intervals it provides are unpredictable, and may be unuseful if the interval is very large. Random forest classifiers are less accurate, but they allow for more control over the size of the prediction intervals.
 
-Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs.
+<!-- Both methods are susceptible to being skewed by contaminated data. The datasets used to train and evaluate the models are known to contain undetected errors. We believe the contamination to certainly be less than 5%, though the exact extent is not known at this time. All of the tests were done with the same data, so each was made vulnerable to the effects of the bad jobs. -->
 
-To improve either model would call for the same revisions in preprocessing: better feature selection and better outlier pruning. We find these methods promising and plan to implement a test instance of them on  Galaxy main to test their performance in a real setting.
+We showed that estimating the memory requirements of a job is possible using the same methods. Memory requirements are invariant to hardware specifications, and the models may more readily be applied to other Galaxy servers.
+
+<!-- To improve the models would call for the same revisions in preprocessing: better feature selection and better outlier exclusion. We find these methods promising and plan to implement a test instance of them on  Galaxy main to test their performance in a real setting. -->
 
 ## Future Work
 
-Recently, we have set up the galaxy main to track additional job attributes: amount of memory used (rather than just memory allocated, which is currently tracked), server load at create time, and CPU time. Once enough data is collected, we want to create models to predict memory usage and CPU time and evaluate their performance.
+Recently, we have begun aggregating job run data on the Galaxy Telescope from external Galaxy servers. Once this data is published we plan to test the model performance on these other servers.
 
 We also want to find the effect of processor count on runtime. Currently, every job is allotted 32 processor cores, so we do not have the data to investigate the relationship between number of processors and runtime. In the future, we plan to add random variability to the number of processor cores allotted, so that we can see how great of an effect parallelism has on these bioinformatic algorithms.
 
