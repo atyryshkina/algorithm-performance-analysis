@@ -268,7 +268,9 @@ Without log transformation the interval sizes improve and so does the performanc
 
 
 
-![alt text](images/accuracy-qrf-no-log.png?)   ![alt text](images/intervals-qrf-no-log.png?)
+![alt text](images/mod_regr_forest_accuracies.png?)![alt text](images/mean_conf_inter.png)
+
+![alt text](images/freq_conf_inter_megablast.png)
 
 The largest drawback of the quantile regression forest is that there is no control over the time ranges that are produced and the confidence intervals can be quite large. These large time ranges may not be useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
