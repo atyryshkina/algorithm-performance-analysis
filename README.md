@@ -205,8 +205,6 @@ With these filters, we are able to remove computationally costly parameters. Sin
 
 #### Attribute Preprocessing
 
-<!--There are certain types of data that machine learning models prefer. For the sci-kit learn models, it is advised that the continuous variables be normally distributed and centered about zero, and that the categorical variables be binarized.-->
-
 As previously noted, if a continuous variables is highly skewed, it is log transformed with numpy.log1p. All continuous variables are scaled to the range [0,1] with sklearn.preprocessing.MinMaxScaler.
 
 Categorical variables are binarized using sklearn.preprocessing.LabelBinarizer. An example of label binarization is shown below. The categorical variable 'analysis_type' is expanded into four discrete variables that can take the value 0 or 1.
@@ -217,8 +215,6 @@ Categorical variables are binarized using sklearn.preprocessing.LabelBinarizer. 
 |full   |0   | 1  | 0  |0|
 |pacbio   |0   | 0  | 1  |0|
 |ont2d   |0   | 0  | 0  |1|
-
-<!-- We typically have two or three continuous variables for each tool, and about one hundred expanded categorical variables. Some tools, that accept multiple input files, such as cuffnorm, can have hundreds of continuous variables. Other tools, that do not have many options,  such as fastq groomer, may have only a handful of expanded categorical variables. -->
 
 ## Model Comparison
 
@@ -251,41 +247,42 @@ The full results can be viewed [benchmarks/comparison_benchmarks.csv](benchmarks
 
 ## Estimating a Range of Runtimes
 
-The random forest gave us the best results for estimating the runtime of a job. It would be more useful, though, to estimate a range of runtimes that the job would take to complete. This way, when using the model for choosing walltimes, we lower the risk of ending jobs prematurely.
+The random forest gave us the best results for estimating the runtime of a job. It would also be of interest to calculate a confidence interval for the runtime of a job. This way, when using the model to choose walltimes, we lower the risk of ending jobs prematurely.
 
-A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows us to determine a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
+A [quantile regression forest](https://doi.org/10.1.1.170.5707) can be used for such a purpose. A quantile forest works similarly to a normal random forest, except that at the leaves of its trees, the quantile random forest not only stores the means of the variable to predict, but all of the values found in the training set. By doing this, it allows us to calculate a confidence interval for the runtime of a job based on similar jobs that have been run in the past.
 
-Storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store only the means and the standard deviations. Doing so reduces the precision of the confidence interval, but saves a lot of space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
+However, storing the entire dataset in the leaves of every tree is computationally costly. An alternative method is to store only the means and the standard deviations. Doing so reduces the precision of the confidence interval, but saves space. We used the modified version of the quantile regression forest that is described in [Hutter et al.](https://doi.org/10.1016/j.artint.2013.10.003) that uses standard deviation instead of quantiles.
 
-We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. The results can be viewed at [benchmarks/modified_forest_metrics.csv](benchmarks/modified_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool.
+We tested the modified regression forest against the historical data with three fold validation on the full dataset. The accuracy was recorded as a prediction that is within one, two, or three standard deviations of the actual value. Because we are calculating standard deviations in these tests, we did not normalize the runtime distribution with a log transformation.
 
-##### Mean accuracy of 3-fold cross-validated tests
+<!-- The results can be viewed at [benchmarks/modified_forest_metrics.csv](benchmarks/modified_forest_metrics.csv), and a summary is also shown below. The mean interval is the mean size of the confidence interval predicted for that tool. -->
+
+<!-- ##### Mean accuracy of 3-fold cross-validated tests
 
 
-![alt text](images/accuracy-qrf.png?)   ![alt text](images/intervals-qrf.png?)
+![alt text](images/accuracy-qrf.png?)   ![alt text](images/intervals-qrf.png?) -->
 
-The largest drawback of the quantile regression forest is that the time ranges that it guesses can be quite large. These large time ranges are not useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
+<!-- For these tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used for the interval.
 
-For these tests, we were using a log transformation to normalize the runtimes. Doing so had given us better results for the regressions performed in the previous section. But using a log transformation here, also meant that the standard deviations calculated by the modified regressor were also on a log scale. So, the confidence interval balloons as you use increase the numnber of standard deviations used for the interval.
+Without log transformation the interval sizes improve and so does the performance. These results can be view at [benchmarks/modified_forest_metrics_no_log.csv](benchmarks/modified_forest_metrics_no_log.csv) -->
 
-Without log transformation the interval sizes improve and so does the performance. These results can be view at [benchmarks/modified_forest_metrics_no_log.csv](benchmarks/modified_forest_metrics_no_log.csv)
 
-##### Mean accuracy of 3-fold cross-validated tests (runtimes not log-transformed)
 
 ![alt text](images/accuracy-qrf-no-log.png?)   ![alt text](images/intervals-qrf-no-log.png?)
 
+The largest drawback of the quantile regression forest is that there is no control over the time ranges that are produced and the confidence intervals can be quite large. These large time ranges may not be useful for giving a user an idea of how long an analysis will take, but they may be useful for creating walltimes.
 
 
-The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on your use case, this may be reasonable. To replicate these results use [scripts/modified_random_forest_metrics.py](scripts/modified_random_forest_metrics.py)
+The confidence intervals for one standard deviation are larger than those found previously, which accounts for the better accuracy at that grade. The intervals can still be quite large. The mean interval for bwa for one st. dev. is about 2000 seconds, over half an hour. Depending on the use case, this may be reasonable. To replicate these results use [scripts/modified_random_forest_metrics.py](scripts/modified_random_forest_metrics.py)
 
 ## Using a random forest classifier
 
 The main advantage of a random forest classifier over a quantile regression forest (or a modified regression forest using standard deviations), is that you can select the sizes of the runtime bins. Where in the quantile regression forest, you are at the mercy of the bins dynamically selected by the model.
 
-In our tests, we chose buckets in the following fashion.
+In our tests, we chose buckets in the following manner.
 1. We ordered the jobs by length of runtime.
 2. Then, we made (0, median] our first bucket.
-3. We recursively took the median of the remaining runtimes until the number of remaining runtimes was less than 100.
+3. We recursively took the median of the remaining runtimes until the number of remaining bucket held less than 100 instances.
 
 |------------50%-----------|-----25%-----|--12.5%--|--12.5%--|      < ---- division of jobs
 
@@ -297,22 +294,13 @@ For example, for bwa_mem the buckets we found (in seconds) were
 
 As the buckets become larger. the number of jobs in the bucket decrease by 1/2^i where i is the bucket. For bwa_mem, the last bucket, where i=7, holds only 0.78% of the jobs. Dividing it further would make it so the next bucket created has less than 100 jobs, which we chose as the threshold.
 
-This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset.
+<!-- This method of creating buckets puts an arbitrary limit on the longest amount of time that a tool is allowed to run based on the longest a job has been observed to run. It is also susceptible to false positives at the longer runtime buckets if trained by a contaminated dataset. -->
 
 The aribitrary upper limit would also be present in the original qunatile random forest since it won't create quantiles intervals longer than the longest runtime it has seen. Similarly, with the modified quantile forest with the standard deviations would have an arbitrary upper limit based on the variability of historical data found in its leaves.
 
 The results of the classifier can be found at [benchmarks/classifier_forest_metrics.csv](benchmarks/classifier_forest_metrics.csv). A comparison of the accuracy of the classifier vs the modified regression forest with an interval of one standard deviation can be found below.
 
 ![alt text](images/comparison-accuracies.png?)   ![alt text](images/comparison-intervals.png?)
-
-<!-- || clf accuracy | clf mean interval | clf median interval | qf accuracy | qf mean interval | qf median interval |
-|---|--------------|-------------------|---------------------|-------------|------------------|--------------------|
-| bwa v 0.7.15.1     | 0.81 | 698.08 | 197.00| 0.90 | 2196.55 | 651.40|
-| bwa mem v 0.7.15.1 |  0.76 | 247.83 | 47.00 | 0.94 | 715.16 | 413.40|
-| fastq groomer v 1.1.1 |0.93 | 1250.62 | 1010.50 | 0.84 | 631.85 | 130.41|
-| megablast v 1.2.0  | 0.72 | 3821.06 | 1352.00 | 0.80 | 14722.29 | 4687.70|
-| total mean  | 0.75 | 1343.36 | 1073.15 | 0.69 | 326.17 | 74.50|
-| total median |0.75 | 112.32 | 39.50| 0.69 | 22.23 | 3.56| -->
 
 The two models have comparable performance on the Galaxy dataset when a prediction interval of one standard deviation about the mean is used. However, the modified regression forest edges out a little bit once we increase the interval. We did not include the interval size for the 2 std dev mrf in the interval size bar graph because it is simply twice as large as the 1 std dev mrf bar graph. To take a more in depth look at the prediction intervals, I've also provided a comparison of the frequency distributions below. This for one tool only - BWA version 0.7.15.1.
 
